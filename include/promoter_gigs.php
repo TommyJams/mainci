@@ -30,6 +30,8 @@
 							</table>					
                                     <span class="gigs" style="padding:10px;" >
                                     <?php 
+                                    $error = (json_decode($_POST['json'])->error);
+                                    if($error == 0){
                                     $gigsHistory = (json_decode($_POST['json'])->gigHistory);
                                     foreach($gigsHistory as $row){ ?>
                                     <?
@@ -62,6 +64,7 @@
                                             print("<td><a href='javascript:;' onClick=loadslide('$link'); class ='highlightRef'><img src='images/plus.gif' align='right'></a></td></tr></table></div>
                                                 <center><div id='$link' name='$link' style='display:none; height:200px; width:50%; background:#ffcc00; overflow-y: auto;'></div></center>");
                                         }                                    
+                                    }
                                     }
                                     ?>
                                     </span>
