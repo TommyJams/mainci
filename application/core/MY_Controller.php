@@ -1131,13 +1131,13 @@ class Base extends MY_Controller{
 
 					$user=$a["user"];
 
-					if($type=="Promoter" && $user!=""){     $users="images/promoter/$user";$usersa="../images/promoter/$user";; }
+					if($type=="Promoter" && $user!=""){     $users="/images/promoter/$user";$usersa="./images/promoter/$user";; }
 
-					elseif($type=="Artist"  && $user!=""){     $users="images/artist/$user";$usersa="../images/artist/$user"; }
+					elseif($type=="Artist"  && $user!=""){     $users="/images/artist/$user";$usersa="./images/artist/$user"; }
 
 					else{$usersa="images/profile.jpg";}
 										
-					if(!file_exists($usersa)&& $user==""){$users="images/profile.jpg";}
+					if(!file_exists($usersa)&& $user==""){$users="/images/profile.jpg";}
 
 					else if(!file_exists($usersa) && $user!=""){$users="https://graph.facebook.com/"."$user/picture?type=square";}
 
