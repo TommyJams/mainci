@@ -16,12 +16,23 @@
                 popup('profil');
             });
         }
+
+        function confirmSubmit(link)
+        {
+            var agree=confirm("Are you sure you wish to call dibs for this gig? The host will receive the dibs and choose an artist. Please note, these dibs are not cancellable.");
+            if (agree)
+                dibAction(link);
+            else
+                return false ;
+        }
+    
     </script>
 
 </head>
  <body>
     <?php $link = (json_decode($_POST['json'])->link); ?>
     <?php $gigStatus = (json_decode($_POST['json'])->gigStatus); ?>
+    <?php $gigSession = (json_decode($_POST['json'])->gigSession); ?>
     <div id="blanket" style="display:none;
                             background-color:#111;
                             opacity: 0.65;
@@ -166,10 +177,7 @@
                             {                       
                             ?>
                                 <?php $link = (json_decode($_POST['json'])->link); ?>
-                                <form  action=""  method="post">
-                                    <input type="hidden" name="gig" value="<? print($link);?>">
-                                    <input id="dibStatusButton" name="dib" type="submit" value="DIB" onClick="confirmSubmit('$link')">
-                                </form>
+                                <a href='javascript:;' name="dib" id="dibStatusButton" onClick="confirmSubmit('<?print("$link");?>');">DIB</a>                               
                             <?
                             }
                         }
@@ -253,17 +261,5 @@
 	<script type="text/javascript">
 		$('#loading-indicator').hide();
 	</script>
-
-	<script LANGUAGE="JavaScript">
-	function confirmSubmit(link)
-	{
-		var agree=confirm("Are you sure you wish to call dibs for this gig? The host will receive the dibs and choose an artist. Please note, these dibs are not cancellable.");
-		if (agree)
-			dibAction(link);
-		else
-			return false ;
-	}
-	</script>
-
 </body>
 </html>
