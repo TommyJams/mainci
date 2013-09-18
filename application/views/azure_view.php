@@ -519,9 +519,9 @@
 
 							<div class="layout-50-left">
 							
-								<a href="//www.mixcloud.com/widget/iframe/?feed=http%3A%2F%2Fwww.mixcloud.com%2Ftommyjams%2Fmegha-and-neehar-8th-september-2013%2F&show_tracklist=&stylecolor=&hide_artwork=&mini=&embed_type=widget_standard" class="preloader obom-overlay-video fancybox-audio-mixcloud">
+								<a href="//www.mixcloud.com/widget/iframe/?feed=http%3A%2F%2Fwww.mixcloud.com%2Ftommyjams%2Frahul-pophali-15th-september-2013%2F&show_tracklist=&stylecolor=&hide_artwork=&mini=&embed_type=widget_standard" class="preloader obom-overlay-video fancybox-audio-mixcloud">
 									
-									<img src="<?php echo base_url();?>image/radioone/artists/meghaneehar.jpg" align="left" class="obom-image">
+									<img src="<?php echo base_url();?>image/radioone/artists/rahulpophali.jpg" align="left" class="obom-image">
 
 									<span align="left" class="obom-image-overlay">
 
@@ -539,7 +539,7 @@
 
 									Welcome to "One Bengaluru One Music", powered by TommyJams! Tune in to Radio One 94.3 FM every Sunday from 9 PM - 10 PM to hear artists from across the world jamming live in the studio!
 									
-									<br><br>This week we feature Singer Megha and music composer Neehar, alumnis of KMMC Chennai. The duo have just come out with their Kannada album: Male Billu.
+									<br><br>This week we feature Rahul Pophali, one of the most versatile tabla players in India. A dazzling performer and an incessant innovator, Rahul has carved a niche for himself in the world of percussion music.
 
 								</div>
 
