@@ -10,7 +10,7 @@
 
   <meta property="og:type" content="website" />
 
-  <meta property="og:image" content=<?print("/image/radioone/artists/".$image);?>/>
+  <meta property="og:image" content="<?print('http://tommyjams.com/images/radioone/artists/'.$image);?>"/>
 
   <meta property="og:url" content="http://tommyjams.com/radioone" />
 
