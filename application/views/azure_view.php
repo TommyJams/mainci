@@ -207,34 +207,34 @@
 							<!-- events list -->
 							<ul class="no-list clear-fix">
 								<li>
-									<a href="http://tommyjams.com/blog/events/event/mystik-vibes-phoenix-marketcity-bangalore/" target="_blank" class="" style="width: 100%">
+									<a href="http://tommyjams.com/blog/events/event/alaap-phoenix-marketcity-bangalore/" target="_blank" class="" style="width: 100%">
 										<table style='text-align:center; width: 100%;'>
 											<tr style="height: 50px; width: 100%">
 												<td style="width: 20%;"><img src="image/eventTiles/phoenixmall.jpg" alt=""/></td>
-												<td style="width: 60%; vertical-align:middle;">Mystik Vibes @ Phoenix Marketcity</td>
-												<td style="width: 20%; vertical-align:middle;">1-Sep</td>
+												<td style="width: 60%; vertical-align:middle;">Alaap @ Phoenix Marketcity</td>
+												<td style="width: 20%; vertical-align:middle;">21-Sep</td>
 											</tr>
 										</table>
 									</a>
 								</li>
                                 <li>
-									<a href="http://tommyjams.com/blog/events/event/palmfret-sunday-soul-sante/" target="_blank" class="" style="width: 100%">
+									<a href="http://tommyjams.com/blog/events/event/yogi-shubham-roy-the-ways-of-the-world-green-haat/" target="_blank" class="" style="width: 100%">
 										<table style='text-align:center; width: 100%;'>
 											<tr style="height: 50px; width: 100%">
-												<td style="width: 20%;"><img src="image/eventTiles/sss.jpg" alt=""/></td>
-												<td style="width: 60%; vertical-align:middle;">Palmfret @ Sunday Soul Sante</td>
-												<td style="width: 20%; vertical-align:middle;">1-Sep</td>
+												<td style="width: 20%;"><img src="image/eventTiles/greenhaat.jpg" alt=""/></td>
+												<td style="width: 60%; vertical-align:middle;">Yogi, Shubham Roy and The Ways of the World @ Green Haat</td>
+												<td style="width: 20%; vertical-align:middle;">20-Sep</td>
 											</tr>
 										</table>
 									</a>
 								</li>
 								<li>
-									<a href="http://tommyjams.com/blog/events/event/nandan-mylavarapu-urban-solace/" target="_blank" class="" style="width: 100%">
+									<a href="http://tommyjams.com/blog/events/event/shubham-roy-urban-solace-bangalore/" target="_blank" class="" style="width: 100%">
 										<table style='text-align:center; width: 100%;'>
 											<tr style="height: 50px; width: 100%">
 												<td style="width: 20%;"><img src="image/eventTiles/urbansolace.jpg" alt=""/></td>
-												<td style="width: 60%; vertical-align:middle;">Nandan Mylavarapu @ Urban Solace</td>
-												<td style="width: 20%; vertical-align:middle;">30-Aug</td>
+												<td style="width: 60%; vertical-align:middle;">Shubham Roy @ Urban Solace</td>
+												<td style="width: 20%; vertical-align:middle;">13-Sep</td>
 											</tr>
 										</table>
 									</a>
