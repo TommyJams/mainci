@@ -111,9 +111,9 @@
 							</a>
 						</td>
 					</tr>
-				</table>*/
-				print("<div class='fb-login-button' size='large' onlogin=facebookLoginCallback(); registration-url='<? print(base_url()); ?>fbconnect/registerMethod/noregister'>
-				</div>");
+				</table>*/ ?>
+			<div class='fb-login-button' size='large' onlogin=facebookLoginCallback(); registration-url='<? print(base_url()); ?>fbconnect/registerMethod/noregister'></div>
+			<?	
 			}
 			?>
 			</div> <!--enclosingLoginButton-->
