@@ -580,7 +580,7 @@ class Base extends MY_Controller{
 		$response['budget_min'] = $budget_min;
 		$response['budget_max'] = $budget_max;
 		$response['formattedDate'] =  $date;
-		$response['vtime'] = $time;
+		$response['vtime'] = $vtime;
 		$response['duration'] = $duration;
 		$response['fb'] = $fb;
 		$response['web'] = $web;
