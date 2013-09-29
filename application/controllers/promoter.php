@@ -184,6 +184,7 @@ class Promoter extends Base{
 		$response['gigStatus'] = $gigStatus;
 		$response['add'] = $venue_add;
 		$response['pincode'] = $venue_pin;
+		$response['ida'] = $ida;
 
 		createResponse($response);
 	}

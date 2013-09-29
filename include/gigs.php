@@ -215,7 +215,7 @@
 							<tr style="color: #000; width:10%" >
                                 <?php $duration = (json_decode($_POST['json'])->duration); ?>
                                 <td style="width:10%; background: #ffcc00;"><h2>Duration<h2></td>
-                                <td style="color: #000; background: #fff; padding:5px;"><?  print ("$duration"); ?></td>
+                                <td style="color: #000; background: #fff; padding:5px;"><?  print ("$duration"); ?> hours</td>
                             </tr>
                             <tr style="color: #000; width:10%" >
                                 <?php $cat = (json_decode($_POST['json'])->cat); ?>
@@ -226,7 +226,16 @@
                                 <?php $budget_min = (json_decode($_POST['json'])->budget_min); ?>
                                 <?php $budget_max = (json_decode($_POST['json'])->budget_max); ?>
                                 <td style="width:10%; background: #ffcc00;"><h2>Budget<h2></td>
-                                <td style="color: #000; background: #fff; padding:5px;"><?  if($budget_min == -1){print("Undefined");}else{print("INR $budget_min - $budget_max");} ?></td>
+                                <td style="color: #000; background: #fff; padding:5px;">
+                                    <?  
+                                        if($budget_min == -1)
+                                            {print("Undefined");}
+                                        elseif($budget_max == $budget_min)
+                                            {print("INR $budget_min");}
+                                        else
+                                            {print("INR $budget_min - $budget_max");} 
+                                    ?>
+                                </td>
                             </tr>
                             <tr style="color: #000; width:10%" >
                                 <?php $add = (json_decode($_POST['json'])->add); ?>

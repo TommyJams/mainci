@@ -476,7 +476,8 @@ class Base extends MY_Controller{
 			$period=$a["period"];$promoter_name=$a["promoter_name"];$promoter=$a["promoter"];
 			$status=$a["status"];$link=$a["link"];$image=$a["image"];
 			$desc=$a["desc"];$budget_min=$a["budget_min"];
-			$budget_max=$a["budget_min"]+$a["budget_min"]*$a["budget_max"]/100;$time=$a["time"];
+			$budget_max=($a["budget_min"])+(($a["budget_min"])*($a["budget_max"]/100));
+			$time=$a["time"];
 		}
 
 		if($image=="")
@@ -579,7 +580,7 @@ class Base extends MY_Controller{
 	    $response['cat'] = $cat;   
 		$response['budget_min'] = $budget_min;
 		$response['budget_max'] = $budget_max;
-		$response['formattedDate'] =  $date;
+		$response['formattedDate'] =  $formattedDate;
 		$response['vtime'] = $vtime;
 		$response['duration'] = $duration;
 		$response['fb'] = $fb;
