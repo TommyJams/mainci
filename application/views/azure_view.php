@@ -519,9 +519,9 @@
 
 							<div class="layout-50-left">
 							
-								<a href="//www.mixcloud.com/widget/iframe/?feed=http%3A%2F%2Fwww.mixcloud.com%2Ftommyjams%2Fsoundarya-jayachandran-22nd-september-2013%2F&show_tracklist=&stylecolor=&hide_artwork=&mini=&embed_type=widget_standard" class="preloader obom-overlay-video fancybox-audio-mixcloud">
+								<a href="//www.mixcloud.com/widget/iframe/?feed=http%3A%2F%2Fwww.mixcloud.com%2Ftommyjams%2Fabhijit-kishan-rahul-iyengar-29th-september-2013%2F&show_tracklist=&stylecolor=&hide_artwork=&mini=&embed_type=widget_standard" class="preloader obom-overlay-video fancybox-audio-mixcloud">
 									
-									<img src="<?php echo base_url();?>image/radioone/artists/soundarya.jpg" align="left" class="obom-image">
+									<img src="<?php echo base_url();?>image/radioone/artists/abhijithrahul.jpg" align="left" class="obom-image">
 
 									<span align="left" class="obom-image-overlay">
 
@@ -539,7 +539,7 @@
 
 									Welcome to "One Bengaluru One Music", powered by TommyJams! Tune in to Radio One 94.3 FM every Sunday from 9 PM - 10 PM to hear artists from across the world jamming live in the studio!
 									
-									<br><br>A very young singer-songwriter from Bangalore, Soundarya Jayachandran has a beautiful voice, a refreshing sound and big dreams. In this episode, she launches her latest EP, Shades of Revival.
+									<br><br>This week we feature Abhijith Kishan, a singer, composer, and keyboardist from Bangalore, with Rahul Iyengar, one of India's best beat-boxer.
 
 								</div>
 
