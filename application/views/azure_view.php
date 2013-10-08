@@ -207,34 +207,34 @@
 							<!-- events list -->
 							<ul class="no-list clear-fix">
 								<li>
-									<a href="http://tommyjams.com/blog/events/event/suraj-mani-and-the-tattva-trippers-phoenix-marketcity-bangalore/" target="_blank" class="" style="width: 100%">
+									<a href="http://tommyjams.com/blog/events/event/alaap-phoenix-marketcity-bangalore/" target="_blank" class="" style="width: 100%">
 										<table style='text-align:center; width: 100%;'>
 											<tr style="height: 50px; width: 100%">
 												<td style="width: 20%;"><img src="image/eventTiles/phoenixmall.jpg" alt=""/></td>
-												<td style="width: 60%; vertical-align:middle;">Suraj Mani and The Tattva Trippers @ Phoenix Marketcity</td>
-												<td style="width: 20%; vertical-align:middle;">5-Oct</td>
+												<td style="width: 60%; vertical-align:middle;">Alaap @ Phoenix Marketcity</td>
+												<td style="width: 20%; vertical-align:middle;">21-Sep</td>
 											</tr>
 										</table>
 									</a>
 								</li>
                                 <li>
-									<a href="http://tommyjams.com/blog/events/event/mind-map-phoenix-marketcity-bangalore/" target="_blank" class="" style="width: 100%">
-										<table style='text-align:center; width: 100%;'>
-											<tr style="height: 50px; width: 100%">
-												<td style="width: 20%;"><img src="image/eventTiles/phoenixmall.jpg" alt=""/></td>
-												<td style="width: 60%; vertical-align:middle;">Mind Map @ Phoenix Marketcity</td>
-												<td style="width: 20%; vertical-align:middle;">5-Oct</td>
-											</tr>
-										</table>
-									</a>
-								</li>
-								<li>
 									<a href="http://tommyjams.com/blog/events/event/yogi-shubham-roy-the-ways-of-the-world-green-haat/" target="_blank" class="" style="width: 100%">
 										<table style='text-align:center; width: 100%;'>
 											<tr style="height: 50px; width: 100%">
 												<td style="width: 20%;"><img src="image/eventTiles/greenhaat.jpg" alt=""/></td>
 												<td style="width: 60%; vertical-align:middle;">Yogi, Shubham Roy and The Ways of the World @ Green Haat</td>
 												<td style="width: 20%; vertical-align:middle;">20-Sep</td>
+											</tr>
+										</table>
+									</a>
+								</li>
+								<li>
+									<a href="http://tommyjams.com/blog/events/event/shubham-roy-urban-solace-bangalore/" target="_blank" class="" style="width: 100%">
+										<table style='text-align:center; width: 100%;'>
+											<tr style="height: 50px; width: 100%">
+												<td style="width: 20%;"><img src="image/eventTiles/urbansolace.jpg" alt=""/></td>
+												<td style="width: 60%; vertical-align:middle;">Shubham Roy @ Urban Solace</td>
+												<td style="width: 20%; vertical-align:middle;">13-Sep</td>
 											</tr>
 										</table>
 									</a>
@@ -519,9 +519,9 @@
 
 							<div class="layout-50-left">
 							
-								<a href="//www.mixcloud.com/widget/iframe/?feed=http%3A%2F%2Fwww.mixcloud.com%2Ftommyjams%2Fabhijit-kishan-rahul-iyengar-29th-september-2013%2F&show_tracklist=&stylecolor=&hide_artwork=&mini=&embed_type=widget_standard" class="preloader obom-overlay-video fancybox-audio-mixcloud">
+								<a href="//www.mixcloud.com/widget/iframe/?feed=http%3A%2F%2Fwww.mixcloud.com%2Ftommyjams%2Fe-swara-6th-october-2013%2F&mini=&stylecolor=&hide_artwork=&embed_type=widget_standard" class="preloader obom-overlay-video fancybox-audio-mixcloud">
 									
-									<img src="<?php echo base_url();?>image/radioone/artists/abhijithrahul.jpg" align="left" class="obom-image">
+									<img src="<?php echo base_url();?>image/radioone/artists/eswara.jpg" align="left" class="obom-image">
 
 									<span align="left" class="obom-image-overlay">
 
@@ -539,7 +539,7 @@
 
 									Welcome to "One Bengaluru One Music", powered by TommyJams! Tune in to Radio One 94.3 FM every Sunday from 9 PM - 10 PM to hear artists from across the world jamming live in the studio!
 									
-									<br><br>This week we feature Abhijith Kishan, a singer, composer, and keyboardist from Bangalore, with Rahul Iyengar, one of India's best beat-boxer.
+									<br><br>This week we feature eSwara, a Bangalore-based fusion music project blending Indian classical and Western music.
 
 								</div>
 
