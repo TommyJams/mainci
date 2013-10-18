@@ -207,12 +207,12 @@
 							<!-- events list -->
 							<ul class="no-list clear-fix">
 								<li>
-									<a href="http://tommyjams.com/blog/events/event/atharva-phoenix-marketcity/" target="_blank" class="" style="width: 100%">
+									<a href="http://tommyjams.com/blog/events/event/shadja-phoenix-marketcity-bangalore/" target="_blank" class="" style="width: 100%">
 										<table style='text-align:center; width: 100%;'>
 											<tr style="height: 50px; width: 100%">
 												<td style="width: 20%;"><img src="image/eventTiles/phoenixmall.jpg" alt=""/></td>
-												<td style="width: 60%; vertical-align:middle;">Atharva @ Phoenix Marketcity</td>
-												<td style="width: 20%; vertical-align:middle;">14-Oct</td>
+												<td style="width: 60%; vertical-align:middle;">Shadja @ Phoenix Marketcity</td>
+												<td style="width: 20%; vertical-align:middle;">19-Oct</td>
 											</tr>
 										</table>
 									</a>
