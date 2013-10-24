@@ -207,34 +207,34 @@
 							<!-- events list -->
 							<ul class="no-list clear-fix">
 								<li>
-									<a href="http://tommyjams.com/blog/events/event/shadja-phoenix-marketcity-bangalore/" target="_blank" class="" style="width: 100%">
+									<a href="http://tommyjams.com/blog/events/event/under-the-influence-the-humming-tree/" target="_blank" class="" style="width: 100%">
 										<table style='text-align:center; width: 100%;'>
 											<tr style="height: 50px; width: 100%">
-												<td style="width: 20%;"><img src="image/eventTiles/phoenixmall.jpg" alt=""/></td>
-												<td style="width: 60%; vertical-align:middle;">Shadja @ Phoenix Marketcity</td>
-												<td style="width: 20%; vertical-align:middle;">19-Oct</td>
+												<td style="width: 20%;"><img src="image/eventTiles/hummingtree.jpg" alt=""/></td>
+												<td style="width: 60%; vertical-align:middle;">Under The Influence @ The Humming Tree</td>
+												<td style="width: 20%; vertical-align:middle;">27-Oct</td>
 											</tr>
 										</table>
 									</a>
 								</li>
                                 <li>
-									<a href="http://tommyjams.com/blog/events/event/raahie-xtreme-sports-bar/" target="_blank" class="" style="width: 100%">
+									<a href="http://tommyjams.com/blog/events/event/green-rhapsody-phoenix-marketcity/" target="_blank" class="" style="width: 100%">
 										<table style='text-align:center; width: 100%;'>
 											<tr style="height: 50px; width: 100%">
-												<td style="width: 20%;"><img src="image/eventTiles/xtreme.jpg" alt=""/></td>
-												<td style="width: 60%; vertical-align:middle;">Raahie @ Xtreme Sports Bar</td>
-												<td style="width: 20%; vertical-align:middle;">11-Oct</td>
+												<td style="width: 20%;"><img src="image/eventTiles/phoenixmall.jpg" alt=""/></td>
+												<td style="width: 60%; vertical-align:middle;">Green Rhapsody @ Phoenix Marketcity</td>
+												<td style="width: 20%; vertical-align:middle;">27-Oct</td>
 											</tr>
 										</table>
 									</a>
 								</li>
 								<li>
-									<a href="http://tommyjams.com/blog/events/event/suraj-mani-and-the-tattva-trippers-phoenix-marketcity-bangalore/" target="_blank" class="" style="width: 100%">
+									<a href="http://tommyjams.com/blog/events/event/aabha-hanjura-phoenix-marketcity/" target="_blank" class="" style="width: 100%">
 										<table style='text-align:center; width: 100%;'>
 											<tr style="height: 50px; width: 100%">
 												<td style="width: 20%;"><img src="image/eventTiles/phoenixmall.jpg" alt=""/></td>
-												<td style="width: 60%; vertical-align:middle;">Suraj Mani and The Tattva Trippers @ Phoenix Marketcity</td>
-												<td style="width: 20%; vertical-align:middle;">5-Oct</td>
+												<td style="width: 60%; vertical-align:middle;">Aabha Hanjura @ Phoenix Marketcity</td>
+												<td style="width: 20%; vertical-align:middle;">26-Oct</td>
 											</tr>
 										</table>
 									</a>
