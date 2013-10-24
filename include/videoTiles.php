@@ -41,6 +41,7 @@
         <li><h1>July</h1></li>
         <li><h1>August</h1></li>
         <li><h1>September</h1></li>
+        <li><h1>October</h1></li>
 	</ul>
 </div>
 
