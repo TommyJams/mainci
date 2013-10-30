@@ -39,7 +39,7 @@
 */
 
 // $route['default_controller'] = "welcome";
-$route['default_controller'] = "landingpage";
+$route['default_controller'] = "azurepage";
 
 $route['index'] = "index/betalandingpage";
 $route['promoter'] = "promoter/checkUserSession";
