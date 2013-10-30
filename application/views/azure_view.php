@@ -4,7 +4,7 @@
 
 	<head>
 
-		<title>TommyJams - Revolutionizing Live Entertainment.</title>
+		<title>TommyJams - Revolutionizing Live Entertainment</title>
 		<meta name="fragment" content="!"/>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
@@ -145,7 +145,7 @@
 
 						<p class="subtitle-paragraph margin-top-20 margin-bottom-20 clear-fix">
                             <span class = "italic">
-                                Revolutionizing Live Entertainment
+                                Revolutionizing Live Entertainment.
                             </span>
                         </p>
 						
