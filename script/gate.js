@@ -69,8 +69,8 @@ $(document).ready(function()
 	{
 		// init the FB JS SDK
 		FB.init({
-		  appId      : '484562291630345', // App ID from the App Dashboard
-		  channelUrl : '//www.tommyjams.com/channel.html', // Channel File for x-domain communication
+		  appId      : '217493645081899', // App ID from the App Dashboard
+		  channelUrl : '//testcodeigniter.azurewebsites.net/channel.html', // Channel File for x-domain communication
 		  status     : true, // check the login status upon init?
 		  cookie     : true, // set sessions cookies to allow your server to access the session?
 		  oauth		 : true, // enable OAuth 2.0

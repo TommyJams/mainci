@@ -56,6 +56,15 @@ $route['presskit'] = "links/presskit";
 $route['radioone'] = "radioone/episode";
 $route['obom'] = "obom/obomLandingPage";
 
+$route['tours'] = "CFtour/tourPage";
+$route['campaign/:num'] = "CFfans/campaignPage";
+$route['fans'] = "CFfans/fanPage";
+$route['editcampaign/:num'] = "CFtour/campaignEditPage";
+$route['landingpage'] = "azurepage/landingPage";
+
+$route['event'] = "CFfans/campaignEvent";
+$route['postlink'] = "CFfans/postLink";
+
 // $route['fbconnect'] = "fbconnect/connectFb";
 
 //$route['fbconnect?registered=no'] = "fbconnect?c=fbconnect&m=connectFb&registered=no";
