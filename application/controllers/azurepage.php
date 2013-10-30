@@ -3,7 +3,7 @@
 class Azurepage extends CI_Controller{
 
 	public function index(){
-		 $this->azurelanding();
+		 $this->landingpage();
 	}
 
 	public function azurelanding(){
