@@ -266,19 +266,19 @@
             <div id="myTabContent" class="tab-content">
               <div class="tab-pane fade active in" id="home">
                 <div class="d-tj-pledge">
-                  <? foreach($pledges as $pledge){ ?>
+                <!--  <? //foreach($pledges as $pledge){ ?>
                   <?
-                    $amount = $pledge->amount;
-                    $pledge_desc = $pledge->desc;
+                    //$amount = $pledge->amount;
+                    //$pledge_desc = $pledge->desc;
                   ?>
                   <div style="">
-                    <h4>INR <? print($amount); ?></h4>
-                    <h5><? print($pledge_desc); ?></h5>
+                    <h4>INR <? //print($amount); ?></h4>
+                    <h5><? //print($pledge_desc); ?></h5>
                   </div>
                   <div class="seperator" ></div>
                   <? 
                     } 
-                  ?>
+                  ?> -->
                   <iframe frameborder="0" src="http://em.explara.com/widget/test-ci-event" width="315" height="683"></iframe>
                 </div>
               </div>
