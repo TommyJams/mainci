@@ -30,7 +30,7 @@
         return($i);
     }
 
-    function send_email($to, $sender, $subject, $mess)
+    /*function send_email($to, $sender, $subject, $mess)
     {
         $body = "
             <html>
@@ -59,7 +59,7 @@
         $this->email->message($body);
 
         $this->email->send();
-    }
+    }*/
 
     /**************************************************************/
     /**************************************************************/

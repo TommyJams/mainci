@@ -695,7 +695,7 @@ class Model extends CI_Model{
                 return true;
         }
 
-        /*public function send_email($to, $sender, $subject, $mess)
+        public function send_email($to, $sender, $subject, $mess)
 		{
 			$body = "
 				<html>
@@ -724,7 +724,6 @@ class Model extends CI_Model{
 			$this->email->message($body);
 
 			$this->email->send();
-		}*/
-
+		}
 }
 ?>
