@@ -580,7 +580,7 @@ class Model extends CI_Model{
 
 			$campaign_url = base_url().'campaign/'.$campaign_id;
 			$to = $email;
-			$sender = "goyalarpit.09@gmail.com";
+			$sender = "alerts@tommyjams.com";
 			$subject = "Campaign Launched";
 			$mess="<p style='text-align:left;'> Dear $artist_name,<br><br>Congratulations!<br>Your campaign has been launched successfully on TommyJams.
 						<br>Kindly wait for one business day for us to verify your event and activate the payment gateway.
