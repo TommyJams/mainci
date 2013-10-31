@@ -586,11 +586,33 @@ class Model extends CI_Model{
 						<br>Kindly wait for one business day for us to verify your event and activate the payment gateway.
 						<br>You can monitor your campaign by going to '$campaign_url'.
 						<br>We wish you all the very best for the campaign.<br><br>Happy Jamming,<br>Team TommyJams<br><br></p>";
-				
-			send_email($to, $sender, $subject, $mess);
 
-			$to = "alerts@tommyjams.com";
-			send_email($to, $sender, $subject, $mess);
+			$body = "
+	            <html>
+	            <head>
+	            <title>$subject</title>
+	            </head>
+	            <body>
+	            <div style='background:#000; padding:10px;'>
+	                <table style='text-align:center; width: 100%; padding:50px; padding-top:20px;'>
+	                    <tr style='margin-top:20px;'>
+	                        <img src='http://www.tommyjams.com/beta/images/tjlogo_small.png'>
+	                    </tr>
+	                    <tr style='margin-top:50px; background:#ffcc00; padding:10px;'>
+	                        $mess
+	                    </tr>
+	                </table>
+	            </div>
+	            </body>
+	            </html>";
+
+	        //Using codeigniter mail library
+	        $this->email->from(SMTP_USERNAME, SMTP_SENDER);
+	        $this->email->to($to); 
+	        $this->email->subject($subject);
+	        $this->email->message($body);
+
+	        $this->email->send();
 
 			$response['id'] = $campaign_id;
 			return $response;
