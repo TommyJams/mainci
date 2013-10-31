@@ -578,7 +578,7 @@ class Model extends CI_Model{
 				$maxIndex--;
 			}
 
-			$campaign_url = base_url().'campaign/'.$campaign_id;
+			/*$campaign_url = base_url().'campaign/'.$campaign_id;
 			$to = $email;
 			$sender = "alerts@tommyjams.com";
 			$subject = "Campaign Launched";
@@ -590,7 +590,7 @@ class Model extends CI_Model{
 			$this->Model->send_email($to, $sender, $subject, $mess);
 
 			$to = "alerts@tommyjams.com";
-			$this->Model->send_email($to, $sender, $subject, $mess);
+			$this->Model->send_email($to, $sender, $subject, $mess);*/
 
 			$response['id'] = $campaign_id;
 			return $response;
