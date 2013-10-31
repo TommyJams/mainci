@@ -9,6 +9,7 @@ class CFtour extends CI_Controller{
 
           // Load model
           $this->load->model('Model');
+          $this->load->library('email');
     }
 
 	public function tourPage(){
