@@ -72,8 +72,8 @@
 
   #newsletter-form 
   {
-    margin-top:20px;
-    margin-bottom:20px;
+    margin-top:0px;
+    margin-bottom:0px;
   }
     
     #newsletter-form ul.form-line li input[type="text"]
@@ -133,10 +133,14 @@
             <!-- Newsletter form -->
             <form name="newsletter-form" id="newsletter-form" action="" method="post" class="text-center clear-fix"> 
               <div class="clear-fix">
-                <div id="listContainer" class="clear-fix block box-center">    
-                  <label for="newsletter-form-mail">Your e-mail</label>
-                  <input type="text" name="newsletter-form-mail" id="newsletter-form-mail" value=""/>
-                  <input type="submit" id="newsletter-form-send" name="newsletter-form-send" class="button" value="Invite"/>                   
+                <div id="listContainer" class="clear-fix block box-center">
+                <ul class="no-list form-line">   
+                  <li class="clear-fix block"> 
+                    <label for="newsletter-form-mail">Your e-mail</label>
+                    <input type="text" name="newsletter-form-mail" id="newsletter-form-mail" value=""/>
+                    <input type="submit" id="newsletter-form-send" name="newsletter-form-send" class="button" value="Invite"/> 
+                  </li>
+                </ul>    
                 </div>                
               </div>              
             </form>
