@@ -587,10 +587,10 @@ class Model extends CI_Model{
 						<br>You can monitor your campaign by going to '$campaign_url'.
 						<br>We wish you all the very best for the campaign.<br><br>Happy Jamming,<br>Team TommyJams<br><br></p>";
 				
-			send_email($to, $sender, $subject, $mess);
+			$this->Model->send_email($to, $sender, $subject, $mess);
 
 			$to = "alerts@tommyjams.com";
-			send_email($to, $sender, $subject, $mess);
+			$this->Model->send_email($to, $sender, $subject, $mess);
 
 			$response['id'] = $campaign_id;
 			return $response;
