@@ -112,7 +112,7 @@
       </div>  
 
         <div class="row" >
-          <div class="col-md-12">
+          <div class="col-md-12 d-tj-offset-top-15">
             <h4 style="font-size:25px;color:black" class="text-center">
               <b>Music Lover? Drop your email id below.</b>
             </h4>
