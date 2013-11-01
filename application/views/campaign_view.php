@@ -313,26 +313,6 @@
             </div>
             <!--/Tabs -->
 
-
-          <div class="d-tj-pledge">
-            <? foreach($pledges as $pledge){ ?>
-            <?
-              $amount = $pledge->amount;
-              $pledge_desc = $pledge->desc;
-            ?>
-            <div style="">
-              <!--<h4>PLEDGE  AMOUNT INR. <? //print($amount); ?></h4>-->
-              <!--<h5><? //print($pledge_desc); ?></h5>-->
-            </div>
-            <!--<div class="seperator" ></div>-->
-            <? 
-              } 
-            ?>
-              <iframe frameborder="0" src="http://em.explara.com/widget/test-ci-event" height="670" width="315" ></iframe>
-            </div>
-
-
-
             <div class=" d-tj-offset-top-30 pledge-btn" >
               <input type="button" value="PLEDGE NOW" style="">
             </div>
