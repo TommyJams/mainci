@@ -109,6 +109,29 @@
             </div>
           </div>
         </div>
+
+        <div class="row" >
+              <h4 style="font-size:22px" class="text-center">
+                Looking to book events immediately ?
+              </h4>
+              
+              <!-- Newsletter form -->
+            <form name="newsletter-form" id="newsletter-form" action="" method="post" class="clear-fix"> 
+              <div class="clear-fix">
+                <div id="listContainer" class="clear-fix block box-center">
+                  <ul class="no-list form-line">
+                    <li class="clear-fix block">
+                      <label for="newsletter-form-mail">Your e-mail</label>
+                      <input type="text" name="newsletter-form-mail" id="newsletter-form-mail" value=""/>
+                      <input type="submit" id="newsletter-form-send" name="newsletter-form-send" class="button" value="Invite"/>
+                    </li>                   
+                  </ul>
+                </div>                
+              </div>              
+            </form>
+            <!-- /Newsletter form -->  
+        </div>
+
       </div>
     </div>
     <!--/top 2 col--> 
