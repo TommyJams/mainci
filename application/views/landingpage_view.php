@@ -109,10 +109,11 @@
             </div>
           </div>
         </div>
+      </div>  
 
         <div class="row" >
-          <div class="d-tj-offset-top-30">
-            <h4 style="font-size:25px; background-color:black" class="text-center">
+          <div class="col-md-12">
+            <h4 style="font-size:25px;color:black" class="text-center">
               <b>Music Lover? Drop your email id below.</b>
             </h4>
             <!-- Newsletter form -->
@@ -129,7 +130,7 @@
           </div>
         </div>  
 
-      </div>
+      
     </div>
     <!--/top 2 col--> 
     <!-- tour-->
