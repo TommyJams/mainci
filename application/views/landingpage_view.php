@@ -70,6 +70,20 @@
     background-color:#000000;
   }
 
+  #newsletter-form 
+  {
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+    
+    #newsletter-form ul.form-line li input[type="text"]
+    {
+      float:left;
+      width:323px;
+      margin-right:2px;
+    }
+
+
 </style>    
 
 </head>
