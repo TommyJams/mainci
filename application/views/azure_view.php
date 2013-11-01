@@ -234,7 +234,7 @@
 											<tr style="height: 50px; width: 100%">
 												<td style="width: 20%;"><img src="image/eventTiles/urbansolace.jpg" alt=""/></td>
 												<td style="width: 60%; vertical-align:middle;">Atharva @ Urban Solace</td>
-												<td style="width: 20%; vertical-align:middle;">26-Oct</td>
+												<td style="width: 20%; vertical-align:middle;">1-Nov</td>
 											</tr>
 										</table>
 									</a>
