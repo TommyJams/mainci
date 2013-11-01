@@ -110,22 +110,24 @@
           </div>
         </div>
 
-        <div class="row d-tj-offset-top-20" >
-              <h4 style="font-size:25px" color="black" class="text-center">
-                <b>Music Lover? Drop your email id below.</b>
-              </h4>
-              <!-- Newsletter form -->
-              <form name="newsletter-form" id="newsletter-form" action="" method="post" class="clear-fix"> 
-                <div class="clear-fix">
-                  <div id="listContainer" class="clear-fix block box-center">    
-                    <label for="newsletter-form-mail">Your e-mail</label>
-                    <input type="text" name="newsletter-form-mail" id="newsletter-form-mail" value=""/>
-                    <input type="submit" id="newsletter-form-send" name="newsletter-form-send" class="button" value="Invite"/>                   
-                  </div>                
-                </div>              
-              </form>
+        <div class="row" >
+          <div class="d-tj-offset-top-30">
+            <h4 style="font-size:25px; background-color:black" class="text-center">
+              <b>Music Lover? Drop your email id below.</b>
+            </h4>
+            <!-- Newsletter form -->
+            <form name="newsletter-form" id="newsletter-form" action="" method="post" class="text-center clear-fix"> 
+              <div class="clear-fix">
+                <div id="listContainer" class="clear-fix block box-center">    
+                  <label for="newsletter-form-mail">Your e-mail</label>
+                  <input type="text" name="newsletter-form-mail" id="newsletter-form-mail" value=""/>
+                  <input type="submit" id="newsletter-form-send" name="newsletter-form-send" class="button" value="Invite"/>                   
+                </div>                
+              </div>              
+            </form>
             <!-- /Newsletter form -->  
-        </div>
+          </div>
+        </div>  
 
       </div>
     </div>
