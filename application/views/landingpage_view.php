@@ -109,6 +109,38 @@
   <div class="container d-tj-container"> <a title="Revolutionizing Live Entertainment" href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a> 
     <!--top 2 col-->
     <div class=" d-tj-offset-top-40  d-tj-2-col-y-bg">
+
+      <div class="row">
+        <li class="text-center clear-fix">
+          <img src="image/icon/tjlogo_small.png" alt="" style="margin: 0 auto; width:316px; max-width:100%;"/>
+            <p class="subtitle-paragraph margin-top-20 margin-bottom-20 clear-fix">
+              <span class = "italic">
+                  Revolutionizing Live Entertainment.
+              </span>
+            </p>
+            
+            <p class="subtitle-paragraph margin-top-20 clear-fix">
+              TommyJams is a vision, an initiative, a spark, which shall illuminate the budding music talent in India.
+              Born in a Stanford University program, our aim is to develop a transparent, hassle-free and inexpensive community of Artists, Venues and Fans.
+              <span class="bold">
+                Music Lover? Drop your email id below.<br>
+                Artist or Venue? Click on "Book Events" or "Grab Tours"
+              </span>
+            </p>
+
+            <!-- Newsletter form -->
+            <form name="newsletter-form" id="newsletter-form" action="" method="post" class="clear-fix">  
+              <div class="clear-fix">
+                <div id="listContainer" class="clear-fix block box-center">
+                  <input type="text" name="newsletter-form-mail" id="newsletter-form-mail" placeholder="Your e-mail address" value=""/>
+                  <input type="submit" id="newsletter-form-send" name="newsletter-form-send" class="button" value="Invite"/>
+                </div>
+              </div>
+            </form>
+            <!-- /Newsletter form -->
+        </li>
+      </div>  
+
       <div class="row">
         <div class="col-md-6 d-tj-book-events" >
           <div class="col-md-12 d-tj-book-events-bg" >
@@ -141,26 +173,7 @@
           </div>
         </div>
       </div>  
-
-        <div class="row" >
-          <div class="col-md-12 d-tj-offset-top-20">
-            <h4 style="font-size:25px;color:black" class="text-center">
-              <b>Music Lover? Drop your email id below.</b>
-            </h4>
-            <!-- Newsletter form -->
-            <form name="newsletter-form" id="newsletter-form" action="" method="post" class="text-center clear-fix"> 
-              <div class="clear-fix">
-                <div id="listContainer" class="clear-fix block box-center">
-                  <input type="text" name="newsletter-form-mail" id="newsletter-form-mail" placeholder="Your e-mail address" value=""/>
-                  <input type="submit" id="newsletter-form-send" name="newsletter-form-send" class="button" value="Invite"/>
-                </div>                
-              </div>              
-            </form>
-            <!-- /Newsletter form -->  
-          </div>
-        </div>  
-
-      
+       
     </div>
     <!--/top 2 col--> 
     <!-- tour-->
