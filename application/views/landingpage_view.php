@@ -73,7 +73,7 @@
   #newsletter-form 
   {
     margin-top:-10px;
-    margin-bottom:-10px;
+    margin-bottom:10px;
   }
     
   #newsletter-form input[type="text"]
