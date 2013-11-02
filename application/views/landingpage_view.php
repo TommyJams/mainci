@@ -74,6 +74,7 @@
   {
     margin-top:0px;
     margin-bottom:0px;
+    margin-left:40px;
   }
     
   #newsletter-form input[type="text"]
