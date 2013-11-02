@@ -72,11 +72,11 @@
 
   #newsletter-form 
   {
-    margin-top:0px;
-    margin-bottom:0px;
+    margin-top:-10px;
+    margin-bottom:-10px;
   }
     
-    #newsletter-form ul.form-line li input[type="text"]
+    #newsletter-form #listContainer.input[type="text"]
     {
       float:left;
       width:323px;
@@ -126,7 +126,7 @@
       </div>  
 
         <div class="row" >
-          <div class="col-md-12 d-tj-offset-top-15">
+          <div class="col-md-12 d-tj-offset-top-20">
             <h4 style="font-size:25px;color:black" class="text-center">
               <b>Music Lover? Drop your email id below.</b>
             </h4>
