@@ -111,7 +111,6 @@
     <div class=" d-tj-offset-top-40  d-tj-2-col-y-bg">
 
       <div class="row">
-        <li class="text-center clear-fix">
           <img src="image/icon/tjlogo_small.png" alt="" style="margin: 0 auto; width:316px; max-width:100%;"/>
             <p class="subtitle-paragraph margin-top-20 margin-bottom-20 clear-fix">
               <span class = "italic">
@@ -138,7 +137,6 @@
               </div>
             </form>
             <!-- /Newsletter form -->
-        </li>
       </div>  
 
       <div class="row">
