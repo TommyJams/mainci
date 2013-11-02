@@ -212,7 +212,6 @@ class Model extends CI_Model{
 				}
 
 				$raised = "";
-				$count = 1;
 				$query4 = $this->db->query("SELECT * FROM fansCF WHERE campaign_id='$campaign_id';");
 				if ($query4->num_rows() > 0)
 				{
@@ -223,7 +222,7 @@ class Model extends CI_Model{
 
 						// Calculaing values of raised and totalPledges
 						$raised = $raised + $amount;
-						$totalPledges = $totalPledges + $count;
+						$totalPledges = $totalPledges + 1;
 					}
 
 					$query4 = $this->db->query("UPDATE `campaignCF` SET `raised`='$raised', `totalPledges`='$totalPledges' WHERE campaign_id='$campaign_id';");
