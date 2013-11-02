@@ -76,10 +76,29 @@
     margin-bottom:-10px;
   }
     
-    #newsletter-form input[type="text"]
-    {
-      border:1px solid #FFFFFF;
-    }
+  #newsletter-form input[type="text"]
+  {
+    border:1px solid #FFFFFF;
+    height:36px;
+    width:323px; 
+  }
+
+  #newsletter-form input[type="submit"]
+  {
+    width:75px;
+    height:38px;
+    float:right;
+    cursor:pointer;
+    text-align:center;
+    padding:10px 0px 10px 0px; 
+  }
+
+  #newsletter-form input[type="submit"]:hover
+  {
+    border-color:#000000;
+    background-color:#000000;
+    color:#FFFFFF; 
+  }
 
 
 </style>    
@@ -132,9 +151,8 @@
             <form name="newsletter-form" id="newsletter-form" action="" method="post" class="text-center clear-fix"> 
               <div class="clear-fix">
                 <div id="listContainer" class="clear-fix block box-center">
-                      <input type="text" name="newsletter-form-mail" id="newsletter-form-mail" placeholder="Your e-mail" value=""/>
-                      <input type="submit" id="newsletter-form-send" name="newsletter-form-send" class="button" value="Invite"/>
-                   
+                  <input type="text" name="newsletter-form-mail" id="newsletter-form-mail" placeholder="Your e-mail address" value=""/>
+                  <input type="submit" id="newsletter-form-send" name="newsletter-form-send" class="button" value="Invite"/>
                 </div>                
               </div>              
             </form>
