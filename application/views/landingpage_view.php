@@ -79,14 +79,14 @@
   #newsletter-form input[type="text"]
   {
     border:1px solid #FFFFFF;
-    height:36px;
+    height:39px;
     width:100px; 
   }
 
   #newsletter-form input[type="submit"]
   {
-    width:20px;
-    height:36px;
+    width:10px;
+    height:39px;
     cursor:pointer;
     text-align:center;
     padding:10px 0px 10px 0px;
