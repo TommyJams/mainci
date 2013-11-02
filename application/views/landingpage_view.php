@@ -99,8 +99,8 @@
 
   #newsletter-form input[type="submit"]:hover
   {
-    border-color:#000000;
-    background-color:#000000;
+    border-color:#FFFFFF;
+    background-color:#FFFFFF;
     color:#000000; 
   }
 
