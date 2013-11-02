@@ -86,11 +86,11 @@
   #newsletter-form input[type="submit"]
   {
     width:75px;
-    height:38px;
-    float:right;
+    height:36px;
     cursor:pointer;
     text-align:center;
-    padding:10px 0px 10px 0px; 
+    padding:10px 0px 10px 0px;
+    background-color:#FFFFFF; 
   }
 
   #newsletter-form input[type="submit"]:hover
