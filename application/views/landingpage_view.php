@@ -104,7 +104,6 @@
   {
     font-family:'Dosis';
     margin-bottom:10px;
-    color:#FFFFFF;
   }
 
   p.subtitle-paragraph,
@@ -114,7 +113,6 @@
     font-size:24px;
     font-weight:400;
     line-height:120%;
-    color:#FFFFFF;
   }
 
   p.subtitle-paragraph span.bold
@@ -122,7 +120,6 @@
     clear:both;
     display:block;
     font-weight:700;
-    color:#FFFFFF;
   }
 
 </style>    
@@ -135,32 +132,25 @@
     <div class=" d-tj-offset-top-40  d-tj-2-col-y-bg">
 
       <div class="row text-center ">
-          <img src="image/icon/tjlogo_small.png" alt="" style="margin: 0 auto; width:316px; max-width:100%;"/>
-            <p class="subtitle-paragraph margin-top-20 margin-bottom-20 clear-fix">
-              <span class = "italic">
-                  Revolutionizing Live Entertainment.
-              </span>
-            </p>
-            
-            <p class="subtitle-paragraph margin-top-20 clear-fix">
-              TommyJams is a vision, an initiative, a spark, which shall illuminate the budding music talent in India.
-              Born in a Stanford University program, our aim is to develop a transparent, hassle-free and inexpensive community of Artists, Venues and Fans.
-              <span class="bold">
-                Music Lover? Drop your email id below.<br>
-                Artist or Venue? Click on "Book Events" or "Grab Tours"
-              </span>
-            </p>
+        <p class="subtitle-paragraph margin-top-20 clear-fix" style="color:black">
+          TommyJams is a vision, an initiative, a spark, which shall illuminate the budding music talent in India.
+          Born in a Stanford University program, our aim is to develop a transparent, hassle-free and inexpensive community of Artists, Venues and Fans.
+          <span class="bold">
+            Music Lover? Drop your email id below.<br>
+            Artist or Venue? Click on "Book Events" or "Grab Tours"
+          </span>
+        </p>
 
-            <!-- Newsletter form -->
-            <form name="newsletter-form" id="newsletter-form" action="" method="post" class="clear-fix">  
-              <div class="clear-fix">
-                <div id="listContainer" class="clear-fix block box-center">
-                  <input type="text" name="newsletter-form-mail" id="newsletter-form-mail" placeholder="Your e-mail address" value=""/>
-                  <input type="submit" id="newsletter-form-send" name="newsletter-form-send" class="button" value="Invite"/>
-                </div>
-              </div>
-            </form>
-            <!-- /Newsletter form -->
+        <!-- Newsletter form -->
+        <form name="newsletter-form" id="newsletter-form" action="" method="post" class="clear-fix">  
+          <div class="clear-fix">
+            <div id="listContainer" class="clear-fix block box-center">
+              <input type="text" name="newsletter-form-mail" id="newsletter-form-mail" placeholder="Your e-mail address" value=""/>
+              <input type="submit" id="newsletter-form-send" name="newsletter-form-send" class="button" value="Invite"/>
+            </div>
+          </div>
+        </form>
+        <!-- /Newsletter form -->
       </div>  
 
       <div class="row">
