@@ -210,6 +210,26 @@ class Model extends CI_Model{
 						$contributes[] = $rowFans;
 					}
 				}
+
+				$raised = "";
+				$totalPledges = "";
+				$query4 = $this->db->query("SELECT * FROM fansCF WHERE campaign_id='$campaign_id';");
+				if ($query4->num_rows() > 0)
+				{
+					$qresult4 = $query4->result();
+					foreach ($qresult4 as $row)
+					{
+						$sno = $row->sno;
+						$amount = $row->amount;
+
+						// Calculaing values of raised and totalPledges
+						$raised = $raised + $amount;
+						$totalPledges = $totalPledges + $sno;
+					}
+
+					$query4 = $this->db->query("INSERT INTO `campaignCF` (`raised`, `totalPledges`) 
+					VALUES('".$this->db->escape_str($raised)."', '".$this->db->escape_str($totalPledges)."')");
+				}
    				
    				$todayDate = date("Y-m-d");	
 
