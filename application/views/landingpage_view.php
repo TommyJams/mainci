@@ -72,8 +72,8 @@
 
   #newsletter-form 
   {
-    margin-top:-10px;
-    margin-bottom:20px;
+    margin-top:0px;
+    margin-bottom:0px;
   }
     
   #newsletter-form input[type="text"]
@@ -89,7 +89,7 @@
     height:39px;
     cursor:pointer;
     text-align:center;
-    font-size:10px;
+    font-size:15px;
     padding:10px 0px 10px 0px;
     background-color:#FFFFFF; 
   }
@@ -319,7 +319,7 @@
                     <!-- Newsletter form -->
                     <form name="newsletter-form" id="newsletter-form" action="" method="post" class="clear-fix">  
                       <input type="text" name="newsletter-form-mail" id="newsletter-form-mail" placeholder="Your e-mail address" value=""/>
-                      <input type="submit" id="newsletter-form-send" name="newsletter-form-send" class="button" value="Invite"/>
+                      <input type="submit" id="newsletter-form-send" name="newsletter-form-send" class="button" value="Subscribe"/>
                     </form>
                     <!-- /Newsletter form -->
                   </li>
