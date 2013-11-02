@@ -92,13 +92,15 @@
     text-align:center;
     font-size:15px;
     padding:10px 0px 10px 0px;
-    background-color:#FFFFFF; 
+    border-color:#FFCC00;
+    background-color:#FFCC00;
+    color:#000000; 
   }
 
   #newsletter-form input[type="submit"]:hover
   {
-    border-color:#FFCC00;
-    background-color:#FFCC00;
+    border-color:#000000;
+    background-color:#000000;
     color:#000000; 
   }
 
