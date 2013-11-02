@@ -76,7 +76,7 @@
     margin-bottom:-10px;
   }
     
-    #newsletter-form ul.form-line li input[type="text"]
+    #newsletter-form input[type="text"]
     {
       border:1px solid #FFFFFF;
     }
@@ -132,13 +132,9 @@
             <form name="newsletter-form" id="newsletter-form" action="" method="post" class="text-center clear-fix"> 
               <div class="clear-fix">
                 <div id="listContainer" class="clear-fix block box-center">
-                  <ul class="no-list form-line">
-                    <li class="clear-fix block">
-                      <label for="newsletter-form-mail">Your e-mail</label>
-                      <input type="text" name="newsletter-form-mail" id="newsletter-form-mail" value=""/>
+                      <input type="text" name="newsletter-form-mail" id="newsletter-form-mail" placeholder="Your e-mail" value=""/>
                       <input type="submit" id="newsletter-form-send" name="newsletter-form-send" class="button" value="Invite"/>
-                    </li> 
-                  </ul>
+                   
                 </div>                
               </div>              
             </form>
