@@ -317,12 +317,8 @@
                   <li>
                     <!-- Newsletter form -->
                     <form name="newsletter-form" id="newsletter-form" action="" method="post" class="clear-fix">  
-                      <div class="clear-fix">
-                        <div id="listContainer" class="clear-fix block box-center">
-                          <input type="text" name="newsletter-form-mail" id="newsletter-form-mail" placeholder="Your e-mail address" value=""/>
-                          <input type="submit" id="newsletter-form-send" name="newsletter-form-send" class="button" value="Invite"/>
-                        </div>
-                      </div>
+                      <input type="text" name="newsletter-form-mail" id="newsletter-form-mail" placeholder="Your e-mail address" value=""/>
+                      <input type="submit" id="newsletter-form-send" name="newsletter-form-send" class="button" value="Invite"/>
                     </form>
                     <!-- /Newsletter form -->
                   </li>
