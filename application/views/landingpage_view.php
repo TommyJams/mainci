@@ -97,9 +97,9 @@
 
   #newsletter-form input[type="submit"]:hover
   {
-    border-color:#000000;
-    background-color:#000000;
-    color:#FFFFFF; 
+    border-color:#FFCC00;
+    background-color:#FFCC00;
+    color:#000000; 
   }
 
   /*p.subtitle-paragraph
