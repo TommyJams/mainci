@@ -80,12 +80,12 @@
   {
     border:1px solid #FFFFFF;
     height:36px;
-    width:323px; 
+    width:100px; 
   }
 
   #newsletter-form input[type="submit"]
   {
-    width:75px;
+    width:20px;
     height:36px;
     cursor:pointer;
     text-align:center;
@@ -100,7 +100,7 @@
     color:#FFFFFF; 
   }
 
-  p.subtitle-paragraph
+  /*p.subtitle-paragraph
   {
     font-family:'Dosis';
     margin-bottom:10px;
@@ -120,7 +120,7 @@
     clear:both;
     display:block;
     font-weight:700;
-  }
+  }*/
 
 </style>    
 
@@ -129,29 +129,7 @@
 <div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a title="Revolutionizing Live Entertainment" href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a> 
     <!--top 2 col-->
-    <div class=" d-tj-offset-top-40  d-tj-2-col-y-bg">
-
-      <div class="row text-center ">
-        <p class="subtitle-paragraph margin-top-20 clear-fix" style="color:black">
-          Born in a Stanford University program, TommyJams is a transparent, hassle-free and inexpensive community of Artists, Venues and Fans.
-          <span class="bold">
-            Music Lover? Drop your email id below.<br>
-            Artist/Venue? "Book Events/Grab Tours".
-          </span>
-        </p>
-
-        <!-- Newsletter form -->
-        <form name="newsletter-form" id="newsletter-form" action="" method="post" class="clear-fix">  
-          <div class="clear-fix">
-            <div id="listContainer" class="clear-fix block box-center">
-              <input type="text" name="newsletter-form-mail" id="newsletter-form-mail" placeholder="Your e-mail address" value=""/>
-              <input type="submit" id="newsletter-form-send" name="newsletter-form-send" class="button" value="Invite"/>
-            </div>
-          </div>
-        </form>
-        <!-- /Newsletter form -->
-      </div>  
-
+    <div class=" d-tj-offset-top-40  d-tj-2-col-y-bg">  
       <div class="row">
         <div class="col-md-6 d-tj-book-events" >
           <div class="col-md-12 d-tj-book-events-bg" >
@@ -183,8 +161,7 @@
             </div>
           </div>
         </div>
-      </div>  
-       
+      </div>   
     </div>
     <!--/top 2 col--> 
     <!-- tour-->
@@ -337,6 +314,18 @@
                   <li><a style="margin-right:2px;" href="http://www.facebook.com/tommyjams.live" title="" alt="Facebook" target="_blank" class="social-list-facebook" data-original-title="Facebook"></a></li>
                   <li><a style="margin-right:2px;" href="http://twitter.com/TommyJams" title="" alt="Twitter" target="_blank" class="social-list-twitter" data-original-title="Twitter"></a></li>
                   <li><a style="margin-right:2px;" href="http://www.tommyjams.com/blog" title="" alt="Blog" target="_blank" class="social-list-blog" data-original-title="Blog"></a></li>
+                  <li>
+                    <!-- Newsletter form -->
+                    <form name="newsletter-form" id="newsletter-form" action="" method="post" class="clear-fix">  
+                      <div class="clear-fix">
+                        <div id="listContainer" class="clear-fix block box-center">
+                          <input type="text" name="newsletter-form-mail" id="newsletter-form-mail" placeholder="Your e-mail address" value=""/>
+                          <input type="submit" id="newsletter-form-send" name="newsletter-form-send" class="button" value="Invite"/>
+                        </div>
+                      </div>
+                    </form>
+                    <!-- /Newsletter form -->
+                  </li>
                 </ul>
               </div>
               <div class="clearfix"></div>
