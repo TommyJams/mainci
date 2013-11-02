@@ -27,7 +27,7 @@
           <li>
             <h4 >VENUES</h4>
           </li>
-          <li> <a href="/index">BOOK ARTIST</a> </li>
+          <li> <a href="/index">BOOK ARTISTS</a> </li>
         </ul>
       </div>
       <div class="col-md-3 col-sm-3 col-xs-3 f-fans text-center">
@@ -35,7 +35,7 @@
           <li>
             <h4 >FANS</h4>
           </li>
-          <li> <a href="/fans">CAMPAIGN</a> </li>
+          <li> <a href="/fans">CAMPAIGNS</a> </li>
           <li> <a href="/radioone">RADIO ONE</a> </li>
           <li> <a href="http://mewsic.in/" target="_blank">MEWSIC</a> </li>
         </ul>

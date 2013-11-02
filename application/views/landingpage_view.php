@@ -133,11 +133,10 @@
 
       <div class="row text-center ">
         <p class="subtitle-paragraph margin-top-20 clear-fix" style="color:black">
-          TommyJams is a vision, an initiative, a spark, which shall illuminate the budding music talent in India.
-          Born in a Stanford University program, our aim is to develop a transparent, hassle-free and inexpensive community of Artists, Venues and Fans.
+          Born in a Stanford University program, TommyJams is a transparent, hassle-free and inexpensive community of Artists, Venues and Fans.
           <span class="bold">
             Music Lover? Drop your email id below.<br>
-            Artist or Venue? Click on "Book Events" or "Grab Tours"
+            Artist/Venue? "Book Events/Grab Tours".
           </span>
         </p>
 
