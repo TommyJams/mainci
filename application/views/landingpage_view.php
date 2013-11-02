@@ -73,7 +73,7 @@
   #newsletter-form 
   {
     margin-top:-10px;
-    margin-bottom:10px;
+    margin-bottom:20px;
   }
     
   #newsletter-form input[type="text"]
@@ -110,7 +110,7 @@
     <!--top 2 col-->
     <div class=" d-tj-offset-top-40  d-tj-2-col-y-bg">
 
-      <div class="row">
+      <div class="row text-center ">
           <img src="image/icon/tjlogo_small.png" alt="" style="margin: 0 auto; width:316px; max-width:100%;"/>
             <p class="subtitle-paragraph margin-top-20 margin-bottom-20 clear-fix">
               <span class = "italic">
