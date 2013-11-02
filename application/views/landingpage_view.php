@@ -104,6 +104,7 @@
   {
     font-family:'Dosis';
     margin-bottom:10px;
+    color:#FFFFFF;
   }
 
   p.subtitle-paragraph,
@@ -113,6 +114,7 @@
     font-size:24px;
     font-weight:400;
     line-height:120%;
+    color:#FFFFFF;
   }
 
   p.subtitle-paragraph span.bold
@@ -120,6 +122,7 @@
     clear:both;
     display:block;
     font-weight:700;
+    color:#FFFFFF;
   }
 
 </style>    
