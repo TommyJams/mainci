@@ -86,7 +86,7 @@
 
   #newsletter-form input[type="submit"]
   {
-    width:10px;
+    width:80px;
     height:39px;
     cursor:pointer;
     text-align:center;
