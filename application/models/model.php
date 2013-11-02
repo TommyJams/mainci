@@ -212,6 +212,7 @@ class Model extends CI_Model{
 				}
 
 				$raised = "";
+				$totalPledges = "";
 				$query4 = $this->db->query("SELECT * FROM fansCF WHERE campaign_id='$campaign_id';");
 				if ($query4->num_rows() > 0)
 				{
