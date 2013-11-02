@@ -78,9 +78,7 @@
     
     #newsletter-form ul.form-line li input[type="text"]
     {
-      float:left;
-      width:323px;
-      margin-right:2px;
+      border:1px solid #FFFFFF;
     }
 
 
