@@ -100,6 +100,27 @@
     color:#FFFFFF; 
   }
 
+  p.subtitle-paragraph
+  {
+    font-family:'Dosis';
+    margin-bottom:10px;
+  }
+
+  p.subtitle-paragraph,
+  p.subtitle-paragraph span.bold
+  {
+    padding:0px;
+    font-size:24px;
+    font-weight:400;
+    line-height:120%;
+  }
+
+  p.subtitle-paragraph span.bold
+  {
+    clear:both;
+    display:block;
+    font-weight:700;
+  }
 
 </style>    
 
