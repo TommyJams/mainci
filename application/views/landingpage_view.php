@@ -78,9 +78,9 @@
     
   #newsletter-form input[type="text"]
   {
-    border:1px solid #FFFFFF;
+    border:10px solid #FFFFFF;
     height:39px;
-    width:100px; 
+    width:150px; 
   }
 
   #newsletter-form input[type="submit"]
@@ -89,6 +89,7 @@
     height:39px;
     cursor:pointer;
     text-align:center;
+    font-size:10px;
     padding:10px 0px 10px 0px;
     background-color:#FFFFFF; 
   }
