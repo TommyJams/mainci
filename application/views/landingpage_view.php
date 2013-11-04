@@ -441,8 +441,15 @@
 		auto:2000,
 		speed:1000
 	});
-});
 
+  $('#newsletter-form').bind('submit',function(e) 
+  {
+    e.preventDefault();
+    submitNewsletterForm();
+  });
+  
+});
+  
 </script> 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> 
 <script type="text/javascript" language="javascript" src="/script/jquery.carouFredSel-6.2.1-packed.js"></script> 
