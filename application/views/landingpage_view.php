@@ -83,6 +83,7 @@
     border:10px solid #FFFFFF;
     height:39px;
     width:180px; 
+    vertical-align: top;
   }
 
   #newsletter-form input[type="submit"]
