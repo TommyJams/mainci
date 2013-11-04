@@ -5,7 +5,7 @@
 	function submitNewsletterForm()
 	{
 		console.info("submitting");
-        blockForm('newsletter-form','block');
+        //blockForm('newsletter-form','block');
 	    $.post('newsletter/validateData',$('#newsletter-form').serialize(),submitNewsletterFormResponse,'json');
     }
 	
