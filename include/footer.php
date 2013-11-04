@@ -18,8 +18,8 @@
             <li>
               <h4>ARTIST</h4>
             </li>
-            <li> <a href="/tours">GRAB TOURS</a> </li>
-          <li> <a href="/index">BOOK EVENTS</a> </li>
+            <li> <a target="_blank" href="/tours">GRAB TOURS</a> </li>
+          <li> <a target="_blank" href="/index">BOOK EVENTS</a> </li>
         </ul>
       </div>
       <div class="col-md-3 col-sm-3 col-xs-3 f-venues text-center">
@@ -27,7 +27,7 @@
           <li>
             <h4 >VENUES</h4>
           </li>
-          <li> <a href="/index">BOOK ARTISTS</a> </li>
+          <li> <a target="_blank" href="/index">BOOK ARTISTS</a> </li>
         </ul>
       </div>
       <div class="col-md-3 col-sm-3 col-xs-3 f-fans text-center">
@@ -35,9 +35,9 @@
           <li>
             <h4 >FANS</h4>
           </li>
-          <li> <a href="/fans">CAMPAIGNS</a> </li>
-          <li> <a href="/radioone">RADIO ONE</a> </li>
-          <li> <a href="http://mewsic.in/" target="_blank">MEWSIC</a> </li>
+          <li> <a target="_blank" href="/fans">CAMPAIGNS</a> </li>
+          <li> <a target="_blank" href="/radioone">RADIO ONE</a> </li>
+          <li> <a target="_blank" href="http://mewsic.in/" target="_blank">MEWSIC</a> </li>
         </ul>
       </div>
       <div class="col-md-3 col-sm-3 col-xs-3 f-help text-center">
@@ -45,10 +45,10 @@
           <li>
             <h4 >HELP</h4>
           </li>
-          <li> <a href="/help">CONTACT US</a> </li>
-          <li> <a href="/aboutus">ABOUT US</a> </li>
-          <li> <a href="/press">PRESS</a> </li>
-          <li> <a href="/advertise">ADVERTISE</a> </li>
+          <li> <a target="_blank" href="/help">CONTACT US</a> </li>
+          <li> <a target="_blank" href="/aboutus">ABOUT US</a> </li>
+          <li> <a target="_blank" href="/press">PRESS</a> </li>
+          <li> <a target="_blank" href="/advertise">ADVERTISE</a> </li>
           </ul>
         </div>
       </div>
