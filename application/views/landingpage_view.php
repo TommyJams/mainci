@@ -75,14 +75,14 @@
   {
     margin-top:0px;
     margin-bottom:0px;
-    margin-left:40px;
+    margin-left:10px;
   }
     
   #newsletter-form input[type="text"]
   {
     border:10px solid #FFFFFF;
     height:39px;
-    width:150px; 
+    width:180px; 
   }
 
   #newsletter-form input[type="submit"]
