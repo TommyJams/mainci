@@ -146,7 +146,7 @@
               </h4>
             </div>
             <div class="text-center d-tj-offset-top-20">
-              <input target="_blank" onClick="window.location.href='/index'" type="button" value="BOOK EVENTS">
+              <input onclick="window.open('/index', '_blank');" type="button" value="BOOK EVENTS">
             </div>
           </div>
         </div>
