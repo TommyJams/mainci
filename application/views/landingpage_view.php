@@ -451,6 +451,7 @@
 <script type="text/javascript" src="/script/jquery.supersized.shutter.min.js"></script> 
 <script type="text/javascript" src="/script/jcarousellite_1.0.1c4.js"></script> 
 <script type="text/javascript" src="/script/jquery.qtip.min.js"></script>
+<script type="text/javascript" src="/script/newsletter-form.js"></script>
 <script src="/script/tj.js"></script>
 </body>
 </html>
