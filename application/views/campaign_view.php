@@ -281,7 +281,7 @@
                   <? 
                     } 
                   ?>
-                  <iframe frameborder="0" src="http://em.explara.com/widget/test-event-ci" width="315" height="683"></iframe>
+                  <iframe frameborder="0" src="http://em.explara.com/widget/test-event-ci" width="315" height="900"></iframe>
                 </div>
               </div>
               <div class="tab-pane fade" id="profile">
