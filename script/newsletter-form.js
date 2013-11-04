@@ -14,7 +14,7 @@
 	function submitNewsletterFormResponse(response)
 	{
         console.info("submitted...");
-        blockForm('newsletter-form','unblock');
+        //blockForm('newsletter-form','unblock');
         $('#newsletter-form-mail,#newsletter-form-send').qtip('destroy');
 
         var tPosition=
