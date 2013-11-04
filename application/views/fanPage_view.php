@@ -112,7 +112,7 @@
             In case you are an artist and want to start a campaign of your own, learn how to do it by simply visiting our available tours page.
         </h5>
         <div class="text-center ">
-        <input class="apply-btn" style="" onClick="window.location.href='/tours'" type="button" value="LEARN MORE">
+        <input class="apply-btn" style="" onclick="window.open('/tours', '_blank');" type="button" value="LEARN MORE">
       </div>   
       </div>
     </div>

@@ -161,7 +161,7 @@
               </h4>
             </div>
             <div class="text-center d-tj-offset-top-20">
-              <input target="_blank" onClick="window.location.href='/tours'" type="button" value="GRAB TOURS" >
+              <input onclick="window.open('/tours', '_blank');" type="button" value="GRAB TOURS" >
             </div>
           </div>
         </div>
@@ -235,8 +235,8 @@
         </h5>
       </div>
         <div class="text-center" >
-          <input class="apply-btn" target="_blank" onClick="window.location.href='/fans'" type="button" value="ALL CAMPAIGNS">
-          <input class="apply-btn" target="_blank" onClick="window.location.href='/tours'" type="button" value="START CAMPAIGN">
+          <input class="apply-btn" onclick="window.open('/fans', '_blank');" type="button" value="ALL CAMPAIGNS">
+          <input class="apply-btn" onclick="window.open('/tours', '_blank');" type="button" value="START CAMPAIGN">
       </div>
       <div class="clearfix"></div>
     </div>
