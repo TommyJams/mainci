@@ -282,8 +282,7 @@
                     } 
                   ?>
                   <iframe frameborder="0" src="http://em.explara.com/widget/test-event-ci" width="315" height="890"></iframe>
-                  <div> 
-                    <h4> hi </h4>
+                  <div style="z-index:1; position:absolute; background-color:black;"> 
                   </div>
                 </div>
               </div>
