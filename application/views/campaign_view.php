@@ -120,7 +120,7 @@
             <h4 class="tgt" >TARGET : INR <? print($target); ?></h4>
             <h3><? print($days_to_go); ?> DAYS TO GO</h3>
             <div class="text-center d-tj-offset-top-40 pledge-btn-top">
-              <input type="button" value="BUY NOW" onclick="window.location.href='http://em.explara.com/event/test-event-ci'" >
+              <input type="button" value="BUY NOW" onclick="window.open('http://em.explara.com/event/test-event-ci', '_blank');" >
             </div>
           </div>
         </div>
@@ -314,7 +314,7 @@
             <!--/Tabs -->
 
             <div class=" d-tj-offset-top-30 pledge-btn" >
-              <input type="button" value="BUY NOW" style="" onclick="window.location.href='http://em.explara.com/event/test-event-ci'">
+              <input type="button" value="BUY NOW" style="" onclick="window.open('http://em.explara.com/event/test-event-ci', '_blank');">
             </div>
           </div>
         </div>
