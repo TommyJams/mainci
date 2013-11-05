@@ -1056,7 +1056,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 .d-tj-pledge {
 	margin-left:0px !important;
-	margin-top:30px
+	margin-top:0px
+}
+.d-tj-tab {
+	margin-left:0px;
+	margin-top:30px;
 }
 .d-tj-video {
 	width:660px;
