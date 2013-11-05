@@ -722,6 +722,9 @@ ul.social-list li a.social-list-blog-edit {
     padding: 10px 15px;
     position: relative;
 }
+.table tbody  tr td {
+	border-top:0px;
+}
 
 /* Editor */
 #editor {
