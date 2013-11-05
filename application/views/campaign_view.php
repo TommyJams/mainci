@@ -281,7 +281,10 @@
                   <? 
                     } 
                   ?>
-                  <iframe frameborder="0" src="http://em.explara.com/widget/test-event-ci" width="315" height="900"></iframe>
+                  <iframe frameborder="0" src="http://em.explara.com/widget/test-event-ci" width="315" height="890"></iframe>
+                  <div> 
+                    <h4> hi </h4>
+                  </div>
                 </div>
               </div>
               <div class="tab-pane fade" id="profile">
