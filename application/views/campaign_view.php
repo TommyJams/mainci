@@ -132,7 +132,7 @@
         <div class="col-md-7 " >
         <div class="row"> 
         <div class="d-tj-artist">    
-          <h3 style="margin-top: 5px;"><? print($artist_name); ?></h3>
+          <h3 style="margin-top: 5px; text-transform:none;"><? print($artist_name); ?></h3>
           <? foreach($venues as $venue){ ?>
             <?
               $venue_name = $venue->venue_name;
@@ -306,7 +306,7 @@
                     } 
                   ?>
                   </div>
-                  <!--<div class="seperator" ></div>-->
+                  <div class="seperator" ></div>
                   <? if(!isset($contributors)) { $contributors = "";?>
                   <h4>Be the first fan to buy ticket and help <?print($artist_name);?> tour.</h4>
                   <? } ?>
