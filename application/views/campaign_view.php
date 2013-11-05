@@ -286,7 +286,16 @@
               </div>
               <div class="tab-pane fade" id="profile">
                 <div class="d-tj-pledge">
-                  <? if(isset($contributors)) { ?>  
+                  <? if(isset($contributors)) { ?> 
+                    <table class="table" >
+                    <thead>
+                      <tr >
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody> 
                   <? foreach($contributors as $contributor){ ?>
                   <?
                     $fans_name = $contributor->name;
@@ -295,29 +304,21 @@
                     $fans_contact = $contributor->contact;
                     $fans_location = $contributor->location;
                   ?>
-                  <table class="table" >
-                    <thead>
-                      <tr >
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                      </tr>
-                    </thead>
-                    <tbody>
+                  
                       <tr>
                         <td style="font-size:14px"><? print($fans_name); ?></td>
                         <td style="font-size:14px">INR <? print($fans_contribution); ?></td>
                         <td style="font-size:14px"><? print($fans_location); ?></td>
                       </tr>
-                    </tbody>  
-                  </table>
                       
                     <!--  <h4><? //print($fans_name); ?></h4>
                       <h5>INR <? //print($fans_contribution); ?></h5>
                       <h5><? //print($fans_location); ?></h5> 
                           
                   <div class="seperator" ></div>  -->
-                  <? } } ?>
+                  <? } ?> </tbody>  
+                  </table>
+                  <? } ?>
                   <? if(!isset($contributors)) { $contributors = "";?>
                   <h4>Be the first fan to buy ticket and help <?print($artist_name);?> tour.</h4>
                   <? } ?>
