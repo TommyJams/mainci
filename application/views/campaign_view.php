@@ -305,18 +305,18 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td><? print($fans_name); ?></td>
-                        <td>INR <? print($fans_contribution); ?></td>
-                        <td><? print($fans_location); ?></td>
+                        <td style="font-size:14px"><? print($fans_name); ?></td>
+                        <td style="font-size:14px">INR <? print($fans_contribution); ?></td>
+                        <td style="font-size:14px"><? print($fans_location); ?></td>
                       </tr>
                     </tbody>  
                   </table>
                       
                     <!--  <h4><? //print($fans_name); ?></h4>
                       <h5>INR <? //print($fans_contribution); ?></h5>
-                      <h5><? //print($fans_location); ?></h5>--> 
+                      <h5><? //print($fans_location); ?></h5> 
                           
-                  <div class="seperator" ></div>  
+                  <div class="seperator" ></div>  -->
                   <? } } ?>
                   <? if(!isset($contributors)) { $contributors = "";?>
                   <h4>Be the first fan to buy ticket and help <?print($artist_name);?> tour.</h4>
