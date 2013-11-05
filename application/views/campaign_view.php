@@ -302,11 +302,11 @@
                     <h5><? print($fans_contact); ?></h5>
                     <h5><? print($fans_location); ?></h5>
                   </div>  
-                  <div class="seperator" ></div>
                   <? 
                       }
                     } 
                   ?>
+                  <div class="seperator" ></div>
                   <? if(!isset($contributors)) { $contributors = "";?>
                   <h4>Be the first fan to buy ticket and help <?print($artist_name);?> tour.</h4>
                   <? } ?>
