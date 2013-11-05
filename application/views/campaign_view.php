@@ -299,11 +299,10 @@
                     <h4><? print($fans_name); ?></h4>
                     <h5>INR <? print($fans_contribution); ?></h5>
                     <h5><? print($fans_contact); ?></h5>
-                    <h5><? print($fans_location); ?></h5>  
-                  </div>
+                    <h5><? print($fans_location); ?></h5> 
+                  </div>   
                   <? } ?>
-                  
-                  <div class="seperator" ></div>
+                  <!--<div class="seperator" ></div>-->
                   <?
                     } 
                   ?>
