@@ -306,9 +306,9 @@
                   ?>
                   
                       <tr>
-                        <td style="font-size:14px"><? print($fans_name); ?></td>
-                        <td style="font-size:14px">INR <? print($fans_contribution); ?></td>
-                        <td style="font-size:14px"><? print($fans_location); ?></td>
+                        <td style="font-size:18px"><? print($fans_name); ?></td>
+                        <td style="font-size:18px">INR <? print($fans_contribution); ?></td>
+                        <td style="font-size:18px"><? print($fans_location); ?></td>
                       </tr>
                       
                     <!--  <h4><? //print($fans_name); ?></h4>
