@@ -288,13 +288,6 @@
                 <div class="d-tj-pledge">
                   <? if(isset($contributors)) { ?> 
                     <table class="table" >
-                    <thead>
-                      <tr >
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                      </tr>
-                    </thead>
                     <tbody> 
                   <? foreach($contributors as $contributor){ ?>
                   <?
