@@ -286,9 +286,9 @@
               </div>
               <div class="tab-pane fade" id="profile">
                 <div class="d-tj-pledge">
-                  <? if(isset($contributors))
-                  { 
-                    foreach($contributors as $contributor){ ?>
+                  <? if(isset($contributors)) { ?>
+                  <div class="col-md-4">  
+                  <? foreach($contributors as $contributor){ ?>
                   <?
                     $fans_name = $contributor->name;
                     $fans_contribution = $contributor->amount;
@@ -296,18 +296,16 @@
                     $fans_contact = $contributor->contact;
                     $fans_location = $contributor->location;
                   ?>
-                  <div class="col-md-4">
                     <h4><? print($fans_name); ?></h4>
                     <h5>INR <? print($fans_contribution); ?></h5>
                     <h5><? print($fans_contact); ?></h5>
                     <h5><? print($fans_location); ?></h5>  
                   <? } ?>
                   </div>
+                  <div class="seperator" ></div>
                   <?
                     } 
                   ?>
-                  
-                  <div class="seperator" ></div>
                   <? if(!isset($contributors)) { $contributors = "";?>
                   <h4>Be the first fan to buy ticket and help <?print($artist_name);?> tour.</h4>
                   <? } ?>
