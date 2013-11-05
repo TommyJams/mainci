@@ -295,10 +295,28 @@
                     $fans_contact = $contributor->contact;
                     $fans_location = $contributor->location;
                   ?>
-                    <h4><? print($fans_name); ?></h4>
-                    <h5>INR <? print($fans_contribution); ?></h5>
-                    <h5><? print($fans_location); ?></h5> 
-                    <div class="seperator" ></div>  
+                  <table class="table" >
+                    <thead>
+                      <tr >
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><? print($fans_name); ?></td>
+                        <td>INR <? print($fans_contribution); ?></td>
+                        <td><? print($fans_location); ?></td>
+                      </tr>
+                    </tbody>  
+                  </table>
+                      
+                    <!--  <h4><? //print($fans_name); ?></h4>
+                      <h5>INR <? //print($fans_contribution); ?></h5>
+                      <h5><? //print($fans_location); ?></h5>--> 
+                          
+                  <div class="seperator" ></div>  
                   <? } } ?>
                   <? if(!isset($contributors)) { $contributors = "";?>
                   <h4>Be the first fan to buy ticket and help <?print($artist_name);?> tour.</h4>
