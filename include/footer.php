@@ -18,7 +18,7 @@
             <li>
               <h4>ARTIST</h4>
             </li>
-            <li> <a target="_blank" href="/tours">GRAB TOURS</a> </li>
+            <li> <a target="_blank" href="/tours">BOOK TOURS</a> </li>
           <li> <a target="_blank" href="/index">BOOK EVENTS</a> </li>
         </ul>
       </div>
@@ -35,7 +35,7 @@
           <li>
             <h4 >FANS</h4>
           </li>
-          <li> <a target="_blank" href="/fans">CAMPAIGNS</a> </li>
+          <li> <a target="_blank" href="/roadshows">ROADSHOWS</a> </li>
           <li> <a target="_blank" href="/radioone">RADIO ONE</a> </li>
           <li> <a target="_blank" href="http://mewsic.in/" target="_blank">MEWSIC</a> </li>
         </ul>

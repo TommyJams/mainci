@@ -163,7 +163,7 @@
               </h4>
             </div>
             <div class="text-center d-tj-offset-top-20">
-              <input onclick="window.open('/tours', '_blank');" type="button" value="GRAB TOURS" >
+              <input onclick="window.open('/tours', '_blank');" type="button" value="BOOK TOURS" >
             </div>
           </div>
         </div>
@@ -172,7 +172,7 @@
     <!--/top 2 col--> 
     <!-- tour-->
     <div class="d-tj-3-c-campaign d-tj-offset-top-40" >
-      <h3>ARTIST TOURS</h3>
+      <h3>ROADSHOWS</h3>
       <div class="d-tj-campaign-slide">
         <div class="list_carousel responsive" style="position:relative">
           <ul id="d-tj-c-slide">
@@ -237,7 +237,7 @@
         </h5>
       </div>
         <div class="text-center" >
-          <input class="apply-btn" onclick="window.open('/fans', '_blank');" type="button" value="ALL CAMPAIGNS">
+          <input class="apply-btn" onclick="window.open('/roadshows', '_blank');" type="button" value="ALL CAMPAIGNS">
           <input class="apply-btn" onclick="window.open('/tours', '_blank');" type="button" value="START CAMPAIGN">
       </div>
       <div class="clearfix"></div>
