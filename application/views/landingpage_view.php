@@ -230,7 +230,7 @@
           <div class="clearfix"></div>
           <a id="prev5" class="prev" href="#" ></a> <a id="next5" class="next" href="#"  ></a> </div>
       </div>
-      <?php $value = htmlspecialchars("RoadShows’", ENT_QUOTES); ?>
+      <?php $value = htmlspecialchars("RoadShow", ENT_QUOTES); ?>
       <div class="who-campaigns">
         <h5>The <? print($value); ?> campaigns are initiated by the artists for the tours that they want to venture on. Every time you buy a ticket, an artist gets one step closer to his dream tour across various cities in the country. Not only that, you get exclusive access to all the shows which are part of that tour, and even get extra freebies from the band on-the-day to make the event really special for you.
           <b>Book a ticket now!</b><br><br>
