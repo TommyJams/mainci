@@ -231,9 +231,9 @@
           <a id="prev5" class="prev" href="#" ></a> <a id="next5" class="next" href="#"  ></a> </div>
       </div>
       <div class="who-campaigns">
-        <h5>All the campaigns are initiated by the artists directly for the tours that they want to venture on. Every time you pledge your support, an artist gets one step closer to his dream tour across various cities in the country. Not only that, you get exclusive access to all the shows which are part of that tour, and even get extra freebies from the band on-the-day to make the event really special for you.
-            <b>Start pledging now!</b><br><br>
-            In case you are an artist and want to start a campaign of your own, learn how to do it by simply visiting our available tours page.
+        <h5>The RoadShows’ campaigns are initiated by the artists for the tours that they want to venture on. Every time you buy a ticket, an artist gets one step closer to his dream tour across various cities in the country. Not only that, you get exclusive access to all the shows which are part of that tour, and even get extra freebies from the band on-the-day to make the event really special for you.
+          <b>Book a ticket now!</b><br><br>
+            In case you are an artist and want to start a campaign for one of the RoadShows, simply visit our RoadShows page.
         </h5>
       </div>
         <div class="text-center" >
