@@ -104,11 +104,10 @@
     </div>
     <!-- /tour--> 
 <!--bottom 1 col-->
-    <?php $value = htmlspecialchars("RoadShows’", ENT_QUOTES); ?>
     <div class="col-md-12 d-tj-offset-top-40 who-campaigns-box">
       <div class="who-campaigns">
         <h3>WHO CAMPAIGNS ?</h3> 
-        <h5>The <? print($value); ?> campaigns are initiated by the artists for the tours that they want to venture on. Every time you buy a ticket, an artist gets one step closer to his dream tour across various cities in the country. Not only that, you get exclusive access to all the shows which are part of that tour, and even get extra freebies from the band on-the-day to make the event really special for you.
+        <h5>The RoadShows&#39 campaigns are initiated by the artists for the tours that they want to venture on. Every time you buy a ticket, an artist gets one step closer to his dream tour across various cities in the country. Not only that, you get exclusive access to all the shows which are part of that tour, and even get extra freebies from the band on-the-day to make the event really special for you.
           <b>Book a ticket now!</b><br><br>
             In case you are an artist and want to start a campaign for one of the RoadShows, simply visit our RoadShows page.
         </h5>
