@@ -73,9 +73,16 @@ define('CONTACT_FORM_SMTP_PASSWORD','');
 define('CONTACT_FORM_SUBJECT','TommyJams Landing Page: Contact form');
 
 define('CONTACT_FORM_MSG_INVALID_DATA_NAME','Please enter your name.');
+define('CONTACT_FORM_MSG_INVALID_TARGET','Please enter valid target.');
+define('CONTACT_FORM_MSG_INVALID_VIDEO_LINK','Please enter video link.');
+define('CONTACT_FORM_MSG_INVALID_SOCIAL_LINK','Please enter valid social link.');
+define('CONTACT_FORM_MSG_INVALID_PLEDGE_AMOUNT','Please enter valid pledge amount.');
 define('CONTACT_FORM_MSG_INVALID_DATA_MAIL','Please enter valid e-mail.');
 define('CONTACT_FORM_MSG_INVALID_DATA_MESSAGE','Please enter your message.');
-	
+
+define('CAMPAIGN_FORM_MSG_INVALID_PHONE','Please enter valid phone number.');
+define('CAMPAIGN_FORM_MSG_INVALID_IMAGE','Please enter valid background image.');
+
 define('CONTACT_FORM_SEND_MSG_OK','Thank you for contacting us.');
 define('CONTACT_FORM_SEND_MSG_ERROR','Sorry, we can\'t send this message.');
 

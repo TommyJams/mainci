@@ -145,7 +145,7 @@
 
 						<p class="subtitle-paragraph margin-top-20 margin-bottom-20 clear-fix">
                             <span class = "italic">
-                                Revolutionizing Live Entertainment
+                                Revolutionizing Live Entertainment.
                             </span>
                         </p>
 						
