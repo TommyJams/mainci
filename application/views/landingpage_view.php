@@ -227,7 +227,7 @@
                 </div>
               </div>
             </li>
-            <? } ?>
+            <? } }?>
           </ul>
           <div class="clearfix"></div>
           <a id="prev5" class="prev" href="#" ></a> <a id="next5" class="next" href="#"  ></a> </div>
