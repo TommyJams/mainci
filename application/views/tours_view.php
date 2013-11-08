@@ -51,7 +51,7 @@
             <div class="col-md-12">
               <h4>Location: <? print($city); ?></h4>
               <h4>Contact: <? print($contact); ?></h4>
-              <a target="_blank" href="http://<? print($link);?>"><h4>Link</h4></a> 
+              <a target="_blank" href="http://<? print($link);?>"><h4>Facebook</h4></a> 
             </div> 
           </div>
 
@@ -106,7 +106,7 @@
               $image = $venue->image;
             ?>
             <div class="col-md-6 col-sm-6  d-tj-tour-left" >  
-            <div style="background:black">
+            <div>
               <a href="javascript:;" onclick="venueBox(<? print($venue_id); ?>);" data-toggle="modal" >
                 <img src="img/temp/<? print($image); ?>" alt="">
               </a>

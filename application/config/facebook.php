@@ -1,4 +1,11 @@
 <?php
- $config['appId'] = '248776888603319';
- $config['secret'] = '50f31c2706d846826bead008392e8969';
+
+if (is_readable(FCPATH . 'config.local.php'))
+{
+    include_once(FCPATH . 'config.local.php');
+}
+
+
+ $config['appId'] = FACEBOOK_ROADSHOWS_APP_ID;
+ $config['secret'] = FACEBOOK_ROADSHOWS_APP_SECRET;
 ?>
