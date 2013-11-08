@@ -177,19 +177,21 @@
         <div class="list_carousel responsive" style="position:relative">
           <ul id="d-tj-c-slide">
             <?
-                $featuredCampaigns = (json_decode($featuredCampaigns)); 
-                foreach($featuredCampaigns as $campaign){ ?>
-              <?
-                $campaign_id = $campaign->campaign_id;
-                $artist_id = $campaign->artist_id;
-                $artist_name = $campaign->artist_name;
-                $funded = $campaign->funded;
-                $days_to_go = $campaign->days_to_go;
-                $image = $campaign->image;
+              $featuredCampaigns = (json_decode($featuredCampaigns)); 
+              if($featuredCampaigns)
+              {
+                foreach($featuredCampaigns as $campaign){
 
-                if(!isset($image))
-                  $image = "defaultcampaign.jpg";
-              ?>
+                  $campaign_id = $campaign->campaign_id;
+                  $artist_id = $campaign->artist_id;
+                  $artist_name = $campaign->artist_name;
+                  $funded = $campaign->funded;
+                  $days_to_go = $campaign->days_to_go;
+                  $image = $campaign->image;
+
+                  if(!isset($image))
+                    $image = "defaultcampaign.jpg";
+            ?>
             <li>
               <div>
                 <h4 class="d-tj-slide-head" ><? print($artist_name); ?></h4>
