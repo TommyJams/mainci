@@ -53,6 +53,8 @@
       <div class="col-md-12 campaign-tiles" >
         <?
           $featuredCampaigns = (json_decode($featuredCampaigns)); 
+          if($featuredCampaigns)
+          {
           foreach($featuredCampaigns as $campaign){ ?>
           <?
             $campaign_id = $campaign->campaign_id;
@@ -98,7 +100,7 @@
                   </div>
                 </div>
               </div>
-              <? } ?>
+              <? } }?>
       </div> <div class="clearfix"></div>
       </div>
     </div>
