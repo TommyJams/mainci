@@ -223,7 +223,7 @@
       <div>
       <!--Artist-->
       <div class="col-md-7 d-tj-artist" >
-        <h3 style="margin-top: 5px;">
+        <h3 style="margin-top: 5px; margin-bottom: 25px;">
           <input class="form-control input-lg" type="text" id="artistName" name="artistName" placeholder="ARTIST NAME">
         </h3>
         <? foreach($venues as $venue){ ?>
@@ -236,7 +236,7 @@
         <div class="col-md-12 col-sm-12 col-xs-6 d-tj-venue-box">
           <div class="col-md-4 col-xs-12 col-sm-5 d-tj-p0"> 
             <a href="javascript:;" onclick="venueBox(<? print($venue_id); ?>);" data-toggle="modal" >
-            <img src="/img/temp/<? print($image); ?>" alt="" style="max-height: 150px;"></a>
+            <img src="/img/temp/<? print($image); ?>" alt="" style="max-height: 150px; margin-bottom: 10px"></a>
           </div>
           <div class="col-md-1"></div>
           <div class="col-md-7 col-xs-12 col-sm-6 d-tj-p0" >

@@ -108,11 +108,11 @@
             <div class="col-md-6 col-sm-6  d-tj-tour-left" >  
             <div>
               <a href="javascript:;" onclick="venueBox(<? print($venue_id); ?>);" data-toggle="modal" >
-                <img src="img/temp/<? print($image); ?>" alt="">
+                <img src="img/temp/<? print($image); ?>" alt="" style="min-height:200px">
               </a>
             </div>
               <h4>
-                <span ><? print($venue_name); ?></span> <? print($city); ?>
+                <span ><? print($venue_name); ?><br></span> <? print($city); ?>
               </h4> 
             </div>
             <? 
