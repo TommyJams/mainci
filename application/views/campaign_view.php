@@ -275,15 +275,15 @@
             <div id="myTabContent" class="tab-content">
               <div class="tab-pane fade active in" id="home">
                 <div class="d-tj-pledge">
+                  <h4> Ticket widget will be integrated soon.</h4>
                   <? foreach($pledges as $pledge){ ?>
                   <?
                     $amount = $pledge->amount;
                     $pledge_desc = $pledge->desc;
                   ?>
-                  <p> Ticket widget will be integrated soon.</p>
                   <div style="">
                     <h4>INR <? print($amount); ?> </h4>
-                    <h3><? print($pledge_desc); ?> </h3>
+                    <h5><? print($pledge_desc); ?> </h5>
                   </div>
                   <div class="seperator" ></div>
                   <? 
