@@ -51,7 +51,7 @@
             <div class="col-md-12">
               <h4>Location: <? print($city); ?></h4>
               <h4>Contact: <? print($contact); ?></h4>
-              <a target="_blank" href="http://<? print($link);?>"><h4>Facebook</h4></a> 
+              <a target="_blank" href="<? print($link);?>"><h4>Facebook</h4></a> 
             </div> 
           </div>
 
