@@ -188,6 +188,10 @@
           $tourDate = $getTourDetail->tourDate;
           $min_target = $getTourDetail->target;
           $venues = $getTourDetail->venues;
+
+          $date = strtotime($tourDate);
+          $tourDate = date('jS F Y', $date);
+
         ?> 
       <div class="d-tj-box " >
         <div class="row d-tj-tour">
