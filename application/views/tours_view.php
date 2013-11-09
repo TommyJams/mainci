@@ -104,6 +104,7 @@
               $venue_id = $venue->venue_id;
               $city = $venue->city;
               $image = $venue->image;
+              $tour_date = $venue->tour_date;
             ?>
             <div class="col-md-6 col-sm-6  d-tj-tour-left" >  
             <div>
@@ -112,7 +113,7 @@
               </a>
             </div>
               <h4>
-                <span ><? print($venue_name); ?><br></span> <? print($city); ?>
+                <span ><? print($venue_name); ?><br></span> <? print($city); ?><br><? print($tour_date); ?>
               </h4> 
             </div>
             <? 
