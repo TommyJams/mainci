@@ -105,6 +105,10 @@
               $city = $venue->city;
               $image = $venue->image;
               $tour_date = $venue->tour_date;
+
+              $date = strtotime($tour_date);
+              $tour_date = date('jS F Y', $date);
+
             ?>
             <div class="col-md-6 col-sm-6  d-tj-tour-left" >  
             <div>
