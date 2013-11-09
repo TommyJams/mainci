@@ -95,20 +95,6 @@
 
     $date = strtotime($tourDate);
     $tourDate = date('jS F Y', $date);
-
-    error_log("Raised: ".$raised);
-    error_log("Total Pledges: ".$totalPledges);
-
-    if(!isset($raised))
-    {
-      error_log($raised);
-      $raised = 0;
-    } 
-    if(!isset($totalPledges))
-    {  
-      error_log($totalPledges);
-      $totalPledges = 0;
-    }
   }
 ?>
 
@@ -129,8 +115,8 @@
         </div>  
         <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
           <div class="d-tj-black-box d-tj-tour-right" > 
-            <h4 class="raise">FUNDED : INR <? print($raised); ?></h4>    
-            <h4 class="tgt" >PLEDGES : <? print($totalPledges); ?></h4>
+            <h4 class="raise">FUNDED : INR <? if(isset($raised)) {print($raised);} else print("0"); ?></h4>    
+            <h4 class="tgt" >PLEDGES : <? if(isset($totalPledges)) {print($totalPledges);} else print("0"); ?></h4>
             <h4 class="tgt" >TARGET : INR <? print($target); ?></h4>
             <h3><? print($days_to_go); ?> DAYS TO GO</h3>
             <div class="text-center d-tj-offset-top-40 pledge-btn-top">
