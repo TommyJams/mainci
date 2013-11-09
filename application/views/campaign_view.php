@@ -97,10 +97,15 @@
     $tourDate = date('jS F Y', $date);
 
     if(!isset($raised))
+    {
+      error_log($raised);
       $raised = 0;
+    } 
     if(!isset($totalPledges))
+    {  
+      error_log($totalPledges);
       $totalPledges = 0;
-
+    }
   }
 ?>
 
