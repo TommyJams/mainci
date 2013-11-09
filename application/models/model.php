@@ -167,6 +167,8 @@ class Model extends CI_Model{
           		{
             		$totalPledges = 0;
           		}
+          		error_log("Raised: ".$raised);
+    			error_log("Total Pledges: ".$totalPledges);
 
    				// 3D array formation; Getting amount details
    				$pledges = null;
