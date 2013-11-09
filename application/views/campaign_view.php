@@ -222,7 +222,7 @@
             </ul>
             <div class="clearfix"></div>
             <?
-            if($fbEventURL && $fbEventName)
+            if($fbEventURL)
             {
             ?>
               <div class="seperator" ></div>
