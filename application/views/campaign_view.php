@@ -143,7 +143,7 @@
 
               $date = strtotime($tour_date);
               $tour_date = date('jS F Y', $date);
-              
+
             ?>
           <div class="col-md-12 col-sm-12 col-xs-6 d-tj-venue-box">
             <div class="col-md-4 col-xs-12 col-sm-5 d-tj-p0"> 
@@ -164,9 +164,9 @@
           ?>
           <div class="clearfix"></div>
           <!--date-->
-          <div class="d-tj-offset-top-30">
+          <!--<div class="d-tj-offset-top-30">
             <h4>TOUR DATE: <? print($tourDate); ?></h4>
-          </div>
+          </div>-->
           <!--/date--> 
           <!-- social-->
           <div>

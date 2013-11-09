@@ -255,9 +255,9 @@
         ?>
         <div class="clearfix"></div>
         <!--date-->
-        <div class="d-tj-offset-top-30">
+        <!--<div class="d-tj-offset-top-30">
           <h4>TOUR DATE: <? print($tourDate); ?></h4>
-        </div>
+        </div>-->
         <!--/date--> 
         <!-- social-->
         <div class="social-links" >
