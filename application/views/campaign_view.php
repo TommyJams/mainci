@@ -95,6 +95,9 @@
 
     $date = strtotime($tourDate);
     $tourDate = date('jS F Y', $date);
+
+    error_log("Raised: ".$raised);
+    error_log("Total Pledges: ".$totalPledges);
   }
 ?>
 
