@@ -292,7 +292,7 @@
                     } }
                   ?>
                   <? if(isset($ticket_widget)) { ?>
-                    <iframe frameborder="0" src="<? print($iframe); ?>" width="315" height="890"></iframe>
+                    <iframe frameborder="0" src="<? print($ticket_widget); ?>" width="315" height="890"></iframe>
                     <div style="width:105%; height: 70px; top:-70px; margin-bottom:-100px; z-index:1000; position:relative; background-color:black;"> 
                     </div>
                   <? } ?>
@@ -335,7 +335,7 @@
             <!--/Tabs -->
 
             <div class=" d-tj-offset-top-30 pledge-btn" >
-              <input type="button" value="BUY NOW" style="" onclick="window.open('<? print($iframe); ?>', '_blank');">
+              <input type="button" value="BUY NOW" style="" onclick="window.open('<? print($ticket_widget); ?>', '_blank');">
             </div>
           </div>
         </div>
