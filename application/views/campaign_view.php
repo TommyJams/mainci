@@ -132,7 +132,7 @@
         <div class="col-md-7 " >
         <div class="row"> 
         <div class="d-tj-artist">    
-          <h3 style="margin-top: 5px; text-transform:none;"><? print($artist_name); ?></h3>
+          <h3 style="margin-top: 5px; margin-bottom: 20px; text-transform:none;"><? print($artist_name); ?></h3>
           <? foreach($venues as $venue){ ?>
             <?
               $venue_name = $venue->venue_name;
@@ -148,7 +148,7 @@
           <div class="col-md-12 col-sm-12 col-xs-6 d-tj-venue-box">
             <div class="col-md-4 col-xs-12 col-sm-5 d-tj-p0"> 
               <a href="javascript:;" onclick="venueBox(<? print($venue_id); ?>);" data-toggle="modal" >
-                <img src="/img/temp/<? print($image); ?>" alt="" style="max-height: 150px;">
+                <img src="/img/temp/<? print($image); ?>" alt="" style="max-height: 150px; margin-bottom: 10px">
               </a>
             </div>
             <div class="col-md-1"></div>
@@ -280,15 +280,18 @@
                     $amount = $pledge->amount;
                     $pledge_desc = $pledge->desc;
                   ?>
+                  <p> Ticket widget will be integrated soon.</p>
                   <div style="">
+                    <h4>INR <? print($amount); ?> </h4>
+                    <h3><? print($pledge_desc); ?> </h3>
                   </div>
-                  <!--<div class="seperator" ></div>-->
+                  <div class="seperator" ></div>
                   <? 
                     } 
                   ?>
-                  <iframe frameborder="0" src="http://em.explara.com/widget/test-event-ci" width="315" height="890"></iframe>
+                  <!--<iframe frameborder="0" src="http://em.explara.com/widget/test-event-ci" width="315" height="890"></iframe>
                   <div style="width:105%; height: 70px; top:-70px; margin-bottom:-100px; z-index:1000; position:relative; background-color:black;"> 
-                  </div>
+                  </div>-->
                 </div>
               </div>
               <div class="tab-pane fade" id="profile">

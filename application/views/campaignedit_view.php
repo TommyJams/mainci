@@ -223,7 +223,7 @@
       <div>
       <!--Artist-->
       <div class="col-md-7 d-tj-artist" >
-        <h3 style="margin-top: 5px; margin-bottom: 25px;">
+        <h3 style="margin-top: 5px; margin-bottom: 20px;">
           <input class="form-control input-lg" type="text" id="artistName" name="artistName" placeholder="ARTIST NAME">
         </h3>
         <? foreach($venues as $venue){ ?>
