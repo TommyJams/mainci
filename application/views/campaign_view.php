@@ -275,7 +275,7 @@
             <div id="myTabContent" class="tab-content">
               <div class="tab-pane fade active in" id="home">
                 <div class="d-tj-pledge">
-                  <h4> Ticket widget will be integrated soon.</h4>
+                  <h4>Ticket widget will be integrated soon.</h4><br>
                   <? foreach($pledges as $pledge){ ?>
                   <?
                     $amount = $pledge->amount;
