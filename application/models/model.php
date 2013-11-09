@@ -212,19 +212,22 @@ class Model extends CI_Model{
 					}
 				}
 
-				//$raised = "";
-				//$totalPledges = "";
 				$query4 = $this->db->query("SELECT * FROM fansCF WHERE campaign_id='$campaign_id';");
 				if ($query4->num_rows() > 0)
 				{
+					$raised = "";
+					$totalPledges = "";
 					$qresult4 = $query4->result();
 					foreach ($qresult4 as $row)
 					{
 						$amount = $row->amount;
 
 						// Calculaing values of raised and totalPledges
-						$raised = $raised + $amount;
-						$totalPledges = $totalPledges + 1;
+						if(!isEmpty($amount))
+						{
+							$raised = $raised + $amount;
+							$totalPledges = $totalPledges + 1;
+						}	
 					}
 
 					$query4 = $this->db->query("UPDATE `campaignCF` SET `raised`='$raised', `totalPledges`='$totalPledges' WHERE campaign_id='$campaign_id';");
