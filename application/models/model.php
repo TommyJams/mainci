@@ -158,14 +158,15 @@ class Model extends CI_Model{
 				parse_str(parse_url($url, PHP_URL_QUERY), $query_string);
 				$videoId = $query_string["v"];
 
-   				if(!isset($raised))
-                  		{
-                    		$raised = 0;
-                  		}
-                  		if(!isset($totalPledges))
-                  		{
-                    		$totalPledges = 0;
-                  		}
+				$this->load->helper('functions');
+   				if(isEmpty($raised))
+          		{
+            		$raised = 0;
+          		}
+          		if(isEmpty($totalPledges))
+          		{
+            		$totalPledges = 0;
+          		}
 
    				// 3D array formation; Getting amount details
    				$pledges = null;
