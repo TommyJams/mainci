@@ -260,7 +260,7 @@
         </div>-->
         <!--/date--> 
         <!-- social-->
-        <div class="social-links" >
+        <div class="d-tj-offset-top-20 social-links" >
           <h4 >UPLOAD SOCIAL LINKS</h4>
           <ul class=" list-unstyled social-list ">
             <li ><a  data-toggle="modal" href="#" title="" alt="" id="socialLink1" name="socialLink1" target="_blank" class="social-list-facebook-edit openform1"></a></li>

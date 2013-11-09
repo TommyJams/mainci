@@ -169,7 +169,7 @@
           </div>-->
           <!--/date--> 
           <!-- social-->
-          <div>
+          <div class="d-tj-offset-top-20">
             <ul class=" list-unstyled social-list clear-fix">
             <?           
               if($fb!="")
