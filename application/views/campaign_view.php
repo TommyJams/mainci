@@ -96,6 +96,11 @@
     $date = strtotime($tourDate);
     $tourDate = date('jS F Y', $date);
 
+    if(!isset($raised))
+      $raised = 0;
+    if(!isset($totalPledges))
+      $totalPledges = 0;
+
   }
 ?>
 
