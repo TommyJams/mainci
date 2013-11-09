@@ -194,7 +194,6 @@ input[type="button"]:hover, input[type="submit"]:hover {
 .d-tj-tour h3 {
 	margin-top: 0;
 	font-weight:600;
-	line-height: 0px;
 	margin-bottom: 15px;/*margin-left: 10px;*/
 }
 .d-tj-tour-right h3 {
