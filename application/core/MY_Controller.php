@@ -943,7 +943,7 @@ class Base extends MY_Controller{
 			<div style='background:#000; padding:10px;'>
 				<table style='text-align:center; width: 100%; padding:50px; padding-top:20px;'>
 					<tr style='margin-top:20px;'>
-						<img src='http://www.tommyjams.com/beta/images/tjlogo_small.png'>
+						<img src='http://www.tommyjams.com/images/tjlogo_small.png'>
 					</tr>
 					<tr style='margin-top:50px; background:#ffcc00; padding:10px;'>
 						$mess

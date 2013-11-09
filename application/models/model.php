@@ -148,7 +148,7 @@ class Model extends CI_Model{
    				$startCamp = $row->startCamp;$endCamp = $row->endCamp;$videoLink = $row->videoLink;
    				$fb = $row->fb;$twitter = $row->twitter;$website = $row->website;
    				$scloud = $row->soundcloud;$bandcamp = $row->bandcamp;
-   				$image1 = $row->image1;$iframe = $row->iframe;
+   				$image1 = $row->image1;$ticket_widget = $row->ticket_widget;
    				$status = $row->status;$tourDate = $row->tourDate;$desc = $row->desc;
    				$tourDate = $row->tourDate;$campaign_desc = htmlspecialchars_decode($row->desc);
 
@@ -306,7 +306,7 @@ class Model extends CI_Model{
 								'artist_id'   	=> $artist_id,
 								'artist_name' 	=> $artist_name,
 								'campaign_desc' => $campaign_desc,
-								'iframe'		=> $iframe,
+								'ticket_widget'	=> $ticket_widget,
 								'venues' 		=> $venues,
 								'pledges' 		=> $pledges,
 								'contributes' 	=> $contributes,
@@ -725,7 +725,7 @@ class Model extends CI_Model{
 				<div style='background:#000; padding:10px;'>
 					<table style='text-align:center; width: 100%; padding:50px; padding-top:20px;'>
 						<tr style='margin-top:20px;'>
-							<img src='http://www.tommyjams.com/beta/images/tjlogo_small.png'>
+							<img src='http://www.tommyjams.com/images/tjlogo_small.png'>
 						</tr>
 						<tr style='margin-top:50px; background:#ffcc00; padding:10px;'>
 							$mess

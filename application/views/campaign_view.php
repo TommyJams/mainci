@@ -77,7 +77,7 @@
     $pledges = $row->pledges;
     $contributors = $row->contributes;
     $campaign_desc = $row->campaign_desc;
-    $iframe = $row->iframe;
+    $ticket_widget = $row->ticket_widget;
     $vlink = $row->videoId;
     $fb = $row->fb;
     $twitter = $row->twitter;
@@ -111,7 +111,7 @@
     <div class="d-tj-box " >
       <div class="row d-tj-tour">
         <div class="col-sm-12 col-xs-12 col-md-7"> 
-          <iframe title="YouTube video player" class="d-tj-video" style="min-height: 349px; width: 100%;" 
+          <iframe title="YouTube video player" class="d-tj-video" style="min-height: 362px; width: 100%;" 
           src="http://www.youtube.com/embed/<? print($vlink); ?>" frameborder="0" allowfullscreen></iframe>
         </div>  
         <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
@@ -276,8 +276,8 @@
             <div id="myTabContent" class="tab-content">
               <div class="tab-pane fade active in" id="home">
                 <div class="d-tj-pledge">
-                  <? if(!isset($iframe)) { ?>
-                  <h4>Ticket widget will be integrated soon.</h4><br>
+                  <? if(!isset($ticket_widget)) { ?>
+                  <h4>NOTE: Tickets will be enabled after verification.</h4><br>
                   <? foreach($pledges as $pledge){ ?>
                   <?
                     $amount = $pledge->amount;
@@ -291,7 +291,7 @@
                   <? 
                     } }
                   ?>
-                  <? if(isset($iframe)) { ?>
+                  <? if(isset($ticket_widget)) { ?>
                     <iframe frameborder="0" src="<? print($iframe); ?>" width="315" height="890"></iframe>
                     <div style="width:105%; height: 70px; top:-70px; margin-bottom:-100px; z-index:1000; position:relative; background-color:black;"> 
                     </div>
@@ -327,7 +327,7 @@
                   </table>
                   <? } ?>
                   <? if(!isset($contributors)) { $contributors = "";?>
-                  <h4>Be the first fan to buy ticket and help <?print($artist_name);?> tour.</h4>
+                  <h4>Be the first fan to buy a ticket and help <?print($artist_name);?> tour.</h4>
                   <? } ?>
                 </div>
               </div>
@@ -335,7 +335,7 @@
             <!--/Tabs -->
 
             <div class=" d-tj-offset-top-30 pledge-btn" >
-              <input type="button" value="BUY NOW" style="" onclick="window.open('http://em.explara.com/event/test-event-ci', '_blank');">
+              <input type="button" value="BUY NOW" style="" onclick="window.open('<? print($iframe); ?>', '_blank');">
             </div>
           </div>
         </div>
