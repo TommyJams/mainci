@@ -108,7 +108,7 @@
             <div class="col-md-6 col-sm-6  d-tj-tour-left" >  
             <div>
               <a href="javascript:;" onclick="venueBox(<? print($venue_id); ?>);" data-toggle="modal" >
-                <img src="img/temp/<? print($image); ?>" alt="" style="">
+                <img src="img/temp/<? print($image); ?>" alt="" style="max-height:150px;margin-top:20px">
               </a>
             </div>
               <h4>
