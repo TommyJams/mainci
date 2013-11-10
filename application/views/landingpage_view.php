@@ -369,10 +369,10 @@
             <img src="image/icon/icon-partner/icon5.png" alt="" style="margin-left: 10px;"/>                     
           </a>
           <a href="http://startupfestival.in/startups" target="_blank">                  
-            <img src="image/icon/icon-partner/icon3.png" alt="" style="margin-left: 10px;"/>                
+            <img src="image/icon/icon-partner/icon9.png" alt="" style="margin-left: 10px;"/>                
           </a> 
           <a href="/radioone" target="_blank">                  
-            <img src="image/icon/icon-partner/icon1.png" alt="" style="margin-left: 10px;"/>                
+            <img src="image/icon/icon-partner/icon11.png" alt="" style="margin-left: 10px;"/>                
           </a>              
           <a href="http://mewsic.in" target="_blank">
               <img src="image/icon/icon-partner/icon2.png" alt="" style="margin-left: 10px;"/>                            
