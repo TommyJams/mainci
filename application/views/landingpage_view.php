@@ -106,6 +106,11 @@
     color:#000000; 
   }
 
+  .event-ticker ul li a, .event-ticker ul li a:hover
+  {
+    color:#FFFFFF;
+  }
+
   /*p.subtitle-paragraph
   {
     font-family:'Dosis';
