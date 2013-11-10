@@ -199,7 +199,7 @@
           <!-- /social-->
           
           <div class="d-tj-offset-top-30">
-            <h4>CAMPAIGN DESCRIPTION</h4>
+            <h4>DESCRIPTION</h4>
             <h5><? print($campaign_desc); ?></h5>
           </div>
 
@@ -326,7 +326,7 @@
                   </table>
                   <? } ?>
                   <? if(!isset($contributors)) { $contributors = "";?>
-                  <h4>Be the first fan to buy a ticket and help <?print($artist_name);?> tour.</h4>
+                  <h4>Be the first fan to buy a ticket and contribute to the <?print($artist_name);?> tour.</h4>
                   <? } ?>
                 </div>
               </div>
