@@ -130,7 +130,7 @@
           <div class="d-tj-black-box d-tj-tour-right">
             <h4 class="raise" >APPLY BY: <? print($applyBy); ?></h4>
             <h4 class="tgt" >START CAMPAIGN: <? print($startCamp); ?></h4>
-            <h3>TARGET: INR <? print($target); ?></h3>
+            <h3>TARGET: &#8377 <? print($target); ?></h3>
             <div class="text-center d-tj-offset-top-40">
               <input type="button" onclick="window.location.href='<?print($login_url);?>'" value="APPLY NOW">
             <!--  <a type="button" href="editcampaign/<?php // echo $tour_id ?>">APPLY NOW</a> -->
