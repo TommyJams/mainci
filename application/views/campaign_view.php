@@ -295,7 +295,7 @@
                     $pledge_desc = $pledge->desc;
                   ?>
                   <div style="">
-                    <h4>INR <? print($amount); ?> </h4>
+                    <h4>&#8377 <? print($amount); ?> </h4>
                     <h5><? print($pledge_desc); ?> </h5>
                   </div>
                   <div class="seperator" ></div>
