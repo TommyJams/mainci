@@ -116,12 +116,10 @@
         <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
           <div class="d-tj-black-box d-tj-tour-right" > 
             <h3 style="margin-top: 5px; margin-bottom: 20px; text-transform:none;"><? print($artist_name); ?></h3>
-            <h3 class="raise">Rs <? print($raised); ?></h3>
-            <h4 style="line-height:0.5px">funded of Rs <? print($target); ?></h4>    
-            <h3 class="tgt" ><? print($totalPledges); ?></h3>
-            <h4 style="line-height:0.5px">contributors</h4>
+            <h2 class="raise">Rs <? print($raised); ?><h4>funded of Rs <? print($target); ?></h4></h2>    
+            <h2 class="tgt" ><? print($totalPledges); ?><h4>contributors</h4></h3>
             <!--<h4 class="tgt" >TARGET : INR <? //print($target); ?></h4>-->
-            <h3><? print($days_to_go); ?></h3>
+            <h2><? print($days_to_go); ?><h4> days to go </h4></h2>
             <h4 style="line-height:0.5px"> days to go </h4>
             <div class="text-center d-tj-offset-top-40 pledge-btn-top">
               <input type="button" value="BUY NOW" onclick="window.open('<? print($ticket_widget); ?>', '_blank');" >
