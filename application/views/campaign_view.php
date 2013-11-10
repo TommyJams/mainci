@@ -338,7 +338,7 @@
                   </table>
                   <? } ?>
                   <? if(!isset($contributors)) { $contributors = "";?>
-                  <h4>Be the first fan to buy a ticket and contribute to the <b><?print($artist_name);?><b> tour.</h4>
+                  <h4>Be the first fan to buy a ticket and contribute to the <b><?print($artist_name);?></b> tour.</h4>
                   <? } ?>
                 </div>
               </div>
