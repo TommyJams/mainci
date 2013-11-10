@@ -116,7 +116,8 @@
         <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
           <div class="d-tj-black-box d-tj-tour-right" > 
             <h3 style="margin-top: 5px; margin-bottom: 20px; text-transform:none;"><? print($artist_name); ?></h3>
-            <h3 class="raise">Rs <? print($raised); ?><br> <h4>funded of Rs <? print($target); ?></h4></h3>    
+            <h3 class="raise">Rs <? print($raised); ?></h3>
+            <h4 style="line-height:0.5px">funded of Rs <? print($target); ?></h4>    
             <h3 class="tgt" ><? print($totalPledges); ?><br> <h4>contributors</h4> </h3>
             <!--<h4 class="tgt" >TARGET : INR <? //print($target); ?></h4>-->
             <h3><? print($days_to_go); ?> <h4> days to go </h4></h3>
