@@ -115,10 +115,11 @@
         </div>  
         <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
           <div class="d-tj-black-box d-tj-tour-right" > 
-            <h4 class="raise">FUNDED : INR <? print($raised); ?></h4>    
-            <h4 class="tgt" >PLEDGES : <? print($totalPledges); ?></h4>
-            <h4 class="tgt" >TARGET : INR <? print($target); ?></h4>
-            <h3><? print($days_to_go); ?> DAYS TO GO</h3>
+            <h3 style="margin-top: 5px; margin-bottom: 20px; text-transform:none;"><? print($artist_name); ?></h3>
+            <h3 class="raise">Rs <? print($raised); ?><br> <h4>funded of Rs <? print($target); ?></h4></h3>    
+            <h3 class="tgt" ><? print($totalPledges); ?><br> <h4>contributors</h4> </h3>
+            <!--<h4 class="tgt" >TARGET : INR <? //print($target); ?></h4>-->
+            <h3><? print($days_to_go); ?> <h4> DAYS TO GO </h4></h3>
             <div class="text-center d-tj-offset-top-40 pledge-btn-top">
               <input type="button" value="BUY NOW" onclick="window.open('http://em.explara.com/event/test-event-ci', '_blank');" >
             </div>
