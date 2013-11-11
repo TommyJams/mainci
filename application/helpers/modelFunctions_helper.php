@@ -24,6 +24,8 @@
             $i=4;
         else if(filter_var($url, FILTER_VALIDATE_URL))
             $i=5;
+        else if(preg_match("#^https?://(?:www\.)?youtube.com#", $url))
+            $i=6;
         else if(!filter_var($url, FILTER_VALIDATE_URL))
             $i=0;
 

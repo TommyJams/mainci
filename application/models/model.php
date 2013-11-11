@@ -352,6 +352,7 @@ class Model extends CI_Model{
         $twitter = "";
         $soundcloud = "";
         $bandcamp = "";
+        $ytube = "";
         $website = "";
         $filename = "";
         $eventID = "";
@@ -492,6 +493,8 @@ class Model extends CI_Model{
 					$bandcamp = $values["$sociallink"];
 				elseif($i == 5)
 					$website = $values["$sociallink"];
+				elseif($i == 6)
+					$ytube = $values["$sociallink"];
 				
 				// Website link is broken
 				elseif($i == 0)
