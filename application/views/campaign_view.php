@@ -125,7 +125,7 @@
         </div>  
         <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
           <div class="d-tj-black-box d-tj-tour-right" > 
-            <h2 style="margin-bottom: 20px;text-transform:none;font-weight:400;font-size:40px"><? print($artist_name); ?></h2>
+            <h2 style="margin-bottom: 20px;margin-top:-10px;text-transform:none;font-weight:400;font-size:40px"><? print($artist_name); ?></h2>
             <h2 class="raise" style="font-size:40px">&#8377 <? print($raised); ?><a style="font-size:18px"> funded of &#8377 <? print($target); ?></a></h2>     
             <h2 class="tgt" style="font-size:40px"><? print($totalPledges); ?><a style="font-size:18px"> contributors</a></h2> 
             <!--<h4 class="tgt" >TARGET : INR <? //print($target); ?></h4>-->
