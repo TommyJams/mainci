@@ -455,6 +455,9 @@ ul.social-list li a.social-list-scloud {
 ul.social-list li a.social-list-bandcamp {
 	background-image:url('/img/icon_bandcamp.png');
 }
+ul.social-list li a.social-list-youtube {
+	background-image:url('/img/icon_youtube.png');
+}
 ul.social-list li a.social-list-website {
 	background-image:url('/img/icon_website.png');
 }

@@ -83,6 +83,7 @@
     $twitter = $row->twitter;
     $scloud = $row->scloud;
     $bandcamp = $row->bandcamp;
+    $ytube = $row->ytube;
     $website = $row->website; 
     $artist_name = $row->artist_name;
     $backimg = $row->image1;
@@ -199,6 +200,10 @@
               if($bandcamp!="")
               {
                 print("<li ><a style='margin-right:2px;' href='$bandcamp' title='BandCamp' alt='BandCamp' target='_blank' class='social-list-bandcamp'></a></li >"); 
+              }
+              if($ytube!="")
+              {
+                print("<li ><a style='margin-right:2px;' href='$youtube' title='YouTube' alt='YouTube' target='_blank' class='social-list-youtube'></a></li >"); 
               }
               if($website!="")
               {

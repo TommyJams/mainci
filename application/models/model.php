@@ -147,7 +147,7 @@ class Model extends CI_Model{
    				$target = $row->target;$raised = $row->raised;$totalPledges = $row->totalPledges;
    				$startCamp = $row->startCamp;$endCamp = $row->endCamp;$videoLink = $row->videoLink;
    				$fb = $row->fb;$twitter = $row->twitter;$website = $row->website;
-   				$scloud = $row->soundcloud;$bandcamp = $row->bandcamp;
+   				$scloud = $row->soundcloud;$bandcamp = $row->bandcamp;$ytube = $row->youtube;
    				$image1 = $row->image1;$ticket_widget = $row->ticket_widget;
    				$status = $row->status;$tourDate = $row->tourDate;$desc = $row->desc;
    				$tourDate = $row->tourDate;$campaign_desc = htmlspecialchars_decode($row->desc);
@@ -318,6 +318,7 @@ class Model extends CI_Model{
 								'twitter' 		=> $twitter,
 								'bandcamp' 		=> $bandcamp,
 								'scloud' 		=> $scloud,
+								'ytube' 		=> $ytube,
 								'website' 		=> $website,
 								'image1' 		=> $image1,
 								'status' 		=> $status,
@@ -569,8 +570,8 @@ class Model extends CI_Model{
              error_log($e->getMessage());
         }
 
-		$query1 = $this->db->query("INSERT INTO `campaignCF` (`tour_id`, `tour_name`, `artist_name`, `phone`, `email`, `target`, `startCamp`, `endCamp`, `tourDate`, `desc`, `fb`, `twitter`, `soundcloud`, `bandcamp`, `website`, `videoLink`, `image1`, `event_id`  ) 
-					VALUES('".$this->db->escape_str($tour_id)."', '".$this->db->escape_str($tour_name)."', '".$this->db->escape_str($artist_name)."', '".$this->db->escape_str($phone)."', '".$this->db->escape_str($email)."', '".$this->db->escape_str($target)."', '".$this->db->escape_str($startCamp)."', '".$this->db->escape_str($endCamp)."', '".$this->db->escape_str($tourDate)."', '".$this->db->escape_str($editorContent)."', '".$this->db->escape_str($fb)."', '".$this->db->escape_str($twitter)."', '".$this->db->escape_str($soundcloud)."', '".$this->db->escape_str($bandcamp)."', '".$this->db->escape_str($website)."', '".$this->db->escape_str($vlink)."', '".$this->db->escape_str($filename)."', '".$this->db->escape_str($eventID)."')");
+		$query1 = $this->db->query("INSERT INTO `campaignCF` (`tour_id`, `tour_name`, `artist_name`, `phone`, `email`, `target`, `startCamp`, `endCamp`, `tourDate`, `desc`, `fb`, `twitter`, `soundcloud`, `bandcamp`, `youtube`, `website`, `videoLink`, `image1`, `event_id`  ) 
+					VALUES('".$this->db->escape_str($tour_id)."', '".$this->db->escape_str($tour_name)."', '".$this->db->escape_str($artist_name)."', '".$this->db->escape_str($phone)."', '".$this->db->escape_str($email)."', '".$this->db->escape_str($target)."', '".$this->db->escape_str($startCamp)."', '".$this->db->escape_str($endCamp)."', '".$this->db->escape_str($tourDate)."', '".$this->db->escape_str($editorContent)."', '".$this->db->escape_str($fb)."', '".$this->db->escape_str($twitter)."', '".$this->db->escape_str($soundcloud)."', '".$this->db->escape_str($bandcamp)."', '".$this->db->escape_str($ytube)."', '".$this->db->escape_str($website)."', '".$this->db->escape_str($vlink)."', '".$this->db->escape_str($filename)."', '".$this->db->escape_str($eventID)."')");
 
 		$query2 = $this->db->query("SELECT * FROM campaignCF ORDER BY campaign_id DESC LIMIT 1");
 		if ($query2->num_rows() > 0)
