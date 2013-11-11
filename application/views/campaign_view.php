@@ -203,7 +203,7 @@
               }
               if($ytube!="")
               {
-                print("<li ><a style='margin-right:2px;' href='$youtube' title='YouTube' alt='YouTube' target='_blank' class='social-list-youtube'></a></li >"); 
+                print("<li ><a style='margin-right:2px;' href='$ytube' title='YouTube' alt='YouTube' target='_blank' class='social-list-youtube'></a></li >"); 
               }
               if($website!="")
               {
