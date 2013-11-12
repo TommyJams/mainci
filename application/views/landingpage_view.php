@@ -501,8 +501,7 @@
         'href'          : this.href.replace(new RegExp("watch\\?v=BRQpt34-ocE", "i"), 'v/'),
         'type'          : 'swf',
         'swf'     : {
-                      'wmode'    : 'transparent',
-                      'allowfullscreen' : 'true'
+                      'wmode'    : 'transparent'
                     }
     });
     return false;
