@@ -31,7 +31,15 @@ input[type="button"], input[type="submit"] {
 	color:#000;
 	border:none;
 }
-input[type="button"]:hover, input[type="submit"]:hover {
+input[type="button1"] {
+	background-color: #FFCC00;
+	font-size: 30px;
+	padding: 10px 10px;
+	text-transform:uppercase;
+	color:#000;
+	border:none;
+}
+input[type="button"]:hover, input[type="submit"]:hover, input[type="button"]:hover {
 	color:#fff;
 }
 /* Custom Classes */
@@ -1212,7 +1220,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 .d-tj-container {
 	max-width: 300px !important;
 }
-input[type="button"], input[type="submit"] {
+input[type="button"], input[type="submit"], input[type="button1"]{
 	font-size: 14px;
 	margin-right: 70px;
 	padding: 5px 10px !important;

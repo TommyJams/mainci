@@ -153,12 +153,8 @@
               </h4>
             </div>
             <div class="text-center d-tj-offset-top-20">
-              <ul>
-                </li>  
-                  <input onclick="window.open('/index', '_blank');" type="button" value="BOOK EVENTS">
-                  <input onclick="window.open('http://www.youtube.com/watch?v=BRQpt34-ocE&feature=youtu.be', '_blank');" class="video_layer" type="button" value="WATCH DEMO">
-                </li>
-              </ul>  
+              <input onclick="window.open('http://www.youtube.com/watch?v=BRQpt34-ocE&feature=youtu.be', '_blank');" type="button1" value="WATCH DEMO">  
+              <input onclick="window.open('/index', '_blank');" type="button1" value="BOOK EVENTS">
             </div>
           </div>
         </div>
@@ -173,7 +169,8 @@
               </h4>
             </div>
             <div class="text-center d-tj-offset-top-20">
-              <input onclick="window.open('/tours', '_blank');" type="button" value="BOOK TOURS" >
+              <input onclick="window.open('http://www.youtube.com/watch?v=BRQpt34-ocE&feature=youtu.be', '_blank');" type="button1" value="WATCH DEMO">  
+              <input onclick="window.open('/tours', '_blank');" type="button1" value="BOOK TOURS" >
             </div>
           </div>
         </div>
