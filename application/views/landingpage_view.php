@@ -17,8 +17,7 @@
   <div class="watchdemo-form" style="display: none;" >
     <div class="modal-content socialModal">
       <div class="modal-body modal-link">
-        <iframe title="YouTube video player" class="d-tj-video" style="min-height: 363px; width: 100%;" 
-          src="http://www.youtube.com/watch?v=BRQpt34-ocE" frameborder="0" allowfullscreen></iframe>
+        hi
       </div>
       <div class="modal-footer">
           <a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Close</a> 
