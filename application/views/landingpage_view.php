@@ -154,6 +154,7 @@
             </div>
             <div class="text-center d-tj-offset-top-20">
               <input onclick="window.open('/index', '_blank');" type="button" value="BOOK EVENTS">
+              <input onclick="window.open('http://www.youtube.com/watch?v=BRQpt34-ocE&feature=youtu.be', '_blank');" class="video_layer" type="button" value="WATCH DEMO">
             </div>
           </div>
         </div>
@@ -462,6 +463,8 @@
     e.preventDefault();
     submitNewsletterForm();
   });
+
+  $('.video_layer').colorbox({iframe:true});
 
 });
   
