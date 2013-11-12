@@ -13,7 +13,7 @@
 <script type="text/javascript" src="<?php echo base_url();?>script/linkify.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>script/script.js"></script>
 
-  <div class="watchdemo-form" style="display: none;" >
+<!--  <div class="watchdemo-form" style="display: none;" >
     <div class="modal-content socialModal">
       <div class="modal-body modal-link">
 
@@ -22,7 +22,7 @@
           <a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Close</a> 
         </div>
     </div>
-  </div>
+  </div>-->
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -169,7 +169,7 @@
               </h4>
             </div>
             <div class="text-center d-tj-offset-top-20">
-              <input class="social-list-facebook-edit watchdemo" onclick="window.open('http://www.youtube.com/watch?v=BRQpt34-ocE&feature=youtu.be', '_blank');" type="button" value="WATCH DEMO">  
+              <input data-toggle="modal" href="#" id="watchdemo" type="button" value="WATCH DEMO">  
               <input onclick="window.open('/index', '_blank');" type="button" value="BOOK EVENTS">
             </div>
           </div>
@@ -378,7 +378,7 @@
             <img src="image/icon/icon-partner/icon11.png" alt="" style="margin-left: 10px;"/>                
           </a> 
           <a href="http://timesofindia.indiatimes.com/tech/enterprise-it/strategy/A-website-that-helps-in-event-management/articleshow/20646626.cms" target="_blank">
-            <img src="image/icon/icon-partner/icon6.png" alt="" style="margin-left: 10px;"/>                
+            <img src="image/icon/icon-partner/icon12.png" alt="" style="margin-left: 10px;"/>                
           </a> 
           <a href="http://www.microsoft.com/en-in/accelerator/Blog.aspx" target="_blank">                  
             <img src="image/icon/icon-partner/icon4.png" alt="" style="margin-left: 10px;"/>                
@@ -481,22 +481,25 @@
     submitNewsletterForm();
   });
 
-  $("input.watchdemo").click(function () {
-        $.fancybox(
-                $('.watchdemo-form').html(),
-                {
-                    'width'             : 950,
-                    'height'            : 1100,
-                    'autoScale'         : false,
-                    'transitionIn'      : 'none',
-                    'transitionOut'     : 'none',
-                    'hideOnContentClick': false,
-                    'keys'              : {
-                                            close : [13, 27]  //enter, escape key
-                                          },
-                 }
-            ); 
-    });
+  $("#watchdemo").click(function() {
+    $.fancybox({
+        'padding'   : 0,
+        'autoScale'   : false,
+        'transitionIn'  : 'none',
+        'transitionOut' : 'none',
+        'title'     : this.title,
+        'width'   : 680,
+        'height'    : 495,
+        'href'      : this.href.replace(new RegExp("watch\\?v=BRQpt34-ocE", "i"), 'v/'),
+        'type'      : 'swf',
+        'swf'     : {
+             'wmode'    : 'transparent',
+          'allowfullscreen' : 'true'
+        }
+      });
+
+    return false;
+  });
 
 });
   
