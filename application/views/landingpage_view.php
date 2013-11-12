@@ -10,6 +10,7 @@
 <link href="/stylecf/tj.css" rel="stylesheet" media="screen">
 <link rel="stylesheet" href="/stylecf/supersized.css" type="text/css" media="screen" />
 <link rel="stylesheet" type="text/css" href="/style/jquery.qtip.css"/>
+<link rel="stylesheet" href="/stylecf/jquery.fancybox.css" type="text/css" media="screen" />
 <script type="text/javascript" src="<?php echo base_url();?>script/linkify.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>script/script.js"></script>
 
@@ -174,7 +175,7 @@
               </h4>
             </div>
             <div class="text-center d-tj-offset-top-20">
-              <a class="watchdemo" href="http://www.youtube.com/watch?v=071KqJu7WVo&amp;feature=player_embedded#at=41">
+              <a class="watchdemo" id="watchdemo"href="http://www.youtube.com/watch?v=071KqJu7WVo&amp;feature=player_embedded#at=41">
                 <input type="button" value="WATCH DEMO">  
               </a>
               <input onclick="window.open('/index', '_blank');" type="button" value="BOOK EVENTS">
@@ -416,7 +417,8 @@
   
 </div>
 <script src="/script/jquery.js"></script> 
-<script src="/script/bootstrap.min.js"></script> 
+<script src="/script/bootstrap.min.js"></script>
+<script type="text/javascript" src="/script/jquery.fancybox.js"></script> 
 <script>
 		$(document).ready(function(){
 
@@ -488,7 +490,7 @@
     submitNewsletterForm();
   });
 
-  $("a.watchdemo").click(function() {
+  $("#watchdemo").click(function() {
     $.fancybox({
         'padding'       : 0,
         'autoScale'     : false,
