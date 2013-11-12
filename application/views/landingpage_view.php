@@ -169,7 +169,7 @@
               </h4>
             </div>
             <div class="text-center d-tj-offset-top-20">
-              <input data-toggle="modal" href="#" id="watchdemo" type="button" value="WATCH DEMO">  
+              <input href="http://www.youtube.com/watch?v=071KqJu7WVo&amp;feature=player_embedded#at=41" id="watchdemo" type="button" value="WATCH DEMO">  
               <input onclick="window.open('/index', '_blank');" type="button" value="BOOK EVENTS">
             </div>
           </div>
