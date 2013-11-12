@@ -16,6 +16,15 @@
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
+<style>
+
+.d-tj-tour-right h2 a
+{
+  color:#FFFFFF;
+  text-decoration: none;
+}
+
+</style>
 
 <!--venue modal-->
 <? $tourDetail = (json_decode($campaign));
@@ -98,16 +107,6 @@
     $tourDate = date('jS F Y', $date);
   }
 ?>
-
-<style>
-
-.d-tj-tour-right h2 a
-{
-  color:#FFFFFF;
-  text-decoration: none;
-}
-
-</style>
 
 <meta property="og:title" content="Tour with TommyJams" />
 <meta property="og:image" content="<? print(base_url().'images/artist/campaign/'.$backimg); ?>"/>
