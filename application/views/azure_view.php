@@ -40,13 +40,13 @@
 		<script type="text/javascript" src="<?php echo base_url();?>script/jquery.easing.js"></script>
 		<script type="text/javascript" src="<?php echo base_url();?>script/jquery.blockUI.js"></script>
 		<script type="text/javascript" src="<?php echo base_url();?>script/jquery.qtip.min.js"></script>
-		<script type="text/javascript" src="<?php echo base_url();?>script/jquery.fancybox.js"></script>
 		<script type="text/javascript" src="<?php echo base_url();?>script/jquery.supersized.min.js"></script>
 		<script type="text/javascript" src="<?php echo base_url();?>script/jquery.elastic.source.js"></script>
 		<script type="text/javascript" src="<?php echo base_url();?>script/jquery.infieldlabel.min.js"></script>
 		<script type="text/javascript" src="<?php echo base_url();?>script/jquery.carouFredSel.packed.js"></script>
 		<script type="text/javascript" src="<?php echo base_url();?>script/jquery.scrollTo.min.js"></script>
 		<script type="text/javascript" src="<?php echo base_url();?>script/jquery.supersized.shutter.min.js"></script>
+		<script type="text/javascript" src="<?php echo base_url();?>script/jquery.fancybox.js"></script>
 
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>    
 
