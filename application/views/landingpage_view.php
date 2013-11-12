@@ -153,8 +153,12 @@
               </h4>
             </div>
             <div class="text-center d-tj-offset-top-20">
-              <input onclick="window.open('/index', '_blank');" type="button" value="BOOK EVENTS">
-              <input onclick="window.open('http://www.youtube.com/watch?v=BRQpt34-ocE&feature=youtu.be', '_blank');" class="video_layer" type="button" value="WATCH DEMO">
+              <ul>
+                </li>  
+                  <input onclick="window.open('/index', '_blank');" type="button" value="BOOK EVENTS">
+                  <input onclick="window.open('http://www.youtube.com/watch?v=BRQpt34-ocE&feature=youtu.be', '_blank');" class="video_layer" type="button" value="WATCH DEMO">
+                </li>
+              </ul>  
             </div>
           </div>
         </div>
@@ -469,7 +473,7 @@
 });
   
 </script> 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
 <script type="text/javascript" language="javascript" src="/script/jquery.carouFredSel-6.2.1-packed.js"></script> 
 <script type="text/javascript" src="/script/jquery.easing.min.js"></script> 
 <script type="text/javascript" src="/script/jquery.supersized.min.js"></script> 
