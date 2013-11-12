@@ -20,7 +20,7 @@
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>style/jquery-ui/jquery-ui.css"/>
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>style/supersized/supersized.css"/>
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>style/supersized/supersized.shutter.css"/>
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>style/fancybox/jquery.fancybox.css"/> 
+		<link rel="stylesheet" type="text/css" href="/stylecf/jquery.fancybox.css"/> 
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>style/base.css"/> 
 		
 		<link rel="stylesheet" type="text/css" media="screen and (max-width:969px)" href="<?php echo base_url();?>style/responsive/width-0-969.css"/>
