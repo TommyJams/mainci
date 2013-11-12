@@ -122,7 +122,7 @@
     color:#FFFFFF;
   }
 
-  .d-tj-book-events .text-center input[type="button"]
+  .d-tj-book-events input[type="button"], .d-tj-c-tour input[type="button"]
   {
     padding: 10px 10px;
   }
@@ -169,7 +169,7 @@
               </h4>
             </div>
             <div class="text-center d-tj-offset-top-20">
-              <input onclick="window.open('http://www.youtube.com/watch?v=BRQpt34-ocE&feature=youtu.be', '_blank');" type="button" value="WATCH DEMO">  
+              <input class="social-list-facebook-edit watchdemo" onclick="window.open('http://www.youtube.com/watch?v=BRQpt34-ocE&feature=youtu.be', '_blank');" type="button" value="WATCH DEMO">  
               <input onclick="window.open('/index', '_blank');" type="button" value="BOOK EVENTS">
             </div>
           </div>
@@ -481,7 +481,23 @@
     submitNewsletterForm();
   });
 
-  $('.video_layer').colorbox({iframe:true});
+  $("input.watchdemo").click(function () {
+        $.fancybox(
+                $('.watchdemo-form').html(),
+                {
+                    'width'             : 950,
+                    'height'            : 1100,
+                    'autoScale'         : false,
+                    'transitionIn'      : 'none',
+                    'transitionOut'     : 'none',
+                    'hideOnContentClick': false,
+                    'keys'              : {
+                                            close : [13, 27]  //enter, escape key
+                                          },
+                    }
+                 }
+            ); 
+    });
 
 });
   
