@@ -491,7 +491,7 @@
   });
 
   $("#watchdemo").click(function() {
-    $.fancybox($('.watchdemo').html(),{
+    $.fancybox({
         'padding'       : 0,
         'autoScale'     : false,
         'transitionIn'  : 'none',
@@ -499,12 +499,8 @@
         'width'         : 680,
         'height'        : 495,
         'href'          : this.href.replace(new RegExp("watch\\?v=BRQpt34-ocE", "i"), 'v/'),
-        'type'          : 'swf',
-        'swf'     : {
-                      'wmode'    : 'transparent'
-                    }
     });
-    return false;
+    
   });
 
 });
