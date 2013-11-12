@@ -175,7 +175,8 @@
               </h4>
             </div>
             <div class="text-center d-tj-offset-top-20">
-              <input class="watchdemo" data-toggle="modal" href="#watchdemoModal" target="_blank" type="button" value="WATCH DEMO">  
+              <!--<input class="watchdemo" data-toggle="modal" href="#watchdemoModal" target="_blank" type="button" value="WATCH DEMO">-->
+              <input onclick="window.open('http://www.youtube.com/watch?v=BRQpt34-ocE&feature=youtu.be', '_blank');" type="button" value="WATCH DEMO">    
               <input onclick="window.open('/index', '_blank');" type="button" value="BOOK EVENTS">
             </div>
           </div>
