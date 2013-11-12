@@ -174,8 +174,8 @@
               </h4>
             </div>
             <div class="text-center d-tj-offset-top-20">
-              <a class="watchdemo" href="http://www.youtube.com/v/ZeStnz5c2GI?fs=1&amp;autoplay=1">
-                <input id="watchdemo" type="button" value="WATCH DEMO">  
+              <a class="watchdemo" href="http://www.youtube.com/watch?v=071KqJu7WVo&amp;feature=player_embedded#at=41">
+                <input type="button" value="WATCH DEMO">  
               </a>
               <input onclick="window.open('/index', '_blank');" type="button" value="BOOK EVENTS">
             </div>
@@ -488,7 +488,7 @@
     submitNewsletterForm();
   });
 
-  $(".watchdemo").click(function() {
+  $("a.watchdemo").click(function() {
     $.fancybox({
         'padding'       : 0,
         'autoScale'     : false,
