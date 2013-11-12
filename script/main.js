@@ -119,9 +119,7 @@
 				'transitionIn'	: 'none',
 				'transitionOut'	: 'none',
 				'width'			: '80%',
-				'height'		: '35%',
-				'href'			: this.href,
-				'type'			: 'iframe'
+				'height'		: '35%'
 			});
 
 			return false;
