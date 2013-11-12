@@ -499,9 +499,9 @@
 
 							<div class="layout-50-left">
 							
-								<a href="//www.mixcloud.com/widget/iframe/?feed=http%3A%2F%2Fwww.mixcloud.com%2Ftommyjams%2Fsarvasva-3rd-november-2013%2F&mini=&stylecolor=&hide_artwork=&embed_type=widget_standard" class="preloader obom-overlay-video fancybox-audio-mixcloud">
+								<a href="//www.mixcloud.com/widget/iframe/?feed=http%3A%2F%2Fwww.mixcloud.com%2Ftommyjams%2Fmystik-vibes-10th-november-2013%2F&mini=&stylecolor=&hide_artwork=&embed_type=widget_standard" class="preloader obom-overlay-video fancybox-audio-mixcloud">
 									
-									<img src="<?php echo base_url();?>image/radioone/artists/sarvasva.jpg" align="left" class="obom-image">
+									<img src="<?php echo base_url();?>image/radioone/artists/mystikvibes.jpg" align="left" class="obom-image">
 
 									<span align="left" class="obom-image-overlay">
 
@@ -519,7 +519,7 @@
 
 									Welcome to "One Bengaluru One Music", powered by TommyJams! Tune in to Radio One 94.3 FM every Sunday from 9 PM - 10 PM to hear artists from across the world jamming live in the studio!
 									
-									<br><br>This week, Sarvasva, Bangalore's very own Kannada Rock band releases its album on air.
+									<br><br>This week, we feature Mystik Vibes, a cross-cultural band based in Bangalore, composed of brilliant musicians.
 
 								</div>
 
