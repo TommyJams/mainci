@@ -13,16 +13,16 @@
 <script type="text/javascript" src="<?php echo base_url();?>script/linkify.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>script/script.js"></script>
 
-<!--  <div class="watchdemo-form" style="display: none;" >
+  <div class="watchdemo" style="display: none;" >
     <div class="modal-content socialModal">
       <div class="modal-body modal-link">
 
       </div>
       <div class="modal-footer">
           <a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Close</a> 
-        </div>
+      </div>
     </div>
-  </div>-->
+  </div>
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -482,7 +482,7 @@
   });
 
   $("#watchdemo").click(function() {
-    $.fancybox({
+    $.fancybox($('.watchdemo').html(),{
         'padding'   : 0,
         'autoScale'   : false,
         'transitionIn'  : 'none',
