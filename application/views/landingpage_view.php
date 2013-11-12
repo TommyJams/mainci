@@ -14,10 +14,11 @@
 <script type="text/javascript" src="<?php echo base_url();?>script/linkify.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>script/script.js"></script>
 
-  <div class="watchdemo" style="display: none;" >
+  <div class="watchdemo-form" style="display: none;" >
     <div class="modal-content socialModal">
       <div class="modal-body modal-link">
-
+        <iframe title="YouTube video player" class="d-tj-video" style="min-height: 363px; width: 100%;" 
+          src="http://www.youtube.com/watch?v=BRQpt34-ocE" frameborder="0" allowfullscreen></iframe>
       </div>
       <div class="modal-footer">
           <a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Close</a> 
@@ -175,9 +176,7 @@
               </h4>
             </div>
             <div class="text-center d-tj-offset-top-20">
-              <a class="watchdemo" id="watchdemo" href="#">
-                <input type="button" value="WATCH DEMO">  
-              </a>
+              <input class="watchdemo" data-toggle="modal" href="#watchdemoModal" target="_blank" type="button" value="WATCH DEMO">  
               <input onclick="window.open('/index', '_blank');" type="button" value="BOOK EVENTS">
             </div>
           </div>
@@ -490,19 +489,19 @@
     submitNewsletterForm();
   });
 
-  $("#watchdemo").click(function() {
-    $.fancybox({
-        'padding'       : 0,
-        'autoScale'     : false,
-        'transitionIn'  : 'none',
-        'transitionOut' : 'none',
-        'width'         : 680,
-        'height'        : 495,
-        'href'          : this.href.replace(new RegExp("watch\\?v=BRQpt34-ocE", "i"), 'v/'),
-    });
-    
+  $('body').on('click', '.watchdemo', function(){
+        $.fancybox(
+                $('.watchdemo-form').html(),
+                {
+                    'width'             : 950,
+                    'height'            : 1100,
+                    'autoScale'         : false,
+                    'transitionIn'      : 'none',
+                    'transitionOut'     : 'none',
+                    'hideOnContentClick': false,
+                 }
+            );  
   });
-
 });
   
 </script> 
