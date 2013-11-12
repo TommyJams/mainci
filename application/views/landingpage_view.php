@@ -13,6 +13,17 @@
 <script type="text/javascript" src="<?php echo base_url();?>script/linkify.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>script/script.js"></script>
 
+  <div class="watchdemo-form" style="display: none;" >
+    <div class="modal-content socialModal">
+      <div class="modal-body modal-link">
+
+      </div>
+      <div class="modal-footer">
+          <a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Close</a> 
+        </div>
+    </div>
+  </div>
+
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -111,6 +122,11 @@
     color:#FFFFFF;
   }
 
+  .d-tj-book-events .text-center input[type="button"]
+  {
+    padding: 10px 10px;
+  }
+
   /*p.subtitle-paragraph
   {
     font-family:'Dosis';
@@ -153,8 +169,8 @@
               </h4>
             </div>
             <div class="text-center d-tj-offset-top-20">
-              <input onclick="window.open('http://www.youtube.com/watch?v=BRQpt34-ocE&feature=youtu.be', '_blank');" type="button1" value="WATCH DEMO">  
-              <input onclick="window.open('/index', '_blank');" type="button1" value="BOOK EVENTS">
+              <input onclick="window.open('http://www.youtube.com/watch?v=BRQpt34-ocE&feature=youtu.be', '_blank');" type="button" value="WATCH DEMO">  
+              <input onclick="window.open('/index', '_blank');" type="button" value="BOOK EVENTS">
             </div>
           </div>
         </div>
@@ -169,8 +185,8 @@
               </h4>
             </div>
             <div class="text-center d-tj-offset-top-20">
-              <input onclick="window.open('http://www.youtube.com/watch?v=BRQpt34-ocE&feature=youtu.be', '_blank');" type="button1" value="WATCH DEMO">  
-              <input onclick="window.open('/tours', '_blank');" type="button1" value="BOOK TOURS" >
+              <input onclick="window.open('http://www.youtube.com/watch?v=BRQpt34-ocE&feature=youtu.be', '_blank');" type="button" value="WATCH DEMO">  
+              <input onclick="window.open('/tours', '_blank');" type="button" value="BOOK TOURS" >
             </div>
           </div>
         </div>
