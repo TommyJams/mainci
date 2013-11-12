@@ -122,7 +122,7 @@
     color:#FFFFFF;
   }
 
-  .d-tj-book-events input[type="button"], .d-tj-c-tour input[type="button"]
+  .d-tj-book-events a[type="button"], .d-tj-c-tour input[type="button"]
   {
     padding: 10px 10px;
   }
@@ -169,7 +169,7 @@
               </h4>
             </div>
             <div class="text-center d-tj-offset-top-20">
-              <input href="http://www.youtube.com/watch?v=071KqJu7WVo&amp;feature=player_embedded#at=41" id="watchdemo" type="button" value="WATCH DEMO">  
+              <a type="button" id="tip4" title="'Zombieland' Trailer" href="http://www.youtube.com/watch?v=071KqJu7WVo&amp;feature=player_embedded#at=41">Try now</a>
               <input onclick="window.open('/index', '_blank');" type="button" value="BOOK EVENTS">
             </div>
           </div>
