@@ -481,7 +481,9 @@
     submitNewsletterForm();
   });
 
-  $('body').on('click', '.watchdemo', function() {
+});
+
+$('body').on('click', '.watchdemo', function() {
     $.fancybox({
         'padding'       : 0,
         'autoScale'     : false,
@@ -497,8 +499,6 @@
                     }
     });
     return false;
-  });
-
 });
   
 </script> 
