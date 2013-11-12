@@ -481,9 +481,8 @@
     submitNewsletterForm();
   });
 
-  $("#watchdemo").on('click', function(event) {
-    event.preventDefault();
-    $.fancybox({
+  $("#watchdemo").click(function() {
+    $.fancybox($('.watchdemo').html(),{
         'padding'       : 0,
         'autoScale'     : false,
         'transitionIn'  : 'none',
