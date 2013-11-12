@@ -3,7 +3,7 @@
 <head>
 <title>TommyJams - Campaign Page</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="favicon.ico" rel="shortcut icon">
+<link href="/favicon.ico" rel="shortcut icon">
 <!-- Bootstrap -->
 <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
 <link href="/stylecf/bootstrap.min.css" rel="stylesheet" media="screen">
