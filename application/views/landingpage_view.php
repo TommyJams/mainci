@@ -127,6 +127,11 @@
     padding: 10px 10px;
   }
 
+  .d-tj-book-events a
+  {
+    text-decoration: none;
+  }
+
   /*p.subtitle-paragraph
   {
     font-family:'Dosis';
@@ -169,7 +174,9 @@
               </h4>
             </div>
             <div class="text-center d-tj-offset-top-20">
-              <input class="watchdemo" href="http://www.youtube.com/watch?v=071KqJu7WVo&amp;feature=player_embedded#at=41" id="watchdemo" type="button" value="WATCH DEMO">  
+              <a class="watchdemo" href="http://www.youtube.com/v/ZeStnz5c2GI?fs=1&amp;autoplay=1">
+                <input id="watchdemo" type="button" value="WATCH DEMO">  
+              </a>
               <input onclick="window.open('/index', '_blank');" type="button" value="BOOK EVENTS">
             </div>
           </div>
@@ -481,7 +488,7 @@
     submitNewsletterForm();
   });
 
-  $('body').on('click', '.watchdemo', function() {
+  $(".watchdemo").click(function() {
     $.fancybox({
         'padding'       : 0,
         'autoScale'     : false,
