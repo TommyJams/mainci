@@ -169,7 +169,7 @@
               </h4>
             </div>
             <div class="text-center d-tj-offset-top-20">
-              <input href="http://www.youtube.com/watch?v=071KqJu7WVo&amp;feature=player_embedded#at=41" id="watchdemo" type="button" value="WATCH DEMO">  
+              <input class="watchdemo" href="http://www.youtube.com/watch?v=071KqJu7WVo&amp;feature=player_embedded#at=41" id="watchdemo" type="button" value="WATCH DEMO">  
               <input onclick="window.open('/index', '_blank');" type="button" value="BOOK EVENTS">
             </div>
           </div>
@@ -481,13 +481,12 @@
     submitNewsletterForm();
   });
 
-  $("#watchdemo").click(function() {
-    $.fancybox($('.watchdemo').html(),{
+  $("input.watchdemo").on('click', function() {
+    $.fancybox({
         'padding'       : 0,
         'autoScale'     : false,
         'transitionIn'  : 'none',
         'transitionOut' : 'none',
-        'title'         : this.title,
         'width'         : 680,
         'height'        : 495,
         'href'          : this.href.replace(new RegExp("watch\\?v=BRQpt34-ocE", "i"), 'v/'),
