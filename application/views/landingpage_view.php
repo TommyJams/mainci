@@ -494,7 +494,6 @@
                     'keys'              : {
                                             close : [13, 27]  //enter, escape key
                                           },
-                    }
                  }
             ); 
     });
