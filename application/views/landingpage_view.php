@@ -169,7 +169,7 @@
               </h4>
             </div>
             <div class="text-center d-tj-offset-top-20">
-              <a type="button" id="watchdemo" title="Book Events Demo" href="http://www.youtube.com/watch?v=071KqJu7WVo&amp;feature=player_embedded#at=41">WATCH DEMO</a>
+              <a type="button" id="tip4" title="'Zombieland' Trailer" href="http://www.youtube.com/watch?v=071KqJu7WVo&amp;feature=player_embedded#at=41">Try now</a>
               <input onclick="window.open('/index', '_blank');" type="button" value="BOOK EVENTS">
             </div>
           </div>
