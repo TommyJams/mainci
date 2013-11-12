@@ -490,7 +490,7 @@
         'title'     : this.title,
         'width'   : 680,
         'height'    : 495,
-        'href'      : this.href.replace(new RegExp("watch\\?v=BRQpt34-ocE", "i"), 'v/'),
+        'href'      : href.replace(new RegExp("watch\\?v=BRQpt34-ocE", "i"), 'v/'),
         'type'      : 'swf',
         'swf'     : {
              'wmode'    : 'transparent',
