@@ -26,7 +26,7 @@
 
   <link href="/style/supersized/supersized.css" rel="stylesheet" type="text/css" />
   
-  <link href="/style/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css"/>
+  <link href="/stylecf/jquery.fancybox.css" rel="stylesheet" type="text/css"/>
   
   <link href="/style/videoTiles.css" rel="stylesheet" type="text/css"/>
 

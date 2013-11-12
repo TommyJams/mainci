@@ -20,7 +20,7 @@
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>style/jquery-ui/jquery-ui.css"/>
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>style/supersized/supersized.css"/>
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>style/supersized/supersized.shutter.css"/>
-		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>style/fancybox/jquery.fancybox.css"/> 
+		<link rel="stylesheet" type="text/css" href="/stylecf/jquery.fancybox.css"/> 
 		<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>style/base.css"/> 
 		
 		<link rel="stylesheet" type="text/css" media="screen and (max-width:969px)" href="<?php echo base_url();?>style/responsive/width-0-969.css"/>
@@ -40,13 +40,13 @@
 		<script type="text/javascript" src="<?php echo base_url();?>script/jquery.easing.js"></script>
 		<script type="text/javascript" src="<?php echo base_url();?>script/jquery.blockUI.js"></script>
 		<script type="text/javascript" src="<?php echo base_url();?>script/jquery.qtip.min.js"></script>
-		<script type="text/javascript" src="<?php echo base_url();?>script/jquery.fancybox.js"></script>
 		<script type="text/javascript" src="<?php echo base_url();?>script/jquery.supersized.min.js"></script>
 		<script type="text/javascript" src="<?php echo base_url();?>script/jquery.elastic.source.js"></script>
 		<script type="text/javascript" src="<?php echo base_url();?>script/jquery.infieldlabel.min.js"></script>
 		<script type="text/javascript" src="<?php echo base_url();?>script/jquery.carouFredSel.packed.js"></script>
 		<script type="text/javascript" src="<?php echo base_url();?>script/jquery.scrollTo.min.js"></script>
 		<script type="text/javascript" src="<?php echo base_url();?>script/jquery.supersized.shutter.min.js"></script>
+		<script type="text/javascript" src="<?php echo base_url();?>script/jquery.fancybox.js"></script>
 
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>    
 
