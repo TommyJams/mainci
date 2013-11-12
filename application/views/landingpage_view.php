@@ -482,18 +482,23 @@
   });
 
   $("#watchdemo").on('click', function(event) {
-      event.preventDefault();
-      $.fancybox({
-        'type' : 'iframe',
-        // hide the related video suggestions and autoplay the video
-        'href' : this.href.replace(new RegExp('watch\\?v=BRQpt34-ocE', 'i'), 'embed/') + '?rel=0&autoplay=1',
-        'overlayShow' : true,
-        'centerOnScroll' : true,
-        'speedIn' : 100,
-        'speedOut' : 50,
-        'width' : 640,
-        'height' : 480
+    event.preventDefault();
+    $.fancybox({
+        'padding'       : 0,
+        'autoScale'     : false,
+        'transitionIn'  : 'none',
+        'transitionOut' : 'none',
+        'title'         : this.title,
+        'width'         : 680,
+        'height'        : 495,
+        'href'          : this.href.replace(new RegExp("watch\\?v=BRQpt34-ocE", "i"), 'v/'),
+        'type'          : 'swf',
+        'swf'     : {
+                      'wmode'    : 'transparent',
+                      'allowfullscreen' : 'true'
+                    }
     });
+    return false;
   });
 
 });
