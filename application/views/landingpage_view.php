@@ -123,14 +123,26 @@
     color:#FFFFFF;
   }
 
-  .d-tj-book-events input[type="button"], .d-tj-c-tour input[type="button"]
-  {
-    padding: 10px 10px;
-  }
-
   .d-tj-book-events a
   {
     text-decoration: none;
+  }
+
+  .d-tj-black-box-container input[type="button"]
+  {
+    font-size: 20px;
+  }
+
+  .who-campaigns h5
+  {
+    padding:0px 0px;
+  }
+
+  .d-tj-black-box-container h2
+  {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    color:black;
   }
 
   /*p.subtitle-paragraph
