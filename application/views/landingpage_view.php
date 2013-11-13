@@ -9,6 +9,7 @@
 <link href="/stylecf/bootstrap.min.css" rel="stylesheet" media="screen">
 <link href="/stylecf/tj.css" rel="stylesheet" media="screen">
 <link rel="stylesheet" href="/stylecf/supersized.css" type="text/css" media="screen" />
+<script type="text/javascript" src="/script/jquery.blockUI.js"></script>
 <link rel="stylesheet" type="text/css" href="/style/jquery.qtip.css"/>
 <script type="text/javascript" src="<?php echo base_url();?>script/linkify.js"></script>
 <script type="text/javascript" src="<?php echo base_url();?>script/script.js"></script>
@@ -498,6 +499,13 @@
   });
 
 });
+
+function blockForm(formId,action)
+{
+  if(action=='block')
+    $('#'+formId).find('.block').block({message:false,overlayCSS:{opacity:'0.3'}});
+  else $('#'+formId).find('.block').unblock();
+}
   
 </script> 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> 
