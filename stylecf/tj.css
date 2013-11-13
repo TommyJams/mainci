@@ -127,10 +127,10 @@ input[type="button"]:hover, input[type="submit"]:hover {
 	cursor:pointer;
 }
 .d-tj-slide-hover-img {
-	position: absolute;
-	left: 38%;
-	top: 40%;
-	cursor:pointer;
+	cursor: pointer;
+    left: 25%;
+    position: relative;
+    top: 20%;
 }
 .d-tj-campaign-slide-hover-img {
 	position: absolute;
