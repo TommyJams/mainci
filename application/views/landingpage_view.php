@@ -257,9 +257,10 @@
           <div class="clearfix"></div>
           <a id="prev5" class="prev" href="#" ></a> <a id="next5" class="next" href="#"  ></a> </div>
       </div>
+      <div class="clearfix"></div>
     </div>
     <!-- /tour--> 
-
+    
     <!--bottom 2 col-->
     
     <div class="d-tj-offset-top-40  d-tj-col-2">
