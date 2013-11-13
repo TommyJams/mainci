@@ -365,7 +365,7 @@
       <input type="hidden" id="sociallink-3" name="sociallink-3" value="" />
       <input type="hidden" id="editorContent" name="editorContent" value="" />
       <input type="hidden" id="backimg" name="backimg" value="" />
-      <input type="submit" class="clear-fix block" value="SUBMIT" >
+      <input type="submit" class="block" value="SUBMIT" >
       <? 
         } 
       ?>
@@ -408,6 +408,7 @@ campaign_view -> hack
 <script type="text/javascript" src="/script/jquery.easing.min.js"></script> 
 <script type="text/javascript" src="/script/jquery.fancybox.js"></script> 
 <script src="/script/tj1.js"></script> 
+<script type="text/javascript" src="/script/jquery.blockUI.js"></script>
 <script type="text/javascript" src="/script/jquery.qtip.min.js"></script>
 <script type="text/javascript" src="/script/ajaxfileupload.js"></script>
 <script>
