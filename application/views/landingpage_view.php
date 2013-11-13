@@ -197,13 +197,13 @@
       </div>
     </div>
     <!--/Demo tile -->
+
     <!-- tour-->
-    <div class="d-tj-3-c-campaign d-tj-offset-top-40" >
-      <h3>ROADSHOWS</h3>
-      <div class="d-tj-campaign-slide">
+    <div class="d-tj-3-col d-tj-offset-top-30" >
+      <div class="d-tj-slide">
         <div class="list_carousel responsive" style="position:relative">
-          <ul id="d-tj-c-slide">
-            <?
+          <ul id="foo5">            
+              <?
                 $featuredCampaigns = (json_decode($featuredCampaigns)); 
                 foreach($featuredCampaigns as $campaign){ ?>
               <?
@@ -217,12 +217,12 @@
                 if(!isset($image))
                   $image = "defaultcampaign.jpg";
               ?>
-            <li>
-              <div>
+              <li>
+              <div class=" col-md-12" style="padding: 5px;">
                 <h4 class="d-tj-slide-head" ><? print($artist_name); ?></h4>
-                <div class="d-tj-slide-body " >
-                  <div class="d-tj-campaign-slide-img" onclick="window.open('<?print(base_url().'campaign/'.$campaign_id);?>', '_blank');" style="background-image:url(<? print(base_url().'images/artist/campaign/'.$image); ?>)">
-                    <div class="d-tj-campaign-slide-hover-img hide">  </div>
+                <div class="d-tj-slide-body " style="">
+                  <div class="d-tj-slide-img" onclick="window.open('<?print(base_url().'campaign/'.$campaign_id);?>', '_blank');" style="background-image:url(<? print(base_url().'images/artist/campaign/'.$image); ?>)">  
+                    <div class="d-tj-slide-hover-img hide">  </div>
                   </div>
                   <div class="d-tj-progress">
                     <div class="d-tj-progress-g" style="width:<? print($funded); ?>%;"> </div>
@@ -251,26 +251,15 @@
                   </div>
                 </div>
               </div>
-            </li>
+             </li> 
             <? } ?>
           </ul>
           <div class="clearfix"></div>
           <a id="prev5" class="prev" href="#" ></a> <a id="next5" class="next" href="#"  ></a> </div>
       </div>
-      <div class="who-campaigns">
-        <h5>The RoadShows&#39 campaigns are initiated by the artists for the tours that they want to venture on. Every time you buy a ticket, an artist gets one step closer to his dream tour across various cities in the country. Not only that, you get exclusive access to all the shows which are part of that tour, and even get extra freebies from the band on-the-day to make the event really special for you.
-          <b>Book a ticket now!</b><br><br>
-            In case you are an artist and want to start a campaign for one of the RoadShows, simply visit our RoadShows page.
-        </h5>
-      </div>
-        <div class="text-center" >
-          <input class="apply-btn" onclick="window.open('/roadshows', '_blank');" type="button" value="ALL CAMPAIGNS">
-          <input class="apply-btn" onclick="window.open('/tours', '_blank');" type="button" value="START CAMPAIGN">
-      </div>
-      <div class="clearfix"></div>
     </div>
     <!-- /tour--> 
-    
+
     <!--bottom 2 col-->
     
     <div class="d-tj-offset-top-40  d-tj-col-2">
@@ -446,6 +435,23 @@
   });
   
   /**************************************************************************/
+  $(".d-tj-slide-img").hover(
+               function () {
+                $(this).find('.d-tj-slide-hover-img').removeClass('hide');
+                },
+          function () {
+          $(this).find('.d-tj-slide-hover-img').addClass('hide');
+         }
+  );  
+
+  $('#foo5').carouFredSel({
+  
+          width: '100%',
+          prev: '#prev5',
+          next: '#next5',
+          scroll: 1
+        });
+  });
 			
 	$(".d-tj-campaign-slide-img").hover(
            function () {
