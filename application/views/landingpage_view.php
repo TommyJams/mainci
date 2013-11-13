@@ -184,9 +184,9 @@
         </div>  
         <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
           <div class="who-campaigns">
+            <img align="left" src="/img/roadshowslogo.png">
             <h5>The RoadShows&#39 campaigns are initiated by the artists for the tours that they want to venture on. Every time you buy a ticket, an artist gets one step closer to his dream tour across various cities in the country. Not only that, you get exclusive access to all the shows which are part of that tour, and even get extra freebies from the band on-the-day to make the event really special for you.
-              <b>Book a ticket now!</b><br><br>
-                In case you are an artist and want to start a campaign for one of the RoadShows, simply visit our RoadShows page.
+              <b>Book a ticket now!</b>
             </h5>
           </div>
             <div class="text-center" >
@@ -453,7 +453,7 @@
           scroll: 1
   });
 			
-	$(".d-tj-campaign-slide-img").hover(
+	/*$(".d-tj-campaign-slide-img").hover(
            function () {
 		   
             $(this).find('.d-tj-campaign-slide-hover-img').removeClass('hide');
@@ -467,7 +467,7 @@
 			prev: '#prev5',
 			next: '#next5',
 			scroll: 1
-		});
+		});*/
 
 	$(".event-ticker").jCarouselLite({
 		vertical: true,
