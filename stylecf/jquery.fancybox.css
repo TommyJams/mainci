@@ -187,8 +187,15 @@
 	background: url('/img/fancybox_overlay.png');
 }
 
+/*
+	Hack!! -webkit-backface-visibility: hidden; needs to be added to prevent the webkit bug coming in by adding youtube iframe
+   	See: http://stackoverflow.com/questions/12702993/embedded-video-creating-bugs-for-positionfixed-top-header
+*/
+
+
 .fancybox-overlay-fixed {
 	position: fixed;
+	-webkit-backface-visibility: hidden;
 	bottom: 0;
 	right: 0;
 }
