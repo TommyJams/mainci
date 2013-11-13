@@ -374,7 +374,7 @@
       <input type="hidden" id="sociallink-3" name="sociallink-3" value="" />
       <input type="hidden" id="editorContent" name="editorContent" value="" />
       <input type="hidden" id="backimg" name="backimg" value="" />
-      <input type="submit" value="SUBMIT" >
+      <input type="submit" class="block" value="SUBMIT" >
       <? 
         } 
       ?>
@@ -417,6 +417,7 @@ campaign_view -> hack
 <script type="text/javascript" src="/script/jquery.easing.min.js"></script> 
 <script type="text/javascript" src="/script/jquery.fancybox.js"></script> 
 <script src="/script/tj1.js"></script> 
+<script type="text/javascript" src="/script/jquery.blockUI.js"></script>
 <script type="text/javascript" src="/script/jquery.qtip.min.js"></script>
 <script type="text/javascript" src="/script/ajaxfileupload.js"></script>
 <script>
@@ -678,15 +679,22 @@ campaign_view -> hack
       $.fancybox.close();
   }
 
+  function blockForm(formId,action)
+  {
+    if(action=='block')
+      $('#'+formId).find('.block').block({message:false,overlayCSS:{opacity:'0.3'}});
+    else $('#'+formId).find('.block').unblock();
+  }
+
   function submitCampaignForm()
   {
-      //blockForm('editcampaign','block');
+      blockForm('editcampaign','block');
       $.post('/CFtour/validateDetails',$('#editcampaign').serialize(),submitCampaignFormResponse,'json');
   }
 
   function submitCampaignFormResponse(response)
   {
-      //blockForm('editcampaign','unblock');
+      blockForm('editcampaign','unblock');
       //$('#videolink, #target, #artistName, #SocialLink1, #pledgeAmount1, #desc1, #editcampaign-send').qtip('destroy');
       $('#artistName, #target, #vd-link, #socialLink1, #pledgeAmount1, #userfile, #phone, #email').qtip('destroy');
 
