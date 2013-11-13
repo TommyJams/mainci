@@ -469,21 +469,38 @@
   
   /**************************************************************************/
 			
-	$(".d-tj-campaign-slide-img").hover(
+	$(".d-tj-slide-img").hover(
+               function () {
+                $(this).find('.d-tj-slide-hover-img').removeClass('hide');
+                },
+          function () {
+          $(this).find('.d-tj-slide-hover-img').addClass('hide');
+         }
+  );  
+
+  $('#foo5').carouFredSel({
+  
+          width: '100%',
+          prev: '#prev5',
+          next: '#next5',
+          scroll: 1
+  });
+      
+  /*$(".d-tj-campaign-slide-img").hover(
            function () {
-		   
+       
             $(this).find('.d-tj-campaign-slide-hover-img').removeClass('hide');
             },
-			function () {
-				$(this).find('.d-tj-campaign-slide-hover-img').addClass('hide');
-		 });	
+      function () {
+        $(this).find('.d-tj-campaign-slide-hover-img').addClass('hide');
+     });  
 
-	$('#d-tj-c-slide').carouFredSel({
-			width:null,
-			prev: '#prev5',
-			next: '#next5',
-			scroll: 1
-		});
+  $('#d-tj-c-slide').carouFredSel({
+      width:null,
+      prev: '#prev5',
+      next: '#next5',
+      scroll: 1
+    });*/
 
 	$(".event-ticker").jCarouselLite({
 		vertical: true,
