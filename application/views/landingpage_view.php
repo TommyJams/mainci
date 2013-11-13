@@ -169,7 +169,29 @@
         </div>
       </div>   
     </div>
-    <!--/top 2 col--> 
+    <!--/top 2 col-->
+    <!--Demo tile -->
+    <div class="d-tj-box " >
+      <div class="row d-tj-tour">
+        <div class="col-sm-12 col-xs-12 col-md-7"> 
+          <iframe title="YouTube video player" class="d-tj-video" style="min-height: 349px; width: 100%;" 
+          src="http://www.youtube.com/embed/BRQpt34-ocE" frameborder="0" allowfullscreen></iframe>
+        </div>  
+        <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
+          <div class="who-campaigns">
+            <h5>The RoadShows&#39 campaigns are initiated by the artists for the tours that they want to venture on. Every time you buy a ticket, an artist gets one step closer to his dream tour across various cities in the country. Not only that, you get exclusive access to all the shows which are part of that tour, and even get extra freebies from the band on-the-day to make the event really special for you.
+              <b>Book a ticket now!</b><br><br>
+                In case you are an artist and want to start a campaign for one of the RoadShows, simply visit our RoadShows page.
+            </h5>
+          </div>
+            <div class="text-center" >
+              <input class="apply-btn" onclick="window.open('/roadshows', '_blank');" type="button" value="ALL CAMPAIGNS">
+              <input class="apply-btn" onclick="window.open('/tours', '_blank');" type="button" value="START CAMPAIGN">
+          </div> 
+        </div>
+      </div>
+    </div>
+    <!--/Demo tile -->
     <!-- tour-->
     <div class="d-tj-3-c-campaign d-tj-offset-top-40" >
       <h3>ROADSHOWS</h3>
