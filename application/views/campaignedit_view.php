@@ -671,13 +671,13 @@ campaign_view -> hack
 
   function submitCampaignForm()
   {
-      //blockForm('editcampaign','block');
+      blockForm('editcampaign','block');
       $.post('/CFtour/validateDetails',$('#editcampaign').serialize(),submitCampaignFormResponse,'json');
   }
 
   function submitCampaignFormResponse(response)
   {
-      //blockForm('editcampaign','unblock');
+      blockForm('editcampaign','unblock');
       //$('#videolink, #target, #artistName, #SocialLink1, #pledgeAmount1, #desc1, #editcampaign-send').qtip('destroy');
       $('#artistName, #target, #vd-link, #socialLink1, #pledgeAmount1, #userfile, #phone, #email').qtip('destroy');
 
