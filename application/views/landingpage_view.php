@@ -111,6 +111,11 @@
     font-size: 20px;
   }
 
+  .who-campaigns h5
+  {
+    padding:0px 0px;
+  }
+
   /*p.subtitle-paragraph
   {
     font-family:'Dosis';
@@ -175,6 +180,7 @@
       </div>   
     </div>
     <!--/top 2 col-->
+
     <!--Demo tile -->
     <div class="d-tj-box " >
       <div class="row d-tj-tour">
@@ -183,8 +189,9 @@
           src="http://www.youtube.com/embed/BRQpt34-ocE" frameborder="0" allowfullscreen></iframe>
         </div>  
         <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
+          <h2>ROADSHOWS</h2>
           <div class="who-campaigns">
-            <img align="left" src="/img/roadshowslogo.png">
+            <img align="left" src="/img/roadshowslogo.png" style="margin-right:5px">
             <h5>The RoadShows&#39 campaigns are initiated by the artists for the tours that they want to venture on. Every time you buy a ticket, an artist gets one step closer to his dream tour across various cities in the country. Not only that, you get exclusive access to all the shows which are part of that tour, and even get extra freebies from the band on-the-day to make the event really special for you.
               <b>Book a ticket now!</b>
             </h5>
