@@ -343,11 +343,7 @@
 
 </div>
 
-<!--
--webkit-backface-visibility: hidden; -webkit-transform: translateZ(-999); 
-is a hack to prevent position fixed of background to be made redundant by the iframe of youtube. This seems to be a webkit bug.
--->
-<img src="/images/artist/campaign/<? print($backimg); ?>" id="supersized" style="-webkit-backface-visibility: hidden; -webkit-transform: translateZ(-999);">
+<img src="/images/artist/campaign/<? print($backimg); ?>" id="supersized">
 
 <script src="/script/jquery.js"></script> 
 <script src="/script/bootstrap.min.js"></script>
