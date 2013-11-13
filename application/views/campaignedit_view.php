@@ -365,7 +365,7 @@
       <input type="hidden" id="sociallink-3" name="sociallink-3" value="" />
       <input type="hidden" id="editorContent" name="editorContent" value="" />
       <input type="hidden" id="backimg" name="backimg" value="" />
-      <input type="submit" value="SUBMIT" >
+      <input type="submit" class="block" value="SUBMIT" >
       <? 
         } 
       ?>
