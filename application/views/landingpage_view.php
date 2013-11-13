@@ -176,7 +176,6 @@
             </div>
             <div class="text-center d-tj-offset-top-20">
               <!--<input class="watchdemo" data-toggle="modal" href="#watchdemoModal" target="_blank" type="button" value="WATCH DEMO">-->
-              <input onclick="window.open('http://www.youtube.com/watch?v=BRQpt34-ocE&feature=youtu.be', '_blank');" type="button" value="WATCH DEMO">    
               <input onclick="window.open('/index', '_blank');" type="button" value="BOOK EVENTS">
             </div>
           </div>
@@ -192,7 +191,6 @@
               </h4>
             </div>
             <div class="text-center d-tj-offset-top-20">
-              <input onclick="window.open('http://www.youtube.com/watch?v=BRQpt34-ocE&feature=youtu.be', '_blank');" type="button" value="WATCH DEMO">  
               <input onclick="window.open('/tours', '_blank');" type="button" value="BOOK TOURS" >
             </div>
           </div>
@@ -200,34 +198,56 @@
       </div>   
     </div>
     <!--/top 2 col--> 
+
+    <!--Demo tile -->
+    <div class="d-tj-box " >
+      <div class="row d-tj-tour">
+        <div class="col-sm-12 col-xs-12 col-md-7"> 
+          <iframe title="YouTube video player" class="d-tj-video" style="min-height: 300px; width: 100%;" 
+          src="http://www.youtube.com/embed/BRQpt34-ocE" frameborder="0" allowfullscreen></iframe>
+        </div>  
+        <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
+          <h2>TOMMYJAMS ROADSHOWS</h2>
+          <div class="who-campaigns">
+            <img align="left" src="/img/roadshows_logo.png" style="margin-right:5px;width:120px">
+            <h5>The RoadShows&#39 campaigns are initiated by the artists for the tours that they want to venture on. Every time you buy a ticket, an artist gets one step closer to his dream tour across various cities in the country. Not only that, you get exclusive access to all the shows which are part of that tour, and even get extra freebies from the band on-the-day to make the event really special for you.
+              <b>Book a ticket now!</b>
+            </h5>
+          </div>
+            <div class="text-center" >
+              <input style="margin-top:10px" class="apply-btn" onclick="window.open('/roadshows', '_blank');" type="button" value="ALL CAMPAIGNS">
+              <input style="margin-top:10px" class="apply-btn" onclick="window.open('/tours', '_blank');" type="button" value="START CAMPAIGN">
+          </div> 
+        </div>
+      </div>
+    </div>
+    <!--/Demo tile -->
+
     <!-- tour-->
-    <div class="d-tj-3-c-campaign d-tj-offset-top-40" >
-      <h3>ROADSHOWS</h3>
-      <div class="d-tj-campaign-slide">
+    <div class="d-tj-3-col d-tj-offset-top-30" >
+      <div class="d-tj-slide">
         <div class="list_carousel responsive" style="position:relative">
-          <ul id="d-tj-c-slide">
-            <?
-              $featuredCampaigns = (json_decode($featuredCampaigns)); 
-              if($featuredCampaigns)
-              {
-                foreach($featuredCampaigns as $campaign){
+          <ul id="foo5">            
+              <?
+                $featuredCampaigns = (json_decode($featuredCampaigns)); 
+                foreach($featuredCampaigns as $campaign){ ?>
+              <?
+                $campaign_id = $campaign->campaign_id;
+                $artist_id = $campaign->artist_id;
+                $artist_name = $campaign->artist_name;
+                $funded = $campaign->funded;
+                $days_to_go = $campaign->days_to_go;
+                $image = $campaign->image;
 
-                  $campaign_id = $campaign->campaign_id;
-                  $artist_id = $campaign->artist_id;
-                  $artist_name = $campaign->artist_name;
-                  $funded = $campaign->funded;
-                  $days_to_go = $campaign->days_to_go;
-                  $image = $campaign->image;
-
-                  if(!isset($image))
-                    $image = "defaultcampaign.jpg";
-            ?>
-            <li>
-              <div>
+                if(!isset($image))
+                  $image = "defaultcampaign.jpg";
+              ?>
+              <li>
+              <div class=" col-md-12" style="padding: 5px;">
                 <h4 class="d-tj-slide-head" ><? print($artist_name); ?></h4>
-                <div class="d-tj-slide-body " >
-                  <div class="d-tj-campaign-slide-img" onclick="window.open('<?print(base_url().'campaign/'.$campaign_id);?>', '_blank');" style="background-image:url(<? print(base_url().'images/artist/campaign/'.$image); ?>)">
-                    <div class="d-tj-campaign-slide-hover-img hide">  </div>
+                <div class="d-tj-slide-body " style="">
+                  <div class="d-tj-slide-img" onclick="window.open('<?print(base_url().'campaign/'.$campaign_id);?>', '_blank');" style="background-image:url(<? print(base_url().'images/artist/campaign/'.$image); ?>)">  
+                    <div class="d-tj-slide-hover-img hide"> <img src="/image/image_overlay.png" alt=""/> </div>
                   </div>
                   <div class="d-tj-progress">
                     <div class="d-tj-progress-g" style="width:<? print($funded); ?>%;"> </div>
@@ -256,25 +276,15 @@
                   </div>
                 </div>
               </div>
-            </li>
-            <? } }?>
+             </li> 
+            <? } ?>
           </ul>
           <div class="clearfix"></div>
           <a id="prev5" class="prev" href="#" ></a> <a id="next5" class="next" href="#"  ></a> </div>
       </div>
-      <div class="who-campaigns">
-        <h5>The RoadShows&#39 campaigns are initiated by the artists for the tours that they want to venture on. Every time you buy a ticket, an artist gets one step closer to his dream tour across various cities in the country. Not only that, you get exclusive access to all the shows which are part of that tour, and even get extra freebies from the band on-the-day to make the event really special for you.
-          <b>Book a ticket now!</b><br><br>
-            In case you are an artist and want to start a campaign for one of the RoadShows, simply visit our RoadShows page.
-        </h5>
-      </div>
-        <div class="text-center" >
-          <input class="apply-btn" onclick="window.open('/roadshows', '_blank');" type="button" value="ALL CAMPAIGNS">
-          <input class="apply-btn" onclick="window.open('/tours', '_blank');" type="button" value="START CAMPAIGN">
-      </div>
       <div class="clearfix"></div>
     </div>
-    <!-- /tour--> 
+    <!-- /tour-->  
     
     <!--bottom 2 col-->
     
@@ -511,6 +521,7 @@
 <script type="text/javascript" src="/script/jquery.supersized.min.js"></script> 
 <script type="text/javascript" src="/script/jquery.supersized.shutter.min.js"></script> 
 <script type="text/javascript" src="/script/jcarousellite_1.0.1c4.js"></script> 
+<script type="text/javascript" src="/script/jquery.blockUI.js"></script>
 <script type="text/javascript" src="/script/jquery.qtip.min.js"></script>
 <script type="text/javascript" src="/script/newsletter-form.js"></script>
 <script src="/script/tj.js"></script>
