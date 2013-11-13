@@ -116,6 +116,13 @@
     padding:0px 0px;
   }
 
+  .d-tj-black-box-container h2
+  {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    color:black;
+  }
+
   /*p.subtitle-paragraph
   {
     font-family:'Dosis';
@@ -197,8 +204,8 @@
             </h5>
           </div>
             <div class="text-center" >
-              <input class="apply-btn" onclick="window.open('/roadshows', '_blank');" type="button" value="ALL CAMPAIGNS">
-              <input class="apply-btn" onclick="window.open('/tours', '_blank');" type="button" value="START CAMPAIGN">
+              <input style="margin-top:10px" class="apply-btn" onclick="window.open('/roadshows', '_blank');" type="button" value="ALL CAMPAIGNS">
+              <input style="margin-top:10px" class="apply-btn" onclick="window.open('/tours', '_blank');" type="button" value="START CAMPAIGN">
           </div> 
         </div>
       </div>
