@@ -451,7 +451,6 @@
           prev: '#prev5',
           next: '#next5',
           scroll: 1
-        });
   });
 			
 	$(".d-tj-campaign-slide-img").hover(
