@@ -133,10 +133,10 @@ input[type="button"]:hover, input[type="submit"]:hover {
     top: 20%;
 }
 .d-tj-campaign-slide-hover-img {
-	position: absolute;
-	left: 34%;
-	top: 32%;
 	cursor: pointer;
+    left: 25%;
+    position: relative;
+    top: 20%;
 }
 .d-tj-progress {
 	background:#708072;
