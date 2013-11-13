@@ -673,10 +673,10 @@ campaign_view -> hack
   }
 
   function handleKeyPress(e)
-    {
-      if(e.keyCode == 13)
-        $.fancybox.close();
-    }
+  {
+    if(e.keyCode == 13)
+      $.fancybox.close();
+  }
 
   function submitCampaignForm()
   {
