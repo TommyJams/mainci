@@ -1227,6 +1227,9 @@ ul.social-list {
 .d-tj-book-events-top h4 img, .d-tj-c-tour h4 img{
 	width:180px;
 }
+.d-tj-c-tour input, .d-tj-book-events input{
+	margin-left:25px;
+}
 .d-tj-video {
 	width:240px;
 	height:200px;
