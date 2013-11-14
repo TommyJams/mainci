@@ -1167,6 +1167,12 @@ ul.social-list {
 	font-size:20px;
 	margin-top:5px;
 }
+#newsletter-form input[type="text"]{
+	margin-left:-10px;
+}
+#newsletter-form input[type="text"], #newsletter-form input[type="submit"] {
+	margin-top:2px;
+}
 .d-tj-video {
 	width:340px;
 	margin-bottom:15px
@@ -1229,6 +1235,9 @@ ul.social-list {
 }
 .d-tj-c-tour input, .d-tj-book-events input{
 	margin-left:25px;
+}
+#newsletter-form input[type="text"], #newsletter-form input[type="submit"]{
+	margin-left:-10px;
 }
 .d-tj-video {
 	width:240px;
