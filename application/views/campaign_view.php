@@ -140,7 +140,7 @@
               $city = $venue->city;
               $image = $venue->image;
             ?>
-          <div class="col-md-12 col-sm-12 col-xs-6 d-tj-venue-box">
+          <div class="col-md-12 col-sm-12 col-xs-7 d-tj-venue-box">
             <div class="col-md-4 col-xs-12 col-sm-5 d-tj-p0"> 
               <a href="javascript:;" onclick="venueBox(<? print($venue_id); ?>);" data-toggle="modal" >
                 <img src="/img/temp/<? print($image); ?>" alt="" style="max-height: 150px;">

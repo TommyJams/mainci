@@ -1150,6 +1150,16 @@ filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 .d-tj-campaign-slide-img {
 	min-width: 320px !important;
 }
+ul.social-list-share li a.social-list-twitter-share{
+	margin-top:2px;
+}
+.d-tj-venue-box h4{
+	margin-top:0px;
+	margin-bottom:30px;
+}
+ul.social-list {
+	padding-top:10px;
+}
 .d-tj-video {
 	width:340px;
 	margin-bottom:15px
@@ -1187,6 +1197,16 @@ filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 .d-tj-campaign-slide .caroufredsel_wrapper {
 	width: 240px !important;
 }
+ul.social-list-share li a.social-list-twitter-share{
+	margin-top:2px;
+}
+.d-tj-venue-box h4{
+	margin-top:0px;
+	margin-bottom:30px;
+}
+ul.social-list {
+	padding-top:10px;
+}
 .d-tj-video {
 	width:240px;
 	height:200px;
@@ -1211,7 +1231,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 	max-width: 300px !important;
 }
 input[type="button"], input[type="submit"] {
-	font-size: 14px;
+	font-size: 30px;
 	margin-right: 70px;
 	padding: 5px 10px !important;
 }
