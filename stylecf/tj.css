@@ -1394,4 +1394,9 @@ h4 {
 	width:210px;
 	height:1050px;
 }
+.d-tj-overlay {
+	height: 70px;
+    margin-bottom: -90px;
+    top: -70px;
+}
 }
