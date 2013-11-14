@@ -1233,7 +1233,7 @@ ul.social-list {
 .d-tj-book-events-top h4 img, .d-tj-c-tour h4 img{
 	width:180px;
 }
-.d-tj-c-tour input, .d-tj-book-events input{
+.d-tj-c-tour input[type="submit"], .d-tj-book-events input[type="submit"]{
 	margin-left:25px;
 }
 #newsletter-form input[type="text"], #newsletter-form input[type="submit"]{
