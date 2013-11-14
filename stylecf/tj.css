@@ -483,7 +483,7 @@ ul.social-list-share li a.social-list-facebook-share {
 	display: inline-block;
 }
 a.social-list-fb-event-title {
-	text-transform: uppercase;
+	text-transform: none;
 	color: #000;
 	width: 100%;
 	height: 39px;
@@ -503,10 +503,11 @@ a.social-list-fb-event-title:hover {
 .social-list-fb-event-name {
 	height: 39px;
 	text-align: center;
-	font-size: 26px;
+	font-size: 23px;
 	font-family: 'Dosis', sans-serif;
 	font-weight: 400;
 	margin-left: 10px;
+	margin-top:2px;
 }
 .social-list-fb-event-pic {
 	margin: 10px;
