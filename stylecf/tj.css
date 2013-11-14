@@ -1270,6 +1270,10 @@ input[type="button"], input[type="submit"] {
 	margin-right: 70px;
 	padding: 5px 10px !important;
 }
+.d-tj-pledge iframe {
+	width:240px;
+	height:1000px;
+}
 .d-tj-black-box h4 {
 	font-size:14px !important
 }
