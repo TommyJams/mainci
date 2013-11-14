@@ -148,7 +148,7 @@ class Model extends CI_Model{
    				$startCamp = $row->startCamp;$endCamp = $row->endCamp;$videoLink = $row->videoLink;
    				$fb = $row->fb;$twitter = $row->twitter;$website = $row->website;
    				$scloud = $row->soundcloud;$bandcamp = $row->bandcamp;$ytube = $row->youtube;
-   				$image1 = $row->image1;$ticket_widget = $row->ticket_widget;
+   				$image1 = $row->image1;$ticket_widget = $row->ticket_widget;$widget_height = $row->widget_height;
    				$status = $row->status;$tourDate = $row->tourDate;$desc = $row->desc;
    				$tourDate = $row->tourDate;$campaign_desc = htmlspecialchars_decode($row->desc);
 
@@ -311,6 +311,7 @@ class Model extends CI_Model{
 								'artist_name' 	=> $artist_name,
 								'campaign_desc' => $campaign_desc,
 								'ticket_widget'	=> $ticket_widget,
+								'widget_height' => $widget_height,
 								'venues' 		=> $venues,
 								'pledges' 		=> $pledges,
 								'contributes' 	=> $contributes,

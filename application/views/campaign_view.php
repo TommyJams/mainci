@@ -87,6 +87,7 @@
     $contributors = $row->contributes;
     $campaign_desc = $row->campaign_desc;
     $ticket_widget = $row->ticket_widget;
+    $widget_height = $row->widget_height;
     $vlink = $row->videoId;
     $fb = $row->fb;
     $twitter = $row->twitter;
@@ -307,7 +308,7 @@
                     } }
                   ?>
                   <? if(isset($ticket_widget)) { ?>
-                    <iframe frameborder="0" src="<? print($ticket_widget); ?>" width="315" height="1150"></iframe>
+                    <iframe frameborder="0" src="<? print($ticket_widget); ?>" width="315" height="<? print($widget_height); ?>"></iframe>
                     <div class="d-tj-overlay" style="width:105%; z-index:1000; position:relative; background-color:black;"> 
                     </div>
                   <? } ?>
