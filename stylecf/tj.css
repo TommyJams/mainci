@@ -1246,6 +1246,11 @@ ul.social-list {
 	width:240px;
 	height:1000px;
 }
+.d-tj-overlay {
+	height: 110px;
+    margin-bottom: -140px;
+    top: -110px;
+}
 .d-tj-video {
 	width:240px;
 	height:200px;

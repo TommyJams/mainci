@@ -282,7 +282,7 @@
                     } 
                   ?>
                   <iframe frameborder="0" src="http://em.explara.com/widget/test-event-ci" width="315" height="890"></iframe>
-                  <div style="width:105%; height: 70px; top:-70px; margin-bottom:-100px; z-index:1000; position:relative; background-color:black;"> 
+                  <div class="d-tj-overlay" style="width:105%; height: 70px; top:-70px; margin-bottom:-100px; z-index:1000; position:relative; background-color:black;"> 
                   </div>
                 </div>
               </div>
