@@ -1363,8 +1363,11 @@ h4 {
 .d-tj-book-events-top h4 img, .d-tj-c-tour h4 img{
 	width:165px;
 }
-.d-tj-c-tour input[type="button"], .d-tj-book-events input[type="button"]{
-	margin-left:20px;
+.d-tj-book-events input[type="button"]{
+	margin-left:25px;
+}
+.d-tj-c-tour input[type="button"] {
+	margin-left:30px;
 }
 .d-tj-tour-right input[type="button"]{
 	font-size:15px;
