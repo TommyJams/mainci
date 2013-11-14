@@ -168,6 +168,11 @@ input[type="button"]:hover, input[type="submit"]:hover {
 .apply-btn:hover {
 	color:#ffcc00 !important;
 }
+.d-tj-overlay {
+	height: 70px;
+    margin-bottom: -100px;
+    top: -70px;
+}
 .d-tj-circle {
 	background: #ffcc00;
 	/*margin-bottom:50px;*/
