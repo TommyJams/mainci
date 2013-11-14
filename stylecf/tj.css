@@ -1239,6 +1239,9 @@ ul.social-list {
 #newsletter-form input[type="text"], #newsletter-form input[type="submit"]{
 	margin-left:-10px;
 }
+.d-tj-tour-right input[type="button"]{
+	margin-right:0px;
+}
 .d-tj-video {
 	width:240px;
 	height:200px;
@@ -1352,5 +1355,22 @@ h4 {
 }
 .fancybox-inner {
 	width: 220px !important;
+}
+.social-list-fb-event-name{
+	font-size:12px;
+	margin-top:11px;
+}
+.d-tj-book-events-top h4 img, .d-tj-c-tour h4 img{
+	width:165px;
+}
+.d-tj-c-tour input[type="button"], .d-tj-book-events input[type="button"]{
+	margin-left:20px;
+}
+.d-tj-tour-right input[type="button"]{
+	font-size:15px;
+	margin-right:0px;
+}
+.pledge-btn-top input[type="button"]{
+	font-size:15px;
 }
 }
