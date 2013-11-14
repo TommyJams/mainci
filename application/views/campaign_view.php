@@ -307,7 +307,7 @@
                     } }
                   ?>
                   <? if(isset($ticket_widget)) { ?>
-                    <iframe frameborder="0" src="<? print($ticket_widget); ?>" width="315" height="890"></iframe>
+                    <iframe frameborder="0" src="<? print($ticket_widget); ?>" width="315" height="1150"></iframe>
                     <div class="d-tj-overlay" style="width:105%; z-index:1000; position:relative; background-color:black;"> 
                     </div>
                   <? } ?>
