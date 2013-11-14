@@ -1224,6 +1224,9 @@ ul.social-list {
 .f-artist h4, .f-venues h4, .f-fans h4, .f-help h4 {
 	font-size:14px;
 }
+.d-tj-book-events-top-bg h4 img, .d-tj-c-tour-bg h4 img{
+	width:180px;
+}
 .d-tj-video {
 	width:240px;
 	height:200px;
