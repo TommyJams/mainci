@@ -169,9 +169,9 @@ input[type="button"]:hover, input[type="submit"]:hover {
 	color:#ffcc00 !important;
 }
 .d-tj-overlay {
-	height: 70px;
-    margin-bottom: -100px;
-    top: -70px;
+	height: 140px;
+    margin-bottom: -170px;
+    top: -140px;
 }
 .d-tj-circle {
 	background: #ffcc00;
