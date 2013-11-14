@@ -157,7 +157,7 @@
               $tour_date = date('jS F Y', $date);
 
             ?>
-          <div class="col-md-12 col-sm-12 col-xs-6 d-tj-venue-box">
+          <div class="col-md-12 col-sm-12 col-xs-7 d-tj-venue-box">
             <div class="col-md-4 col-xs-12 col-sm-5 d-tj-p0"> 
               <a href="javascript:;" onclick="venueBox(<? print($venue_id); ?>);" data-toggle="modal" >
                 <img src="/img/temp/<? print($image); ?>" alt="" style="max-height: 150px; margin-bottom: 10px">
@@ -308,7 +308,7 @@
                   ?>
                   <? if(isset($ticket_widget)) { ?>
                     <iframe frameborder="0" src="<? print($ticket_widget); ?>" width="315" height="890"></iframe>
-                    <div style="width:105%; height: 70px; top:-70px; margin-bottom:-100px; z-index:1000; position:relative; background-color:black;"> 
+                    <div class="d-tj-overlay" style="width:105%; z-index:1000; position:relative; background-color:black;"> 
                     </div>
                   <? } ?>
                 </div>
