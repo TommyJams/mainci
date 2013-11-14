@@ -1242,6 +1242,10 @@ ul.social-list {
 .d-tj-tour-right input[type="button"]{
 	margin-right:0px;
 }
+.d-tj-pledge iframe {
+	width:240px;
+	height:1000px;
+}
 .d-tj-video {
 	width:240px;
 	height:200px;
@@ -1269,10 +1273,6 @@ input[type="button"], input[type="submit"] {
 	font-size: 20px;
 	margin-right: 70px;
 	padding: 5px 10px !important;
-}
-.d-tj-pledge iframe {
-	width:240px;
-	height:1000px;
 }
 .d-tj-black-box h4 {
 	font-size:14px !important
@@ -1379,5 +1379,9 @@ h4 {
 }
 .pledge-btn-top input[type="button"]{
 	font-size:15px;
+}
+.d-tj-pledge iframe {
+	width:210px;
+	height:1050px;
 }
 }
