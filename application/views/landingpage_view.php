@@ -380,8 +380,8 @@
           <a href="http://timesofindia.indiatimes.com/tech/enterprise-it/strategy/A-website-that-helps-in-event-management/articleshow/20646626.cms" target="_blank">
             <img src="image/icon/icon-partner/icon12.png" alt="" style="margin-left: 10px;"/>                
           </a> 
-          <a href="http://www.youtube.com/watch?v=RgMRdAkCJ_Q" target="_blank">                  
-            <img src="image/icon/icon-partner/icon13.png" alt="" style="margin-left: 10px;"/>                
+          <a href="http://www.microsoft.com/en-in/accelerator/Blog.aspx" target="_blank">                  
+            <img src="image/icon/icon-partner/icon4.png" alt="" style="margin-left: 10px;"/>                
           </a> 
           <a href="http://blog.venture-lab.org/index.php/133/venture-lab-is-music-to-tommyjams-ears/" target="_blank">
             <img src="image/icon/icon-partner/icon5.png" alt="" style="margin-left: 10px;"/>                     
@@ -392,8 +392,8 @@
           <a href="/radioone" target="_blank">                  
             <img src="image/icon/icon-partner/icon10.png" alt="" style="margin-left: 10px;"/>                
           </a>              
-          <a href="http://mewsic.in" target="_blank">
-              <img src="image/icon/icon-partner/icon2.png" alt="" style="margin-left: 10px;"/>                            
+          <a href="http://www.youtube.com/watch?v=RgMRdAkCJ_Q" target="_blank">
+              <img src="image/icon/icon-partner/icon13.png" alt="" style="margin-left: 10px;"/>                            
           </a>                     
       </div> 
       </div> 
