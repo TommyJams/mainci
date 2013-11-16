@@ -40,7 +40,7 @@ class CFtour extends CI_Controller{
 		$data = $this->upload->data();
 		$filename = $data['file_name'];
 
-		error_log("File name: ".$filename);
+		//error_log("File name: ".$filename);
 
 		$response['filename'] = $filename;
 
@@ -66,7 +66,7 @@ class CFtour extends CI_Controller{
 
         if(isset($_GET['code']))
         {
-            error_log('Authentication Code exists');
+            //error_log('Authentication Code exists');
 
             //Validate the code first
             $validCode = $this->Model->validateFBCode($_GET['code']);
@@ -83,12 +83,12 @@ class CFtour extends CI_Controller{
         }
         else if(isset($_GET['error']))
         {
-            error_log('Authentication Error: '.$_GET['error']);
+            //error_log('Authentication Error: '.$_GET['error']);
             redirect(base_url().'tours');
         }
         else
         {
-            error_log('No Authentication done');
+            //error_log('No Authentication done');
             redirect(base_url().'tours');
         }
 	}

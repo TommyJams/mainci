@@ -17,7 +17,7 @@ class CFfans extends CI_Controller{
     $campaign_id = $this->uri->segment(2);
     parse_str(substr(strrchr($_SERVER['REQUEST_URI'], "?"), 1), $_GET);
 
-		error_log("Camp Id: ".$campaign_id);
+		//error_log("Camp Id: ".$campaign_id);
 
     if(isset($_GET['code']))
     {

@@ -16,7 +16,7 @@ class Model extends CI_Model{
             //!!!!!Hack!!!!!
             //Need to have this here since without this the app timesout and getuser during campaign creation fails.
             $uid = $this->facebook->getUser();
-            error_log('Facebook User constructor: '.$uid);
+            //error_log('Facebook User constructor: '.$uid);
        }
 
 	public function tourDetails(){
@@ -132,7 +132,7 @@ class Model extends CI_Model{
 
 	public function campaignDetails($camp_id){
 
-		error_log($camp_id);
+		//error_log($camp_id);
 		$days_to_go = 0;
 		$query = $this->db->query("SELECT * FROM campaignCF WHERE campaign_id='$camp_id';");
 		if ($query->num_rows() > 0)
@@ -298,7 +298,7 @@ class Model extends CI_Model{
                                                                                    'scope' => 'rsvp_event',
                                                                                    'redirect_uri' => base_url().'campaign/'.$campaign_id
                                                                             ));
-                                   error_log('Fb Status:'.$fbEventStatus);
+                                   //error_log('Fb Status:'.$fbEventStatus);
                             }
 
 				$campaignDetails = array(
@@ -379,8 +379,8 @@ class Model extends CI_Model{
         $sociallink3 = $this->input->post("sociallink-3");
 
         $form_data = json_encode($this->input->post());
-		error_log("Form Data: ".$form_data);
-		error_log("Image: ".$backimg);
+		//error_log("Form Data: ".$form_data);
+		//error_log("Image: ".$backimg);
 
 		$response=array('error'=>0,'info'=>null);
 
@@ -405,16 +405,16 @@ class Model extends CI_Model{
 		{
 			$pledgeAmount = 'pledgeAmount'.$pledgecount;
 
-			error_log($pledgeAmount);
+			//error_log($pledgeAmount);
 
 			$amount = $this->input->post("$pledgeAmount");
 
-			error_log("Pledge Amount: ".$amount);
+			//error_log("Pledge Amount: ".$amount);
 
 			if(isEmpty($amount))
 			{
 				$pledgei++;
-				error_log("Pledge i: ".$pledgei);
+				//error_log("Pledge i: ".$pledgei);
 			}
 
 			$pledgecount--;
@@ -422,7 +422,7 @@ class Model extends CI_Model{
 
 		if($pledgei == $maxIndex)
 		{
-			error_log("Pledge check");
+			//error_log("Pledge check");
 			$response['error']=1;
 			$response['info'][]=array('fieldId'=>'pledgeAmount1','message'=>CONTACT_FORM_MSG_INVALID_PLEDGE_AMOUNT);
 		}
@@ -469,7 +469,7 @@ class Model extends CI_Model{
 		else
 		{
 			$filename = $backimg;
-			error_log("In BackImage Check: ".$filename);
+			//error_log("In BackImage Check: ".$filename);
 		}
 
 		// Social Links Check
@@ -483,7 +483,7 @@ class Model extends CI_Model{
 			{
 				$i = IsSocialUrl($values["$sociallink"]);
 
-				error_log($i);
+				//error_log($i);
 			
 				if($i == 1)
 					$fb = $values["$sociallink"];
@@ -535,7 +535,7 @@ class Model extends CI_Model{
 
         try {
             $uid = $this->facebook->getUser();
-            error_log('Facebook User: '.$uid);
+            //error_log('Facebook User: '.$uid);
             if($uid)
             {
                 $ret_obj = $this->facebook->api('/me/events', 'POST',
@@ -550,16 +550,16 @@ class Model extends CI_Model{
                     $eventID = $ret_obj['id'];
 
                     $cover['cover_url'] = base_url().'images/artist/campaign/'.$backimg;
-                    error_log("Event Pic: ".$cover['cover_url']);
+                    //error_log("Event Pic: ".$cover['cover_url']);
 
 					$eventUpdate = $this->facebook->api( "/".$eventID, 'post', $cover );
 
-					error_log("Event Val: ".$eventUpdate);
+					//error_log("Event Val: ".$eventUpdate);
                 }
             }
             else
             {
-                error_log('Facebook User not authenticated');
+                //error_log('Facebook User not authenticated');
             }
         }
         catch(FacebookApiException $e) {
@@ -567,8 +567,8 @@ class Model extends CI_Model{
              // user ID even though the access token is invalid.
              // In this case, we'll get an exception, so we'll
              // just ask the user to login again here.
-             error_log($e->getType());
-             error_log($e->getMessage());
+             //error_log($e->getType());
+             //error_log($e->getMessage());
         }
 
 		$query1 = $this->db->query("INSERT INTO `campaignCF` (`tour_id`, `tour_name`, `artist_name`, `phone`, `email`, `target`, `startCamp`, `endCamp`, `tourDate`, `desc`, `fb`, `twitter`, `soundcloud`, `bandcamp`, `youtube`, `website`, `videoLink`, `image1`, `event_id`  ) 
@@ -583,7 +583,7 @@ class Model extends CI_Model{
 				$campaign_id = $row->campaign_id;
 			}
 
-			error_log("Max Index Value: ".$maxIndex);
+			//error_log("Max Index Value: ".$maxIndex);
 
 			while($maxIndex)
 			{
@@ -591,10 +591,10 @@ class Model extends CI_Model{
 				$desc = 'desc'.$maxIndex;
 
 				$amount = $this->input->post("$pledgeAmount");
-				error_log("Amount: ".$amount);
+				//error_log("Amount: ".$amount);
 
 				$desc = $this->input->post("$desc");
-				error_log("Benefit: ".$desc);
+				//error_log("Benefit: ".$desc);
 
 				if(!isEmpty($amount))
 				{
@@ -627,7 +627,7 @@ class Model extends CI_Model{
 
 	public function getTourDetail($tour_id){
 
-		error_log("message: ".$tour_id);
+		//error_log("message: ".$tour_id);
 
 		$query = $this->db->query("SELECT * FROM toursCF WHERE tour_id = '$tour_id';");
 		if ($query->num_rows() > 0)
@@ -713,11 +713,11 @@ class Model extends CI_Model{
                         $event_rsvp = $this->facebook->api($fbEvent.'/attending', 'POST', array(
                                         'access_token'  => $access_token
                                 ));
-                        error_log('RSVP to '.$fbEvent.':'.$event_rsvp);
+                        //error_log('RSVP to '.$fbEvent.':'.$event_rsvp);
                 }
                 catch(FacebookApiException $e)
                 {
-                        error_log('Exception!');
+                        //error_log('Exception!');
                 }
 
                 return true;
