@@ -426,7 +426,7 @@ campaign_view -> hack
 
   $(document).ready(function(){
     
-    console.log(maxIndex);
+    //console.log(maxIndex);
     $('#maxIndex').val(maxIndex);
 
     $(".add-option-new").click(function(){
@@ -557,7 +557,7 @@ campaign_view -> hack
       //get the file path
       var file = $("#userfile").val();
 
-      console.log(file);
+      //console.log(file);
 
       $.ajaxFileUpload({
           url            : '/CFtour/validateFile/',
@@ -566,7 +566,7 @@ campaign_view -> hack
           dataType       : 'json',
           success        : function (data, status)
                            {
-                              console.log(data.filename);
+                              //console.log(data.filename);
                               $('#backimg').val(data.filename);
                               $('#supersized').attr('src','/images/artist/campaign/' + data.filename);
                            }
@@ -609,7 +609,7 @@ campaign_view -> hack
     if(type == "PledgeVal1")
     {
         maxIndex++;
-        console.log(maxIndex);
+        //console.log(maxIndex);
 
         //var pledgeamnt = $("#pledgeAmnt1").val();
         //var benefit = $("#benefit1").val();
@@ -639,7 +639,7 @@ campaign_view -> hack
     else if(type == "PledgeVal2")
     {
         maxIndex++;
-        console.log(maxIndex);
+        //console.log(maxIndex);
 
         var pledgeamnt = $("#pledgeAmnt2").text();
         var benefit = $("#benefit2").text();
@@ -656,7 +656,7 @@ campaign_view -> hack
     else if(type == "PledgeVal3")
     {
         maxIndex++;
-        console.log(maxIndex);
+        //console.log(maxIndex);
 
         var pledgeamnt = $("#pledgeAmnt3").text();
         var benefit = $("#benefit3").text();
@@ -755,7 +755,7 @@ campaign_view -> hack
       }
       else if(response.error == 0)
       {
-        console.log(response.id);
+        //console.log(response.id);
         window.location = "/campaign/" + response.id;
       }
   }
