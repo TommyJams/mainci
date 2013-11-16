@@ -418,7 +418,7 @@
           <a href="http://blog.venture-lab.org/index.php/133/venture-lab-is-music-to-tommyjams-ears/" target="_blank">
             <img src="image/icon/icon-partner/icon5.png" alt="" style="margin-left: 10px;"/>                     
           </a>
-          <a href="http://startupfestival.in/startups" target="_blank">                  
+          <a href="http://startupfestival.in" target="_blank">                  
             <img src="image/icon/icon-partner/icon9.png" alt="" style="margin-left: 10px;"/>                
           </a> 
           <a href="/radioone" target="_blank">                  
