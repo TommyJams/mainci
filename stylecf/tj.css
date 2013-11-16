@@ -537,7 +537,7 @@ a.social-list-fb-event-title:hover {
 	margin-right: 10px;
 	display: inline-block;
 	font-size: 18px;
-	text-transform: uppercase;
+	text-transform: none;
 	text-decoration: none;
 	color: #000;
 	vertical-align: bottom;
