@@ -15,8 +15,6 @@
     $link = $venue->link;
     $contact = $venue->contact;
   ?>
-  <html>
-  <body>
     <div class="venue-form<? print($venue_id); ?>" style="display: none;" >
       <div class="modal-content socialModal">
         <div class="modal-header">
@@ -43,9 +41,7 @@
           <a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Close</a> 
         </div>
       </div>
-    </div> 
-  </body>
-  </html>   
+    </div>   
 <? } ?>
 <!--/venue modal-->    
 
