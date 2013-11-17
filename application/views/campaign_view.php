@@ -16,6 +16,7 @@
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
+    
 <style>
 
 .d-tj-tour-right h2 a
