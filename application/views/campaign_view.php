@@ -152,6 +152,10 @@
               $venue_id = $venue->venue_id;
               $city = $venue->city;
               $image = $venue->image;
+              $tour_date = $venue->tour_date;
+
+              $date = strtotime($tour_date);
+              $tour_date = date('jS F Y', $date);
 
             ?>
           <div class="col-md-12 col-sm-12 col-xs-7 d-tj-venue-box">
@@ -164,7 +168,7 @@
             <div class="col-md-7 col-xs-12 col-sm-6 d-tj-p0" >
               <h4 >
                 <span ><? print($venue_name); ?> <br>
-                </span> <? print($city); ?>
+                </span> <? print($city); ?><br><? print($tour_date); ?>
               </h4>
             </div>
           </div>
