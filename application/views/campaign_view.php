@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>TommyJams - Apply Now</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="favicon.ico" rel="shortcut icon">
-<!-- Bootstrap -->
-<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
-<link href="/stylecf/bootstrap.min.css" rel="stylesheet" media="screen">
-<link href="/stylecf/tj.css" rel="stylesheet" media="screen">
-<link rel="stylesheet" href="/stylecf/supersized.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="/stylecf/jquery.fancybox.css" type="text/css" media="screen" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -93,8 +83,18 @@
     $fbLoginURL = $row->fbLoginURL;
   }
 ?>
+<head>
+<title>TommyJams - Apply Now</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="favicon.ico" rel="shortcut icon">
+<!-- Bootstrap -->
+<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+<link href="/stylecf/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="/stylecf/tj.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" href="/stylecf/supersized.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/stylecf/jquery.fancybox.css" type="text/css" media="screen" />
 
-<meta property="og:title" content="Tour with TommyJams" />
+<meta property="og:title" content="<?print($artist_name);?>" />
 <meta property="og:image" content="<? print(base_url().'images/artist/campaign/'.$backimg); ?>"/>
 <meta property="og:description" content="<?print($artist_name);?> is touring with TommyJams and coming to a venue near you. Pre-book your tickets now! \nTarget Sales: <? print($target); ?>" />
 
