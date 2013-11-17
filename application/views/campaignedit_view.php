@@ -355,7 +355,7 @@
 
         <div class="clearfix"></div>
       </div>
-      <div class=" d-tj-offset-top-30 pledge-btn" >
+      <div class="block d-tj-offset-top-30 pledge-btn" >
       <input type="hidden" id="tour_id"     name="tour_id"    value="<? print($tour_id); ?>" /> 
       <input type="hidden" id="maxIndex"    name="maxIndex"   value="" />
       <input type="hidden" id="min_target"  name="min_target" value="<? print($min_target); ?>" />
@@ -365,7 +365,7 @@
       <input type="hidden" id="sociallink-3" name="sociallink-3" value="" />
       <input type="hidden" id="editorContent" name="editorContent" value="" />
       <input type="hidden" id="backimg" name="backimg" value="" />
-      <input type="submit" class="block" value="SUBMIT" >
+      <input type="submit" value="SUBMIT" >
       <? 
         } 
       ?>
