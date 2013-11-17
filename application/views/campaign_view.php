@@ -16,7 +16,7 @@
       <script src="js/html5shiv.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
-    
+
 <style>
 
 .d-tj-tour-right h2 a
@@ -244,7 +244,7 @@
               <div class='social-list-fb-event'>
                 <a class='social-list-fb-event-title' href='<? print($fbEventURL); ?>' target='_blank'>
                   <div class='social-list-fb-event-icon pull-left'></div>
-                  <div class='social-list-fb-event-name pull-left'><? print($artist_name); ?> - TommyJams #Roadshows</div>
+                  <div class='social-list-fb-event-name pull-left'><? print($artist_name); ?> tours with TommyJams</div>
                 </a>
                 <img src='<? print($fbEventPic); ?>' class='social-list-fb-event-pic pull-left'/>
                 <div class='pull-left' style='max-width: 65%;'>
