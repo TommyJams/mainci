@@ -81,6 +81,7 @@
     $fbLoginURL = $row->fbLoginURL;
   }
 ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -91,6 +92,7 @@
 <meta property="og:image" content="<? print(base_url().'images/artist/campaign/'.$backimg); ?>"/>
 <meta property="og:url" content="http://testtommyjams.azurewebsites.net/campaign/<?print($campaign_id);?>" />
 <meta property="og:description" content="<?print($artist_name);?> is touring with TommyJams and coming to a venue near you. Pre-book your tickets now! \nTarget Sales: <? print($target); ?>" />
+<meta property="fb:app_id" content="248776888603319" />
 
 <title>TommyJams - <?print($artist_name);?></title>
 
