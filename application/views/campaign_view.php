@@ -55,6 +55,7 @@
   $campaign = (json_decode($campaign));
   foreach($campaign as $row)
   {
+    $campaign_id = $row->campaign_id;
     $raised = $row->raised;
     $totalPledges = $row->totalPledges;
     $target = $row->target;
@@ -86,7 +87,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta property="og:title" content="<?print($artist_name);?>" />
+<meta property="og:type" content="website" />
 <meta property="og:image" content="<? print(base_url().'images/artist/campaign/'.$backimg); ?>"/>
+<meta property="og:url" content="http://testtommyjams.azurewebsites.net/campaign/<?print($campaign_id);?>" />
 <meta property="og:description" content="<?print($artist_name);?> is touring with TommyJams and coming to a venue near you. Pre-book your tickets now! \nTarget Sales: <? print($target); ?>" />
 
 <title>TommyJams - <?print($artist_name);?></title>
