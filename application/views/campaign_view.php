@@ -86,6 +86,8 @@
     $pledges = $row->pledges;
     $contributors = $row->contributes;
     $campaign_desc = $row->campaign_desc;
+    $ticket_widget = $row->ticket_widget;
+    $widget_height = $row->widget_height;
     $vlink = $row->videoId;
     $fb = $row->fb;
     $twitter = $row->twitter;
@@ -286,6 +288,7 @@
             <div id="myTabContent" class="tab-content">
               <div class="tab-pane fade active in" id="home">
                 <div class="d-tj-pledge">
+                  <? if(!isset($ticket_widget)) { ?>
                   <h4>NOTE: Tickets will be enabled after verification.</h4><br>
                   <? foreach($pledges as $pledge){ ?>
                   <?
@@ -298,9 +301,13 @@
                   </div>
                   <div class="seperator" ></div>
                   <? 
-                    } 
+                    } }
                   ?>
-                  
+                  <? if(isset($ticket_widget)) { ?>
+                    <iframe frameborder="0" src="<? print($ticket_widget); ?>" width="315" height="<? print($widget_height); ?>"></iframe>
+                    <div class="d-tj-overlay" style="width:105%; z-index:1000; position:relative; background-color:black;"> 
+                    </div>
+                  <? } ?>
                 </div>
               </div>
               <div class="tab-pane fade" id="profile">
