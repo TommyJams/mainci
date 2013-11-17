@@ -1,11 +1,3 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
-
 <!--venue modal-->
 <? $tourDetail = (json_decode($campaign));
   foreach($tourDetail as $tourDetail) 
@@ -23,6 +15,8 @@
     $link = $venue->link;
     $contact = $venue->contact;
   ?>
+  <html>
+  <body>
     <div class="venue-form<? print($venue_id); ?>" style="display: none;" >
       <div class="modal-content socialModal">
         <div class="modal-header">
@@ -49,7 +43,9 @@
           <a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Close</a> 
         </div>
       </div>
-    </div>  
+    </div> 
+  </body>
+  </html>   
 <? } ?>
 <!--/venue modal-->    
 
@@ -86,6 +82,9 @@
 
   }
 ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
