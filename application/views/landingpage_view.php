@@ -353,9 +353,11 @@
                   <li><a style="margin-right:2px;" href="http://www.tommyjams.com/blog" title="" alt="Blog" target="_blank" class="social-list-blog" data-original-title="Blog"></a></li>
                   <li>
                     <!-- Newsletter form -->
-                    <form name="newsletter-form" id="newsletter-form" action="" method="post" class="clear-fix">  
+                    <form name="newsletter-form" id="newsletter-form" action="" method="post" class="clear-fix"> 
+                    <div class="block"> 
                       <input type="text" name="newsletter-form-mail" id="newsletter-form-mail" placeholder="Your e-mail address" value=""/>
                       <input type="submit" id="newsletter-form-send" name="newsletter-form-send" class="button" value="Subscribe"/>
+                    </div>
                     </form>
                     <!-- /Newsletter form -->
                   </li>
