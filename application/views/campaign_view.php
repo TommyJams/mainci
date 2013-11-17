@@ -98,9 +98,9 @@
   }
 ?>
 
-<meta property="og:title" content="Tour with TommyJams" />
-<meta property="og:image" content="<? print(base_url().'images/artist/campaign/'.$backimg); ?>"/>
-<meta property="og:description" content="<?print($artist_name);?> is touring with TommyJams and coming to a venue near you. Pre-book your tickets now! \nTarget Sales: <? print($target); ?>" />
+<meta property="og:title" content="Tour with TommyJams" >
+<meta property="og:image" content="<? print(base_url().'images/artist/campaign/'.$backimg); ?>">
+<meta property="og:description" content="<?print($artist_name);?> is touring with TommyJams and coming to a venue near you. Pre-book your tickets now! \nTarget Sales: <? print($target); ?>" >
 
 </head>
 
