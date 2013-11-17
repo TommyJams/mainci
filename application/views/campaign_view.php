@@ -91,7 +91,6 @@
     $twitter = $row->twitter;
     $scloud = $row->scloud;
     $bandcamp = $row->bandcamp;
-    $ytube = $row->ytube;
     $website = $row->website; 
     $artist_name = $row->artist_name;
     $backimg = $row->image1;
@@ -297,6 +296,7 @@
                     <h5><? print($pledge_desc); ?> </h5>
                   </div>
                   <div class="seperator" ></div>
+                  </div>
                   <? 
                     } 
                   ?>
