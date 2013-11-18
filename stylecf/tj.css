@@ -138,6 +138,20 @@ input[type="button"]:hover, input[type="submit"]:hover {
     position: relative;
     top: 20%;
 }
+.d-tj-slide-hover-img:hover {
+	cursor: pointer;
+    left: 25%;
+    position: relative;
+    top: 20%;
+	background-image: url("/image/radioone/icon/image_overlay_blue.png");
+}
+.d-tj-campaign-slide-hover-img:hover {
+	cursor: pointer;
+    left: 25%;
+    position: relative;
+    top: 20%;
+	background-image: url("/image/radioone/icon/image_overlay_blue.png");
+}
 .d-tj-progress {
 	background:#708072;
 	min-height:8px;
