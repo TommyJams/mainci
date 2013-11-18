@@ -16,15 +16,18 @@
   	<div class="container d-tj-container"> <a title="Revolutionizing Live Entertainment" href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a>
   	<div class="d-tj-box " >
       <div class="row d-tj-tour">
+
         <div class="col-sm-12 col-xs-12 col-md-4"> 
-        	<img src="/img/temp/31" alt="" style="max-height: 150px;">  
+        	<img src="/img/temp/31" alt="" style="max-height: 150px;">
+        </div>
+
         <div class="col-sm-12 col-md-8 d-tj-black-box-container" >
           <div class="d-tj-black-box d-tj-tour-right" > 
             <h3 class="raise">KDB Contribution Summary</h3> 
                 <div class="col-sm-12 col-md-3 " >
-	           		<h4 class="tgt" >Fan Name</h4>
-	        		<h4 class="tgt" >Perk</h4>
-	        		<h4>Contribution</h4>
+  	           		<h4 class="tgt" >Fan Name</h4>
+  	        		<h4 class="tgt" >Selected Perk</h4>
+  	        		<h4>Fan Contribution</h4>
 	            </div>
 	            <div class="col-sm-12 col-md-5 " >
 	           		<h4 class="tgt" >John</h4>
@@ -36,7 +39,7 @@
             </div>
           </div>
         </div>
+
       </div>
     </div>
-   
     
