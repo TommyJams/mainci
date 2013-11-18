@@ -331,7 +331,7 @@
                   
                       <tr>
                         <td style="font-size:18px"><? print($fans_name); ?></td>
-                        <td style="font-size:18px">INR <? print($fans_contribution); ?></td>
+                        <td style="font-size:18px">&#8377 <? print($fans_contribution); ?></td>
                         <td style="font-size:18px"><? print($fans_location); ?></td>
                       </tr>
                       
