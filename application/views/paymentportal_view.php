@@ -44,9 +44,9 @@
   	        		<h4 class="tgt" >Selected Perk</h4>
   	        		<h4 class="tgt" >Fan Contribution</h4>
 	            </div>
-              <div class="col-sm-12 col-md-5 " >
+              <div class="col-sm-12 col-md-9 " >
 	           		<h4 class="tgt" >John</h4>
-	        		  <h4 class="tgt" >Entry to both gigs (tickets transferable). Feel free to gift one to a friend.</h4>
+	        		  <h4 class="tgt" >Copper Ticket</h4>
 	        		  <h4 class="tgt" >200</h4>
               </div>	
           </div>
@@ -54,15 +54,16 @@
       </div>
     </div>
 
-    <div class="d-tj-offset-top-30  d-tj-col-6">
-      <div class="row">
+    <div class="d-tj-box d-tj-offset-top-30" >
+      <div class="row d-tj-tour">
         <div class="d-tj-pledge">
           <? foreach($pledges as $pledge)
             { 
               $amount = $pledge->amount;
               $pledge_desc = $pledge->desc;
           ?>
-          <div style=""></div>
+          <div style="">$amount</div>
+          <div style="">$pledge_desc</div>
           <div class="seperator" ></div>
           <? } ?>
         </div>
