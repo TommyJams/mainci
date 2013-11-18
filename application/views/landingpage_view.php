@@ -188,31 +188,7 @@
     </div>
     <!--/top 2 col-->
 
-    <!--Demo tile -->
-    <div class="d-tj-box " >
-      <div class="row d-tj-tour">
-        <div class="col-sm-12 col-xs-12 col-md-7"> 
-          <iframe title="YouTube video player" class="d-tj-video" style="min-height: 300px; width: 100%;" 
-          src="http://www.youtube.com/embed/BRQpt34-ocE" frameborder="0" allowfullscreen></iframe>
-        </div>  
-        <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
-          <h2>TOMMYJAMS ROADSHOWS</h2>
-          <div class="who-campaigns">
-            <img align="left" src="/img/roadshows_logo.png" style="margin-right:5px;width:120px">
-            <h5>The RoadShows&#39 campaigns are initiated by the artists for the tours that they want to venture on. Every time you buy a ticket, an artist gets one step closer to his dream tour across various cities in the country. Not only that, you get exclusive access to all the shows which are part of that tour, and even get extra freebies from the band on-the-day to make the event really special for you.
-              <b>Book a ticket now!</b>
-            </h5>
-          </div>
-            <div class="text-center" >
-              <input style="margin-top:10px" class="apply-btn" onclick="window.open('/roadshows', '_blank');" type="button" value="ALL CAMPAIGNS">
-              <input style="margin-top:10px" class="apply-btn" onclick="window.open('/tours', '_blank');" type="button" value="START CAMPAIGN">
-          </div> 
-        </div>
-      </div>
-    </div>
-    <!--/Demo tile -->
-
-    <!-- tour-->
+     <!-- tour-->
     <div class="d-tj-3-col d-tj-offset-top-30" >
       <div class="d-tj-slide">
         <div class="list_carousel responsive" style="position:relative">
@@ -274,10 +250,34 @@
       <div class="clearfix"></div>
     </div>
     <!-- /tour--> 
-    
+
+    <!--Demo tile -->
+    <div class="d-tj-box d-tj-offset-top-30" >
+      <div class="row d-tj-tour">
+        <div class="col-sm-12 col-xs-12 col-md-7"> 
+          <iframe title="YouTube video player" class="d-tj-video" style="min-height: 300px; width: 100%;" 
+          src="http://www.youtube.com/embed/BRQpt34-ocE" frameborder="0" allowfullscreen></iframe>
+        </div>  
+        <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
+          <h2>TOMMYJAMS ROADSHOWS</h2>
+          <div class="who-campaigns">
+            <img align="left" src="/img/roadshows_logo.png" style="margin-right:5px;width:120px">
+            <h5>The RoadShows&#39 campaigns are initiated by the artists for the tours that they want to venture on. Every time you buy a ticket, an artist gets one step closer to his dream tour across various cities in the country. Not only that, you get exclusive access to all the shows which are part of that tour, and even get extra freebies from the band on-the-day to make the event really special for you.
+              <b>Book a ticket now!</b>
+            </h5>
+          </div>
+            <div class="text-center" >
+              <input style="margin-top:10px" class="apply-btn" onclick="window.open('/roadshows', '_blank');" type="button" value="ALL CAMPAIGNS">
+              <input style="margin-top:10px" class="apply-btn" onclick="window.open('/tours', '_blank');" type="button" value="START CAMPAIGN">
+          </div> 
+        </div>
+      </div>
+    </div>
+    <!--/Demo tile -->
+
     <!--bottom 2 col-->
     
-    <div class="d-tj-offset-top-40  d-tj-col-2">
+    <div class="d-tj-offset-top-30  d-tj-col-2">
       <div class="row">
         <div class="col-md-6 d-tj-col-1" >
           <div class="col-md-12 d-tj-col-1-bg" >
