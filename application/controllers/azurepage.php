@@ -19,7 +19,13 @@ class Azurepage extends CI_Controller{
 	}
 
 	public function portal(){
-		$this->load->view('paymentportal_view');
+
+		// Loading Model class
+		$this->load->model('Model');
+		$campaign_id = 151;
+
+		$data['campaign'] = json_encode($this->Model->campaignDetails($campaign_id));
+		$this->load->view('paymentportal_view', $data);
 	}
 }
 ?>
