@@ -145,6 +145,11 @@
     color:black;
   }
 
+  .d-tj-offset-top-5 
+  {
+    margin-top: 5px;
+  }
+
   /*p.subtitle-paragraph
   {
     font-family:'Dosis';
@@ -275,7 +280,7 @@
     <!-- /tour-->  
 
     <!--Demo tile -->
-    <div class="d-tj-box d-tj-offset-top-10" >
+    <div class="d-tj-box d-tj-offset-top-5" >
       <div class="row d-tj-tour">
         <div class="col-sm-12 col-xs-12 col-md-7"> 
           <iframe title="YouTube video player" class="d-tj-video" style="min-height: 300px; width: 100%;" 
