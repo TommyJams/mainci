@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>TommyJams - Apply Now</title>
+<title>TommyJams - Payment Portal</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="favicon.ico" rel="shortcut icon">
 <!-- Bootstrap -->
@@ -9,37 +9,35 @@
 <link href="/stylecf/bootstrap.min.css" rel="stylesheet" media="screen">
 <link href="/stylecf/tj.css" rel="stylesheet" media="screen">
 <link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
-<link rel="stylesheet" href="/stylecf/supersized.css" type="text/css" media="screen" />
+<!--<link rel="stylesheet" href="/stylecf/supersized.css" type="text/css" media="screen" />-->
 </head>
 <body>
 <div class="d-tj-bg-overlay">
   	<div class="container d-tj-container"> <a title="Revolutionizing Live Entertainment" href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a>
   	<div class="d-tj-box " >
       <div class="row d-tj-tour">
-
         <div class="col-sm-12 col-xs-12 col-md-4"> 
         	<img src="/img/temp/31" alt="" style="max-height: 150px;">
         </div>
-
         <div class="col-sm-12 col-md-8 d-tj-black-box-container" >
           <div class="d-tj-black-box d-tj-tour-right" > 
             <h3 class="raise">KDB Contribution Summary</h3> 
-                <div class="col-sm-12 col-md-3 " >
-  	           		<h4 class="tgt" >Fan Name</h4>
+              <div class="col-sm-12 col-md-3 " >
+  	           	<h4 class="tgt" >Fan Name</h4>
   	        		<h4 class="tgt" >Selected Perk</h4>
   	        		<h4>Fan Contribution</h4>
 	            </div>
-	            <div class="col-sm-12 col-md-5 " >
+              <div class="col-sm-12 col-md-5 " >
 	           		<h4 class="tgt" >John</h4>
-	        		<h4 class="tgt" >Free Tshirt</h4>
-	        		<h4>200</h4>
-	            </div>	
-            <div class="text-center d-tj-offset-top-40 pledge-btn-top">
-              <input type="button" value="BUY NOW" onclick="window.open('http://em.explara.com/event/test-event-ci', '_blank');" >
-            </div>
+	        		  <h4 class="tgt" >Free Tshirt</h4>
+	        		  <h4>200</h4>
+              </div>	
           </div>
         </div>
-
       </div>
     </div>
+<script src="/script/jquery.js"></script> 
+<script src="/script/bootstrap.min.js"></script>
+</body>
+</html>  
     

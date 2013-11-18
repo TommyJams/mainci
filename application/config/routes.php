@@ -64,6 +64,7 @@ $route['landingpage'] = "azurepage/landingPage";
 
 $route['event'] = "CFfans/campaignEvent";
 $route['postlink'] = "CFfans/postLink";
+$route['portal'] = "azurepage/portal";
 
 // $route['fbconnect'] = "fbconnect/connectFb";
 

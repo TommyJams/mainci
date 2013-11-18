@@ -17,5 +17,9 @@ class Azurepage extends CI_Controller{
 
 		$this->load->view('landingpage_view', $data);
 	}
+
+	public function portal(){
+		$this->load->view('paymentportal_view');
+	}
 }
 ?>
