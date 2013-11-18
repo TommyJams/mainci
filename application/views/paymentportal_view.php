@@ -42,12 +42,12 @@
               <div class="col-sm-12 col-md-3 " >
   	           	<h4 class="tgt" >Fan Name</h4>
   	        		<h4 class="tgt" >Selected Perk</h4>
-  	        		<h4>Fan Contribution</h4>
+  	        		<h4 class="tgt" >Fan Contribution</h4>
 	            </div>
               <div class="col-sm-12 col-md-5 " >
 	           		<h4 class="tgt" >John</h4>
 	        		  <h4 class="tgt" >Entry to both gigs (tickets transferable). Feel free to gift one to a friend.</h4>
-	        		  <h4>200</h4>
+	        		  <h4 class="tgt" >200</h4>
               </div>	
           </div>
         </div>
@@ -57,14 +57,10 @@
     <div class="d-tj-offset-top-30  d-tj-col-6">
       <div class="row">
         <div class="d-tj-pledge">
-          <? $campaign = (json_decode($campaign));
-              foreach($campaign as $row)
-              { $pledges = $row->pledges;} 
-                
-              foreach($pledges as $pledge)
-              { 
-                $amount = $pledge->amount;
-                $pledge_desc = $pledge->desc;
+          <? foreach($pledges as $pledge)
+            { 
+              $amount = $pledge->amount;
+              $pledge_desc = $pledge->desc;
           ?>
           <div style=""></div>
           <div class="seperator" ></div>
