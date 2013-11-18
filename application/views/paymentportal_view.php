@@ -54,7 +54,7 @@
       </div>
     </div>
 
-    <div class="d-tj-box d-tj-offset-top-30" >
+    <div class="d-tj-black-box d-tj-offset-top-30" >
       <div class="row d-tj-tour">
         <div class="d-tj-pledge">
           <? foreach($pledges as $pledge)
