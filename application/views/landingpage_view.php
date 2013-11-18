@@ -411,7 +411,7 @@
       <h3 style="color:white;margin-left:20px;margin-top:20px;margin-bottom:20px;">AS SEEN IN</h3>
       <div class="footer layout-10 clear-fix" style="margin-bottom:20px;">   
           <a href="https://www.facebook.com/photo.php?fbid=538074186281265&set=a.387715207983831.97464.330212257067460&type=1&theater" target="_blank">                  
-            <img src="image/icon/icon-partner/icon14.png" alt="" style="margin-left: 10px;"/>                
+            <img src="image/icon/icon-partner/icon15.png" alt="" style="margin-left: 10px;"/>                
           </a> 
           <a href="http://timesofindia.indiatimes.com/tech/enterprise-it/strategy/A-website-that-helps-in-event-management/articleshow/20646626.cms" target="_blank">
             <img src="image/icon/icon-partner/icon12.png" alt="" style="margin-left: 10px;"/>                
