@@ -136,13 +136,12 @@
               $pledge_desc = $pledge->desc;
           ?>
           <div class="col-sm-12 col-md-8 d-tj-box" >
-            <div style="color:black;font-size:30px">Silver</div>
-            <div style="color:black;font-size:30px">&#8377 <? print($amount); ?></div>
+            <div style="color:black;font-size:30px">Silver : &#8377 <? print($amount); ?></div>
             <div style="color:black;font-size:30px"><? print($pledge_desc); ?></div>
             <!--<div class="seperator" ></div>-->
           </div> 
           <div class="col-sm-12 col-md-4 d-tj-box d-tj-offset-top-20" >
-            <div class="text-center" style="">2</div>
+            <div style="margin-left:15px;" class="text-center" style="">2</div>
           </div> 
           <? } ?>
         </div>
