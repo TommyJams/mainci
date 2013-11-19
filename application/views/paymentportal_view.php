@@ -26,19 +26,13 @@
 
 .d-tj-black-ticket-box {
   background:#000;
-  color:#fff;
-  padding:10px; 
+  color:#fff; 
 }
 
 .d-tj-ticket-box {
   background:#FFCC00;
   padding:10px;
   margin-top:10px;
-}
-
-.d-tj-ticket-box h4{
-  font-size:24px
-  color:#000;
 }
 
 </style>
@@ -154,8 +148,8 @@
               $pledge_desc = $pledge->desc;
           ?>
           <div class="col-sm-12 col-md-10 d-tj-ticket-box" >
-            <h4 style="">Silver : &#8377 <? print($amount); ?></h4>
-            <h4 style=""><? print($pledge_desc); ?></h4>
+            <h4 style="color:black;margin-top:0px">Silver : &#8377 <? print($amount); ?></h4>
+            <h4 style="color:black;margin-top:0px"><? print($pledge_desc); ?></h4>
             <!--<div class="seperator" ></div>--> 
           </div> 
           <div class="col-sm-12 col-md-2 d-tj-black-ticket-box" >
