@@ -301,6 +301,11 @@ class Model extends CI_Model{
                                    //error_log('Fb Status:'.$fbEventStatus);
                             }
 
+                $login_url = $this->facebook->getLoginUrl( array(
+                                  'scope' => 'read_stream, friends_likes, user_birthday, user_about_me, user_website, user_photos, user_location, user_hometown, user_interests, email',
+                                  'redirect_uri' => base_url().'payment'.$campaign_id
+                            ));            
+
 				$campaignDetails = array(
 								'campaign_id' 	=> $campaign_id,
 								'videoId'		=> $videoId,
@@ -324,7 +329,8 @@ class Model extends CI_Model{
 								'image1' 		=> $image1,
 								'status' 		=> $status,
 								'tourDate' 		=> $tourDate,
-								'days_to_go'  	        => $days_to_go,
+								'days_to_go'  	=> $days_to_go,
+								'login_url'		=> $login_url,
 								'image1'		=> $image1,
                                                                 'fbEventName'           => $fbEventName,
                                                                 'fbEventPic'            => $fbEventPic,
@@ -722,6 +728,51 @@ class Model extends CI_Model{
 
                 return true;
         }
+
+        public function fanDetails()
+        {
+        	// Get posted data
+	    	$campaign_id = $this->input->post("campaign_id");
+	    	$ticket_type = $this->input->post("ticket_type");
+	    	$ticket_amount = $this->input->post("ticket_amount");
+	    	$ticket_type_count = $this->input->post("ticket_type_count");
+
+	    	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='$ticket_type', `ticket_amount`='$ticket_amount', `ticket_type_count`='$ticket_type_count'  WHERE campaign_id='$campaign_id';");	
+		}	
+
+		public function getFanDetails($camp_id)
+		{
+			$query = $this->db->query("SELECT * FROM fansCF WHERE campaign_id = '$camp_id';");
+			if ($query->num_rows() > 0)
+			{
+	            $qresult = $query->result();
+				foreach ($qresult as $row)
+				{
+	   				$name = $row->name;
+	   				$ticket_type = $row->ticket_type;
+	   				$ticket_amount = $row->ticket_amount;
+	   				$ticket_type_count = $row->ticket_type_count;
+	   				$email = $row->email;
+	   				$contact = $row->contact;
+	   				$location = $row->location;
+
+	                $tourRow = array(
+	                                    'name' 				=> $name, 
+	                                    'ticket_type' 		=> $ticket_type,
+	                                    'ticket_amount' 	=> $ticket_amount, 
+	                                    'ticket_type_count' => $ticket_type_count, 
+	                                    'email' 			=> $email, 
+	                                    'contact' 			=> $contact,
+	                                    'location' 			=> $location
+	                                );
+
+	                $response[] = $tourRow;
+				}
+
+				//Return values to controller
+				return $response; 
+			}    
+		}	
 
         public function send_email($to, $sender, $subject, $mess)
 		{

@@ -176,8 +176,7 @@
       </div> 
       <? } ?>
         <div class="text-center" >
-          <input style="margin-top:30px" onclick="window.open('/roadshows', '_blank');" type="button" value="PAY">
-          <input style="margin-top:30px" onclick="window.open('/tours', '_blank');" type="button" value="GO BACK [EDIT]">
+          <input style="margin-top:30px" onclick="window.open('/tours', '_blank');" type="button" value="EDIT">
         </div>
     </div>
 
