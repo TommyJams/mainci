@@ -145,7 +145,7 @@
       </div>
     </div>
 
-    <div class="col-sm-12 col-md-12 d-tj-black-box d-tj-offset-top-30" >
+    <div class="col-sm-12 col-md-12 d-tj-black-ticket-box d-tj-offset-top-30" >
       <div class="row d-tj-tour">
         <div class="d-tj-pledge">
           <? foreach($pledges as $pledge)
@@ -153,12 +153,12 @@
               $amount = $pledge->amount;
               $pledge_desc = $pledge->desc;
           ?>
-          <div class="col-sm-12 col-md-8 d-tj-ticket-box" >
-            <h4 style="color:black;font-size:20px">Silver : &#8377 <? print($amount); ?></h4>
-            <h4 style="color:black;font-size:20px"><? print($pledge_desc); ?></h4>
+          <div class="col-sm-12 col-md-10 d-tj-ticket-box" >
+            <h4 style="">Silver : &#8377 <? print($amount); ?></h4>
+            <h4 style=""><? print($pledge_desc); ?></h4>
             <!--<div class="seperator" ></div>--> 
           </div> 
-          <div class="col-sm-12 col-md-4 d-tj-black-ticket-box" >
+          <div class="col-sm-12 col-md-2 d-tj-black-ticket-box" >
             <h4 style="" class="text-center" style="">2</h4>
           </div> 
           <? } ?>
