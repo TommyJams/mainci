@@ -15,15 +15,6 @@
 
 <style>
 
-.apply-btn input[type="button"]{
-  background:#ffcc00;
-  color:#000000;
-}
-
-.apply-btn:hover input[type="button"]{
-  color:#fff;
-}
-
 .d-tj-black-ticket-box {
   background:#000;
   color:#fff; 
@@ -158,12 +149,13 @@
       </div> 
       <? } ?>
         <div class="text-center" >
-          <input style="margin-top:10px" class="apply-btn" onclick="window.open('/roadshows', '_blank');" type="button" value="PAY">
-          <input style="margin-top:10px" class="apply-btn" onclick="window.open('/tours', '_blank');" type="button" value="GO BACK [EDIT]">
+          <input style="margin-top:30px" onclick="window.open('/roadshows', '_blank');" type="button" value="PAY">
+          <input style="margin-top:30px" onclick="window.open('/tours', '_blank');" type="button" value="GO BACK [EDIT]">
         </div>
     </div>
 
-
+    <div class="col-sm-12 col-md-12 d-tj-black-ticket-box d-tj-offset-top-30" >
+    </div>  
 
   </div>
 
