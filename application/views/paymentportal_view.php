@@ -19,8 +19,21 @@
   background:#ffcc00;
   color:#000000;
 }
+
 .apply-btn:hover {
   color:#fff;
+}
+
+.d-tj-black-ticket-box {
+  background:#000;
+  color:#fff;
+  padding:10px; 
+}
+
+.d-tj-ticket-box {
+  background:#FFCC00;
+  padding: 10px;
+  margin-top:10px;
 }
 
 </style>
@@ -135,18 +148,18 @@
               $amount = $pledge->amount;
               $pledge_desc = $pledge->desc;
           ?>
-          <div class="col-sm-12 col-md-8 d-tj-box" >
+          <div class="col-sm-12 col-md-8 d-tj-ticket-box" >
             <div style="color:black;font-size:30px">Silver : &#8377 <? print($amount); ?></div>
             <div style="color:black;font-size:30px"><? print($pledge_desc); ?></div>
             <!--<div class="seperator" ></div>-->
-          </div> 
-          <div class="col-sm-12 col-md-4 d-tj-box d-tj-offset-top-20" >
-            <div style="margin-left:15px;" class="text-center" style="">2</div>
-          </div> 
+            <div class="col-sm-12 col-md-4 d-tj-black-ticket-box" >
+              <div style="margin-left:15px;" class="text-center" style="">2</div>
+            </div> 
+          </div>  
           <? } ?>
         </div>
 
-        <div class="row text-center" >
+        <div class="text-center" >
           <input style="margin-top:10px" class="apply-btn" onclick="window.open('/roadshows', '_blank');" type="button" value="PAY">
           <input style="margin-top:10px" class="apply-btn" onclick="window.open('/tours', '_blank');" type="button" value="GO BACK [EDIT]">
         </div>
