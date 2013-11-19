@@ -22,7 +22,7 @@ class Azurepage extends CI_Controller{
 
 		// Loading Model class
 		$this->load->model('Model');
-		$campaign_id = 151;
+		$campaign_id = 157;
 
 		$data['campaign'] = json_encode($this->Model->campaignDetails($campaign_id));
 		$this->load->view('paymentportal_view', $data);

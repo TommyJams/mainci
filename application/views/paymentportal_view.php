@@ -14,6 +14,15 @@
 <!--<link rel="stylesheet" href="/stylecf/supersized.css" type="text/css" media="screen" />-->
 
 <style>
+
+.apply-btn {
+  background:#ffcc00;
+  color:#000000;
+}
+.apply-btn:hover {
+  color:#fff;
+}
+
 </style>
 
 <!--venue modal-->
@@ -109,7 +118,7 @@
           </div>   
         </div>
 
-        <div class="col-sm-12 col-xs-12 col-md-6"> 
+        <div class="col-sm-12 col-xs-12 col-md-5 d-tj-black-box d-tj-tour-right-edit"> 
         	<input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER NAME"></input>
           <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER EMAIL"></input>
           <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER [10-DIGIT]"></input>
@@ -126,19 +135,19 @@
               $amount = $pledge->amount;
               $pledge_desc = $pledge->desc;
           ?>
-          <div class="col-sm-12 col-md-8 d-tj-box d-tj-offset-top-20" >
-            <div style="color:black;">Silver</div>
-            <div style="color:black;">&#8377 <? print($amount); ?></div>
-            <div style="color:black;"><? print($pledge_desc); ?></div>
+          <div class="col-sm-12 col-md-8 d-tj-box" >
+            <div style="color:black;font-size:30px">Silver</div>
+            <div style="color:black;font-size:30px">&#8377 <? print($amount); ?></div>
+            <div style="color:black;font-size:30px"><? print($pledge_desc); ?></div>
             <!--<div class="seperator" ></div>-->
           </div> 
-          <div class="col-sm-12 col-md-4 d-tj-black-box d-tj-offset-top-20" >
-            <div style="">2</div>
+          <div class="col-sm-12 col-md-4 d-tj-box d-tj-offset-top-20" >
+            <div class="text-center" style="">2</div>
           </div> 
           <? } ?>
         </div>
 
-        <div class="text-center" >
+        <div class="row text-center" >
           <input style="margin-top:10px" class="apply-btn" onclick="window.open('/roadshows', '_blank');" type="button" value="PAY">
           <input style="margin-top:10px" class="apply-btn" onclick="window.open('/tours', '_blank');" type="button" value="GO BACK [EDIT]">
         </div>
@@ -147,10 +156,10 @@
 
     <div class="col-sm-12 col-md-12 d-tj-box d-tj-offset-top-30" >
       <div class="col-sm-12 col-md-6 d-tj-black-box">
-        <div style="">Social Share</div>
+        
       </div>
       <div class="col-sm-12 col-md-6 d-tj-black-box d-tj-tour-right-edit" >
-        <div style="">Fun Fact</div>
+        
       </div> 
     </div>
 
