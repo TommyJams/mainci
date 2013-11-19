@@ -694,8 +694,8 @@ class Model extends CI_Model{
                         }
                 }
 
-                $appId = FACEBOOK_ROADSHOWS_APP_ID;
-                $secret = FACEBOOK_ROADSHOWS_APP_SECRET;
+                $appId = '248776888603319';
+                $secret = '50f31c2706d846826bead008392e8969';
                 $my_url = base_url().'campaign/'.$campaign_id;
 
                 //Get Access Token
