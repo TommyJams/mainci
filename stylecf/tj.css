@@ -138,14 +138,21 @@ input[type="button"]:hover, input[type="submit"]:hover {
     position: relative;
     top: 20%;
 	background-image: url("/image/radioone/icon/image_overlay_blue.png");
-	z-index:1000;
+	background-repeat:no-repeat;
 }
-.d-tj-campaign-slide-hover-img {
+.d-tj-campaign-slide-overlay-img{
 	cursor: pointer;
     left: 25%;
     position: relative;
     top: 20%;
-	background-image: url("/image/radioone/icon/image_overlay_grey.png");
+}
+.d-tj-campaign-slide-overlay-img:hover {
+	cursor: pointer;
+    left: 25%;
+    position: relative;
+    top: 20%;
+	background-image: url("/image/radioone/icon/image_overlay_blue.png");
+	background-repeat:no-repeat;
 }
 .d-tj-progress {
 	background:#708072;
