@@ -27,6 +27,8 @@
 .d-tj-black-ticket-box {
   background:#000;
   color:#fff; 
+  min-height: 300px;
+  padding: 30px 15px
 }
 
 .d-tj-ticket-box {
