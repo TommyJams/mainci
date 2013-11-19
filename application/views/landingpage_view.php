@@ -215,6 +215,8 @@
                   <div class="d-tj-slide-img" onclick="window.open('<?print(base_url().'campaign/'.$campaign_id);?>', '_blank');" style="background-image:url(<? print(base_url().'images/artist/campaign/'.$image); ?>)">  
                     <div class="d-tj-slide-hover-img"> <img src="/image/radioone/icon/image_overlay_blue.png" alt="" />   
                     </div>
+                    <div class="d-tj-slide-hover-img hide"> <img src="/image/radioone/icon/image_overlay_grey.png" alt="" />   
+                    </div>
                   </div>
                   <div class="d-tj-progress">
                     <div class="d-tj-progress-g" style="width:<? print($funded); ?>%;"> </div>
