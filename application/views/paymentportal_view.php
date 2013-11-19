@@ -32,7 +32,7 @@
 .d-tj-ticket-box {
   background:#FFCC00;
   padding:10px;
-  margin-top:10px;
+  margin-top:5px;
 }
 
 </style>
@@ -147,13 +147,13 @@
               $amount = $pledge->amount;
               $pledge_desc = $pledge->desc;
           ?>
-          <div class="col-sm-12 col-md-10 d-tj-ticket-box" >
-            <h4 style="color:black;margin-top:0px">Silver : &#8377 <? print($amount); ?></h4>
-            <h4 style="color:black;margin-top:0px"><? print($pledge_desc); ?></h4>
+          <div class="col-sm-12 col-md-10 d-tj-ticket-box">
+            <h4 style="color:black;margin-top:5px;margin-left:5px;margin-bottom:5px">Silver : &#8377 <? print($amount); ?></h4>
+            <h4 style="color:black;margin-top:5px;margin-left:5px;margin-bottom:5px"><? print($pledge_desc); ?></h4>
             <!--<div class="seperator" ></div>--> 
           </div> 
-          <div class="col-sm-12 col-md-2 d-tj-black-ticket-box" >
-            <h4 style="" class="text-center" style="">2</h4>
+          <div class="col-sm-12 col-md-2 d-tj-black-ticket-box" style="margin-left: 5px; height: 74.7px;">
+            <h4 style="" class="text-center" style="color:black;font-size:40px;margin-top:5px;margin-bottom:5px">2</h4>
           </div> 
           <? } ?>
         </div>
