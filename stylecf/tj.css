@@ -126,6 +126,12 @@ input[type="button"]:hover, input[type="submit"]:hover {
 	margin: auto;
 	cursor:pointer;
 }
+.d-tj-slide-overlay-img {
+	cursor: pointer;
+    left: 25%;
+    position: relative;
+    top: 20%;
+}
 .d-tj-slide-overlay-img:hover {
 	cursor: pointer;
     left: 25%;
