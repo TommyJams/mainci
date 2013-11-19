@@ -131,7 +131,6 @@ input[type="button"]:hover, input[type="submit"]:hover {
     left: 25%;
     position: relative;
     top: 20%;
-	background-image: url("/image/radioone/icon/image_overlay_grey.png");
 }
 .d-tj-slide-overlay-img:hover {
 	cursor: pointer;
@@ -139,6 +138,7 @@ input[type="button"]:hover, input[type="submit"]:hover {
     position: relative;
     top: 20%;
 	background-image: url("/image/radioone/icon/image_overlay_blue.png");
+	z-index:1000;
 }
 .d-tj-campaign-slide-hover-img {
 	cursor: pointer;
