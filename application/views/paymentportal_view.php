@@ -40,21 +40,21 @@
           <div class="d-tj-black-box d-tj-tour-right" > 
             <h3 class="raise">Contribution Summary</h3> 
               <div class="col-sm-12 col-md-3 " >
-  	           	<h4 class="tgt" >Fan Name</h4>
+                <h4 class="tgt" >Ticket Type</h4>
   	        		<h4 class="tgt" >Selected Perk</h4>
-  	        		<h4 class="tgt" >Fan Contribution</h4>
+  	        		<h4 class="tgt" >Contribution</h4>
 	            </div>
               <div class="col-sm-12 col-md-9 " >
-	           		<h4 class="tgt" >John</h4>
-	        		  <h4 class="tgt" >Copper Ticket</h4>
-	        		  <h4 class="tgt" >200</h4>
+	           		<h4 class="tgt" >Silver</h4>
+	        		  <h4 class="tgt" >Entry to both gigs + Band artwork + Digital download of Gig & Studio recordings</h4>
+	        		  <h4 class="tgt" >&#8377 400</h4>
               </div>	
           </div>
         </div>
       </div>
     </div>
 
-    <div class="d-tj-black-box d-tj-offset-top-30" >
+    <div class="col-sm-12 col-md-7 d-tj-black-box d-tj-offset-top-30" >
       <div class="row d-tj-tour">
         <div class="d-tj-pledge">
           <? foreach($pledges as $pledge)
@@ -62,17 +62,37 @@
               $amount = $pledge->amount;
               $pledge_desc = $pledge->desc;
           ?>
-          <div style="">$amount</div>
-          <div style="">$pledge_desc</div>
-          <div class="seperator" ></div>
+          <div class="col-sm-12 col-md-12 d-tj-box d-tj-offset-top-20" >
+            <div style=""><? print($amount); ?></div>
+            <div style=""><? print($pledge_desc); ?></div>
+            <!--<div class="seperator" ></div>-->
+          </div>  
           <? } ?>
         </div>
       </div>
     </div>
 
-  </div>
-</div>   
+    <div class="col-sm-12 col-md-5 d-tj-black-box d-tj-offset-top-30" >
+      <div class="col-sm-12 col-md-4 d-tj-black-box">
 
+      </div>
+      <div class="col-sm-12 col-md-12 d-tj-box d-tj-tour-right-edit" >
+        <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER NAME"></input>
+        <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER EMAIL"></input>
+        <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER [10-DIGIT]"></input>
+        <input type="submit" value="PROCEED" >
+      </div> 
+    </div>
+
+  </div>
+
+  <!-- Footer  -->      
+  <?
+    include("include/footer.php");
+  ?>
+  <!-- /Footer  -->
+
+</div>   
 
 <script src="/script/jquery.js"></script> 
 <script src="/script/bootstrap.min.js"></script>
