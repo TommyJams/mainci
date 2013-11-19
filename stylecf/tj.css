@@ -126,17 +126,33 @@ input[type="button"]:hover, input[type="submit"]:hover {
 	margin: auto;
 	cursor:pointer;
 }
-.d-tj-slide-hover-img {
+.d-tj-slide-overlay-img {
 	cursor: pointer;
     left: 25%;
     position: relative;
     top: 20%;
 }
-.d-tj-campaign-slide-hover-img {
+.d-tj-slide-overlay-img:hover {
 	cursor: pointer;
     left: 25%;
     position: relative;
     top: 20%;
+	background-image: url("/image/radioone/icon/image_overlay_blue.png");
+	background-repeat:no-repeat;
+}
+.d-tj-campaign-slide-overlay-img{
+	cursor: pointer;
+    left: 25%;
+    position: relative;
+    top: 20%;
+}
+.d-tj-campaign-slide-overlay-img:hover {
+	cursor: pointer;
+    left: 25%;
+    position: relative;
+    top: 20%;
+	background-image: url("/image/radioone/icon/image_overlay_blue.png");
+	background-repeat:no-repeat;
 }
 .d-tj-progress {
 	background:#708072;
