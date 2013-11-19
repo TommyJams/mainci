@@ -123,7 +123,7 @@
           </div>   
         </div>
 
-        <div class="col-sm-12 col-xs-12 col-md-5 d-tj-black-box d-tj-tour-right-edit"> 
+        <div class="col-sm-12 col-xs-12 col-md-5 d-tj-black-box d-tj-tour-right-edit" style="margin-left: 50px;"> 
         	<input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER NAME"></input>
           <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER EMAIL"></input>
           <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER [10-DIGIT]"></input>
@@ -154,8 +154,10 @@
         </div>
     </div>
 
-    <div class="col-sm-12 col-md-12 d-tj-black-ticket-box d-tj-offset-top-30" >
-    </div>  
+    <div class="col-sm-12 col-md-6 d-tj-black-ticket-box d-tj-offset-top-30" >
+    </div> 
+    <div class="col-sm-12 col-md-6 d-tj-black-ticket-box d-tj-offset-top-30" >
+    </div> 
 
   </div>
 
