@@ -15,12 +15,12 @@
 
 <style>
 
-.apply-btn {
+.apply-btn input[type="button"]{
   background:#ffcc00;
   color:#000000;
 }
 
-.apply-btn:hover {
+.apply-btn:hover input[type="button"]{
   color:#fff;
 }
 
@@ -148,12 +148,12 @@
           $amount = $pledge->amount;
           $pledge_desc = $pledge->desc;
       ?>
-      <div class="col-sm-12 col-md-10 d-tj-ticket-box">
+      <div class="col-sm-12 col-md-11 d-tj-ticket-box">
         <h4 style="color:black;margin-top:5px;margin-left:5px;margin-bottom:5px">Silver : &#8377 <? print($amount); ?></h4>
         <h4 style="color:black;margin-top:5px;margin-left:5px;margin-bottom:5px"><? print($pledge_desc); ?></h4>
         <!--<div class="seperator" ></div>--> 
       </div> 
-      <div class="col-sm-12 col-md-1 d-tj-ticket-box" style="margin-left: 5px; height: 74.7px;">
+      <div class="col-sm-12 col-md-1 d-tj-ticket-box" style="margin-left: 5px; height: 74.7px;width:60px;">
         <h4 class="text-center" style="color:black;font-size:40px;margin-top:5px;margin-bottom:5px">2</h4>
       </div> 
       <? } ?>
@@ -162,6 +162,9 @@
           <input style="margin-top:10px" class="apply-btn" onclick="window.open('/tours', '_blank');" type="button" value="GO BACK [EDIT]">
         </div>
     </div>
+
+
+
   </div>
 
   <!-- Footer  -->      
