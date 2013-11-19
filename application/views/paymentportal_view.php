@@ -31,6 +31,11 @@
   padding: 30px 15px
 }
 
+.d-tj-black-ticket-box h3{
+  font-size:30px;
+  text-transform:uppercase;
+}
+
 .d-tj-ticket-box {
   background:#FFCC00;
   padding:10px;
@@ -142,6 +147,7 @@
     </div>
 
     <div class="col-sm-12 col-md-12 d-tj-black-ticket-box d-tj-offset-top-30" >
+      <h3>Ticket Summary</h3>
       <? foreach($pledges as $pledge)
         { 
           $amount = $pledge->amount;
