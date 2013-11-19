@@ -126,14 +126,14 @@ input[type="button"]:hover, input[type="submit"]:hover {
 	margin: auto;
 	cursor:pointer;
 }
-.d-tj-slide-hover-img {
+.d-tj-slide-hover-img img.d-tj-slide-hover-img-hide{
 	cursor: pointer;
     left: 25%;
     position: relative;
     top: 20%;
 	background-image: url("/image/radioone/icon/image_overlay_grey.png");
 }
-.d-tj-slide-hover-img-hide {
+.d-tj-slide-hover-img-hide img.d-tj-slide-hover-img-hide {
 	cursor: pointer;
     left: 25%;
     position: relative;
