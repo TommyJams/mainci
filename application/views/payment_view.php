@@ -106,15 +106,20 @@
               $venue_id = $venue->venue_id;
               $city = $venue->city;
               $image = $venue->image;
+
+              $tour_date = $venue->tour_date;
+
+              $date = strtotime($tour_date);
+              $tour_date = date('jS F Y', $date);
             ?>
-            <div class="col-md-6 col-sm-6  d-tj-tour-left" >  
-            <div style="background:black">
+            <div class="col-md-5 col-sm-6  d-tj-tour-left" >  
+            <div style="">
               <a href="javascript:;" onclick="venueBox(<? print($venue_id); ?>);" data-toggle="modal" >
                 <img src="img/temp/<? print($image); ?>" style="height:100px;width:100px" alt="">
               </a>
             </div>
               <h4 style="font-size:15px">
-                <span ><? print($venue_name); ?></span> <? print($city); ?>
+                <span ><? print($venue_name); ?><br></span> <? print($city); ?><br><? print($tour_date); ?>
               </h4> 
             </div>
             <? 
@@ -123,12 +128,31 @@
           </div>   
         </div>
 
-        <div class="col-sm-12 col-xs-12 col-md-5 d-tj-black-box d-tj-tour-right-edit" style="margin-left: 50px;"> 
-        	<input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER NAME"></input>
-          <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER EMAIL"></input>
-          <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER [10-DIGIT]"></input>
-          <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER LOCATION"></input>
+        <div class="col-sm-12 col-md-7 d-tj-black-ticket-box d-tj-offset-top-30" >
+          <h3 style="font-weight:600;font-size:30px;margin-bottom:15px">Ticket Summary</h3>
+          <? foreach($pledges as $pledge)
+            { 
+              $amount = $pledge->amount;
+              $pledge_desc = $pledge->desc;
+              $ticket_type = $pledge->ticket_type;
+          ?>
+          <div class="col-sm-12 col-md-11 d-tj-ticket-box">
+            <h4 style="color:black;margin-top:5px;margin-left:5px;margin-bottom:5px">
+              <? print($ticket_type); ?> : &#8377 <? print($amount); ?>
+            </h4>
+            <h4 style="color:black;margin-top:5px;margin-left:5px;margin-bottom:5px"><? print($pledge_desc); ?></h4>
+            <!--<div class="seperator" ></div>--> 
+          </div> 
+          <div class="col-sm-12 col-md-1 d-tj-ticket-box" style="margin-left: 5px; height: 74.7px;width:60px;">
+            <h4 class="text-center" style="color:black;font-size:40px;margin-top:5px;margin-bottom:5px">2</h4>
+          </div> 
+          <? } ?>
+            <div class="text-center" >
+              <input style="margin-top:30px" onclick="window.open('/roadshows', '_blank');" type="button" value="PAY">
+              <input style="margin-top:30px" onclick="window.open('/tours', '_blank');" type="button" value="GO BACK [EDIT]">
+            </div>
         </div>
+        
       </div>
     </div>
 
@@ -138,9 +162,12 @@
         { 
           $amount = $pledge->amount;
           $pledge_desc = $pledge->desc;
+          $ticket_type = $pledge->ticket_type;
       ?>
       <div class="col-sm-12 col-md-11 d-tj-ticket-box">
-        <h4 style="color:black;margin-top:5px;margin-left:5px;margin-bottom:5px">Silver : &#8377 <? print($amount); ?></h4>
+        <h4 style="color:black;margin-top:5px;margin-left:5px;margin-bottom:5px">
+          <? print($ticket_type); ?> : &#8377 <? print($amount); ?>
+        </h4>
         <h4 style="color:black;margin-top:5px;margin-left:5px;margin-bottom:5px"><? print($pledge_desc); ?></h4>
         <!--<div class="seperator" ></div>--> 
       </div> 
