@@ -97,7 +97,7 @@
       <div class="row d-tj-tour">
         <div class="col-sm-12 col-xs-12 col-md-6">
           <div class="row" style="margin:0;">
-              <h3>Bangalore</h3>
+              <h3>The Kanchan Daniel Band</h3>
           </div>
           <div class="row text-center">
             <? foreach($venues as $venue){ ?>
