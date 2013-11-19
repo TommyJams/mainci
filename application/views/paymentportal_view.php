@@ -154,9 +154,11 @@
         </div>
     </div>
 
-    <div class="col-sm-12 col-md-6 d-tj-black-ticket-box d-tj-offset-top-30" >
-    </div> 
-    <div class="col-sm-12 col-md-6 d-tj-black-ticket-box d-tj-offset-top-30" >
+    <div class="row">
+      <div class="col-sm-12 col-md-6 d-tj-col-1 d-tj-black-ticket-box d-tj-offset-top-30" >
+      </div> 
+      <div class="col-sm-12 col-md-6 d-tj-col-1 d-tj-black-ticket-box d-tj-offset-top-30" >
+      </div>
     </div> 
 
   </div>
