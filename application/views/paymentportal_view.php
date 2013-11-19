@@ -27,13 +27,8 @@
 .d-tj-black-ticket-box {
   background:#000;
   color:#fff; 
-  min-height: 300px;
-  padding: 30px 15px
-}
-
-.d-tj-black-ticket-box h3{
-  font-size:30px;
-  text-transform:uppercase;
+  min-height: 360px;
+  padding: 30px 30px 30px 30px;
 }
 
 .d-tj-ticket-box {
@@ -147,7 +142,7 @@
     </div>
 
     <div class="col-sm-12 col-md-12 d-tj-black-ticket-box d-tj-offset-top-30" >
-      <h3 style="font-weight:600;font-size:30px;margin-left:30px">Ticket Summary</h3>
+      <h3 style="font-weight:600;font-size:30px;margin-bottom:15px">Ticket Summary</h3>
       <? foreach($pledges as $pledge)
         { 
           $amount = $pledge->amount;
@@ -162,10 +157,10 @@
         <h4 class="text-center" style="color:black;font-size:40px;margin-top:5px;margin-bottom:5px">2</h4>
       </div> 
       <? } ?>
-        <!--<div class="text-center" >
+        <div class="text-center" >
           <input style="margin-top:10px" class="apply-btn" onclick="window.open('/roadshows', '_blank');" type="button" value="PAY">
           <input style="margin-top:10px" class="apply-btn" onclick="window.open('/tours', '_blank');" type="button" value="GO BACK [EDIT]">
-        </div>-->
+        </div>
     </div>
   </div>
 
