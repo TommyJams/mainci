@@ -147,7 +147,7 @@
     </div>
 
     <div class="col-sm-12 col-md-12 d-tj-black-ticket-box d-tj-offset-top-30" >
-      <h3>Ticket Summary</h3>
+      <h3 style="font-weight:600;font-size:30px;margin-left:30px">Ticket Summary</h3>
       <? foreach($pledges as $pledge)
         { 
           $amount = $pledge->amount;
