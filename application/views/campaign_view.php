@@ -311,8 +311,8 @@
                     </h4>
                     <h5 style="width:200px">
                       <? print($pledge_desc); ?> 
-                    </h5>  
-                    <input class="text-center pull-right" type="text" id="<? print($ticket_type); ?>total" name="<? print($ticket_type); ?>total" value="" disabled="disabled" style="border:1px solid #000;font-size:25px;color:white;" /> 
+                      <input class="text-center pull-right" type="text" id="<? print($ticket_type); ?>total" name="<? print($ticket_type); ?>total" value="" disabled="disabled" style="border:1px solid #000;font-size:25px;color:white;" />
+                    </h5>   
                   </div>
                   <div class="seperator" ></div>
                   <? 
