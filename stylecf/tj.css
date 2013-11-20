@@ -712,6 +712,34 @@ ul.social-list li a.social-list-blog-edit {
 	color: #555555;
 	font-size: 15px;
 }
+.btn-plus-count a {
+	width:20px;
+	height:20px;
+	display:block;
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+}
+.btn-plus-count a:hover {
+	background-position:0px -20px;
+}
+.btn-plus-count  a.btn-plus-count-hover {
+	background-image:url('/img/plus-option.png');
+	cursor: pointer;
+}
+.btn-minus-count a {
+	width:20px;
+	height:20px;
+	display:block;
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+}
+.btn-minus-count a:hover {
+	background-position:0px -20px;
+}
+.btn-minus-count  a.btn-plus-count-hover {
+	background-image:url('/img/delete-option.png');
+	cursor: pointer;
+}
 .btn-delete-pledge  a {
 	width:20px;
 	height:20px;

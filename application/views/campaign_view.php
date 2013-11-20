@@ -302,7 +302,12 @@
                     $pledge_desc = $pledge->desc;
                   ?>
                   <div style="">
-                    <h4>&#8377 <? print($amount); ?> </h4>
+                    <h4>
+                      &#8377 <? print($amount); ?>
+                      <div class="btn-plus-count pull-right"><a class="btn-plus-count-hover"></a></div>
+                      <input type="text" id="ticket_count" name="ticket_count" placeholder="0" value="" disabled="disabled" />
+                      <div class="btn-minus-count pull-right"><a class="btn-minus-count-hover"></a></div> 
+                    </h4>
                     <h5><? print($pledge_desc); ?> </h5>
                   </div>
                   <div class="seperator" ></div>
@@ -380,13 +385,28 @@
 <script>
 	$(document).ready(function(){
 		$(".d-tj-slide-img").hover(
-             function () {
+            function () {
               $(this).find('.d-tj-slide-hover-img').removeClass('hide');
-              },
-				function () {
- 				$(this).find('.d-tj-slide-hover-img').addClass('hide');
-			 }
+            },
+      			function () {
+       				$(this).find('.d-tj-slide-hover-img').addClass('hide');
+      			}
     );
+
+    $('body').on('click', '.btn-plus-count', function(){
+
+      var pluscount = $("#ticket_count").val();
+      var pluscount = pluscount++;
+      $('#ticket_count').val(pluscount);
+    });
+
+     $('body').on('click', '.btn-minus-count', function(){
+
+      var minuscount = $("#ticket_count").val();
+      var minuscount = minuscount--;
+      $('#ticket_count').val(minuscount);
+    });
+
   });
 
   function venueBox(id)

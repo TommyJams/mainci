@@ -158,10 +158,10 @@
       </div>
     </div>
 
-    <div class="d-tj-black-box d-tj-tour-right-edit d-tj-offset-top-30">
+    <div class="d-tj-offset-top-30">
       <div>
         <div class="col-sm-12 col-xs-12 col-md-4" style="">
-          <div class="row"> 
+          <div class="row d-tj-black-box d-tj-tour-right-edit"> 
             <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER NAME"></input>
             <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER EMAIL"></input>
             <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER [10-DIGIT]"></input>
