@@ -436,16 +436,16 @@
         $('#'+id1).val(minusTicketTotal);
       }
     }
-  }
 
-  function individualTotal(type)
-  {
+    var copper = 'Coppertotal';
+    var bronze = 'Bronzetotal';
+    var silver = 'Silvertotal';
+    var gold   = 'Goldtotal';
+    var diamond = 'Diamondtotal';
+    var platinum = 'Platinumtotal';
 
-  }
-
-  function grandTotal()
-  {
-
+    var grandtotal = $('#'+copper).val() + $('#'+bronze).val() + $('#'+silver).val() + $('#'+gold).val() + $('#'+diamond).val() + $('#'+platinum).val();
+    $('#grandTotal').val(grandtotal);
   }
 
   function venueBox(id)
