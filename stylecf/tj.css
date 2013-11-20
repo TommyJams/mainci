@@ -736,7 +736,7 @@ ul.social-list li a.social-list-blog-edit {
 .btn-minus-count a:hover {
 	background-position:0px -20px;
 }
-.btn-minus-count  a.btn-plus-count-hover {
+.btn-minus-count  a.btn-minus-count-hover {
 	background-image:url('/img/delete-option.png');
 	cursor: pointer;
 }

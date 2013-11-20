@@ -305,7 +305,7 @@
                     <h4>
                       &#8377 <? print($amount); ?>
                       <div class="btn-minus-count pull-right" style="margin-top:10px"><a class="btn-minus-count-hover"></a></div>
-                      <input class="text-center pull-right" type="text" id="ticket_count" name="ticket_count" placeholder="0" value="" disabled="disabled" />
+                      <input class="text-center pull-right" type="text" id="ticket_count" name="ticket_count" placeholder="0" value="" disabled="disabled" style="width:40px;height:40px;margin-left:5px;margin-right:5px" />
                       <div class="btn-plus-count pull-right" style="margin-top:10px"><a class="btn-plus-count-hover"></a></div> 
                     </h4>
                     <h5><? print($pledge_desc); ?> </h5>
