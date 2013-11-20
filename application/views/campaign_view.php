@@ -402,18 +402,18 @@
       var id = type + 'count';
       var pluscount = $('#'+id).val();
       console.log(pluscount);
-      var pluscount = pluscount++;
-      console.log(pluscount);
-      $('#'+id).val(pluscount);
+      var plus_count = pluscount++;
+      console.log(plus_count);
+      $('#'+id).val(plus_count);
     }
     if(use == "minus")
     {
       var id = type + 'count';
       var minuscount = $('#'+id).val();
       console.log(minuscount);
-      var minuscount = minuscount--;
-      console.log(minuscount);
-      $('#'+id).val(minuscount);
+      var minus_count = minuscount--;
+      console.log(minus_count);
+      $('#'+id).val(minus_count);
     }
   }
 
