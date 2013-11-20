@@ -158,18 +158,24 @@
       </div>
     </div>
 
-    <div class="row d-tj-offset-top-30">
-      <div class="col-sm-12 col-xs-12 col-md-4 d-tj-black-box d-tj-tour-right-edit" style="margin-left:15px;"> 
-        <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER NAME"></input>
-        <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER EMAIL"></input>
-        <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER [10-DIGIT]"></input>
-        <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER LOCATION"></input>
-        <div class="text-center" >
-          <input style="" onclick="window.open('/tours', '_blank');" type="button" value="PAY NOW">
+    <div class="d-tj-black-box d-tj-tour-right-edit d-tj-offset-top-30">
+      <div>
+        <div class="col-sm-12 col-xs-12 col-md-4" style="">
+          <div class="row"> 
+            <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER NAME"></input>
+            <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER EMAIL"></input>
+            <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER [10-DIGIT]"></input>
+            <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER LOCATION"></input>
+            <div class="text-center" >
+              <input style="" onclick="window.open('/tours', '_blank');" type="button" value="PAY NOW">
+            </div>
+          </div>
+        </div>  
+        <div class="col-sm-12 col-xs-12 col-md-8" style="">
+          <div class="row">
+          </div>
         </div>
-      </div>
-      <div class="col-sm-12 col-xs-12 col-md-8 d-tj-black-box" style="margin-left:15px;">
-      </div>
+      </div>  
     </div>  
 
   </div>
