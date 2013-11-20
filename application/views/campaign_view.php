@@ -401,14 +401,18 @@
     {
       var id = type + 'count';
       var pluscount = $('#'+id).val();
+      console.log(pluscount);
       var pluscount = pluscount++;
+      console.log(pluscount);
       $('#'+id).val(pluscount);
     }
     if(use == "minus")
     {
       var id = type + 'count';
       var minuscount = $('#'+id).val();
+      console.log(minuscount);
       var minuscount = minuscount--;
+      console.log(minuscount);
       $('#'+id).val(minuscount);
     }
   }
