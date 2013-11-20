@@ -309,10 +309,12 @@
                       <input class="text-center pull-right" type="text" id="<? print($ticket_type); ?>count" name="<? print($ticket_type); ?>count" placeholder="0" value="0" disabled="disabled" style="width:30px;height:30px;margin-right:5px;margin-left:5px;border:1px solid #ffffff;font-size:20px;color:white;" />
                       <div onclick="ticketCount('<? print($ticket_type); ?>','minus');" class="btn-minus-count pull-right" style="margin-top:5px"><a class="btn-minus-count-hover"></a></div> 
                     </h4>
-                    <h5 style="width:200px">
+                    <div class="col-md-12">
+                    <h5 class="col-md-4" style="">
                       <? print($pledge_desc); ?> 
                       <input class="text-center pull-right" type="text" id="<? print($ticket_type); ?>total" name="<? print($ticket_type); ?>total" value="" disabled="disabled" style="border:1px solid #000;font-size:25px;color:white;" />
-                    </h5>   
+                    </h5>
+                    </div>   
                   </div>
                   <div class="seperator" ></div>
                   <? 
@@ -415,13 +417,14 @@
         pluscount++;
         $('#'+id).val(pluscount);
 
-        var plusTicketTotal = pluscount * amount;
+        var plusTicketTotal = '&#8377 ' + (pluscount * amount);
         $('#'+id1).val(plusTicketTotal);
       }
     }
     if(use == "minus")
     {
       var id = type + 'count';
+      ar id1 = type + 'total';
       var minuscount = $('#'+id).val();
 
       if(minuscount > 0)
@@ -429,7 +432,7 @@
         minuscount--;
         $('#'+id).val(minuscount);
 
-        var minusTicketTotal = minuscount * amount;
+        var minusTicketTotal = '&#8377 ' + (minuscount * amount);
         $('#'+id1).val(minusTicketTotal);
       }
     }
