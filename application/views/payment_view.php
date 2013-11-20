@@ -140,26 +140,27 @@
               <? print($ticket_type); ?> : &#8377 <? print($amount); ?>
             </h4>
             <h4 style="margin-top:5px;margin-left:5px;margin-bottom:5px"><? print($pledge_desc); ?></h4>
-            <!--<div class="seperator" ></div>-->   
+            <div class="seperator" ></div>   
           <? } ?>
             <div class="text-center" >
-              <input style="margin-top:30px" onclick="window.open('/tours', '_blank');" type="button" value="GO BACK [EDIT]">
+              <input style="margin-top:30px" onclick="window.open('/tours', '_blank');" type="button" value="EDIT">
             </div>
         </div>
         
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-sm-12 col-xs-12 col-md-5 d-tj-black-box d-tj-tour-right-edit" style="margin-left: 50px;"> 
+    <div class="row d-tj-offset-top-30">
+      <div class="col-sm-12 col-xs-12 col-md-4 d-tj-black-box d-tj-tour-right-edit" style="margin-left:15px;"> 
         <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER NAME"></input>
         <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER EMAIL"></input>
         <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER [10-DIGIT]"></input>
         <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER LOCATION"></input>
       </div>
-    </div> 
-    <div class="col-sm-12 col-md-6 d-tj-col-1 d-tj-black-ticket-box d-tj-offset-top-30" >
-    </div> 
+      <div class="text-center" >
+        <input style="margin-top:30px" onclick="window.open('/tours', '_blank');" type="button" value="PAY NOW">
+      </div>
+    </div>  
 
   </div>
 
