@@ -136,10 +136,10 @@
               $pledge_desc = $pledge->desc;
               $ticket_type = $pledge->ticket_type;
           ?>
-            <h4 style="color:black;margin-top:5px;margin-left:5px;margin-bottom:5px">
+            <h4 style="margin-top:5px;margin-left:5px;margin-bottom:5px">
               <? print($ticket_type); ?> : &#8377 <? print($amount); ?>
             </h4>
-            <h4 style="color:black;margin-top:5px;margin-left:5px;margin-bottom:5px"><? print($pledge_desc); ?></h4>
+            <h4 style="margin-top:5px;margin-left:5px;margin-bottom:5px"><? print($pledge_desc); ?></h4>
             <!--<div class="seperator" ></div>-->   
           <? } ?>
             <div class="text-center" >
@@ -151,10 +151,14 @@
     </div>
 
     <div class="row">
-      <div class="col-sm-12 col-md-6 d-tj-col-1 d-tj-black-ticket-box d-tj-offset-top-30" >
-      </div> 
-      <div class="col-sm-12 col-md-6 d-tj-col-1 d-tj-black-ticket-box d-tj-offset-top-30" >
+      <div class="col-sm-12 col-xs-12 col-md-5 d-tj-black-box d-tj-tour-right-edit" style="margin-left: 50px;"> 
+        <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER NAME"></input>
+        <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER EMAIL"></input>
+        <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER [10-DIGIT]"></input>
+        <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER LOCATION"></input>
       </div>
+    </div> 
+    <div class="col-sm-12 col-md-6 d-tj-col-1 d-tj-black-ticket-box d-tj-offset-top-30" >
     </div> 
 
   </div>
