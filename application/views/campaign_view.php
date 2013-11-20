@@ -402,7 +402,7 @@
       var id = type + 'count';
       var pluscount = $('#'+id).val();
 
-      if(pluscount < 10)
+      if(pluscount < 9)
       {
         pluscount++;
         $('#'+id).val(pluscount);
@@ -413,7 +413,7 @@
       var id = type + 'count';
       var minuscount = $('#'+id).val();
 
-      if(minuscount >=0)
+      if(minuscount > 0)
       { 
         minuscount--;
         $('#'+id).val(minuscount);
