@@ -305,11 +305,11 @@
                   <div style="">
                     <h4 style="font-size:25px">
                       <? print($ticket_type); ?> : &#8377 <? print($amount); ?>
-                      <div onclick="ticketCount('<? print($ticket_type); ?>','plus');" class="btn-plus-count pull-right" style="margin-top:2px"><a class="btn-plus-count-hover"></a></div>
-                      <input class="text-center pull-right" type="text" id="<? print($ticket_type); ?>count" name="<? print($ticket_type); ?>count" placeholder="0" value="0" disabled="disabled" style="width:25px;height:25px;border:1px dashed #000000;font-size:20px;color:white;" />
-                      <div onclick="ticketCount('<? print($ticket_type); ?>','minus');" class="btn-minus-count pull-right" style="margin-top:2px"><a class="btn-minus-count-hover"></a></div> 
+                      <div onclick="ticketCount('<? print($ticket_type); ?>','plus');" class="btn-plus-count pull-right" style="margin-top:5px"><a class="btn-plus-count-hover"></a></div>
+                      <input class="text-center pull-right" type="text" id="<? print($ticket_type); ?>count" name="<? print($ticket_type); ?>count" placeholder="0" value="0" disabled="disabled" style="width:30px;height:30px;margin-right:5px;margin-left:5px;border:1px solid #ffffff;font-size:20px;color:white;" />
+                      <div onclick="ticketCount('<? print($ticket_type); ?>','minus');" class="btn-minus-count pull-right" style="margin-top:5px"><a class="btn-minus-count-hover"></a></div> 
                     </h4>
-                    <h5><? print($pledge_desc); ?> </h5>
+                    <h5 style="width:200px"><? print($pledge_desc); ?> </h5>
                   </div>
                   <div class="seperator" ></div>
                   <? 
