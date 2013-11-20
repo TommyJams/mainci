@@ -300,13 +300,14 @@
                   <?
                     $amount = $pledge->amount;
                     $pledge_desc = $pledge->desc;
+                    $ticket_type = $pledge->ticket_type;
                   ?>
                   <div style="">
-                    <h4>
-                      &#8377 <? print($amount); ?>
-                      <div class="btn-minus-count pull-right" style="margin-top:10px"><a class="btn-minus-count-hover"></a></div>
-                      <input class="text-center pull-right" type="text" id="ticket_count" name="ticket_count" placeholder="0" value="" disabled="disabled" style="width:40px;height:40px;margin-left:5px;margin-right:5px" />
-                      <div class="btn-plus-count pull-right" style="margin-top:10px"><a class="btn-plus-count-hover"></a></div> 
+                    <h4 style="font-size:25px">
+                      <? print($ticket_type); ?> : &#8377 <? print($amount); ?>
+                      <div class="btn-minus-count pull-right" style="margin-top:2px"><a class="btn-minus-count-hover"></a></div>
+                      <input class="text-center pull-right" type="text" id="ticket_count" name="ticket_count" placeholder="0" value="" disabled="disabled" style="width:25px;height:25px;margin-left:5px;margin-right:5px" />
+                      <div class="btn-plus-count pull-right" style="margin-top:2px"><a class="btn-plus-count-hover"></a></div> 
                     </h4>
                     <h5><? print($pledge_desc); ?> </h5>
                   </div>
