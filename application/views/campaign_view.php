@@ -313,7 +313,7 @@
                       <? print($pledge_desc); ?>
                     </h5>
                     <h5>   
-                      <input class="text-center pull-right" type="text" id="<? print($ticket_type); ?>total" name="<? print($ticket_type); ?>total" value="" disabled="disabled" style="border:1px solid #000;font-size:25px;color:white;margin-top:-30px" />
+                      <input class="text-center pull-right" type="text" id="<? print($ticket_type); ?>total" name="<? print($ticket_type); ?>total" value="" disabled="disabled" style="border:1px solid #000;font-size:25px;color:white;margin-top:-35px;width:80px" />
                     </h5>   
                   </div>
                   <div class="seperator" ></div>
@@ -417,7 +417,8 @@
         pluscount++;
         $('#'+id).val(pluscount);
 
-        var plusTicketTotal = pluscount * amount;
+        var symbol = '&#2352 ';
+        var plusTicketTotal = symbol + (pluscount * amount);
         $('#'+id1).val(plusTicketTotal);
       }
     }
