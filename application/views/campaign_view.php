@@ -397,9 +397,6 @@
 
   function ticketCount(type,use)
   {
-    var pluscount = 0;
-    var minuscount = 0;
-
     if(use == "plus")
     {
       var id = type + 'count';
