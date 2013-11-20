@@ -28,6 +28,14 @@
   margin-top:5px;
 }
 
+.d-tj-tour-right-edit input {
+  color: #000;
+}
+
+.d-tj-tour-right-edit input:hover {
+  color: #FFFFFF;
+}
+
 </style>
 
 <!--venue modal-->
@@ -128,7 +136,7 @@
           </div>   
         </div>
 
-        <div class="col-sm-12 col-md-7 d-tj-black-ticket-box" >
+        <div class="col-sm-12 col-md-8 d-tj-black-ticket-box" style="margin-left:-25px" >
           <h3 style="font-weight:600;font-size:30px;margin-bottom:15px">Ticket Summary</h3>
           <? foreach($pledges as $pledge)
             { 
@@ -157,10 +165,10 @@
         <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER [10-DIGIT]"></input>
         <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER LOCATION"></input>
         <div class="text-center" >
-          <input style="margin-top:30px" onclick="window.open('/tours', '_blank');" type="button" value="PAY NOW">
+          <input style="" onclick="window.open('/tours', '_blank');" type="button" value="PAY NOW">
         </div>
       </div>
-      <div class="col-sm-12 col-xs-12 col-md-4 d-tj-black-box" style="margin-left:15px;">
+      <div class="col-sm-12 col-xs-12 col-md-8 d-tj-black-box" style="margin-left:15px;">
       </div>
     </div>  
 
