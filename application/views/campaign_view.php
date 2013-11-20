@@ -135,7 +135,7 @@
             <h2 style="font-size:40px"><? print($days_to_go); ?><a style="font-size:18px"> days to go</a></h2> 
             <!--<h4 style="line-height:0.5px"> days to go </h4>-->
             <div class="text-center d-tj-offset-top-20 pledge-btn-top" style="margin-bottom:0px">
-              <input type="button" value="BUY NOW" onclick="window.open('<?print($login_url);?>', '_blank');" >
+              <input type="button" value="BUY NOW" onclick="" >
             </div>
           </div>
         </div>
@@ -353,7 +353,7 @@
             <!--/Tabs -->
 
             <div class=" d-tj-offset-top-30 pledge-btn" >
-              <input type="button" value="BUY NOW" style="" onclick="window.open('<?print($login_url);?>', '_blank');">
+              <input type="button" value="BUY NOW" style="" onclick="">
             </div>
           </div>
         </div>
