@@ -418,7 +418,7 @@
         $('#'+id).val(pluscount);
 
         var plusTicketTotal = pluscount * amount;
-        $('#'+id1).val('&#8377' plusTicketTotal);
+        $('#'+id1).val(plusTicketTotal);
       }
     }
     if(use == "minus")
@@ -433,7 +433,7 @@
         $('#'+id).val(minuscount);
 
         var minusTicketTotal = minuscount * amount;
-        $('#'+id1).val('&#8377' minusTicketTotal);
+        $('#'+id1).val(minusTicketTotal);
       }
     }
   }
