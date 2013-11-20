@@ -305,16 +305,23 @@
                   <div style="">
                     <h4 style="font-size:25px">
                       <? print($ticket_type); ?> : &#8377 <? print($amount); ?>
-                      <div onclick="ticketCount('<? print($ticket_type); ?>','plus');" class="btn-plus-count pull-right" style="margin-top:5px"><a class="btn-plus-count-hover"></a></div>
+                      <div onclick="ticketCount('<? print($ticket_type); ?>','plus','<? print($amount); ?>');" class="btn-plus-count pull-right" style="margin-top:5px"><a class="btn-plus-count-hover"></a></div>
                       <input class="text-center pull-right" type="text" id="<? print($ticket_type); ?>count" name="<? print($ticket_type); ?>count" placeholder="0" value="0" disabled="disabled" style="width:30px;height:30px;margin-right:5px;margin-left:5px;border:1px solid #ffffff;font-size:20px;color:white;" />
                       <div onclick="ticketCount('<? print($ticket_type); ?>','minus');" class="btn-minus-count pull-right" style="margin-top:5px"><a class="btn-minus-count-hover"></a></div> 
                     </h4>
-                    <h5 style="width:200px"><? print($pledge_desc); ?> </h5>
+                    <h5 style="width:200px">
+                      <? print($pledge_desc); ?> 
+                    </h5>  
+                    <input class="text-center pull-right" type="text" id="<? print($ticket_type); ?>total" name="<? print($ticket_type); ?>total" value="" disabled="disabled" style="border:1px solid #000;font-size:25px;color:white;" /> 
                   </div>
                   <div class="seperator" ></div>
                   <? 
                     } }
                   ?>
+                  <h5>
+                    GRAND TOTAL 
+                    <input class="text-center pull-right" type="text" id="grandTotal" name="grandTotal" value="" disabled="disabled" style="border:1px solid #000;font-size:25px;color:white;" />
+                  </h5>
                   <? if(isset($ticket_widget)) { ?>
                     <iframe frameborder="0" src="<? print($ticket_widget); ?>" width="315" height="<? print($widget_height); ?>"></iframe>
                     <div class="d-tj-overlay" style="width:105%; z-index:1000; position:relative; background-color:black;"> 
@@ -395,17 +402,21 @@
     );
   });
 
-  function ticketCount(type,use)
+  function ticketCount(type,use,amount)
   {
     if(use == "plus")
     {
       var id = type + 'count';
+      var id1 = type + 'total';
       var pluscount = $('#'+id).val();
 
       if(pluscount < 9)
       {
         pluscount++;
         $('#'+id).val(pluscount);
+
+        var plusTicketTotal = pluscount * amount;
+        $('#'+id1).val(plusTicketTotal);
       }
     }
     if(use == "minus")
@@ -417,8 +428,21 @@
       { 
         minuscount--;
         $('#'+id).val(minuscount);
+
+        var minusTicketTotal = minuscount * amount;
+        $('#'+id1).val(minusTicketTotal);
       }
     }
+  }
+
+  function individualTotal(type)
+  {
+
+  }
+
+  function grandTotal()
+  {
+
   }
 
   function venueBox(id)
