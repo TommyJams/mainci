@@ -438,7 +438,17 @@
     }
 
     // To calculate GrandTotal
-    var copper = $('#Coppertotal').val();
+    while(type !== 'undefined')
+    {
+      var typename = type + 'total';
+      var a = $('#'+typename).val();
+
+      var grandtotal += parseInt(a);
+      $('#grandTotal').val(grandtotal);
+    }
+
+
+    /*var copper = $('#Coppertotal').val();
     var bronze = $('#Bronzetotal').val();
     var silver = $('#Silvertotal').val();
     var gold   = $('#Goldtotal').val();
@@ -458,8 +468,8 @@
     if (typeof platinum === 'undefined')
       var platinum = 0;
 
-    var grandtotal = copper + bronze + silver + gold + diamond + platinum;
-    $('#grandTotal').val(grandtotal);
+    var grandtotal = parseInt(copper) + parseInt(bronze) + parseInt(silver) + parseInt(gold) + parseInt(diamond) + parseInt(platinum);
+    $('#grandTotal').val(grandtotal);*/
   }
 
   function venueBox(id)
