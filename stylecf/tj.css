@@ -1045,6 +1045,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 	margin-top: 40px;
 	display: block;
 }
+.f-ms a h4 {
+	margin-right: 107px;
+}
 .f-copy {
 	background: #FFCC00;
 	padding:10px
@@ -1170,7 +1173,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 	margin-left:30px;
 }
 .f-ms a h4 {
-	float:none;
 	margin-right: 107px;
 }
 .f-ms a img {
@@ -1276,7 +1278,6 @@ ul.social-list {
 	margin-left:30px;
 }
 .f-ms a h4 {
-	float:none;
 	margin-right: 107px;
 }
 .f-ms a img {
@@ -1442,7 +1443,6 @@ h4 {
 	margin-left:40px;
 }
 .f-ms a h4 {
-	float:none;
 	margin-right: 97px;
 }
 .f-ms a img {
@@ -1490,7 +1490,6 @@ h4 {
 	margin-left:40px;
 }
 .f-ms a h4 {
-	float:none;
 	margin-right: 95px;
 }
 .f-ms a img {
