@@ -307,24 +307,24 @@
                     <h4 style="font-size:25px">
                       <? print($ticket_type); ?> : &#8377 <? print($amount); ?>
                       <div onclick="ticketCount('<? print($ticket_type); ?>','plus','<? print($amount); ?>');" class="btn-plus-count pull-right" style="margin-top:5px"><a class="btn-plus-count-hover"></a></div>
-                      &#8377 <input class="text-center pull-right" type="text" id="<? print($ticket_type); ?>count" name="<? print($ticket_type); ?>count" placeholder="0" value="0" disabled="disabled" style="width:30px;height:30px;margin-right:5px;margin-left:5px;border:1px solid #ffffff;font-size:20px;color:white;" />
+                      <input class="text-center pull-right" type="text" id="<? print($ticket_type); ?>count" name="<? print($ticket_type); ?>count" placeholder="0" value="0" disabled="disabled" style="width:30px;height:30px;margin-right:5px;margin-left:5px;border:1px solid #ffffff;font-size:20px;color:white;" />
                       <div onclick="ticketCount('<? print($ticket_type); ?>','minus','<? print($amount); ?>');" class="btn-minus-count pull-right" style="margin-top:5px"><a class="btn-minus-count-hover"></a></div> 
                     </h4>
                     <h5 style="width:200px" >
                       <? print($pledge_desc); ?>
                     </h5>
                     <h5>   
-                      <input class="text-center pull-right" type="text" id="<? print($ticket_type); ?>total" name="<? print($ticket_type); ?>total" value="" disabled="disabled" style="border:1px solid #000;font-size:25px;color:white;margin-top:-40px;width:80px;font-family:'Dosis',sans-serif" />
+                    &#8377 <input class="text-center pull-right" type="text" id="<? print($ticket_type); ?>total" name="<? print($ticket_type); ?>total" value="" disabled="disabled" style="border:1px solid #000;font-size:25px;color:white;margin-top:-40px;width:80px;font-family:'Dosis',sans-serif" />
                     </h5>   
                   </div>
                   <div class="seperator" ></div>
                   <? 
                     } }
                   ?>
-                  <h5 style="font-size:25px !important;font-family:'Dosis',sans-serif">
-                    Grand Total  
+                  <h5 style="font-size:25px !important;font-family:'Dosis',sans-serif"> Grand Total </h5>  
+                  <div>  
                     &#8377 <input class="text-center pull-right" type="text" id="grandTotal" name="grandTotal" value="" disabled="disabled" style="border:1px solid #000;font-size:25px;color:white;width:80px;margin-top: -5px;" />
-                  </h5>
+                  </div>
                   <? if(isset($ticket_widget)) { ?>
                     <iframe frameborder="0" src="<? print($ticket_widget); ?>" width="315" height="<? print($widget_height); ?>"></iframe>
                     <div class="d-tj-overlay" style="width:105%; z-index:1000; position:relative; background-color:black;"> 
