@@ -1099,7 +1099,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 }
 
 /* Responsive */
-@media (max-width: 1005px) {
+@media (max-width: 1045px) and (min-width:1005px) {
 .f-ms a h4 {
 	margin-right: 100px;
 }
