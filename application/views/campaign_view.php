@@ -313,13 +313,11 @@
                     <h5 style="width:200px" >
                       <? print($pledge_desc); ?>
                     </h5>
-                  </div>
-                  </div>  
-                    <h4 style="font-size:25px !important;font-family:'Dosis',sans-serif">&#8377 </h5>
-                    <h4> 
+                    <h5 style="font-size:25px !important;font-family:'Dosis',sans-serif">&#8377 </h5>
+                    <h5> 
                       <input class="text-center pull-right" type="text" id="<? print($ticket_type); ?>total" name="<? print($ticket_type); ?>total" value="" disabled="disabled" style="border:1px solid #000;font-size:25px;color:white;margin-top:-40px;width:80px;font-family:'Dosis',sans-serif" />
-                    </h4> 
-                  </div>    
+                    </h5>   
+                  </div>
                   <div class="seperator" ></div>
                   <? 
                     } }
@@ -478,7 +476,6 @@
       var platinum = 0;
 
     var grandtotal = parseInt(copper) + parseInt(bronze) + parseInt(silver) + parseInt(gold) + parseInt(diamond) + parseInt(platinum);
-    var symbol = '&#8377';
     $('#grandTotal').val(grandtotal);
   }
 
