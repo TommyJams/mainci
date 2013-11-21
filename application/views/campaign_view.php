@@ -313,7 +313,9 @@
                     <h5 style="width:200px" >
                       <? print($pledge_desc); ?>
                     </h5>
-                    <h5 style="font-size:25px !important;font-family:'Dosis',sans-serif">&#8377 </h5>
+                  </div>
+                  <div>  
+                    <h5 style="font-size:25px !important;font-family:'Dosis',sans-serif;margin-top:-40px;margin-left:230px">&#8377 </h5>
                     <h5> 
                       <input class="text-center pull-right" type="text" id="<? print($ticket_type); ?>total" name="<? print($ticket_type); ?>total" value="" disabled="disabled" style="border:1px solid #000;font-size:25px;color:white;margin-top:-40px;width:80px;font-family:'Dosis',sans-serif" />
                     </h5>   
@@ -324,7 +326,7 @@
                   ?>
                   <h5 style="font-size:25px !important;font-family:'Dosis',sans-serif"> Grand Total </h5>  
                   <div>  
-                    <h4 style="font-size:25px !important;font-family:'Dosis',sans-serif">&#8377 </h4> 
+                    <h4 style="font-size:25px !important;font-family:'Dosis',sans-serif;margin-top:-40px;margin-left:230px">&#8377 </h4> 
                     <input class="text-center pull-right" type="text" id="grandTotal" name="grandTotal" value="" disabled="disabled" style="border:1px solid #000;font-size:25px;color:white;width:80px;margin-top: -5px;" />
                   </div>
                   <? if(isset($ticket_widget)) { ?>
