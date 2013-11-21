@@ -322,7 +322,7 @@
                   ?>
                   <h5>
                     GRAND TOTAL 
-                    <input class="text-center pull-right" type="text" id="grandTotal" name="grandTotal" value="" disabled="disabled" style="border:1px solid #000;font-size:25px;color:white;" />
+                    <input class="text-center pull-right" type="text" id="grandTotal" name="grandTotal" value="" disabled="disabled" style="border:1px solid #000;font-size:25px;color:white;width:80px" />
                   </h5>
                   <? if(isset($ticket_widget)) { ?>
                     <iframe frameborder="0" src="<? print($ticket_widget); ?>" width="315" height="<? print($widget_height); ?>"></iframe>
@@ -459,17 +459,17 @@
     var diamond = $('#Diamondtotal').val();
     var platinum = $('#Platinumtotal').val();
 
-    if (typeof copper === 'undefined')
+    if (typeof copper === 'undefined' || typeof copper === "")
       var copper = 0;
-    if (typeof bronze === 'undefined')
+    if (typeof bronze === 'undefined' || typeof bronze === "")
       var bronze = 0;
-    if (typeof silver === 'undefined')
+    if (typeof silver === 'undefined' || typeof silver === "")
       var silver = 0;
-    if (typeof gold === 'undefined')
+    if (typeof gold === 'undefined' || typeof gold === "")
       var gold = 0;
-    if (typeof diamond === 'undefined')
+    if (typeof diamond === 'undefined' || typeof diamond === "")
       var diamond = 0;
-    if (typeof platinum === 'undefined')
+    if (typeof platinum === 'undefined' || typeof platinum === "")
       var platinum = 0;
 
     var grandtotal = parseInt(copper) + parseInt(bronze) + parseInt(silver) + parseInt(gold) + parseInt(diamond) + parseInt(platinum);
