@@ -105,7 +105,7 @@
     $fbEventJoinees = $row->fbEventJoinees;
     $fbLoginURL = $row->fbLoginURL;
     
-    $fanLoginURL = $row->$fanLoginURL;
+    $fanLoginURL = $row->fanLoginURL;
 
     $date = strtotime($tourDate);
     $tourDate = date('jS F Y', $date);
