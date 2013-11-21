@@ -250,6 +250,7 @@ class Model extends CI_Model{
                             $fbEventStatus = "JOIN NOW";
                             $fbEventJoinees = array();
                             $fbLoginURL = "";
+                            $fanLoginURL = "";
 
                             if($fbEvent)
                             {
