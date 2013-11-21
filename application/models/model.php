@@ -303,7 +303,7 @@ class Model extends CI_Model{
                             }
 
                 $fanLoginURL = $this->facebook->getLoginUrl( array(
-                                  'scope' => 'read_stream, friends_likes, user_birthday, user_about_me, user_website, user_photos, user_location, user_hometown, user_interests, email',
+                                  'scope' => 'user_about_me, user_birthday, user_website, user_location, user_hometown, user_interests, email',
                                   'redirect_uri' => base_url().'payment/'.$campaign_id
                             ));            
 
@@ -331,14 +331,15 @@ class Model extends CI_Model{
 								'status' 		=> $status,
 								'tourDate' 		=> $tourDate,
 								'days_to_go'  	=> $days_to_go,
-								'fanLoginURL'	=> $fanLoginURL,
 								'image1'		=> $image1,
                                                                 'fbEventName'           => $fbEventName,
                                                                 'fbEventPic'            => $fbEventPic,
                                                                 'fbEventURL'            => $fbEventURL,
                                                                 'fbEventStatus'         => $fbEventStatus,
                                                                 'fbEventJoinees'        => $fbEventJoinees,
-                                                                'fbLoginURL'            => $fbLoginURL
+                                                                'fbLoginURL'            => $fbLoginURL,
+                                                                'fanLoginURL'			=> $fanLoginURL
+
 							);
 
 				$response[] = $campaignDetails;
