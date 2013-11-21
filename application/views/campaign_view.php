@@ -443,10 +443,14 @@
       var typename = type + 'total';
       var a = $('#'+typename).val();
 
-      var grandtotal += parseInt(a);
-      $('#grandTotal').val(grandtotal);
+      var grandtotal[] = parseInt(a);
     }
 
+    for (var i = 0; i < grandtotal.length; i++) 
+    {
+      total += grandtotal[i];
+    }
+    $('#grandTotal').val(total);
 
     /*var copper = $('#Coppertotal').val();
     var bronze = $('#Bronzetotal').val();
