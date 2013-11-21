@@ -52,7 +52,7 @@
           </ul>
         </div>
       </div>
-      <div class="col-md-3 col-sm-12 col-xs-12 f-ms"> <a style="text-decoration:none;color:white"><h4 style="font-size:14px">Accelerated by:<h4><br><img src="/img/msventures.png" style="width:189px;height:20px"/></a> </div>
+      <div class="col-md-3 col-sm-12 col-xs-12 f-ms"> <a style="text-decoration:none;color:white"><h4 style="font-size:14px;margin-right:107px">Accelerated by:</h4><br><img src="/img/msventures.png" style="width:189px;height:20px"/></a> </div>
     </div>
     <div class="col-md-12 col-sm-12 col-xs-12 f-copy">
       <p>COPYRIGHT 2013 - ALL RIGHTS RESERVED</p>
