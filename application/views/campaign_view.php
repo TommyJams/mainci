@@ -321,10 +321,10 @@
                   <? 
                     } }
                   ?>
-                  <h5 style="font-family:'Dosis',sans-serif;font-size:25px">
-                    Grand Total 
+                  <div style="font-family:'Dosis',sans-serif" >
+                    <h5 style="font-size:25px">Grand Total</h5>  
                     <input class="text-center pull-right" type="text" id="grandTotal" name="grandTotal" value="" disabled="disabled" style="border:1px solid #000;font-size:25px;color:white;width:80px;margin-top: -5px;" />
-                  </h5>
+                  </div>
                   <? if(isset($ticket_widget)) { ?>
                     <iframe frameborder="0" src="<? print($ticket_widget); ?>" width="315" height="<? print($widget_height); ?>"></iframe>
                     <div class="d-tj-overlay" style="width:105%; z-index:1000; position:relative; background-color:black;"> 
