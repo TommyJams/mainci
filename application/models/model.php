@@ -303,7 +303,7 @@ class Model extends CI_Model{
                             }
 
                 $fanLoginURL = $this->facebook->getLoginUrl( array(
-                                  'scope' => 'read_stream', 'friends_likes', 'user_birthday', 'user_about_me', 'user_website', 'user_photos', 'user_location', 'user_hometown', 'user_interests', 'email',
+                                  'scope' => 'read_stream, friends_likes, user_birthday, user_about_me, user_website, user_photos, user_location, user_hometown, user_interests, email',
                                   'redirect_uri' => base_url().'payment/'.$campaign_id
                             ));            
 
