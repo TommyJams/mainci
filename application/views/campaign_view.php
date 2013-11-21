@@ -437,14 +437,28 @@
       }
     }
 
-    var copper = 'Coppertotal';
-    var bronze = 'Bronzetotal';
-    var silver = 'Silvertotal';
-    var gold   = 'Goldtotal';
-    var diamond = 'Diamondtotal';
-    var platinum = 'Platinumtotal';
+    // To calculate GrandTotal
+    var copper = $('#Coppertotal').val();
+    var bronze = $('#Bronzetotal').val();
+    var silver = $('#Silvertotal').val();
+    var gold   = $('#Goldtotal').val();
+    var diamond = $('#Diamondtotal').val();
+    var platinum = $('#Platinumtotal').val();
 
-    var grandtotal = $('#'+copper).val() + $('#'+bronze).val() + $('#'+silver).val() + $('#'+gold).val() + $('#'+diamond).val() + $('#'+platinum).val();
+    if (typeof copper === 'undefined')
+      var copper = 0;
+    if (typeof bronze === 'undefined')
+      var bronze = 0;
+    if (typeof silver === 'undefined')
+      var silver = 0;
+    if (typeof gold === 'undefined')
+      var gold = 0;
+    if (typeof diamond === 'undefined')
+      var diamond = 0;
+    if (typeof platinum === 'undefined')
+      var platinum = 0;
+
+    var grandtotal = copper + bronze + silver + gold + diamond + platinum;
     $('#grandTotal').val(grandtotal);
   }
 
