@@ -301,9 +301,9 @@ class Model extends CI_Model{
                                    //error_log('Fb Status:'.$fbEventStatus);
                             }
 
-                $login_url = $this->facebook->getLoginUrl( array(
+                $fanLoginURL = $this->facebook->getLoginUrl( array(
                                   'scope' => 'read_stream, friends_likes, user_birthday, user_about_me, user_website, user_photos, user_location, user_hometown, user_interests, email',
-                                  'redirect_uri' => base_url().'payment'.$campaign_id
+                                  'redirect_uri' => base_url().'payment/'.$campaign_id
                             ));            
 
 				$campaignDetails = array(
@@ -330,7 +330,7 @@ class Model extends CI_Model{
 								'status' 		=> $status,
 								'tourDate' 		=> $tourDate,
 								'days_to_go'  	=> $days_to_go,
-								'login_url'		=> $login_url,
+								'fanLoginURL'	=> $fanLoginURL,
 								'image1'		=> $image1,
                                                                 'fbEventName'           => $fbEventName,
                                                                 'fbEventPic'            => $fbEventPic,
