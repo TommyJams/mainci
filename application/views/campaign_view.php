@@ -459,17 +459,17 @@
     var diamond = $('#Diamondtotal').val();
     var platinum = $('#Platinumtotal').val();
 
-    if (typeof copper === 'undefined' || typeof copper === "")
+    if (typeof copper === 'undefined' || copper === "")
       var copper = 0;
-    if (typeof bronze === 'undefined' || typeof bronze === "")
+    if (typeof bronze === 'undefined' || bronze === "")
       var bronze = 0;
-    if (typeof silver === 'undefined' || typeof silver === "")
+    if (typeof silver === 'undefined' || silver === "")
       var silver = 0;
-    if (typeof gold === 'undefined' || typeof gold === "")
+    if (typeof gold === 'undefined' || gold === "")
       var gold = 0;
-    if (typeof diamond === 'undefined' || typeof diamond === "")
+    if (typeof diamond === 'undefined' || diamond === "")
       var diamond = 0;
-    if (typeof platinum === 'undefined' || typeof platinum === "")
+    if (typeof platinum === 'undefined' || platinum === "")
       var platinum = 0;
 
     var grandtotal = parseInt(copper) + parseInt(bronze) + parseInt(silver) + parseInt(gold) + parseInt(diamond) + parseInt(platinum);
