@@ -481,6 +481,24 @@
     $('#grandTotal').val(grandtotal);
   }
 
+  function getFinalDataCallback(fanLoginURL)
+  {
+    window.location = "fanLoginURL";
+  }
+
+  function getFinalData(fanLoginURL,campID)
+  {
+    var copper = $('#Coppertotal').val();
+    var bronze = $('#Bronzetotal').val();
+    var silver = $('#Silvertotal').val();
+    var gold   = $('#Goldtotal').val();
+    var diamond = $('#Diamondtotal').val();
+    var platinum = $('#Platinumtotal').val();
+    var grandtotal = $('#grandtotal').val();
+
+    $.post('/CFfans/storeFanData',{'campID': campID,'copper': copper,'bronze': bronze,'silver': silver,'gold': gold,'diamond': diamond,'platinum': platinum,'grandTotal': grandTotal},getFinalDataCallback(fanLoginURL),'json');  
+  }
+
   function venueBox(id)
   {
     var a = 'venue-form' + id;

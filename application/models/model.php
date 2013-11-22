@@ -303,7 +303,7 @@ class Model extends CI_Model{
                             }
 
                 $fanLoginURL = $this->facebook->getLoginUrl( array(
-                                  'scope' => 'user_about_me, user_birthday, user_website, user_location, user_hometown, user_interests, read_friendlists, email',
+                                  'scope' => 'user_about_me, user_location, user_interests, read_friendlists, email',
                                   'redirect_uri' => base_url().'payment/'.$campaign_id
                             ));            
 
@@ -731,7 +731,41 @@ class Model extends CI_Model{
                 return true;
         }
 
-        public function fanDetails($campaign_id,$code)
+        public function storeFanData(camp_id)
+        {
+        	$this->load->helper('functions');
+
+        	// Get posted data
+	    	$copper = $this->input->post("copper");
+	    	$bronze = $this->input->post("bronze");
+	    	$silver = $this->input->post("silver");
+	    	$gold = $this->input->post("gold");
+	    	$diamond = $this->input->post("diamond");
+	    	$platinum = $this->input->post("platinum");
+	    	$grandTotal = $this->input->post("grandTotal");
+
+	    	if (!isEmpty($copper))
+		      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Copper', `ticket_amount`='$copper', `campaign_id`='$camp_id'");
+		    
+		    if (!isEmpty($bronze))
+		    	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Bronze', `ticket_amount`='$bronze', `campaign_id`='$camp_id'");
+		    
+		    if (!isEmpty($silver))
+		      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Silver', `ticket_amount`='$silver', `campaign_id`='$camp_id'");
+		    
+		    if (isEmpty($gold))
+		      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Gold', `ticket_amount`='$gold', `campaign_id`='$camp_id'");
+		    
+		    if (isEmpty($diamond))
+		      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='diamond', `ticket_amount`='$diamond', `campaign_id`='$camp_id'");
+		    
+		    if (isEmpty($platinum))
+		      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Platinum', `ticket_amount`='$platinum', `campaign_id`='$camp_id'");
+		   
+        	return true;
+        }
+
+        public function fanDetails($camp_id,$code)
         {
         	$appId = '248776888603319';
             $secret = '50f31c2706d846826bead008392e8969';
@@ -748,22 +782,20 @@ class Model extends CI_Model{
             $this->facebook->setAccessToken($access_token);
 
         	// Get user's Facebook data
-            $fan = $this->facebook->api('/me', 'GET', array(
-                                        'access_token'  => $access_token
-                    ));
+            $fan = $this->facebook->api('/me');
 
-        	// Get posted data
-	    	$campaign_id = $this->input->post("campaign_id");
-	    	$ticket_type = $this->input->post("ticket_type");
-	    	$ticket_amount = $this->input->post("ticket_amount");
-	    	$ticket_type_count = $this->input->post("ticket_type_count");
+            $fan_id = $fan['id'];
+            $fan_name = $fan['username'];
+            $fan_email = $fan['email'];
+            $fan_about = $fan['about'];
+            $fan_location = $fan['location'];
+            $fan_interests = $fan['interests'];
 
+	    	// Storing fan data into database
 	    	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='$ticket_type', `ticket_amount`='$ticket_amount', `ticket_type_count`='$ticket_type_count'  WHERE campaign_id='$campaign_id';");	
-		}	
-
-		public function getFanDetails($camp_id)
-		{
-			$query = $this->db->query("SELECT * FROM fansCF WHERE campaign_id = '$camp_id';");
+		
+	    	// Getting fan data from fansCF datatable
+	    	$query = $this->db->query("SELECT * FROM fansCF WHERE campaign_id = '$camp_id';");
 			if ($query->num_rows() > 0)
 			{
 	            $qresult = $query->result();
@@ -777,7 +809,7 @@ class Model extends CI_Model{
 	   				$contact = $row->contact;
 	   				$location = $row->location;
 
-	                $tourRow = array(
+	                $fanRow = array(
 	                                    'name' 				=> $name, 
 	                                    'ticket_type' 		=> $ticket_type,
 	                                    'ticket_amount' 	=> $ticket_amount, 
@@ -787,7 +819,7 @@ class Model extends CI_Model{
 	                                    'location' 			=> $location
 	                                );
 
-	                $response[] = $tourRow;
+	                $response[] = $fanRow;
 				}
 
 				//Return values to controller

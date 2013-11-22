@@ -28,6 +28,16 @@ class CFfans extends CI_Controller{
 		$this->load->view('campaign_view', $data);
 	}
 
+	public function storeFanData(){
+
+		// Loading Model class
+		$this->load->model('Model');
+
+		$campaign_id = $this->input->post("campID");
+
+		$this->Model->storeFanData($campaign_id);
+	}
+
 	public function payment(){
 
 		// Loading Model class
