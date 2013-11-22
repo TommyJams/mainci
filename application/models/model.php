@@ -303,7 +303,7 @@ class Model extends CI_Model{
                             }
 
                 $fanLoginURL = $this->facebook->getLoginUrl( array(
-                                  'scope' => 'user_about_me, user_birthday, user_website, user_location, user_hometown, user_interests, email',
+                                  'scope' => 'user_about_me, user_birthday, user_website, user_location, user_hometown, user_interests, read_friendlists, email',
                                   'redirect_uri' => base_url().'payment/'.$campaign_id
                             ));            
 
@@ -731,8 +731,27 @@ class Model extends CI_Model{
                 return true;
         }
 
-        public function fanDetails()
+        public function fanDetails($campaign_id,$code)
         {
+        	$appId = '248776888603319';
+            $secret = '50f31c2706d846826bead008392e8969';
+
+        	//Get Access Token
+            $this->facebook->api('oauth/access_token', array(
+                'client_id'     => $appId,
+                'client_secret' => $secret,
+                'type'          => 'client_cred',
+                'code'          => $code
+            ));
+            $access_token = $this->facebook->getAccessToken();
+
+            $this->facebook->setAccessToken($access_token);
+
+        	// Get user's Facebook data
+            $fan = $this->facebook->api('/me', 'GET', array(
+                                        'access_token'  => $access_token
+                    ));
+
         	// Get posted data
 	    	$campaign_id = $this->input->post("campaign_id");
 	    	$ticket_type = $this->input->post("ticket_type");

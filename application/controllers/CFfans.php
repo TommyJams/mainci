@@ -14,20 +14,37 @@ class CFfans extends CI_Controller{
 		// Loading Model class
 		$this->load->model('Model');
 
-    $campaign_id = $this->uri->segment(2);
-    parse_str(substr(strrchr($_SERVER['REQUEST_URI'], "?"), 1), $_GET);
+	    $campaign_id = $this->uri->segment(2);
+	    parse_str(substr(strrchr($_SERVER['REQUEST_URI'], "?"), 1), $_GET);
 
 		//error_log("Camp Id: ".$campaign_id);
 
-    if(isset($_GET['code']))
-    {
-      $data['fbEvent'] = json_encode($this->Model->joinFBEvent($_GET['code'],$campaign_id));
-    }
+	    if(isset($_GET['code']))
+	    {
+	      $data['fbEvent'] = json_encode($this->Model->joinFBEvent($_GET['code'],$campaign_id));
+	    }
 
-    $data['campaign'] = json_encode($this->Model->campaignDetails($campaign_id));
+	    $data['campaign'] = json_encode($this->Model->campaignDetails($campaign_id));
+		$this->load->view('campaign_view', $data);
+	}
 
-    error_log($data['campaign']);
-    
-	$this->load->view('campaign_view', $data);
+	public function payment(){
+
+		// Loading Model class
+		$this->load->model('Model');
+
+		$campaign_id = $this->uri->segment(2);
+
+		// Getting code from URL
+		parse_str(substr(strrchr($_SERVER['REQUEST_URI'], "?"), 1), $_GET);
+
+	   	// Loading model to store user's fb data
+	   	$data['fanData'] = json_encode($this->Model->fanDetails($campaign_id,$_GET['code']));
+
+		// Get campaign details	   
+		$data['campaign'] = json_encode($this->Model->campaignDetails($campaign_id));
+
+
+		$this->load->view('payment_view', $data);
 	}
 }

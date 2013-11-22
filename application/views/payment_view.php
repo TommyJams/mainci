@@ -164,7 +164,7 @@
       </div>
     </div> 
 
-    <div class="d-tj-offset-top-40 d-tj-col-2">
+    <div class="d-tj-offset-top-30 d-tj-col-2">
       <div class="row">
         <div class="col-md-6 d-tj-col-1" >
           <div class="col-md-12 d-tj-col-1-bg" >
