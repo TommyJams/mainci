@@ -164,7 +164,7 @@
       </div>
     </div> 
 
-    <div class="d-tj-offset-top-40  d-tj-col-2">
+    <div class="d-tj-offset-top-40 d-tj-col-2">
       <div class="row">
         <div class="col-md-6 d-tj-col-1" >
           <div class="col-md-12 d-tj-col-1-bg" >
@@ -181,7 +181,7 @@
         </div>
         <div class="col-md-6 d-tj-col-1 d-tj-network" >
           <div class="col-md-12 d-tj-col-1-bg" >
-            <div class="d-tj-network-content" >
+            <div class="d-tj-events" >
               <h3>PAYMENT DETAILS</h3> 
               <div class="row d-tj-black-box d-tj-tour-right-edit"> 
                 <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER NAME"></input>
@@ -193,27 +193,7 @@
           </div>
         </div>
       </div>
-    </div> 
-
-    <div class="d-tj-offset-top-30" style="">
-        <div class="col-sm-12 col-xs-12 col-md-6" style="">
-          <div class="row d-tj-black-box d-tj-tour-right-edit"> 
-            <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER NAME"></input>
-            <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER EMAIL"></input>
-            <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER [10-DIGIT]"></input>
-            <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER LOCATION"></input>
-          </div>
-        </div>
-
-        <div class="col-sm-12 col-xs-12 col-md-6" style="">
-          <div class="row d-tj-black-box d-tj-tour-right-edit"> 
-            <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER NAME"></input>
-            <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER EMAIL"></input>
-            <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER [10-DIGIT]"></input>
-            <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER LOCATION"></input>
-          </div>
-        </div>
-    </div>      
+    </div>     
 
     <div class="col-sm-12 col-xs-12 col-md-12" style="">
       <div class="row">
