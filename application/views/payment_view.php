@@ -164,26 +164,32 @@
       </div>
     </div>    
 
-    <div class="d-tj-box d-tj-offset-top-30" style="height:360px">
-      <div>
-
-        <div class="col-sm-12 col-xs-12 col-md-5" style="">
+    <div class="d-tj-offset-top-30" style="">
+        <div class="col-sm-12 col-xs-12 col-md-6" style="">
           <div class="row d-tj-black-box d-tj-tour-right-edit"> 
             <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER NAME"></input>
             <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER EMAIL"></input>
             <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER [10-DIGIT]"></input>
             <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER LOCATION"></input>
-            <div class="text-center" >
-              <input style="" onclick="window.open('/tours', '_blank');" type="button" value="PAY NOW">
-            </div>
-          </div>
-        </div>  
-
-        <div class="col-sm-12 col-xs-12 col-md-7" style="">
-          <div class="row">
           </div>
         </div>
-      </div>  
+
+        <div class="col-sm-12 col-xs-12 col-md-6" style="">
+          <div class="row d-tj-black-box d-tj-tour-right-edit"> 
+            <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER NAME"></input>
+            <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER EMAIL"></input>
+            <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER [10-DIGIT]"></input>
+            <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER LOCATION"></input>
+          </div>
+        </div>
+    </div>      
+
+    <div class="col-sm-12 col-xs-12 col-md-12" style="">
+      <div class="row">
+        <div class="text-center" >
+          <input style="" onclick="window.open('/tours', '_blank');" type="button" value="PAY NOW">
+        </div>
+      </div>
     </div>  
 
   </div>
