@@ -158,9 +158,16 @@
       </div>
     </div>
 
-    <div class="d-tj-offset-top-30">
+    <div class="d-tj-black-box d-tj-offset-top-30">
+      <h3 style="margin-top: 0px;">SOCIAL SHARE</h3>
+      <div class="">
+      </div>
+    </div>    
+
+    <div class="d-tj-box d-tj-offset-top-30">
       <div>
-        <div class="col-sm-12 col-xs-12 col-md-4" style="">
+
+        <div class="col-sm-12 col-xs-12 col-md-5" style="">
           <div class="row d-tj-black-box d-tj-tour-right-edit"> 
             <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER NAME"></input>
             <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER EMAIL"></input>
@@ -171,7 +178,8 @@
             </div>
           </div>
         </div>  
-        <div class="col-sm-12 col-xs-12 col-md-8" style="">
+
+        <div class="col-sm-12 col-xs-12 col-md-7" style="">
           <div class="row">
           </div>
         </div>
