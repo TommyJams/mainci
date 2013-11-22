@@ -158,13 +158,13 @@
       </div>
     </div>
 
-    <div class="d-tj-black-box d-tj-offset-top-30">
+    <div class="d-tj-black-box d-tj-offset-top-30" style="height:300px">
       <h3 style="margin-top: 0px;">SOCIAL SHARE</h3>
       <div class="">
       </div>
     </div>    
 
-    <div class="d-tj-box d-tj-offset-top-30">
+    <div class="d-tj-box d-tj-offset-top-30" style="height:360px">
       <div>
 
         <div class="col-sm-12 col-xs-12 col-md-5" style="">
