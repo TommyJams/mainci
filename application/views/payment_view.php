@@ -137,7 +137,7 @@
         </div>
 
         <div class="col-sm-12 col-md-8 d-tj-black-ticket-box" style="margin-left:-25px" >
-          <h3 style="font-weight:600;font-size:30px;margin-bottom:15px">Ticket Summary</h3>
+          <h3 style="font-weight:400;font-size:30px;margin-bottom:15px">Ticket Summary</h3>
           <? foreach($pledges as $pledge)
             { 
               $amount = $pledge->amount;
@@ -175,7 +175,7 @@
                 <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER EMAIL"></input>
                 <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER [10-DIGIT]"></input>
                 <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER LOCATION"></input>
-            </div>
+              </div>
             </div>
           </div>
         </div>
