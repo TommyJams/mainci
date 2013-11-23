@@ -731,11 +731,12 @@ class Model extends CI_Model{
                 return true;
         }
 
-        public function storeFanData(camp_id)
+        public function storeFanData()
         {
         	$this->load->helper('functions');
 
         	// Get posted data
+        	$camp_id = $this->input->post("campID");
 	    	$copper = $this->input->post("copper");
 	    	$bronze = $this->input->post("bronze");
 	    	$silver = $this->input->post("silver");
