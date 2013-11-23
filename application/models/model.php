@@ -777,23 +777,51 @@ class Model extends CI_Model{
                 'type'          => 'client_cred',
                 'code'          => $code
             ));
+            
             $access_token = $this->facebook->getAccessToken();
-
             $this->facebook->setAccessToken($access_token);
 
-        	// Get user's Facebook data
-            $fan = $this->facebook->api('/me');
+            $user = $this->facebook->getUser();
 
-            $fan_id = $fan['id'];
-            $fan_name = $fan['username'];
-            $fan_email = $fan['email'];
-            $fan_about = $fan['about'];
-            $fan_location = $fan['location'];
-            $fan_interests = $fan['interests'];
+            if($user)
+            {	
+	        	// Get user's Facebook data
+	            $fan = $this->facebook->api('/me');
 
-	    	// Storing fan data into database
-	    	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='$ticket_type', `ticket_amount`='$ticket_amount', `ticket_type_count`='$ticket_type_count'  WHERE campaign_id='$campaign_id';");	
-		
+	            $fan_id = $fan['id'];
+	            $fan_name = $fan['username'];
+	            $fan_email = $fan['email'];
+	            $fan_about = $fan['about'];
+	            $fan_location = $fan['location'];
+	            $fan_interests = $fan['interests'];
+
+		    	// Storing fan data into database
+		    	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='$ticket_type', `ticket_amount`='$ticket_amount', `ticket_type_count`='$ticket_type_count'  WHERE campaign_id='$campaign_id';");	
+			
+				$fan_friends = $this->facebook->api('/me/friends');
+
+				foreach ($fan_friends["data"] as $value) 
+				{
+					$fan_friend_id = $value["id"];
+
+					$query = $this->db->query("SELECT fan_id FROM fansCF WHERE campaign_id = '$camp_id';");
+					if ($query->num_rows() > 0)
+					{
+			            $qresult = $query->result();
+						foreach ($qresult as $row)
+						{
+							$fan_id = $row->fan_id;
+							if($fan_id = $fan_friend_id)
+							{
+								$friend_payed['id'] = $fan_id;
+								$friend_payed['name'] = $value["name"];
+							}
+						}
+					}
+				}
+			}	
+
+
 	    	// Getting fan data from fansCF datatable
 	    	$query = $this->db->query("SELECT * FROM fansCF WHERE campaign_id = '$camp_id';");
 			if ($query->num_rows() > 0)
