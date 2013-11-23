@@ -733,11 +733,12 @@ class Model extends CI_Model{
 
         public function storeFanData()
         {
-        	// Loading session library
+        	// Loading session library and helper function
+        	$this->load->helper('functions');
         	$this->load->library('session');
 
         	// Get posted data
-        	//$camp_id = $this->input->post("campID");
+        	$fanURL = $this->input->post("fanLoginURL");
 	    	$copper = $this->input->post("copper");
 	    	$bronze = $this->input->post("bronze");
 	    	$silver = $this->input->post("silver");
@@ -761,7 +762,9 @@ class Model extends CI_Model{
             
             $this->session->set_userdata($newdata);
 
-        	return true;
+            $response = $fanURL;
+
+        	return $response;
         }
 
         public function fanDetails($camp_id,$code)
