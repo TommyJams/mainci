@@ -53,7 +53,7 @@
         </div>
       </div>
       <div class="col-md-3 col-sm-12 col-xs-12 f-ms">
-       <a style="text-decoration:none;color:white">
+       <a href="https://www.microsoftventures.com/" target="_blank" style="text-decoration:none;color:white">
           <h4 style="font-size:14px">Accelerated by:</h4>
           <img src="/img/msventures.png" style="width:189px;height:20px"/>
         </a>  
