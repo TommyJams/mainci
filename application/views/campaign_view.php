@@ -374,7 +374,7 @@
 
             <div class=" d-tj-offset-top-30 pledge-btn" >
               <input type="hidden" id="fanURL" name="fanURL" value="<? print($fanLoginURL); ?>" />
-              <input type="button" value="BUY NOW" style="" onclick="getFinalData('<? print($fanLoginURL); ?>')">
+              <input type="button" value="BUY NOW" style="" onclick="getFinalData()">
             </div>
           </div>
         </div>
@@ -489,7 +489,7 @@
     window.location = "fanURL";
   }
 
-  function getFinalData(fanLoginURL)
+  function getFinalData()
   {
     var copper = $('#Coppertotal').val();
     var bronze = $('#Bronzetotal').val();
