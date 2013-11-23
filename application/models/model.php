@@ -733,7 +733,7 @@ class Model extends CI_Model{
 
         public function storeFanData()
         {
-        	$this->load->helper('functions');
+        	// Loading session library
         	$this->load->library('session');
 
         	// Get posted data
@@ -764,6 +764,11 @@ class Model extends CI_Model{
 
         public function fanDetails($camp_id,$code)
         {
+        	// Loading lib and helper function
+        	$this->load->helper('functions');
+        	$this->load->library('session');
+
+        	// Defining appId and secret
         	$appId = '248776888603319';
             $secret = '50f31c2706d846826bead008392e8969';
 
@@ -778,6 +783,17 @@ class Model extends CI_Model{
             $access_token = $this->facebook->getAccessToken();
             $this->facebook->setAccessToken($access_token);
 
+            // Initializing variables
+            $fan_email = "";
+            $fan_about = "";
+            $copper = "";
+            $bronze = "";
+            $silver = "";
+            $gold = "";
+            $diamond = "";
+            $platinum = "";
+
+            // FB user 
             $user = $this->facebook->getUser();
 
             if($user)
@@ -786,14 +802,30 @@ class Model extends CI_Model{
 	            $fan = $this->facebook->api('/me');
 
 	            $fan_id = $fan['id'];
-	            //$fan_name = $fan['username'];
+	            $fan_name = $fan['name'];
 	            $fan_email = $fan['email'];
 	            $fan_about = $fan['about'];
-	            $fan_location = $fan['location'];
+	            $fan_location = $fan['location']['name'];
+	            $split=explode(",", $fan_location); //Eg. Split "Bangalore, India" into "Bangalore" and "India"
+	            if (isset($split[2])) //Eg. "Bankok, Krung Thep, Thailand"
+	            {
+                	$city=addslashes($split[0]);
+                	$state=trim($split[1]);
+                	$state=addslashes($state);
+                	$country=trim($split[2]);
+                	$country=addslashes($country);
+              	}
+	            else //Eg. "Bangalore, India"
+	            {
+	                $city=addslashes($split[0]);
+	                $state="";
+	                $country=trim($split[1]);
+	                $country=addslashes($country);
+	            }
 	            //$fan_interests = $fan['interests'];
 
 		    	// Storing fan data into database
-		    	$query = $this->db->query("UPDATE `fansCF` SET `fb_id`='$fan_id', `email`='$fan_email', `about`='$fan_about', `location`='$fan_location'  WHERE campaign_id='$camp_id'");	
+		    	$query = $this->db->query("UPDATE `fansCF` SET `fb_id`='$fan_id', `name`='$fan_name', `email`='$fan_email', `about`='$fan_about', `location`='$city'  WHERE campaign_id='$camp_id'");	
 			
 				$sessionArray = $this->session->all_userdata();
 		    	$camp_id = $sessionArray['campaign_id'];
@@ -805,22 +837,22 @@ class Model extends CI_Model{
 		    	$platinum = $sessionArray['platinum'];
 		    	$grandTotal = $sessionArray['grandTotal'];
 
-				if (!isEmpty($copper))
-		      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Copper', `ticket_amount`='$copper' WHERE `fb_id`='$fan_id'");
+				if(!isEmpty($copper))
+		      		$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Copper', `ticket_amount`='$copper' WHERE `fb_id`='$fan_id'");
 		    
-			    if (!isEmpty($bronze))
+			    if(!isEmpty($bronze))
 			    	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Bronze', `ticket_amount`='$bronze' WHERE `fb_id`='$fan_id'");
 			    
-			    if (!isEmpty($silver))
+			    if(!isEmpty($silver))
 			      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Silver', `ticket_amount`='$silver' WHERE `fb_id`='$fan_id'");
 			    
-			    if (!isEmpty($gold))
+			    if(!isEmpty($gold))
 			      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Gold', `ticket_amount`='$gold' WHERE `fb_id`='$fan_id'");
 			    
-			    if (!isEmpty($diamond))
+			    if(!isEmpty($diamond))
 			      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='diamond', `ticket_amount`='$diamond' WHERE `fb_id`='$fan_id'");
 			    
-			    if (!isEmpty($platinum))
+			    if(!isEmpty($platinum))
 			      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Platinum', `ticket_amount`='$platinum' WHERE `fb_id`='$fan_id'");
 
 				$fan_friends = $this->facebook->api('/me/friends');
