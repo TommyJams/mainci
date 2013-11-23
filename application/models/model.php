@@ -737,7 +737,7 @@ class Model extends CI_Model{
         	$this->load->library('session');
 
         	// Get posted data
-        	$camp_id = $this->input->post("campID");
+        	//$camp_id = $this->input->post("campID");
 	    	$copper = $this->input->post("copper");
 	    	$bronze = $this->input->post("bronze");
 	    	$silver = $this->input->post("silver");
@@ -747,7 +747,6 @@ class Model extends CI_Model{
 	    	$grandTotal = $this->input->post("grandTotal");
 
 	    	$newdata = array(
-	                          'campaign_id' => $camp_id,
 	                          'copper'  	=> $copper,
 	                          'bronze'  	=> $bronze,
 	                          'silver'  	=> $silver,
@@ -757,7 +756,6 @@ class Model extends CI_Model{
 	                          'grandTotal'  => $grandTotal, 
 	                        );
 
-	    	error_log($newdata['campaign_id']);
 	    	error_log($newdata['bronze']);
 	    	error_log($newdata['grandTotal']);
             
@@ -836,7 +834,6 @@ class Model extends CI_Model{
 		    	$query = $this->db->query("UPDATE `fansCF` SET `fb_id`='$fan_id', `name`='$fan_name', `email`='$fan_email', `about`='$fan_about', `contact`='$fan_contact', `location`='$city' WHERE campaign_id='$camp_id'");	
 			
 				$sessionArray = $this->session->all_userdata();
-		    	$camp_id = $sessionArray['campaign_id'];
 		    	$copper = $sessionArray['copper'];
 		    	$bronze = $sessionArray['bronze'];
 		    	$silver = $sessionArray['silver'];
@@ -846,22 +843,22 @@ class Model extends CI_Model{
 		    	$grandTotal = $sessionArray['grandTotal'];
 
 				if(!isEmpty($copper))
-		      		$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Copper', `ticket_amount`='$copper' WHERE `fb_id`='$fan_id'");
+		      		$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Copper', `ticket_amount`='$copper' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
 		    
 			    if(!isEmpty($bronze))
-			    	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Bronze', `ticket_amount`='$bronze' WHERE `fb_id`='$fan_id'");
+			    	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Bronze', `ticket_amount`='$bronze' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
 			    
 			    if(!isEmpty($silver))
-			      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Silver', `ticket_amount`='$silver' WHERE `fb_id`='$fan_id'");
+			      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Silver', `ticket_amount`='$silver' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
 			    
 			    if(!isEmpty($gold))
-			      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Gold', `ticket_amount`='$gold' WHERE `fb_id`='$fan_id'");
+			      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Gold', `ticket_amount`='$gold' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
 			    
 			    if(!isEmpty($diamond))
-			      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='diamond', `ticket_amount`='$diamond' WHERE `fb_id`='$fan_id'");
+			      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='diamond', `ticket_amount`='$diamond' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
 			    
 			    if(!isEmpty($platinum))
-			      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Platinum', `ticket_amount`='$platinum' WHERE `fb_id`='$fan_id'");
+			      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Platinum', `ticket_amount`='$platinum' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
 
 				$fan_friends = $this->facebook->api('/me/friends');
 

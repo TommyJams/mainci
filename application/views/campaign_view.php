@@ -373,7 +373,7 @@
             <!--/Tabs -->
 
             <div class=" d-tj-offset-top-30 pledge-btn" >
-              <input type="button" value="BUY NOW" style="" onclick="window.location.href='<?print($fanLoginURL);?>'">
+              <input type="button" value="BUY NOW" style="" onclick="getFinalData('<? print($fanLoginURL); ?>')">
             </div>
           </div>
         </div>
@@ -486,7 +486,7 @@
     window.location = "fanLoginURL";
   }
 
-  function getFinalData(fanLoginURL,campID)
+  function getFinalData(fanLoginURL)
   {
     var copper = $('#Coppertotal').val();
     var bronze = $('#Bronzetotal').val();
@@ -496,7 +496,7 @@
     var platinum = $('#Platinumtotal').val();
     var grandtotal = $('#grandtotal').val();
 
-    $.post('/CFfans/storeFanData',{'campID': campID,'copper': copper,'bronze': bronze,'silver': silver,'gold': gold,'diamond': diamond,'platinum': platinum,'grandTotal': grandTotal},getFinalDataCallback(fanLoginURL),'json');  
+    $.post('/CFfans/storeFanData',{'copper': copper,'bronze': bronze,'silver': silver,'gold': gold,'diamond': diamond,'platinum': platinum,'grandTotal': grandTotal},getFinalDataCallback(fanLoginURL),'json');  
   }
 
   function venueBox(id)
