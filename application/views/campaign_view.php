@@ -373,6 +373,7 @@
             <!--/Tabs -->
 
             <div class=" d-tj-offset-top-30 pledge-btn" >
+              <input type="hidden" id="fanURL" name="fanURL" value="<? print($fanLoginURL); ?>" />
               <input type="button" value="BUY NOW" style="" onclick="getFinalData('<? print($fanLoginURL); ?>')">
             </div>
           </div>
@@ -481,9 +482,11 @@
     $('#grandTotal').val(grandtotal);
   }
 
-  function getFinalDataCallback(fanLoginURL)
+  function getFinalDataCallback()
   {
-    window.location = "fanLoginURL";
+    var fanURL = $('#fanURL').val();
+    console.log(fanURL);
+    window.location = "fanURL";
   }
 
   function getFinalData(fanLoginURL)
@@ -496,7 +499,7 @@
     var platinum = $('#Platinumtotal').val();
     var grandtotal = $('#grandtotal').val();
 
-    $.post('/CFfans/storeFanData',{'copper': copper,'bronze': bronze,'silver': silver,'gold': gold,'diamond': diamond,'platinum': platinum,'grandTotal': grandTotal},getFinalDataCallback(fanLoginURL),'json');  
+    $.post('/CFfans/storeFanData',{'copper': copper,'bronze': bronze,'silver': silver,'gold': gold,'diamond': diamond,'platinum': platinum,'grandTotal': grandTotal},getFinalDataCallback,'json');  
   }
 
   function venueBox(id)
