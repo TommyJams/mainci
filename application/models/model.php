@@ -756,6 +756,10 @@ class Model extends CI_Model{
 	                          'platinum'  	=> $platinum,
 	                          'grandTotal'  => $grandTotal, 
 	                        );
+
+	    	error_log($newdata['campaign_id']);
+	    	error_log($newdata['bronze']);
+	    	error_log($newdata['grandTotal']);
             
             $this->session->set_userdata($newdata);
 
@@ -784,8 +788,6 @@ class Model extends CI_Model{
             $this->facebook->setAccessToken($access_token);
 
             // Initializing variables
-            $fan_email = "";
-            $fan_about = "";
             $copper = "";
             $bronze = "";
             $silver = "";
@@ -802,10 +804,11 @@ class Model extends CI_Model{
 	            $fan = $this->facebook->api('/me');
 
 	            $fan_id = $fan['id'];
-	            $fan_name = $fan['name'];
+	            $fan_name = mysql_real_escape_string($fan['name']);
 	            $fan_email = $fan['email'];
 	            $fan_about = $fan['about'];
 	            $fan_location = $fan['location']['name'];
+	            $fan_contact = $fan['phone'];
 	            $split=explode(",", $fan_location); //Eg. Split "Bangalore, India" into "Bangalore" and "India"
 	            if (isset($split[2])) //Eg. "Bankok, Krung Thep, Thailand"
 	            {
@@ -824,8 +827,13 @@ class Model extends CI_Model{
 	            }
 	            //$fan_interests = $fan['interests'];
 
+	            if(isEmpty($fan_email))
+	            	$fan_email = "";
+	            if(isEmpty($fan_about))
+	            	$fan_about = "";
+
 		    	// Storing fan data into database
-		    	$query = $this->db->query("UPDATE `fansCF` SET `fb_id`='$fan_id', `name`='$fan_name', `email`='$fan_email', `about`='$fan_about', `location`='$city'  WHERE campaign_id='$camp_id'");	
+		    	$query = $this->db->query("UPDATE `fansCF` SET `fb_id`='$fan_id', `name`='$fan_name', `email`='$fan_email', `about`='$fan_about', `contact`='$fan_contact', `location`='$city' WHERE campaign_id='$camp_id'");	
 			
 				$sessionArray = $this->session->all_userdata();
 		    	$camp_id = $sessionArray['campaign_id'];
