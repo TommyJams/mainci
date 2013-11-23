@@ -155,7 +155,7 @@ input[type="button"]:hover, input[type="submit"]:hover {
 	background-repeat:no-repeat;
 }
 .d-tj-progress {
-	background:#708072;
+	background:#ccc;
 	min-height:8px;
 	margin-top:10px
 }
@@ -1014,8 +1014,11 @@ filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 	padding-right: 50px;
 }
 .f-ms a {
-	margin-top: 40px;
+	margin-top: 25%;
 	display: block;
+}
+.f-ms a h4 {
+	margin-right: 107px;
 }
 .f-copy {
 	background: #FFCC00;
@@ -1136,6 +1139,14 @@ filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 .f-logo {
 	text-align: center;
 }
+.f-ms a {
+	margin-top: 40px;
+	display: block;
+	margin-left:30px;
+}
+.f-ms a h4 {
+	margin-right: 107px;
+}
 }
 @media (max-width: 768px) {
 .d-tj-campaign-slide .caroufredsel_wrapper {
@@ -1172,6 +1183,14 @@ ul.social-list-share li a.social-list-twitter-share{
 }
 .btn-icon-indent {
 	margin-left: 0 !important;
+}
+.f-ms a {
+	margin-top: 40px;
+	display: block;
+	margin-left:30px;
+}
+.f-ms a h4 {
+	margin-right: 107px;
 }
 }
 @media (max-width: 580px) {
@@ -1229,6 +1248,14 @@ ul.social-list {
 }
 .c-tile .d-tj-campaign-slide-img {
 	min-width: 205px !important;
+}
+.f-ms a {
+	margin-top: 40px;
+	display: block;
+	margin-left:30px;
+}
+.f-ms a h4 {
+	margin-right: 107px;
 }
 }
 @media (max-width: 440px) {
@@ -1384,6 +1411,14 @@ h4 {
 .d-tj-network-content {
 	min-height: 230px;
 }
+.f-ms a {
+	margin-top: 40px;
+	display: block;
+	margin-left:40px;
+}
+.f-ms a h4 {
+	margin-right: 97px;
+}
 }
 @media (max-width: 320px) {
 .fancybox-wrap {
@@ -1419,5 +1454,13 @@ h4 {
 	height: 70px;
     margin-bottom: -90px;
     top: -70px;
+}
+.f-ms a {
+	margin-top: 40px;
+	display: block;
+	margin-left:40px;
+}
+.f-ms a h4 {
+	margin-right: 95px;
 }
 }
