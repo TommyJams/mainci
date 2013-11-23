@@ -33,9 +33,7 @@ class CFfans extends CI_Controller{
 		// Loading Model class
 		$this->load->model('Model');
 
-		$campaign_id = $this->input->post("campID");
-
-		$this->Model->storeFanData($campaign_id);
+		$this->Model->storeFanData();
 	}
 
 	public function payment(){

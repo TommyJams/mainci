@@ -734,6 +734,7 @@ class Model extends CI_Model{
         public function storeFanData()
         {
         	$this->load->helper('functions');
+        	$this->load->library('session');
 
         	// Get posted data
         	$camp_id = $this->input->post("campID");
@@ -745,24 +746,19 @@ class Model extends CI_Model{
 	    	$platinum = $this->input->post("platinum");
 	    	$grandTotal = $this->input->post("grandTotal");
 
-	    	if (!isEmpty($copper))
-		      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Copper', `ticket_amount`='$copper', `campaign_id`='$camp_id'");
-		    
-		    if (!isEmpty($bronze))
-		    	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Bronze', `ticket_amount`='$bronze', `campaign_id`='$camp_id'");
-		    
-		    if (!isEmpty($silver))
-		      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Silver', `ticket_amount`='$silver', `campaign_id`='$camp_id'");
-		    
-		    if (isEmpty($gold))
-		      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Gold', `ticket_amount`='$gold', `campaign_id`='$camp_id'");
-		    
-		    if (isEmpty($diamond))
-		      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='diamond', `ticket_amount`='$diamond', `campaign_id`='$camp_id'");
-		    
-		    if (isEmpty($platinum))
-		      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Platinum', `ticket_amount`='$platinum', `campaign_id`='$camp_id'");
-		   
+	    	$newdata = array(
+	                          'campaign_id' => $camp_id,
+	                          'copper'  	=> $copper,
+	                          'bronze'  	=> $bronze,
+	                          'silver'  	=> $silver,
+	                          'gold'  		=> $gold,
+	                          'diamond'  	=> $diamond,
+	                          'platinum'  	=> $platinum,
+	                          'grandTotal'  => $grandTotal, 
+	                        );
+            
+            $this->session->set_userdata($newdata);
+
         	return true;
         }
 
@@ -790,22 +786,50 @@ class Model extends CI_Model{
 	            $fan = $this->facebook->api('/me');
 
 	            $fan_id = $fan['id'];
-	            $fan_name = $fan['username'];
+	            //$fan_name = $fan['username'];
 	            $fan_email = $fan['email'];
 	            $fan_about = $fan['about'];
 	            $fan_location = $fan['location'];
-	            $fan_interests = $fan['interests'];
+	            //$fan_interests = $fan['interests'];
 
 		    	// Storing fan data into database
-		    	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='$ticket_type', `ticket_amount`='$ticket_amount', `ticket_type_count`='$ticket_type_count'  WHERE campaign_id='$campaign_id';");	
+		    	$query = $this->db->query("UPDATE `fansCF` SET `fb_id`='$fan_id', `email`='$fan_email', `about`='$fan_about', `location`='$fan_location'  WHERE campaign_id='$camp_id'");	
 			
+				$sessionArray = $this->session->all_userdata();
+		    	$camp_id = $sessionArray['campaign_id'];
+		    	$copper = $sessionArray['copper'];
+		    	$bronze = $sessionArray['bronze'];
+		    	$silver = $sessionArray['silver'];
+		    	$gold = $sessionArray['gold'];
+		    	$diamond = $sessionArray['diamond'];
+		    	$platinum = $sessionArray['platinum'];
+		    	$grandTotal = $sessionArray['grandTotal'];
+
+				if (!isEmpty($copper))
+		      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Copper', `ticket_amount`='$copper' WHERE `fb_id`='$fan_id'");
+		    
+			    if (!isEmpty($bronze))
+			    	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Bronze', `ticket_amount`='$bronze' WHERE `fb_id`='$fan_id'");
+			    
+			    if (!isEmpty($silver))
+			      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Silver', `ticket_amount`='$silver' WHERE `fb_id`='$fan_id'");
+			    
+			    if (!isEmpty($gold))
+			      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Gold', `ticket_amount`='$gold' WHERE `fb_id`='$fan_id'");
+			    
+			    if (!isEmpty($diamond))
+			      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='diamond', `ticket_amount`='$diamond' WHERE `fb_id`='$fan_id'");
+			    
+			    if (!isEmpty($platinum))
+			      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Platinum', `ticket_amount`='$platinum' WHERE `fb_id`='$fan_id'");
+
 				$fan_friends = $this->facebook->api('/me/friends');
 
 				foreach ($fan_friends["data"] as $value) 
 				{
 					$fan_friend_id = $value["id"];
 
-					$query = $this->db->query("SELECT fan_id FROM fansCF WHERE campaign_id = '$camp_id';");
+					$query = $this->db->query("SELECT fan_id FROM fansCF WHERE campaign_id = '$camp_id'");
 					if ($query->num_rows() > 0)
 					{
 			            $qresult = $query->result();
@@ -822,9 +846,8 @@ class Model extends CI_Model{
 				}
 			}	
 
-
 	    	// Getting fan data from fansCF datatable
-	    	$query = $this->db->query("SELECT * FROM fansCF WHERE campaign_id = '$camp_id';");
+	    	$query = $this->db->query("SELECT * FROM fansCF WHERE campaign_id = '$camp_id' and `fb_id`='$fan_id'");
 			if ($query->num_rows() > 0)
 			{
 	            $qresult = $query->result();
@@ -833,7 +856,6 @@ class Model extends CI_Model{
 	   				$name = $row->name;
 	   				$ticket_type = $row->ticket_type;
 	   				$ticket_amount = $row->ticket_amount;
-	   				$ticket_type_count = $row->ticket_type_count;
 	   				$email = $row->email;
 	   				$contact = $row->contact;
 	   				$location = $row->location;
@@ -841,8 +863,7 @@ class Model extends CI_Model{
 	                $fanRow = array(
 	                                    'name' 				=> $name, 
 	                                    'ticket_type' 		=> $ticket_type,
-	                                    'ticket_amount' 	=> $ticket_amount, 
-	                                    'ticket_type_count' => $ticket_type_count, 
+	                                    'ticket_amount' 	=> $ticket_amount,  
 	                                    'email' 			=> $email, 
 	                                    'contact' 			=> $contact,
 	                                    'location' 			=> $location
@@ -853,7 +874,9 @@ class Model extends CI_Model{
 
 				//Return values to controller
 				return $response; 
-			}    
+			}
+
+			$this->session->sess_destroy();    
 		}	
 
         public function send_email($to, $sender, $subject, $mess)
