@@ -373,7 +373,8 @@
             <!--/Tabs -->
 
             <div class=" d-tj-offset-top-30 pledge-btn" >
-              <input type="button" value="BUY NOW" style="" onclick="getFinalData('<? print($fanLoginURL); ?>')">
+              <input type="hidden" id="fanLogin" name="fanLogin" value="<?print($fanLoginURL);?>" />
+              <input type="button" value="BUY NOW" id="fanURL" name="fanURL">
             </div>
           </div>
         </div>
@@ -407,6 +408,12 @@
        				$(this).find('.d-tj-slide-hover-img').addClass('hide');
       			}
     );
+    
+    $('#fanURL').click(function(){
+      var fanLogin = $('#fanLogin').val();
+      getFinalData(fanLogin);
+    });
+
   });
 
   function ticketCount(type,use,amount)
