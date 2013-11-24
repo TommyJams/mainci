@@ -495,6 +495,7 @@
 
   function getFinalData()
   {
+    var fanURLLogin = $('#fanLogin').val();
     var fanURL = $('#fanLogin').html();
     var copper = $('#Coppertotal').val();
     var bronze = $('#Bronzetotal').val();
