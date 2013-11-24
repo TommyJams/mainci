@@ -15,13 +15,13 @@
 <body>
 <div class="d-tj-bg-overlay">
   	<div class="container d-tj-container"> <a title="Revolutionizing Live Entertainment" href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a>
-  		<div class="d-tj-box" >
-  			<h3> TICKET </h3>
+  		<div class="d-tj-box" style="margin-top:20px;margin-left:0px" >
+  			<h3>TICKET </h3>
       		<div class="row">
       			<div class="col-sm-12 col-xs-12 col-md-12 d-tj-black-box">
       			</div>
       		</div>
-      		<div class="row">
+      		<div class="row d-tj-offset-top-20">
       			<div class="col-sm-12 col-xs-12 col-md-12 d-tj-black-box">
       			</div>
       		</div>
