@@ -738,7 +738,6 @@ class Model extends CI_Model{
         	$this->load->library('session');
 
         	// Get posted data
-        	$fanURL = $this->input->post("fanURL");
 	    	$copper = $this->input->post("copper");
 	    	$bronze = $this->input->post("bronze");
 	    	$silver = $this->input->post("silver");
@@ -762,8 +761,7 @@ class Model extends CI_Model{
             
             $this->session->set_userdata($newdata);
 
-        	$response = $fanURL;
-        	error_log($response);
+        	$response = 1;
         	createResponse($response);
         }
 

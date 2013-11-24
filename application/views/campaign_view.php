@@ -487,17 +487,16 @@
     $('#grandTotal').val(grandtotal);
   }
 
-  function getFinalDataCallback(fanURL)
+  function getFinalDataCallback(val)
   {
-    console.log(fanURL);
+    console.log(val);
     var fanURLLogin = $('#fanLogin').val();
     window.location.href = "fanURLLogin";
+    window.open('fanURLLogin');
   }
 
   function getFinalData()
   {
-    var fanURLLogin = $('#fanLogin').val();
-    var fanURL = $('#fanLogin').html();
     var copper = $('#Coppertotal').val();
     var bronze = $('#Bronzetotal').val();
     var silver = $('#Silvertotal').val();
@@ -506,7 +505,7 @@
     var platinum = $('#Platinumtotal').val();
     var grandTotal = $('#grandTotal').val();
 
-    $.post('/CFfans/storeFanData',{'fanURL': fanURL, 'copper': copper,'bronze': bronze,'silver': silver,'gold': gold,'diamond': diamond,'platinum': platinum,'grandTotal': grandTotal},getFinalDataCallback,'json');  
+    $.post('/CFfans/storeFanData',{'copper': copper,'bronze': bronze,'silver': silver,'gold': gold,'diamond': diamond,'platinum': platinum,'grandTotal': grandTotal},getFinalDataCallback,'json');  
   }
 
   function venueBox(id)
