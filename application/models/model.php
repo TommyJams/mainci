@@ -784,7 +784,7 @@ class Model extends CI_Model{
             ));
             
             $access_token = $this->facebook->getAccessToken();
-            $this->facebook->setAccessToken($access_token);
+            //$this->facebook->setAccessToken($access_token);
 
             // FB user 
             $user = $this->facebook->getUser();
@@ -792,14 +792,15 @@ class Model extends CI_Model{
             if($user)
             {	
 	        	// Get user's Facebook data
-	            $fan = $this->facebook->api('/me');
+	            $fan = $this->facebook->api('/me', 'GET', array(
+                                        'access_token'  => $access_token
+                                ));
 
 	            $fan_id = $fan['id'];
 	            $fan_name = mysql_real_escape_string($fan['name']);
 	            $fan_email = $fan['email'];
 	            $fan_about = $fan['about'];
 	            $fan_location = $fan['location']['name'];
-	            $fan_contact = $fan['phone'];
 	            $split=explode(",", $fan_location); //Eg. Split "Bangalore, India" into "Bangalore" and "India"
 	            if (isset($split[2])) //Eg. "Bankok, Krung Thep, Thailand"
 	            {
@@ -824,7 +825,7 @@ class Model extends CI_Model{
 	            	$fan_about = "";
 
 		    	// Storing fan data into database
-		    	$query = $this->db->query("UPDATE `fansCF` SET `fb_id`='$fan_id', `name`='$fan_name', `email`='$fan_email', `about`='$fan_about', `contact`='$fan_contact', `location`='$city' WHERE campaign_id='$camp_id'");	
+		    	$query = $this->db->query("UPDATE `fansCF` SET `fb_id`='$fan_id', `name`='$fan_name', `email`='$fan_email', `about`='$fan_about', `location`='$city' WHERE campaign_id='$camp_id'");	
 			
 				$sessionArray = $this->session->all_userdata();
 		    	$copper = $sessionArray['copper'];
