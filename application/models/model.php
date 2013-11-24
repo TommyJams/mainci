@@ -734,9 +734,11 @@ class Model extends CI_Model{
         public function storeFanData()
         {
         	// Loading session library and helper function
+        	$this->load->helper('functions');
         	$this->load->library('session');
 
         	// Get posted data
+        	$fanURL = $this->input->post("fanURL");
 	    	$copper = $this->input->post("copper");
 	    	$bronze = $this->input->post("bronze");
 	    	$silver = $this->input->post("silver");
@@ -760,7 +762,9 @@ class Model extends CI_Model{
             
             $this->session->set_userdata($newdata);
 
-        	exit;
+        	$response = $fanURL;
+        	error_log($response);
+        	createResponse($response);
         }
 
         public function fanDetails($camp_id,$code)
@@ -833,22 +837,22 @@ class Model extends CI_Model{
 		    	$platinum = $sessionArray['platinum'];
 		    	$grandTotal = $sessionArray['grandTotal'];
 
-				if(!isEmpty($copper))
+				if(!isEmpty($copper) && isset($copper))
 		      		$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Copper', `ticket_amount`='$copper' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
 		    
-			    if(!isEmpty($bronze))
+			    if(!isEmpty($bronze) && isset($bronze))
 			    	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Bronze', `ticket_amount`='$bronze' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
 			    
-			    if(!isEmpty($silver))
+			    if(!isEmpty($silver) && isset($silver))
 			      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Silver', `ticket_amount`='$silver' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
 			    
-			    if(!isEmpty($gold))
+			    if(!isEmpty($gold) && isset($gold))
 			      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Gold', `ticket_amount`='$gold' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
 			    
-			    if(!isEmpty($diamond))
+			    if(!isEmpty($diamond) && isset($diamond))
 			      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='diamond', `ticket_amount`='$diamond' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
 			    
-			    if(!isEmpty($platinum))
+			    if(!isEmpty($platinum) && isset($platinum))
 			      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Platinum', `ticket_amount`='$platinum' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
 
 				$fan_friends = $this->facebook->api('/me/friends');
