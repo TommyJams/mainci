@@ -738,7 +738,7 @@ class Model extends CI_Model{
         	$this->load->library('session');
 
         	// Get posted data
-        	$fanURL = $this->input->post("fanLoginURL");
+        	//$fanURL = $this->input->post("fanLoginURL");
 	    	$copper = $this->input->post("copper");
 	    	$bronze = $this->input->post("bronze");
 	    	$silver = $this->input->post("silver");
@@ -762,9 +762,7 @@ class Model extends CI_Model{
             
             $this->session->set_userdata($newdata);
 
-            $response = $fanURL;
-
-        	return $response;
+        	return true;
         }
 
         public function fanDetails($camp_id,$code)
