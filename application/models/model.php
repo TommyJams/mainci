@@ -784,7 +784,7 @@ class Model extends CI_Model{
             ));
             
             $access_token = $this->facebook->getAccessToken();
-            //$this->facebook->setAccessToken($access_token);
+            $this->facebook->setAccessToken($access_token);
 
             // FB user 
             $user = $this->facebook->getUser();
@@ -792,7 +792,7 @@ class Model extends CI_Model{
             if($user)
             {	
 	        	// Get user's Facebook data
-	            $fan = $this->facebook->api('/me', 'GET', array(
+	            $fan = $this->facebook->api('/me', array(
                                         'access_token'  => $access_token
                                 ));
 
