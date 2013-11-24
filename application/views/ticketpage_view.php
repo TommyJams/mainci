@@ -21,7 +21,7 @@
       			<div class="col-sm-12 col-xs-12 col-md-12 d-tj-black-box" style="margin-top:20px;margin-left:0px">
       			</div>
       		</div>
-      		<div class="row d-tj-offset-top-20">
+      		<div class="row">
       			<div class="col-sm-12 col-xs-12 col-md-12 d-tj-black-box" style="margin-top:20px;margin-left:0px">
       			</div>
       		</div>
