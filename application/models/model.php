@@ -784,17 +784,17 @@ class Model extends CI_Model{
             ));
             
             $access_token = $this->facebook->getAccessToken();
-            $this->facebook->setAccessToken($access_token);
+            $access_token_set = $this->facebook->setAccessToken($access_token);
 
+            error_log($access_token_set);
+            
             // FB user 
             $user = $this->facebook->getUser();
 
             if($user)
             {	
 	        	// Get user's Facebook data
-	            $fan = $this->facebook->api('/me', array(
-                                        'access_token'  => $access_token
-                                ));
+	            $fan = $this->facebook->api('/me');
 
 	            $fan_id = $fan['id'];
 	            $fan_name = mysql_real_escape_string($fan['name']);
