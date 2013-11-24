@@ -491,7 +491,6 @@
   {
     console.log(val);
     var fanURLLogin = $('#fanLogin').val();
-    window.location.href = "fanURLLogin";
     window.open('fanURLLogin');
   }
 
