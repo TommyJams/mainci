@@ -491,7 +491,7 @@
   {
     console.log(fanURL);
     var fanURLLogin = $('#fanLogin').val();
-    window.location = "fanURLLogin";
+    window.location.href = "fanURLLogin";
   }
 
   function getFinalData()
