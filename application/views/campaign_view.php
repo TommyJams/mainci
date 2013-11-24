@@ -411,6 +411,8 @@
     
     $('#fanURL').click(function(){
       var fanLogin = $('#fanLogin').val();
+
+      console.log((typeof fanLogin));
       getFinalData(fanLogin);
     });
 
