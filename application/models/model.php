@@ -786,8 +786,9 @@ class Model extends CI_Model{
             $access_token = $this->facebook->getAccessToken();
             $access_token_set = $this->facebook->setAccessToken($access_token);
 
+            $access_token_set = (string)$access_token_set;
             error_log($access_token_set);
-            
+
             // FB user 
             $user = $this->facebook->getUser();
 
