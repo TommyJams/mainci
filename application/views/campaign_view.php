@@ -491,7 +491,7 @@
   {
     console.log(val);
     var fanURLLogin = $('#fanLogin').val();
-    window.open('fanURLLogin');
+    window.open(""+fanURLLogin);
   }
 
   function getFinalData()
