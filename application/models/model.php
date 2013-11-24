@@ -734,11 +734,9 @@ class Model extends CI_Model{
         public function storeFanData()
         {
         	// Loading session library and helper function
-        	$this->load->helper('functions');
         	$this->load->library('session');
 
         	// Get posted data
-        	//$fanURL = $this->input->post("fanLoginURL");
 	    	$copper = $this->input->post("copper");
 	    	$bronze = $this->input->post("bronze");
 	    	$silver = $this->input->post("silver");
@@ -762,7 +760,7 @@ class Model extends CI_Model{
             
             $this->session->set_userdata($newdata);
 
-        	return true;
+        	exit;
         }
 
         public function fanDetails($camp_id,$code)
@@ -785,14 +783,6 @@ class Model extends CI_Model{
             
             $access_token = $this->facebook->getAccessToken();
             $this->facebook->setAccessToken($access_token);
-
-            // Initializing variables
-            $copper = "";
-            $bronze = "";
-            $silver = "";
-            $gold = "";
-            $diamond = "";
-            $platinum = "";
 
             // FB user 
             $user = $this->facebook->getUser();
