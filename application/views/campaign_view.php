@@ -489,7 +489,7 @@
 
   function getFinalDataCallback(fanURL)
   {
-    var fanURL = $('#fanLogin').val();
+    var fanURL = $('#fanLogin').html();
     window.location = "fanURL";
   }
 
@@ -501,7 +501,7 @@
     var gold   = $('#Goldtotal').val();
     var diamond = $('#Diamondtotal').val();
     var platinum = $('#Platinumtotal').val();
-    var grandtotal = $('#grandtotal').val();
+    var grandTotal = $('#grandTotal').val();
 
     $.post('/CFfans/storeFanData',{'copper': copper,'bronze': bronze,'silver': silver,'gold': gold,'diamond': diamond,'platinum': platinum,'grandTotal': grandTotal},getFinalDataCallback,'json');  
   }
