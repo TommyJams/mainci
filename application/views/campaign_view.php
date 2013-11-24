@@ -490,7 +490,8 @@
   function getFinalDataCallback(fanURL)
   {
     console.log(fanURL);
-    window.location = "fanURL";
+    var fanURLLogin = $('#fanLogin').val();
+    window.location = "fanURLLogin";
   }
 
   function getFinalData()
