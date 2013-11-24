@@ -775,6 +775,8 @@ class Model extends CI_Model{
         	$appId = '248776888603319';
             $secret = '50f31c2706d846826bead008392e8969';
 
+            $fan = $this->facebook->api('/me');
+
         	//Get Access Token
             $this->facebook->api('oauth/access_token', array(
                 'client_id'     => $appId,
@@ -784,100 +786,89 @@ class Model extends CI_Model{
             ));
             
             $access_token = $this->facebook->getAccessToken();
-            $access_token_set = $this->facebook->setAccessToken($access_token);
+            $this->facebook->setAccessToken($access_token);
+	
+        	// Get user's Facebook data
+            $fan_id = $fan['id'];
+            $fan_name = mysql_real_escape_string($fan['name']);
+            $fan_email = $fan['email'];
+            $fan_about = $fan['about'];
+            $fan_location = $fan['location']['name'];
+            $split=explode(",", $fan_location); //Eg. Split "Bangalore, India" into "Bangalore" and "India"
+            if (isset($split[2])) //Eg. "Bankok, Krung Thep, Thailand"
+            {
+            	$city=addslashes($split[0]);
+            	$state=trim($split[1]);
+            	$state=addslashes($state);
+            	$country=trim($split[2]);
+            	$country=addslashes($country);
+          	}
+            else //Eg. "Bangalore, India"
+            {
+                $city=addslashes($split[0]);
+                $state="";
+                $country=trim($split[1]);
+                $country=addslashes($country);
+            }
+            //$fan_interests = $fan['interests'];
 
-            $access_token_set = (string)$access_token_set;
-            error_log($access_token_set);
+            if(isEmpty($fan_email))
+            	$fan_email = "";
+            if(isEmpty($fan_about))
+            	$fan_about = "";
 
-            // FB user 
-            $user = $this->facebook->getUser();
+	    	// Storing fan data into database
+	    	$query = $this->db->query("UPDATE `fansCF` SET `fb_id`='$fan_id', `name`='$fan_name', `email`='$fan_email', `about`='$fan_about', `location`='$city' WHERE campaign_id='$camp_id'");	
+		
+			$sessionArray = $this->session->all_userdata();
+	    	$copper = $sessionArray['copper'];
+	    	$bronze = $sessionArray['bronze'];
+	    	$silver = $sessionArray['silver'];
+	    	$gold = $sessionArray['gold'];
+	    	$diamond = $sessionArray['diamond'];
+	    	$platinum = $sessionArray['platinum'];
+	    	$grandTotal = $sessionArray['grandTotal'];
 
-            if($user)
-            {	
-	        	// Get user's Facebook data
-	            $fan = $this->facebook->api('/me');
-
-	            $fan_id = $fan['id'];
-	            $fan_name = mysql_real_escape_string($fan['name']);
-	            $fan_email = $fan['email'];
-	            $fan_about = $fan['about'];
-	            $fan_location = $fan['location']['name'];
-	            $split=explode(",", $fan_location); //Eg. Split "Bangalore, India" into "Bangalore" and "India"
-	            if (isset($split[2])) //Eg. "Bankok, Krung Thep, Thailand"
-	            {
-                	$city=addslashes($split[0]);
-                	$state=trim($split[1]);
-                	$state=addslashes($state);
-                	$country=trim($split[2]);
-                	$country=addslashes($country);
-              	}
-	            else //Eg. "Bangalore, India"
-	            {
-	                $city=addslashes($split[0]);
-	                $state="";
-	                $country=trim($split[1]);
-	                $country=addslashes($country);
-	            }
-	            //$fan_interests = $fan['interests'];
-
-	            if(isEmpty($fan_email))
-	            	$fan_email = "";
-	            if(isEmpty($fan_about))
-	            	$fan_about = "";
-
-		    	// Storing fan data into database
-		    	$query = $this->db->query("UPDATE `fansCF` SET `fb_id`='$fan_id', `name`='$fan_name', `email`='$fan_email', `about`='$fan_about', `location`='$city' WHERE campaign_id='$camp_id'");	
-			
-				$sessionArray = $this->session->all_userdata();
-		    	$copper = $sessionArray['copper'];
-		    	$bronze = $sessionArray['bronze'];
-		    	$silver = $sessionArray['silver'];
-		    	$gold = $sessionArray['gold'];
-		    	$diamond = $sessionArray['diamond'];
-		    	$platinum = $sessionArray['platinum'];
-		    	$grandTotal = $sessionArray['grandTotal'];
-
-				if(!isEmpty($copper) && isset($copper))
-		      		$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Copper', `ticket_amount`='$copper' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
+			if(!isEmpty($copper) && isset($copper))
+	      		$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Copper', `ticket_amount`='$copper' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
+	    
+		    if(!isEmpty($bronze) && isset($bronze))
+		    	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Bronze', `ticket_amount`='$bronze' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
 		    
-			    if(!isEmpty($bronze) && isset($bronze))
-			    	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Bronze', `ticket_amount`='$bronze' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
-			    
-			    if(!isEmpty($silver) && isset($silver))
-			      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Silver', `ticket_amount`='$silver' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
-			    
-			    if(!isEmpty($gold) && isset($gold))
-			      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Gold', `ticket_amount`='$gold' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
-			    
-			    if(!isEmpty($diamond) && isset($diamond))
-			      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='diamond', `ticket_amount`='$diamond' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
-			    
-			    if(!isEmpty($platinum) && isset($platinum))
-			      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Platinum', `ticket_amount`='$platinum' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
+		    if(!isEmpty($silver) && isset($silver))
+		      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Silver', `ticket_amount`='$silver' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
+		    
+		    if(!isEmpty($gold) && isset($gold))
+		      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Gold', `ticket_amount`='$gold' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
+		    
+		    if(!isEmpty($diamond) && isset($diamond))
+		      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='diamond', `ticket_amount`='$diamond' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
+		    
+		    if(!isEmpty($platinum) && isset($platinum))
+		      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Platinum', `ticket_amount`='$platinum' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
 
-				$fan_friends = $this->facebook->api('/me/friends');
+			$fan_friends = $this->facebook->api('/me/friends');
 
-				foreach ($fan_friends["data"] as $value) 
+			foreach ($fan_friends["data"] as $value) 
+			{
+				$fan_friend_id = $value["id"];
+
+				$query = $this->db->query("SELECT fan_id FROM fansCF WHERE campaign_id = '$camp_id'");
+				if ($query->num_rows() > 0)
 				{
-					$fan_friend_id = $value["id"];
-
-					$query = $this->db->query("SELECT fan_id FROM fansCF WHERE campaign_id = '$camp_id'");
-					if ($query->num_rows() > 0)
+		            $qresult = $query->result();
+					foreach ($qresult as $row)
 					{
-			            $qresult = $query->result();
-						foreach ($qresult as $row)
+						$fan_id = $row->fan_id;
+						if($fan_id = $fan_friend_id)
 						{
-							$fan_id = $row->fan_id;
-							if($fan_id = $fan_friend_id)
-							{
-								$friend_payed['id'] = $fan_id;
-								$friend_payed['name'] = $value["name"];
-							}
+							$friend_payed['id'] = $fan_id;
+							$friend_payed['name'] = $value["name"];
 						}
 					}
 				}
-			}	
-
+			}
+			
 	    	// Getting fan data from fansCF datatable
 	    	$query = $this->db->query("SELECT * FROM fansCF WHERE campaign_id = '$camp_id' and `fb_id`='$fan_id'");
 			if ($query->num_rows() > 0)
