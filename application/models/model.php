@@ -775,8 +775,6 @@ class Model extends CI_Model{
         	$appId = '248776888603319';
             $secret = '50f31c2706d846826bead008392e8969';
 
-            $fan = $this->facebook->api('/me');
-
         	//Get Access Token
             $this->facebook->api('oauth/access_token', array(
                 'client_id'     => $appId,
@@ -787,6 +785,8 @@ class Model extends CI_Model{
             
             $access_token = $this->facebook->getAccessToken();
             $this->facebook->setAccessToken($access_token);
+
+            $fan = $this->facebook->api('/me/email',array('access_token'=>$access_token));
 	
         	// Get user's Facebook data
             $fan_id = $fan['id'];
