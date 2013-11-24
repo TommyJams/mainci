@@ -399,25 +399,6 @@
 <script src="/script/jquery.js"></script> 
 <script src="/script/bootstrap.min.js"></script>
 <script>
-  
-  function getFinalDataCallback(fanURL)
-  {
-    window.location = "fanURL";
-  }
-
-  function getFinalData(fanLoginURL)
-  {
-    var copper = $('#Coppertotal').val();
-    var bronze = $('#Bronzetotal').val();
-    var silver = $('#Silvertotal').val();
-    var gold   = $('#Goldtotal').val();
-    var diamond = $('#Diamondtotal').val();
-    var platinum = $('#Platinumtotal').val();
-    var grandtotal = $('#grandtotal').val();
-
-    $.post('/CFfans/storeFanData',{'fanLoginURL': fanLoginURL, 'copper': copper,'bronze': bronze,'silver': silver,'gold': gold,'diamond': diamond,'platinum': platinum,'grandTotal': grandTotal},getFinalDataCallback,'json');  
-  }
-
 	$(document).ready(function(){
 		$(".d-tj-slide-img").hover(
             function () {
@@ -505,6 +486,24 @@
 
     var grandtotal = parseInt(copper) + parseInt(bronze) + parseInt(silver) + parseInt(gold) + parseInt(diamond) + parseInt(platinum);
     $('#grandTotal').val(grandtotal);
+  }
+
+  function getFinalDataCallback(fanURL)
+  {
+    window.location = "fanURL";
+  }
+
+  function getFinalData(fanLoginURL)
+  {
+    var copper = $('#Coppertotal').val();
+    var bronze = $('#Bronzetotal').val();
+    var silver = $('#Silvertotal').val();
+    var gold   = $('#Goldtotal').val();
+    var diamond = $('#Diamondtotal').val();
+    var platinum = $('#Platinumtotal').val();
+    var grandtotal = $('#grandtotal').val();
+
+    $.post('/CFfans/storeFanData',{'fanLoginURL': fanLoginURL, 'copper': copper,'bronze': bronze,'silver': silver,'gold': gold,'diamond': diamond,'platinum': platinum,'grandTotal': grandTotal},getFinalDataCallback,'json');  
   }
 
   function venueBox(id)
