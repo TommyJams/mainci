@@ -841,8 +841,13 @@ class Model extends CI_Model{
             	$fan_about = "";
 
 	    	// Storing fan data into database
-	    	$query = $this->db->query("INSERT INTO `fansCF` (`fb_id`, `name`, `email`, `contact`, `about`, `location`) 
-					VALUES('".$this->db->escape_str($fan_id)."', '".$this->db->escape_str($fan_name)."', '".$this->db->escape_str($fan_email)."', '".$this->db->escape_str($fan_contact)."', '".$this->db->escape_str($fan_about)."', '".$this->db->escape_str($city)."')");
+	    	$query = $this->db->query("SELECT fb_id FROM fansCF WHERE campaign_id = '$camp_id' and `fb_id`='$fan_id'");
+			if ($query->num_rows() == 0)
+			{
+	  
+	    	$query = $this->db->query("INSERT INTO `fansCF` (`fb_id`, `name`, `email`, `contact`, `about`, `location`, `campaign_id`) 
+					VALUES('".$this->db->escape_str($fan_id)."', '".$this->db->escape_str($fan_name)."', '".$this->db->escape_str($fan_email)."', '".$this->db->escape_str($fan_contact)."', '".$this->db->escape_str($fan_about)."', '".$this->db->escape_str($city)."', '".$this->db->escape_str($camp_id)."')");
+	    	}
 
 			$sessionArray = $this->session->all_userdata();
 	    	$copper = $sessionArray['copper'];
