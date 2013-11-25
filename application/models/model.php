@@ -794,21 +794,24 @@ class Model extends CI_Model{
      		//$fan = json_decode(file_get_contents($graph_url));
      		//$fan = (array) $fan;
 
-     		$fql = "SELECT email,about,phone FROM user where uid =".$fan_id;
+     		$fql = "SELECT name,email,about,phone FROM user where uid =".$fan_id;
 
      		$fan_param  =  array(
 	                          'method'    => 'fql.query',
 	                          'query'     => $fql,
-	                          'access_token' => $access_token
+	                          'access_token' => $access_token,
+	                          'callback'  => ''
                             );
 
      		foreach ($fan_param as $fanData) 
      		{
-			  $fan_email = $fanData['email'];
-			  $fan_about = $fanData['about'];
-			  $fan_contact = $fanData['phone'];
+     			$fan_name = $fanData['name'];	
+			  	$fan_email = $fanData['email'];
+			  	$fan_about = $fanData['about'];
+			  	$fan_contact = $fanData['phone'];
 			}
 
+			error_log("Name: ".$fan_name);
 			error_log("Email: ".$fan_email);
 			error_log("About: ".$fan_about);
 			
