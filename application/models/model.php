@@ -805,11 +805,11 @@ class Model extends CI_Model{
      		foreach ($fan_param as $fanData) 
      		{
 			  $fan_email = $fanData['email'];
-			  $fan_about = $fan['about'];
+			  $fan_about = $fanData['about'];
 			}
 
-			error_log($fan_email);
-			error_log($fan_about);
+			error_log("Email".$fan_email);
+			error_log("About".$fan_about);
 			
         	// Get user's Facebook data
             $fan_name = mysql_real_escape_string($fan['name']);
