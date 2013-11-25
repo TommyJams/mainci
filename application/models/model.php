@@ -944,11 +944,13 @@ class Model extends CI_Model{
 	                $response[] = $fanRow;
 				}
 
+				// Destroying session
+				$this->session->unset_userdata($sessionArray);
+				$this->session->sess_destroy();
+
 				//Return values to controller
 				return $response; 
-			}
-
-			$this->session->sess_destroy();    
+			}    
 		}	
 
         public function send_email($to, $sender, $subject, $mess)
