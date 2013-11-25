@@ -808,8 +808,8 @@ class Model extends CI_Model{
 			  $fan_about = $fanData['about'];
 			}
 
-			error_log("Email".$fan_email);
-			error_log("About".$fan_about);
+			error_log("Email: ".$fan_email);
+			error_log("About: ".$fan_about);
 			
         	// Get user's Facebook data
             $fan_name = mysql_real_escape_string($fan['name']);
@@ -869,27 +869,27 @@ class Model extends CI_Model{
 		    if(!isEmpty($platinum) && isset($platinum))
 		      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Platinum', `ticket_amount`='$platinum' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
 
-			$fan_friends = $this->facebook->api('/me/friends');
+			/*$fan_friends = $this->facebook->api('/me/friends');
 
 			foreach ($fan_friends["data"] as $value) 
 			{
 				$fan_friend_id = $value["id"];
 
-				$query = $this->db->query("SELECT fan_id FROM fansCF WHERE campaign_id = '$camp_id'");
+				$query = $this->db->query("SELECT fb_id FROM fansCF WHERE campaign_id = '$camp_id'");
 				if ($query->num_rows() > 0)
 				{
 		            $qresult = $query->result();
 					foreach ($qresult as $row)
 					{
 						$fan_id = $row->fan_id;
-						if($fan_id = $fan_friend_id)
+						if($fan_id == $fan_friend_id)
 						{
 							$friend_payed['id'] = $fan_id;
 							$friend_payed['name'] = $value["name"];
 						}
 					}
 				}
-			}
+			}*/
 			
 	    	// Getting fan data from fansCF datatable
 	    	$query = $this->db->query("SELECT * FROM fansCF WHERE campaign_id = '$camp_id' and `fb_id`='$fan_id'");
