@@ -787,19 +787,34 @@ class Model extends CI_Model{
 
             //$this->facebook->setAccessToken($access_token);
 
-            //$fan = $this->facebook->api('/me?access_token='.$access_token);
-
-            $graph_url = "https://graph.facebook.com/me?access_token=".$access_token;
-
-     		$fan = json_decode(file_get_contents($graph_url));
-
-     		$fan = (array) $fan;
-
-        	// Get user's Facebook data
+            $fan = $this->facebook->api('/me');
             $fan_id = $fan['id'];
+
+            //$graph_url = "https://graph.facebook.com/me?access_token=".$access_token;
+     		//$fan = json_decode(file_get_contents($graph_url));
+     		//$fan = (array) $fan;
+
+     		$fql = "SELECT email,about FROM user where uid =".$fan_id;
+
+     		$fan_param  =  array(
+	                          'method'    => 'fql.query',
+	                          'query'     => $fql,
+	                          'access_token' => $access_token
+                            );
+
+     		foreach ($fan_param as $fanData) 
+     		{
+			  $fan_email = $fanData['email'];
+			  $fan_about = $fan['about'];
+			}
+
+			error_log($fan_email);
+			error_log($fan_about);
+			
+        	// Get user's Facebook data
             $fan_name = mysql_real_escape_string($fan['name']);
-            $fan_email = $fan['email'];
-            $fan_about = $fan['about'];
+            //$fan_email = $fan['email'];
+            //$fan_about = $fan['about'];
             $fan_location = $fan['location']['name'];
             $split=explode(",", $fan_location); //Eg. Split "Bangalore, India" into "Bangalore" and "India"
             if (isset($split[2])) //Eg. "Bankok, Krung Thep, Thailand"
