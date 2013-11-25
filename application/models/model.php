@@ -784,6 +784,9 @@ class Model extends CI_Model{
             ));
             
             $access_token = $this->facebook->getAccessToken();
+            
+            error_log($access_token);
+            
             $this->facebook->setAccessToken($access_token);
 
             $fan = $this->facebook->api('/me',array('access_token'=>$access_token));
