@@ -787,15 +787,13 @@ class Model extends CI_Model{
 
             $this->facebook->setAccessToken($access_token);
 
-            $fan = $this->facebook->api('/me?fields=email');
-
-            error_log($fan['email']);
+            $fan = $this->facebook->api('/me');
 
         	// Get user's Facebook data
             $fan_id = $fan['id'];
             $fan_name = mysql_real_escape_string($fan['name']);
             $fan_email = $fan['email'];
-            //$fan_about = $fan['about'];
+            $fan_about = $fan['about'];
             $fan_location = $fan['location']['name'];
             $split=explode(",", $fan_location); //Eg. Split "Bangalore, India" into "Bangalore" and "India"
             if (isset($split[2])) //Eg. "Bankok, Krung Thep, Thailand"
