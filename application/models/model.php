@@ -883,7 +883,7 @@ class Model extends CI_Model{
 		      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Platinum', `ticket_amount`='$platinum' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
 
 		    if(!isEmpty($grandTotal) && isset($grandTotal))
-		      	$query = $this->db->query("UPDATE `fansCF` SET `total_amount`='$grandTotal' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
+		      	$query = $this->db->query("UPDATE `fansCF` SET `amount`='$grandTotal' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
 
 			/*$fan_friends = $this->facebook->api('/me/friends');
 
