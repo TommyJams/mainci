@@ -925,7 +925,7 @@ class Model extends CI_Model{
 	   				if ($query1->num_rows() > 0)
 					{
 			            $qresult1 = $query1->result();
-						foreach ($qresult as $row)
+						foreach ($qresult1 as $row)
 						{
 							$pledge_desc = $row->desc;
 						}

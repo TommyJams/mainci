@@ -138,7 +138,8 @@
 
         <div class="col-sm-12 col-md-8 d-tj-black-ticket-box" style="margin-left:-25px" >
           <h3 style="font-weight:400;font-size:30px;margin-bottom:15px">Ticket Summary</h3>
-          <? foreach($fanData as $fanRow)
+          <?$fanData = (json_decode($fanData)); 
+            foreach($fanData as $fanRow)
             { 
               $ticket_type = $fanRow->ticket_type;
               $ticket_amount = $fanRow->ticket_amount;
