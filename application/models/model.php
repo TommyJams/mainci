@@ -785,9 +785,13 @@ class Model extends CI_Model{
             
             $access_token = $this->facebook->getAccessToken();
 
-            $this->facebook->setAccessToken($access_token);
+            //$this->facebook->setAccessToken($access_token);
 
-            $fan = $this->facebook->api('/me?access_token='.$access_token);
+            //$fan = $this->facebook->api('/me?access_token='.$access_token);
+
+            $graph_url = "https://graph.facebook.com/me?access_token=".$access_token;
+
+     		$fan = json_decode(file_get_contents($graph_url));
 
         	// Get user's Facebook data
             $fan_id = $fan['id'];
