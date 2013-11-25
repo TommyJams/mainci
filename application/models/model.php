@@ -799,8 +799,7 @@ class Model extends CI_Model{
      		$fan_param  =  array(
 	                          'method'    => 'fql.query',
 	                          'query'     => $fql,
-	                          'access_token' => $access_token,
-	                          'callback'  => ''
+	                          'access_token' => $access_token
                             );
 
      		foreach ($fan_param as $fanData) 
