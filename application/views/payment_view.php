@@ -138,14 +138,14 @@
 
         <div class="col-sm-12 col-md-8 d-tj-black-ticket-box" style="margin-left:-25px" >
           <h3 style="font-weight:400;font-size:30px;margin-bottom:15px">Ticket Summary</h3>
-          <? foreach($pledges as $pledge)
+          <? foreach($fanData as $fanRow)
             { 
-              $amount = $pledge->amount;
-              $pledge_desc = $pledge->desc;
-              $ticket_type = $pledge->ticket_type;
+              $ticket_type = $fanRow->ticket_type;
+              $ticket_amount = $fanRow->ticket_amount;
+              $pledge_desc = $fanRow->pledge_desc;
           ?>
             <h4 style="margin-top:5px;margin-left:5px;margin-bottom:5px">
-              <? print($ticket_type); ?> : &#8377 <? print($amount); ?>
+              <? print($ticket_type); ?> : &#8377 <? print($ticket_amount); ?>
             </h4>
             <h4 style="margin-top:5px;margin-left:5px;margin-bottom:5px"><? print($pledge_desc); ?></h4>
             <div class="seperator" ></div>   

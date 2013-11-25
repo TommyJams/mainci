@@ -805,7 +805,7 @@ class Model extends CI_Model{
 
      		foreach ($fan_param as $fanData) 
      		{
-     			$fan_name = $fanData['name'];	
+     			$fan_name = mysql_real_escape_string($fanData['name']);	
 			  	$fan_email = $fanData['email'];
 			  	$fan_about = $fanData['about'];
 			  	$fan_contact = $fanData['phone'];
@@ -814,9 +814,10 @@ class Model extends CI_Model{
 			error_log("Name: ".$fan_name);
 			error_log("Email: ".$fan_email);
 			error_log("About: ".$fan_about);
+			error_log("Phone: ".$fan_contact);
 			
         	// Get user's Facebook data
-            $fan_name = mysql_real_escape_string($fan['name']);
+            //$fan_name = mysql_real_escape_string($fan['name']);
             //$fan_email = $fan['email'];
             //$fan_about = $fan['about'];
             $fan_location = $fan['location']['name'];
@@ -842,6 +843,8 @@ class Model extends CI_Model{
             	$fan_email = "";
             if(isEmpty($fan_about))
             	$fan_about = "";
+            if(isEmpty($fan_contact))
+            	$fan_contact = "";
 
 	    	// Storing fan data into database
 	    	$query = $this->db->query("SELECT fb_id FROM fansCF WHERE campaign_id = '$camp_id' and `fb_id`='$fan_id'");
@@ -879,6 +882,9 @@ class Model extends CI_Model{
 		    if(!isEmpty($platinum) && isset($platinum))
 		      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Platinum', `ticket_amount`='$platinum' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
 
+		    if(!isEmpty($grandTotal) && isset($grandTotal))
+		      	$query = $this->db->query("UPDATE `fansCF` SET `total_amount`='$grandTotal' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
+
 			/*$fan_friends = $this->facebook->api('/me/friends');
 
 			foreach ($fan_friends["data"] as $value) 
@@ -915,13 +921,24 @@ class Model extends CI_Model{
 	   				$contact = $row->contact;
 	   				$location = $row->location;
 
+	   				$query1 = $this->db->query("SELECT * FROM pledgeCF WHERE campaign_id = '$camp_id' and `ticket_type`='$ticket_type'");
+	   				if ($query1->num_rows() > 0)
+					{
+			            $qresult1 = $query1->result();
+						foreach ($qresult as $row)
+						{
+							$pledge_desc = $row->desc;
+						}
+					}
+
 	                $fanRow = array(
 	                                    'name' 				=> $name, 
 	                                    'ticket_type' 		=> $ticket_type,
 	                                    'ticket_amount' 	=> $ticket_amount,  
 	                                    'email' 			=> $email, 
 	                                    'contact' 			=> $contact,
-	                                    'location' 			=> $location
+	                                    'location' 			=> $location,
+	                                    'pledge_desc' 		=> $pledge_desc
 	                                );
 
 	                $response[] = $fanRow;
