@@ -788,8 +788,6 @@ class Model extends CI_Model{
             $this->facebook->setAccessToken($access_token);
 
             $fan = $this->facebook->api('/me?fields=email,about');
-	
-			error_log($fan)
 
         	// Get user's Facebook data
             $fan_id = $fan['id'];
