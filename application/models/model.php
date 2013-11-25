@@ -794,7 +794,7 @@ class Model extends CI_Model{
      		//$fan = json_decode(file_get_contents($graph_url));
      		//$fan = (array) $fan;
 
-     		$fql = "SELECT email,about FROM user where uid =".$fan_id;
+     		$fql = "SELECT email,about,phone FROM user where uid =".$fan_id;
 
      		$fan_param  =  array(
 	                          'method'    => 'fql.query',
@@ -806,6 +806,7 @@ class Model extends CI_Model{
      		{
 			  $fan_email = $fanData['email'];
 			  $fan_about = $fanData['about'];
+			  $fan_contact = $fanData['phone'];
 			}
 
 			error_log("Email: ".$fan_email);
@@ -840,8 +841,9 @@ class Model extends CI_Model{
             	$fan_about = "";
 
 	    	// Storing fan data into database
-	    	$query = $this->db->query("UPDATE `fansCF` SET `fb_id`='$fan_id', `name`='$fan_name', `email`='$fan_email', `about`='$fan_about', `location`='$city' WHERE campaign_id='$camp_id'");	
-		
+	    	$query = $this->db->query("INSERT INTO `fansCF` (`fb_id`, `name`, `email`, `contact`, `about`, `location`) 
+					VALUES('".$this->db->escape_str($fan_id)."', '".$this->db->escape_str($fan_name)."', '".$this->db->escape_str($fan_email)."', '".$this->db->escape_str($fan_contact)."', '".$this->db->escape_str($fan_about)."', '".$this->db->escape_str($city)."')");
+
 			$sessionArray = $this->session->all_userdata();
 	    	$copper = $sessionArray['copper'];
 	    	$bronze = $sessionArray['bronze'];
