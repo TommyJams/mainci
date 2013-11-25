@@ -793,6 +793,8 @@ class Model extends CI_Model{
 
      		$fan = json_decode(file_get_contents($graph_url));
 
+     		$fan = (array) $fan;
+
         	// Get user's Facebook data
             $fan_id = $fan['id'];
             $fan_name = mysql_real_escape_string($fan['name']);
