@@ -18,7 +18,7 @@
 .d-tj-black-ticket-box {
   background:#000;
   color:#fff; 
-  min-height: 360px;
+  min-height: 160px;
   padding: 30px 30px 30px 30px;
 }
 
@@ -141,6 +141,8 @@
           <?$fanData = (json_decode($fanData)); 
             foreach($fanData as $fanRow)
             { 
+              $fan_name = $fanRow->name;
+              $fan_location = $fanRow->location;
               $ticket_type = $fanRow->ticket_type;
               $ticket_amount = $fanRow->ticket_amount;
               $pledge_desc = $fanRow->pledge_desc;
@@ -172,10 +174,10 @@
             <div class="d-tj-events" >
               <h3>PERSONAL DETAILS</h3>
               <div class="row d-tj-black-box d-tj-tour-right-edit"> 
-                <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER NAME"></input>
+                <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" value="<? print($fan_name); ?>" placeholder=""></input>
                 <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER EMAIL"></input>
                 <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER [10-DIGIT]"></input>
-                <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER LOCATION"></input>
+                <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" value="<? print($fan_location); ?>" placeholder=""></input>
               </div>
             </div>
           </div>

@@ -78,6 +78,7 @@
   $campaign = (json_decode($campaign));
   foreach($campaign as $row)
   {
+    $campaign_id = $row->$campaign_id;
     $raised = $row->raised;
     $totalPledges = $row->totalPledges;
     $target = $row->target;
@@ -306,9 +307,9 @@
                   <div style="">
                     <h4 style="font-size:25px">
                       <? print($ticket_type); ?> : &#8377 <? print($amount); ?>
-                      <div onclick="ticketCount('<? print($ticket_type); ?>','plus','<? print($amount); ?>');" class="btn-plus-count pull-right" style="margin-top:5px"><a class="btn-plus-count-hover"></a></div>
+                      <div onclick="ticketCount('<? print($ticket_type); ?>','plus','<? print($amount); ?>','<? print($campaign_id); ?>');" class="btn-plus-count pull-right" style="margin-top:5px"><a class="btn-plus-count-hover"></a></div>
                       <input class="text-center pull-right" type="text" id="<? print($ticket_type); ?>count" name="<? print($ticket_type); ?>count" placeholder="0" value="0" disabled="disabled" style="width:30px;height:30px;margin-right:5px;margin-left:5px;border:1px solid #ffffff;font-size:20px;color:white;" />
-                      <div onclick="ticketCount('<? print($ticket_type); ?>','minus','<? print($amount); ?>');" class="btn-minus-count pull-right" style="margin-top:5px"><a class="btn-minus-count-hover"></a></div> 
+                      <div onclick="ticketCount('<? print($ticket_type); ?>','minus','<? print($amount); ?>','<? print($campaign_id); ?>');" class="btn-minus-count pull-right" style="margin-top:5px"><a class="btn-minus-count-hover"></a></div> 
                     </h4>
                     <h5 style="width:200px" >
                       <? print($pledge_desc); ?>
@@ -415,76 +416,23 @@
 
   });
 
-  function ticketCount(type,use,amount)
+  function ticketCountCallback(a)
   {
-    if(use == "plus")
-    {
-      var id = type + 'count';
-      var id1 = type + 'total';
-      var pluscount = $('#'+id).val();
+    var type = a.tickettype + 'count';
+    var typetotal = a.tickettype + 'total';
+    var typecount = a.typecount;
+    var total = a.typetotal;
 
-      if(pluscount < 9)
-      {
-        pluscount++;
-        $('#'+id).val(pluscount);
+    $('#'+type).val(typecount);
+    $('#'+typetotal).val(total);
 
-        var plusTicketTotal = pluscount * amount;
-        $('#'+id1).val(plusTicketTotal);
-      }
-    }
-    if(use == "minus")
-    {
-      var id = type + 'count';
-      var id1 = type + 'total';
-      var minuscount = $('#'+id).val();
-
-      if(minuscount > 0)
-      { 
-        minuscount--;
-        $('#'+id).val(minuscount);
-
-        var minusTicketTotal = minuscount * amount;
-        $('#'+id1).val(minusTicketTotal);
-      }
-    }
-
-    // To calculate GrandTotal
-    /*while(type !== 'undefined')
-    {
-      var typename = type + 'total';
-      var a = $('#'+typename).val();
-
-      var grandtotal[] = parseInt(a);
-    }
-
-    for (var i = 0; i < grandtotal.length; i++) 
-    {
-      total += grandtotal[i];
-    }
-    $('#grandTotal').val(total);*/
-
-    var copper = $('#Coppertotal').val();
-    var bronze = $('#Bronzetotal').val();
-    var silver = $('#Silvertotal').val();
-    var gold   = $('#Goldtotal').val();
-    var diamond = $('#Diamondtotal').val();
-    var platinum = $('#Platinumtotal').val();
-
-    if (typeof copper === 'undefined' || copper === "")
-      var copper = 0;
-    if (typeof bronze === 'undefined' || bronze === "")
-      var bronze = 0;
-    if (typeof silver === 'undefined' || silver === "")
-      var silver = 0;
-    if (typeof gold === 'undefined' || gold === "")
-      var gold = 0;
-    if (typeof diamond === 'undefined' || diamond === "")
-      var diamond = 0;
-    if (typeof platinum === 'undefined' || platinum === "")
-      var platinum = 0;
-
-    var grandtotal = parseInt(copper) + parseInt(bronze) + parseInt(silver) + parseInt(gold) + parseInt(diamond) + parseInt(platinum);
+    var grandtotal = a.grandTotal;
     $('#grandTotal').val(grandtotal);
+  }
+
+  function ticketCount(type,use,amount,campaign_id)
+  {
+    $.post('/CFfans/ticketCount',{'type': type,'use': use,'amount': amount,'campaign_id': campaign_id},ticketCountCallback,'json');  
   }
 
   function getFinalDataCallback(val)
@@ -503,6 +451,19 @@
     var diamond = $('#Diamondtotal').val();
     var platinum = $('#Platinumtotal').val();
     var grandTotal = $('#grandTotal').val();
+
+    if (typeof copper === 'undefined' || copper === "")
+      var copper = 0;
+    if (typeof bronze === 'undefined' || bronze === "")
+      var bronze = 0;
+    if (typeof silver === 'undefined' || silver === "")
+      var silver = 0;
+    if (typeof gold === 'undefined' || gold === "")
+      var gold = 0;
+    if (typeof diamond === 'undefined' || diamond === "")
+      var diamond = 0;
+    if (typeof platinum === 'undefined' || platinum === "")
+      var platinum = 0;
 
     $.post('/CFfans/storeFanData',{'copper': copper,'bronze': bronze,'silver': silver,'gold': gold,'diamond': diamond,'platinum': platinum,'grandTotal': grandTotal},getFinalDataCallback,'json');  
   }

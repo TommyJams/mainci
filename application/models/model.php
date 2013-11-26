@@ -344,6 +344,26 @@ class Model extends CI_Model{
 
 				$response[] = $campaignDetails;
    			}
+
+   			$this->load->library('session');
+
+   			$query5 = $this->db->query("SELECT * FROM pledgeCF WHERE campaign_id = '$campaign_id'");
+			if ($query5->num_rows() > 0)
+			{
+				$q5result = $query5->result();
+				foreach ($q5result as $row)
+				{
+					$ticket_type = $row->$ticket_type;
+
+					$typetotal = $ticket_type.'total';
+
+					//Creating session
+					$this->session->set_userdata(''.$ticket_type, 0);
+					$this->session->set_userdata(''.$typetotal, 0);
+				}
+
+				$this->session->set_userdata('count', 0);
+			}
    		
    			//Return values to controller
 			return $response;
@@ -731,6 +751,83 @@ class Model extends CI_Model{
                 return true;
         }
 
+        public function ticketCount()
+        {
+        	// Load session lib
+        	$this->load->library('session');
+
+        	//Initiating
+        	$grandTotal = 0;
+
+        	// Get posted data
+        	$type = $this->input->post("type");
+        	$use = $this->input->post("use");
+        	$amount = $this->input->post("amount");
+        	$campaign_id = $this->input->post("campaign_id");
+
+        	// Get $count value from stored session
+        	$count = $this->session->userdata('count');
+        	error_log($count);
+
+        	// Get $typecount value from stored session
+        	$typecount = $this->session->userdata(''.$type);
+		    error_log($typecount);
+
+		    // Get ticket_type amount value from pledgeCF
+		    $query = $this->db->query("SELECT amount FROM pledgeCF WHERE campaign_id = '$campaign_id' and ticket_type = '$type'");
+		  	if ($query->num_rows() > 0)
+			{
+				$qresult = $query->result();
+				foreach ($qresult as $row)
+				{
+					$amount = $row->$amount;
+				}
+			}
+
+			// Calculating grandTotal
+        	if($use == "plus" && $count < 9)
+		    {
+		      	$count++;
+		      	$this->session->set_userdata(''.$type, $count);
+
+				$total = $amount * $count;
+
+				$typetotal = $type.'total';
+				$this->session->set_userdata(''.$typetotal, $total);	
+		    }
+
+		    if(use == "minus" && $count > 0)
+		    {
+		      	$count--;
+		      	$this->session->set_userdata(''.$type, $count);
+
+		      	$total = $amount * $count;
+
+				$typetotal = $type.'total';
+				$this->session->set_userdata(''.$typetotal, $total);
+    		}
+
+    		$query = $this->db->query("SELECT * FROM pledgeCF WHERE campaign_id = '$campaign_id' and ticket_type = '$type'");
+		  	if ($query->num_rows() > 0)
+			{
+				$qresult = $query->result();
+				foreach ($qresult as $row)
+				{
+					$type = $row->$ticket_type;
+					$typetotal = $type.'total';
+					
+					$grandTotal = $grandTotal + ($this->session->userdata(''.$typetotal));
+				}
+			}
+
+			$response['tickettype'] = $type;
+    		$response['typecount'] = $count;  
+    		$response['typetotal'] = $total;
+    		$response['grandTotal'] = $grandTotal;
+
+    		createResponse($response);
+        }
+
         public function storeFanData()
         {
         	// Loading session library and helper function
@@ -802,7 +899,9 @@ class Model extends CI_Model{
 	                          'access_token' => $access_token
                             );
 
-     		foreach ($fan_param as $fanData) 
+     		$fql = $this->facebook->api($fan_param);
+
+     		foreach ($fan_param as as $keys => $fanData) 
      		{
      			$fan_name = mysql_real_escape_string($fanData['name']);	
 			  	$fan_email = $fanData['email'];
@@ -850,10 +949,11 @@ class Model extends CI_Model{
 			if ($query->num_rows() == 0)
 			{
 	  
-	    	$query = $this->db->query("INSERT INTO `fansCF` (`fb_id`, `name`, `email`, `contact`, `about`, `location`, `campaign_id`) 
-					VALUES('".$this->db->escape_str($fan_id)."', '".$this->db->escape_str($fan_name)."', '".$this->db->escape_str($fan_email)."', '".$this->db->escape_str($fan_contact)."', '".$this->db->escape_str($fan_about)."', '".$this->db->escape_str($city)."', '".$this->db->escape_str($camp_id)."')");
+	    		$query1 = $this->db->query("INSERT INTO `fansCF` (`fb_id`, `name`, `email`, `contact`, `about`, `location`, `campaign_id`) 
+						VALUES('".$this->db->escape_str($fan_id)."', '".$this->db->escape_str($fan_name)."', '".$this->db->escape_str($fan_email)."', '".$this->db->escape_str($fan_contact)."', '".$this->db->escape_str($fan_about)."', '".$this->db->escape_str($city)."', '".$this->db->escape_str($camp_id)."')");
 	    	}
 
+	    	// Storing fan contribution
 			$sessionArray = $this->session->all_userdata();
 	    	$copper = $sessionArray['copper'];
 	    	$bronze = $sessionArray['bronze'];
@@ -863,28 +963,8 @@ class Model extends CI_Model{
 	    	$platinum = $sessionArray['platinum'];
 	    	$grandTotal = $sessionArray['grandTotal'];
 
-			if(!isEmpty($copper) && isset($copper))
-	      		$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Copper', `ticket_amount`='$copper' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
-	    
-		    if(!isEmpty($bronze) && isset($bronze))
-		    	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Bronze', `ticket_amount`='$bronze' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
-		    
-		    if(!isEmpty($silver) && isset($silver))
-		      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Silver', `ticket_amount`='$silver' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
-		    
-		    if(!isEmpty($gold) && isset($gold))
-		      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Gold', `ticket_amount`='$gold' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
-		    
-		    if(!isEmpty($diamond) && isset($diamond))
-		      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='diamond', `ticket_amount`='$diamond' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
-		    
-		    if(!isEmpty($platinum) && isset($platinum))
-		      	$query = $this->db->query("UPDATE `fansCF` SET `ticket_type`='Platinum', `ticket_amount`='$platinum' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
-
-		    if(!isEmpty($grandTotal) && isset($grandTotal))
-		      	$query = $this->db->query("UPDATE `fansCF` SET `amount`='$grandTotal' WHERE `fb_id`='$fan_id' AND campaign_id = '$camp_id'");
-
-			/*$fan_friends = $this->facebook->api('/me/friends');
+			// Fan friends data
+			$fan_friends = $this->facebook->api('/me/friends', 'GET', array('access_token'=>$access_token));
 
 			foreach ($fan_friends["data"] as $value) 
 			{
@@ -904,10 +984,10 @@ class Model extends CI_Model{
 						}
 					}
 				}
-			}*/
+			}
 			
 	    	// Getting fan data from fansCF datatable
-	    	$query = $this->db->query("SELECT * FROM fansCF WHERE campaign_id = '$camp_id' and `fb_id`='$fan_id'");
+	    	$query = $this->db->query("SELECT * FROM fansCF WHERE `campaign_id` = '$camp_id' and `fb_id`='$fan_id'");
 			if ($query->num_rows() > 0)
 			{
 	            $qresult = $query->result();
@@ -920,13 +1000,23 @@ class Model extends CI_Model{
 	   				$contact = $row->contact;
 	   				$location = $row->location;
 
-	   				$query1 = $this->db->query("SELECT * FROM pledgeCF WHERE campaign_id = '$camp_id' and `ticket_type`='$ticket_type'");
+	   				$query1 = $this->db->query("SELECT * FROM contributionCF WHERE `campaign_id` = '$camp_id' and `fb_id`='$fan_id'");
 	   				if ($query1->num_rows() > 0)
 					{
 			            $qresult1 = $query1->result();
 						foreach ($qresult1 as $row)
 						{
-							$pledge_desc = $row->desc;
+							$ticket_type = ;
+
+							$query2 = $this->db->query("SELECT * FROM pledgeCF WHERE `campaign_id` = '$camp_id' and `ticket_type`='$ticket_type'");
+			   				if ($query2->num_rows() > 0)
+							{
+					            $qresult2 = $query2->result();
+								foreach ($qresult2 as $row)
+								{
+									$pledge_desc = $row->desc;
+								}
+							}	
 						}
 					}
 
@@ -944,8 +1034,8 @@ class Model extends CI_Model{
 				}
 
 				// Destroying session
-				$this->session->unset_userdata($sessionArray);
-				$this->session->sess_destroy();
+				//$this->session->unset_userdata($sessionArray);
+				//$this->session->sess_destroy();
 
 				//Return values to controller
 				return $response; 

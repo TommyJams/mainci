@@ -28,6 +28,13 @@ class CFfans extends CI_Controller{
 		$this->load->view('campaign_view', $data);
 	}
 
+	public function ticketCount(){
+
+		// Loading Model class
+		$this->load->model('Model');
+		$this->Model->ticketCount();
+	}
+
 	public function storeFanData(){
 
 		// Loading Model class
