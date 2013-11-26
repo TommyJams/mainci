@@ -753,8 +753,9 @@ class Model extends CI_Model{
 
         public function ticketCount()
         {
-        	// Load session lib
+        	// Load session lib and helper func
         	$this->load->library('session');
+        	$this->load->helper('functions');
 
         	//Initiating
         	$grandTotal = 0;
