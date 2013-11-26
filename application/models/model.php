@@ -931,16 +931,14 @@ class Model extends CI_Model{
             	$fan_email = "";
             if(isEmpty($fan_about))
             	$fan_about = "";
-            if(isEmpty($fan_contact))
-            	$fan_contact = "";
 
 	    	// Storing fan data into database
 	    	$query = $this->db->query("SELECT fb_id FROM fansCF WHERE campaign_id = '$camp_id' and `fb_id`='$fan_id'");
 			if ($query->num_rows() == 0)
 			{
 	  
-	    		$query1 = $this->db->query("INSERT INTO `fansCF` (`fb_id`, `name`, `email`, `contact`, `about`, `location`, `campaign_id`) 
-						VALUES('".$this->db->escape_str($fan_id)."', '".$this->db->escape_str($fan_name)."', '".$this->db->escape_str($fan_email)."', '".$this->db->escape_str($fan_contact)."', '".$this->db->escape_str($fan_about)."', '".$this->db->escape_str($city)."', '".$this->db->escape_str($camp_id)."')");
+	    		$query1 = $this->db->query("INSERT INTO `fansCF` (`fb_id`, `name`, `email`, `about`, `location`, `campaign_id`) 
+						VALUES('".$this->db->escape_str($fan_id)."', '".$this->db->escape_str($fan_name)."', '".$this->db->escape_str($fan_email)."', '".$this->db->escape_str($fan_about)."', '".$this->db->escape_str($city)."', '".$this->db->escape_str($camp_id)."')");
 	    	}
 
 			// Fan friends data
@@ -1011,8 +1009,9 @@ class Model extends CI_Model{
 	                                    'location' 			=> $location
 	                                );
 
-	                $response['fan'] = $fanRow;
-	                $response['ticket'] = $ticketRow;
+	                $fanDetails = array($fanRow,$ticketRow);
+
+	                $response[] = $fanDetails;
 				}
 
 				// Destroying session

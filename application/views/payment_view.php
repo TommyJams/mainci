@@ -139,28 +139,26 @@
 
         <div class="col-sm-12 col-md-8 d-tj-black-ticket-box" style="margin-left:-25px" >
           <h3 style="font-weight:400;font-size:30px;margin-bottom:15px">Ticket Summary</h3>
-          <?$fan = (json_decode($fanData['fan'])); 
-            foreach($fan as $fanRow)
+          <?$fan = (json_decode($fanRow)); 
+            foreach($fan as $row)
             { 
-              $fan_name = $fanRow->name;
-              $fan_location = $fanRow->location;
-            }
+              $fan_name = $row->name;
+              $fan_location = $row->location;
             
-            $ticket = (json_decode($fanData['ticket'])); 
-            foreach($ticket as $ticketRow)
-            { 
-              
-              $ticket_type = $ticketRow->ticket_type;
-              $ticket_amount = $ticketRow->ticket_amount;
-              $ticket_quantity = $ticketRow->ticket_quantity;
-              $pledge_desc = $ticketRow->pledge_desc;
+              $ticket = (json_decode($ticketRow)); 
+              foreach($ticket as $row)
+              { 
+                $ticket_type = $row->ticket_type;
+                $ticket_amount = $row->ticket_amount;
+                $ticket_quantity = $row->ticket_quantity;
+                $pledge_desc = $row->pledge_desc;
           ?>
             <h4 style="margin-top:5px;margin-left:5px;margin-bottom:5px">
               <? print($ticket_type); ?> : &#8377 <? print($ticket_amount); ?> : <? print($ticket_quantity); ?>
             </h4>
             <h4 style="margin-top:5px;margin-left:5px;margin-bottom:5px"><? print($pledge_desc); ?></h4>
             <div class="seperator" ></div>   
-          <? } ?>
+          <? } } ?>
             <div class="text-center" >
               <input style="" onclick="window.open('/campaign/<? print($campaign_id); ?>');" type="button" value="EDIT TICKETS">
             </div>
