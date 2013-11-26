@@ -353,7 +353,7 @@ class Model extends CI_Model{
 				$q5result = $query5->result();
 				foreach ($q5result as $row)
 				{
-					$ticket_type = $row->$ticket_type;
+					$ticket_type = $row->ticket_type;
 
 					$typetotal = $ticket_type.'total';
 
@@ -780,7 +780,7 @@ class Model extends CI_Model{
 				$qresult = $query->result();
 				foreach ($qresult as $row)
 				{
-					$amount = $row->$amount;
+					$amount = $row->amount;
 				}
 			}
 
@@ -813,7 +813,7 @@ class Model extends CI_Model{
 				$qresult = $query->result();
 				foreach ($qresult as $row)
 				{
-					$type = $row->$ticket_type;
+					$type = $row->ticket_type;
 					$typetotal = $type.'total';
 					
 					$grandTotal = $grandTotal + ($this->session->userdata(''.$typetotal));
