@@ -1006,7 +1006,7 @@ class Model extends CI_Model{
 			            $qresult1 = $query1->result();
 						foreach ($qresult1 as $row)
 						{
-							$ticket_type = ;
+							//$ticket_type = ;
 
 							$query2 = $this->db->query("SELECT * FROM pledgeCF WHERE `campaign_id` = '$camp_id' and `ticket_type`='$ticket_type'");
 			   				if ($query2->num_rows() > 0)
