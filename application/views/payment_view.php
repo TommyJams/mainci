@@ -148,7 +148,7 @@
               $ticket = $row->ticket;
             }  
             
-              $ticketRow = (json_decode($ticket)); 
+              $ticketRow = (json_encode($ticket)); 
               foreach($ticketRow as $row)
               { 
                 $ticket_type = $row->ticket_type;
