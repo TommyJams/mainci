@@ -796,7 +796,7 @@ class Model extends CI_Model{
 				$this->session->set_userdata(''.$typetotal, $total);	
 		    }
 
-		    if(use == "minus" && $count > 0)
+		    if($use == "minus" && $count > 0)
 		    {
 		      	$count--;
 		      	$this->session->set_userdata(''.$type, $count);
