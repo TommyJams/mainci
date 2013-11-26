@@ -919,13 +919,11 @@ class Model extends CI_Model{
      			$fan_name = mysql_real_escape_string($fanData['name']);	
 			  	$fan_email = $fanData['email'];
 			  	$fan_about = $fanData['about'];
-			  	$fan_contact = $fanData['phone'];
 			}
 
 			error_log("Name: ".$fan_name);
 			error_log("Email: ".$fan_email);
 			error_log("About: ".$fan_about);
-			error_log("Phone: ".$fan_contact);
 			
             //$fan_interests = $fan['interests'];
 
@@ -1010,7 +1008,6 @@ class Model extends CI_Model{
 	                $fanRow = array(
 	                                    'name' 				=> $name,   
 	                                    'email' 			=> $email, 
-	                                    'contact' 			=> $contact,
 	                                    'location' 			=> $location
 	                                );
 
