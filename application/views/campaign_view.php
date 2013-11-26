@@ -78,7 +78,7 @@
   $campaign = (json_decode($campaign));
   foreach($campaign as $row)
   {
-    $campaign_id = $row->$campaign_id;
+    $campaign_id = $row->campaign_id;
     $raised = $row->raised;
     $totalPledges = $row->totalPledges;
     $target = $row->target;
