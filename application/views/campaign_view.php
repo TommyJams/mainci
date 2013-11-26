@@ -316,7 +316,7 @@
                     </h5>
                   </div>
                   <div>  
-                    <h5 style="font-size:25px !important;font-family:'Dosis',sans-serif;margin-top:-30px;margin-left:235px">&#8377 </h5>
+                    <h5 style="font-size:25px !important;font-family:'Dosis',sans-serif;margin-top:-30px;margin-left:230px">&#8377 </h5>
                     <h5> 
                       <input class="text-center pull-right" type="text" id="<? print($ticket_type); ?>total" name="<? print($ticket_type); ?>total" value="" disabled="disabled" style="border:1px solid #000;font-size:25px;color:white;margin-top:-37px;width:80px;font-family:'Dosis',sans-serif" />
                     </h5>   
@@ -327,7 +327,7 @@
                   ?>  
                   <div>
                     <h5 style="font-size:25px !important;font-family:'Dosis',sans-serif"> Grand Total </h5>  
-                    <h4 style="font-size:25px !important;font-family:'Dosis',sans-serif;margin-top:-35px;margin-left:235px">&#8377 </h4> 
+                    <h4 style="font-size:25px !important;font-family:'Dosis',sans-serif;margin-top:-35px;margin-left:230px">&#8377 </h4> 
                     <input class="text-center pull-right" type="text" id="grandTotal" name="grandTotal" value="" disabled="disabled" style="border:1px solid #000;font-size:25px;color:white;width:80px;margin-top: -40px;" />
                   </div>
                   <? if(isset($ticket_widget)) { ?>
