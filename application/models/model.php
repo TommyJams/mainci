@@ -814,6 +814,10 @@ class Model extends CI_Model{
 				}
 			}
 			
+			foreach ($endTotal as $arr) {
+    			print_r($arr);
+			}
+
 			$grandTotal = array_sum($endTotal);
 
 			$response['tickettype'] = $type;
