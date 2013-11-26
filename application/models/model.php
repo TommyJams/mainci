@@ -355,14 +355,13 @@ class Model extends CI_Model{
 				{
 					$ticket_type = $row->ticket_type;
 
+					$typecount = $ticket_type.'count';
 					$typetotal = $ticket_type.'total';
 
 					//Creating session
-					$this->session->set_userdata(''.$ticket_type, 0);
+					$this->session->set_userdata(''.$ticketcount, 0);
 					$this->session->set_userdata(''.$typetotal, 0);
 				}
-
-				$this->session->set_userdata('count', 0);
 			}
    		
    			//Return values to controller
@@ -757,22 +756,16 @@ class Model extends CI_Model{
         	$this->load->library('session');
         	$this->load->helper('functions');
 
-        	//Initiating
-        	$grandTotal = 0;
-
         	// Get posted data
         	$type = $this->input->post("type");
         	$use = $this->input->post("use");
         	$amount = $this->input->post("amount");
         	$campaign_id = $this->input->post("campaign_id");
 
-        	// Get $count value from stored session
-        	$count = $this->session->userdata('count');
-        	error_log($count);
-
         	// Get $typecount value from stored session
-        	$typecount = $this->session->userdata(''.$type);
-		    error_log($typecount);
+        	$typecount = $ticket_type.'count';
+        	$count = $this->session->userdata(''.$typecount);
+        	error_log($count);
 
 		    // Get ticket_type amount value from pledgeCF
 		    $query = $this->db->query("SELECT amount FROM pledgeCF WHERE campaign_id = '$campaign_id' and ticket_type = '$type'");
@@ -789,7 +782,7 @@ class Model extends CI_Model{
         	if($use == "plus" && $count < 9)
 		    {
 		      	$count++;
-		      	$this->session->set_userdata(''.$type, $count);
+		      	$this->session->set_userdata(''.$typecount, $count);
 
 				$total = $amount * $count;
 
@@ -800,7 +793,7 @@ class Model extends CI_Model{
 		    if($use == "minus" && $count > 0)
 		    {
 		      	$count--;
-		      	$this->session->set_userdata(''.$type, $count);
+		      	$this->session->set_userdata(''.$typecount, $count);
 
 		      	$total = $amount * $count;
 
