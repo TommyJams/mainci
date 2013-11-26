@@ -59,7 +59,6 @@ class CFfans extends CI_Controller{
 		// Get campaign details	   
 		$data['campaign'] = json_encode($this->Model->campaignDetails($campaign_id));
 
-
 		$this->load->view('payment_view', $data);
 	}
 

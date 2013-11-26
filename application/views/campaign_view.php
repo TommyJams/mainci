@@ -373,9 +373,8 @@
             </div>
             <!--/Tabs -->
 
-            <div class=" d-tj-offset-top-30 pledge-btn" >
-              <input type="hidden" id="fanLogin" name="fanLogin" value="<?print($fanLoginURL);?>" />
-              <input type="button" value="BUY NOW" id="fanURL" name="fanURL">
+            <div class=" d-tj-offset-top-30 pledge-btn" > 
+              <input type="button" onclick="window.location.href='<?print($fanLoginURL);?>'" value="BUY NOW">
             </div>
           </div>
         </div>
@@ -409,10 +408,6 @@
        				$(this).find('.d-tj-slide-hover-img').addClass('hide');
       			}
     );
-    
-    $('#fanURL').click(function(){
-      getFinalData();
-    });
 
   });
 
@@ -433,39 +428,6 @@
   function ticketCount(type,use,amount,campaign_id)
   {
     $.post('/CFfans/ticketCount',{'type': type,'use': use,'amount': amount,'campaign_id': campaign_id},ticketCountCallback,'json');  
-  }
-
-  function getFinalDataCallback(val)
-  {
-    console.log(val);
-    var fanURLLogin = $('#fanLogin').val();
-    window.open(""+fanURLLogin);
-  }
-
-  function getFinalData()
-  {
-    var copper = $('#Coppertotal').val();
-    var bronze = $('#Bronzetotal').val();
-    var silver = $('#Silvertotal').val();
-    var gold   = $('#Goldtotal').val();
-    var diamond = $('#Diamondtotal').val();
-    var platinum = $('#Platinumtotal').val();
-    var grandTotal = $('#grandTotal').val();
-
-    if (typeof copper === 'undefined' || copper === "")
-      var copper = 0;
-    if (typeof bronze === 'undefined' || bronze === "")
-      var bronze = 0;
-    if (typeof silver === 'undefined' || silver === "")
-      var silver = 0;
-    if (typeof gold === 'undefined' || gold === "")
-      var gold = 0;
-    if (typeof diamond === 'undefined' || diamond === "")
-      var diamond = 0;
-    if (typeof platinum === 'undefined' || platinum === "")
-      var platinum = 0;
-
-    $.post('/CFfans/storeFanData',{'copper': copper,'bronze': bronze,'silver': silver,'gold': gold,'diamond': diamond,'platinum': platinum,'grandTotal': grandTotal},getFinalDataCallback,'json');  
   }
 
   function venueBox(id)

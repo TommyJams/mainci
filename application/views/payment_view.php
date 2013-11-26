@@ -94,6 +94,7 @@
 <? $campaign = (json_decode($campaign));
     foreach($campaign as $row)
     { 
+      $campaign_id = $row->campaign_id;
       $artist_name = $row->artist_name;
       $pledges = $row->pledges;
       $venues = $row->venues;
@@ -138,23 +139,30 @@
 
         <div class="col-sm-12 col-md-8 d-tj-black-ticket-box" style="margin-left:-25px" >
           <h3 style="font-weight:400;font-size:30px;margin-bottom:15px">Ticket Summary</h3>
-          <?$fanData = (json_decode($fanData)); 
-            foreach($fanData as $fanRow)
+          <?$fan = (json_decode($fanData['fan'])); 
+            foreach($fan as $fanRow)
             { 
               $fan_name = $fanRow->name;
               $fan_location = $fanRow->location;
-              $ticket_type = $fanRow->ticket_type;
-              $ticket_amount = $fanRow->ticket_amount;
-              $pledge_desc = $fanRow->pledge_desc;
+            }
+            
+            $ticket = (json_decode($fanData['ticket'])); 
+            foreach($ticket as $ticketRow)
+            { 
+              
+              $ticket_type = $ticketRow->ticket_type;
+              $ticket_amount = $ticketRow->ticket_amount;
+              $ticket_quantity = $ticketRow->ticket_quantity;
+              $pledge_desc = $ticketRow->pledge_desc;
           ?>
             <h4 style="margin-top:5px;margin-left:5px;margin-bottom:5px">
-              <? print($ticket_type); ?> : &#8377 <? print($ticket_amount); ?>
+              <? print($ticket_type); ?> : &#8377 <? print($ticket_amount); ?> : <? print($ticket_quantity); ?>
             </h4>
             <h4 style="margin-top:5px;margin-left:5px;margin-bottom:5px"><? print($pledge_desc); ?></h4>
             <div class="seperator" ></div>   
           <? } ?>
             <div class="text-center" >
-              <input style="" onclick="window.open('/tours', '_blank');" type="button" value="EDIT">
+              <input style="" onclick="window.open('/campaign/<? print($campaign_id); ?>');" type="button" value="EDIT TICKETS">
             </div>
         </div>
         
@@ -201,7 +209,7 @@
     <div class="col-sm-12 col-xs-12 col-md-12" style="">
       <div class="row">
         <div class="text-center" >
-          <input style="margin-top: 30px;width: 400px" onclick="window.open('/tours', '_blank');" type="button" value="PAY NOW">
+          <input style="margin-top: 30px;width: 400px" onclick="window.open('/tours');" type="button" value="PAY NOW">
         </div>
       </div>
     </div>  

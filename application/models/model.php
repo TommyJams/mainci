@@ -882,12 +882,29 @@ class Model extends CI_Model{
 
             $fan = $this->facebook->api('/me');
             $fan_id = $fan['id'];
+            $fan_location = $fan['location']['name'];
+            $split=explode(",", $fan_location); //Eg. Split "Bangalore, India" into "Bangalore" and "India"
+            if (isset($split[2])) //Eg. "Bankok, Krung Thep, Thailand"
+            {
+            	$city=addslashes($split[0]);
+            	$state=trim($split[1]);
+            	$state=addslashes($state);
+            	$country=trim($split[2]);
+            	$country=addslashes($country);
+          	}
+            else //Eg. "Bangalore, India"
+            {
+                $city=addslashes($split[0]);
+                $state="";
+                $country=trim($split[1]);
+                $country=addslashes($country);
+            }
 
             //$graph_url = "https://graph.facebook.com/me?access_token=".$access_token;
      		//$fan = json_decode(file_get_contents($graph_url));
      		//$fan = (array) $fan;
 
-     		$fql = "SELECT name,email,about,phone FROM user where uid =".$fan_id;
+     		$fql = "SELECT name,email,about_me,phone FROM user where uid =".$fan_id;
 
      		$fan_param  =  array(
 	                          'method'    => 'fql.query',
@@ -910,27 +927,6 @@ class Model extends CI_Model{
 			error_log("About: ".$fan_about);
 			error_log("Phone: ".$fan_contact);
 			
-        	// Get user's Facebook data
-            //$fan_name = mysql_real_escape_string($fan['name']);
-            //$fan_email = $fan['email'];
-            //$fan_about = $fan['about'];
-            $fan_location = $fan['location']['name'];
-            $split=explode(",", $fan_location); //Eg. Split "Bangalore, India" into "Bangalore" and "India"
-            if (isset($split[2])) //Eg. "Bankok, Krung Thep, Thailand"
-            {
-            	$city=addslashes($split[0]);
-            	$state=trim($split[1]);
-            	$state=addslashes($state);
-            	$country=trim($split[2]);
-            	$country=addslashes($country);
-          	}
-            else //Eg. "Bangalore, India"
-            {
-                $city=addslashes($split[0]);
-                $state="";
-                $country=trim($split[1]);
-                $country=addslashes($country);
-            }
             //$fan_interests = $fan['interests'];
 
             if(isEmpty($fan_email))
@@ -949,18 +945,8 @@ class Model extends CI_Model{
 						VALUES('".$this->db->escape_str($fan_id)."', '".$this->db->escape_str($fan_name)."', '".$this->db->escape_str($fan_email)."', '".$this->db->escape_str($fan_contact)."', '".$this->db->escape_str($fan_about)."', '".$this->db->escape_str($city)."', '".$this->db->escape_str($camp_id)."')");
 	    	}
 
-	    	// Storing fan contribution
-			$sessionArray = $this->session->all_userdata();
-	    	$copper = $sessionArray['copper'];
-	    	$bronze = $sessionArray['bronze'];
-	    	$silver = $sessionArray['silver'];
-	    	$gold = $sessionArray['gold'];
-	    	$diamond = $sessionArray['diamond'];
-	    	$platinum = $sessionArray['platinum'];
-	    	$grandTotal = $sessionArray['grandTotal'];
-
 			// Fan friends data
-			$fan_friends = $this->facebook->api('/me/friends', 'GET', array('access_token'=>$access_token));
+			/*$fan_friends = $this->facebook->api('/me/friends', 'GET', array('access_token'=>$access_token));
 
 			foreach ($fan_friends["data"] as $value) 
 			{
@@ -980,7 +966,7 @@ class Model extends CI_Model{
 						}
 					}
 				}
-			}
+			}*/
 			
 	    	// Getting fan data from fansCF datatable
 	    	$query = $this->db->query("SELECT * FROM fansCF WHERE `campaign_id` = '$camp_id' and `fb_id`='$fan_id'");
@@ -990,43 +976,46 @@ class Model extends CI_Model{
 				foreach ($qresult as $row)
 				{
 	   				$name = $row->name;
-	   				$ticket_type = $row->ticket_type;
-	   				$ticket_amount = $row->ticket_amount;
 	   				$email = $row->email;
 	   				$contact = $row->contact;
 	   				$location = $row->location;
-
-	   				$query1 = $this->db->query("SELECT * FROM contributionCF WHERE `campaign_id` = '$camp_id' and `fb_id`='$fan_id'");
+	
+					$query1 = $this->db->query("SELECT * FROM pledgeCF WHERE `campaign_id` = '$camp_id'");
 	   				if ($query1->num_rows() > 0)
 					{
 			            $qresult1 = $query1->result();
 						foreach ($qresult1 as $row)
 						{
-							//$ticket_type = ;
+							$ticket_type = $row->ticket_type;
 
-							$query2 = $this->db->query("SELECT * FROM pledgeCF WHERE `campaign_id` = '$camp_id' and `ticket_type`='$ticket_type'");
-			   				if ($query2->num_rows() > 0)
-							{
-					            $qresult2 = $query2->result();
-								foreach ($qresult2 as $row)
-								{
-									$pledge_desc = $row->desc;
-								}
-							}	
+							$typecount = $ticket_type.'count';
+							$typetotal = $ticket_type.'total';
+
+        					$ticketTotal = $this->session->userdata(''.$typetotal);
+        					$ticketQuantity = $this->session->userdata(''.$typecount);
+
+        					if($ticketTotal > 0)
+        					{
+        						$pledge_desc = $row->desc;
+        						$ticketRow[] = array(
+        												'ticket_type' 		=> $ticket_type,
+	                                    				'ticket_amount' 	=> $ticketTotal,
+	                                    				'ticket_quantity'	=> $ticketQuantity,
+	                                    				'pledge_desc' 		=> $pledge_desc
+        											);
+        					}
 						}
-					}
-
+					}	
+						
 	                $fanRow = array(
-	                                    'name' 				=> $name, 
-	                                    'ticket_type' 		=> $ticket_type,
-	                                    'ticket_amount' 	=> $ticket_amount,  
+	                                    'name' 				=> $name,   
 	                                    'email' 			=> $email, 
 	                                    'contact' 			=> $contact,
-	                                    'location' 			=> $location,
-	                                    'pledge_desc' 		=> $pledge_desc
+	                                    'location' 			=> $location
 	                                );
 
-	                $response[] = $fanRow;
+	                $response['fan'] = $fanRow;
+	                $response['ticket'] = $ticketRow;
 				}
 
 				// Destroying session
