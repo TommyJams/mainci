@@ -1003,7 +1003,12 @@ class Model extends CI_Model{
 						}
 					}	
 
-	                $fanDetails = array($name, $mail, $location, $ticket);
+	                $fanDetails = array(
+	                						'name' 		=> $name, 
+	                						'email' 	=> $email, 
+	                						'location' 	=> $location, 
+	                						'ticket' 	=> $ticket
+	                					);
 
 	                $response[] = $fanDetails;
 				}
