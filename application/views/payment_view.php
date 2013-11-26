@@ -139,14 +139,17 @@
 
         <div class="col-sm-12 col-md-8 d-tj-black-ticket-box" style="margin-left:-25px" >
           <h3 style="font-weight:400;font-size:30px;margin-bottom:15px">Ticket Summary</h3>
-          <?$fan = (json_decode($fanRow)); 
+          <?$fan = (json_decode($fanData)); 
             foreach($fan as $row)
             { 
               $fan_name = $row->name;
+              $fan_email = $row->email;
               $fan_location = $row->location;
+              $ticket = $row->ticket;
+            }  
             
-              $ticket = (json_decode($ticketRow)); 
-              foreach($ticket as $row)
+              $ticketRow = (json_decode($ticket)); 
+              foreach($ticketRow as $row)
               { 
                 $ticket_type = $row->ticket_type;
                 $ticket_amount = $row->ticket_amount;
@@ -158,7 +161,7 @@
             </h4>
             <h4 style="margin-top:5px;margin-left:5px;margin-bottom:5px"><? print($pledge_desc); ?></h4>
             <div class="seperator" ></div>   
-          <? } } ?>
+          <? } ?>
             <div class="text-center" >
               <input style="" onclick="window.open('/campaign/<? print($campaign_id); ?>');" type="button" value="EDIT TICKETS">
             </div>

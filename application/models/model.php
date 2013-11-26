@@ -993,7 +993,7 @@ class Model extends CI_Model{
         					if($ticketTotal > 0)
         					{
         						$pledge_desc = $row->desc;
-        						$ticketRow[] = array(
+        						$ticket[] = array(
         												'ticket_type' 		=> $ticket_type,
 	                                    				'ticket_amount' 	=> $ticketTotal,
 	                                    				'ticket_quantity'	=> $ticketQuantity,
@@ -1002,14 +1002,8 @@ class Model extends CI_Model{
         					}
 						}
 					}	
-						
-	                $fanRow = array(
-	                                    'name' 				=> $name,   
-	                                    'email' 			=> $email, 
-	                                    'location' 			=> $location
-	                                );
 
-	                $fanDetails = array($fanRow,$ticketRow);
+	                $fanDetails = array($name, $mail, $location, $ticket);
 
 	                $response[] = $fanDetails;
 				}
