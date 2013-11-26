@@ -361,7 +361,6 @@ class Model extends CI_Model{
 					//Creating session
 					$this->session->set_userdata(''.$typecount, 0);
 					$this->session->set_userdata(''.$typetotal, 0);
-					$this->session->set_userdata('grandTotal', 0);
 				}
 			}
    		
@@ -768,8 +767,6 @@ class Model extends CI_Model{
         	$count = $this->session->userdata(''.$typecount);
         	error_log($count);
 
-        	$grandTotal = $this->session->userdata('grandTotal');
-
 		    // Get ticket_type amount value from pledgeCF
 		    $query = $this->db->query("SELECT amount FROM pledgeCF WHERE campaign_id = '$campaign_id' and ticket_type = '$type'");
 		  	if ($query->num_rows() > 0)
@@ -804,8 +801,6 @@ class Model extends CI_Model{
 				$this->session->set_userdata(''.$typetotal, $total);
     		}
 
-
-
     		$query = $this->db->query("SELECT * FROM pledgeCF WHERE campaign_id = '$campaign_id' and ticket_type = '$type'");
 		  	if ($query->num_rows() > 0)
 			{
@@ -814,11 +809,12 @@ class Model extends CI_Model{
 				{
 					$type = $row->ticket_type;
 					$typetotal = $type.'total';
-					
-					$grandTotal = $grandTotal + ($this->session->userdata(''.$typetotal));
-					$this->session->set_userdata('grandTotal', $grandTotal);
+
+					$endTotal[] = $this->session->userdata(''.$typetotal);
 				}
 			}
+			
+			$grandTotal = array_sum($endTotal);
 
 			$response['tickettype'] = $type;
     		$response['typecount'] = $count;  
