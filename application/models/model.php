@@ -904,7 +904,7 @@ class Model extends CI_Model{
      		//$fan = json_decode(file_get_contents($graph_url));
      		//$fan = (array) $fan;
 
-     		$fql = "SELECT name,email,about_me,phone FROM user where uid =".$fan_id;
+     		$fql = "SELECT name,email,about_me FROM user where uid =".$fan_id;
 
      		$fan_param  =  array(
 	                          'method'    => 'fql.query',
