@@ -149,7 +149,7 @@
             }  
             
               $ticketRow = (json_encode($ticket)); 
-              foreach($ticketRow as $row)
+              foreach(json_decode($ticketRow) as $row)
               { 
                 $ticket_type = $row->ticket_type;
                 $ticket_amount = $row->ticket_amount;
