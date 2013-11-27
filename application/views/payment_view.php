@@ -163,7 +163,7 @@
             <div class="seperator" ></div>   
           <? } ?>
             <div class="text-center" >
-              <input style="" onclick="window.open('/campaign/<? print($campaign_id); ?>');" type="button" value="EDIT TICKETS">
+              <input style="" onclick="window.location.href='/campaign/<? print($campaign_id); ?>'" type="button" value="EDIT TICKETS">
             </div>
         </div>
         

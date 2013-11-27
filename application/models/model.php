@@ -921,7 +921,7 @@ class Model extends CI_Model{
      		{
      			$fan_name = mysql_real_escape_string($fanData['name']);	
 			  	$fan_email = $fanData['email'];
-			  	$fan_about = $fanData['about'];
+			  	$fan_about = $fanData['about_me'];
 			}
 
 			error_log("Name: ".$fan_name);
@@ -942,6 +942,10 @@ class Model extends CI_Model{
 	  
 	    		$query1 = $this->db->query("INSERT INTO `fansCF` (`fb_id`, `name`, `email`, `about`, `location`, `campaign_id`) 
 						VALUES('".$this->db->escape_str($fan_id)."', '".$this->db->escape_str($fan_name)."', '".$this->db->escape_str($fan_email)."', '".$this->db->escape_str($fan_about)."', '".$this->db->escape_str($city)."', '".$this->db->escape_str($camp_id)."')");
+	    	}
+	    	if ($query->num_rows() > 0)
+	    	{
+	    		$query = $this->db->query("UPDATE `fansCF` SET `name`='$fan_name', `email`='$fan_email', `about`='$fan_about', `location`='$city'");
 	    	}
 
 			// Fan friends data
