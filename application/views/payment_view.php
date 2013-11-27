@@ -174,7 +174,7 @@
 
     <div class="d-tj-black-box d-tj-offset-top-30" style="height:300px">
       <h3 style="margin-top: 0px;">SOCIAL SHARE</h3>
-      <div class="pull-left">
+      <div class="row pull-left">
         <?
           if(isset($fanFriendsPayed))
           {
@@ -200,7 +200,7 @@
           }
         ?>
       </div>
-      <div class="">
+      <div class="row pull-left">
         <?
           if(isset($fanPayed))
           {

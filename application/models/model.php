@@ -988,17 +988,12 @@ class Model extends CI_Model{
 					$ticket_amount = $row->ticket_amount;
 					$fan_name = $row->name; 
 
-					foreach ($fan_friends["data"] as $val) 
+					if($ticket_amount > 0)
 					{
-						$friend_id = $val["id"];
-
-						if($ticket_amount > 0 && $fan_id !=$friend_id)
-						{
-							$fanPayed[] = array(
-													'id' 			=> $fan_id,
-													'name' 			=> $fan_name
-												);
-						}
+						$fanPayed[] = array(
+												'id' 			=> $fan_id,
+												'name' 			=> $fan_name
+											);
 					}	
 				}
 			}
