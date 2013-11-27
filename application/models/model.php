@@ -911,12 +911,13 @@ class Model extends CI_Model{
      		$fan_param  =  array(
 	                          'method'    => 'fql.query',
 	                          'query'     => $fql,
-	                          'access_token' => $access_token
+	                          'access_token' => $access_token,
+	                          'callback'  => ''
                             );
 
-     		$fql = $this->facebook->api($fan_param);
+     		$fqlResult = $this->facebook->api($fan_param);
 
-     		foreach ($fan_param as $keys => $fanData) 
+     		foreach ($fqlResult as $keys => $fanData) 
      		{
      			$fan_name = mysql_real_escape_string($fanData['name']);	
 			  	$fan_email = $fanData['email'];
