@@ -955,16 +955,15 @@ class Model extends CI_Model{
 			{
 				$fan_friend_id = $value["id"];
 
-				$query = $this->db->query("SELECT * FROM `fansCF` WHERE `campaign_id` = '$camp_id'");
+				$query = $this->db->query("SELECT * FROM `fansCF` WHERE `campaign_id` = '$camp_id' and `fb_id`='$fan_friend_id'");
 				if ($query->num_rows() > 0)
 				{
 		            $qresult = $query->result();
 					foreach ($qresult as $row)
 					{
-						$fb_id_compare = $row->fb_id;
 						$ticket_amount = $row->ticket_amount;
 
-						if($ticket_amount > 0 && $fb_id_compare == $fan_friend_id)
+						if($ticket_amount > 0)
 						{
 							$friend_payed_id = $fan_friend_id;
 							$friend_payed_name = $value["name"];
@@ -974,22 +973,12 @@ class Model extends CI_Model{
 													'name' 			=> $friend_payed_name,
 												);
 						}
-
-						if($ticket_amount > 0 && $fb_id_compare != $fan_friend_id)
-						{
-							$fan_name = $row->name;
-
-							$fanPayed[] = array(
-												'id' 			=> $fan_id_compare,
-												'name' 			=> $fan_name
-											);
-						}
 					}
 				}
 			}
 
 			// Fans who payed
-			/*$query = $this->db->query("SELECT * FROM `fansCF` WHERE `campaign_id` = '$camp_id'");
+			$query = $this->db->query("SELECT * FROM `fansCF` WHERE `campaign_id` = '$camp_id'");
 			if ($query->num_rows() > 0)
 			{
 	            $qresult = $query->result();
@@ -1007,7 +996,7 @@ class Model extends CI_Model{
 											);
 					}	
 				}
-			}*/
+			}
 
 	    	// Getting fan data from fansCF datatable
 	    	$query = $this->db->query("SELECT * FROM fansCF WHERE `campaign_id` = '$camp_id' and `fb_id`='$fan_id'");
@@ -1021,7 +1010,7 @@ class Model extends CI_Model{
 	   				$contact = $row->contact;
 	   				$location = $row->location;
 	
-					$query1 = $this->db->query("SELECT * FROM pledgeCF WHERE `campaign_id` = '$camp_id' ORDER BY amount DESC;");
+					$query1 = $this->db->query("SELECT * FROM pledgeCF WHERE `campaign_id` = '$camp_id'");
 	   				if ($query1->num_rows() > 0)
 					{
 			            $qresult1 = $query1->result();
