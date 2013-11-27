@@ -964,7 +964,7 @@ class Model extends CI_Model{
 		            $qresult = $query->result();
 					foreach ($qresult as $row)
 					{
-						$fan_id = $row->fan_id;
+						$fan_id = $row->fb_id;
 						if($fan_id == $fan_friend_id)
 						{
 							$friend_payed['id'] = $fan_id;
