@@ -146,6 +146,8 @@
               $fan_email = $row->email;
               $fan_location = $row->location;
               $ticket = $row->ticket;
+              $fanFriendsPayed = $row->fanFriendsPayed;
+              $fanPayed = $row->fanPayed;
             }  
             
               $ticketRow = (json_encode($ticket)); 
@@ -172,8 +174,61 @@
 
     <div class="d-tj-black-box d-tj-offset-top-30" style="height:300px">
       <h3 style="margin-top: 0px;">SOCIAL SHARE</h3>
-      <div class="">
+      <div class="pull-left">
+        <?
+          if(isset($fanFriendsPayed))
+          {
+            $countFaces = 0;
+            $facesToShow = 3;
+
+            $friendfaceRow = (json_encode($fanFriendsPayed)); 
+            foreach(json_decode($friendfaceRow) as $row)
+            { 
+              $id = $row->id;
+              $name = $row->name;
+              $pic = $row->pic;
+
+              if($countFaces < $facesToShow)
+                print("<a href='https://facebook.com/$id' class='social-list-fb-event-href' target='_blank'><img src='https://graph.facebook.com/$pic/picture?type=square' class='social-list-fb-event-img'></a>");
+              $countFaces++;
+            
+              if($countFaces > $facesToShow)
+              {
+                $countFaces -= $facesToShow;
+                print("<a href='' class='social-list-fb-event-href' style='padding: 10px;'> and $countFaces others</a>");
+              }
+            }
+          }
+        ?>
       </div>
+      <div class="pull-right">
+        <?
+          if(!isset($fanFriendsPayed) && isset($fanPayed))
+          {
+            $countFaces1 = 0;
+            $facesToShow1 = 3;
+
+            $faceRow = (json_encode($fanPayed)); 
+            foreach(json_decode($faceRow) as $row)
+            { 
+              $id = $row->id;
+              $name = $row->name;
+              $pic = $row->pic;
+
+              if($countFaces1 < $facesToShow1)
+                print("<a href='https://facebook.com/$id' class='social-list-fb-event-href' target='_blank'><img src='https://graph.facebook.com/$pic/picture?type=square' class='social-list-fb-event-img'></a>");
+              $countFaces++;
+            
+              if($countFaces1 > $facesToShow1)
+              {
+                $countFaces1 -= $facesToShow1;
+                print("<a href='' class='social-list-fb-event-href' style='padding: 10px;'> and $countFaces others</a>");
+              }
+            }
+          }
+        ?>
+      </div>
+
     </div> 
 
     <div class="d-tj-offset-top-30 d-tj-col-2">

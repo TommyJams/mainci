@@ -906,7 +906,7 @@ class Model extends CI_Model{
      		//$fan = json_decode(file_get_contents($graph_url));
      		//$fan = (array) $fan;
 
-     		$fql = "SELECT name,email,about_me FROM user where uid =".$fan_id;
+     		$fql = "SELECT name,email,about_me,pic FROM user where uid =".$fan_id;
 
      		$fan_param  =  array(
 	                          'method'    => 'fql.query',
@@ -954,26 +954,69 @@ class Model extends CI_Model{
 			foreach ($fan_friends["data"] as $value) 
 			{
 				$fan_friend_id = $value["id"];
-				$fan_friend_name = $value['name'];
 
-				error_log($fan_friend_name);
-
-				$query = $this->db->query("SELECT * FROM `fansCF` WHERE `campaign_id` = '$camp_id' and `fb_id`='$fan_id'");
+				$query = $this->db->query("SELECT * FROM `fansCF` WHERE `campaign_id` = '$camp_id' and `fb_id`='$fan_friend_id'");
 				if ($query->num_rows() > 0)
 				{
 		            $qresult = $query->result();
 					foreach ($qresult as $row)
 					{
-						$fan_id = $row->fb_id;
-						if($fan_id == $fan_friend_id)
+						$ticket_amount = $row->ticket_amount;
+
+						if($ticket_amount > 0)
 						{
-							$friend_payed['id'] = $fan_id;
-							$friend_payed['name'] = $value["name"];
+							$friend_payed_id = $fan_friend_id;
+							$friend_payed_name = $value["name"];
+							$friend_payed_pic = $value['pic'];
+
+							$fanFriendsPayed[] = array(
+													'id' 			=> $friend_payed_id,
+													'name' 			=> $friend_payed_name,
+													'pic' 			=> $friend_payed_pic
+												);
 						}
 					}
 				}
 			}
-			
+
+			// Fans who payed
+			$query = $this->db->query("SELECT * FROM `fansCF` WHERE `campaign_id` = '$camp_id'");
+			if ($query->num_rows() > 0)
+			{
+	            $qresult = $query->result();
+				foreach ($qresult as $row)
+				{
+					$fan_id = $row->fb_id;
+					$ticket_amount = $row->ticket_amount;
+
+					$fql1 = "SELECT name,pic FROM user where uid =".$fan_id;
+
+		     		$fan_param1  =  array(
+			                          'method'    => 'fql.query',
+			                          'query'     => $fql1,
+			                          'access_token' => $access_token,
+			                          'callback'  => ''
+		                            );
+
+     				$fqlResult1 = $this->facebook->api($fan_param1);
+
+		     		foreach ($fqlResult1 as $keys => $fanData) 
+		     		{
+		     			$fan_name = mysql_real_escape_string($fanData['name']);	
+					  	$fan_pic = $fanData['pic'];
+
+						if($ticket_amount > 0)
+						{
+							$fanPayed[] = array(
+													'id' 			=> $fan_id,
+													'name' 			=> $fan_name,
+													'pic' 			=> $fan_pic
+												);
+						}
+					}
+				}
+			}
+
 	    	// Getting fan data from fansCF datatable
 	    	$query = $this->db->query("SELECT * FROM fansCF WHERE `campaign_id` = '$camp_id' and `fb_id`='$fan_id'");
 			if ($query->num_rows() > 0)
@@ -1014,10 +1057,12 @@ class Model extends CI_Model{
 					}	
 
 	                $fanDetails = array(
-	                						'name' 		=> $name, 
-	                						'email' 	=> $email, 
-	                						'location' 	=> $location, 
-	                						'ticket' 	=> $ticket
+	                						'name' 					=> $name, 
+	                						'email' 				=> $email, 
+	                						'location' 				=> $location, 
+	                						'ticket' 				=> $ticket,
+	                						'fanFriendsPayed'		=> $fanFriendsPayed,
+	                						'fanPayed'				=> $fanPayed
 	                					);
 
 	                $response[] = $fanDetails;
