@@ -906,7 +906,7 @@ class Model extends CI_Model{
      		//$fan = json_decode(file_get_contents($graph_url));
      		//$fan = (array) $fan;
 
-     		$fql = "SELECT name,email,about_me,pic FROM user where uid =".$fan_id;
+     		$fql = "SELECT name,email,about_me FROM user where uid =".$fan_id;
 
      		$fan_param  =  array(
 	                          'method'    => 'fql.query',
@@ -967,12 +967,10 @@ class Model extends CI_Model{
 						{
 							$friend_payed_id = $fan_friend_id;
 							$friend_payed_name = $value["name"];
-							$friend_payed_pic = $value['pic'];
 
 							$fanFriendsPayed[] = array(
 													'id' 			=> $friend_payed_id,
 													'name' 			=> $friend_payed_name,
-													'pic' 			=> $friend_payed_pic
 												);
 						}
 					}
@@ -989,7 +987,7 @@ class Model extends CI_Model{
 					$fan_id = $row->fb_id;
 					$ticket_amount = $row->ticket_amount;
 
-					$fql1 = "SELECT name,pic FROM user where uid =".$fan_id;
+					$fql1 = "SELECT name FROM user where uid =".$fan_id;
 
 		     		$fan_param1  =  array(
 			                          'method'    => 'fql.query',
@@ -1003,14 +1001,12 @@ class Model extends CI_Model{
 		     		foreach ($fqlResult1 as $keys => $fanData) 
 		     		{
 		     			$fan_name = mysql_real_escape_string($fanData['name']);	
-					  	$fan_pic = $fanData['pic'];
 
 						if($ticket_amount > 0)
 						{
 							$fanPayed[] = array(
 													'id' 			=> $fan_id,
 													'name' 			=> $fan_name,
-													'pic' 			=> $fan_pic
 												);
 						}
 					}
