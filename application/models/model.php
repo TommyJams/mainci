@@ -980,7 +980,7 @@ class Model extends CI_Model{
 							$fan_name = $row->name;
 
 							$fanPayed[] = array(
-												'id' 			=> $fan_id_compare,
+												'id' 			=> $fb_id_compare,
 												'name' 			=> $fan_name
 											);
 						}
