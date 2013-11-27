@@ -1006,7 +1006,7 @@ class Model extends CI_Model{
 						{
 							$fanPayed[] = array(
 													'id' 			=> $fan_id,
-													'name' 			=> $fan_name,
+													'name' 			=> $fan_name
 												);
 						}
 					}

@@ -186,10 +186,9 @@
             { 
               $id = $row->id;
               $name = $row->name;
-              $pic = $row->pic;
 
               if($countFaces < $facesToShow)
-                print("<a href='https://facebook.com/$id' class='social-list-fb-event-href' target='_blank'><img src='https://graph.facebook.com/$pic/picture?type=square' class='social-list-fb-event-img'></a>");
+                print("<a href='https://facebook.com/$id' class='social-list-fb-event-href' target='_blank'><img src='https://graph.facebook.com/$id/picture?type=square' class='social-list-fb-event-img'></a>");
               $countFaces++;
             
               if($countFaces > $facesToShow)
@@ -213,10 +212,9 @@
             { 
               $id = $row->id;
               $name = $row->name;
-              $pic = $row->pic;
 
               if($countFaces1 < $facesToShow1)
-                print("<a href='https://facebook.com/$id' class='social-list-fb-event-href' target='_blank'><img src='https://graph.facebook.com/$pic/picture?type=square' class='social-list-fb-event-img'></a>");
+                print("<a href='https://facebook.com/$id' class='social-list-fb-event-href' target='_blank'><img src='https://graph.facebook.com/$id/picture?type=square' class='social-list-fb-event-img'></a>");
               $countFaces++;
             
               if($countFaces1 > $facesToShow1)
