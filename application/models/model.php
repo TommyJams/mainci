@@ -987,20 +987,20 @@ class Model extends CI_Model{
 					$fan_id = $row->fb_id;
 					$ticket_amount = $row->ticket_amount;
 
-					$fql1 = "SELECT name FROM user where uid =".$fan_id;
+					$fqlPay = "SELECT name FROM user where uid =".$fan_id;
 
-		     		$fan_param1  =  array(
+		     		$fan_param_pay  =  array(
 			                          'method'    => 'fql.query',
-			                          'query'     => $fql1,
+			                          'query'     => $fqlPay,
 			                          'access_token' => $access_token,
 			                          'callback'  => ''
 		                            );
 
-     				$fqlResult1 = $this->facebook->api($fan_param1);
+     				$fql_result = $this->facebook->api($fan_param_pay);
 
-		     		foreach ($fqlResult1 as $keys => $fanData) 
+		     		foreach ($fql_result as $keys => $fan_data) 
 		     		{
-		     			$fan_name = mysql_real_escape_string($fanData['name']);	
+		     			$fan_name = mysql_real_escape_string($fan_data['name']);	
 
 						if($ticket_amount > 0)
 						{
