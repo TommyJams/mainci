@@ -949,13 +949,16 @@ class Model extends CI_Model{
 	    	}
 
 			// Fan friends data
-			/*$fan_friends = $this->facebook->api('/me/friends', 'GET', array('access_token'=>$access_token));
+			$fan_friends = $this->facebook->api('/me/friends', 'GET', array('access_token'=>$access_token));
 
 			foreach ($fan_friends["data"] as $value) 
 			{
 				$fan_friend_id = $value["id"];
+				$fan_friend_name = $value['name'];
 
-				$query = $this->db->query("SELECT fb_id FROM fansCF WHERE campaign_id = '$camp_id'");
+				error_log($fan_friend_name);
+
+				$query = $this->db->query("SELECT * FROM `fansCF` WHERE `campaign_id` = '$camp_id' and `fb_id`='$fan_id'");
 				if ($query->num_rows() > 0)
 				{
 		            $qresult = $query->result();
@@ -969,7 +972,7 @@ class Model extends CI_Model{
 						}
 					}
 				}
-			}*/
+			}
 			
 	    	// Getting fan data from fansCF datatable
 	    	$query = $this->db->query("SELECT * FROM fansCF WHERE `campaign_id` = '$camp_id' and `fb_id`='$fan_id'");
