@@ -801,6 +801,7 @@ class Model extends CI_Model{
 				$this->session->set_userdata(''.$typetotal, $total);
     		}
 
+    		$i = 0;
     		$query = $this->db->query("SELECT * FROM pledgeCF WHERE campaign_id = '$campaign_id' and ticket_type = '$type'");
 		  	if ($query->num_rows() > 0)
 			{
@@ -810,7 +811,8 @@ class Model extends CI_Model{
 					$type = $row->ticket_type;
 					$typetotal = $type.'total';
 
-					$endTotal[] = $this->session->userdata(''.$typetotal);
+					$endTotal[$i] = $this->session->userdata(''.$typetotal);
+					$i++;
 				}
 			}
 			
