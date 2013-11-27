@@ -988,12 +988,17 @@ class Model extends CI_Model{
 					$ticket_amount = $row->ticket_amount;
 					$fan_name = $row->name; 
 
-					if($ticket_amount > 0)
+					foreach ($fan_friends["data"] as $val) 
 					{
-						$fanPayed[] = array(
-												'id' 			=> $fan_id,
-												'name' 			=> $fan_name
-											);
+						$friend_id = $val["id"];
+
+						if($ticket_amount > 0 && $fan_id !=$friend_id)
+						{
+							$fanPayed[] = array(
+													'id' 			=> $fan_id,
+													'name' 			=> $fan_name
+												);
+						}
 					}	
 				}
 			}
@@ -1010,7 +1015,7 @@ class Model extends CI_Model{
 	   				$contact = $row->contact;
 	   				$location = $row->location;
 	
-					$query1 = $this->db->query("SELECT * FROM pledgeCF WHERE `campaign_id` = '$camp_id'");
+					$query1 = $this->db->query("SELECT * FROM pledgeCF WHERE `campaign_id` = '$camp_id' ORDER BY amount DESC;");
 	   				if ($query1->num_rows() > 0)
 					{
 			            $qresult1 = $query1->result();

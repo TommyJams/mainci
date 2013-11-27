@@ -200,7 +200,7 @@
           }
         ?>
       </div>
-      <div class="pull-right">
+      <div class="">
         <?
           if(isset($fanPayed))
           {
