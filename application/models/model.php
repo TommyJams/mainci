@@ -802,7 +802,7 @@ class Model extends CI_Model{
     		}
 
     		$i = 0;
-    		$query = $this->db->query("SELECT * FROM pledgeCF WHERE campaign_id = '$campaign_id' and ticket_type = '$type'");
+    		$query = $this->db->query("SELECT * FROM pledgeCF WHERE campaign_id = '$campaign_id'");
 		  	if ($query->num_rows() > 0)
 			{
 				$qresult = $query->result();
