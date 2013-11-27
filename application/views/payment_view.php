@@ -202,7 +202,7 @@
       </div>
       <div class="pull-right">
         <?
-          if(!isset($fanFriendsPayed) && isset($fanPayed))
+          if(isset($fanPayed))
           {
             $countFaces1 = 0;
             $facesToShow1 = 3;
