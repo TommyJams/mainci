@@ -812,6 +812,7 @@ class Model extends CI_Model{
 					$typetotal = $type.'total';
 
 					$endTotal[$i] = $this->session->userdata(''.$typetotal);
+					error_log($endTotal[$i]);
 					$i++;
 				}
 			}
