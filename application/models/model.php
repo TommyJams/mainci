@@ -765,7 +765,6 @@ class Model extends CI_Model{
         	// Get $typecount value from stored session
         	$typecount = $type.'count';
         	$count = $this->session->userdata(''.$typecount);
-        	error_log($count);
 
 		    // Get ticket_type amount value from pledgeCF
 		    $query = $this->db->query("SELECT amount FROM pledgeCF WHERE campaign_id = '$campaign_id' and ticket_type = '$type'");
@@ -808,8 +807,8 @@ class Model extends CI_Model{
 				$qresult = $query->result();
 				foreach ($qresult as $row)
 				{
-					$type = $row->ticket_type;
-					$typetotal = $type.'total';
+					$ticketType = $row->ticket_type;
+					$typetotal = $ticketType.'total';
 
 					$endTotal[$i] = $this->session->userdata(''.$typetotal);
 					error_log("End Total: ".$endTotal[$i]);
