@@ -949,7 +949,38 @@ class Model extends CI_Model{
 	    	}
 
 			// Fan friends data
-			$fan_friends = $this->facebook->api('/me/friends', 'GET', array('access_token'=>$access_token));
+			$query = $this->db->query("SELECT fb_id FROM fansCF WHERE campaign_id = '$camp_id'");
+			if ($query->num_rows() == 0)
+			{
+				$qresult = $query->result();
+				foreach ($qresult as $row)
+				{
+					$payedId = $row->id;
+					$ticket_amount = $row->ticket_amount;
+
+					$fan_friends = $this->facebook->api('/me/friends', 'GET', array(
+																					'access_token'=>$access_token,
+																					'id'=>$payedId
+																					)
+														);
+
+					foreach ($fan_friends["data"] as $value) 
+					{
+						if($ticket_amount > 0)
+						{
+							$friend_payed_id = $value["id"];
+							$friend_payed_name = $value["name"];
+
+							$fanFriendsPayed[] = array(
+													'id' 			=> $friend_payed_id,
+													'name' 			=> $friend_payed_name,
+												);
+						}
+					}
+				}
+			}
+
+			/*$fan_friends = $this->facebook->api('/me/friends', 'GET', array('access_token'=>$access_token));
 
 			foreach ($fan_friends["data"] as $value) 
 			{
@@ -975,7 +1006,7 @@ class Model extends CI_Model{
 						}
 					}
 				}
-			}
+			}*/
 
 			// Fans who payed
 			$query = $this->db->query("SELECT * FROM `fansCF` WHERE `campaign_id` = '$camp_id'");
