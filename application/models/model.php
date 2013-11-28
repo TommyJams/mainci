@@ -962,7 +962,6 @@ class Model extends CI_Model{
 
 					if(isset($fan_friends['data']))
 					{
-						error_log("Friend Data".$fan_friends["data"]['name']);
 						foreach ($fan_friends["data"] as $value) 
 						{
 							if($ticket_amount > 0)
