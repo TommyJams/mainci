@@ -280,7 +280,8 @@
               <h3>PERSONAL DETAILS</h3>
               <div class="row d-tj-black-box d-tj-tour-right-edit"> 
                 <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" value="<? print($fan_name); ?>" placeholder=""></input>
-                <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER EMAIL"></input>
+                
+                <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" value="<? print($fan_email); ?>" placeholder="ENTER EMAIL"></input>
                 <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER PHONE NUMBER [10-DIGIT]"></input>
                 <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" value="<? print($fan_location); ?>" placeholder=""></input>
               </div>
