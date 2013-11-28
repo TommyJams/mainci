@@ -962,7 +962,7 @@ class Model extends CI_Model{
 
 					if(isset($fan_friends['data']))
 					{
-						error_log("Friend Data".$fan_friends["data"]);
+						error_log("Friend Data".$fan_friends["data"]['name']);
 						foreach ($fan_friends["data"] as $value) 
 						{
 							if($ticket_amount > 0)
@@ -1015,15 +1015,14 @@ class Model extends CI_Model{
 	            $qresult = $query->result();
 				foreach ($qresult as $row)
 				{
-					$fan_id = $row->fb_id;
-					$ticket_amount = $row->ticket_amount;
-					$fan_name = $row->name; 
+					$fan_payed_id = $row->fb_id;
+					$fan_payed_name = $row->name; 
 
 					if($ticket_amount > 0)
 					{
 						$fanPayed[] = array(
-												'id' 			=> $fan_id,
-												'name' 			=> $fan_name
+												'id' 			=> $fan_payed_id,
+												'name' 			=> $fan_payed_name
 											);
 					}	
 				}
