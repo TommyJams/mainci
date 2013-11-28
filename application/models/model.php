@@ -998,6 +998,32 @@ class Model extends CI_Model{
 				}
 			}
 
+			// Event Joinees
+			$query = $this->db->query("SELECT * FROM `campaignCF` WHERE `campaign_id` = '$camp_id'");
+			if ($query->num_rows() > 0)
+			{
+	            $qresult = $query->result();
+				foreach ($qresult as $row)
+				{
+					$fb_event_id = $row->event_id;
+				}
+			}
+
+			$fqlJoinees = "SELECT uid FROM event_member WHERE eid = $fb_event_id AND rsvp_status='attending'";
+
+           	$paramJoinees  =  array(
+                  'method'    => 'fql.query',
+                  'query'     => $fqlJoinees,
+                  'callback'  => ''
+           	);
+
+           	$fqlJoineesResult = $this->facebook->api($paramJoinees);
+
+           	//getting list of all attendees
+           	foreach( $fqlJoineesResult as $keys => $values ){
+               	$fbEventJoinees[] = $values['uid'];
+           	}
+
 	    	// Getting fan data from fansCF datatable
 	    	$query = $this->db->query("SELECT * FROM fansCF WHERE `campaign_id` = '$camp_id' and `fb_id`='$fan_id'");
 			if ($query->num_rows() > 0)
@@ -1043,7 +1069,8 @@ class Model extends CI_Model{
 	                						'location' 				=> $location, 
 	                						'ticket' 				=> $ticket,
 	                						'fanFriendsPayed'		=> $fanFriendsPayed,
-	                						'fanPayed'				=> $fanPayed
+	                						'fanPayed'				=> $fanPayed,
+	                						'fbEventJoinees' 		=> $fbEventJoinees
 	                					);
 
 	                $response[] = $fanDetails;
