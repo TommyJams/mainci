@@ -945,7 +945,7 @@ class Model extends CI_Model{
 	    	}
 	    	if ($query->num_rows() > 0)
 	    	{
-	    		$query = $this->db->query("UPDATE `fansCF` SET `name`='$fan_name', `email`='$fan_email', `about`='$fan_about', `location`='$city'");
+	    		$query = $this->db->query("UPDATE `fansCF` SET `name`='$fan_name', `email`='$fan_email', `about`='$fan_about', `location`='$city' WHERE campaign_id = '$camp_id' and `fb_id`='$fan_id'");
 	    	}
 
 			// Fan friends data
@@ -958,11 +958,7 @@ class Model extends CI_Model{
 					$payedId = $row->id;
 					$ticket_amount = $row->ticket_amount;
 
-					$fan_friends = $this->facebook->api('/me/friends', 'GET', array(
-																					'access_token'=>$access_token,
-																					'id'=>$payedId
-																					)
-														);
+					$fan_friends = $this->facebook->api('/me/friends?id='.$payedId, 'GET', array('access_token'=>$access_token,));
 
 					foreach ($fan_friends["data"] as $value) 
 					{
