@@ -958,7 +958,7 @@ class Model extends CI_Model{
 					$payedId = $row->id;
 					$ticket_amount = $row->ticket_amount;
 
-					$fan_friends = $this->facebook->api('/me/friends?id='.$payedId, 'GET', array('access_token'=>$access_token,));
+					$fan_friends = $this->facebook->api('/me/friends?uid='.$payedId, 'GET', array('access_token'=>$access_token,));
 
 					foreach ($fan_friends["data"] as $value) 
 					{
