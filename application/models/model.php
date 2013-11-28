@@ -950,7 +950,7 @@ class Model extends CI_Model{
 
 			// Fan friends data
 			$query = $this->db->query("SELECT * FROM fansCF WHERE campaign_id = '$camp_id'");
-			if ($query->num_rows() == 0)
+			if ($query->num_rows() > 0)
 			{
 				$qresult = $query->result();
 				foreach ($qresult as $row)
@@ -965,7 +965,6 @@ class Model extends CI_Model{
 						error_log("Friend Data".$fan_friends["data"]);
 						foreach ($fan_friends["data"] as $value) 
 						{
-
 							if($ticket_amount > 0)
 							{
 								$friend_payed_id = $value["id"];
