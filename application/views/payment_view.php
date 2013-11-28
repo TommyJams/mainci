@@ -176,7 +176,6 @@
     <div class="d-tj-black-box d-tj-offset-top-30" style="height:300px">
       <h3 style="margin-top: 0px;">SOCIAL SHARE</h3>
       <div class="row pull-left">
-        <h3>FRIEND PAYEES </h3>
         <?
           if(isset($fanFriendsPayed))
           {
@@ -203,7 +202,6 @@
         ?>
       </div>
       <div class="row pull-left">
-        <h3>OTHER PAYEES </h3>
         <?
           if(isset($fanPayed))
           {
@@ -236,7 +234,6 @@
         ?>
       </div>
       <div class='pull-left' style='clear:left;'>
-        <h3>FRIENDS GOING FOR THE EVENT</h3>
         <?
         $countFaces = 0;
         $facesToShow = 3;
@@ -257,7 +254,6 @@
         ?>
         </div>
         <div class='pull-left' style='clear:left;'>
-          <h3>OTHER EVENT JOINEES </h3>
           <?
           $countFaces = 0;
           $facesToShow = 3;
