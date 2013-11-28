@@ -958,21 +958,24 @@ class Model extends CI_Model{
 					$payedId = $row->id;
 					$ticket_amount = $row->ticket_amount;
 
-					$fan_friends = $this->facebook->api('/me/friends?uid1='.$payedId, 'GET', array('access_token'=>$access_token,));
+					$fan_friends = $this->facebook->api('/me/friends?uid='.$payedId, 'GET', array('access_token'=>$access_token));
 
-					error_log("Friend Data".$fan_friends["data"]);
-
-					foreach ($fan_friends["data"] as $value) 
+					if(isset($fan_friends))
 					{
-						if($ticket_amount > 0)
+						error_log("Friend Data".$fan_friends["data"]);
+						foreach ($fan_friends["data"] as $value) 
 						{
-							$friend_payed_id = $value["id"];
-							$friend_payed_name = $value["name"];
 
-							$fanFriendsPayed[] = array(
-													'id' 			=> $friend_payed_id,
-													'name' 			=> $friend_payed_name,
-												);
+							if($ticket_amount > 0)
+							{
+								$friend_payed_id = $value["id"];
+								$friend_payed_name = $value["name"];
+
+								$fanFriendsPayed[] = array(
+														'id' 			=> $friend_payed_id,
+														'name' 			=> $friend_payed_name,
+													);
+							}
 						}
 					}
 				}
