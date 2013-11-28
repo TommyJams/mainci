@@ -960,8 +960,8 @@ class Model extends CI_Model{
 
 					$fan_friends = $this->facebook->api('/me/friends?uid='.$payedId, 'GET', array('access_token'=>$access_token,));
 
-					error_log("Friend Data".$fan_friends["data"])
-					
+					error_log("Friend Data".$fan_friends["data"]);
+
 					foreach ($fan_friends["data"] as $value) 
 					{
 						if($ticket_amount > 0)
