@@ -281,7 +281,7 @@
               <div class="row d-tj-black-box d-tj-tour-right-edit"> 
                 <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" value="<? print($fan_name); ?>" placeholder=""></input>
                 <? if(isset($fan_email)) { ?>
-                <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" value="<? print($fan_email); ?>"></input>
+                <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" value="<? print($fan_email);?>"></input>
                 <? } ?>
                 <? if(!isset($fan_email)) { ?>
                 <input class="form-control input-lg pull-left" type="text" id="phone" name="phone" placeholder="ENTER YOUR EMAIL"></input>
