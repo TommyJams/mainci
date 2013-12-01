@@ -242,7 +242,7 @@ body {
 		padding: 5px;
 		display: inline-block;
 		background: #000;
-		width: 75px;	/*change this if facebook changes the like container size*/
+		width: 0px;	/*change this if facebook changes the like container size*/
 		height: 20px;
 	}
 
