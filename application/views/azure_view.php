@@ -207,34 +207,34 @@
 							<!-- events list -->
 							<ul class="no-list clear-fix">
 								<li>
-									<a href="http://tommyjams.com/blog/events/event/dayglocrazie-the-humming-tree/" target="_blank" class="" style="width: 100%">
+									<a href="http://tommyjams.com/blog/events/event/madhatters-the-platter/" target="_blank" class="" style="width: 100%">
 										<table style='text-align:center; width: 100%;'>
 											<tr style="height: 50px; width: 100%">
-												<td style="width: 20%;"><img src="image/eventTiles/hummingtree.jpg" alt=""/></td>
-												<td style="width: 60%; vertical-align:middle;">Dayglocrazie @ The Humming Tree</td>
-												<td style="width: 20%; vertical-align:middle;">6-Nov</td>
+												<td style="width: 20%;"><img src="image/eventTiles/theplatter.jpg" alt=""/></td>
+												<td style="width: 60%; vertical-align:middle;">Madhatters @ The Platter</td>
+												<td style="width: 20%; vertical-align:middle;">27-Nov</td>
 											</tr>
 										</table>
 									</a>
 								</li>
                                 <li>
-									<a href="http://tommyjams.com/blog/events/event/zarra-phoenix-marketcity/" target="_blank" class="" style="width: 100%">
+									<a href="http://tommyjams.com/blog/events/event/refuge-phoenix-marketcity-chennai/" target="_blank" class="" style="width: 100%">
 										<table style='text-align:center; width: 100%;'>
 											<tr style="height: 50px; width: 100%">
 												<td style="width: 20%;"><img src="image/eventTiles/phoenixmall.jpg" alt=""/></td>
-												<td style="width: 60%; vertical-align:middle;">Zarra @ Phoenix Marketcity</td>
-												<td style="width: 20%; vertical-align:middle;">2-Nov</td>
+												<td style="width: 60%; vertical-align:middle;">Refuge @ Phoenix Marketcity</td>
+												<td style="width: 20%; vertical-align:middle;">24-Nov</td>
 											</tr>
 										</table>
 									</a>
 								</li>
 								<li>
-									<a href="http://tommyjams.com/blog/events/event/atharva-urban-solace-2/" target="_blank" class="" style="width: 100%">
+									<a href="http://tommyjams.com/blog/events/event/svaramrita-phoenix-marketcity/" target="_blank" class="" style="width: 100%">
 										<table style='text-align:center; width: 100%;'>
 											<tr style="height: 50px; width: 100%">
 												<td style="width: 20%;"><img src="image/eventTiles/urbansolace.jpg" alt=""/></td>
-												<td style="width: 60%; vertical-align:middle;">Atharva @ Urban Solace</td>
-												<td style="width: 20%; vertical-align:middle;">1-Nov</td>
+												<td style="width: 60%; vertical-align:middle;">Svaramrita @ Phoenix Marketcity</td>
+												<td style="width: 20%; vertical-align:middle;">23-Nov</td>
 											</tr>
 										</table>
 									</a>
