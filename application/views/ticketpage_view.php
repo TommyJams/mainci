@@ -11,6 +11,10 @@
 <link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
 <link rel="stylesheet" href="/stylecf/jquery.fancybox.css" type="text/css" media="screen" />
 
+<meta property="og:title" content="Tour with TommyJams" />
+<meta property="og:image" content="<? print(base_url().'images/artist/campaign/'.$backimg); ?>"/>
+<meta property="og:description" content="<?print($artist_name);?> is touring with TommyJams and coming to a venue near you. Pre-book your tickets now! \nTarget Sales: <? print($target); ?>" />
+
 </head>
 <body>
 <div class="d-tj-bg-overlay">
@@ -33,7 +37,10 @@
 	          <div class="col-md-12 d-tj-col-1-bg" >
 	            <div class="d-tj-events" >
 	              <h3>SOCIAL SHARE</h3>
-	              
+	            	<ul class=" list-unstyled social-list-share clear-fix">
+              			<li><a style="margin-right: 5px;" href="#" title="Share on Facebook" class='social-list-facebook-share' onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;"></a></li>
+              			<li><a title="Share on Twitter" class='social-list-twitter-share' href="https://twitter.com/share?text=<?print($artist_name);?>%20is%20touring%20with%20TommyJams%20and%20coming%20to%20a%20venue%20near%20you.%20Pre-book%20your%20tickets%20now!" target="_blank" data-lang="en"></a>
+              		</ul>
 	            </div>
 	          </div>
 	        </div>
