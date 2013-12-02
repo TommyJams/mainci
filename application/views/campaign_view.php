@@ -265,7 +265,7 @@
                     if($countFaces > $facesToShow)
                     {
                       $countFaces -= $facesToShow;
-                      print("<a href='' onmouseover='$artist_name' class='social-list-fb-event-href' style='padding: 10px;'> and $countFaces others</a>");
+                      print("<a href='' class='social-list-fb-event-href' style='padding: 10px;'> and $countFaces others</a>");
                     }
                     ?>
                   </div>

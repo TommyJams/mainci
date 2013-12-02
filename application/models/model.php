@@ -866,6 +866,9 @@ class Model extends CI_Model{
         	$this->load->helper('functions');
         	$this->load->library('session');
 
+        	// Storing Code in session
+			$this->session->set_userdata('FbCode', $code);
+
         	// Defining appId and secret
         	$appId = '248776888603319';
             $secret = '50f31c2706d846826bead008392e8969';
@@ -939,7 +942,6 @@ class Model extends CI_Model{
 	    	$query = $this->db->query("SELECT fb_id FROM fansCF WHERE campaign_id = '$camp_id' and `fb_id`='$fan_id'");
 			if ($query->num_rows() == 0)
 			{
-	  
 	    		$query1 = $this->db->query("INSERT INTO `fansCF` (`fb_id`, `name`, `email`, `about`, `location`, `campaign_id`) 
 						VALUES('".$this->db->escape_str($fan_id)."', '".$this->db->escape_str($fan_name)."', '".$this->db->escape_str($fan_email)."', '".$this->db->escape_str($fan_about)."', '".$this->db->escape_str($city)."', '".$this->db->escape_str($camp_id)."')");
 	    	}
@@ -1114,7 +1116,7 @@ class Model extends CI_Model{
 			}    
 		}	
 
-		public function ticketDetails()
+		public function ticketDetails($code)
 		{
 			// Loading lib and helper function
         	$this->load->helper('functions');
