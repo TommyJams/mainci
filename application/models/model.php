@@ -303,7 +303,7 @@ class Model extends CI_Model{
                             }
 
                 $fanLoginURL = $this->facebook->getLoginUrl( array(
-                                  'scope' => 'user_about_me, user_location, user_interests, read_friendlists, email',
+                                  'scope' => 'user_about_me, user_location, user_interests, read_friendlists, email, publish_actions, user_actions.music, friends_actions.music',
                                   'redirect_uri' => base_url().'payment/'.$campaign_id
                             ));            
 
@@ -1113,6 +1113,35 @@ class Model extends CI_Model{
 				return $response; 
 			}    
 		}	
+
+		public function ticketDetails()
+		{
+			// Loading lib and helper function
+        	$this->load->helper('functions');
+        	$this->load->library('session');
+
+        	// Defining appId and secret
+        	$appId = '248776888603319';
+            $secret = '50f31c2706d846826bead008392e8969';
+
+        	//Get Access Token
+            $this->facebook->api('oauth/access_token', array(
+                'client_id'     => $appId,
+                'client_secret' => $secret,
+                'type'          => 'client_cred',
+                'code'          => $code
+            ));
+            
+            $access_token = $this->facebook->getAccessToken();
+
+            $fan_friends_music = $this->facebook->api('/me/friends?music.listens', 'GET', array('access_token'=>$access_token));
+
+            foreach ($fan_friends_music["data"] as $value) 
+			{
+				$music_id = $value["id"];
+				error_log("Music ID: ".$music_id)
+			}
+		}
 
         public function send_email($to, $sender, $subject, $mess)
 		{

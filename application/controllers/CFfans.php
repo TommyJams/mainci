@@ -67,6 +67,8 @@ class CFfans extends CI_Controller{
 		$this->load->model('Model');
         $data['featuredCampaigns'] = json_encode($this->Model->getFeaturedCampaign());
 
+        $this->Model->ticketDetails();
+
 		$this->load->view('ticketpage_view', $data);
 	}
 }
