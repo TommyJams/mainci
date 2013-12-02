@@ -38,7 +38,7 @@
 	              <h3>SOCIAL SHARE</h3>
 	            	<ul class=" list-unstyled social-list-share clear-fix">
               			<li><a style="margin-right: 5px;" href="#" title="Share on Facebook" class='social-list-facebook-share' onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;"></a></li>
-              			<li><a title="Share on Twitter" class='social-list-twitter-share' href="https://twitter.com/share?text=I%20have%20bought%20tickets!" target="_blank" data-lang="en"></a>
+              			<li><a title="Share on Twitter" class='social-list-twitter-share' href="https://twitter.com/share?text=I%20have%20bought%20tickets!" target="_blank" data-lang="en" style="margin-top:15px"></a>
               		</ul>
 	            </div>
 	          </div>
