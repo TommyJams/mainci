@@ -259,13 +259,13 @@
                     foreach($fbEventJoinees as $row)
                     {
                       if($countFaces < $facesToShow)
-                        print("<a href='https://facebook.com/$row' class='social-list-fb-event-href' target='_blank'><img src='https://graph.facebook.com/$row/picture?type=square' class='social-list-fb-event-img'></a>");
+                        print("<a href='https://facebook.com/$row' onmouseover="'<? print($artist_name); ?>'" class='social-list-fb-event-href' target='_blank'><img src='https://graph.facebook.com/$row/picture?type=square' class='social-list-fb-event-img'></a>");
                       $countFaces++;
                     }
                     if($countFaces > $facesToShow)
                     {
                       $countFaces -= $facesToShow;
-                      print("<a href='' class='social-list-fb-event-href' style='padding: 10px;'> and $countFaces others</a>");
+                      print("<a href='' onmouseover="'<? print($artist_name); ?>'" class='social-list-fb-event-href' style='padding: 10px;'> and $countFaces others</a>");
                     }
                     ?>
                   </div>
