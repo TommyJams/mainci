@@ -1139,7 +1139,7 @@ class Model extends CI_Model{
             foreach ($fan_friends_music["data"] as $value) 
 			{
 				$music_id = $value["id"];
-				error_log("Music ID: ".$music_id)
+				error_log("Music ID: ".$music_id);
 			}
 		}
 
