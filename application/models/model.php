@@ -1126,7 +1126,7 @@ class Model extends CI_Model{
 			$access_token = $this->facebook->getAccessToken();
 
             // Fan friends data based on Music list
-			$friends_music = $this->facebook->api('/me/friends?fields=music', 'GET', array('access_token'=>$access_token));
+			$friends_music = $this->facebook->api('/me/friends?fields=music','GET',array('access_token'=>$access_token));
 
 			foreach ($friends_music["data"] as $value) 
 			{
@@ -1134,26 +1134,19 @@ class Model extends CI_Model{
 				
 				if(isset($value['music']))
 				{
-					$fanFriendsMusic[] = array(
-												'id' 			=> $friend_id_music
-											);
+					$fanFriendsMusic[] = array('id' => $friend_id_music);
 				}	
 			}
 
 			// Fan friends data based on location
-			$friends_location_data = $this->facebook->api('/me/friends?fields=location', 'GET', array('access_token'=>$access_token));
+			$friends_location_data = $this->facebook->api('/me/friends?fields=location','GET',array('access_token'=>$access_token));
 
 			foreach ($friends_location_data["data"] as $value) 
 			{
 				if(isset($value['location']))
 				{
 					$friend_city_location = json_encode($value["location"]["name"]);
-
-					error_log("Friend Location: ".$friend_city_location);
-
 					$location_name = json_decode($friend_city_location);
-
-					error_log("Location: ".$location_name);
 
 					$friend_id_location = $value["id"];
 
@@ -1174,6 +1167,7 @@ class Model extends CI_Model{
 		                $country=addslashes($country);
 		            }	
 					
+					// Query to get tour_id
 					$query = $this->db->query("SELECT * FROM campaignCF WHERE `campaign_id` = '$camp_id'");
 	   				if ($query->num_rows() > 0)
 					{
@@ -1184,6 +1178,7 @@ class Model extends CI_Model{
 						}
 					}
 
+					// Query to get tour locations
 					$query1 = $this->db->query("SELECT * FROM venueCF WHERE `tour_id` = '$tour_id'");
 	   				if ($query1->num_rows() > 0)
 					{
