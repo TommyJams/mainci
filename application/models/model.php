@@ -1172,25 +1172,22 @@ class Model extends CI_Model{
             // Fan friends data
 			$friends_music = $this->facebook->api('/me/friends?fields=music', 'GET', array('access_token'=>$access_token));
 
-			if(isset($friends_music['data']))
+			foreach ($friends_music["data"] as $value) 
 			{
-				foreach ($friends_music["data"] as $value) 
+				$friend_id_music = $value["id"];
+				$music = $value["music"];
+
+				if(isset($music))
 				{
-					$friend_id_music = $value["id"];
-					$music = $value["music"];
+					$band_name = $music['name'];
+					error_log("Band Name: ".$band_name);
 
-					if(isset($music))
-					{
-						$band_name = $value['music']['name'];
-						error_log("Band Name: ".$band_name);
-
-						$fanFriendsMusic[] = array(
-													'id' 			=> $friend_id_music,
-													'name' 			=> $friend_name_music
-												);
-					}	
+					$fanFriendsMusic[] = array(
+												'id' 			=> $friend_id_music
+											);
 				}	
-			}  
+			}	
+			 
 		}
 
         public function send_email($to, $sender, $subject, $mess)
