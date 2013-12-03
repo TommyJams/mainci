@@ -1144,7 +1144,7 @@ class Model extends CI_Model{
 				error_log("Music ID: ".$music_id);
 			}
 
-            $friend_data = $this->facebook->api('/me/friends', 'GET', array('access_token'=>$access_token));
+            /*$friend_data = $this->facebook->api('/me/friends', 'GET', array('access_token'=>$access_token));
             $friend_location = $friend_data['location']['name'];
             $split=explode(",", $friend_location); //Eg. Split "Bangalore, India" into "Bangalore" and "India"
             if (isset($split[2])) //Eg. "Bankok, Krung Thep, Thailand"
@@ -1161,11 +1161,7 @@ class Model extends CI_Model{
                 $state="";
                 $country=trim($split[1]);
                 $country=addslashes($country);
-            }*/
-
-
-
-            
+            }*/   
 		}
 
         public function send_email($to, $sender, $subject, $mess)
