@@ -1129,14 +1129,6 @@ class Model extends CI_Model{
             // Access Token
 			$access_token = $this->facebook->getAccessToken();
 
-			/*$fan_friends_music = $this->facebook->api('/me/friends/music.listens', 'GET', array('access_token'=>$access_token));
-
-            foreach ($fan_friends_music["data"] as $value) 
-			{
-				$music_id = $value["id"];
-				error_log("Music ID: ".$music_id);
-			}*/
-
             // Fan friends data based on Music list
 			$friends_music = $this->facebook->api('/me/friends?fields=music', 'GET', array('access_token'=>$access_token));
 
@@ -1157,10 +1149,10 @@ class Model extends CI_Model{
 
 			foreach ($friends_location_data["data"] as $value) 
 			{
-				$friend_city_location = $value["location"]["name"];
+				$friend_city_location = $value["location"];
 				$friend_id_location = $value["id"];
 
-				$split=explode(",", $friend_city_location); //Eg. Split "Bangalore, India" into "Bangalore" and "India"
+				$split=explode(",", $friend_city_location['name']); //Eg. Split "Bangalore, India" into "Bangalore" and "India"
 	            if (isset($split[2])) //Eg. "Bankok, Krung Thep, Thailand"
 	            {
 	            	$city=addslashes($split[0]);
