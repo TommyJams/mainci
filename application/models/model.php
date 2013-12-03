@@ -1145,35 +1145,35 @@ class Model extends CI_Model{
 
 			foreach ($friends_location_data["data"] as $value) 
 			{
-				$friend_city_location = json_encode($value["location"]["name"]);
-
-				error_log("Friend Location: ".$friend_city_location);
-
-				$location_name = json_decode($friend_city_location);
-
-				error_log("Location: ".$location_name);
-
-				$friend_id_location = $value["id"];
-
-				$split=explode(",", $location_name); //Eg. Split "Bangalore, India" into "Bangalore" and "India"
-	            if (isset($split[2])) //Eg. "Bankok, Krung Thep, Thailand"
-	            {
-	            	$city=addslashes($split[0]);
-	            	$state=trim($split[1]);
-	            	$state=addslashes($state);
-	            	$country=trim($split[2]);
-	            	$country=addslashes($country);
-	          	}
-	            else //Eg. "Bangalore, India"
-	            {
-	                $city=addslashes($split[0]);
-	                $state="";
-	                $country=trim($split[1]);
-	                $country=addslashes($country);
-	            }
-				
 				if(isset($value['location']))
 				{
+					$friend_city_location = json_encode($value["location"]["name"]);
+
+					error_log("Friend Location: ".$friend_city_location);
+
+					$location_name = json_decode($friend_city_location);
+
+					error_log("Location: ".$location_name);
+
+					$friend_id_location = $value["id"];
+
+					$split=explode(",", $location_name); //Eg. Split "Bangalore, India" into "Bangalore" and "India"
+		            if (isset($split[2])) //Eg. "Bankok, Krung Thep, Thailand"
+		            {
+		            	$city=addslashes($split[0]);
+		            	$state=trim($split[1]);
+		            	$state=addslashes($state);
+		            	$country=trim($split[2]);
+		            	$country=addslashes($country);
+		          	}
+		            else //Eg. "Bangalore, India"
+		            {
+		                $city=addslashes($split[0]);
+		                $state="";
+		                $country=trim($split[1]);
+		                $country=addslashes($country);
+		            }	
+					
 					$query = $this->db->query("SELECT * FROM campaignCF WHERE `campaign_id` = '$camp_id'");
 	   				if ($query->num_rows() > 0)
 					{
