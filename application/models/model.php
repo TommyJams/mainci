@@ -1116,7 +1116,7 @@ class Model extends CI_Model{
 			}    
 		}	
 
-		public function ticketDetails()
+		public function ticketDetails($camp_id)
 		{
 			// Loading lib and helper function
         	$this->load->helper('functions');
@@ -1125,14 +1125,6 @@ class Model extends CI_Model{
         	// Defining appId and secret
         	$appId = '248776888603319';
             $secret = '50f31c2706d846826bead008392e8969';
-
-        	//Get Access Token
-            /*$this->facebook->api('oauth/access_token', array(
-                'client_id'     => $appId,
-                'client_secret' => $secret,
-                'type'          => 'client_cred',
-                'code'          => $code
-            ));*/
 
 			$access_token = $this->facebook->getAccessToken();
 
@@ -1150,27 +1142,10 @@ class Model extends CI_Model{
 				error_log("Music ID: ".$music_id);
 			}*/
 
-            /*$friend_data = $this->facebook->api('/me/friends', 'GET', array('access_token'=>$access_token));
-            $friend_location = $friend_data['location']['name'];
-            $split=explode(",", $friend_location); //Eg. Split "Bangalore, India" into "Bangalore" and "India"
-            if (isset($split[2])) //Eg. "Bankok, Krung Thep, Thailand"
-            {
-            	$city=addslashes($split[0]);
-            	$state=trim($split[1]);
-            	$state=addslashes($state);
-            	$country=trim($split[2]);
-            	$country=addslashes($country);
-          	}
-            else //Eg. "Bangalore, India"
-            {
-                $city=addslashes($split[0]);
-                $state="";
-                $country=trim($split[1]);
-                $country=addslashes($country);
-            }*/ 
-
             // Fan friends data
 			$friends_music = $this->facebook->api('/me/friends?fields=music', 'GET', array('access_token'=>$access_token));
+
+			$friends_location_data = $this->facebook->api('/me/friends?fields=location', 'GET', array('access_token'=>$access_token));
 
 			foreach ($friends_music["data"] as $value) 
 			{
@@ -1182,8 +1157,58 @@ class Model extends CI_Model{
 												'id' 			=> $friend_id_music
 											);
 				}	
-			}	
-			 
+			}
+
+			foreach ($friends_location_data["data"] as $value) 
+			{
+				$friend_city_location = $value["location"]["name"];
+				$friend_id_location = $value["id"];
+
+				$split=explode(",", $friend_city_location); //Eg. Split "Bangalore, India" into "Bangalore" and "India"
+	            if (isset($split[2])) //Eg. "Bankok, Krung Thep, Thailand"
+	            {
+	            	$city=addslashes($split[0]);
+	            	$state=trim($split[1]);
+	            	$state=addslashes($state);
+	            	$country=trim($split[2]);
+	            	$country=addslashes($country);
+	          	}
+	            else //Eg. "Bangalore, India"
+	            {
+	                $city=addslashes($split[0]);
+	                $state="";
+	                $country=trim($split[1]);
+	                $country=addslashes($country);
+	            }
+				
+				if(isset($value['location']))
+				{
+					$query = $this->db->query("SELECT * FROM campaignCF WHERE `campaign_id` = '$camp_id'");
+	   				if ($query->num_rows() > 0)
+					{
+			            $qresult = $query->result();
+						foreach ($qresult as $row)
+						{
+							$tour_id = $row->tour_id;
+						}
+					}
+
+					$query1 = $this->db->query("SELECT * FROM venueCF WHERE `tour_id` = '$tour_id'");
+	   				if ($query1->num_rows() > 0)
+					{
+			            $qresult1 = $query1->result();
+						foreach ($qresult1 as $row)
+						{
+							$venue_city = $row->city;
+
+							if($venue_city == $city)
+							{
+								$fanFriendsLocation[] = array('id' => $friend_id_location);
+							}
+						}
+					}
+				}	
+			}		 
 		}
 
         public function send_email($to, $sender, $subject, $mess)
