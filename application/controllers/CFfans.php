@@ -68,23 +68,6 @@ class CFfans extends CI_Controller{
 
 		$campaign_id = $this->uri->segment(2);
 
-		// Getting code from session
-		/*$code = $this->session->userdata('fbCode');
-
-		if(!isset($code))
-		{
-			$ticketLoginURL = $this->facebook->getLoginUrl( array(
-                                  'scope' => 'user_about_me, user_location, user_interests, read_friendlists, email, publish_actions, user_actions.music, friends_actions.music',
-                                  'redirect_uri' => base_url().'ticket'
-                            ));
-        } 
-
-        // Getting code from URL
-		parse_str(substr(strrchr($_SERVER['REQUEST_URI'], "?"), 1), $_GET);
-		$code = $_GET['code'];
-		
-		error_log("FB Code: ".$code)*/
-
         $data['featuredCampaigns'] = json_encode($this->Model->getFeaturedCampaign());
 
         $this->Model->ticketDetails($campaign_id);

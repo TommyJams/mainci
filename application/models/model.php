@@ -1126,13 +1126,8 @@ class Model extends CI_Model{
         	$appId = '248776888603319';
             $secret = '50f31c2706d846826bead008392e8969';
 
+            // Access Token
 			$access_token = $this->facebook->getAccessToken();
-
-			//$music_id = $fan_music['id'];
-			//$playlist = $fan_music['playist'];
-
-			//error_log("Music ID: ".$music_id);
-			//error_log("Playist: ".$playlist);
 
 			/*$fan_friends_music = $this->facebook->api('/me/friends/music.listens', 'GET', array('access_token'=>$access_token));
 
@@ -1142,10 +1137,8 @@ class Model extends CI_Model{
 				error_log("Music ID: ".$music_id);
 			}*/
 
-            // Fan friends data
+            // Fan friends data based on Music list
 			$friends_music = $this->facebook->api('/me/friends?fields=music', 'GET', array('access_token'=>$access_token));
-
-			$friends_location_data = $this->facebook->api('/me/friends?fields=location', 'GET', array('access_token'=>$access_token));
 
 			foreach ($friends_music["data"] as $value) 
 			{
@@ -1158,6 +1151,9 @@ class Model extends CI_Model{
 											);
 				}	
 			}
+
+			// Fan friends data based on location
+			$friends_location_data = $this->facebook->api('/me/friends?fields=location', 'GET', array('access_token'=>$access_token));
 
 			foreach ($friends_location_data["data"] as $value) 
 			{
