@@ -1136,12 +1136,6 @@ class Model extends CI_Model{
 
 			$access_token = $this->facebook->getAccessToken();
 
-			$fan_music = $this->facebook->api('/me/music.listens', 'GET');
-
-			$artist_profile = $fan_music['id'];
-
-			error_log("Username: ".$artist_profile);
-
 			//$music_id = $fan_music['id'];
 			//$playlist = $fan_music['playist'];
 
@@ -1173,7 +1167,27 @@ class Model extends CI_Model{
                 $state="";
                 $country=trim($split[1]);
                 $country=addslashes($country);
-            }*/   
+            }*/ 
+
+            // Fan friends data
+			$friends_music = $this->facebook->api('/me/friends?fields=music', 'GET', array('access_token'=>$access_token));
+
+			if(isset($friends_music['music']))
+			{
+				foreach ($friends_music["data"] as $value) 
+				{
+					$friend_id_music = $value["id"];
+					$friend_name_music = $value["name"];
+
+					$band_name = $value['music']['name'];
+					error_log("Band Name: ".$band_name);
+
+					$fanFriendsMusic[] = array(
+												'id' 			=> $friend_id_music,
+												'name' 			=> $friend_name_music
+											);
+				}	
+			}  
 		}
 
         public function send_email($to, $sender, $subject, $mess)
