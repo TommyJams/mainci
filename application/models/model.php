@@ -1134,6 +1134,8 @@ class Model extends CI_Model{
                 'code'          => $code
             ));*/
 
+			$access_token = $this->facebook->getAccessToken();
+
 			$fan_friends_music = $this->facebook->api('/me/friends/music.listens', 'GET', array('access_token'=>$access_token));
 
             foreach ($fan_friends_music["data"] as $value) 
@@ -1141,8 +1143,6 @@ class Model extends CI_Model{
 				$music_id = $value["id"];
 				error_log("Music ID: ".$music_id);
 			}
-            
-            /*$access_token = $this->facebook->getAccessToken();
 
             $friend_data = $this->facebook->api('/me/friends', 'GET', array('access_token'=>$access_token));
             $friend_location = $friend_data['location']['name'];
