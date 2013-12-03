@@ -1147,8 +1147,8 @@ class Model extends CI_Model{
 			{
 				$friend_city_location = json_encode($value["location"]);
 
-				error_log("Friend Location: ".$friend_city_location)
-				
+				error_log("Friend Location: ".$friend_city_location);
+
 				$friend_id_location = $value["id"];
 
 				$split=explode(",", $friend_city_location['name']); //Eg. Split "Bangalore, India" into "Bangalore" and "India"
