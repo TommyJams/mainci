@@ -1122,10 +1122,6 @@ class Model extends CI_Model{
         	$this->load->helper('functions');
         	$this->load->library('session');
 
-        	// Defining appId and secret
-        	$appId = '248776888603319';
-            $secret = '50f31c2706d846826bead008392e8969';
-
             // Access Token
 			$access_token = $this->facebook->getAccessToken();
 
@@ -1149,7 +1145,7 @@ class Model extends CI_Model{
 
 			foreach ($friends_location_data["data"] as $value) 
 			{
-				$friend_city_location = $value["location"][];
+				$friend_city_location = $friends_location_data["data"]["location"];
 				$friend_id_location = $value["id"];
 
 				$split=explode(",", $friend_city_location['name']); //Eg. Split "Bangalore, India" into "Bangalore" and "India"
