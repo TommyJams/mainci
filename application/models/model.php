@@ -1147,9 +1147,15 @@ class Model extends CI_Model{
 			{
 				$friend_city_location = json_encode($value["location"]["name"]);
 
+				error_log("Friend Location: ".$friend_city_location);
+
+				$location_name = json_decode($friend_city_location);
+
+				error_log("Location: ".$location_name);
+
 				$friend_id_location = $value["id"];
 
-				$split=explode(",", json_decode($friend_city_location)); //Eg. Split "Bangalore, India" into "Bangalore" and "India"
+				$split=explode(",", $location_name); //Eg. Split "Bangalore, India" into "Bangalore" and "India"
 	            if (isset($split[2])) //Eg. "Bankok, Krung Thep, Thailand"
 	            {
 	            	$city=addslashes($split[0]);
