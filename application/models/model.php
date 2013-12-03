@@ -1145,7 +1145,7 @@ class Model extends CI_Model{
 
 			foreach ($friends_location_data["data"] as $value) 
 			{
-				$friend_city_location = json_encode($value["location"]);
+				$friend_city_location = json_encode($value["location"]["name"]);
 
 				error_log("Friend Location: ".$friend_city_location);
 
