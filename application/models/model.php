@@ -1136,13 +1136,17 @@ class Model extends CI_Model{
 
 			$access_token = $this->facebook->getAccessToken();
 
-			$fan_music = $this->facebook->api('/me/music.listens', 'GET', array('access_token'=>$access_token));
+			$fan_music = $this->facebook->api('/me/objects/profile', 'GET', array('access_token'=>$access_token));
 
-			$music_id = $fan_music['id'];
-			$playlist = $fan_music['playist'];
+			$artist_profile = $fan_music['username'];
 
-			error_log("Music ID: ".$music_id);
-			error_log("Playist: ".$playlist);
+			error_log("Username: ".$artist_profile);
+
+			//$music_id = $fan_music['id'];
+			//$playlist = $fan_music['playist'];
+
+			//error_log("Music ID: ".$music_id);
+			//error_log("Playist: ".$playlist);
 
 			/*$fan_friends_music = $this->facebook->api('/me/friends/music.listens', 'GET', array('access_token'=>$access_token));
 
