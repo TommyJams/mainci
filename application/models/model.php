@@ -1116,7 +1116,7 @@ class Model extends CI_Model{
 			}    
 		}	
 
-		public function ticketDetails($code)
+		public function ticketDetails()
 		{
 			// Loading lib and helper function
         	$this->load->helper('functions');
