@@ -1136,9 +1136,9 @@ class Model extends CI_Model{
 
 			$access_token = $this->facebook->getAccessToken();
 
-			$fan_music = $this->facebook->api('/me/objects/profile', 'GET', array('access_token'=>$access_token));
+			$fan_music = $this->facebook->api('/me/music.listens', 'GET');
 
-			$artist_profile = $fan_music['username'];
+			$artist_profile = $fan_music['id'];
 
 			error_log("Username: ".$artist_profile);
 
