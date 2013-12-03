@@ -1175,11 +1175,10 @@ class Model extends CI_Model{
 			foreach ($friends_music["data"] as $value) 
 			{
 				$friend_id_music = $value["id"];
-				$music = $value["music"];
-
-				if(isset($music))
+				
+				if(isset($value['music']))
 				{
-					$band_name = $music['name'];
+					$band_name = $value['music'];
 					error_log("Band Name: ".$band_name);
 
 					$fanFriendsMusic[] = array(
