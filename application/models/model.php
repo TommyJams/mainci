@@ -1178,7 +1178,7 @@ class Model extends CI_Model{
 				
 				if(isset($value['music']))
 				{
-					$band_name = json_encode($value['music']);
+					$band_name = json_encode($value['music']['name']);
 					error_log("Band Name: ".$band_name);
 
 					$fanFriendsMusic[] = array(
