@@ -1149,7 +1149,7 @@ class Model extends CI_Model{
 
 			foreach ($friends_location_data["data"] as $value) 
 			{
-				$friend_city_location = $value["data"]["location"];
+				$friend_city_location = $value["location"][];
 				$friend_id_location = $value["id"];
 
 				$split=explode(",", $friend_city_location['name']); //Eg. Split "Bangalore, India" into "Bangalore" and "India"
