@@ -303,7 +303,7 @@ class Model extends CI_Model{
                             }
 
                 $fanLoginURL = $this->facebook->getLoginUrl( array(
-                                  'scope' => 'user_about_me, user_location, user_interests, read_friendlists, email, publish_actions, user_actions.music, friends_actions.music',
+                                  'scope' => 'user_about_me, user_location, user_interests, read_friendlists, email, publish_actions, user_actions.music, friends_actions.music, friends_location, friends_likes',
                                   'redirect_uri' => base_url().'payment/'.$campaign_id
                             ));            
 
@@ -1133,16 +1133,39 @@ class Model extends CI_Model{
                 'type'          => 'client_cred',
                 'code'          => $code
             ));*/
-            
-            $access_token = $this->facebook->getAccessToken();
 
-            $fan_friends_music = $this->facebook->api('/me/friends?music.listens', 'GET', array('access_token'=>$access_token));
+			$fan_friends_music = $this->facebook->api('/me/friends/music.listens', 'GET', array('access_token'=>$access_token));
 
             foreach ($fan_friends_music["data"] as $value) 
 			{
 				$music_id = $value["id"];
 				error_log("Music ID: ".$music_id);
 			}
+            
+            /*$access_token = $this->facebook->getAccessToken();
+
+            $friend_data = $this->facebook->api('/me/friends', 'GET', array('access_token'=>$access_token));
+            $friend_location = $friend_data['location']['name'];
+            $split=explode(",", $friend_location); //Eg. Split "Bangalore, India" into "Bangalore" and "India"
+            if (isset($split[2])) //Eg. "Bankok, Krung Thep, Thailand"
+            {
+            	$city=addslashes($split[0]);
+            	$state=trim($split[1]);
+            	$state=addslashes($state);
+            	$country=trim($split[2]);
+            	$country=addslashes($country);
+          	}
+            else //Eg. "Bangalore, India"
+            {
+                $city=addslashes($split[0]);
+                $state="";
+                $country=trim($split[1]);
+                $country=addslashes($country);
+            }*/
+
+
+
+            
 		}
 
         public function send_email($to, $sender, $subject, $mess)
