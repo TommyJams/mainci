@@ -67,7 +67,7 @@ class CFfans extends CI_Controller{
 		$this->load->model('Model');
 
 		// Getting code from session
-		$code = $this->session->userdata('fbCode');
+		/*$code = $this->session->userdata('fbCode');
 
 		if(!isset($code))
 		{
@@ -81,11 +81,11 @@ class CFfans extends CI_Controller{
 		parse_str(substr(strrchr($_SERVER['REQUEST_URI'], "?"), 1), $_GET);
 		$code = $_GET['code'];
 		
-		error_log("FB Code: ".$code)
+		error_log("FB Code: ".$code)*/
 
         $data['featuredCampaigns'] = json_encode($this->Model->getFeaturedCampaign());
 
-        $this->Model->ticketDetails($code);
+        $this->Model->ticketDetails();
 
 		$this->load->view('ticketpage_view', $data);
 	}
