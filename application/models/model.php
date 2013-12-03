@@ -1177,7 +1177,6 @@ class Model extends CI_Model{
 				foreach ($friends_music["data"] as $value) 
 				{
 					$friend_id_music = $value["id"];
-					$friend_name_music = $value["name"];
 					$music = $value["music"];
 
 					if(isset($music))
