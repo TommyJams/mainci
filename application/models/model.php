@@ -1261,6 +1261,8 @@ class Model extends CI_Model{
 			// Get posted data
 	    	$ids = json_encode($this->input->post("ids"));
 
+	    	$ids = json_decode($ids);
+
 	    	error_log("IDs: ".$ids);
 	    	error_log("IDs[0]: ".$ids[0]);
 	    	error_log("IDs[1]: ".$ids[1]);
