@@ -1237,15 +1237,16 @@ class Model extends CI_Model{
 						}
 					}
 				}
+			}
 
-				$ticketDetails = array(
+			$ticketDetails = array(
 	                					'fanFriendsLocation'		=> $fanFriendsLocation,
 	                					'fanFriendsMusic'			=> $fanFriendsMusic,
 	                					'ticketCampaign'			=> $ticketCampaign,
 	                					'ticketVenue'				=> $ticketVenue,
 	                					'ticketFans'				=> $ticketFans
 	                				);	
-			}
+			
 
 			$response[] = $ticketDetails;
 
