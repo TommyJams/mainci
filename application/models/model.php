@@ -1263,8 +1263,14 @@ class Model extends CI_Model{
 
 	    	$ids = json_decode($ids);
 
-			// Access Token
-			$app_access_token = $this->facebook->getAccessToken();
+	    	// App access token
+	    	$appId = '248776888603319';
+            $secret = '50f31c2706d846826bead008392e8969';
+
+  			$token_url = "https://graph.facebook.com/oauth/access_token?" .
+    					"client_id=" . $app_id . "&client_secret=" . $app_secret . "&grant_type=client_credentials";
+
+  			$app_access_token = file_get_contents($token_url);
 			
 			for($a = 0; $a < sizeof($ids); $a++)
 			{
