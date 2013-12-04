@@ -255,7 +255,10 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ii) Campaigners agree to make a good faith attempt to fulfill each reward by its estimated delivery date, which would generally be on the day of the concert itself unless notified otherwise in a prior communication.<br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(iii) For all campaigns, TommyJams gives to the Campaigner each Backer’s User ID and pledge amount. For successful campaigns, TommyJams additionally gives to the Campaigner each Backer’s name and email.<br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(iv) For some rewards, the Campaigner needs further information from Backers, such as a mailing address or t-shirt size, to enable the Campaigner to deliver the rewards. The Campaigner shall request the information directly from Backers at some point after the campaign is successful. To receive the reward, Backers agree to provide the requested information to the Campaigner within a reasonable amount of time.<br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(vii) Campaigners are required to fulfill all rewards of their successful campaigns or refund any Backer whose reward they do not or cannot fulfill.<br><br></p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(vii) Campaigners are required to fulfill all rewards of their successful campaigns or refund any Backer whose reward they do not or cannot fulfill.<br><br>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Last updated on 4th December, 2013.</i><br><br>
+            </p>
             
 				</p>
                 
