@@ -71,8 +71,12 @@
                 				print("<a href='https://facebook.com/$id' class='social-list-fb-event-href' target='_blank'><img src='https://graph.facebook.com/$id/picture?type=square' class='social-list-fb-event-img'></a>");
               					
               					$ids[] = array('id' => $id);
+
+              					error_log("Fan IDs: ".$ids);
               					$countFaces++;
               				}
+
+              				error_log("Fan IDs are: ".$ids);
               			}
           			?>
           			<div class="text-center d-tj-offset-top-30" onclick="sendRequest('<? print($ids); ?>')" >
