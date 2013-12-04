@@ -75,7 +75,7 @@
               				}
               			}
           			?>
-          			<div class="text-center d-tj-offset-top-30" onclick="sendRequest('<? print(json_decode($ids)); ?>')" >
+          			<div class="text-center d-tj-offset-top-30" onclick="sendRequest('<? print($ids); ?>')" >
               			<input style="" type="button" value="INVITE">
             		</div>
 	            </div>
