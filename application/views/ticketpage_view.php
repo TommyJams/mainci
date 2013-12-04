@@ -72,7 +72,6 @@
               					
               					$ids[] = array('id' => $id);
 
-              					error_log("Fan IDs: ".$ids[$countFaces]);
               					$countFaces++;
               				}
 
