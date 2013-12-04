@@ -78,7 +78,7 @@
               				error_log("Fan IDs are: ".json_encode($ids));
               			}
           			?>
-          			<div class="text-center d-tj-offset-top-30" onclick="sendRequest('<? print($ids); ?>')" >
+          			<div class="text-center d-tj-offset-top-30" onclick="sendRequest('<?php echo  json_encode($ids) ?>')" >
               			<input style="" type="button" value="INVITE">
             		</div>
 	            </div>
@@ -191,7 +191,7 @@
 
 		function sendRequest(ids)
   		{
-  			console.log(JSON.stringify(ids));
+  			console.log(ids);
 
     		$.post('/CFfans/sendRequest',{ids: ids},sendRequestCallback,'json');  
   		}
