@@ -43,6 +43,7 @@
         <li><h1>September</h1></li>
         <li><h1>October</h1></li>
         <li><h1>November</h1></li>
+        <li><h1>December</h1></li>
 	</ul>
 </div>
 
