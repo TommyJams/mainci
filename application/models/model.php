@@ -1263,17 +1263,19 @@ class Model extends CI_Model{
 
 	    	$ids = json_decode($ids);
 
-	    	error_log("IDs[0]: ".json_encode($ids[0]));
-
 			// Access Token
 			$app_access_token = $this->facebook->getAccessToken();
 			
 			for($a = 0; $a < sizeof($ids); $a++)
 			{
-				$user_id = json_encode($ids[$a]);
+				$user_id = json_decode(json_encode($ids[$a]));
 				error_log("User ID: ".$user_id);
 				$apprequest_url ="https://graph.facebook.com/" . $user_id . "/apprequests?message='INSERT_UT8_STRING_MSG'" . "&data='INSERT_STRING_DATA'&" . $app_access_token . "&method=post";
+				
+				$result = file_get_contents($apprequest_url);
+				error_log("Result: ".$result);
 			}
+
 
 			$response = 1;
 			createResponse($response);
