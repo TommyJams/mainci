@@ -1244,13 +1244,13 @@ class Model extends CI_Model{
 	                					'ticketCampaign'			=> $ticketCampaign,
 	                					'ticketVenue'				=> $ticketVenue,
 	                					'ticketFans'				=> $ticketFans
-	                				);
-
-	            $response[] = $ticketDetails;
-
-	            //Return values to controller
-				return $response;	
+	                				);	
 			}
+
+			$response[] = $ticketDetails;
+
+	        //Return values to controller
+			return $response;
 		}
 
 		public function sendRequest()
