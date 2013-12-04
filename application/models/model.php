@@ -1269,9 +1269,12 @@ class Model extends CI_Model{
 			for($a = 0; $a < sizeof($ids); $a++)
 			{
 				$user_id = json_encode($ids[$a]);
-				error_log("User ID: ".json_decode($user_id));
-				$apprequest_url ="https://graph.facebook.com/" . json_decode($user_id) . "/apprequests?message='INSERT_UT8_STRING_MSG'" . "&data='INSERT_STRING_DATA'&" . $app_access_token . "&method=post";
+				$user_id = json_decode($user_id);
+				error_log("User ID: ".$user_id);
+				$apprequest_url ="https://graph.facebook.com/" . $user_id . "/apprequests?message='INSERT_UT8_STRING_MSG'" . "&data='INSERT_STRING_DATA'&" . $app_access_token . "&method=post";
 				
+				error_log("URL: ".$apprequest_url);
+
 				$result = file_get_contents($apprequest_url);
 				error_log("Result: ".$result);
 			}
