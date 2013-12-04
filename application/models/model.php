@@ -1238,6 +1238,8 @@ class Model extends CI_Model{
 
 		public function create_image() 
 		{ 
+			$this->load->helper('functions');
+
 		    //Let's generate a totally random string using md5 
 		    $md5 = md5(rand(0,999)); 
 		    //We don't need a 32 character long string so we trim it down to 5 
@@ -1270,10 +1272,12 @@ class Model extends CI_Model{
 		    header("Content-Type: image/jpeg"); 
 
 		    //Output the newly created image in jpeg format 
-		    ImageJpeg($image); 
+		    $response = ImageJpeg($image); 
 		    
 		    //Free up resources
-		    ImageDestroy($image); 
+		    //ImageDestroy($image); 
+			
+			return $response; 
 		} 
 
         public function send_email($to, $sender, $subject, $mess)

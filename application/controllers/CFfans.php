@@ -78,7 +78,8 @@ class CFfans extends CI_Controller{
 	public function createImage(){
 		
 		$this->load->model('Model');
-		$this->Model->create_image(); 
-		exit();
+		$data = $this->Model->create_image(); 
+		
+		$this->load->view('createImage_view', $data);
 	}
 }
