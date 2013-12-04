@@ -1125,6 +1125,35 @@ class Model extends CI_Model{
             // Access Token
 			$access_token = $this->facebook->getAccessToken();
 
+			// Ticket details
+			$query = $this->db->query("SELECT * FROM campaignCF WHERE `campaign_id` = '$camp_id'");
+			if ($query->num_rows() > 0)
+			{
+	            $qresult = $query->result();
+				foreach ($qresult as $row)
+				{
+					$tour_id = $row->tour_id;
+					$tour_name = $row->tour_name;
+					$artist_name = $row->artist_name;
+					$image = $row->image1;
+
+					$ticketCampaign[] = $row;
+				}
+			}
+
+			$query = $this->db->query("SELECT * FROM venueCF WHERE `tour_id` = '$tour_id'");
+			if ($query->num_rows() > 0)
+			{
+	            $qresult = $query->result();
+				foreach ($qresult as $row)
+				{
+					$ticketVenue[] = $row;
+				}
+			}
+
+
+
+
             // Fan friends data based on Music list
 			$friends_music = $this->facebook->api('/me/friends?fields=music','GET',array('access_token'=>$access_token));
 
@@ -1193,9 +1222,59 @@ class Model extends CI_Model{
 							}
 						}
 					}
-				}	
-			}		 
+				}
+
+				$ticketDetails = array(
+	                					'fanFriendsLocation'		=> $fanFriendsLocation,
+	                					'fanFriendsMusic'			=> $fanFriendsMusic
+	                				);
+
+	            $response[] = $ticketDetails;
+
+	            //Return values to controller
+				return $response;	
+			}
 		}
+
+		public function create_image() 
+		{ 
+		    //Let's generate a totally random string using md5 
+		    $md5 = md5(rand(0,999)); 
+		    //We don't need a 32 character long string so we trim it down to 5 
+		    $pass = substr($md5, 10, 5); 
+
+		    //Set the image width and height 
+		    $width = 100; 
+		    $height = 20;  
+
+		    //Create the image resource 
+		    $image = ImageCreate($width, $height);  
+
+		    //We are making three colors, white, black and gray 
+		    $white = ImageColorAllocate($image, 255, 255, 255); 
+		    $black = ImageColorAllocate($image, 0, 0, 0); 
+		    $grey = ImageColorAllocate($image, 204, 204, 204); 
+
+		    //Make the background black 
+		    ImageFill($image, 0, 0, $black); 
+
+		    //Add randomly generated string in white to the image
+		    ImageString($image, 3, 30, 3, $pass, $white); 
+
+		    //Throw in some lines to make it a little bit harder for any bots to break 
+		    ImageRectangle($image,0,0,$width-1,$height-1,$grey); 
+		    imageline($image, 0, $height/2, $width, $height/2, $grey); 
+		    imageline($image, $width/2, 0, $width/2, $height, $grey); 
+		 
+		    //Tell the browser what kind of file is come in 
+		    header("Content-Type: image/jpeg"); 
+
+		    //Output the newly created image in jpeg format 
+		    ImageJpeg($image); 
+		    
+		    //Free up resources
+		    ImageDestroy($image); 
+		} 
 
         public function send_email($to, $sender, $subject, $mess)
 		{
