@@ -1256,9 +1256,9 @@ class Model extends CI_Model{
 			$this->load->helper('functions');
 
 			// Get posted data
-	    	$ids = json_decode($this->input->post("ids['id']"));
+	    	$ids = json_decode($this->input->post("ids"));
 
-	    	error_log("IDs: ".$ids);
+	    	error_log("IDs: ".$ids['id']);
 
 			// Access Token
 			$app_access_token = $this->facebook->getAccessToken();
@@ -1266,6 +1266,7 @@ class Model extends CI_Model{
 			for($a = 0; $a < sizeof($ids); $a++)
 			{
 				$user_id = $ids[$a];
+				error_log("User ID: ".$user_id)
 				$apprequest_url ="https://graph.facebook.com/" . $user_id . "/apprequests?message='INSERT_UT8_STRING_MSG'" . "&data='INSERT_STRING_DATA'&" . $app_access_token . "&method=post";
 			}
 
