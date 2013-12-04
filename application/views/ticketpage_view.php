@@ -191,6 +191,8 @@
 
 		function sendRequest(ids)
   		{
+  			console.log(ids);
+
     		$.post('/CFfans/sendRequest',{ids: ids},sendRequestCallback,'json');  
   		}
 
