@@ -1111,6 +1111,9 @@ class Model extends CI_Model{
 				//$this->session->unset_userdata($sessionArray);
 				//$this->session->sess_destroy();
 
+				// Storing fan_id to session created
+				$this->session->set_userdata('fan_id', $fan_id);
+
 				//Return values to controller
 				return $response; 
 			}    
@@ -1121,6 +1124,8 @@ class Model extends CI_Model{
 			// Loading lib and helper function
         	$this->load->helper('functions');
         	$this->load->library('session');
+
+        	$fan_id = $this->session->userdata('fan_id');
 
             // Access Token
 			$access_token = $this->facebook->getAccessToken();
@@ -1151,8 +1156,15 @@ class Model extends CI_Model{
 				}
 			}
 
-
-
+			$query = $this->db->query("SELECT * FROM fansCF WHERE `campaign_id` = '$camp_id' and `fb_id` = '$fan_id'");
+			if ($query->num_rows() > 0)
+			{
+	            $qresult = $query->result();
+				foreach ($qresult as $row)
+				{
+					$ticketFans[] = $row;
+				}
+			}
 
             // Fan friends data based on Music list
 			$friends_music = $this->facebook->api('/me/friends?fields=music','GET',array('access_token'=>$access_token));
@@ -1226,7 +1238,10 @@ class Model extends CI_Model{
 
 				$ticketDetails = array(
 	                					'fanFriendsLocation'		=> $fanFriendsLocation,
-	                					'fanFriendsMusic'			=> $fanFriendsMusic
+	                					'fanFriendsMusic'			=> $fanFriendsMusic,
+	                					'ticketCampaign'			=> $ticketCampaign,
+	                					'ticketVenue'				=> $ticketVenue,
+	                					'ticketFans'				=> $ticketFans
 	                				);
 
 	            $response[] = $ticketDetails;

@@ -1,3 +1,1 @@
-<div>
-	<?php echo $data; ?>
-</div>	
+<img src="christmas-image.php?days=<?php echo $image; ?>">
