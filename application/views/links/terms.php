@@ -222,12 +222,12 @@
 			<br />
 			26. EFFECTIVE DATE<br />
 			The effective date of this Privacy Policy is 1st November, 2012.
-            <br />
-            27. ROADSHOWS<br />
+            <br /><br />
+            27. ROADSHOWS<br /><br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;27.1 Campaign Terms<br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(i) Creating a campaign does not guarantee the campaigner a show at the venue. If the campaign succeeds then the campaigner is guaranteed a slot.<br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ii) There may be cancellations or postponements of shows based on the discretion of the venues or the TommyJams team in which case the campaigner will be duly informed.<br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(iii) In cases where the campaign succeeds, the ticket sales revenues will be transferred to the campaigner after deduction of the TommyJams fee.<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(iii) In cases where the campaign succeeds, the ticket sales revenues will be transferred to the campaigner after deduction of the TommyJams fee.<br /><br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;27.2 Ticket Purchase Terms<br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(i) The tickets will be provided in email/SMS form to the customers. In case the buyer happens to lose the email/SMS, a duplicate may be requested after providing valid identification proof by contacting us on <i>contact@tommyjams.com</i>.<br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ii) The tickets are transferrable, but remember that once a ticket is used by one person at a venue, the tickets cannot be used by another person.<br />
@@ -240,7 +240,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(viii) We reserve the right to cancel any order that further to investigation we deem to be possibly of a fraudulent nature. These checks may include, but not be limited to, a request to be provided with an original credit or debit card statement, attempts to contact a customer by telephone, reference to records to check for other fraudulent activity at an address.<br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ix) We will not share your personal information for marketing or any other purposes without your consent unless where required by law.<br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(x) If you have registered your interest with TommyJams and/or any of our associated companies, and thereby given your consent, you may be contacted with relevant promotions, offers or information that you have expressed an interest in or that might be of interest to you.<br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(xi) We will always respect your privacy and any personal communication between you and ourselves. We will always comply with any data protection legislation currently in force.<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(xi) We will always respect your privacy and any personal communication between you and ourselves. We will always comply with any data protection legislation currently in force.<br /><br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;27.3 Refund Terms<br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(i) Once purchased, tickets cannot be refunded or returned unless the event is cancelled, moved to another date, or if details of the event are significantly changed after an order is placed (significant changes being a change of venue or show time).<br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ii) If the campaign of the artist fails, which is solely up to the discretion and terms of the TommyJams team, performer, and venue, the ticket price will be refunded in full within 10 business days.<br />
@@ -249,7 +249,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(v) We advise the use of secure mail when returning tickets as we cannot guarantee refunds without proper communication channel being used. You should also include a copy of the email or letter if requested, or a covering note containing your order reference number and contact information. On receipt, TommyJams will refund the customer the face value of the tickets using the same method as used to purchase them.<br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(vi) Please note, in the event of an event being cancelled or postponed, TommyJams cannot be held responsible for any costs incurred by the customer for travel, accommodation or any other related service.
             It is the responsibility of the customer to inform TommyJams of any change of address, contact phone number or email address, both before and after receipt of the goods. Please note that our preferred method of contact for customers booking online is by email, so care should be taken to provide a current, valid email address.<br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(vii) By ordering you agree that the tickets are for the personal use of you and your party only, and will not be resold. Any resale or attempt to resell the tickets at a price higher than purchased will result in your orders being cancelled without prior notification.<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(vii) By ordering you agree that the tickets are for the personal use of you and your party only, and will not be resold. Any resale or attempt to resell the tickets at a price higher than purchased will result in your orders being cancelled without prior notification.<br /><br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;27.4 Rewards Terms<br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(i) Rewards are provided at the sole discretion of the Campaigner and is a contract between the Campaigner and the Backer only.<br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(ii) Campaigners agree to make a good faith attempt to fulfill each reward by its estimated delivery date, which would generally be on the day of the concert itself unless notified otherwise in a prior communication.<br />
