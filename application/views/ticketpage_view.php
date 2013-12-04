@@ -62,6 +62,7 @@
 				        {
 				        	$countFaces = 0;
 				            $facesToShow = 5;
+				            $ids = array();
 
 	               			$locationId = (json_encode($locationId)); 
               		  		foreach(json_decode($locationId) as $row)
@@ -70,7 +71,7 @@
                 				if($countFaces < $facesToShow)
                 				print("<a href='https://facebook.com/$id' class='social-list-fb-event-href' target='_blank'><img src='https://graph.facebook.com/$id/picture?type=square' class='social-list-fb-event-img'></a>");
               					
-              					$ids[$countFaces] = array($id);
+              					$ids[] = $id;
 
               					$countFaces++;
               				}
