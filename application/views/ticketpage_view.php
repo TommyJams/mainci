@@ -70,7 +70,7 @@
                 				if($countFaces < $facesToShow)
                 				print("<a href='https://facebook.com/$id' class='social-list-fb-event-href' target='_blank'><img src='https://graph.facebook.com/$id/picture?type=square' class='social-list-fb-event-img'></a>");
               					
-              					$ids[] = array($id);
+              					$ids[$countFaces] = array($id);
 
               					$countFaces++;
               				}
