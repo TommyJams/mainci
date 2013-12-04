@@ -76,10 +76,6 @@
               				}
 
               				error_log("Fan IDs are: ".json_encode($ids));
-
-              				$ids = json_encode($ids);
-
-              				error_log("message: ".$ids);
               			}
           			?>
           			<div class="text-center d-tj-offset-top-30" onclick="sendRequest('<? print($ids); ?>')" >

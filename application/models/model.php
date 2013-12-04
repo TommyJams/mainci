@@ -1191,6 +1191,8 @@ class Model extends CI_Model{
 
 					$friend_id_location = $value["id"];
 
+					error_log("Location ID: ".$friend_id_location);
+
 					$split=explode(",", $location_name); //Eg. Split "Bangalore, India" into "Bangalore" and "India"
 		            if (isset($split[2])) //Eg. "Bankok, Krung Thep, Thailand"
 		            {
@@ -1256,7 +1258,7 @@ class Model extends CI_Model{
 			$this->load->helper('functions');
 
 			// Get posted data
-	    	$ids = $this->input->post("ids");
+	    	$ids = json_encode($this->input->post("ids"));
 
 	    	error_log("IDs: ".$ids);
 
