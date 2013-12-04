@@ -1262,6 +1262,9 @@ class Model extends CI_Model{
 	    	$ids = json_encode($this->input->post("ids"));
 
 	    	error_log("IDs: ".$ids);
+	    	error_log("IDs[0]: ".$ids[0]);
+	    	error_log("IDs[1]: ".$ids[1]);
+	    	error_log("IDs[2]: ".$ids[2]);
 
 			// Access Token
 			$app_access_token = $this->facebook->getAccessToken();
