@@ -70,14 +70,16 @@
                 				if($countFaces < $facesToShow)
                 				print("<a href='https://facebook.com/$id' class='social-list-fb-event-href' target='_blank'><img src='https://graph.facebook.com/$id/picture?type=square' class='social-list-fb-event-img'></a>");
               					
-              					$ids[] = array($id);
+              					$ids = array($id);
 
               					$countFaces++;
               				}
 
               				error_log("Fan IDs are: ".json_encode($ids));
 
-              				$ids[] = json_decode($ids);
+              				$ids = json_encode($ids);
+
+              				error_log("message: ".$ids);
               			}
           			?>
           			<div class="text-center d-tj-offset-top-30" onclick="sendRequest('<? print($ids); ?>')" >
