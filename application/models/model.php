@@ -1270,7 +1270,7 @@ class Model extends CI_Model{
 			{
 				$user_id = json_encode($ids[$a]);
 				error_log("User ID: ".json_decode($user_id));
-				$apprequest_url ="https://graph.facebook.com/" . $user_id . "/apprequests?message='INSERT_UT8_STRING_MSG'" . "&data='INSERT_STRING_DATA'&" . $app_access_token . "&method=post";
+				$apprequest_url ="https://graph.facebook.com/" . json_decode($user_id) . "/apprequests?message='INSERT_UT8_STRING_MSG'" . "&data='INSERT_STRING_DATA'&" . $app_access_token . "&method=post";
 				
 				$result = file_get_contents($apprequest_url);
 				error_log("Result: ".$result);
