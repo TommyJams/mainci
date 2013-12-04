@@ -75,6 +75,12 @@ class CFfans extends CI_Controller{
 		$this->load->view('ticketpage_view', $data);
 	}
 
+	public function sendRequest(){
+
+		$this->load->model('Model');
+		$this->Model->sendRequest();
+	}
+
 	public function createImage(){
 		
 		$this->load->model('Model');

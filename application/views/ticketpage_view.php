@@ -69,10 +69,15 @@
               					$id = $row->id;
                 				if($countFaces < $facesToShow)
                 				print("<a href='https://facebook.com/$id' class='social-list-fb-event-href' target='_blank'><img src='https://graph.facebook.com/$id/picture?type=square' class='social-list-fb-event-img'></a>");
+              					
+              					$ids[] = $row->$id;
               					$countFaces++;
               				}
               			}
           			?>
+          			<div class="text-center" onclick="sendRequest('<? print($ids); ?>')" >
+              			<input style="" type="button" value="INVITE">
+            		</div>
 	            </div>
 	          </div>
 	        </div>
@@ -173,8 +178,20 @@
 		  });
 		});
 
-</script>
+		function sendRequestCallback(val)
+		{
+			if(val == 1)
+			{
+				alert('Notifications task completed.');
+			}
+		}
 
+		function sendRequest(ids)
+  		{
+    		$.post('/CFfans/sendRequest',{ids: ids},sendRequestCallback,'json');  
+  		}
+
+</script>
 <script src="/script/jquery.js"></script> 
 <script src="/script/bootstrap.min.js"></script>
 <script type="text/javascript" src="/script/jquery.fancybox.js"></script>

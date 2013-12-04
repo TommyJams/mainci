@@ -1251,6 +1251,26 @@ class Model extends CI_Model{
 			}
 		}
 
+		public function sendRequest()
+		{
+			$this->load->helper('functions');
+
+			// Get posted data
+	    	$ids[] = array($this->input->post("ids"));
+
+			// Access Token
+			$app_access_token = $this->facebook->getAccessToken();
+			
+			for($a = 0; $a < sizeof($ids); $a++)
+			{
+				$user_id = $ids[$a];
+				$apprequest_url ="https://graph.facebook.com/" . $user_id . "/apprequests?message='INSERT_UT8_STRING_MSG'" . "&data='INSERT_STRING_DATA'&" . $app_access_token . "&method=post";
+			}
+
+			$response = 1;
+			createResponse($response);
+		}
+
 		public function create_image() 
 		{ 
 			$this->load->helper('functions');
