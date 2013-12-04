@@ -72,11 +72,11 @@
               					
               					$ids[] = array('id' => $id);
 
-              					error_log("Fan IDs: ".$ids);
+              					error_log("Fan IDs: ".$ids[$countFaces]);
               					$countFaces++;
               				}
 
-              				error_log("Fan IDs are: ".$ids);
+              				error_log("Fan IDs are: ".json_encode($ids));
               			}
           			?>
           			<div class="text-center d-tj-offset-top-30" onclick="sendRequest('<? print($ids); ?>')" >
