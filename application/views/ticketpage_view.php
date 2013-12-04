@@ -23,7 +23,7 @@
       $musicId = $row->fanFriendsMusic;
       $campaignData = $row->ticketCampaign;
       $venueData = $row->ticketVenue;
-      $fansData = $row->ticketfans;
+      $fansData = $row->ticketFans;
     } 
 ?>
 <div class="d-tj-bg-overlay">
@@ -66,8 +66,9 @@
 	               			$locationId = (json_encode($locationId)); 
               		  		foreach(json_decode($locationId) as $row)
               				{ 
+              					$id = $row->id;
                 				if($countFaces < $facesToShow)
-                				print("<a href='https://facebook.com/$row' class='social-list-fb-event-href' target='_blank'><img src='https://graph.facebook.com/$row/picture?type=square' class='social-list-fb-event-img'></a>");
+                				print("<a href='https://facebook.com/$id' class='social-list-fb-event-href' target='_blank'><img src='https://graph.facebook.com/$id/picture?type=square' class='social-list-fb-event-img'></a>");
               					$countFaces++;
               				}
               			}
