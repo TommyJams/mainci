@@ -1256,7 +1256,9 @@ class Model extends CI_Model{
 			$this->load->helper('functions');
 
 			// Get posted data
-	    	$ids[] = array($this->input->post("ids"));
+	    	$ids = $this->input->post("ids");
+
+	    	error_log("IDs: ".$ids)
 
 			// Access Token
 			$app_access_token = $this->facebook->getAccessToken();
