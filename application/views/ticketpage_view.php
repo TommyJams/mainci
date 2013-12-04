@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>TommyJams - Payment Portal</title>
+<title>TommyJams - Tickets</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="favicon.ico" rel="shortcut icon">
 <!-- Bootstrap -->
@@ -16,6 +16,16 @@
 
 </head>
 <body>
+<? $ticket_data = (json_decode($ticket_data));
+    foreach($ticket_data as $row)
+    { 
+      $locationId = $row->fanFriendsLocation;
+      $musicId = $row->fanFriendsMusic;
+      $campaignData = $row->ticketCampaign;
+      $venueData = $row->ticketVenue;
+      $fansData = $row->ticketfans;
+    } 
+?>
 <div class="d-tj-bg-overlay">
   	<div class="container d-tj-container"> <a title="Revolutionizing Live Entertainment" href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a>
   		<div class="d-tj-box">
@@ -47,7 +57,21 @@
 	          <div class="col-md-12 d-tj-col-1-bg" >
 	            <div class="d-tj-events" >
 	              <h3>INVITE FRIENDS</h3> 
-	               
+	               <? 	
+	               		if(isset($locationId))
+				        {
+				        	$countFaces = 0;
+				            $facesToShow = 5;
+
+	               			$locationId = (json_encode($locationId)); 
+              		  		foreach(json_decode($locationId) as $row)
+              				{ 
+                				if($countFaces < $facesToShow)
+                				print("<a href='https://facebook.com/$row' class='social-list-fb-event-href' target='_blank'><img src='https://graph.facebook.com/$row/picture?type=square' class='social-list-fb-event-img'></a>");
+              					$countFaces++;
+              				}
+              			}
+          			?>
 	            </div>
 	          </div>
 	        </div>
