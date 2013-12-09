@@ -16,10 +16,19 @@
 <div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a title="Revolutionizing Live Entertainment" href="http://www.tommyjams.com/" class="d-tj-logo"><img src="img/tj.jpg" height="64" alt=""/></a>
 
-  	<h3> Site is undermaintenance. </h3>
+  	<h3 style="margin-top:50px"> Site is undermaintenance. </h3>
   </div>
+
+  <!-- Footer  -->      
+    <?
+      include("include/footer.php");
+    ?>
+    <!-- /Footer  -->
+
 </div>
 
+<script src="/script/jquery.js"></script> 
+<script src="/script/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> 
 <script type="text/javascript" language="javascript" src="/script/jquery.carouFredSel.packed.js"></script> 
 <script type="text/javascript" src="/script/jquery.fancybox.js"></script>
