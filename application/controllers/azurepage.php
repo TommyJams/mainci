@@ -12,7 +12,7 @@ class Azurepage extends CI_Controller{
 
 	public function landingPage(){
 		
-		$this->load->model('Model');
+		//$this->load->model('Model');
         //$data['featuredCampaigns'] = json_encode($this->Model->getFeaturedCampaign());
 
 		$this->load->view('landingpage_view');
