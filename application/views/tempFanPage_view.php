@@ -13,7 +13,7 @@
 
 </head>
 <body>   
-<div class="d-tj-bg-overlay" style="height:100%">
+<div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a title="Revolutionizing Live Entertainment" href="http://www.tommyjams.com/" class="d-tj-logo"><img src="img/tj.jpg" height="64" alt=""/></a>
 
   	<h3 style="margin-top:50px"> Site is under maintenance. </h3>
