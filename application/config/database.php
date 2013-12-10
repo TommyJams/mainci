@@ -52,12 +52,12 @@
 */
 
 $active_group = 'default';
-$active_record = FALSE;
+$active_record = TRUE;
 
 $db['default']['hostname'] = '';
 $db['default']['username'] = '';
 $db['default']['password'] = '';
-$db['default']['database'] = 'mysql';
+$db['default']['database'] = '';
 $db['default']['dbdriver'] = '';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
