@@ -40,19 +40,19 @@ define('DB_NAME', 'tommyjam_wrd1');
 
 /** MySQL database username */
 
-define('DB_USER', DATABASE_USERNAME);
+define('DB_USER', 'tommyjams');
 
 
 
 /** MySQL database password */
 
-define('DB_PASSWORD', DATABASE_PASSWORD);
+define('DB_PASSWORD', '1tommyblah');
 
 
 
 /** MySQL hostname */
 
-define('DB_HOST', DATABASE_HOSTNAME);
+define('DB_HOST', 'tjbackup1.cloudapp.net');
 
 
 
