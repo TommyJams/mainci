@@ -12,7 +12,7 @@ class CFtour extends CI_Controller{
           $this->load->library('email');
     }
 
-	/*public function tourPage(){
+	public function tourPage(){
 
         $this->load->helper('functions');
 
@@ -20,12 +20,7 @@ class CFtour extends CI_Controller{
         $data['featuredCampaigns'] = json_encode($this->Model->getFeaturedCampaign());
 
 		$this->load->view('tours_view', $data);
-	}*/
-
-    public function tourPage(){
-
-        $this->load->view('tempTours_view');
-    }
+	}
 
 	public function validateFile(){
 
