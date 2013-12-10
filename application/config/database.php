@@ -51,10 +51,10 @@
 | the active record class
 */
 
-$active_group = 'default';
+/*$active_group = 'default';
 $active_record = TRUE;
 
-/*$db['default']['hostname'] = DATABASE_HOSTNAME;
+$db['default']['hostname'] = DATABASE_HOSTNAME;
 $db['default']['username'] = DATABASE_USERNAME;
 $db['default']['password'] = DATABASE_PASSWORD;
 $db['default']['database'] = DATABASE;
