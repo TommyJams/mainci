@@ -2,11 +2,16 @@
 
 class CFfans extends CI_Controller{
 
-	public function fanPage(){
+	/*public function fanPage(){
 
 		$this->load->model('Model');
         $data['featuredCampaigns'] = json_encode($this->Model->getFeaturedCampaign());
 		$this->load->view('fanPage_view', $data);
+	}*/
+
+	public function fanPage(){
+
+		$this->load->view('tempFanPage_view');
 	}
 
 	public function campaignPage(){
