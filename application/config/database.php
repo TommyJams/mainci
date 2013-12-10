@@ -54,11 +54,11 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = '';
-$db['default']['username'] = '';
-$db['default']['password'] = '';
-$db['default']['database'] = '';
-$db['default']['dbdriver'] = '';
+/*$db['default']['hostname'] = DATABASE_HOSTNAME;
+$db['default']['username'] = DATABASE_USERNAME;
+$db['default']['password'] = DATABASE_PASSWORD;
+$db['default']['database'] = DATABASE;
+$db['default']['dbdriver'] = DATABASE_DRIVER;
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;
@@ -68,7 +68,7 @@ $db['default']['char_set'] = 'utf8';
 $db['default']['dbcollat'] = 'utf8_general_ci';
 $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
-$db['default']['stricton'] = FALSE;
+$db['default']['stricton'] = FALSE;*/
 
 /* End of file database.php */
 /* Location: ./application/config/database.php */
