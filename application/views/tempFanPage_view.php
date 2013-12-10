@@ -19,12 +19,6 @@
   	<h3 style="margin-top:50px"> Site is under maintenance. </h3>
   </div>
 
-  <!-- Footer  -->      
-    <?
-      include("include/footer.php");
-    ?>
-    <!-- /Footer  -->
-
 </div>
 
 <script src="/script/jquery.js"></script> 
