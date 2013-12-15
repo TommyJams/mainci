@@ -552,7 +552,7 @@
     submitNewsletterForm();
   });
 
-  $('body').on('click', '.watchdemo', function(){
+  /*$('body').on('click', '.watchdemo', function(){
         $.fancybox(
                 $('.watchdemo-form').html(),
                 {
@@ -564,7 +564,7 @@
                     'hideOnContentClick': false,
                  }
             );  
-  });
+  });*/
 });
   
 </script> 
