@@ -163,6 +163,7 @@ input[type="button"]:hover, input[type="submit"]:hover {
 	background:#3c9d02;
 	width:90%;
 	height: 8px;
+	max-width: 100%;
 }
 .d-tj-slide-btm {
 	min-height:10px;
