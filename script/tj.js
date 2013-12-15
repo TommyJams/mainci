@@ -60,7 +60,7 @@ jQuery(function($){
 		 '<strong>File upload error</strong> '+msg+' </div>').prependTo('#alerts').fadeOut(5000);
 	};
     initToolbarBootstrapBindings();  
-	$('#editor').wysiwyg({ fileUploadError: showErrorAlert} );
+	//$('#editor').wysiwyg({ fileUploadError: showErrorAlert} );
     window.prettyPrint && prettyPrint();
   });
   
