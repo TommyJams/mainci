@@ -10,10 +10,6 @@ class Azurepage extends CI_Controller{
 		$this->load->view('azure_view');
 	}
 
-	public function temp(){
-		$this->load->view('temp_view');
-	}
-
 	public function landingPage(){
 		
 		$this->load->model('Model');
