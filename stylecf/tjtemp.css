@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
-body {
+/*body {
 	background:#000 url(../img/bg-img-1.jpg) left top;
 }
 body, h1, h2, h3, h4 {
@@ -34,7 +34,7 @@ input[type="button"], input[type="submit"] {
 input[type="button"]:hover, input[type="submit"]:hover {
 	color:#fff;
 }
-/* Custom Classes */
+/* Custom Classes 
 .d-tj-bg-overlay {
 	background:url(../img/background_overlay.png) top left;
 	position:absolute;
@@ -75,7 +75,7 @@ input[type="button"]:hover, input[type="submit"]:hover {
 	overflow: hidden;
 }
 .d-tj-tour img {
-	/*width:100%;*/
+	/*width:100%;
 	max-height: 170px;
 }
 .d-tj-tour div.col-md-6 {
@@ -192,7 +192,7 @@ input[type="button"]:hover, input[type="submit"]:hover {
 }
 .d-tj-circle {
 	background: #ffcc00;
-	/*margin-bottom:50px;*/
+	/*margin-bottom:50px;
 	position: relative;
 }
 .d-tj-bg-strip {
@@ -216,7 +216,7 @@ input[type="button"]:hover, input[type="submit"]:hover {
 .d-tj-tour h3 {
 	margin-top: 0;
 	font-weight:600;
-	margin-bottom: 15px;/*margin-left: 10px;*/
+	margin-bottom: 15px;/*margin-left: 10px;
 }
 .d-tj-tour-right h3 {
 	margin-left:0px !important;
@@ -226,7 +226,7 @@ input[type="button"]:hover, input[type="submit"]:hover {
 }
 .d-tj-tour h4 {
 	font-family: 'Dosis';
-	margin-top: 20px;/* font-family:Arial, Helvetica, sans-serif */
+	margin-top: 20px;/* font-family:Arial, Helvetica, sans-serif 
 }
 .d-tj-tour span {
 	font-weight: 700;
@@ -255,7 +255,7 @@ input[type="button"]:hover, input[type="submit"]:hover {
 	margin-top: 8px;
 	font-family:Arial, Helvetica, sans-serif;
 }
-/* slider */
+/* slider 
 .d-tj-campaign-slide .caroufredsel_wrapper {
 	height:300px !important;
 }
@@ -263,7 +263,7 @@ input[type="button"]:hover, input[type="submit"]:hover {
 	height:320px !important;
 }
 .list_carousel {
-	/*margin: 0 0 30px 60px;*/
+	/*margin: 0 0 30px 60px;
 	width: 360px;
 }
 .list_carousel ul {
@@ -297,7 +297,7 @@ input[type="button"]:hover, input[type="submit"]:hover {
 	color: #fff;
 	padding: 20px;
 	background-image: url(../img/icon_left_arrow.png);
-	background-position: 0px 0px;/*margin-left: 10px;*/
+	background-position: 0px 0px;/*margin-left: 10px;
 }
 .next {
 	float: right;
@@ -308,7 +308,7 @@ input[type="button"]:hover, input[type="submit"]:hover {
 	color: #fff;
 	padding: 20px;
 	background-image: url(../img/icon_right_arrow.png);
-	background-position: 0px 0px;/*margin-right: 10px;*/
+	background-position: 0px 0px;/*margin-right: 10px;
 }
 .next:hover {
 	background:#FFCC00;
