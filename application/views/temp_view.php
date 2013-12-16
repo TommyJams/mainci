@@ -8,8 +8,8 @@
 <!-- Bootstrap -->
 <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
 <link href="/stylecf/bootstrap.min.css" rel="stylesheet" media="screen">
-<!--<link href="/stylecf/tj.css" rel="stylesheet" media="screen">-->
 <link rel="stylesheet" href="/style/supersized/supersized.css" type="text/css" media="screen" />
+<link href="/stylecf/tj.css" rel="stylesheet" media="screen">
 <link rel="stylesheet" type="text/css" href="/style/jquery.qtip.css"/>
 <link rel="stylesheet" href="/stylecf/jquery.fancybox.css" type="text/css" media="screen" />
 <script type="text/javascript" src="<?php echo base_url();?>script/linkify.js"></script>
