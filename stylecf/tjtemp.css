@@ -77,7 +77,7 @@ input[type="button"]:hover, input[type="submit"]:hover {
 .d-tj-tour img {
 	/*width:100%;
 	max-height: 170px;
-}
+}*/
 .d-tj-tour div.col-md-6 {
 	margin-bottom: -99999px;
 	padding-bottom: 99999px;
@@ -192,7 +192,7 @@ input[type="button"]:hover, input[type="submit"]:hover {
 }
 .d-tj-circle {
 	background: #ffcc00;
-	/*margin-bottom:50px;
+	/*margin-bottom:50px;*/
 	position: relative;
 }
 .d-tj-bg-strip {
@@ -216,7 +216,7 @@ input[type="button"]:hover, input[type="submit"]:hover {
 .d-tj-tour h3 {
 	margin-top: 0;
 	font-weight:600;
-	margin-bottom: 15px;/*margin-left: 10px;
+	margin-bottom: 15px;/*margin-left: 10px;*/
 }
 .d-tj-tour-right h3 {
 	margin-left:0px !important;
@@ -226,8 +226,8 @@ input[type="button"]:hover, input[type="submit"]:hover {
 }
 .d-tj-tour h4 {
 	font-family: 'Dosis';
-	margin-top: 20px;/* font-family:Arial, Helvetica, sans-serif 
-}*/
+	margin-top: 20px;/* font-family:Arial, Helvetica, sans-serif */
+}
 .d-tj-tour span {
 	font-weight: 700;
 	font-size: 24px;
