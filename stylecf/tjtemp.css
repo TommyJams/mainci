@@ -35,14 +35,14 @@ input[type="button"]:hover, input[type="submit"]:hover {
 	color:#fff;
 }
 /* Custom Classes */
-/*.d-tj-bg-overlay {
+.d-tj-bg-overlay {
 	background:url(../img/background_overlay.png) top left;
 	position:absolute;
 	top:0;
 	left:0;
 	width:100%;
-	z-index:-1;
-}*/
+	/*z-index:-1;*/
+}
 .d-tj-container {
 	max-width:970px;
 	margin-top:40px;
