@@ -41,7 +41,6 @@ input[type="button"]:hover, input[type="submit"]:hover {
 	top:0;
 	left:0;
 	width:100%;
-	z-index:-1;
 }
 .d-tj-container {
 	max-width:970px;
