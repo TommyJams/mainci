@@ -871,7 +871,6 @@ div[data-role="editor-toolbar"] {
 	background-image: -webkit-linear-gradient(top, #FACF24, #FFCC00);
 	background-image: -o-linear-gradient(top, #FACF24, #FFCC00);
 	background-image: linear-gradient(to bottom, #FACF24, #FFCC00);
-);
 	background-repeat: repeat-x;
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff2f96b4', GradientType=0);
 	border-color: #2f96b4 #2f96b4 #1f6377;
