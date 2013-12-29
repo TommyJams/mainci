@@ -971,6 +971,8 @@ class Model extends CI_Model{
 								$friend_payed_id = $value["id"];
 								$friend_payed_name = $value["name"];
 
+								error_log("Friend IDs: ".$friend_payed_id);
+
 								$fanFriendsPayed[] = array(
 														'id' 			=> $friend_payed_id,
 														'name' 			=> $friend_payed_name,
