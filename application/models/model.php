@@ -960,7 +960,7 @@ class Model extends CI_Model{
 					$payedId = $row->fb_id;
 					$ticket_amount = $row->ticket_amount;
 
-					$fqlFriends = "SELECT uid FROM friend WHERE uid = $payedId";
+					$fqlFriends = "SELECT uid FROM friend WHERE uid1 = $payedId";
 
 		           	$paramFriends  =  array(
 		                  'method'    => 'fql.query',
