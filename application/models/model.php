@@ -960,30 +960,6 @@ class Model extends CI_Model{
 					$payedId = $row->fb_id;
 					$ticket_amount = $row->ticket_amount;
 
-					$fqlFriends = "SELECT uid FROM friend WHERE uid1 = $payedId";
-
-		           	$paramFriends  =  array(
-		                  'method'    => 'fql.query',
-		                  'query'     => $fqlFriends,
-		                  'access_token' => $access_token,
-		                  'callback'  => ''
-		           	);
-
-		           	$fqlFriendsResult = $this->facebook->api($paramFriends);
-
-		           	//getting list of all attendees
-		           	foreach( $fqlFriendsResult as $keys => $values ){
-		               	
-		               	$friend_payed_id = $values["uid"];
-						$friend_payed_name = $values["name"];
-
-		               	$fanFriendsPayed[] = array(
-														'id' 			=> $friend_payed_id,
-														'name' 			=> $friend_payed_name,
-													);
-		           	}
-
-					/*
 					$fan_friends = $this->facebook->api('/me/friends?uid='.$payedId, 'GET', array('access_token'=>$access_token));
 
 					if(isset($fan_friends['data']))
@@ -1003,7 +979,7 @@ class Model extends CI_Model{
 													);
 							}
 						}
-					}*/
+					}
 				}
 			}
 
