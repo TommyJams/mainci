@@ -175,6 +175,8 @@
 
     <div class="d-tj-black-box d-tj-offset-top-30" style="height:300px">
       <h3 style="margin-top: 0px;">SOCIAL SHARE</h3>
+
+      <!-- Facetiles of paying friends fans -->
       <div class='pull-left' style='clear:left;'>
         <?
           if(isset($fanFriendsPayed))
@@ -199,6 +201,80 @@
               }
             }
           }
+        ?>
+      </div>
+
+      <!-- Facetiles of paying fans -->
+      <div class='pull-left' style='clear:left;'>
+        <?
+          if(isset($fanPayed))
+          {
+            $countFaces1 = 0;
+            $facesToShow1 = 3;
+
+            $faceRow = (json_encode($fanPayed)); 
+            foreach(json_decode($faceRow) as $row)
+            { 
+              $id = $row->id;
+              $name = $row->name;
+
+              $friendRow = (json_encode($fanFriendsPayed)); 
+              foreach(json_decode($friendRow) as $row)
+              {   
+                $friendId = $row->id;
+
+                if($countFaces1 < $facesToShow1 && $id != $friendId)
+                  print("<a href='https://facebook.com/$id' class='social-list-fb-event-href' target='_blank'><img src='https://graph.facebook.com/$id/picture?type=square' class='social-list-fb-event-img'></a>");
+                $countFaces++;
+              }
+              if($countFaces1 > $facesToShow1 && $id != $friendId)
+              {
+                $countFaces1 -= $facesToShow1;
+                print("<a href='' class='social-list-fb-event-href' style='padding: 10px;'> and $countFaces others</a>");
+              }
+            }
+          }
+        ?>
+      </div>
+
+      <!-- Facetiles of user friends who have joined fb event-->
+      <div class='pull-left' style='clear:left;'>
+      <?
+      $countFaces = 0;
+      $facesToShow = 3;
+      foreach($fbEventJoinees as $joineesId)
+      {
+        $friendEventRow = (json_encode($fanFriendsPayed)); 
+        foreach(json_decode($friendEventRow) as $row)
+        { 
+          $id = $row->id;
+           
+          if($joineesId == $id && $countFaces < $facesToShow)
+          {
+            print("<a href='https://facebook.com/$joineesId' class='social-list-fb-event-href' target='_blank'><img src='https://graph.facebook.com/$joineesId/picture?type=square' class='social-list-fb-event-img'></a>");
+            $countFaces++;
+          }
+        }
+      }
+      ?>
+      </div>
+
+      <!-- Facetiles of users who have joined fb event-->
+      <div class='pull-left' style='clear:left;'>
+        <?
+        $countFaces = 0;
+        $facesToShow = 3;
+        foreach($fbEventJoinees as $row)
+        {
+          if($countFaces < $facesToShow)
+            print("<a href='https://facebook.com/$row' class='social-list-fb-event-href' target='_blank'><img src='https://graph.facebook.com/$row/picture?type=square' class='social-list-fb-event-img'></a>");
+          $countFaces++;
+        }
+        if($countFaces > $facesToShow)
+        {
+          $countFaces -= $facesToShow;
+          print("<a href='' class='social-list-fb-event-href' style='padding: 10px;'> and $countFaces others</a>");
+        }
         ?>
       </div>
       

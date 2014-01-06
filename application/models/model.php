@@ -1021,14 +1021,14 @@ class Model extends CI_Model{
 					$fan_payed_id = $row->fb_id;
 					$fan_payed_name = $row->name; 
 
-					error_log(("Fans Payed ID: ".$fan_payed_id));
-
 					if($ticket_amount > 0)
 					{
 						$fanPayed[] = array(
 												'id' 			=> $fan_payed_id,
 												'name' 			=> $fan_payed_name
 											);
+
+						error_log(("Fans Payed ID: ".$fan_payed_id));
 					}	
 				}
 			}
