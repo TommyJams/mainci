@@ -1020,6 +1020,7 @@ class Model extends CI_Model{
 				{
 					$fan_payed_id = $row->fb_id;
 					$fan_payed_name = $row->name; 
+					$ticket_amount = $row->ticket_amount;
 
 					if($ticket_amount > 0)
 					{
