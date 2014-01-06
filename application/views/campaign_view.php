@@ -311,12 +311,12 @@
                       <input class="text-center pull-right" type="text" id="<? print($ticket_type); ?>count" name="<? print($ticket_type); ?>count" placeholder="0" value="0" disabled="disabled" style="width:30px;height:30px;margin-right:5px;margin-left:5px;border:1px solid #ffffff;font-size:20px;color:white;" />
                       <div onclick="ticketCount('<? print($ticket_type); ?>','minus','<? print($amount); ?>','<? print($campaign_id); ?>');" class="btn-minus-count pull-right" style="margin-top:5px"><a class="btn-minus-count-hover"></a></div> 
                     </h4>
-                    <h5 style="width:200px" >
+                    <h5 style="width:200px;margin-top:15px" >
                       <? print($pledge_desc); ?>
                     </h5>
                   </div>
                   <div>  
-                    <h5 style="font-size:25px !important;font-family:'Dosis',sans-serif;margin-top:-30px;margin-left:240px">&#8377 </h5>
+                    <h5 style="font-size:25px !important;font-family:'Dosis',sans-serif;margin-top:-30px;margin-left:238px">&#8377 </h5>
                     <h5> 
                       <input class="text-center pull-right" type="text" id="<? print($ticket_type); ?>total" name="<? print($ticket_type); ?>total" value="0" disabled="disabled" style="border:1px solid #000;font-size:25px;color:white;margin-top:-37px;width:65px;font-family:'Dosis',sans-serif" />
                     </h5>   
