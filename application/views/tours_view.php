@@ -69,6 +69,30 @@
 <div class="d-tj-bg-overlay">
   <div class="container d-tj-container"> <a title="Revolutionizing Live Entertainment" href="http://www.tommyjams.com/" class="d-tj-logo"><img src="img/tj.jpg" height="64" alt=""/></a>
     
+    <? $tours = (json_decode($tours));
+    foreach($tours as $tour){ ?>
+    <?
+      $tour_id = $tour->tour_id;
+      $tour_name = $tour->tour_name;
+      $applyBy = $tour->applyBy;
+      $startCamp = $tour->startCamp;
+      $endCamp = $tour->endCamp;
+      $tourDate = $tour->tourDate;
+      $target = $tour->target;
+      $venues = $tour->venues;
+      $login_url = $tour->login_url;
+
+      $date1 = strtotime($applyBy);
+      $applyBy = date('jS F Y', $date1);
+
+      $date2 = strtotime($startCamp);
+      $startCamp = date('jS F Y', $date2);
+
+    ?>
+    <? 
+    } 
+    ?>
+    
     <!--cirle connect-->
     <div class="d-tj-black-box d-tj-offset-top-40 d-tj-circle" >
       <h3>How it works?</h3>
