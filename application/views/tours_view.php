@@ -89,56 +89,7 @@
       $startCamp = date('jS F Y', $date2);
 
     ?>
-    <div class="d-tj-box " >
-      <div class="row d-tj-tour">
-        <div class="col-sm-12 col-xs-12 col-md-6">
-          <div class="row" style="margin:0;">
-            
-              <h3><? print($tour_name); ?></h3>
-            
-          </div>
-          <div class="row text-center">
-            <? foreach($venues as $venue){ ?>
-            <?
-              $venue_name = $venue->venue_name;
-              $venue_id = $venue->venue_id;
-              $city = $venue->city;
-              $image = $venue->image;
-              $tour_date = $venue->tour_date;
-
-              $date = strtotime($tour_date);
-              $tour_date = date('jS F Y', $date);
-
-            ?>
-            <div class="col-md-6 col-sm-6  d-tj-tour-left" >  
-            <div>
-              <a href="javascript:;" onclick="venueBox(<? print($venue_id); ?>);" data-toggle="modal" >
-                <img src="img/temp/<? print($image); ?>" alt="" style="max-height:150px;margin-top:20px">
-              </a>
-            </div>
-              <h4>
-                <span ><? print($venue_name); ?><br></span> <? print($city); ?><br><? print($tour_date); ?>
-              </h4> 
-            </div>
-            <? 
-              } 
-            ?>
-          </div>
-          
-        </div>
-        <div class="col-sm-12 col-md-6 d-tj-black-box-container">
-          <div class="d-tj-black-box d-tj-tour-right">
-            <h4 class="raise" >APPLY BY: <? print($applyBy); ?></h4>
-            <h4 class="tgt" >START CAMPAIGN: <? print($startCamp); ?></h4>
-            <h3>TARGET: &#8377 <? print($target); ?></h3>
-            <div class="text-center d-tj-offset-top-40">
-              <input type="button" onclick="window.location.href='<?print($login_url);?>'" value="APPLY NOW">
-            <!--  <a type="button" href="editcampaign/<?php // echo $tour_id ?>">APPLY NOW</a> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
     <? 
     } 
     ?>
