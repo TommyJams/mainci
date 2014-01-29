@@ -15,26 +15,16 @@ class Radioone extends CI_Controller{
 		}
 
 		$query = $this->db->query("SELECT * FROM radioone ORDER BY streamdate DESC LIMIT 5;");
-		if ($query1->num_rows() > 0)
+		if ($query->num_rows() > 0)
 		{
-			$q1result = $query1->result();
-			foreach ($q1result as $rowPledge)
+			$qresult = $query->result();
+			foreach ($qresult as $row)
 			{
-				$pledges[] = $rowPledge;
+				$data['name'] = $a['name'];
+				$data['image'] = $a['image'];
+				$data['date'] = $a['streamdate'];
+				$data['desc'] = $a['desc'];
 			}
-		}
-
-		$SQLs = "SELECT * FROM `".DATABASE."`.`radioone` ORDER BY streamdate desc";
-		$results = mysql_query($SQLs);
-		
-		if($a = mysql_fetch_assoc($results))
-		{
-			$data['name'] = $a['name'];
-			$data['image'] = $a['image'];
-
-			// new addition
-			$data['date'] = $a['streamdate'];
-			$data['desc'] = $a['desc'];
 		}
 
 		if(isEmpty($data['urlyear']) && isEmpty($data['urlmonth']) && isEmpty($data['urlday']))
