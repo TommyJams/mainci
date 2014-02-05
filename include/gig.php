@@ -53,7 +53,7 @@
 											<option value="Electronic">Electronic</option>
 											<option value="Folk">Folk</option>
 											<option value="Funk">Funk</option>
-											<option value="Goth">Goth</option>
+											<option value="Goth">Fusion</option>
 											<option value="Jazz">Jazz</option>
 											<option value="Metal">Metal</option>
 											<option value="Pop">Pop</option>
