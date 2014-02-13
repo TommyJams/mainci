@@ -15,7 +15,7 @@ class Radioone extends CI_Controller{
 		}
 
 		if($data['urlyear'] && $data['urlmonth'] && $data['urlday'])
-			$SQLs = "SELECT * FROM `".DATABASE."`.`radioone` WHERE streamdate = ".$data['urlyear']."-".$data['urlmonth']."-".$data['urlday'];
+			$SQLs = "SELECT * FROM `".DATABASE."`.`radioone` WHERE streamdate = '".$data['urlyear']."-".$data['urlmonth']."-".$data['urlday']."'";
 		else
 			$SQLs = "SELECT * FROM `".DATABASE."`.`radioone` ORDER BY streamdate desc";
 		$results = mysql_query($SQLs);
