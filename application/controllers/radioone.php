@@ -25,6 +25,17 @@ class Radioone extends CI_Controller{
 			$data['name'] = $a['name'];
 			$data['image'] = $a['image'];
 		}
+		else //No results found, pick the latest upload
+		{
+			$SQLs = "SELECT * FROM `".DATABASE."`.`radioone` ORDER BY streamdate desc";
+			$results = mysql_query($SQLs);
+
+			if($a = mysql_fetch_assoc($results))
+			{
+				$data['name'] = $a['name'];
+				$data['image'] = $a['image'];
+			}
+		}
 
 		$this->load->view('radioone_view', $data);
 
