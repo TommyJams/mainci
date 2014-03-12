@@ -2,6 +2,18 @@
 
 class Azurepage extends CI_Controller{
 
+    function __construct()
+    {
+        // Call the parent constructor
+        parent::__construct();
+
+        // Language
+        if(strstr(current_url(),'es.tommyjams.com'))
+            $this->lang->load('strings', 'espanol');
+        else
+            $this->lang->load('strings', 'english');
+    }
+
 	public function index(){
 		 $this->landingPage();
 	}

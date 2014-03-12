@@ -186,7 +186,7 @@
           <div class="col-md-12 d-tj-book-events-bg" >
             <div class="d-tj-book-events-top"  > 
               <h4 style="font-size:22px" class="text-center">
-                Looking to book events immediately ?
+                <? echo lang('str_book_events');?>
               </h4>
               <h4 class="text-center">
                 <img src="/img/book_events.png" alt="" >
