@@ -22,9 +22,10 @@
 	<div class="boxBody">
 
 		<div id="regionBox" class="parent">
-			<div id="enclosingBlogButton">
-				<a href="/blog" target="_blank">Blog</a>
-			</div>
+			<ul id="enclosingRegions">
+				<li><a href="http://tommyjams.com/index"></a></li>
+				<li><a href="http://es.tommyjams.com/index">Blog</a></li>
+			</ul>
 		</div>
 
 		<div id="blogBox" class="parent">
