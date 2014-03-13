@@ -194,7 +194,7 @@
             </div>
             <div class="text-center d-tj-offset-top-20">
               <!--<input class="watchdemo" data-toggle="modal" href="#watchdemoModal" target="_blank" type="button" value="WATCH DEMO">-->
-              <input onclick="window.open('/index', '_blank');" type="button" value="BOOK EVENTS">
+              <input onclick="window.open('/index', '_blank');" type="button" value="<? echo lang('btn_book_events');?>">
             </div>
           </div>
         </div>
@@ -209,7 +209,7 @@
               </h4>
             </div>
             <div class="text-center d-tj-offset-top-20">
-              <input onclick="window.open('/tours', '_blank');" type="button" value="BOOK TOURS" >
+              <input onclick="window.open('/tours', '_blank');" type="button" value="<? echo lang('btn_book_tours');?>" >
             </div>
           </div>
         </div>
