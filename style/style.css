@@ -698,6 +698,7 @@ a:hover {color:#ccc;text-decoration:none}*/
 #tabMenu {list-style:none; z-index:9999; float:right;}
 #tabMenu li {float:left;height:32px;width:39px;cursor:pointer;cursor:hand}
 
+li.region {background:url(../images/icons/headerWidget/tabRegion.png) no-repeat 0 -32px; margin-left: 1px; margin-top: 1px;}
 li.search {background:url(../images/icons/headerWidget/tabSearch.png) no-repeat 0 -32px; margin-left: 1px; margin-top: 1px;}
 li.blog {background:url(../images/icons/headerWidget/tabStar.png) no-repeat 0 -32px; margin-left: 1px; margin-top: 1px;}
 li.login {background:url(../images/icons/headerWidget/tabLogin.png) no-repeat 0 -32px; margin-left: 1px; margin-top: 1px;}

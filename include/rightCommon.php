@@ -12,6 +12,7 @@
 		  <li class="famous"></li>
 		  <li class="random"></li>
 		-->
+		  <li class="region" title="Region" alt="Region"></li>
 		  <li class="blog" title="Blog" alt="Blog"></li>
 		  <li class="search" title="Search" alt="Search"></li>
 		  <li class="login" title="Login" alt="Login"></li>
@@ -19,6 +20,12 @@
 	</div>
 
 	<div class="boxBody">
+
+		<div id="regionBox" class="parent">
+			<div id="enclosingBlogButton">
+				<a href="/blog" target="_blank">Blog</a>
+			</div>
+		</div>
 
 		<div id="blogBox" class="parent">
 			<div id="enclosingBlogButton">
