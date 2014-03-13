@@ -582,6 +582,29 @@ ul.social-list li a.social-list-blog-edit {
 	background-image:url('/img/social-add-new.png');
 	margin-right: 2px;
 }
+
+/* Regions */
+ul.lang-list li {
+	float: left;
+}
+ul.lang-list li a {
+	width: 60px;
+	height: 40px;
+	margin-left: 17px;
+	margin-top: 10px;
+	display: block;
+	background-position:0px 0px;
+}
+/*ul.lang-list li a:hover {
+	outline: 2px solid #FFF;
+}*/
+ul.lang-list li a.lang-list-india {
+	background-image: url('/img/icon_india.png');
+}
+ul.lang-list li a.lang-list-chile {
+	background-image: url('/img/icon_chile.png');
+}
+
 /* Offsets */
 .d-tj-offset-top-40 {
 	margin-top:40px;
@@ -986,6 +1009,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 	margin: 0;
 	padding:0
 }
+.f-lang {
+	padding: 0;
+}
+.f-lang ul {
+	margin: 0;
+	padding:0
+}
 .f-like {
 	background: #343434;
 	height: 39px;
@@ -1134,6 +1164,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 	text-align: center;
 }
 .f-social ul {
+	margin: 0 auto;
+	width: 180px;
+}
+.f-lang ul {
 	margin: 0 auto;
 	width: 180px;
 }
