@@ -23,8 +23,8 @@
 
 		<div id="regionBox" class="parent">
 			<ul id="enclosingRegions">
-				<li><a href="http://tommyjams.com/index"></a></li>
-				<li><a href="http://es.tommyjams.com/index">Blog</a></li>
+				<li><a class="regionIndia" href="http://tommyjams.com/index"></a></li>
+				<li><a class="regionChile" href="http://es.tommyjams.com/index"></a></li>
 			</ul>
 		</div>
 
