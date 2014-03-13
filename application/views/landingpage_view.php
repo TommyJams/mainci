@@ -202,7 +202,7 @@
           <div class="col-md-12 d-tj-c-tour-bg" >
             <div class="d-tj-c-tour-top"  > 
               <h4 style="font-size:22px" class="text-center">
-                Looking to campaign for cross-city tours ?
+                <? echo lang('str_book_tours');?>
               </h4>
               <h4 class="text-center">
                 <img src="/img/grab_tours.png" alt="" >
@@ -228,16 +228,19 @@
           src="http://www.youtube.com/embed/kcOo3ge5URE" frameborder="0" allowfullscreen></iframe>
         </div>  
         <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
-          <h2>TOMMYJAMS ROADSHOWS </h2>
+          <h2><? echo lang('str_title_roadshows');?></h2>
           <div class="who-campaigns">
             <img align="left" src="/img/roadshows_logo.png" style="margin-right:5px;width:120px">
-            <h5>The RoadShows&#39 campaigns are initiated by the artists for the tours that they want to venture on. Every time you buy a ticket, an artist gets one step closer to his dream tour across various cities in the country. Not only that, you get exclusive access to all the shows which are part of that tour, and even get extra freebies from the band on-the-day to make the event really special for you.
-              <b>Book a ticket now!</b>
+            <h5>
+              <? echo lang('str_desc_roadshows');?>
+              <b>
+                <? echo lang('str_book_roadshows');?>
+              </b>
             </h5>
           </div>
             <div class="text-center" >
-              <input style="margin-top:10px" class="apply-btn" onclick="window.open('/roadshows', '_blank');" type="button" value="ALL CAMPAIGNS">
-              <input style="margin-top:10px" class="apply-btn" onclick="window.open('/tours', '_blank');" type="button" value="START CAMPAIGN">
+              <input style="margin-top:10px" class="apply-btn" onclick="window.open('/roadshows', '_blank');" type="button" value="<? echo lang('btn_all_campaigns'); ?>">
+              <input style="margin-top:10px" class="apply-btn" onclick="window.open('/tours', '_blank');" type="button" value="<? echo lang('btn_start_campaign');?>">
           </div> 
         </div>
       </div>
@@ -251,7 +254,7 @@
         <div class="col-md-6 d-tj-col-1" >
           <div class="col-md-12 d-tj-col-1-bg" >
             <div class="d-tj-events" >
-              <h3>EVENTS</h3>
+              <h3><? echo lang('str_title_events'); ?></h3>
               <div class="event-ticker">
                 <ul>
                   <li>
@@ -327,7 +330,7 @@
         <div class="col-md-6 d-tj-col-1 d-tj-network" >
           <div class="col-md-12 d-tj-col-1-bg" >
             <div class="d-tj-network-content" >
-              <h3>NETWORK WITH US</h3>
+              <h3><? echo lang('str_title_network'); ?></h3>
               <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-20 d-tj-pr10">
                 <div class="col-md-2 col-xs-2 col-sm-2 d-tj-p0 d-tj-offset-top-10" > <img src="img/icon_tweet.png" alt=""> </div>
                 <div class="col-md-10 col-xs-10 col-sm-10 d-tj-p0" >
@@ -346,8 +349,8 @@
                     <!-- Newsletter form -->
                     <form name="newsletter-form" id="newsletter-form" action="" method="post" class="clear-fix">
                     <div class="block">  
-                      <input type="text" name="newsletter-form-mail" id="newsletter-form-mail" placeholder="Your e-mail address" value=""/>
-                      <input type="submit" id="newsletter-form-send" name="newsletter-form-send" class="button" value="Subscribe"/>
+                      <input type="text" name="newsletter-form-mail" id="newsletter-form-mail" placeholder="<? echo lang('btn_your_email'); ?>" value=""/>
+                      <input type="submit" id="newsletter-form-send" name="newsletter-form-send" class="button" value="<? echo lang('btn_subscribe'); ?>"/>
                     </div>
                     </form>
                     <!-- /Newsletter form -->
@@ -365,7 +368,7 @@
     <!--bottom 1 col-->
     <div class="col-md-12 d-tj-offset-top-40" style="background:#000;padding:10px;">
       <div >
-      <h3 style="color:white;margin-left:20px;margin-top:20px;margin-bottom:20px;">AS SEEN IN</h3>
+      <h3 style="color:white;margin-left:20px;margin-top:20px;margin-bottom:20px;"><? echo lang('str_title_seen'); ?></h3>
       <div class="footer layout-10 clear-fix" style="margin-bottom:20px;">   
           <a href="https://www.facebook.com/photo.php?fbid=538074186281265&set=a.387715207983831.97464.330212257067460&type=1&theater" target="_blank">                  
             <img src="image/icon/icon-partner/icon14.png" alt="" style="margin-left: 10px;"/>                
