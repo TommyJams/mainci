@@ -3,8 +3,17 @@
 class MY_Controller extends CI_Controller {
 
     public function __construct() {
+        
         parent::__construct();
+
+        //Email
         $this->load->library('email');
+
+        // Language
+        if(strstr(current_url(),'es.tommyjams.com'))
+            $this->lang->load('strings', 'espanol');
+        else
+            $this->lang->load('strings', 'english');
     }
 }
 

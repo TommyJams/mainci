@@ -1,18 +1,6 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Azurepage extends CI_Controller{
-
-    function __construct()
-    {
-        // Call the parent constructor
-        parent::__construct();
-
-        // Language
-        if(strstr(current_url(),'es.tommyjams.com'))
-            $this->lang->load('strings', 'espanol');
-        else
-            $this->lang->load('strings', 'english');
-    }
+class Azurepage extends MY_Controller{
 
 	public function index(){
 		 $this->landingPage();
