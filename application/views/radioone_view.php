@@ -70,7 +70,7 @@
 
             <div class="head">
 
-                <h1><? echo lang('btn_month_jan');?></h1>
+                <h1>One Bangalore One Music</h1>
 
             </div>
 
