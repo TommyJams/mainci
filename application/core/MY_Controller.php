@@ -19,12 +19,6 @@ class MY_Controller extends CI_Controller {
 
 class Base extends MY_Controller{
 
-	public function __construct() {
-
-        parent::__construct();
-
-    }
-
 	public function checkUserSession(){
 
 		$sessionArray = $this->session->all_userdata();
