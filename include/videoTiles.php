@@ -8,19 +8,19 @@
 		$streams = (json_decode($_POST['json'])->streams);
 
 	switch($thisMonth) {
-			case '01': $thisMonthName = echo lang('btn_month_jan'); break;
-			case '02': $thisMonthName = echo lang('btn_month_feb'); break;
-			case '03': $thisMonthName = echo lang('btn_month_mar'); break;
-			case '04': $thisMonthName = echo lang('btn_month_apr'); break;
-			case '05': $thisMonthName = echo lang('btn_month_may'); break;
-			case '06': $thisMonthName = echo lang('btn_month_jun'); break;
-			case '07': $thisMonthName = echo lang('btn_month_jul'); break;
-			case '08': $thisMonthName = echo lang('btn_month_aug'); break;
-			case '09': $thisMonthName = echo lang('btn_month_sep'); break;
-			case '10': $thisMonthName = echo lang('btn_month_oct'); break;
-			case '11': $thisMonthName = echo lang('btn_month_nov'); break;
-			case '12': $thisMonthName = echo lang('btn_month_dec'); break;
-			default  : $thisMonthName = echo lang('btn_month_jan'); break;
+			case '01': $thisMonthName = "Jan"; break;
+			case '02': $thisMonthName = "Feb"; break;
+			case '03': $thisMonthName = "Mar"; break;
+			case '04': $thisMonthName = "Apr"; break;
+			case '05': $thisMonthName = "May"; break;
+			case '06': $thisMonthName = "Jun"; break;
+			case '07': $thisMonthName = "Jul"; break;
+			case '08': $thisMonthName = "Aug"; break;
+			case '09': $thisMonthName = "Sep"; break;
+			case '10': $thisMonthName = "Oct"; break;
+			case '11': $thisMonthName = "Nov"; break;
+			case '12': $thisMonthName = "Dec"; break;
+			default  : $thisMonthName = "Jan"; break;
 	}
 
 ?>
