@@ -16,9 +16,9 @@
 						link	: '/blog/'
                     },
 					{
-                        image	: '/images/background/CrossLegacy_resize.jpg',
-                        title   : 'Cross Legacy',
-                        details : 'Christian Rock',
+                        image	: '/images/background/gowri.jpg',
+                        title   : 'Kozmi Cow',
+                        details : 'Acoustic',
 						link	: '/blog/'
                     },
                     {
