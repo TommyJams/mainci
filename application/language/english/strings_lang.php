@@ -50,7 +50,7 @@
     $lang['str_copyright_2014'] = "Copyright 2014 - All Rights Reserved";
 
 //Promoter View
-    $lang['btn_launch_gig'] = "Launch Gig";
+    $lang['btn_launch_gig'] = "Launch Gigs";
     $lang['btn_my_gigs'] = "My Gigs";
     $lang['btn_my_profile'] = "Profile";
     $lang['btn_edit_profile'] = "Edit Profile";
