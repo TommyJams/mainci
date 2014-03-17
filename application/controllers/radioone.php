@@ -1,6 +1,6 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Radioone extends CI_Controller{
+class Radioone extends MY_Controller{
 
 	public function episode(){
 

@@ -439,17 +439,17 @@
         <div id="menuFooter" style="background:#000;">
           <ul>
             <li>
-              <a  href="javascript:;" onClick="showLaunchGig()"><h3>Launch Gig</h3></a>
+              <a  href="javascript:;" onClick="showLaunchGig()"><h3><? echo lang('btn_launch_gig');?></h3></a>
             </li>
             <li>
               <!--<a  href="javascript:;" onClick="loadframe('gigs');"><h3>My Gigs</h3></a> -->
-              <a  href="javascript:;" onClick="promoterGigs()"><h3>My Gigs</h3></a>
+              <a  href="javascript:;" onClick="promoterGigs()"><h3><? echo lang('btn_my_gigs');?></h3></a>
             </li>
             <li>
-              <a href="javascript:;" onClick="showProfile()"><h3>Profile</h3></a>
+              <a href="javascript:;" onClick="showProfile()"><h3><? echo lang('btn_my_profile');?></h3></a>
             </li>
             <li>
-              <a href="javascript:;" onClick="showEditProfile();"><h3>Edit Profile</h3></a>
+              <a href="javascript:;" onClick="showEditProfile();"><h3><? echo lang('btn_edit_profile');?></h3></a>
             </li>
           </ul>
         </div>

@@ -48,4 +48,25 @@
     $lang['btn_search_profiles'] = "Búsqueda de Perfiles";
     $lang['btn_search_go'] = "Ir";
     $lang['str_copyright_2014'] = "Copyright 2014 - Todos los derechos reservados";
+
+//Promoter View
+    $lang['btn_launch_gig'] = "Launch Gig";
+    $lang['btn_my_gigs'] = "My Gigs";
+    $lang['btn_my_profile'] = "Profile";
+    $lang['btn_edit_profile'] = "Edit Profile";
+
+//Video Tiles
+    $lang['btn_month_jan'] = "Enero";
+    $lang['btn_month_feb'] = "Febrero";
+    $lang['btn_month_mar'] = "Marzo";
+    $lang['btn_month_apr'] = "Abril";
+    $lang['btn_month_may'] = "Mayo";
+    $lang['btn_month_jun'] = "Junio";
+    $lang['btn_month_jul'] = "Julio";
+    $lang['btn_month_aug'] = "Agosto";
+    $lang['btn_month_sep'] = "Septiembre";
+    $lang['btn_month_oct'] = "Octubre";
+    $lang['btn_month_nov'] = "Noviembre";
+    $lang['btn_month_dec'] = "Diciembre";
+
 ?>
