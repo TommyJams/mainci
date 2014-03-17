@@ -32,18 +32,18 @@
 
 <div id="monthWidgetContainer">
 	<ul>
-		<li><h1><? echo lang('btn_month_jan');?></h1></li>
-		<li><h1><? echo lang('btn_month_feb');?></h1></li>
-		<li><h1><? echo lang('btn_month_mar');?></h1></li>
-		<li><h1><? echo lang('btn_month_apr');?></h1></li>
-		<li><h1><? echo lang('btn_month_may');?></h1></li>
-        <li><h1><? echo lang('btn_month_jun');?></h1></li>
-        <li><h1><? echo lang('btn_month_jul');?></h1></li>
-        <li><h1><? echo lang('btn_month_aug');?></h1></li>
-        <li><h1><? echo lang('btn_month_sep');?></h1></li>
-        <li><h1><? echo lang('btn_month_oct');?></h1></li>
-        <li><h1><? echo lang('btn_month_nov');?></h1></li>
-        <li><h1><? echo lang('btn_month_dec');?></h1></li>
+		<li><h1>January</h1></li>
+		<li><h1>February</h1></li>
+		<li><h1>March</h1></li>
+		<li><h1>April</h1></li>
+		<li><h1>May</h1></li>
+        <li><h1>June</h1></li>
+        <li><h1>July</h1></li>
+        <li><h1>August</h1></li>
+        <li><h1>September</h1></li>
+        <li><h1>October</h1></li>
+        <li><h1>November</h1></li>
+        <li><h1>December</h1></li>
 	</ul>
 </div>
 
