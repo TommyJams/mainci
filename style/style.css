@@ -715,8 +715,9 @@ li.selected {background-position:0 0;}
         .boxBody input[type="submit"]:hover{color: #FFF;}
         .boxBody input[type="text1"]{width:62%;}
         .boxBody #enclosingRegions{background:#000; float:right; width:auto; overflow:hidden; padding: 5px; list-style:none; border-bottom: 0px; margin: 0px; padding: 0px;}
+            .boxBody #enclosingRegions li{ background: none; padding: 4px; }
             .boxBody #enclosingRegions a{ width: 60px; height: 40px; display: block; }
-            .boxBody #enclosingRegions .regionIndia{ background-image: url(../img/icon_india.png); margin-bottom: 5px; }
+            .boxBody #enclosingRegions .regionIndia{ background-image: url(../img/icon_india.png); }
             .boxBody #enclosingRegions .regionChile{ background-image: url(../img/icon_chile.png); }
 	/*
 	Nikhil:	enclosingLoginButton has to accommodate 4 types of widgets:
