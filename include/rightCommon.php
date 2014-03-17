@@ -12,10 +12,10 @@
 		  <li class="famous"></li>
 		  <li class="random"></li>
 		-->
-		  <li class="region" title="Region" alt="Region"></li>
-		  <li class="blog" title="Blog" alt="Blog"></li>
-		  <li class="search" title="Search" alt="Search"></li>
-		  <li class="login" title="Login" alt="Login"></li>
+		  <li class="region" title="<? echo lang('btn_icon_region');?>" alt="<? echo lang('btn_icon_region');?>"></li>
+		  <li class="blog" title="<? echo lang('btn_icon_blog');?>" alt="<? echo lang('btn_icon_blog');?>"></li>
+		  <li class="search" title="<? echo lang('btn_icon_search');?>" alt="<? echo lang('btn_icon_search');?>"></li>
+		  <li class="login" title="<? echo lang('btn_icon_login');?>" alt="<? echo lang('btn_icon_login');?>"></li>
 		</ul>
 	</div>
 
@@ -23,21 +23,21 @@
 
 		<div id="regionBox" class="parent">
 			<ul id="enclosingRegions">
-				<li><a class="regionIndia" href="http://tommyjams.com/index"></a></li>
-				<li><a class="regionChile" href="http://es.tommyjams.com/index"></a></li>
+				<li><a class="regionIndia" title="India" alt="India" href="http://tommyjams.com/index"></a></li>
+				<li><a class="regionChile" title="Chile" alt="Chile" href="http://es.tommyjams.com/index"></a></li>
 			</ul>
 		</div>
 
 		<div id="blogBox" class="parent">
 			<div id="enclosingBlogButton">
-				<a href="/blog" target="_blank">Blog</a>
+				<a href="/blog" target="_blank"><? echo lang('btn_txt_blog');?></a>
 			</div>
 		</div>
 
 		<div id="searchBox" class="parent">
 			<form action='' method='post' id='searchProfilesForm'>
-				<input type='text1' name='profile' value='Search Profiles' id='searchTextBox' onfocus='blank(this)' onblur='unblank(this)'  />
-				<input type='submit' value='Go'>
+				<input type='text1' name='profile' value='<? echo lang('btn_search_profiles');?>' id='searchTextBox' onfocus='blank(this)' onblur='unblank(this)'  />
+				<input type='submit' value='<? echo lang('btn_search_go');?>'>
 			</>
 		</div>
 
@@ -147,5 +147,5 @@
 </div>
 
 <div id="copyrightContainer">
-	<p>Copyright 2013 - All Rights Reserved</p>
+	<p><? echo lang('str_copyright_2014');?></p>
 </div>

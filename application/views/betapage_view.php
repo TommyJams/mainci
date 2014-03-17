@@ -158,7 +158,7 @@
         </a>
         <center>
             <h3 id="loginBoxTitle">
-                Login With Facebook
+                <? echo lang('str_login_facebook');?>
             </h3>
 			<div id="loginBoxDetails">
 				<div class='fb-login-button'  fb_only='true' fb_register='true' size='xlarge' onlogin=facebookLoginCallback(); registration-url='<? print(base_url()); ?>fbconnect/registerMethod/noregister'></div>

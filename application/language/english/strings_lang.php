@@ -15,4 +15,37 @@
     $lang['btn_your_email'] = "Your e-mail address";
     $lang['btn_subscribe'] = "Subscribe";
     $lang['str_title_seen'] = "AS SEEN IN";
+    
+//Beta Page View
+    $lang['str_login_facebook'] = "Login With Facebook";
+
+//MainTiles
+    $lang['str_artist_title'] = "Artists";
+    $lang['str_artist_call1'] = "Time to get out of the garage.";
+    $lang['str_artist_call2'] = "Login and get on-stage, now!";
+    $lang['str_venue_title'] = "Venues";
+    $lang['str_venue_call1'] = "Time to trash the worn-out CDs.";
+    $lang['str_venue_call2'] = "Login and book a band, now!";
+    $lang['str_fans_title'] = "Fans";
+    $lang['str_fans_call1'] = "Follow your favorite artists.";
+    $lang['str_fans_call2'] = "Visit our blog.";
+
+//Left Common
+    $lang['btn_icon_home'] = "Home";
+    $lang['btn_icon_about'] = "About Us";
+    $lang['btn_icon_terms'] = "Terms of Use";
+    $lang['btn_icon_careers'] = "Careers";
+    $lang['btn_icon_press'] = "Press";
+    $lang['btn_icon_advertise'] = "Advertise";
+    $lang['btn_icon_help'] = "Help";
+
+//Right Common
+    $lang['btn_icon_region'] = "Region";
+    $lang['btn_icon_blog'] = "Blog";
+    $lang['btn_icon_search'] = "Search";
+    $lang['btn_icon_login'] = "Login";
+    $lang['btn_txt_blog'] = "Blog";
+    $lang['btn_search_profiles'] = "Search Profiles";
+    $lang['btn_search_go'] = "Go";
+    $lang['str_copyright_2014'] = "Copyright 2014 - All Rights Reserved";
 ?>

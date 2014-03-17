@@ -34,7 +34,7 @@
 <!-- -------------------------------------------------------------- -->
 <div id="logoContainer">
 	<a href="index.php">
-		<img alt="Home" title="Home" src="/images/tjlogo_small.png">
+		<img alt="<? echo lang('btn_icon_home');?>" title="<? echo lang('btn_icon_home');?>" src="/images/tjlogo_small.png">
 	</a>	
 	<div id="fbLikeContainer">
 		<div class="fb-like" data-href="http://www.facebook.com/tommyjams.live" data-send="false" data-layout="button_count" data-width="90" data-show-faces="false" data-font="arial" data-colorscheme="dark">
@@ -51,12 +51,12 @@
 
 <div id="leftSidebarBox">
     <ul>
-        <li><a href="/aboutus" 	target="_blank" title="About Us" 		alt="About Us"><img src="/images/icons/sidebar/about_1.png"/></a></li>
-        <li><a href="/terms" 	target="_blank" title="Terms of Use" 	alt="Terms of Use"><img src="/images/icons/sidebar/terms_1.png"/></a></li>
+        <li><a href="/aboutus" 	target="_blank" title="<? echo lang('btn_icon_about');?>"   alt="<? echo lang('btn_icon_about');?>"><img src="/images/icons/sidebar/about_1.png"/></a></li>
+        <li><a href="/terms" 	target="_blank" title="<? echo lang('btn_icon_terms');?>" 	alt="<? echo lang('btn_icon_terms');?>"><img src="/images/icons/sidebar/terms_1.png"/></a></li>
         <!--<li><a href="faq.php" title="FAQ" alt="FAQ"><img src="images/icons/sidebar/faq_1.png" style="width:100%; height:100%;"/></a></li>-->
-        <li><a href="/careers" 	target="_blank" title="Careers" 		alt="Careers"><img src="/images/icons/sidebar/careers_1.png"/></a></li>
-        <li><a href="/press" 	target="_blank" title="Press" 			alt="Press"><img src="/images/icons/sidebar/press_1.png"/></a></li>
-        <li><a href="/advertise" target="_blank" title="Advertise" 		alt="Advertise"><img src="/images/icons/sidebar/advertise_1.png"/></a></li>
-        <li><a href="/help" 	target="_blank" title="Help" 			alt="Help"><img src="/images/icons/sidebar/help_1.png"/></a></li>
+        <li><a href="/careers" 	target="_blank" title="<? echo lang('btn_icon_careers');?>" alt="<? echo lang('btn_icon_careers');?>"><img src="/images/icons/sidebar/careers_1.png"/></a></li>
+        <li><a href="/press" 	target="_blank" title="<? echo lang('btn_icon_press');?>"	alt="<? echo lang('btn_icon_press');?>"><img src="/images/icons/sidebar/press_1.png"/></a></li>
+        <li><a href="/advertise" target="_blank" title="<? echo lang('btn_icon_advertise');?>" alt="<? echo lang('btn_icon_advertise');?>"><img src="/images/icons/sidebar/advertise_1.png"/></a></li>
+        <li><a href="/help" 	target="_blank" title="<? echo lang('btn_icon_help');?>"	alt="<? echo lang('btn_icon_help');?>"><img src="/images/icons/sidebar/help_1.png"/></a></li>
     </ul>
 </div>

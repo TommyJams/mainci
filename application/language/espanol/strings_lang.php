@@ -15,4 +15,37 @@
     $lang['btn_your_email'] = "Su dirección de e-mail";
     $lang['btn_subscribe'] = "Suscribir";
     $lang['str_title_seen'] = "SEGÚN LO VISTO EN";
+
+//Beta Page View
+    $lang['str_login_facebook'] = "Entrada en Facebook";
+
+//MainTiles
+    $lang['str_artist_title'] = "Artistas";
+    $lang['str_artist_call1'] = "Tiempo para salir de la cochera.";
+    $lang['str_artist_call2'] = "Inicia la sesión y conseguir en el escenario, ahora!";
+    $lang['str_venue_title'] = "Lugares";
+    $lang['str_venue_call1'] = "Tiempo a la basura los CDs desgastadas.";
+    $lang['str_venue_call2'] = "Inicio de sesión y reservar una banda, ahora!";
+    $lang['str_fans_title'] = "Fans";
+    $lang['str_fans_call1'] = "Sigue a tus artistas favoritos.";
+    $lang['str_fans_call2'] = "Visite nuestro blog.";
+
+//Left Common
+    $lang['btn_icon_home'] = "Home";
+    $lang['btn_icon_about'] = "Quiénes somos";
+    $lang['btn_icon_terms'] = "Condiciones de uso";
+    $lang['btn_icon_careers'] = "Carreras";
+    $lang['btn_icon_press'] = "Prensa";
+    $lang['btn_icon_advertise'] = "Anunciar";
+    $lang['btn_icon_help'] = "Ayudar";
+
+//Right Common
+    $lang['btn_icon_region'] = "Región";
+    $lang['btn_icon_blog'] = "Blog";
+    $lang['btn_icon_search'] = "Buscar";
+    $lang['btn_icon_login'] = "Entrar";
+    $lang['btn_txt_blog'] = "Blog";
+    $lang['btn_search_profiles'] = "Búsqueda de Perfiles";
+    $lang['btn_search_go'] = "Ir";
+    $lang['str_copyright_2014'] = "Copyright 2014 - Todos los derechos reservados";
 ?>
