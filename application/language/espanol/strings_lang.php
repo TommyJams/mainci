@@ -50,8 +50,8 @@
     $lang['str_copyright_2014'] = "Copyright 2014 - Todos los derechos reservados";
 
 //Promoter View
-    $lang['btn_launch_gig'] = "Lanzamiento de Concierto";
-    $lang['btn_my_gigs'] = "Mis Conciertos";
+    $lang['btn_launch_gig'] = "Lanzamiento";
+    $lang['btn_my_gigs'] = "Conciertos";
     $lang['btn_my_profile'] = "Perfil";
     $lang['btn_edit_profile'] = "Editar Perfil";
 
