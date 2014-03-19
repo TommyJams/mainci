@@ -24,6 +24,8 @@ class MY_Controller extends CI_Controller {
 		elseif( isset($sessionArray['lang_code']) )
 		{
 		    $lang = $sessionArray['lang_code'];
+
+		    error_log('Language session set: '.$lang);
 		}
 
 		// Lang was picked by a user.
@@ -31,6 +33,8 @@ class MY_Controller extends CI_Controller {
 		elseif( !empty($_COOKIE['lang_code']) )
 		{
 		    $lang = $sessionArray['lang_code'] = $_COOKIE['lang_code'];
+
+		    error_log('Language cookie set: '.$lang);
 		}
 
 		// Still no Lang. Lets try some browser detection then
