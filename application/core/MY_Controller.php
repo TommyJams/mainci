@@ -65,6 +65,8 @@ class MY_Controller extends CI_Controller {
 		// If no language has been worked out - or it is not supported - use the default
 		if(empty($lang) or !in_array($lang, array_keys($this->config->item('supported_languages'))))
 		{
+			error_log('Picking default language');
+
 		    $lang = $this->config->item('default_language');
 		}
 
