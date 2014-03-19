@@ -8,6 +8,7 @@ class MY_Controller extends CI_Controller {
 		//require_once(APPPATH.'/config/language.php');
 
 		$sessionArray = $this->session->all_userdata();
+		$langCookie = $this->input->cookie('lang_code', TRUE);
 
 		error_log('Session: '.implode(', ', $sessionArray));
 
@@ -35,9 +36,9 @@ class MY_Controller extends CI_Controller {
 
 		// Lang was picked by a user.
 		// Set it to a session variable so we are only checking one place most of the time.
-		elseif( isset($this->input->cookie('lang_code', TRUE)) )
+		elseif( isset($langCookie) )
 		{
-		    $lang = $sessionArray['lang_code'] = $this->input->cookie('lang_code', TRUE);
+		    $lang = $sessionArray['lang_code'] = $langCookie;
 
 		    error_log('Language cookie set: '.$lang);
 		}
