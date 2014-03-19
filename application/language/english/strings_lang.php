@@ -69,4 +69,10 @@
     $lang['btn_month_nov'] = "November";
     $lang['btn_month_dec'] = "December";
 
+//Artist View
+    $lang['btn_find_gigs'] = "Find Gigs";
+    $lang['btn_dibs_status'] = "Dibs Status";
+    $lang['btn_artist_my_profile'] = "Profile";
+    $lang['btn_artist_edit_profile'] = "Edit Profile";    
+
 ?>
