@@ -323,16 +323,16 @@
 		<div id="menuFooter" style="background:#000;">
 			<ul>
 			  <li>
-				<a  href="javascript:;" onClick="findGigsPage()"><h3>Find Gigs</h3></a>
+				<a  href="javascript:;" onClick="findGigsPage()"><h3><? echo lang('btn_find_gigs');?></h3></a>
 			  </li>
 			  <li>
-				<a  href="javascript:;" onClick="artistDibs()"><h3>Dibs Status</h3></a>
+				<a  href="javascript:;" onClick="artistDibs()"><h3><? echo lang('btn_dibs_status');?></h3></a>
 			  </li>
 			  <li>
-				<a href="javascript:;" onClick="showProfile()"><h3>Profile</h3></a>
+				<a href="javascript:;" onClick="showProfile()"><h3><? echo lang('btn_artist_my_profile');?></h3></a>
 			  </li>
 			  <li>
-				<a href="javascript:;" onClick="showEditProfile();"><h3>Edit Profile</h3></a>
+				<a href="javascript:;" onClick="showEditProfile();"><h3><? echo lang('btn_artist_edit_profile');?></h3></a>
 			  </li>
 			</ul>
 		</div>
