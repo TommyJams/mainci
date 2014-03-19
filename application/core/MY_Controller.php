@@ -43,7 +43,7 @@ class MY_Controller extends CI_Controller {
 		    foreach ($accept_langs as $lang)
 		    {
 		        // Check its in the array. If so, break the loop, we have one!
-		        if(in_array($lang, array_keys($config['supported_languages'])))
+		        if(in_array($lang, array_keys($this->config->item('supported_languages'))))
 		        {
 		            break;
 		        }
@@ -51,7 +51,7 @@ class MY_Controller extends CI_Controller {
 		}
 
 		// If no language has been worked out - or it is not supported - use the default
-		if(empty($lang) or !in_array($lang, array_keys($config['supported_languages'])))
+		if(empty($lang) or !in_array($lang, array_keys($this->config->item('supported_languages'))))
 		{
 		    $lang = $config['default_language'];
 		}
