@@ -9,6 +9,8 @@ class MY_Controller extends CI_Controller {
 
 		$sessionArray = $this->session->all_userdata();
 
+		error_log('Session: '.implode(', ', $sessionArray));
+
 		// SessionID Check
 		if (!isset($sessionArray['session_id'])){
 
