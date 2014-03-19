@@ -7,40 +7,23 @@ class MY_Controller extends CI_Controller {
 
 		//require_once(APPPATH.'/config/language.php');
 
-		$sessionArray = $this->session->all_userdata();
 		$langCookie = $this->input->cookie('lang_code', TRUE);
 
-		error_log('Session: '.implode(', ', $sessionArray));
-
-		// SessionID Check
-		if (!isset($sessionArray['session_id'])){
-
-			error_log('Session starting!');
-
-			session_start();
-		}
-
 		// Lang set in URL
-		if(strstr(current_url(),'es.tommyjams.com'))
+		if(strstr(current_url(),'en.tommyjams.com'))
+		{
+		    $lang = 'en';
+		}
+		else if(strstr(current_url(),'es.tommyjams.com'))
 		{
 		    $lang = 'es';
 		}
 
-		// Lang has already been set and is stored in a session
-		/*elseif( isset($sessionArray['lang_code']) )
-		{
-		    $lang = $sessionArray['lang_code'];
-
-		    error_log('Language session set: '.$lang);
-		}*/
-
-		// Lang was picked by a user.
-		// Set it to a session variable so we are only checking one place most of the time.
+		// Lang was specifically picked by a user.
+		// Set it to a cookie so we are only checking one place most of the time.
 		elseif( isset($langCookie) )
 		{
-		    $lang = $sessionArray['lang_code'] = $langCookie;
-
-		    error_log('Language cookie used: '.$lang);
+		    $lang = $langCookie;
 		}
 
 		// Still no Lang. Lets try some browser detection then
@@ -65,41 +48,24 @@ class MY_Controller extends CI_Controller {
 		// If no language has been worked out - or it is not supported - use the default
 		if(empty($lang) or !in_array($lang, array_keys($this->config->item('supported_languages'))))
 		{
-			error_log('Picking default language');
-
 		    $lang = $this->config->item('default_language');
 		}
 
 		// Whatever we decided the lang was, save it for next time to avoid working it out again
-		/*error_log('Saving Language: '.$lang);
-
-		$sessionData = array(
-			'lang_code' =>$lang
-        );
-
-		$this->session->set_userdata($sessionData);
-
-		$sessionArray = $this->session->all_userdata();
-
-		error_log('Saved Language: '.$sessionArray['lang_code']);*/
-
-		// Also save it in the browser
 		$cookie = array(
 		    'name'   => 'lang_code',
 		    'value'  => $lang,
 		    'expire' => '86500',
 		    'domain' => '.tommyjams.com'
 		);
-
 		$this->input->set_cookie($cookie);
 
-		$langArray = $this->config->item('supported_languages');
 		// Load the language. Selects the folder name from its key.
+		$langArray = $this->config->item('supported_languages');
 		$this->lang->load('strings', $langArray[$lang]['folder']);
 
 		// Sets a constant to use throughout ALL of CI.
 		define('CURRENT_LANGUAGE', $lang);
-
 	}
 
     public function __construct() {
