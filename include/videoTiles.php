@@ -10,7 +10,7 @@
 
 	switch($thisMonth) {
 			case '01': $thisMonthName = $monthNames['btn_month_jan']; break;
-			case '02': $thisMonthName = "Feb"; break;
+			case '02': $thisMonthName = $monthNames['btn_month_feb']; break;
 			case '03': $thisMonthName = "Mar"; break;
 			case '04': $thisMonthName = "Apr"; break;
 			case '05': $thisMonthName = "May"; break;
@@ -33,7 +33,7 @@
 
 <div id="monthWidgetContainer">
 	<ul>
-		<li><h1>January</h1></li>
+		<li><h1><? echo $monthNames['btn_month_jan'];?></h1></li>
 		<li><h1>February</h1></li>
 		<li><h1>March</h1></li>
 		<li><h1>April</h1></li>
