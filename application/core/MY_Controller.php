@@ -11,6 +11,9 @@ class MY_Controller extends CI_Controller {
 
 		// SessionID Check
 		if (!isset($sessionArray['session_id'])){
+
+			error_log('Session starting!');
+
 			session_start();
 		}
 
