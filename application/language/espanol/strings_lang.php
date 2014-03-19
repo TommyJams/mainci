@@ -70,7 +70,7 @@
     $lang['btn_month_dec'] = "Diciembre";
 
 //Artist View
-    $lang['btn_find_gigs'] = "Encuentra Conciertos";
+    $lang['btn_find_gigs'] = "Encontrar";
     $lang['btn_dibs_status'] = "Dibs Estado";
     $lang['btn_artist_my_profile'] = "Perfil";
     $lang['btn_artist_edit_profile'] = "Editar Perfil";     
