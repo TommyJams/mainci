@@ -80,7 +80,7 @@ class Radioone extends MY_Controller{
 		if(isset($thisDate))
 			$response['day']   = $thisDate;
 		$response['numTiles'] = mysql_num_rows($results);
-                $response['langStrings'] =  {
+                $response['langStrings'] =  array(
                                                 'btn_month_jan' => $this->lang->line('btn_month_jan'),
                                                 'btn_month_feb' => $this->lang->line('btn_month_feb'),
                                                 'btn_month_mar' => $this->lang->line('btn_month_mar'),
@@ -93,7 +93,7 @@ class Radioone extends MY_Controller{
                                                 'btn_month_oct' => $this->lang->line('btn_month_oct'),
                                                 'btn_month_nov' => $this->lang->line('btn_month_nov'),
                                                 'btn_month_dec' => $this->lang->line('btn_month_dec')
-                                        };
+                                        );
 
 		$this->load->helper('functions');
 		createResponse($response);
