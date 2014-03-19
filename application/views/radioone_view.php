@@ -44,6 +44,7 @@
 
     function loadTilesCallback(a) 
     {
+      console.log(JSON.stringify(a));
       $('#videoTilesContainer').load("/include/videoTiles.php", {json: JSON.stringify(a)});
     }
 

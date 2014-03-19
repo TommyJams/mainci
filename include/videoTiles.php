@@ -1,7 +1,4 @@
 <?
-	$ci &= get_instance();
-	$ci->load->helper('language');
-
 	$numTiles = (json_decode($_POST['json'])->numTiles);
 	$thisYear = (json_decode($_POST['json'])->year);
 	$thisMonth = (json_decode($_POST['json'])->month);
@@ -34,7 +31,7 @@
 
 <div id="monthWidgetContainer">
 	<ul>
-		<li><h1><? $jan = lang('btn_month_jan'); if(isset($jan)) echo $jan; else echo "Jan";?></h1></li>
+		<li><h1>January</h1></li>
 		<li><h1>February</h1></li>
 		<li><h1>March</h1></li>
 		<li><h1>April</h1></li>
