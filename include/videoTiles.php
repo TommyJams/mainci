@@ -33,7 +33,7 @@
 
 <div id="monthWidgetContainer">
 	<ul>
-		<li><h1><? echo $monthNames['btn_month_jan'];?></h1></li>
+		<li><h1><? echo $monthNames[0];?></h1></li>
 		<li><h1>February</h1></li>
 		<li><h1>March</h1></li>
 		<li><h1>April</h1></li>
