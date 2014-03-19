@@ -1,4 +1,5 @@
 <?
+	$this->load->helper('language');
 
 	$numTiles = (json_decode($_POST['json'])->numTiles);
 	$thisYear = (json_decode($_POST['json'])->year);
