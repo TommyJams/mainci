@@ -6,8 +6,10 @@
 	if($numTiles > 0 )
 		$streams = (json_decode($_POST['json'])->streams);
 
-	$monthNames = (json_decode($_POST['json'])->langStrings);
-	error_log('Month Names: '.$monthNames);
+	$monthNamesObject = (json_decode($_POST['json'])->langStrings);
+	foreach ($monthNamesObject as $row) {
+		$monthNames[] = $row;
+	}
 
 	switch($thisMonth) {
 			case '01': $thisMonthName = $monthNames['btn_month_jan']; break;
