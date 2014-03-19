@@ -10,6 +10,7 @@
 	foreach ($monthNamesObject as $row) {
 		$monthNames[] = $row;
 	}
+	error_log('Month Names: '.implode(', ', $monthNames));
 
 	switch($thisMonth) {
 			case '01': $thisMonthName = $monthNames['btn_month_jan']; break;
