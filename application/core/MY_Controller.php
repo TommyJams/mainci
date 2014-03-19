@@ -2,6 +2,71 @@
 
 class MY_Controller extends CI_Controller {
 
+	//Localization
+	function pick_language() {
+
+		//require_once(APPPATH.'/config/language.php');
+
+		$sessionArray = $this->session->all_userdata();
+
+		// SessionID Check
+		if (!isset($sessionArray['session_id'])){
+			session_start();
+		}
+
+		// Lang set in URL
+		if(strstr(current_url(),'es.tommyjams.com'))
+		{
+		    $lang = 'es';
+		}
+
+		// Lang has already been set and is stored in a session
+		elseif( isset($sessionArray['lang_code']) )
+		{
+		    $lang = $sessionArray['lang_code'];
+		}
+
+		// Lang was picked by a user.
+		// Set it to a session variable so we are only checking one place most of the time.
+		elseif( !empty($_COOKIE['lang_code']) )
+		{
+		    $lang = $sessionArray['lang_code'] = $_COOKIE['lang_code'];
+		}
+
+		// Still no Lang. Lets try some browser detection then
+		else if (!empty( $_SERVER['HTTP_ACCEPT_LANGUAGE'] ))
+		{
+		    // explode languages into array
+		    $accept_langs = explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE']);
+
+		    // Check them all, until we find a match
+		    foreach ($accept_langs as $lang)
+		    {
+		        // Check its in the array. If so, break the loop, we have one!
+		        if(in_array($lang, array_keys($config['supported_languages'])))
+		        {
+		            break;
+		        }
+		    }
+		}
+
+		// If no language has been worked out - or it is not supported - use the default
+		if(empty($lang) or !in_array($lang, array_keys($config['supported_languages'])))
+		{
+		    $lang = $config['default_language'];
+		}
+
+		// Whatever we decided the lang was, save it for next time to avoid working it out again
+		$sessionArray['lang_code'] = $lang;
+
+		// Load the language. Selects the folder name from its key.
+		$this->lang->load('strings', $config['supported_languages'][$lang]['folder']);
+
+		// Sets a constant to use throughout ALL of CI.
+		define('CURRENT_LANGUAGE', $lang);
+
+	}
+
     public function __construct() {
         
         parent::__construct();
@@ -9,12 +74,9 @@ class MY_Controller extends CI_Controller {
         //Email
         $this->load->library('email');
 
-        // Language
-        if(strstr(current_url(),'es.tommyjams.com'))
-            $this->lang->load('strings', 'espanol');
-        else
-            $this->lang->load('strings', 'english');
+        pick_language();
     }
+
 }
 
 class Base extends MY_Controller{

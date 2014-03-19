@@ -66,6 +66,23 @@ $config['url_suffix'] = '';
 
 /*
 |--------------------------------------------------------------------------
+| Supported Languages
+|--------------------------------------------------------------------------
+|
+| Contains all languages your site will store data in. Other languages can
+| still be displayed via language files, thats totally different.
+| 
+| Check for HTML equivalents for characters such as � with the URL below:
+|    http://htmlhelp.com/reference/html40/entities/latin1.html
+|
+*/
+$config['supported_languages'] = array(
+    'en'=> array('name' => 'English', 'folder' => 'english'),
+    'es'=> array('name' => 'Espa&ntilde;ol', 'folder' => 'espanol')
+);
+
+/*
+|--------------------------------------------------------------------------
 | Default Language
 |--------------------------------------------------------------------------
 |
@@ -74,6 +91,7 @@ $config['url_suffix'] = '';
 | than english.
 |
 */
+$config['default_language'] = 'en';
 $config['language']	= 'english';
 
 /*
