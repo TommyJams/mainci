@@ -27,12 +27,12 @@ class MY_Controller extends CI_Controller {
 		}
 
 		// Lang has already been set and is stored in a session
-		elseif( isset($sessionArray['lang_code']) )
+		/*elseif( isset($sessionArray['lang_code']) )
 		{
 		    $lang = $sessionArray['lang_code'];
 
 		    error_log('Language session set: '.$lang);
-		}
+		}*/
 
 		// Lang was picked by a user.
 		// Set it to a session variable so we are only checking one place most of the time.
@@ -40,7 +40,7 @@ class MY_Controller extends CI_Controller {
 		{
 		    $lang = $sessionArray['lang_code'] = $langCookie;
 
-		    error_log('Language cookie set: '.$lang);
+		    error_log('Language cookie used: '.$lang);
 		}
 
 		// Still no Lang. Lets try some browser detection then
@@ -71,7 +71,7 @@ class MY_Controller extends CI_Controller {
 		}
 
 		// Whatever we decided the lang was, save it for next time to avoid working it out again
-		error_log('Saving Language: '.$lang);
+		/*error_log('Saving Language: '.$lang);
 
 		$sessionData = array(
 			'lang_code' =>$lang
@@ -81,7 +81,7 @@ class MY_Controller extends CI_Controller {
 
 		$sessionArray = $this->session->all_userdata();
 
-		error_log('Saved Language: '.$sessionArray['lang_code']);
+		error_log('Saved Language: '.$sessionArray['lang_code']);*/
 
 		// Also save it in the browser
 		$cookie = array(
