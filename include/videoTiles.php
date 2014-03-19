@@ -10,24 +10,22 @@
 	foreach ($monthNamesObject as $row) {
 		$monthNames[] = $row;
 	}
-	error_log('Month Names: '.implode(', ', $monthNames));
 
 	switch($thisMonth) {
-			case '01': $thisMonthName = $monthNames['btn_month_jan']; break;
-			case '02': $thisMonthName = $monthNames['btn_month_feb']; break;
-			case '03': $thisMonthName = "Mar"; break;
-			case '04': $thisMonthName = "Apr"; break;
-			case '05': $thisMonthName = "May"; break;
-			case '06': $thisMonthName = "Jun"; break;
-			case '07': $thisMonthName = "Jul"; break;
-			case '08': $thisMonthName = "Aug"; break;
-			case '09': $thisMonthName = "Sep"; break;
-			case '10': $thisMonthName = "Oct"; break;
-			case '11': $thisMonthName = "Nov"; break;
-			case '12': $thisMonthName = "Dec"; break;
-			default  : $thisMonthName = "Jan"; break;
+			case '01': $thisMonthName = $monthNames[0]; break;
+			case '02': $thisMonthName = $monthNames[1]; break;
+			case '03': $thisMonthName = $monthNames[2]; break;
+			case '04': $thisMonthName = $monthNames[3]; break;
+			case '05': $thisMonthName = $monthNames[4]; break;
+			case '06': $thisMonthName = $monthNames[5]; break;
+			case '07': $thisMonthName = $monthNames[6]; break;
+			case '08': $thisMonthName = $monthNames[7]; break;
+			case '09': $thisMonthName = $monthNames[8]; break;
+			case '10': $thisMonthName = $monthNames[9]; break;
+			case '11': $thisMonthName = $monthNames[10]; break;
+			case '12': $thisMonthName = $monthNames[11]; break;
+			default  : $thisMonthName = $monthNames[12]; break;
 	}
-
 ?>
 
 <!-- Month -->
@@ -37,18 +35,18 @@
 
 <div id="monthWidgetContainer">
 	<ul>
-		<li><h1><? echo $monthNames["btn_month_jan"];?></h1></li>
-		<li><h1>February</h1></li>
-		<li><h1>March</h1></li>
-		<li><h1>April</h1></li>
-		<li><h1>May</h1></li>
-        <li><h1>June</h1></li>
-        <li><h1>July</h1></li>
-        <li><h1>August</h1></li>
-        <li><h1>September</h1></li>
-        <li><h1>October</h1></li>
-        <li><h1>November</h1></li>
-        <li><h1>December</h1></li>
+		<li><h1><? echo $monthNames[0];?></h1></li>
+		<li><h1><? echo $monthNames[1];?></h1></li>
+		<li><h1><? echo $monthNames[2];?></h1></li>
+		<li><h1><? echo $monthNames[3];?></h1></li>
+		<li><h1><? echo $monthNames[4];?></h1></li>
+        <li><h1><? echo $monthNames[5];?></h1></li>
+        <li><h1><? echo $monthNames[6];?></h1></li>
+        <li><h1><? echo $monthNames[7];?></h1></li>
+        <li><h1><? echo $monthNames[8];?></h1></li>
+        <li><h1><? echo $monthNames[9];?></h1></li>
+        <li><h1><? echo $monthNames[10];?></h1></li>
+        <li><h1><? echo $monthNames[11];?></h1></li>
 	</ul>
 </div>
 
