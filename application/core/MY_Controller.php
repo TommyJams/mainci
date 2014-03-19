@@ -35,9 +35,9 @@ class MY_Controller extends CI_Controller {
 
 		// Lang was picked by a user.
 		// Set it to a session variable so we are only checking one place most of the time.
-		elseif( !empty($_COOKIE['lang_code']) )
+		elseif( isset($this->input->cookie('lang_code', TRUE)) )
 		{
-		    $lang = $sessionArray['lang_code'] = $_COOKIE['lang_code'];
+		    $lang = $sessionArray['lang_code'] = $this->input->cookie('lang_code', TRUE);
 
 		    error_log('Language cookie set: '.$lang);
 		}
@@ -69,6 +69,15 @@ class MY_Controller extends CI_Controller {
 
 		// Whatever we decided the lang was, save it for next time to avoid working it out again
 		$this->session->set_userdata('lang_code', $lang);
+
+		$cookie = array(
+		    'name'   => 'lang_code',
+		    'value'  => $lang_code,
+		    'expire' => '86500',
+		    'domain' => '.tommyjams.com'
+		);
+
+		$this->input->set_cookie($cookie);
 
 		$langArray = $this->config->item('supported_languages');
 		// Load the language. Selects the folder name from its key.
