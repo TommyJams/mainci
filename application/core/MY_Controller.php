@@ -79,6 +79,10 @@ class MY_Controller extends CI_Controller {
 
 		$this->session->set_userdata($sessionData);
 
+		$sessionArray = $this->session->all_userdata();
+
+		error_log('Saved Language: '.$sessionArray['lang_code']);
+
 		// Also save it in the browser
 		$cookie = array(
 		    'name'   => 'lang_code',
