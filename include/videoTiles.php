@@ -6,8 +6,10 @@
 	if($numTiles > 0 )
 		$streams = (json_decode($_POST['json'])->streams);
 
+	$monthNames = (json_decode($_POST['json'])->langStrings);
+
 	switch($thisMonth) {
-			case '01': $thisMonthName = "Jan"; break;
+			case '01': $thisMonthName = $monthNames['btn_month_jan']; break;
 			case '02': $thisMonthName = "Feb"; break;
 			case '03': $thisMonthName = "Mar"; break;
 			case '04': $thisMonthName = "Apr"; break;
