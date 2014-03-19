@@ -7,6 +7,7 @@
 		$streams = (json_decode($_POST['json'])->streams);
 
 	$monthNames = (json_decode($_POST['json'],true)->langStrings);
+	error_log('Month Names: '.implode(', ', $monthNames));
 
 	switch($thisMonth) {
 			case '01': $thisMonthName = $monthNames['btn_month_jan']; break;
@@ -33,7 +34,7 @@
 
 <div id="monthWidgetContainer">
 	<ul>
-		<li><h1><? echo $monthNames[0];?></h1></li>
+		<li><h1><? echo $monthNames["btn_month_jan"];?></h1></li>
 		<li><h1>February</h1></li>
 		<li><h1>March</h1></li>
 		<li><h1>April</h1></li>
