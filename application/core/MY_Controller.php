@@ -73,7 +73,7 @@ class MY_Controller extends CI_Controller {
 
 		$cookie = array(
 		    'name'   => 'lang_code',
-		    'value'  => $lang_code,
+		    'value'  => $lang,
 		    'expire' => '86500',
 		    'domain' => '.tommyjams.com'
 		);
