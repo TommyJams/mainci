@@ -63,7 +63,7 @@ class MY_Controller extends CI_Controller {
 		}
 
 		// Whatever we decided the lang was, save it for next time to avoid working it out again
-		$sessionArray['lang_code'] = $lang;
+		$this->session->set_userdata('lang_code', $lang);
 
 		$langArray = $this->config->item('supported_languages');
 		// Load the language. Selects the folder name from its key.
