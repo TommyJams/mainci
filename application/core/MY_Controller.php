@@ -39,6 +39,8 @@ class MY_Controller extends CI_Controller {
 		    // explode languages into array
 		    $accept_langs = explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE']);
 
+			error_log('Checking browser languages: '.implode(', ', $accept_langs));
+
 		    // Check them all, until we find a match
 		    foreach ($accept_langs as $lang)
 		    {
