@@ -6,7 +6,7 @@
 	if($numTiles > 0 )
 		$streams = (json_decode($_POST['json'])->streams);
 
-	$monthNames = (json_decode($_POST['json'],true)->langStrings);
+	$monthNames = (json_decode($_POST['json'])->langStrings);
 	error_log('Month Names: '.implode(', ', $monthNames));
 
 	switch($thisMonth) {
