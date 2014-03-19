@@ -81,18 +81,18 @@ class Radioone extends MY_Controller{
 			$response['day']   = $thisDate;
 		$response['numTiles'] = mysql_num_rows($results);
                 $response['langStrings'] =  {
-                                                'btn_month_jan' => lang('btn_month_jan'),
-                                                'btn_month_feb' => lang('btn_month_feb'),
-                                                'btn_month_mar' => lang('btn_month_mar'),
-                                                'btn_month_apr' => lang('btn_month_apr'),
-                                                'btn_month_may' => lang('btn_month_may'),
-                                                'btn_month_jun' => lang('btn_month_jun'),
-                                                'btn_month_jul' => lang('btn_month_jul'),
-                                                'btn_month_aug' => lang('btn_month_aug'),
-                                                'btn_month_sep' => lang('btn_month_sep'),
-                                                'btn_month_oct' => lang('btn_month_oct'),
-                                                'btn_month_nov' => lang('btn_month_nov'),
-                                                'btn_month_dec' => lang('btn_month_dec')
+                                                'btn_month_jan' => $this->lang->line('btn_month_jan'),
+                                                'btn_month_feb' => $this->lang->line('btn_month_feb'),
+                                                'btn_month_mar' => $this->lang->line('btn_month_mar'),
+                                                'btn_month_apr' => $this->lang->line('btn_month_apr'),
+                                                'btn_month_may' => $this->lang->line('btn_month_may'),
+                                                'btn_month_jun' => $this->lang->line('btn_month_jun'),
+                                                'btn_month_jul' => $this->lang->line('btn_month_jul'),
+                                                'btn_month_aug' => $this->lang->line('btn_month_aug'),
+                                                'btn_month_sep' => $this->lang->line('btn_month_sep'),
+                                                'btn_month_oct' => $this->lang->line('btn_month_oct'),
+                                                'btn_month_nov' => $this->lang->line('btn_month_nov'),
+                                                'btn_month_dec' => $this->lang->line('btn_month_dec')
                                         };
 
 		$this->load->helper('functions');
