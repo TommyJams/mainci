@@ -47,7 +47,7 @@
       var langStrings = {
         'btn_month_jan': lang('btn_month_jan')
       };
-      a += {'langStrings': langStrings};
+      //a += {'langStrings': langStrings};
       console.log(JSON.stringify(a));
       $('#videoTilesContainer').load("/include/videoTiles.php", {json: JSON.stringify(a)});
     }
