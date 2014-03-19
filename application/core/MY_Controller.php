@@ -74,7 +74,7 @@ class MY_Controller extends CI_Controller {
         //Email
         $this->load->library('email');
 
-        pick_language();
+        $this->pick_language();
     }
 
 }
