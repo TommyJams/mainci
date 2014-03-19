@@ -32,7 +32,7 @@
 
 <div id="monthWidgetContainer">
 	<ul>
-		<li><h1><? echo $this->lang->line('btn_month_jan');?></h1></li>
+		<li><h1><? $jan = lang('btn_month_jan'); if(isset($jan)) echo $jan; else echo "Jan";?></h1></li>
 		<li><h1>February</h1></li>
 		<li><h1>March</h1></li>
 		<li><h1>April</h1></li>
