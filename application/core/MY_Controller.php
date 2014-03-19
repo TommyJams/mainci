@@ -68,6 +68,8 @@ class MY_Controller extends CI_Controller {
 		    $lang = $this->config->item('default_language');
 		}
 
+		error_log('Saving Language: '.$lang);
+
 		// Whatever we decided the lang was, save it for next time to avoid working it out again
 		$this->session->set_userdata('lang_code', $lang);
 
