@@ -6,7 +6,7 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <title>TommyJams - Press</title>
+    <title>TommyJams - <? echo lang('btn_find_gigs');?></title>
 
     <link href="/style/style.css" rel="stylesheet" type="text/css" />
 
@@ -32,7 +32,7 @@
 
             <div class="head">
 
-                <h1>Press</h1>
+                <h1><? echo lang('str_press_title');?></h1>
 
             </div>
 
@@ -40,13 +40,13 @@
                 
                 <p>
 				
-					Interested in us? Want to know more about us? Please contact us at:
+					<? echo lang('str_press_call1');?>
 					<br><br>
 					Tel: +91 9902644556
 					<br>
 					Email: contact@tommyjams.com
 					<br><br>
-					<a href="/presskit">Download Press Kit</a>
+					<a href="/presskit"><? echo lang('str_press_call2');?></a>
 				</p>
                 
             </div>

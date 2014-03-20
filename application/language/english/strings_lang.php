@@ -73,6 +73,10 @@
     $lang['btn_find_gigs'] = "Find Gigs";
     $lang['btn_dibs_status'] = "Dibs Status";
     $lang['btn_artist_my_profile'] = "Profile";
-    $lang['btn_artist_edit_profile'] = "Edit Profile";    
+    $lang['btn_artist_edit_profile'] = "Edit Profile"; 
 
+// Press View
+    $lang['str_press_title'] = "Press";
+    $lang['str_press_call1'] = "Interested in us? Want to know more about us? Please contact us at:";           
+    $lang['str_press_call2'] = "Download Press Kit";
 ?>
