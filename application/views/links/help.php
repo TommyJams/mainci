@@ -27,12 +27,12 @@
         $("#loading-indicator").show();      
         if(a == 1)
         {
-            alert('<? echo lang("str_careers_call1");?>');
+            alert('<? echo lang("str_help_call1");?>');
             window.location = "/help"; 
         }
         else
         {
-	   	   alert('<? echo lang("str_careers_call2");?>');
+	   	   alert('<? echo lang("str_help_call2");?>');
 		   window.location = "/help";  	
   	    }
     }
