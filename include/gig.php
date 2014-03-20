@@ -22,7 +22,7 @@
 		$todayYear = intval(date("Y"));
  	?>
     <div class="head">
-		<h1>LAUNCH GIG</h1>
+		<h1><? echo lang('btn_launch_gig'); ?></h1>
 	</div>
     <div id="box" style="display:block;">
         <div id="content" class="clearfix">
