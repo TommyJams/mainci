@@ -87,5 +87,19 @@
     $lang['str_careers_call3'] = "Su email";
     $lang['str_careers_call4'] = "Su introducción";
     $lang['str_careers_call5'] = "Enviar";
+    $lang['str_careers_call6'] = "¡Lo siento! Hubo un error al procesar su solicitud. Por favor, inténtelo de nuevo.";
+    $lang['str_careers_call7'] = "Su solicitud ha sido recibida. Nos pondremos en contacto con usted en breve.";
+
+// Help View
+    $lang['str_help_title'] = "Ayudar";
+    $lang['str_help_call1'] = "¡Lo siento! Hubo un error al procesar su solicitud. Por favor, inténtelo de nuevo.";
+    $lang['str_help_call2'] = "Su solicitud ha sido recibida. Nos pondremos en contacto con usted en breve.";
+    $lang['str_help_call3'] = "En caso de cualquier duda, consultas, peticiones, cuestiones o reclamaciones, utilice por favor el siguiente formulario proporcionado en contacto con nosotros y estaremos en contacto con usted en breve.";           
+    $lang['str_help_call4'] = "Su nombre";
+    $lang['str_help_call5'] = "Su email";
+    $lang['str_help_call6'] = "Su requerimiento";
+    $lang['str_help_call7'] = "Enviar";
+
+
 
 ?>

@@ -89,4 +89,20 @@
     $lang['str_careers_call3'] = "Your e-mail";
     $lang['str_careers_call4'] = "Your introduction";
     $lang['str_careers_call5'] = "Send";
+    $lang['str_careers_call6'] = "Sorry! There was some error while processing your request. Please try again.";
+    $lang['str_careers_call7'] = "Your request has been received. We will contact you shortly.";
+
+// Help View
+    $lang['str_help_title'] = "Help";
+    $lang['str_help_call1'] = "Sorry! There was some error while processing your request. Please try again.";
+    $lang['str_help_call2'] = "Your request has been received. We will contact you shortly.";
+    $lang['str_help_call3'] = "In case of any questions, queries, requests, issues or complaints, kindly use the below provided form to contact us, and we shall get back to you shortly.";           
+    $lang['str_help_call4'] = "Your name";
+    $lang['str_help_call5'] = "Your e-mail";
+    $lang['str_help_call6'] = "Your requirement";
+    $lang['str_help_call7'] = "Send";
+
+    
+
+
 ?>

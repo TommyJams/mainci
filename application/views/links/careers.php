@@ -27,12 +27,12 @@
         $("#loading-indicator").show();      
         if(a == 1)
         {
-            alert('Sorry! There was some error while processing your request. Please try again.');
+            alert('<? echo lang("str_careers_call6");?>');
             window.location = "/careers"; 
         }
         else
         {
-           alert('Your request has been received. We will contact you shortly.');
+           alert('<? echo lang("str_careers_call7");?>');
            window.location = "/careers";       
         }
     }

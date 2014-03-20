@@ -6,7 +6,7 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <title>TommyJams - Help</title>
+    <title>TommyJams - <? echo lang('str_help_title');?></title>
 
     <link href="/style/style.css" rel="stylesheet" type="text/css" />
 
@@ -27,12 +27,12 @@
         $("#loading-indicator").show();      
         if(a == 1)
         {
-            alert('Sorry! There was some error while processing your request. Please try again.');
+            alert('<? echo lang("str_careers_call1");?>');
             window.location = "/help"; 
         }
         else
         {
-	   	   alert('Your request has been received. We will contact you shortly.');
+	   	   alert('<? echo lang("str_careers_call2");?>');
 		   window.location = "/help";  	
   	    }
     }
@@ -59,37 +59,35 @@
 
             <div class="head">
 
-                <h1>Help</h1>
+                <h1><? echo lang('str_help_title');?></h1>
 
             </div>
 
             <div id="textContainer">
-				<p>
-					In case of any questions, queries, requests, issues or complaints, kindly use the below provided form to contact us, and we shall get back to you shortly.
-                </p>
+				<p><? echo lang('str_help_call3');?> </p>
                 <form action="" method="POST" id="help-form" name="help-form" style="width:50%; margin-top:20px; left:50%; margin-left:25%;">
                     <table style="border:0px; width:100%;">
                         <tr style="width:100%;">
                             <td style="width:100%;">
                                 <!--Your name-->
-                                <input type="text" id="cf_name" value="Your name" name="cf_name" style="width:50%; margin-top:10px;"/>
+                                <input type="text" id="cf_name" value="<? echo lang('str_help_call4');?>" name="cf_name" style="width:50%; margin-top:10px;"/>
                             </td>
                         </tr>
                         <tr style="width:100%;">
                             <td style="width:100%;">
                                 <!--Your e-mail-->
-                                <input type="text" id="cf_email" value="Your e-mail" name="cf_email" style="width:50%; margin-top:10px;"/>
+                                <input type="text" id="cf_email" value="<? echo lang('str_help_call5');?>" name="cf_email" style="width:50%; margin-top:10px;"/>
                             </td>
                         </tr>
                         <tr style="width:100%;">
                             <td style="width:100%;">
                                 <!--Your Requirement-->
-                                <textarea name="cf_message" style="height:200px; width:100%; margin-top:10px; font-family: Arial; font-size: 14px;">Your requirement</textarea>
+                                <textarea name="cf_message" style="height:200px; width:100%; margin-top:10px; font-family: Arial; font-size: 14px;"><? echo lang('str_help_call6');?></textarea>
                             </td>
                         </tr>
                         <tr style="width:100%;">
                             <td style="width:100%;">
-                                <input type="submit" value="Send" id="help-send" name="help-send" class="button" style="width:auto; margin: 10px auto;"/>
+                                <input type="submit" value="<? echo lang('str_help_call7');?>" id="help-send" name="help-send" class="button" style="width:auto; margin: 10px auto;"/>
                             </td>
                         </tr>
                     </table>
