@@ -81,10 +81,10 @@
     $lang['str_press_call2'] = "Descargar Kit de Prensa";  
 
 // Careers View
-    $lang['str_careers_title'] = "Carreras"
+    $lang['str_careers_title'] = "Carreras";
     $lang['str_careers_call1'] = "TommyJams está siempre en la búsqueda de profesionales jóvenes y entusiastas o aficionados que encuentran la música como su pasión! Si reúne los requisitos 
                  como el anterior y está interesado en ser parte de la revolución que TommyJams está trayendo en la industria de la música, nos cae el mensaje 
-                 mediante el siguiente formulario con una pequeña introducción y estaremos encantados de considerar su inclusión en la familia TommyJams."
+                 mediante el siguiente formulario con una pequeña introducción y estaremos encantados de considerar su inclusión en la familia TommyJams.";
     $lang['str_careers_call2'] = "Su nombre";
     $lang['str_careers_call3'] = "Su email";
     $lang['str_careers_call4'] = "Su introducción";
