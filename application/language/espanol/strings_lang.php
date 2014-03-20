@@ -77,7 +77,7 @@
 
 // Press View
     $lang['str_press_title'] = "Prensa";
-    $lang['str_press_call1'] = "Interesado en nosotros? ¿Quiere saber más sobre nosotros? Por favor, en contacto con nosotros en:";           
+    $lang['str_press_call1'] = "Interesado en nosotros? Quiere saber más sobre nosotros? Por favor en contacto con nosotros en:";           
     $lang['str_press_call2'] = "Descargar Kit de Prensa";     
 
 ?>
