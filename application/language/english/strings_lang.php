@@ -79,4 +79,14 @@
     $lang['str_press_title'] = "Press";
     $lang['str_press_call1'] = "Interested in us? Want to know more about us? Please contact us at:";           
     $lang['str_press_call2'] = "Download Press Kit";
+
+// Careers View
+    $lang['str_careers_title'] = "Careers";
+    $lang['str_careers_call1'] = "TommyJams is always on the lookout for young, enthusiastic professionals or amateurs who find music as their passion! If you qualify 
+                as the above and are interested in being a part of the revolution that TommyJams is bringing in the music industry, do drop us a message
+                using the form below with a small introduction and we shall be happy to consider your inclusion in the TommyJams family.";
+    $lang['str_careers_call2'] = "Your name";
+    $lang['str_careers_call3'] = "Your e-mail";
+    $lang['str_careers_call4'] = "Your introduction";
+    $lang['str_careers_call5'] = "Send";
 ?>
