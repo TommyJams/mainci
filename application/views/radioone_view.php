@@ -44,15 +44,16 @@
 
     function loadTilesCallback(a) 
     {
-      console.log(JSON.stringify(a));
-
-      $('#videoTilesContainer').load("/include/videoTiles.php", {json: JSON.stringify(a)});
+      initMonthWidget();
+      initCaptions();
+      initFancyBox();
+      $("#loading-indicator").hide();
     }
 
     function loadTiles(year,month,day) 
     {
       $("#loading-indicator").show();
-      $.post('/radioone/loadTiles', {'year': year, 'month': month, 'day': day}, loadTilesCallback, 'json');
+      $('#videoTilesContainer').load("/radioone/loadTiles", {'year': year, 'month': month, 'day': day}, loadTilesCallback);
     }
 
   </script>

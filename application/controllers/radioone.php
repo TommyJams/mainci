@@ -43,12 +43,13 @@ class Radioone extends MY_Controller{
 
 	public function loadTiles() {
 
-		if(isset($_POST["day"]))
+		//Need to check for text undefined since it seems javascript is sending the string rather than an actual undefined variable
+		if(isset($_POST["day"]) && $_POST["day"] != 'undefined')
 		{
 			$thisDate = $_POST["day"];
 		}
 
-		if(isset($_POST["month"]) && isset($_POST["year"]))
+		if(isset($_POST["month"]) && isset($_POST["year"]) && $_POST["month"] != 'undefined' && $_POST["year"] != 'undefined')
 		{
 			$thisMonth = $_POST["month"];
 			$thisYear = $_POST["year"];
@@ -75,28 +76,17 @@ class Radioone extends MY_Controller{
 			}
 		}
 
-		$response['year']  = $thisYear;
-		$response['month'] = $thisMonth;
+		$response['thisYear']  = $thisYear;
+		$response['thisMonth'] = $thisMonth;
 		if(isset($thisDate))
-			$response['day']   = $thisDate;
+			$response['thisDate']   = $thisDate;
 		$response['numTiles'] = mysql_num_rows($results);
-                $response['langStrings'] =  array(
-                                                'btn_month_jan' => $this->lang->line('btn_month_jan'),
-                                                'btn_month_feb' => $this->lang->line('btn_month_feb'),
-                                                'btn_month_mar' => $this->lang->line('btn_month_mar'),
-                                                'btn_month_apr' => $this->lang->line('btn_month_apr'),
-                                                'btn_month_may' => $this->lang->line('btn_month_may'),
-                                                'btn_month_jun' => $this->lang->line('btn_month_jun'),
-                                                'btn_month_jul' => $this->lang->line('btn_month_jul'),
-                                                'btn_month_aug' => $this->lang->line('btn_month_aug'),
-                                                'btn_month_sep' => $this->lang->line('btn_month_sep'),
-                                                'btn_month_oct' => $this->lang->line('btn_month_oct'),
-                                                'btn_month_nov' => $this->lang->line('btn_month_nov'),
-                                                'btn_month_dec' => $this->lang->line('btn_month_dec')
-                                        );
+
+        //Load View and trim all the endlines
+		$viewHTMLCode = trim(preg_replace('/\s\s+/', ' ', $this->load->view('include/videoTiles', $response, true)));
 
 		$this->load->helper('functions');
-		createResponse($response);
+		createHTMLResponse($viewHTMLCode);
 	}
 }
 ?>
