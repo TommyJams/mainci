@@ -1,18 +1,18 @@
 <?
 	switch($thisMonth) {
-			case '01': $thisMonthName = "January"; break;
-			case '02': $thisMonthName = "February"; break;
-			case '03': $thisMonthName = "March"; break;
-			case '04': $thisMonthName = "April"; break;
-			case '05': $thisMonthName = "May"; break;
-			case '06': $thisMonthName = "June"; break;
-			case '07': $thisMonthName = "July"; break;
-			case '08': $thisMonthName = "August"; break;
-			case '09': $thisMonthName = "Sept"; break;
-			case '10': $thisMonthName = "October"; break;
-			case '11': $thisMonthName = "November"; break;
-			case '12': $thisMonthName = "December"; break;
-			default:   $thisMonthName = "January"; break;
+			case '01': $thisMonthName = lang('btn_month_jan'); break;
+			case '02': $thisMonthName = lang('btn_month_feb'); break;
+			case '03': $thisMonthName = lang('btn_month_mar'); break;
+			case '04': $thisMonthName = lang('btn_month_apr'); break;
+			case '05': $thisMonthName = lang('btn_month_may'); break;
+			case '06': $thisMonthName = lang('btn_month_jun'); break;
+			case '07': $thisMonthName = lang('btn_month_jul'); break;
+			case '08': $thisMonthName = lang('btn_month_aug'); break;
+			case '09': $thisMonthName = lang('btn_month_sep'); break;
+			case '10': $thisMonthName = lang('btn_month_oct'); break;
+			case '11': $thisMonthName = lang('btn_month_nov'); break;
+			case '12': $thisMonthName = lang('btn_month_dec'); break;
+			default:   $thisMonthName = lang('btn_month_jan'); break;
 	}
 ?>
 
@@ -24,17 +24,17 @@
 <div id="monthWidgetContainer">
 	<ul>
 		<li><h1><? echo lang('btn_month_jan'); ?></h1></li>
-		<li><h1>February</h1></li>
-		<li><h1>March</h1></li>
-		<li><h1>April</h1></li>
-		<li><h1>May</h1></li>
-        <li><h1>June</h1></li>
-        <li><h1>July</h1></li>
-        <li><h1>August</h1></li>
-        <li><h1>September</h1></li>
-        <li><h1>October</h1></li>
-        <li><h1>November</h1></li>
-        <li><h1>December</h1></li>
+		<li><h1><? echo lang('btn_month_feb'); ?></h1></li>
+		<li><h1><? echo lang('btn_month_mar'); ?></h1></li>
+		<li><h1><? echo lang('btn_month_apr'); ?></h1></li>
+		<li><h1><? echo lang('btn_month_may'); ?></h1></li>
+		<li><h1><? echo lang('btn_month_jun'); ?></h1></li>
+		<li><h1><? echo lang('btn_month_jul'); ?></h1></li>
+		<li><h1><? echo lang('btn_month_aug'); ?></h1></li>
+		<li><h1><? echo lang('btn_month_sep'); ?></h1></li>
+		<li><h1><? echo lang('btn_month_oct'); ?></h1></li>
+		<li><h1><? echo lang('btn_month_nov'); ?></h1></li>
+		<li><h1><? echo lang('btn_month_dec'); ?></h1></li>
 	</ul>
 </div>
 
