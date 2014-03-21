@@ -101,8 +101,22 @@
     $lang['str_help_call5'] = "Your e-mail";
     $lang['str_help_call6'] = "Your requirement";
     $lang['str_help_call7'] = "Send";
+    $lang['str_help_call8'] = "";
 
-    
+// Advertise View
+    $lang['str_advertise_title'] = "Advertise";
+    $lang['str_advertise_call1'] = "Sorry! There was some error while processing your request. Please try again.";
+    $lang['str_advertise_call2'] = "Your request has been received. We will contact you shortly.";    
+    $lang['str_advertise_call3'] = "TommyJams is a fast growing community of Artists, Venues and Fans.";
+    $lang['str_advertise_call4'] = "There are a lot of target advertising opportunities available on the website:";
+    $lang['str_advertise_call5'] = "1. Full Screen Banners";
+    $lang['str_advertise_call6'] = "2. Sidebar Advertisements";
+    $lang['str_advertise_call7'] = "3. Targeting based on user type, location, and music genre";
+    $lang['str_advertise_call8'] = "For advertising with us, please drop a message using the form below and we shall get in touch with you.";
+    $lang['str_advertise_call9'] = "Your name";
+    $lang['str_advertise_call10'] = "Your e-mail";
+    $lang['str_advertise_call11'] = "Your requirement";
+    $lang['str_advertise_call12'] = "Send";
 
 
 ?>

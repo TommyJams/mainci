@@ -6,7 +6,7 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <title>TommyJams - Advertise</title>
+    <title>TommyJams - <? echo lang('str_advertise_title');?></title>
 
     <link href="/style/style.css" rel="stylesheet" type="text/css" />
 
@@ -27,12 +27,12 @@
         $("#loading-indicator").show();      
         if(a == 1)
         {
-            alert('Sorry! There was some error while processing your request. Please try again.');
+            alert('<? echo lang("str_advertise_call1");?>');
             window.location = "/advertise";  
         }
         else
         {
-           alert('Your request has been received. We will contact you shortly.');
+           alert('<? echo lang("str_advertise_call2");?>');
            window.location = "/advertise";  
         }
     }
@@ -56,47 +56,47 @@
 	<div id="main-container">
         <div id="inner-container">
             <div class="head">
-                <h1>Advertise</h1>
+                <h1><? echo lang('str_advertise_title');?></h1>
             </div>
             <div id="textContainer">                
                 <p>
-                    TommyJams is a fast growing community of Artists, Venues and Fans.
+                    <? echo lang('str_advertise_call3');?>
                     <br>
                     <br>
-                    There are a lot of target advertising opportunities available on the website:
+                    <? echo lang('str_advertise_call4');?>
                     <br>
-                    1. Full Screen Banners
+                    <? echo lang('str_advertise_call5');?>
                     <br>
-                    2. Sidebar Advertisements
+                    <? echo lang('str_advertise_call6');?>
                     <br>
-                    3. Targeting based on user type, location, and music genre
+                    <? echo lang('str_advertise_call7');?>
                     <br>
                     <br>
-                    For advertising with us, please drop a message using the form below and we shall get in touch with you.
+                    <? echo lang('str_advertise_call8');?>
                 </p>
                 <form action="" method="post" id="advertise-form" name="advertise-form" style="width:50%; margin-top:20px; left:50%; margin-left:25%;">
                     <table style="border:0px; width:100%;">
                         <tr style="width:100%;">
                             <td style="width:100%;">
                                 <!--Your name-->
-                                <input type="text" value="Your name" name="cf_name" style="width:50%; margin-top:10px;">
+                                <input type="text" value="<? echo lang('str_advertise_call9');?>" name="cf_name" style="width:50%; margin-top:10px;">
                             </td>
                         </tr>
                         <tr style="width:100%;">
                             <td style="width:100%;">
                                 <!--Your e-mail-->
-                                <input type="text" value="Your e-mail" name="cf_email" style="width:50%; margin-top:10px;">
+                                <input type="text" value="<? echo lang('str_advertise_call10');?>" name="cf_email" style="width:50%; margin-top:10px;">
                             </td>
                         </tr>
                         <tr style="width:100%;">
                             <td style="width:100%;">
                                 <!--Your Requirement-->
-                                <textarea name="cf_message" style="height:200px; width:100%; margin-top:10px; font-family: Arial; font-size: 14px;">Your requirement</textarea>
+                                <textarea name="cf_message" style="height:200px; width:100%; margin-top:10px; font-family: Arial; font-size: 14px;"><? echo lang('str_advertise_call11');?></textarea>
                             </td>
                         </tr>
                         <tr style="width:100%;">
                             <td style="width:100%;">
-                                <input type="submit" value="Send" style="width:auto; margin: 10px auto;">
+                                <input type="submit" value="<? echo lang('str_advertise_call12');?>" style="width:auto; margin: 10px auto;">
                             </td>
                         </tr>
                     </table>
