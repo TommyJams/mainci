@@ -99,8 +99,18 @@
     $lang['str_help_call5'] = "Su email";
     $lang['str_help_call6'] = "Su requerimiento";
     $lang['str_help_call7'] = "Enviar";
-    $lang['str_help_call8'] = "";
-
+    $lang['str_help_call8'] = "Preguntas frecuentes";
+    $lang['str_help_call9'] = "Artista: Yo soy un artista interesado en actuar en un concierto, por dónde empiezo?";
+    $lang['str_help_call10'] = "Comience ingresando a la página web de la cabecera de la utilización de su Facebook Login. Mientras se registra, por favor, introduzca su nombre de la banda, este será su identificación principal en el sitio web TommyJams. Ahora será llevado a su perfil. Comience por la actualización de su perfil en TommyJams (haga clic en Edit Profile), esto ayudará a los lugares y promotores para identificar y conectarse con usted. A continuación, puede iniciar la búsqueda de los conciertos y aplicando para ellos.";
+    $lang['str_help_call11'] = "Venue: Soy una celebración / Promotor querer una banda para mi lugar, por dónde empiezo?";
+    $lang['str_help_call12'] = "Comience ingresando a la página web de la cabecera de la utilización de su Facebook Login. Mientras se registra, por favor, introduzca su nombre de la organización / lugar, este será su identificación principal en el sitio web TommyJams. Ahora será llevado a su perfil. Comience por la actualización de su perfil en TommyJams (haga clic en Edit Profile), esto ayudará a los artistas para identificar y conectarse con usted. A continuación, puede empezar a poner en marcha sus conciertos y aceptar Dibs de artistas.";
+    $lang['str_help_call13'] = "Usuario: Que es esto botón 'Dibs'?";
+    $lang['str_help_call14'] = "Si un artista está interesado en actuar en un concierto, los dibs artista para el concierto. Los lugares y los promotores que lanzaron el concierto luego pueden monitorear los dibs entrantes y seleccionar la banda que desea llevar a cabo el concierto.";
+    $lang['str_help_call15'] = "Artista: Acabo de encontrar un concierto interesante, ¿qué hago?";
+    $lang['str_help_call16'] = "Great! Usted puede aplicar para el concierto haciendo clic en el botón de DIB que se presenta en la sección 'Encontrar Conciertos' o en la página de Gig Info sí mismo. Usted puede comprobar fuera de la condición de sus DIB, vaya a la sección 'Estado Dibs'.";
+    $lang['str_help_call17'] = "Venue: puse en marcha mi concierto, ¿qué hago?";
+    $lang['str_help_call18'] = "Great! Los artistas ahora van a ver su concierto en marcha y empezar a aplicar. Pronto comienza a recibir DIB de ellos. Puede supervisar estos dibs en la sección 'Mis Conciertos' y aceptar o rechazar DIB de cada artista. Cada vez que usted acepta DIB de un artista del concierto será considerado como reservado y un rechazo será enviado a todos los demás artistas.";
+    
 // Advertise View
     $lang['str_advertise_title'] = "Anunciar";
     $lang['str_advertise_call1'] = "¡Lo siento! Hubo un error al procesar su solicitud. Por favor, inténtelo de nuevo.";

@@ -101,7 +101,17 @@
     $lang['str_help_call5'] = "Your e-mail";
     $lang['str_help_call6'] = "Your requirement";
     $lang['str_help_call7'] = "Send";
-    $lang['str_help_call8'] = "";
+    $lang['str_help_call8'] = "FAQ";
+    $lang['str_help_call9'] = "Artist: I am an Artist interested to perform at a gig, where do I start?";
+    $lang['str_help_call10'] = "Start by logging into the website from the header using your Facebook Login. While registering, please enter your band name, this will be your main identification on the TommyJams website. You will now be taken to your profile. Start off by updating your profile on TommyJams (click on Edit Profile), this will help the venues and promoters to identify and connect with you. You can then start searching for the gigs and applying for them.";
+    $lang['str_help_call11'] = "Venue: I am a Venue/Promoter wanting a band for my venue, where do I start?";
+    $lang['str_help_call12'] = "Start by logging into the website from the header using your Facebook Login. While registering, please enter your organization/venue name, this will be your main identification on the TommyJams website. You will now be taken to your profile. Start off by updating your profile on TommyJams (click on Edit Profile), this will help the artists to identify and connect with you. You can then start launching your gigs and accepting Dibs from artists.";
+    $lang['str_help_call13'] = "User: What is this 'Dibs' button?";
+    $lang['str_help_call14'] = "If an artist is interested in performing at a gig, the artist dibs for the gig. The venues and promoters who launched the gig can then monitor the incoming dibs and select the band that they want to perform the gig.";
+    $lang['str_help_call15'] = "Artist: I just found an interesting gig, what do I do?";
+    $lang['str_help_call16'] = "Great! You can apply for the gig by clicking on the dibs button that comes in the 'Find Gigs' section or on the Gig Info page itself. You can check out the status of your dibs by going to the 'Dibs Status' section.";
+    $lang['str_help_call17'] = "Venue: I launched my gig, what do I do?";
+    $lang['str_help_call18'] = "Great! Artists are now going to see your launched gig and start applying. Soon you'll start getting dibs from them. You can monitor these dibs in the 'My Gigs' section and accept or reject each Artist's dibs. Whenever you accept an artist's dibs the gig will be considered as booked and a rejection will be sent to all the other artists.";
 
 // Advertise View
     $lang['str_advertise_title'] = "Advertise";
