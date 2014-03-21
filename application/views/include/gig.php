@@ -13,7 +13,7 @@
 		$todayYear = intval(date("Y"));
  	?>
     <div class="head">
-		<h1>LAUNCH GIG</h1>
+		<h1><? echo lang('str_launch_gig'); ?></h1>
 	</div>
     <div id="box" style="display:block;">
         <div id="content" class="clearfix">
@@ -24,97 +24,97 @@
 						<div id="launchContainer">
                             <fieldset id="details" style = "height:auto; float:left">
                                 <p>
-                                    <label for="gig">Name: <span class="requiredField">*</span></label>
+                                    <label for="gig"><? echo lang('str_label_name'); ?><span class="requiredField">*</span></label>
                                     <input type="text" id="gig" name="gig" style="width:200px;" value="" pattern="^[a-zA-Z0-9. /()-_:@]{3,50}$" autofocus required />
-                                    <em>Name of Gig</em>
+                                    <em><? echo lang('str_desc_name'); ?></em>
                                 </p>
 								<? if($show==1){ ?>
 									<p>
-									  <label for="Select">Genre: <span class="requiredField">*</span></label>
+									  <label for="Select"><? echo lang('str_label_genre'); ?><span class="requiredField">*</span></label>
 										<select id="select" name="cat"  style="width:200px; padding-right:0px;" required >
-											<option value="Acoustic">Acoustic</option>
-											<option value="Blues">Blues</option>
-											<option value="Classic Rock">Classic Rock</option>
-											<option value="Classical">Classical</option>
-											<option value="Comedy">Comedy</option>
-											<option value="Contemporary">Contemporary</option>
-											<option value="Cover Band">Cover Band</option>
-											<option value="Dance/DJ">Dance/DJ</option>
-											<option value="Dubstep">Dubstep</option>
-											<option value="Electronic">Electronic</option>
-											<option value="Folk">Folk</option>
-											<option value="Funk">Funk</option>
-											<option value="Goth">Fusion</option>
-											<option value="Jazz">Jazz</option>
-											<option value="Metal">Metal</option>
-											<option value="Pop">Pop</option>
-											<option value="Punk">Punk</option>
-											<option value="Reggae">Reggae</option>
-											<option value="Rock">Rock</option>
-											<option value="Solo">Solo</option>
-											<option value="Soul">Soul</option>
-											<option value="Other">Other</option>
+											<option value="Acoustic"><? echo lang('str_genre_acoustic'); ?></option>
+											<option value="Blues"><? echo lang('str_genre_blues'); ?></option>
+											<option value="Classic Rock"><? echo lang('str_genre_classic'); ?></option>
+											<option value="Classical"><? echo lang('str_genre_classical'); ?></option>
+											<option value="Comedy"><? echo lang('str_genre_comedy'); ?></option>
+											<option value="Contemporary"><? echo lang('str_genre_contemporary'); ?></option>
+											<option value="Cover Band"><? echo lang('str_genre_cover'); ?></option>
+											<option value="Dance/DJ"><? echo lang('str_genre_dance'); ?></option>
+											<option value="Dubstep"><? echo lang('str_genre_dubstep'); ?></option>
+											<option value="Electronic"><? echo lang('str_genre_electronic'); ?></option>
+											<option value="Folk"><? echo lang('str_genre_folk'); ?></option>
+											<option value="Funk"><? echo lang('str_genre_funk'); ?></option>
+											<option value="Goth"><? echo lang('str_genre_goth'); ?></option>
+											<option value="Jazz"><? echo lang('str_genre_jazz'); ?></option>
+											<option value="Metal"><? echo lang('str_genre_metal'); ?></option>
+											<option value="Pop"><? echo lang('str_genre_pop'); ?></option>
+											<option value="Punk"><? echo lang('str_genre_punk'); ?></option>
+											<option value="Reggae"><? echo lang('str_genre_reggae'); ?></option>
+											<option value="Rock"><? echo lang('str_genre_rock'); ?></option>
+											<option value="Solo"><? echo lang('str_genre_solo'); ?></option>
+											<option value="Soul"><? echo lang('str_genre_soul'); ?></option>
+											<option value="Other"><? echo lang('str_genre_other'); ?></option>
 										</select>
 										<em>&nbsp;</em>
 									</p>
 									<p>
-									<label for="Budget">Budget: <span class="requiredField">*</span></label>
+									<label for="Budget"><? echo lang('str_label_budget'); ?><span class="requiredField">*</span></label>
 										<select id="select" name="budget_min" style="width:145px; float:left;" required >
-											<option value="0"   >Free Gig</option>
-											<option value="1000">Rs. 1000</option>
-											<option value="2000">Rs. 2000</option>
-											<option value="5000">Rs. 5000</option>
-											<option value="10000">Rs. 10000</option>
-											<option value="20000">Rs. 20000</option>
-											<option value="40000">Rs. 40000</option>
-											<option value="100000">Rs. 100000</option>
+											<option value="0"   ><? echo lang('str_budget_free'); ?></option>
+											<option value="1000"><? echo lang('str_budget_opt1'); ?></option>
+											<option value="2000"><? echo lang('str_budget_opt2'); ?></option>
+											<option value="5000"><? echo lang('str_budget_opt3'); ?></option>
+											<option value="10000"><? echo lang('str_budget_opt4'); ?></option>
+											<option value="20000"><? echo lang('str_budget_opt5'); ?></option>
+											<option value="40000"><? echo lang('str_budget_opt6'); ?></option>
+											<option value="100000"><? echo lang('str_budget_opt7'); ?></option>
 										</select>
 										<select id="select"  style="width:60px; margin-left:5px; float:left;" name="budget_max">
-											<option value="0">+0%</option>
-											<option value="10">+10%</option>
-											<option value="20">+20%</option>
-											<option value="30">+30%</option>
-											<option value="40">+40%</option>
-											<option value="50">+50%</option>
-											<option value="60">+60%</option>
-											<option value="70">+70%</option>
-											<option value="80">+80%</option>
-											<option value="90">+90%</option>
-											<option value="90">+100%</option>
+											<option value="0"><? echo lang('str_nego_0'); ?></option>
+											<option value="10"><? echo lang('str_nego_10'); ?></option>
+											<option value="20"><? echo lang('str_nego_20'); ?></option>
+											<option value="30"><? echo lang('str_nego_30'); ?></option>
+											<option value="40"><? echo lang('str_nego_40'); ?></option>
+											<option value="50"><? echo lang('str_nego_50'); ?></option>
+											<option value="60"><? echo lang('str_nego_60'); ?></option>
+											<option value="70"><? echo lang('str_nego_70'); ?></option>
+											<option value="80"><? echo lang('str_nego_80'); ?></option>
+											<option value="90"><? echo lang('str_nego_90'); ?></option>
+											<option value="100"><? echo lang('str_nego_100'); ?></option>
 										</select>
-										<em>Min(*) & Negotiable Budget</em>
+										<em><? echo lang('str_desc_budget'); ?></em>
 									</p>
 									<p>
-										<label for="gig">Date: <span class="requiredField">*</span></label>
+										<label for="gig"><? echo lang('str_label_date'); ?><span class="requiredField">*</span></label>
 										<select id="select"  style="width:60px; float:left;" name="date">
 											<?
 												for($i=1;$i<=31;$i++){if($i == $todayDate) print("<option value='$i' selected='selected'>$i</option>"); else print("<option value='$i'>$i</option>");}
 											?>
 										</select>
 										<select id="select"  style="width:80px; margin-left: 5px; float:left;" name="month">
-										   <option value='1' <? if($todayMonth == '1') print("selected='selected'"); ?> >Jan</option>
-										   <option value='2' <? if($todayMonth == '2') print("selected='selected'"); ?> >Feb</option>
-										   <option value='3' <? if($todayMonth == '3') print("selected='selected'"); ?> >Mar</option>
-										   <option value='4' <? if($todayMonth == '4') print("selected='selected'"); ?> >Apr</option>
-										   <option value='5' <? if($todayMonth == '5') print("selected='selected'"); ?> >May</option>
-										   <option value='6' <? if($todayMonth == '6') print("selected='selected'"); ?> >Jun</option>
-										   <option value='7' <? if($todayMonth == '7') print("selected='selected'"); ?> >Jul</option>
-										   <option value='8' <? if($todayMonth == '8') print("selected='selected'"); ?> >Aug</option>
-										   <option value='9' <? if($todayMonth == '9') print("selected='selected'"); ?> >Sep</option>
-										   <option value='10' <? if($todayMonth == '10') print("selected='selected'"); ?> >Oct</option>
-										   <option value='11' <? if($todayMonth == '11') print("selected='selected'"); ?> >Nov</option>
-										   <option value='12' <? if($todayMonth == '12') print("selected='selected'"); ?> >Dec</option>
+										   <option value='1' <? if($todayMonth == '1') print("selected='selected'"); ?> ><? echo lang('str_month_jan'); ?></option>
+										   <option value='2' <? if($todayMonth == '2') print("selected='selected'"); ?> ><? echo lang('str_month_feb'); ?></option>
+										   <option value='3' <? if($todayMonth == '3') print("selected='selected'"); ?> ><? echo lang('str_month_mar'); ?></option>
+										   <option value='4' <? if($todayMonth == '4') print("selected='selected'"); ?> ><? echo lang('str_month_apr'); ?></option>
+										   <option value='5' <? if($todayMonth == '5') print("selected='selected'"); ?> ><? echo lang('str_month_may'); ?></option>
+										   <option value='6' <? if($todayMonth == '6') print("selected='selected'"); ?> ><? echo lang('str_month_jun'); ?></option>
+										   <option value='7' <? if($todayMonth == '7') print("selected='selected'"); ?> ><? echo lang('str_month_jul'); ?></option>
+										   <option value='8' <? if($todayMonth == '8') print("selected='selected'"); ?> ><? echo lang('str_month_aug'); ?></option>
+										   <option value='9' <? if($todayMonth == '9') print("selected='selected'"); ?> ><? echo lang('str_month_sep'); ?></option>
+										   <option value='10' <? if($todayMonth == '10') print("selected='selected'"); ?> ><? echo lang('str_month_oct'); ?></option>
+										   <option value='11' <? if($todayMonth == '11') print("selected='selected'"); ?> ><? echo lang('str_month_nov'); ?></option>
+										   <option value='12' <? if($todayMonth == '12') print("selected='selected'"); ?> ><? echo lang('str_month_dec'); ?></option>
 										</select>
 										<select id="select"  style="width:60px; margin-left: 5px; float:left;" name="year">
 										<?
-											for($i=2013;$i<=2015;$i++){ if($i == $todayYear) print("<option value='$i' selected='selected'>$i</option>"); else print("<option value='$i'>$i</option>"); }
+											for($i=2014;$i<=2015;$i++){ if($i == $todayYear) print("<option value='$i' selected='selected'>$i</option>"); else print("<option value='$i'>$i</option>"); }
 										?>                  
 										</select>
-										<em>Date of Event</em>
+										<em><? echo lang('str_desc_date'); ?></em>
 									</p>
 								<? } ?>
                                 <p>
-                                    <label for="gig">Time: <span class="requiredField">*</span></label>
+                                    <label for="gig"><? echo lang('str_label_time'); ?><span class="requiredField">*</span></label>
                                     <select id="select"  style="width:60px; float:left;" name="hours">
                                     <?
                                         for($i=01;$i<=12;$i++){ if( (isset($a) && $hourSaved==$i) || $i==8 ) print("<option value='$i' selected='selected'>$i</option>"); else print("<option value='$i'>$i</option>"); }
@@ -125,80 +125,80 @@
 										<option value='30' <? if(isset($a) && $minSaved=='30') print("selected='selected'"); ?> >30</option>
                                     </select>                            
                                     <select id="select" style="width:60px; margin-left: 5px; float:left;" name="am">
-                                        <option value='PM' <? if(isset($a) && $amSaved=='PM') print("selected='selected'"); ?> >PM</option>
-										<option value='AM' <? if(isset($a) && $amSaved=='AM') print("selected='selected'"); ?> >AM</option>
+                                        <option value='PM' <? if(isset($a) && $amSaved=='PM') print("selected='selected'"); ?> ><? echo lang('str_time_am'); ?></option>
+										<option value='AM' <? if(isset($a) && $amSaved=='AM') print("selected='selected'"); ?> ><? echo lang('str_time_pm'); ?></option>
                                     </select>
-                                    <em>Time of Gig</em>
+                                    <em><? echo lang('str_desc_time'); ?></em>
                                 </p>
 								<p>
-									<label for="gig">Duration: <span class="requiredField">*</span></label>
+									<label for="gig"><? echo lang('str_label_duration'); ?><span class="requiredField">*</span></label>
                                     <select id="select"  style="width:60px; float:left;" name="duration">
                                     <?
                                         for($i=0.5;$i<=24;$i = $i + 0.5){ if(isset($a) && $i == $durationSaved) print("<option value='$i' selected='selected'>$i</option>"); else print("<option value='$i'>$i</option>"); }
                                     ?>
                                     </select>
-									<em>in Hours</em>
+									<em><? echo lang('str_desc_duration'); ?></em>
 								</p>
 								<? if($show==1){ ?>
 									<p>
-										<label for="gig">Slots:</label>
+										<label for="gig"><? echo lang('str_label_slots'); ?></label>
 										<select id="select"  style="width:60px; float:left;" name="slotNum">
 										<?
 											for($i=1;$i<=10;$i++){print("<option value='$i'>$i</option>");}
 										?>      
 										</select>
-										<em>Number of slots</em>
+										<em><? echo lang('str_desc_slots'); ?></em>
 									</p>
 								<? } ?>
                                 <p>
-                                    <label for="Website">Website:</label>
+                                    <label for="Website"><? echo lang('str_label_website'); ?></label>
                                     <input type="text" id="website" name="web" style="width:200px;" value="<? if(isset($a)) echo $a['web']; ?>" pattern="^[a-zA-Z0-9/ ,-_.:;&?]{20,150}$" />
-                                    <em>Gig's Website</em>
+                                    <em><? echo lang('str_desc_website'); ?></em>
                                 </p>
                                 <p>
-                                    <label for="social">Facebook:</label>
+                                    <label for="social"><? echo lang('str_label_facebook'); ?></label>
                                     <input type="text" id="fb" name="fb" style="width:200px;" value="<? if(isset($a)) echo $a['fb']; ?>" pattern="^[a-zA-Z0-9/ ,-_.:;&?]{20,150}$" />
-                                    <em>Gig's link on Facebook.</em>
+                                    <em><? echo lang('str_desc_facebook'); ?></em>
                                 </p>
                                 <p>
-                                    <label for="social">Twitter: </label>
+                                    <label for="social"><? echo lang('str_label_twitter'); ?></label>
                                     <input type="text" id="twiter" name="twitter" style="width:200px;" value="<? if(isset($a)) echo $a['twitter']; ?>" pattern="^[a-zA-Z0-9/ ,-_.:;&?]{20,150}$" />
-                                    <em>Gig's link on Twitter.</em>
+                                    <em><? echo lang('str_desc_twitter'); ?></em>
                                 </p>
                             </fieldset>
                             <fieldset id="venue">
                                 <p>
-                                    <label for="add">Address: <span class="requiredField">*</span></label>
+                                    <label for="add"><? echo lang('str_label_address'); ?><span class="requiredField">*</span></label>
                                     <input type="text" id="add" name="add" value="<? if(isset($a)) echo $a['venue_add']; ?>" pattern="^[0-9a-zA-Z !@#$%^&*()_,.\\/{}|:<>?-]{3,100}$" required/>
-                                    <em>Venue Address</em>
+                                    <em><? echo lang('str_desc_address'); ?></em>
                                 </p>
 								<? if($show==1){ ?>
 									<p>
-										<label for="city">City: <span class="requiredField">*</span></label>
+										<label for="city"><? echo lang('str_label_city'); ?><span class="requiredField">*</span></label>
 										<input type="text" id="city" name="city" value="" pattern="^[a-zA-Z ]{3,20}$" required/>
-										<em>Venue City</em>
+										<em><? echo lang('str_desc_city'); ?></em>
 									</p>
 									<p>
-										<label for="state">State:</label>
+										<label for="state"><? echo lang('str_label_state'); ?></label>
 										<input type="text" id="state" name="state" value="" pattern="^[a-zA-Z ]{3,20}$"/>
-										<em>Venue State</em>
+										<em><? echo lang('str_desc_state'); ?></em>
 									</p>
 									
 									<p>
-										<label for="Country">Country: <span class="requiredField">*</span></label>
+										<label for="Country"><? echo lang('str_label_country'); ?><span class="requiredField">*</span></label>
 										<input type="text" id="country" name="country" value="India" pattern="^[a-zA-Z ]{3,20}$" required/>
-										<em>Venue Country</em>
+										<em><? echo lang('str_desc_country'); ?></em>
 									</p>
 									<p>
-										<label for="Pincode">Pincode:</label>
+										<label for="Pincode"><? echo lang('str_label_pincode'); ?></label>
 										<input type="text" id="pincode" name="pincode" value="" pattern="^[0-9]{6,6}$"/>
-										<em>Venue Pincode E.g. 110001</em>
+										<em><? echo lang('str_desc_pincode'); ?></em>
 									</p>
 								<? } ?>
                                 <p>
-                                    <label for="fb">Description: <span class="requiredField">*</span></label>
+                                    <label for="fb"><? echo lang('str_label_desc'); ?><span class="requiredField">*</span></label>
                                     <textarea cols="25" rows="14"  id="about" name="desc"  pattern="^[a-zA-Z0-9:/.-_?]{25,2000}$"  required><? if(isset($a)) echo $a['desc']; ?></textarea>
-                                    <em>Gig's Description</em>
+                                    <em><? echo lang('str_desc_desc'); ?></em>
                                 </p>
                             </fieldset>                                                        
                             <div class="centera" style="width:500px; position:relative; margin: 0 auto; display:block;">
@@ -206,7 +206,7 @@
                                 <input type="submit" value="<? echo $ok; ?>" style="height:45px; width: 100px; left:50%; margin-left:-50px; position:relative; padding: 5px 5px;"/>
                             </div>
 							<div class="formExtra" style=" width:60%; position:relative; margin-top:20px; margin-left:auto; margin-right: auto;">
-                                <p><strong>Note: </strong> Fields marked with <span class="requiredField">*</span> are required.</p>
+                                <p><? echo lang('str_footer_note1'); ?><span class="requiredField">*</span><? echo lang('str_footer_note2'); ?></p>
                             </div>
                         </form>
                     </div>
