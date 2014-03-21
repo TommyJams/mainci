@@ -117,16 +117,16 @@
                                     <label for="gig">Time: <span class="requiredField">*</span></label>
                                     <select id="select"  style="width:60px; float:left;" name="hours">
                                     <?
-                                        for($i=01;$i<=12;$i++){ if( ($a && $hourSaved==$i) || $i==8 ) print("<option value='$i' selected='selected'>$i</option>"); else print("<option value='$i'>$i</option>"); }
+                                        for($i=01;$i<=12;$i++){ if( (isset($a) && $hourSaved==$i) || $i==8 ) print("<option value='$i' selected='selected'>$i</option>"); else print("<option value='$i'>$i</option>"); }
                                     ?>      
                                     </select>
                                     <select id="select"  style="width:80px; margin-left: 5px; float:left;" name="minute">
-										<option value='00' <? if($a && $minSaved=='00') print("selected='selected'"); ?> >00</option>
-										<option value='30' <? if($a && $minSaved=='30') print("selected='selected'"); ?> >30</option>
+										<option value='00' <? if(isset($a) && $minSaved=='00') print("selected='selected'"); ?> >00</option>
+										<option value='30' <? if(isset($a) && $minSaved=='30') print("selected='selected'"); ?> >30</option>
                                     </select>                            
                                     <select id="select" style="width:60px; margin-left: 5px; float:left;" name="am">
-                                        <option value='PM' <? if($a && $amSaved=='PM') print("selected='selected'"); ?> >PM</option>
-										<option value='AM' <? if($a && $amSaved=='AM') print("selected='selected'"); ?> >AM</option>
+                                        <option value='PM' <? if(isset($a) && $amSaved=='PM') print("selected='selected'"); ?> >PM</option>
+										<option value='AM' <? if(isset($a) && $amSaved=='AM') print("selected='selected'"); ?> >AM</option>
                                     </select>
                                     <em>Time of Gig</em>
                                 </p>
@@ -134,7 +134,7 @@
 									<label for="gig">Duration: <span class="requiredField">*</span></label>
                                     <select id="select"  style="width:60px; float:left;" name="duration">
                                     <?
-                                        for($i=0.5;$i<=24;$i = $i + 0.5){ if($a && $i == $durationSaved) print("<option value='$i' selected='selected'>$i</option>"); else print("<option value='$i'>$i</option>"); }
+                                        for($i=0.5;$i<=24;$i = $i + 0.5){ if(isset($a) && $i == $durationSaved) print("<option value='$i' selected='selected'>$i</option>"); else print("<option value='$i'>$i</option>"); }
                                     ?>
                                     </select>
 									<em>in Hours</em>
@@ -152,24 +152,24 @@
 								<? } ?>
                                 <p>
                                     <label for="Website">Website:</label>
-                                    <input type="text" id="website" name="web" style="width:200px;" value="<? if($a) echo $a['web']; ?>" pattern="^[a-zA-Z0-9/ ,-_.:;&?]{20,150}$" />
+                                    <input type="text" id="website" name="web" style="width:200px;" value="<? if(isset($a)) echo $a['web']; ?>" pattern="^[a-zA-Z0-9/ ,-_.:;&?]{20,150}$" />
                                     <em>Gig's Website</em>
                                 </p>
                                 <p>
                                     <label for="social">Facebook:</label>
-                                    <input type="text" id="fb" name="fb" style="width:200px;" value="<? if($a) echo $a['fb']; ?>" pattern="^[a-zA-Z0-9/ ,-_.:;&?]{20,150}$" />
+                                    <input type="text" id="fb" name="fb" style="width:200px;" value="<? if(isset($a)) echo $a['fb']; ?>" pattern="^[a-zA-Z0-9/ ,-_.:;&?]{20,150}$" />
                                     <em>Gig's link on Facebook.</em>
                                 </p>
                                 <p>
                                     <label for="social">Twitter: </label>
-                                    <input type="text" id="twiter" name="twitter" style="width:200px;" value="<? if($a) echo $a['twitter']; ?>" pattern="^[a-zA-Z0-9/ ,-_.:;&?]{20,150}$" />
+                                    <input type="text" id="twiter" name="twitter" style="width:200px;" value="<? if(isset($a)) echo $a['twitter']; ?>" pattern="^[a-zA-Z0-9/ ,-_.:;&?]{20,150}$" />
                                     <em>Gig's link on Twitter.</em>
                                 </p>
                             </fieldset>
                             <fieldset id="venue">
                                 <p>
                                     <label for="add">Address: <span class="requiredField">*</span></label>
-                                    <input type="text" id="add" name="add" value="<? if($a) echo $a['venue_add']; ?>" pattern="^[0-9a-zA-Z !@#$%^&*()_,.\\/{}|:<>?-]{3,100}$" required/>
+                                    <input type="text" id="add" name="add" value="<? if(isset($a)) echo $a['venue_add']; ?>" pattern="^[0-9a-zA-Z !@#$%^&*()_,.\\/{}|:<>?-]{3,100}$" required/>
                                     <em>Venue Address</em>
                                 </p>
 								<? if($show==1){ ?>
@@ -197,7 +197,7 @@
 								<? } ?>
                                 <p>
                                     <label for="fb">Description: <span class="requiredField">*</span></label>
-                                    <textarea cols="25" rows="14"  id="about" name="desc"  pattern="^[a-zA-Z0-9:/.-_?]{25,2000}$"  required><? if($a) echo $a['desc']; ?></textarea>
+                                    <textarea cols="25" rows="14"  id="about" name="desc"  pattern="^[a-zA-Z0-9:/.-_?]{25,2000}$"  required><? if(isset($a)) echo $a['desc']; ?></textarea>
                                     <em>Gig's Description</em>
                                 </p>
                             </fieldset>                                                        
@@ -211,8 +211,8 @@
                         </form>
                     </div>
                 </div>
-            </section>
-    	</div>
-    </div>
- </body>
+        </section>
+	</div>
+</div>
+</body>
 </html>
