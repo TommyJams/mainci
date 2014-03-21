@@ -650,6 +650,15 @@ class Promoter extends Base{
 		createResponse($response);
 	}
 
+	public function showLaunchGig(){
+
+        //Load View and trim all the endlines
+		$viewHTMLCode = trim(preg_replace('/\s\s+/', ' ', $this->load->view('include/gig', '', true)));
+
+		$this->load->helper('functions');
+		createHTMLResponse($viewHTMLCode);
+	}
+
 	public function sessionlogout(){
 
 		$sessionArray = $this->session->all_userdata();

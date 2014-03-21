@@ -1,15 +1,6 @@
 <html>
 <head>
 	<link rel='stylesheet' href='style/edit.css'>
-	<!-- Include the JS files -->
-	<script> 
-		$('#signUpForm').bind('submit',function(e) 
-		{
-			e.preventDefault();
-			launchGig();
-		});
-	</script>
-
 </head>
  <body>
  	<?php 
@@ -220,13 +211,8 @@
                         </form>
                     </div>
                 </div>
-        </section>
-	</div>
-</div>
-
-<script type="text/javascript">
-	$('#loading-indicator').hide();
-</script>
-
-</body>
+            </section>
+    	</div>
+    </div>
+ </body>
 </html>

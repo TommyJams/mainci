@@ -155,10 +155,21 @@
       $("#loading-indicator").show();      
       $.post('promoter/launchGigFunc',$('#signUpForm').serialize(),launchGigCallback,'json');
     }
+    
+    function showLaunchGigCallback()
+    {
+      $('#signUpForm').bind('submit',function(e) 
+      {
+        e.preventDefault();
+        launchGig();
+      });
+
+      $("#loading-indicator").hide();
+    }
     function showLaunchGig() 
     {
       $("#loading-indicator").show();      
-      $("#lefty").load("include/gig.php");
+      $('#lefty').load("promoter/showLaunchGig", {}, showLaunchGigCallback);
     }
 
     function showDibCallback(a) 
