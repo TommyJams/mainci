@@ -259,6 +259,38 @@
               <div class="event-ticker">
                 <ul>
                   <li>
+                  <a href="http://tommyjams.com/blog/events/event/aakash-mittal-quartet-phoenix-bangalore/" target="_blank" class="" style="width: 100%">  
+                    <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
+                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""></div>
+                      <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
+                        <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
+                          <h5>Aakash Mittal Quartet @ Phoenix Marketcity</h5>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
+                          <h5>23-Mar</h5>
+                        </div>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </a>  
+                  </li>
+                  <li>
+                  <a href="http://tommyjams.com/blog/events/event/mahesh-raghunandan-construkt-festival/" target="_blank" class="" style="width: 100%">
+                    <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
+                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/construktfestival.jpg" alt=""></div>
+                      <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
+                        <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
+                          <h5>Mahesh Raghunandan @ Construkt Festival</h5>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
+                          <h5>23-Mar</h5>
+                        </div>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </a>
+                  </li>
+                  <li>
                   <a href="http://tommyjams.com/blog/events/event/green-haat-embassy-golf-links/" target="_blank" class="" style="width: 100%">  
                     <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
                       <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/greenhaat.jpg" alt=""></div>
@@ -321,38 +353,6 @@
                       <div class="clearfix"></div>
                     </div>
                   </a>
-                  </li>
-                  <li>
-                  <a href="http://tommyjams.com/blog/events/event/the-ways-of-the-world-habanero-whitefield/" target="_blank" class="" style="width: 100%">
-                    <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
-                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/habanero.jpg" alt=""></div>
-                      <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
-                        <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
-                          <h5>The Ways of the World @ Habanero</h5>
-                        </div>
-                        <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
-                          <h5>7-Mar</h5>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                  </a>
-                  </li>
-                  <li>
-                  <a href="http://tommyjams.com/blog/events/event/seed-of-changes-phoenix-bangalore/" target="_blank" class="" style="width: 100%">  
-                    <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
-                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""></div>
-                      <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
-                        <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
-                          <h5>Seed of Changes @ Phoenix Marketcity</h5>
-                        </div>
-                        <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
-                          <h5>2-Mar</h5>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                  </a>  
                   </li>
                 </ul>
               </div>
