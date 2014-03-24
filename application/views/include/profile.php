@@ -186,7 +186,7 @@
                     <p>
 						<? 
 							/*convert to URL*/
-							$aboutStr = preg_replace("[[:alpha:]]+://[^<>[:space:]]+[[:alnum:]/]","<a href=\"\\0\">\\0</a>", $about);
+							$aboutStr = preg_replace("[[:alpha:]]+://[^<>[:space:]]+[[:alnum:]/]","<a href=\"\\0\">\\0</a>", $about); 
 							/*format newlines*/
 							$aboutStr = nl2br("$aboutStr");
 							print ($aboutStr); 
