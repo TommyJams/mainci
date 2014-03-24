@@ -8,15 +8,15 @@
         <div id="content" class="clearfix">
             <section id="left" style=" width:100%;">
                 <div class="gcontent" >
-                    <div class="head"><h1>My GIGs</h1></div>
+                    <div class="head"><h1><? echo lang('str_my_gigs'); ?></h1></div>
                         <div class="boxy" id="boxy" style="overflow-y:auto;">
 							<table width='100%' style='padding: 10px 10px; text-align:center;'>
 								<tr bgcolor='#ffcc00' height='30px'>
-									<td width="25%"><h1>Name</h1></td>
-									<td width="25%"><h1>City</h1></td>
-									<td width="10%"><h1>Date</h1></td>
-									<td width="10%"><h1>Time</h1></td>
-									<td width="30%"><h1>Status</h1></td>
+									<td width="25%"><h1><? echo lang('str_header_name'); ?></h1></td>
+									<td width="25%"><h1><? echo lang('str_header_city'); ?></h1></td>
+									<td width="10%"><h1><? echo lang('str_header_date'); ?></h1></td>
+									<td width="10%"><h1><? echo lang('str_header_time'); ?></h1></td>
+									<td width="30%"><h1><? echo lang('str_header_status'); ?></h1></td>
 								</tr>
 							</table>					
                                     <span class="gigs" style="padding:10px;" >
@@ -45,7 +45,7 @@
                                         if ($num_rows == 1) 
                                         {
 										  print("<td>");
-										  print("<a href='javascript:;' onClick=showProfile('$artist_id'); class ='greenRef'>$artist_name</a><br>Contact: $contact");
+										  print("<a href='javascript:;' onClick=showProfile('$artist_id'); class ='greenRef'>$artist_name</a><br>".lang('str_table_contact')."$contact");
 										  print("</td></tr></table></div>");
                                         }
                                         else
@@ -57,7 +57,8 @@
                                     }
                                     ?>
                                     </span>
-                        </div> <!--boxy--> </div> <!--gcontent-->
+                        </div> <!--boxy-->
+                    </div> <!--gcontent-->
             </section>
         </div> <!--content-->
     </div> <!--box-->
