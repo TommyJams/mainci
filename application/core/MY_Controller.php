@@ -177,7 +177,7 @@ class Base extends MY_Controller{
 		}
 		elseif((isset($sessionArray['username']))  && (!isset($_POST["id"])))
 		{
-			error_log('Empty profile call: '.$_POST["id"]);
+			//error_log('Empty profile call: '.$_POST["id"]);
 			$username=$sessionArray['username'];
 			$password=md5($sessionArray['password']);
 			$loggedIn=1;
