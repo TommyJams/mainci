@@ -2,15 +2,6 @@
 <head>
 	<link rel='stylesheet' href='style/edit.css'>
 	<!-- Include the JS files -->
-    <script>
-        function loadslide(a) 
-        {
-            console.log("Value: ", a);
-            toggleSlide(a);
-            showDib(a);
-        }
-    </script>
-
 </head>
 <body>
     <div id="box" style="display:block; height:100%;">
@@ -30,9 +21,7 @@
 							</table>					
                                     <span class="gigs" style="padding:10px;" >
                                     <?php 
-                                    $error = (json_decode($_POST['json'])->error);
                                     if($error == 0){
-                                    $gigsHistory = (json_decode($_POST['json'])->gigHistory);
                                     foreach($gigsHistory as $row){ ?>
                                     <?
                                         $gig=$row[0];
@@ -68,17 +57,9 @@
                                     }
                                     ?>
                                     </span>
-                        </div> <!--boxy--> </div> <!--gcontent--><!--
-                 <script>
-                    document.getElementById('boxy').style.height=self.innerHeight-200+'px';
-                </script>-->
+                        </div> <!--boxy--> </div> <!--gcontent-->
             </section>
         </div> <!--content-->
     </div> <!--box-->
-
-	<script type="text/javascript">
-		$('#loading-indicator').hide();
-	</script>
-
 </body>
 </html>

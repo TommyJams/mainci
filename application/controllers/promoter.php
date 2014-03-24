@@ -85,8 +85,11 @@ class Promoter extends Base{
 		}
 		
 		$response['error'] = $error;
+
+		$viewHTMLCode = trim(preg_replace('/\s\s+/', ' ', $this->load->view('include/promoter_gigs', $response, true)));
+
 		$this->load->helper('functions');
-		createResponse($response);
+		createHTMLResponse($viewHTMLCode);
 	}
 
 	public function launchGigFunc(){

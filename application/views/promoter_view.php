@@ -81,15 +81,20 @@
       $("#lefty").load("include/profile.php?edit=1");
     }
 
+    function loadslide(a)
+    {
+        toggleSlide(a);
+        showDib(a);
+    }
+
     function promoterGigsCallback(a)
     {
-      console.log("All Gigs Data: ", JSON.stringify(a));
-      $("#lefty").load("include/promoter_gigs.php", {json: JSON.stringify(a)});
+      $("#loading-indicator").hide();
     }
     function promoterGigs()
     {
       $("#loading-indicator").show();
-      $.post('promoter/mygigs','',promoterGigsCallback,'json');
+      $("#lefty").load("promoter/mygigs", {}, promoterGigsCallback);
     }
 
   /*  function promoterProfileCallback(a)
