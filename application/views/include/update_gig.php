@@ -84,7 +84,7 @@
                                 <input type="hidden" name="gigLink" id="gigLink" value="<? print($link);?>">
                             </div>    
 							<div class="formExtra" style=" width:60%; position:relative; margin-top:20px; margin-left:auto; margin-right: auto;">
-                                <p><strong>Note: </strong> Fields marked with <span class="requiredField">*</span> are required.</p>
+                                <p><strong><? echo lang('str_footer_note1'); ?><span class="requiredField">*</span><? echo lang('str_footer_note2'); ?></p>
                             </div>
                         </form>
                     </div>
