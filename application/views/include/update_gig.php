@@ -6,7 +6,7 @@
  <body>
  	<?php $ok="Update Gig"; ?>
     <div class="head">
-		<h1>UPDATE GIG</h1>
+		<h1><? echo lang('str_update_gig'); ?></h1>
 	</div>
     <div id="box" style="display:block;">
         <div id="content" class="clearfix">
@@ -17,63 +17,63 @@
 						<div id="launchContainer">
                             <fieldset id="details" style = "height:auto; float:left">
                                 <p>
-                                    <label for="gig">Name: <span class="requiredField">*</span></label>
+                                    <label for="gig"><? echo lang('str_update_gig'); ?><span class="requiredField">*</span></label>
                                     <input type="text" id="gig" name="gig" style="width:200px;" 
                                     value="<? print("$gig"); ?>" pattern="^[a-zA-Z0-9. /()-_:@]{3,50}$" autofocus required />
-                                    <em>Name of Gig</em>
+                                    <em><? echo lang('lbl_update_name'); ?></em>
                                 </p> 
                                 <p>
-                                    <label for="gig">Time:</label>
+                                    <label for="gig"><? echo lang('str_update_time'); ?></label>
                                     <select id="select"  disabled="disabled" style="width:60px; float:left;" name="hours">
                                     <?
-                                        for($i=01;$i<=12;$i++){ if( ($a && $hourSaved==$i) || $i==8 ) print("<option value='$i' selected='selected'>$i</option>"); else print("<option value='$i'>$i</option>"); }
+                                        for($i=01;$i<=12;$i++){ if( ($hourSaved==$i) || $i==8 ) print("<option value='$i' selected='selected'>$i</option>"); else print("<option value='$i'>$i</option>"); }
                                     ?>      
                                     </select>
                                     <select id="select" disabled="disabled" style="width:80px; margin-left: 5px; float:left;" name="minute">
-										<option value='00' <? if($a && $minSaved=='00') print("selected='selected'"); ?> >00</option>
-										<option value='30' <? if($a && $minSaved=='30') print("selected='selected'"); ?> >30</option>
+										<option value='00' <? if($minSaved=='00') print("selected='selected'"); ?> >00</option>
+										<option value='30' <? if($minSaved=='30') print("selected='selected'"); ?> >30</option>
                                     </select>                            
                                     <select id="select" disabled="disabled" style="width:60px; margin-left: 5px; float:left;" name="am">
-                                        <option value='PM' <? if($a && $amSaved=='PM') print("selected='selected'"); ?> >PM</option>
-										<option value='AM' <? if($a && $amSaved=='AM') print("selected='selected'"); ?> >AM</option>
+                                        <option value='PM' <? if($amSaved=='PM') print("selected='selected'"); ?> >PM</option>
+										<option value='AM' <? if($amSaved=='AM') print("selected='selected'"); ?> >AM</option>
                                     </select>
-                                    <em>Time of Gig</em>
+                                    <em><? echo lang('str_update_time'); ?></em>
                                 </p>
 								<p>
-									<label for="gig">Duration:</span></label>
+									<label for="gig"><? echo lang('str_update_duration'); ?></label>
                                     <select id="select"  disabled="disabled" style="width:60px; float:left;" name="duration">
                                     <?
-                                        for($i=0.5;$i<=24;$i = $i + 0.5){ if($a && $i == $durationSaved) print("<option value='$i' selected='selected'>$i</option>"); else print("<option value='$i'>$i</option>"); }
+                                        for($i=0.5;$i<=24;$i = $i + 0.5){ if($i == $durationSaved) print("<option value='$i' selected='selected'>$i</option>"); else print("<option value='$i'>$i</option>"); }
                                     ?>
                                     </select>
-									<em>in Hours</em>
+									<em><? echo lang('lbl_update_duration'); ?></em>
 								</p>
                                 <p>
-                                    <label for="Website">Website:</label>
+                                    <label for="Website"><? echo lang('str_update_website'); ?></label>
                                     <input type="text" id="website" name="web" style="width:200px;" value="<? print("$web"); ?>" pattern="^[a-zA-Z0-9/ ,-_.:;&?]{20,150}$" />
-                                    <em>Gig's Website</em>
+                                    <em><? echo lang('lbl_update_website'); ?></em>
                                 </p>
                                 <p>
-                                    <label for="social">Facebook:</label>
+                                    <label for="social"><? echo lang('str_update_fb'); ?></label>
                                     <input type="text" id="fb" name="fb" style="width:200px;" value="<? print("$fb"); ?>" pattern="^[a-zA-Z0-9/ ,-_.:;&?]{20,150}$" />
-                                    <em>Gig's link on Facebook.</em>
+                                    <em><? echo lang('lbl_update_fb'); ?></em>
                                 </p>
                                 <p>
-                                    <label for="social">Twitter: </label>
+                                    <label for="social"><? echo lang('str_update_twitter'); ?></label>
                                     <input type="text" id="twitter" name="twitter" style="width:200px;" value="<? print("$twitter"); ?>" pattern="^[a-zA-Z0-9/ ,-_.:;&?]{20,150}$" />
-                                    <em>Gig's link on Twitter.</em>
+                                    <em><? echo lang('lbl_update_twitter'); ?></em>
                                 </p>
                             </fieldset>
                             <fieldset id="venue">
                                 <p>
-                                    <label for="add">Address: <span class="requiredField">*</span></label>
+                                    <label for="add"><? echo lang('str_update_venue'); ?><span class="requiredField">*</span></label>
                                     <input type="text" id="add" name="add" value="<? print("$add"); ?>" pattern="^[0-9a-zA-Z !@#$%^&*()_,.\\/{}|:<>?-]{3,100}$" required/>
-                                    <em>Venue Address</em>
+                                    <em><? echo lang('lbl_update_venue'); ?></em>
                                 </p>
                                 <p>
-                                    <label for="fb">Description: <span class="requiredField">*</span></label>
+                                    <label for="fb"><? echo lang('str_update_desc'); ?><span class="requiredField">*</span></label>
                                     <textarea cols="25" rows="14"  id="about" name="desc"  pattern="^[a-zA-Z0-9:/.-_?]{25,2000}$"  required><? print("$desc"); ?></textarea>
-                                    <em>Gig's Description</em>
+                                    <em><? echo lang('lbl_update_desc'); ?></em>
                                 </p>
                             </fieldset>                                                        
                             <div class="centera" style="width:500px; position:relative; margin: 0 auto; display:block;">

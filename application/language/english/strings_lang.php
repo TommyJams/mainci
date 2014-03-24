@@ -161,6 +161,26 @@
     $lang['btn_dib_reject'] = "REJECT";
     $lang['btn_recommend_artist'] = "RECOMMEND ARTIST";
 
+    //Update Gig
+    $lang['str_update_gig'] = "UPDATE GIG";
+    $lang['btn_update_gig'] = "UPDATE GIG";
+    $lang['str_update_name'] = "Name: ";
+    $lang['lbl_update_name'] = "Name of Gig";
+    $lang['str_update_time'] = "Time:";
+    $lang['lbl_update_time'] = "Time of Gig";
+    $lang['str_update_duration'] = "Duration:";
+    $lang['lbl_update_duration'] = "in Hours";
+    $lang['str_update_website'] = "Website:";
+    $lang['lbl_update_website'] = "Gig's Website";
+    $lang['str_update_fb'] = "Facebook:";
+    $lang['lbl_update_fb'] = "Gig's link on Facebook";
+    $lang['str_update_twitter'] = "Twitter:";
+    $lang['lbl_update_twitter'] = "Gig's link on Twitter";
+    $lang['str_update_venue'] = "Address:";
+    $lang['lbl_update_venue'] = "Venue Address";
+    $lang['str_update_desc'] = "Description:";
+    $lang['lbl_update_desc'] = "Gig's Description";
+
 //Video Tiles
     $lang['btn_month_jan'] = "January";
     $lang['btn_month_feb'] = "February";
