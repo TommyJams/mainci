@@ -651,7 +651,7 @@ class Promoter extends Base{
 		$viewHTMLCode = trim(preg_replace('/\s\s+/', ' ', $this->load->view('include/show_dibs', $response, true)));
 
 		$this->load->helper('functions');
-		createHTMLResponse($response);
+		createHTMLResponse($viewHTMLCode);
 	}
 
 	public function showLaunchGig(){
