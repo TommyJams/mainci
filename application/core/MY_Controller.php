@@ -152,7 +152,7 @@ class Base extends MY_Controller{
 		$userRating = "";
 		$users = "";
 		
-		if((isset($sessionArray['username_artist']))  && (!isset($_POST['id'])))
+		if((isset($sessionArray['username_artist']))  && (!isset($_POST['id']) || $_POST['id'] == 'undefined'))
 		{
 			$username=$sessionArray['username_artist'];
 			$password=md5($sessionArray['password_artist']);
@@ -175,7 +175,7 @@ class Base extends MY_Controller{
 				$response=$a;
 			}
 		}
-		elseif((isset($sessionArray['username']))  && (!isset($_POST["id"])))
+		elseif((isset($sessionArray['username']))  && (!isset($_POST["id"]) || $_POST['id'] == 'undefined'))
 		{
 			//error_log('Empty profile call: '.$_POST["id"]);
 			$username=$sessionArray['username'];
@@ -198,7 +198,7 @@ class Base extends MY_Controller{
 				$response=$a;
 			}
 		}
-		elseif(((isset($sessionArray['username'])) || (isset($sessionArray['username_artist']))) && (isset($_POST["id"])))
+		elseif(((isset($sessionArray['username'])) || (isset($sessionArray['username_artist']))) && (isset($_POST["id"]) && $_POST['id'] != 'undefined'))
 		{
 			$link = $_POST['id'];
 			error_log("Link: ".$link);
