@@ -186,8 +186,7 @@
                     <p>
 						<? 
 							/*convert to URL*/
-							$aboutStr = preg_replace("/(http|https|ftp|ftps)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/",'<a href="$1$2" target="_blank">$1$2</a>', $about); 
-
+							$aboutStr = preg_replace('!(((f|ht)tp(s)?://)[-a-zA-Zа-яА-Я()0-9@:%_+.~#?&;//=]+)!i', '<a href="$1" target="_blank">$1</a>', $about);
 							/*format newlines*/
 							$aboutStr = nl2br("$aboutStr");
 							print ($aboutStr); 
