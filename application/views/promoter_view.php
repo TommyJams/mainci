@@ -44,41 +44,6 @@
        document.getElementById('lefty1').style.display="block";  
 	     link = 'include/blog/wp-login.php';
 	     parent.leftframe.location.href=link; */
-    } 
-
-    </script>
-    <!-- <script language="javascript"> 
-          link = a+".php?include="+a; 
-          parent.leftframe.location.href=link; 
-    </script> -->
-
-    <script>
-    function loadframe(a) 
-    {     
-		  $("#loading-indicator").show();
-      if(a=="left")
-        { 
-          $("#lefty").load("include/profile.php");
-        }
-      else if(a=="gigs")
-        { 
-          $("#lefty").load("include/promoter_gigs.php");
-        }
-      else if(a=="add")
-        { 
-          $("#lefty").load("include/gig.php");
-        }
-		  else if(a.substring(0,9)=="updategig")
-        { 
-          $("#lefty").load("include/gig.php?"+a);
-        }
-      /*else if(a=="dib"){ $("#lefty").load("include/dib.php");}*/  
-    }
-    
-    function loadfram(a) 
-    {
-		  $("#loading-indicator").show();
-      $("#lefty").load("include/profile.php?edit=1");
     }
 
     function loadslide(a)
@@ -87,7 +52,7 @@
         showDib(a);
     }
 
-    /*function bindnpopup()
+    function bindnpopup()
     {
         popup('profil');
 
@@ -102,7 +67,7 @@
             uploadProfilePic('facebook');
             popup('profil');
         });
-    }*/
+    }
 
     function confirmSubmit()
     {
@@ -136,18 +101,13 @@
 
 	  function showProfileCallback(a)
     {
-      console.log("Data: ", JSON.stringify(a));
-      $("#lefty").load("include/profile.php", {json: JSON.stringify(a)}); 
-
-      //$("#loading-indicator").hide();
+      $("#loading-indicator").hide();
     }
     function showProfile(user_id)
     {
       $("#loading-indicator").show();
-      $.post('promoter/profilepage',{id: user_id},showProfileCallback,'json');
-      //$("#lefty").load("promoter/profilepage", {id: user_id}, {json: JSON.stringify(a)});
+      $("#lefty").load("promoter/profilepage", {id: user_id}, showProfileCallback);
     }
-    
 
     function searchProfilesPageCallback(a)
     {
@@ -483,7 +443,7 @@
               if(isset($gig_id))
                     print("showGigFeedback($gig_id);");
                 else
-                    print("$.post('promoter/profilepage','',showProfileCallback,'json');");
+                    print("showProfile();");
         ?>
         </script>
 		

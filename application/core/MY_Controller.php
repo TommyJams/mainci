@@ -298,8 +298,11 @@ class Base extends MY_Controller{
 		$response['users'] = $users;
 		$response['error'] = $error;
 		$response['loggedIn'] = $loggedIn;
+
+		$viewHTMLCode = trim(preg_replace('/\s\s+/', ' ', $this->load->view('include/profile', $response, true)));
+
 		$this->load->helper('functions');
-		createResponse($response);
+		createHTMLResponse($viewHTMLCode);
 	}
 
 	public function editProfilePage(){

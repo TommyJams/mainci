@@ -54,7 +54,7 @@
                 <tbody>            
 					<tr>
 						<td align="center" style="width: 100%;">
-                            <? $username = (json_decode($_POST['json'])->fb_id); ?>
+                            <? $username = $fb_id; ?>
 							<img src="<? echo'https://graph.facebook.com/'.$username.'/picture'; ?>" style="vertical-align:bottom">
 							<input name="submit" id="upload" type="submit" value="Use Facebook Picture"/>
                         </td>
@@ -64,11 +64,11 @@
         </form>
     </div>
 
-    <? $userpic = (json_decode($_POST['json'])->users); ?>
+    <? $userpic = $users; ?>
     <section id="left">
         <div id="userStats">
 			<div id="userPic" class="pic"> 
-                <? $loggedIn = (json_decode($_POST['json'])->loggedIn);
+                <?
                 if(isset($loggedIn) && $loggedIn)
                 {print("<a href='javascript:;' onclick=bindnpopup()>");}
 				else {print("<a href='javascript:;'>");}
@@ -77,12 +77,12 @@
 			<div class="data">
                 <div style="width:35%; height:100%; float:left;">
                     <div id="userName">
-                        <h1 style="display:inline-block;"><? print (json_decode($_POST['json'])->name); ?></h1>
+                        <h1 style="display:inline-block;"><? print ($name); ?></h1>
                     </div>
                     <h2 style='padding-top:0px;'>
-                        User: <?print (json_decode($_POST['json'])->username);?>
+                        User: <?print ($username);?>
 						<br>
-                        <?print (json_decode($_POST['json'])->designation);?>
+                        <?print ($designation);?>
                         <?
 						/*print ("$usernam");
                         if($organization!="")
@@ -93,48 +93,45 @@
                     </h2>
                     <h2 style='padding-top:0px;'>
                         <?
-                        if((json_decode($_POST['json'])->city)!="")
+                        if($city!="")
                         {
-                            print(json_decode($_POST['json'])->city);
+                            print($city);
                         }
-                        if((json_decode($_POST['json'])->state)!="")
+                        if($state!="")
                         {
-                            if((json_decode($_POST['json'])->city)!="")
+                            if($city!="")
                                 print(", ");
-                            print(json_decode($_POST['json'])->state);
+                            print($state);
                         }
-                        if((json_decode($_POST['json'])->country)!="")
+                        if($country!="")
                         {
-                            if((json_decode($_POST['json'])->city)!="" || (json_decode($_POST['json'])->state)!="")
+                            if($city!="" || $state!="")
                                 print(", ");
-                            print(json_decode($_POST['json'])->country);
+                            print($country);
                         }
                         ?>
                     </h2>
                 </div>
 				<div class="socialInfo">
 					<div class="userType">
-						<h1><?print(json_decode($_POST['json'])->type);?></h1>
+						<h1><?print($type);?></h1>
 					</div>
 					<div class="userGenre">
 						<h2 style="padding-top:0px;">
 						<?
-							if((json_decode($_POST['json'])->type)=="Promoter"){print("Style: ");}
-							elseif((json_decode($_POST['json'])->type)=="Artist"){print("Genre: ");}
-							print(json_decode($_POST['json'])->genre);
+							if($type=="Promoter"){print("Style: ");}
+							elseif($type=="Artist"){print("Genre: ");}
+							print($genre);
 						?>
 						</h2>
 					</div>
 					<div class="socialMediaLinks">
-                        <? $fb = (json_decode($_POST['json'])->fb); ?>
 						<? 
 							if($fb!="")
 							{
 								print("<a href='$fb' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/facebook.png' /></a>");
-							    //print("<a href='(json_decode($_POST['json'])->fb)' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/facebook.png' /></a>");
                             }
 						?>
-                        <? $twitter = (json_decode($_POST['json'])->twitter); ?>
 						<?
 							if($twitter!="")
 							{ 
@@ -142,27 +139,24 @@
 							}
 						?>
 						<? 
-                            $rever = (json_decode($_POST['json'])->reverbnation);
+                            $rever = $reverbnation;
 							if($rever!="")
 							{
 								print("<a href='$rever' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/reverbnation.png' /></a>"); 
 							}
 						?>
-                        <? $youtube = (json_decode($_POST['json'])->youtube); ?>
 						<? 
 							if($youtube!="")
 							{ 
 								print("<a href='$youtube' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/youtube.png' /></a>"); 
 							}
 						?>
-                        <? $myspace = (json_decode($_POST['json'])->myspace); ?>
 						<? 
 							if($myspace!="")
 							{
 								print("<a href='$myspace' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/myspace.png' /></a>"); 
 							}
 						?>
-                        <? $gplus = (json_decode($_POST['json'])->gplus); ?>
 						<? 
 							if($gplus!="")
 							{ 
@@ -173,7 +167,6 @@
 				</div>
 				<div class="medals" style="width:35%; height: auto; float:right; position:relative; top:50%; margin-top:-25px;">
                     <center>
-                        <? $userRating = (json_decode($_POST['json'])->userRating); ?>
                         <?                                                         
                         print("<a alt='TommyJams Rating (rated out of 5 by Hosts, Fans, Editor)' title='TommyJams Rating (rated out of 5 by Hosts, Fans, Editor)'><div style='background:#007888; color: #FFF; height:50px; width:50px; '><h1>$userRating</h1></div></a>");
                         /*print("<a alt='User Rating' title='User Rating'><div style='background:#606060; color:#FFF; height:50px; width:50px; margin-top:5px;'><h1>$silver</h1></div></a>");*/
@@ -191,7 +184,6 @@
                 </div>
                 <div class="about" style = "height: 88%; background: #000; overflow-y:auto;">
                     <p>
-                        <? $about = (json_decode($_POST['json'])->about); ?>
 						<? 
 							/*convert to URL*/
 							$aboutStr = ereg_replace("[[:alpha:]]+://[^<>[:space:]]+[[:alnum:]/]","<a href=\"\\0\">\\0</a>", $about);
@@ -216,8 +208,8 @@
 										<td style="background: #ffcc00; width: 30%;"><h1>GIG NAME</h1></td>
 										<td style="background: #ffcc00; width: 30%;">
                                             <h1>
-                                                <?if((json_decode($_POST['json'])->type)=="Promoter"){print("ARTIST");}
-                                                else if((json_decode($_POST['json'])->type)=="Artist"){print("HOST");}?>
+                                                <?if($type=="Promoter"){print("ARTIST");}
+                                                else if($type=="Artist"){print("HOST");}?>
                                             </h1>
                                         </td>
 										<td style="background: #ffcc00; width: 40%;"><h1>LOCATION</h1></td>
@@ -226,10 +218,8 @@
                                 <div class="gig" style="">
                                     <span class="gigs" >
                                     <?php 
-                                    $error = (json_decode($_POST['json'])->error);
                                     if($error == 0){
-                                    $gigsHistory = (json_decode($_POST['json'])->gigHistory);
-                                    foreach($gigsHistory as $row){ ?>
+                                    foreach($gigHistory as $row){ ?>
                                     <?
                                     $gig_name=$row[0];
                                     $pr_id=$row[1];
@@ -239,9 +229,9 @@
                                     $date=$row[5];
                                     $city=$row[6];
                                     $gig_id=$row[7];
-                                    if((json_decode($_POST['json'])->type)=="Promoter") 
+                                    if($type=="Promoter") 
 									{ print("<table><tr><td id='gigNameColumn' width='30%'><a href='javascript:;' onClick=gigProfile('$gig_id'); class='highlightRef' >$gig_name</a></td><td id='nameColumn' width='30%'><a href='javascript:;' onClick=showProfile('$ar_id'); class='greenRef' >$ar_name</a></td>"); }
-                                    else if((json_decode($_POST['json'])->type)=="Artist")
+                                    else if($type=="Artist")
                                     { print("<table><tr><td id='gigNameColumn' width='30%'><a href='javascript:;' onClick=gigProfile('$gig_id'); class='highlightRef' >$gig_name</a></td><td id='nameColumn' width='30%'><a href='javascript:;' onClick=showProfile('$pr_id'); class='greenRef' >$pr_name</a></td>"); }
 									
 									print("<td width='40%'>$date<br>$city</td></tr></table>");

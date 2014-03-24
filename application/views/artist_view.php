@@ -33,38 +33,23 @@
     <script type="text/javascript" src="<?php echo base_url();?>script/ajaxfileupload.js"></script>
 	<!--contains document ready function-->
     <script language="javascript">
-	/*
-    function loadblog(a) 
+	
+    function bindnpopup()
     {
-        /*document.getElementById('lefty').style.display="none";
-        document.getElementById('lefty1').style.display="block";
-        link = 'include/blog/wp-login.php';
-        parent.leftframe.location.href=link; 
-    } */
-    </script>
-    <!--<script language="javascript"> 
-        link = a+".php?include="+a; 
-        parent.leftframe.location.href=link; 
-    </script>-->
-    
-    <script>
- /*   function loadframe(a) 
-    {
-		$("#loading-indicator").show();
-        if(a=="left"){  $("#lefty").load("include/profile.php");}
-        else if(a=="gig"){  $("#lefty").load("include/artist_gigs.php");}
-        else if(a=="dib"){ $("#lefty").load("include/dib.php");}
+        popup('profil');
+
+        $('#profilePicForm').bind('submit',function(e) {
+            e.preventDefault();
+            uploadProfilePic('upload');
+            popup('profil');
+        });
+
+        $('#facebookPicForm').bind('submit',function(e) {
+            e.preventDefault();
+            uploadProfilePic('facebook');
+            popup('profil');
+        });
     }
-    function gig(a) 
-    {
-		$("#loading-indicator").show();
-		$("#lefty").load("include/gigs.php?gig="+a);
-    }
-    function loadfram(a) 
-    {
-		$("#loading-indicator").show();
-		$("#lefty").load("include/profile.php?edit=1");
-    }*/
 
     function gigProfileCallback(a) 
     {
@@ -101,13 +86,12 @@
 
     function showProfileCallback(a)
     {
-		console.log("Data: ", JSON.stringify(a));
-		$("#lefty").load("include/profile.php", {json: JSON.stringify(a)});	
+        $("#loading-indicator").hide();
     }
 	function showProfile(user_id)
     {
     	$("#loading-indicator").show();
-		$.post('artist/profilepage',{id: user_id},showProfileCallback,'json');
+        $("#lefty").load("artist/profilepage", {id: user_id}, showProfileCallback);
     }
 
     function showEditProfileCallback(a)
@@ -306,7 +290,7 @@
                 if(isset($gig_id))
                     print("showGigFeedback($gig_id);");
                 else
-                    print("$.post('artist/profilepage','',showProfileCallback,'json');");
+                    print("showProfile();");
 			?>
 		</script>
 		<!--
