@@ -75,7 +75,7 @@ class Promoter extends Base{
 
 			$gigRow = array($gig, $city, $formattedDate, $vtime, $artist_id, $artist_name, $contact, $link, $num_rows);
 
-			$response['gigHistory'][] = $gigRow; 
+			$response['gigsHistory'][] = $gigRow; 
 			$error = 0;
 		}
 
