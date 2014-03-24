@@ -136,6 +136,7 @@
 
 	  function showProfileCallback(a)
     {
+      console.log("Data: ", JSON.stringify(a));
       $("#lefty").load("include/profile.php", {json: JSON.stringify(a)}); 
 
       //$("#loading-indicator").hide();
