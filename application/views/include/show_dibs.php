@@ -5,72 +5,12 @@
 <title>Reaction</title>
 <link href="style/profile.css" rel="stylesheet" type="text/css" />
 <link href="style/edit.css" rel="stylesheet" type="text/css" />
-<!--
-<style type="text/css">
-	.ui-tooltip-success {
-		color:#FFFFFF;
-		font-size:14px;
-		border:none;
-		background:#61911B;
-		width: 100px;
-		height: 50px;
-	}
-</style>
-<script type="text/javascript" src="js/jquery-1.3.2.min.js" ></script>
-<script type="text/javascript" src="js/jquery.qtip.min.js"></script>
--->
-<script type="text/javascript">
-function showMessageTip(windowName, message)
-{
-	/*$('#recommendArtist').qtip('destroy');*/
-	if(message)
-	{
-		/*$('#recommendArtist').qtip(
-							{
-								style: {classes:'ui-tooltip-success'},
-								content: 	{text:'Blah'},
-								position: 	{my:'top center',at:'bottom center'}
-							}
-						).qtip('show');*/
-						
-		alert(message);
-	}
-}
-</script>
-
-<script LANGUAGE="JavaScript">
-function confirmSubmit()
-{
-    var agree=confirm("Are you sure you wish to accept this Artist's Dib? The gig will be booked and all other artists will automatically get rejected for this gig.");
-    if (agree)
-        return true ;
-    else
-        return false ;
-}
-
-/*$('#dibReaction').bind('submit',function(e) 
-{
-    e.preventDefault();
-
-    var obj = {
-            	linker:   		document.getElementById('linker').value,
-                artist_id:   	document.getElementById('artist_id').value,
-                acceptDib: 		document.getElementById('accept').value, 
-                rejectDib: 		document.getElementById('reject').value  
-              };
-			
-			dibReaction(obj);
-}); */
-
-</script>
 </head>
 
 <body>
 	<span class="dibsList" style="width:96% padding-left:2% padding-right:2%">
 		<?
-		$dibs_exist = (json_decode($_POST['json'])->dibs_exist);
-        $linker = (json_decode($_POST['json'])->linker); 
- 		$dibList = (json_decode($_POST['json'])->dibLists);
+        if($dibs_exist == 1)
         foreach($dibList as $row){ ?>
     	<?
     		$artist_name=$row[0];
@@ -93,10 +33,6 @@ function confirmSubmit()
 		<?
 		}
 		?>
-
-<script type="text/javascript">
-	$('#loading-indicator').hide();
-</script>
-
+    </span>
 </body>
 </html>

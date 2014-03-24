@@ -642,15 +642,16 @@ class Promoter extends Base{
 			$artist_id=$b["artist_id"];$artist_name=$b["artist_name"];
 
 			$dibLists = array($artist_name, $artist_id);
-			$response['dibLists'][] = $dibLists;	
+			$response['dibList'][] = $dibLists;	
 		}
 
 		$response['dibs_exist'] = $dibs_exist;
-
 		$response['linker'] = $linker;
 
+		$viewHTMLCode = trim(preg_replace('/\s\s+/', ' ', $this->load->view('include/show_dibs', $response, true)));
+
 		$this->load->helper('functions');
-		createResponse($response);
+		createHTMLResponse($response);
 	}
 
 	public function showLaunchGig(){

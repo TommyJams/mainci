@@ -87,6 +87,32 @@
         showDib(a);
     }
 
+    /*function bindnpopup()
+    {
+        popup('profil');
+
+        $('#profilePicForm').bind('submit',function(e) {
+            e.preventDefault();
+            uploadProfilePic('upload');
+            popup('profil');
+        });
+
+        $('#facebookPicForm').bind('submit',function(e) {
+            e.preventDefault();
+            uploadProfilePic('facebook');
+            popup('profil');
+        });
+    }*/
+
+    function confirmSubmit()
+    {
+        var agree=confirm("Are you sure you wish to accept this Artist's Dib? The gig will be booked and all other artists will automatically get rejected for this gig.");
+        if (agree)
+            return true ;
+        else
+            return false ;
+    }
+
     function promoterGigsCallback(a)
     {
       $("#loading-indicator").hide();
@@ -110,14 +136,15 @@
 
 	  function showProfileCallback(a)
     {
-      console.log("Data: ", JSON.stringify(a));
       $("#lefty").load("include/profile.php", {json: JSON.stringify(a)}); 
+
+      //$("#loading-indicator").hide();
     }
     function showProfile(user_id)
     {
       $("#loading-indicator").show();
       $.post('promoter/profilepage',{id: user_id},showProfileCallback,'json');
-      console.log("id: ", user_id);
+      //$("#lefty").load("promoter/profilepage", {id: user_id}, {json: JSON.stringify(a)});
     }
     
 
@@ -150,9 +177,7 @@
 
     function launchGigCallback(a) 
     {
-		  $("#loading-indicator").show();      
-		  console.log("All Gig Data: ", JSON.stringify(a));
-      alert('Gig Launched, Please visit the My Gigs section to see updates on the gig. You can also change the gig logo by clicking on the gig profile picture.');
+		  alert('Gig Launched, Please visit the My Gigs section to see updates on the gig. You can also change the gig logo by clicking on the gig profile picture.');
       gigProfile(a.ida);
     }
     function launchGig() 
@@ -179,17 +204,20 @@
 
     function showDibCallback(a) 
     {
-      $("#loading-indicator").show();      
-      console.log("All Data: ", JSON.stringify(a));
-      var b = a.linker;
-      console.log("Linker value: ", b);
-      $('#' + b).load("include/show_dibs.php", {json: JSON.stringify(a)});
+      //$("#loading-indicator").show();      
+      //console.log("All Data: ", JSON.stringify(a));
+      //var b = a.linker;
+      //console.log("Linker value: ", b);
+      //$('#' + b).load("include/show_dibs.php", {json: JSON.stringify(a)});
+
+      $("#loading-indicator").hide();
     }
     function showDib(linker) 
     {
-      console.log("Linker: ", linker);
-      $("#loading-indicator").show();      
-      $.post('promoter/showDibs',{link: linker},showDibCallback,'json');
+      //console.log("Linker: ", linker);
+      $("#loading-indicator").show();
+      $('#' + linker).load("promoter/showDibs", {link: linker}, showDibCallback);
+      //$.post('promoter/showDibs',{link: linker},showDibCallback,'json');
     }
 
     function showDibReactionCallback(a)
