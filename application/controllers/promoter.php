@@ -245,8 +245,10 @@ class Promoter extends Base{
 			$response['desc'] = $desc;
 		}
 
+		$viewHTMLCode = trim(preg_replace('/\s\s+/', ' ', $this->load->view('include/update_gig', $response, true)));
+
 		$this->load->helper('functions');
-		createResponse($response);
+		createHTMLResponse($viewHTMLCode);
 	}
 
 	public function updateGigProfile(){

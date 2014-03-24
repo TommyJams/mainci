@@ -205,20 +205,12 @@
 
     function showDibCallback(a) 
     {
-      //$("#loading-indicator").show();      
-      //console.log("All Data: ", JSON.stringify(a));
-      //var b = a.linker;
-      //console.log("Linker value: ", b);
-      //$('#' + b).load("include/show_dibs.php", {json: JSON.stringify(a)});
-
       $("#loading-indicator").hide();
     }
     function showDib(linker) 
     {
-      //console.log("Linker: ", linker);
       $("#loading-indicator").show();
       $('#' + linker).load("promoter/showDibs", {link: linker}, showDibCallback);
-      //$.post('promoter/showDibs',{link: linker},showDibCallback,'json');
     }
 
     function showDibReactionCallback(a)
@@ -275,15 +267,30 @@
 
     function showUpdateGigCallback(a) 
     {
-      $("#loading-indicator").show();      
-      console.log("Edit Gig Data: ", JSON.stringify(a));
-      $("#lefty").load("include/update_gig.php", {json: JSON.stringify(a)});
+      $('#UpdateGigForm').bind('submit',function(e) 
+      {
+          e.preventDefault();
+
+          var obj = {
+                  gig:      document.getElementById('gig').value,
+                  web:      document.getElementById('website').value,
+                  fb:       document.getElementById('fb').value,
+                  twitter:    document.getElementById('twitter').value,
+                  add:      document.getElementById('add').value,
+                  desc:     document.getElementById('about').value,
+                  gigLink:       document.getElementById('gigLink').value
+              };
+
+          updateGigProfile(obj);
+      });
+      $("#loading-indicator").hide();
     }
     function showUpdateGig(link) 
     {
       $("#loading-indicator").show();      
-      $.post('promoter/updateGigPage',{link: link},showUpdateGigCallback,'json');
+      $("#lefty").load("promoter/updateGigPage", {link: link}, showUpdateGigCallback);
     }
+
     function updateGigProfileCallback(a)
     {
     if(a.error != '1')
