@@ -147,6 +147,15 @@
     $lang['str_footer_note1'] = "Note: Fields marked with ";
     $lang['str_footer_note2'] = " are required.";
 
+    //My Gigs
+    $lang['str_my_gigs'] = "MY GIGS";
+    $lang['str_header_name'] = "Name";
+    $lang['str_header_city'] = "City";
+    $lang['str_header_date'] = "Date";
+    $lang['str_header_time'] = "Time";
+    $lang['str_header_status'] = "Status";
+    $lang['str_table_contact'] = "Contact: ";
+
 //Video Tiles
     $lang['btn_month_jan'] = "Enero";
     $lang['btn_month_feb'] = "Febrero";
