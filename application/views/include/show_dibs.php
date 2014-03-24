@@ -18,8 +18,8 @@
 			print("<div style='width:50%; margin-top: 10px; height:18px; text-align: center; float:left;'><a href='javascript:;' onClick=showProfile('$artist_id'); target='_top' class='whiteHoverRef' style='font-size: 16px;'>$artist_name</a></div>"); 
 		?>
 				<div style="width:45%; float:left; padding-top:10px; padding-right:5px; height:33px;">
-					<a href='javascript:;' name="accept" id="accept" style="width: 45%; background:#B4F62F; float:left;"  onClick="showDibReaction('<?print("$linker");?>', '<?print("$artist_id");?>', 1);">ACCEPT</a>
-					<a href='javascript:;' name="reject" id="reject" style="width: 45%; background:#FF3C35; float:right;" onClick="showDibReaction('<?print("$linker");?>', '<?print("$artist_id");?>', 0);">REJECT</a>
+					<a href='javascript:;' name="accept" id="accept" style="width: 45%; background:#B4F62F; float:left;"  onClick="showDibReaction('<?print("$linker");?>', '<?print("$artist_id");?>', 1);"><? echo lang('btn_dib_accept'); ?></a>
+					<a href='javascript:;' name="reject" id="reject" style="width: 45%; background:#FF3C35; float:right;" onClick="showDibReaction('<?print("$linker");?>', '<?print("$artist_id");?>', 0);"><? echo lang('btn_dib_reject'); ?></a>
 				</div>           
 		<?
 		} 
@@ -28,7 +28,7 @@
 		{
 		?>
 			<div style="width:100%; height: 40px; margin-top: 10px; text-align: center; float:left;">
-				<input type="submit" value="Recommend Artist" name="recommendartist" style="width: 200px; color:#fff; background:#000; float:center;" onClick="recommendArtist('<? print("$linker"); ?>')">
+				<input type="submit" value="<?echo lang('btn_recommend_artist');?>" name="recommendartist" style="width: 200px; color:#fff; background:#000; float:center;" onClick="recommendArtist('<? print("$linker"); ?>')">
 			</div>
 		<?
 		}

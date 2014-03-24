@@ -155,6 +155,11 @@
     $lang['str_header_time'] = "Time";
     $lang['str_header_status'] = "Status";
     $lang['str_table_contact'] = "Contact: ";
+    
+    //Show Dibs
+    $lang['btn_dib_accept'] = "ACCEPT";
+    $lang['btn_dib_reject'] = "REJECT";
+    $lang['btn_recommend_artist'] = "RECOMMEND ARTIST";
 
 //Video Tiles
     $lang['btn_month_jan'] = "Enero";
