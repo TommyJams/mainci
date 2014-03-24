@@ -111,17 +111,19 @@
 
     function searchProfilesPageCallback(a)
     {
-        console.log("Data: ", JSON.stringify(a));
-        $("#lefty").load("include/profile_search.php", {json: JSON.stringify(a)}); 
+        $('#profileSearchForm').bind('submit',function(e) 
+        {
+            e.preventDefault();
+
+            searchProfilesPage(document.getElementById('search').value,1);
+        });
+        $("#loading-indicator").hide();
     }
     function searchProfilesPage(searchString,page)
     {
         $("#loading-indicator").show();
-        console.log('searchProfilesPage: ',searchString,page);
-        $.post('promoter/searchProfiles',{'searchString': searchString,'nPage': page},searchProfilesPageCallback,'json');
+        $("#lefty").load('promoter/searchProfiles',{'searchString': searchString,'nPage': page},searchProfilesPageCallback);
     }
-
-
 
     function gigProfileCallback(a) 
     {

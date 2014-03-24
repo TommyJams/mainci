@@ -6,22 +6,6 @@
 
     <!-- Include the JS files -->
 
-    <?
-    $foundProfiles = (json_decode($_POST['json'])->foundProfiles);
-    $total_pages = (json_decode($_POST['json'])->total_pages);
-    $nPage = (json_decode($_POST['json'])->nPage);
-    $searchProfiles = (json_decode($_POST['json'])->searchProfiles);
-    ?>
-
-    <script> 
-        $('#profileSearchForm').bind('submit',function(e) 
-        {
-            e.preventDefault();
-
-            searchProfilesPage(document.getElementById('search').value,1);
-        });
-    </script>
-
 </head>
 
 <body>
@@ -146,12 +130,6 @@
         </div>
 
     </div>
-
-    <script type="text/javascript">
-
-        $('#loading-indicator').hide();
-
-    </script>
 
 </body>
 

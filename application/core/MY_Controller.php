@@ -1153,7 +1153,7 @@ class Base extends MY_Controller{
 		}
 
 		//What is the query string
-		if(isset($_POST['searchString']))								//Search string passed in query?
+		if(isset($_POST['searchString']) && $_POST['searchString'] != 'undefined')								//Search string passed in query?
 			$searchProfiles = $_POST['searchString'];
 		else
 		{
@@ -1161,7 +1161,7 @@ class Base extends MY_Controller{
 		}
 
 		// Which page to show?
-		if(isset($_POST['nPage']) && $_POST['nPage']!=NULL)				//Page passed in query?
+		if(isset($_POST['nPage']) && $_POST['nPage']!=NULL && $_POST['nPage']!='undefined')				//Page passed in query?
 			$nPage = $_POST['nPage'];
 		else
 		{
@@ -1256,9 +1256,9 @@ class Base extends MY_Controller{
 		$response['searchProfiles'] = $searchProfiles;
 		$response['total_pages'] = $total_pages;
 
-		$this->load->helper('functions');
-		createResponse($response);
-	}
+		$viewHTMLCode = trim(preg_replace('/\s\s+/', ' ', $this->load->view('include/profile_search', $response, true)));
 
+		$this->load->helper('functions');
+		createHTMLResponse($viewHTMLCode);	}
 }
 ?>
