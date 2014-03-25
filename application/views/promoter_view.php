@@ -445,7 +445,7 @@
     {
         $('#ratingForm').bind('submit',function(e) 
         {
-          e.preventDefault();
+          /*e.preventDefault();
 
           var gigRateElem = document.getElementById("gigRating");
           var rateElem  = document.getElementById("rateElem");
@@ -459,7 +459,7 @@
             future:     document.getElementById('future').checked
           };
 
-          enterGigFeedback(obj);
+          enterGigFeedback(obj);*/
         });
 
         $("#loading-indicator").hide();
