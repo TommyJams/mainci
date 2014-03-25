@@ -69,6 +69,27 @@
         });
     }
 
+    function bindnpopupgigspic()
+    {
+        popup('profil');
+
+        $('#gigsPicForm').bind('submit',function(e) {
+            e.preventDefault();
+            var link = document.getElementById('gigLink').value;
+            uploadGigPic(link);
+            popup('profil');
+        });
+    }
+
+    function confirmDibsSubmit(link)
+    {
+        var agree=confirm("Are you sure you wish to call dibs for this gig? The host will receive the dibs and choose an artist. Please note, these dibs are not cancellable.");
+        if (agree)
+            dibAction(link);
+        else
+            return false ;
+    }
+
     function confirmSubmit()
     {
         var agree=confirm("Are you sure you wish to accept this Artist's Dib? The gig will be booked and all other artists will automatically get rejected for this gig.");
@@ -127,15 +148,12 @@
 
     function gigProfileCallback(a) 
     {
-      $("#loading-indicator").show();      
-      console.log("Data: ", JSON.stringify(a));
-      $("#lefty").load("include/gigs.php", {json: JSON.stringify(a)});
+      $("#loading-indicator").hide();
     }
     function gigProfile(user_id) 
     {
-      console.log("id: ", user_id);
-      $("#loading-indicator").show();      
-      $.post('promoter/gigProfilePage',{id: user_id},gigProfileCallback,'json');
+      $("#loading-indicator").show();
+      $("#lefty").load('promoter/gigProfilePage', {id: user_id} , gigProfileCallback);
     }
 
     function launchGigCallback(a) 

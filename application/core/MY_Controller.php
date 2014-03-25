@@ -537,7 +537,6 @@ class Base extends MY_Controller{
 
 		$gigSession = "";
 		$user_id = $_POST['id']; 
-		error_log($user_id);
 
 		$SQLs = "SELECT * FROM `".DATABASE."`.`shop` WHERE link='$user_id'";
 		$results = mysql_query($SQLs);
@@ -672,9 +671,11 @@ class Base extends MY_Controller{
 		$response['pincode'] = $pincode;
 		$response['gigSession'] = $gigSession;
 		$response['promoter'] = $promoter;
-	                        
+
+		$viewHTMLCode = trim(preg_replace('/\s\s+/', ' ', $this->load->view('include/gigs', $response, true)));
+
 		$this->load->helper('functions');
-		createResponse($response);
+		createHTMLResponse($viewHTMLCode);
 	}
 
 	public function feedback(){
