@@ -453,13 +453,13 @@
           var obj = {
             gigLink:    document.getElementById('gigFeedbackLink').value;,
             gigRate:    gigRateElem.options[gigRateElem.selectedIndex].value,
-            gigComment: document.getElementById('gigComment').value,
+            gigComment: document.getElementById('gigComment').value/*,
             rate:     rateElem.options[rateElem.selectedIndex].value,
             comment:    document.getElementById('comment').value,
-            future:     document.getElementById('future').checked
+            future:     document.getElementById('future').checked*/
           };
 
-          /*enterGigFeedback(obj);*/
+          enterGigFeedback(obj);
         });
 
         $("#loading-indicator").hide();
