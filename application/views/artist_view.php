@@ -298,7 +298,7 @@
           var rateElem  = document.getElementById("rateElem");
 
           var obj = {
-            gigLink:    document.getElementById('gigLink').value;,
+            gigLink:    document.getElementById('gigFeedbackLink').value;,
             gigRate:    gigRateElem.options[gigRateElem.selectedIndex].value,
             gigComment: document.getElementById('gigComment').value,
             rate:     rateElem.options[rateElem.selectedIndex].value,
