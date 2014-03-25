@@ -323,12 +323,12 @@
           enterGigFeedback(obj);
         });
 
-        $("#lefty").load("/include/feed.php", {json: JSON.stringify(a)});
+        $("#loading-indicator").hide();
     }
     function showGigFeedback(link)
     {
         $("#loading-indicator").show();
-        $.post('/artist/showGigFeedback',{'gigLink': link},showGigFeedbackCallback,'json');      
+        $("#lefty").load('/artist/showGigFeedback',{'gigLink': link},showGigFeedbackCallback);      
     }
 
     function enterGigFeedbackCallback(a)
