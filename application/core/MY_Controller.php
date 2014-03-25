@@ -716,6 +716,7 @@ class Base extends MY_Controller{
 
 	public function showGigFeedback()
 	{
+		error_log('entered controller feedback');
 		$sessionArray = $this->session->all_userdata();
 
 		if(!isset($sessionArray['session_id'])){
@@ -745,6 +746,7 @@ class Base extends MY_Controller{
 
 		if((isset($sessionArray['username'])) || (isset($sessionArray['username_artist'])))	
 		{
+			error_log('session exists');
 			$SQLs = "SELECT * FROM `".DATABASE."`.`members` WHERE fb_id='$username'";
 			$results = mysql_query($SQLs);
 			while ($a = mysql_fetch_assoc($results))
