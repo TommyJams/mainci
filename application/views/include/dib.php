@@ -23,9 +23,7 @@
                 <span class="gigs" style="padding:10px;" >
                     <div class='gigsTableItemContainer'>
                         <?php 
-                        $error = (json_decode($_POST['json'])->error);
                         if($error == 0){
-                        $dibsHistory = (json_decode($_POST['json'])->dibHistory);    
                         foreach($dibsHistory as $row){ ?>
                         <?
                         $gig=$row[0];
@@ -71,10 +69,5 @@
         </div> <!--boxy-->
 	</div> <!--gcontent-->
 </section>
-
-<script type="text/javascript">
-	$('#loading-indicator').hide();
-</script>
-
 </body>
 </html>

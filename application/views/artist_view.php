@@ -93,12 +93,12 @@
 
     function artistDibsCallback(a)
     {
-		$("#lefty").load("include/dib.php", {json: JSON.stringify(a)});
+        $("#loading-indicator").hide();
     }
     function artistDibs()
     {
     	$("#loading-indicator").show();
-      	$.post('artist/mydibs','',artistDibsCallback,'json');
+        $("#lefty").load('artist/mydibs','',artistDibsCallback);
     }
 
   /*  function artistProfileCallback(a)
