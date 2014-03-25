@@ -98,6 +98,7 @@
     function artistDibs()
     {
     	$("#loading-indicator").show();
+
         $("#lefty").load('artist/mydibs','',artistDibsCallback);
     }
 
