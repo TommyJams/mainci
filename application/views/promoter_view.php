@@ -445,12 +445,12 @@
     {
         $('#ratingForm').bind('submit',function(e) 
         {
-          /*e.preventDefault();
+          e.preventDefault();
 
           var gigRateElem = document.getElementById("gigRating");
           var rateElem  = document.getElementById("rateElem");
 
-          var obj = {
+          /*var obj = {
             gigLink:    document.getElementById('gigFeedbackLink').value;,
             gigRate:    gigRateElem.options[gigRateElem.selectedIndex].value,
             gigComment: document.getElementById('gigComment').value,
