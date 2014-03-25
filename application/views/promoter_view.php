@@ -450,7 +450,7 @@
           var gigRateElem = document.getElementById("gigRating");
           var rateElem  = document.getElementById("rateElem");
 
-          /*var obj = {
+          var obj = {
             gigLink:    document.getElementById('gigFeedbackLink').value;,
             gigRate:    gigRateElem.options[gigRateElem.selectedIndex].value,
             gigComment: document.getElementById('gigComment').value,
@@ -459,7 +459,7 @@
             future:     document.getElementById('future').checked
           };
 
-          enterGigFeedback(obj);*/
+          /*enterGigFeedback(obj);*/
         });
 
         $("#loading-indicator").hide();
