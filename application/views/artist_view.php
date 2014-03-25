@@ -72,6 +72,15 @@
             return false ;
     }
 
+    function showEditFrame(d)
+    { 
+      document.getElementById('frameprofessional').style.display="none";
+      document.getElementById('frameabout').style.display="none";
+      document.getElementById('framecontact').style.display="none";
+      document.getElementById('framesocial').style.display="none";  
+      document.getElementById(d).style.display="block"; 
+    }
+
     function gigProfileCallback(a) 
     {
       $("#loading-indicator").hide();
@@ -114,13 +123,70 @@
 
     function showEditProfileCallback(a)
     {
-		console.log("Data: ", JSON.stringify(a));
-		$("#lefty").load("include/edit_profile.php", {json: JSON.stringify(a)});
+		$('#professionalForm').bind('submit',function(e) 
+        {
+            e.preventDefault();
+
+            var obj = {
+                    designation:    document.getElementById('full-name').value,
+                    organization:   document.getElementById('username').value,
+                    genre:          document.getElementById('genrename').value
+                };
+
+            editProfile("professionalForm",obj);
+        });
+
+
+        $('#socialForm').bind('submit',function(e) 
+        {
+            e.preventDefault();
+
+            var obj = {
+                    fb:             document.getElementById('fb').value,
+                    twitter:        document.getElementById('twitter').value,
+                    reverbnation:   document.getElementById('reverbnation').value,
+                    youtube:        document.getElementById('youtube').value,
+                    myspace:        document.getElementById('myspace').value,
+                    gplus:          document.getElementById('gplus').value
+                };
+
+            editProfile("socialForm",obj);
+        });
+
+        $('#contactForm').bind('submit',function(e) 
+        {
+            e.preventDefault();
+
+            var obj = {
+                    phone:      document.getElementById('phone').value,
+                    email:      document.getElementById('email').value,
+                    add:        document.getElementById('add').value,
+                    city:       document.getElementById('city').value,
+                    state:      document.getElementById('state').value,
+                    country:    document.getElementById('country').value,
+                    pincode:    document.getElementById('pincode').value
+                };
+
+            editProfile("contactForm",obj);
+        });
+
+        $('#aboutForm').bind('submit',function(e) 
+        {
+            e.preventDefault();
+
+            var obj = {
+                    about:    document.getElementById('about').value
+                };
+
+            editProfile("aboutForm",obj);
+        });
+
+        $("#loading-indicator").hide();
     }
     function showEditProfile()
     {
     	$("#loading-indicator").show();
-		$.post('artist/editProfilePage','',showEditProfileCallback,'json');
+        $("#lefty").load('artist/editProfilePage','',showEditProfileCallback);
     }
 
     function editProfileCallback(a)

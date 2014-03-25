@@ -362,8 +362,10 @@ class Base extends MY_Controller{
 
 		$response['about'] = $about;
 
+		$viewHTMLCode = trim(preg_replace('/\s\s+/', ' ', $this->load->view('include/edit_profile', $response, true)));
+
 		$this->load->helper('functions');
-		createResponse($response);
+		createHTMLResponse($viewHTMLCode);
 	}
 
 	public function editProfile(){
