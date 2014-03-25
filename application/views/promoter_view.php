@@ -443,7 +443,7 @@
 
     function showGigFeedbackCallback(a)
     {
-        $('#ratingForm').bind('submit',function(e) 
+        /*$('#ratingForm').bind('submit',function(e) 
         {
           e.preventDefault();
 
@@ -460,7 +460,7 @@
           };
 
           enterGigFeedback(obj);
-        });
+        });*/
 
         $("#loading-indicator").hide();
     }

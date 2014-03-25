@@ -290,7 +290,7 @@
 
     function showGigFeedbackCallback(a)
     {
-        $('#ratingForm').bind('submit',function(e) 
+        /*$('#ratingForm').bind('submit',function(e) 
         {
           e.preventDefault();
 
@@ -307,7 +307,7 @@
           };
 
           enterGigFeedback(obj);
-        });
+        });*/
 
         $("#lefty").load("/include/feed.php", {json: JSON.stringify(a)});
     }
