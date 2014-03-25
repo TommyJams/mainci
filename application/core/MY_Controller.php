@@ -834,8 +834,10 @@ class Base extends MY_Controller{
 		$response['promoter_name'] = $promoter_name;
 		$response['artist_name'] = $artist_name;
 
+		$viewHTMLCode = trim(preg_replace('/\s\s+/', ' ', $this->load->view('include/feed', $response, true)));
+
 		$this->load->helper('functions');
-		createResponse($response);		
+		createHTMLResponse($viewHTMLCode);
 	}
 
 	public function enterGigFeedback()
@@ -1262,6 +1264,7 @@ class Base extends MY_Controller{
 		$viewHTMLCode = trim(preg_replace('/\s\s+/', ' ', $this->load->view('include/profile_search', $response, true)));
 
 		$this->load->helper('functions');
-		createHTMLResponse($viewHTMLCode);	}
+		createHTMLResponse($viewHTMLCode);	
+	}
 }
 ?>

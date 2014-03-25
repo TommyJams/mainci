@@ -1,42 +1,7 @@
-<?
-	$error     = (json_decode($_POST['json'])->error);
-	$reason    = (json_decode($_POST['json'])->reason);
-	$eDate     = (json_decode($_POST['json'])->eventDate);
-	$gig_id    = (json_decode($_POST['json'])->gig_id);
-	$gig_name  = (json_decode($_POST['json'])->gig_name);
-	$role	   = (json_decode($_POST['json'])->role);
-	$artist_name  	= (json_decode($_POST['json'])->artist_name);
-	$promoter_name  = (json_decode($_POST['json'])->promoter_name);
-?>
 <html>
 <head>
 	<link rel='stylesheet' href='/style/edit.css'>
 	<!-- Include the JS files -->
-	<script type="text/javascript">
-		<?
-		if(!$error)
-		{
-		?>
-		$('#ratingForm').bind('submit',function(e) 
-	        {
-	            e.preventDefault();
-				
-				var gigRateElem = document.getElementById("gigRating");
-				var rateElem 	= document.getElementById("rateElem");
-				
-	            var obj = {
-                    gigLink:    <?print("$gig_id");?>,
-                    gigRate:    gigRateElem.options[gigRateElem.selectedIndex].value,
-                    gigComment: document.getElementById('gigComment').value,
-                    rate:   	rateElem.options[rateElem.selectedIndex].value,
-                    comment:    document.getElementById('comment').value,
-                    future:    	document.getElementById('future').checked
-                };
-
-	            enterGigFeedback(obj);
-	        });
-		<?}?>
-	</script>
 </head>
 <body>
 	<div id="box" style="display:block;">
@@ -44,13 +9,12 @@
 			<section id="left" style=" width:100%;">
 
 				<?
-					error_log('error'.$error.'reason'.$reason);
 					if($error)
 					{
 						if($reason == 'premature')
 						{
 							print("<div class='gcontent' style='margin-bottom:6px; margin-top:10px;'>
-							<div class='head'><h1>You may rate after the gig is over on: $eDate</h1></div></div>");
+							<div class='head'><h1>You may rate after the gig is over on: $eventDate</h1></div></div>");
 						}
 						elseif($reason == 'already')
 						{
@@ -168,6 +132,7 @@
 										</div>
 									</div>
 									<div class="centera" style="width:100%; position:relative; margin-top:10px; ">
+										<input name="gigFeedbackLink"  id="gigFeedbackLink"  type="hidden" value="<? print($gig_id);?>"/>
 										<input type="submit" value="Rate" style="height:45px; width: 50px; left:50%; margin-left:-50px; position:relative; padding: 5px 5px;"/>
 									</div>
 								</form>
@@ -179,10 +144,5 @@
 			</section>
 		</div>
 	</div>
-
-	<script type="text/javascript">
-		$('#loading-indicator').hide();
-	</script>
-
 </body>
 </html>
