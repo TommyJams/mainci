@@ -3,38 +3,6 @@
     <link rel='stylesheet' href='style/edit.css'>
 
 	<!-- Include the JS files -->
-
-    <?
-    $foundGigs = (json_decode($_POST['json'])->foundGigs);
-    $total_pages = (json_decode($_POST['json'])->total_pages);
-    $nPage = (json_decode($_POST['json'])->nPage);
-    $searchGigs = (json_decode($_POST['json'])->searchGigs);
-    $scity = (json_decode($_POST['json'])->sCity);
-    $sdate = (json_decode($_POST['json'])->sDate);
-    $scat = (json_decode($_POST['json'])->sCat);
-    $sbudget = (json_decode($_POST['json'])->sBudget);
-    $cityList = (json_decode($_POST['json'])->cityList);
-    $dateList = (json_decode($_POST['json'])->dateList);
-    $catList = (json_decode($_POST['json'])->catList);
-    $budgetList = (json_decode($_POST['json'])->budgetList);
-    ?>
-
-    <script> 
-        $('#findGigsForm').bind('submit',function(e) 
-        {
-            e.preventDefault();
-
-            findGigsPage(
-                            document.getElementById('search').value,
-                            1,
-                            document.getElementById('city').value,
-                            document.getElementById('date').value,
-                            document.getElementById('cat').value,
-                            document.getElementById('budget_min').value
-                        );
-        });
-    </script>
-                            
 </head>
 
 <body>
@@ -48,7 +16,7 @@
         <? 
             foreach($cityList as $city)
 			{
-				if(isset($scity) && $scity!="all" && $city==$scity)
+				if(isset($sCity) && $sCity!="all" && $city==$sCity)
 					print("<option value='$city' selected='selected'>$city</option>");
 				else
 					print("<option value='$city'>$city</option>");
@@ -61,7 +29,7 @@
             foreach($dateList as $date)
 			{
 				$formattedDate = date('d-m-Y',strtotime($date));
-				if(isset($sdate) && $sdate!="all" && $date==$sdate)
+				if(isset($sDate) && $sDate!="all" && $date==$sDate)
 					print("<option value='$date' selected='selected'>$formattedDate</option>");
 				else
 					print("<option value='$date'>$formattedDate</option>");
@@ -75,7 +43,7 @@
 			{
 				if(!strpos($cat,"/"))
 				{
-					if(isset($scat) && $scat!="all" & $cat==$scat)
+					if(isset($sCat) && $sCat!="all" & $cat==$sCat)
 						print("<option value='$cat' selected='selected'>$cat</option>");
 					else
 						print("<option value='$cat'>$cat</option>");
@@ -90,7 +58,7 @@
 			{	
 				if($min>=0)
 				{
-					if(isset($sbudget) && $sbudget!="all" && $sbudget==$min)
+					if(isset($sBudget) && $sBudget!="all" && $sBudget==$min)
 						print("<option value='$min' selected='selected'>$min</option>");
 					else
 						print("<option value='$min'>$min</option>");
@@ -155,7 +123,7 @@
                                                 <input type="hidden" name="gig" value="<? print($link);?>">
                                                 <input id="dibStatusButton" name="dib" type="submit" value="DIB" style="height:80%; width:auto;" onClick="return confirmSubmit()">
                                             </form>*/
-                                            print("<a href='javascript:;' onClick=confirmSubmit('$link'); id='dibStatusButton' style='height:80%; width:auto;'>DIB</a>");
+                                            print("<a href='javascript:;' onClick=confirmDibsSubmit('$link'); id='dibStatusButton' style='height:80%; width:auto;'>DIB</a>");
                                         ?>
                                     </td>
                                 </tr>
@@ -177,22 +145,6 @@
                 </div> <!--gigsTableItemContainer-->
 			</div> <!--boxy-->
     </div><!--gcontent-->
-</section>
-
-<script type="text/javascript">
-	$('#loading-indicator').hide();
-</script>
-
-<script LANGUAGE="JavaScript">
-function confirmSubmit(link)
-{
-    var agree=confirm("Are you sure you wish to call dibs for this gig? The host will receive the dibs and choose an artist. Please note, these dibs are not cancellable.");
-    if (agree)
-        dibAction(link) ;
-    else
-        return false ;
-}
-</script>
-	
+</section>	
 </body>
 </html>

@@ -217,12 +217,25 @@
 
     function findGigsPageCallback(a)
     {
-    	$("#lefty").load("include/artist_gigs.php", {json: JSON.stringify(a)});	
+        $('#findGigsForm').bind('submit',function(e) 
+        {
+            e.preventDefault();
+
+            findGigsPage(
+                            document.getElementById('search').value,
+                            1,
+                            document.getElementById('city').value,
+                            document.getElementById('date').value,
+                            document.getElementById('cat').value,
+                            document.getElementById('budget_min').value
+                        );
+        });
+        $("#loading-indicator").hide();
     }
 	function findGigsPage(searchString,page,city,date,category,budget_min)
     {
     	$("#loading-indicator").show();
-		$.post('artist/findGigs',{'searchString': searchString,'nPage': page,'sCity': city,'sDate': date,'sCat': category,'sBudget': budget_min},findGigsPageCallback,'json');
+        $("#lefty").load('artist/findGigs',{'searchString': searchString,'nPage': page,'sCity': city,'sDate': date,'sCat': category,'sBudget': budget_min},findGigsPageCallback);
     }
 
     function searchProfilesPageCallback(a)

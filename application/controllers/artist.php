@@ -83,7 +83,7 @@ class Artist extends Base{
 		$todayTime = strtotime(date("Y-m-d"));
 
 		//What is the query string
-		if(isset($_POST['searchString']))								//Search string passed in query?
+		if(isset($_POST['searchString']) && $_POST['searchString'] != 'undefined')	//Search string passed in query?
 			$searchGigs = $_POST['searchString'];
 		else
 		{
@@ -95,7 +95,7 @@ class Artist extends Base{
 
 
 		// Which page to show?
-		if(isset($_POST['nPage']) && $_POST['nPage']!=NULL)				//Page passed in query?
+		if(isset($_POST['nPage']) && $_POST['nPage']!=NULL && $_POST['nPage']!='undefined')				//Page passed in query?
 			$nPage = $_POST['nPage'];
 		else
 		{
@@ -106,7 +106,7 @@ class Artist extends Base{
 		}
 
 		// City Filter?
-		if(isset($_POST['sCity']) && $_POST['sCity']!=NULL)				//City passed in query?
+		if(isset($_POST['sCity']) && $_POST['sCity']!=NULL && $_POST['sCity']!='undefined')				//City passed in query?
 			$sCity = $_POST['sCity'];
 		else
 		{
@@ -117,7 +117,7 @@ class Artist extends Base{
 		}
 
 		// Date Filter?
-		if(isset($_POST['sDate']) && $_POST['sDate']!=NULL)				//Date passed in query?
+		if(isset($_POST['sDate']) && $_POST['sDate']!=NULL && $_POST['sDate']!='undefined')				//Date passed in query?
 			$sDate = $_POST['sDate'];
 		else
 		{
@@ -128,7 +128,7 @@ class Artist extends Base{
 		}
 
 		// Category Filter?
-		if(isset($_POST['sCat']) && $_POST['sCat']!=NULL)				//Category passed in query?
+		if(isset($_POST['sCat']) && $_POST['sCat']!=NULL && $_POST['sCat']!='undefined')				//Category passed in query?
 			$sCat = $_POST['sCat'];
 		else
 		{
@@ -139,7 +139,7 @@ class Artist extends Base{
 		}
 
 		// Budget Filter?
-		if(isset($_POST['sBudget']) && $_POST['sBudget']!=NULL)			//Budget passed in query?
+		if(isset($_POST['sBudget']) && $_POST['sBudget']!=NULL && $_POST['sBudget']!='undefined')			//Budget passed in query?
 			$sBudget = $_POST['sBudget'];
 		else
 		{
@@ -269,8 +269,10 @@ class Artist extends Base{
 		$response['sBudget'] = $sBudget;
 		$response['total_pages'] = $total_pages;
 
+		$viewHTMLCode = trim(preg_replace('/\s\s+/', ' ', $this->load->view('include/artist_gigs', $response, true)));
+
 		$this->load->helper('functions');
-		createResponse($response);
+		createHTMLResponse($viewHTMLCode);
 	}
 
 	public function dibAction(){
