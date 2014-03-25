@@ -46,6 +46,7 @@ class Artist extends Base{
 
         	$SQLe = "SELECT * FROM `".DATABASE."`.`shop` WHERE link=$link";
         	$resulte = mysql_query($SQLe);
+        	$city = $state = $time = $date = "";
         	while ($f = mysql_fetch_assoc($resulte))
         	{
             	$city=$f["venue_city"];$state=$f["venue_state"];$time=$f["venue_time"];$date=$f["venue_date"];
