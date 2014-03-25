@@ -24,7 +24,7 @@
                     <div class='gigsTableItemContainer'>
                         <?php 
                         if($error == 0){
-                        foreach($dibsHistory as $row){ ?>
+                        foreach($dibHistory as $row){ ?>
                         <?
                         $gig=$row[0];
                         $city=$row[1];
