@@ -290,7 +290,25 @@
 
     function showGigFeedbackCallback(a)
     {
-        console.log("Data: ", JSON.stringify(a));
+        $('#ratingForm').bind('submit',function(e) 
+        {
+          e.preventDefault();
+
+          var gigRateElem = document.getElementById("gigRating");
+          var rateElem  = document.getElementById("rateElem");
+
+          var obj = {
+            gigLink:    document.getElementById('gigLink').value;,
+            gigRate:    gigRateElem.options[gigRateElem.selectedIndex].value,
+            gigComment: document.getElementById('gigComment').value,
+            rate:     rateElem.options[rateElem.selectedIndex].value,
+            comment:    document.getElementById('comment').value,
+            future:     document.getElementById('future').checked
+          };
+
+          enterGigFeedback(obj);
+        });
+
         $("#lefty").load("/include/feed.php", {json: JSON.stringify(a)});
     }
     function showGigFeedback(link)

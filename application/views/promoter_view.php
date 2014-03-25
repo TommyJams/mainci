@@ -461,6 +461,7 @@
 
           enterGigFeedback(obj);
         });
+
         $("#loading-indicator").hide();
     }
     function showGigFeedback(link)
