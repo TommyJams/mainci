@@ -451,12 +451,12 @@
           var rateElem  = document.getElementById("rateElem");
 
           var obj = {
-            gigLink:    document.getElementById('gigFeedbackLink').value;,
+            /*gigLink:    document.getElementById('gigFeedbackLink').value;,*/
             gigRate:    gigRateElem.options[gigRateElem.selectedIndex].value,
-            gigComment: document.getElementById('gigComment').value/*,
+            gigComment: document.getElementById('gigComment').value,
             rate:     rateElem.options[rateElem.selectedIndex].value,
             comment:    document.getElementById('comment').value,
-            future:     document.getElementById('future').checked*/
+            future:     document.getElementById('future').checked
           };
 
           enterGigFeedback(obj);
