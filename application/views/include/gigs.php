@@ -111,23 +111,23 @@
                         <?	
                         if ($gigStatus == 1) // Gig is booked
                         {
-							print("<h2><? echo lang('str_gigs_call3');?>:</h2>");
+							print("<h2></h2>".lang('str_gigs_call3'));
                             print("<a href='javascript:;' onClick=showProfile('$artist_booked_id'); class='whiteHoverRef'>$artist_booked_name</a>");
                         }
 						elseif($gigStatus == 2)
 						{    
-							print("<a  href='javascript:;' onClick=showUpdateGig('$link'); class='whiteHoverRef'>Edit Gig</a>");
+							print("<a  href='javascript:;' onClick=showUpdateGig('$link'); class='whiteHoverRef'></a>".lang('str_gigs_call4'));
 						}
                         elseif($gigSession == 1)
                         { 
                             $statuss=$found["status"];
-                            if($gigStatus == 3){print("<a href='javascript:;' id='addnew' style='background: #0a0;'><? echo lang('str_gigs_status1');?></a>");}
-                            elseif($gigStatus == 4){print("<a href='javascript:;' id='addnew' style='background: #a00'><? echo lang('str_gigs_status2');?></a>");}
-                            elseif($gigStatus == 5){print("<a href='javascript:;' id='addnew' style='background: #282828;'><? echo lang('str_gigs_status3');?></a>");}
+                            if($gigStatus == 3){print("<a href='javascript:;' id='addnew' style='background: #0a0;'></a>".lang('str_gigs_status1'));}
+                            elseif($gigStatus == 4){print("<a href='javascript:;' id='addnew' style='background: #a00'></a>".lang('str_gigs_status2'));}
+                            elseif($gigStatus == 5){print("<a href='javascript:;' id='addnew' style='background: #282828;'></a>".lang('str_gigs_status3'));}
                         
 					        elseif($gigStatus == 6)
 						    {
-							    print("<a href='javascript:;' class='dibStatusRef' style='background:#666;'><? echo lang('str_gigs_status4');?></a>");
+							    print("<a href='javascript:;' class='dibStatusRef' style='background:#666;'></a>".lang('str_gigs_status4'));
 						    }
                             elseif($gigStatus == 7)
                             {                       
@@ -139,7 +139,7 @@
                         
                         elseif($gigStatus == 8)
                         {
-                            print("<a href='javascript:;' class='dibStatusRef' style='background:#666;'><? echo lang('str_gigs_status4');?></a>");
+                            print("<a href='javascript:;' class='dibStatusRef' style='background:#666;'></a>".lang('str_gigs_status4'));
                         }
                     
                         /*
@@ -158,23 +158,23 @@
                     <div class="boxy" style = "height:auto; margin:20px 0px;">
                         <table width="100%" style="text-align:left;">
                             <tr>
-                                <td style="width:10%; background: #ffcc00;"><h2><? echo lang('str_gigs_call4');?><h2></td>
+                                <td style="width:10%; background: #ffcc00;"><h2><? echo lang('str_gigs_call5');?><h2></td>
                                 <td style="color: #000; background: #fff; padding:5px;"><?  print ("$formattedDate"); ?><td>
                             </tr>
                             <tr style="color: #000; width:10%" >
-                                <td style="width:10%; background: #ffcc00;"><h2><? echo lang('str_gigs_call5');?><h2></td>
+                                <td style="width:10%; background: #ffcc00;"><h2><? echo lang('str_gigs_call6');?><h2></td>
                                 <td style="color: #000; background: #fff; padding:5px;"><?  print ("$vtime"); ?></td>
                             </tr>
 							<tr style="color: #000; width:10%" >
-                                <td style="width:10%; background: #ffcc00;"><h2><? echo lang('str_gigs_call6');?><h2></td>
+                                <td style="width:10%; background: #ffcc00;"><h2><? echo lang('str_gigs_call7');?><h2></td>
                                 <td style="color: #000; background: #fff; padding:5px;"><?  print ("$duration"); ?> hours</td>
                             </tr>
                             <tr style="color: #000; width:10%" >
-                                <td style="width:10%; background: #ffcc00;"><h2><? echo lang('str_gigs_call7');?><h2></td>
+                                <td style="width:10%; background: #ffcc00;"><h2><? echo lang('str_gigs_call8');?><h2></td>
                                 <td style="color: #000; background: #fff; padding:5px;"><?  print ("$cat"); ?></td>
                             </tr>
                             <tr style="color: #000; width:10%" >
-                                <td style="width:10%; background: #ffcc00;"><h2><? echo lang('str_gigs_call8');?><h2></td>
+                                <td style="width:10%; background: #ffcc00;"><h2><? echo lang('str_gigs_call9');?><h2></td>
                                 <td style="color: #000; background: #fff; padding:5px;">
                                     <?  
                                         if($budget_min == -1)
@@ -187,11 +187,11 @@
                                 </td>
                             </tr>
                             <tr style="color: #000; width:10%" >
-                                <td style="width:10%; background: #ffcc00;"><h2><? echo lang('str_gigs_call9');?></h2></td>
+                                <td style="width:10%; background: #ffcc00;"><h2><? echo lang('str_gigs_call10');?></h2></td>
                                 <td style="color: #000; background: #fff; padding:5px;"><?  print ("$add, $city, $state, $country, $pincode"); ?></td>
                             </tr>
                             <tr style="color: #000; width:10%" >
-                                <td style="width:10%; background: #ffcc00;"><h2><? echo lang('str_gigs_call10');?></h2></td>
+                                <td style="width:10%; background: #ffcc00;"><h2><? echo lang('str_gigs_call11');?></h2></td>
                                 <td style="color: #000; background: #fff; padding:5px;">
                                     <?
                                         /*convert to URL*/

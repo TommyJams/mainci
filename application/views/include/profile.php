@@ -118,8 +118,8 @@
 					<div class="userGenre">
 						<h2 style="padding-top:0px;">
 						<?
-							if($type=="Promoter"){print("<? echo lang('str_profile_call3');?>: ");}
-							elseif($type=="Artist"){print("<? echo lang('str_profile_call4');?>: ");}
+							if($type=="Promoter"){print("".lang('str_profile_call3'));}
+							elseif($type=="Artist"){print("".lang('str_profile_call4'));}
 							print($genre);
 						?>
 						</h2>

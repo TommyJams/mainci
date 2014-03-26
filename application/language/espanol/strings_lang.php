@@ -275,16 +275,17 @@
     $lang['str_gigs_max_size'] = "Tamaño máximo";
     $lang['str_gigs_call1'] = "Subir";
     $lang['str_gigs_call2'] = "Conducido por";
-    $lang['str_gigs_call3'] = "Artista";
+    $lang['str_gigs_call3'] = "Artista:";
+    $lang['str_gigs_call4'] = "Editar Concierto";
     $lang['str_gigs_status1'] = "Aceptado";
     $lang['str_gigs_status2'] = "Rechazado";
     $lang['str_gigs_status3'] = "Pendiente";
     $lang['str_gigs_status4'] = "Cerrada";
-    $lang['str_gigs_call4'] = "Fecha";
-    $lang['str_gigs_call5'] = "Tiempo";
-    $lang['str_gigs_call6'] = "Duración";
-    $lang['str_gigs_call7'] = "Género";
-    $lang['str_gigs_call8'] = "Presupuesto";
-    $lang['str_gigs_call9'] = "Lugar";
-    $lang['str_gigs_call10'] = "Descripción";
+    $lang['str_gigs_call5'] = "Fecha";
+    $lang['str_gigs_call6'] = "Tiempo";
+    $lang['str_gigs_call7'] = "Duración";
+    $lang['str_gigs_call8'] = "Género";
+    $lang['str_gigs_call9'] = "Presupuesto";
+    $lang['str_gigs_call10'] = "Lugar";
+    $lang['str_gigs_call11'] = "Descripción";
 ?>
