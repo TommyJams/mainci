@@ -30,9 +30,9 @@
                     <tr>
                         <td align="center" style="width: 100%;">
                             <span class="hint" style="line-height:10px;">
-                            <? echo lang('str_valid_image');?> (.jpg, .png, .bmp)
+                            <? echo lang('str_profile_image');?> (.jpg, .png, .bmp)
                             <br>
-                            <? echo lang('str_max_size');?>: 150KB
+                            <? echo lang('str_profile_max_size');?>: 150KB
                             </span>
                         </td>
                     </tr>
@@ -43,7 +43,7 @@
                     </tr>
 					<tr>
 						<td align="center" style="width: 100%; padding: 20px;">
-                            <? echo lang('str_or');?>
+                            <? echo lang('str_profile_or');?>
 						</td>
 					</tr>
                 </tbody>

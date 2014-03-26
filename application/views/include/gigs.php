@@ -18,7 +18,7 @@
 	<div id="profil" style="display:none; ">
         <a id="loginBoxClose" href="javascript:;" onClick="popup('profil')">
 		</a>
-        <center><h2>Upload gig logo</h2></center>
+        <center><h2><? echo lang('str_gigs_title');?></h2></center>
         
         <form action="" method="post" id="gigsPicForm" enctype="multipart/form-data">
             <table style="margin-top: 30px; width: 100%;">
@@ -32,15 +32,15 @@
                     <tr>
                         <td align="center">
                             <span class="hint" style="line-height:10px;">
-                                    Valid Image File (.jpg, .png, .bmp)
+                                    <? echo lang('str_gigs_image');?> (.jpg, .png, .bmp)
                                     <br>
-                                    Max Size: 150KB
+                                    <? echo lang('str_gigs_max_size');?>: 150KB
                             </span>
                         </td>
                     </tr>
                     <tr>
                         <td align="center">
-                            <input name="submit" id="upload" type="submit" value="Upload" style="background: #000; color: #ffcc00; margin: 10px auto;"/>
+                            <input name="submit" id="upload" type="submit" value="<? echo lang('str_gigs_call1');?>" style="background: #000; color: #ffcc00; margin: 10px auto;"/>
                         </td>
                     </tr>
                 </tbody>
@@ -72,7 +72,7 @@
                         <div id="userName">
 							<h1 style="display:inline-block;"><? print ("$gig"); ?></h1>
 						</div>
-                        <h2 id='gigHostName'>Hosted by: <? print ("<a href='javascript:;' onClick=showProfile('$promoter');>$promoter_name</a>"); ?></h2>
+                        <h2 id='gigHostName'><? echo lang('str_gigs_call2');?>: <? print ("<a href='javascript:;' onClick=showProfile('$promoter');>$promoter_name</a>"); ?></h2>
                         <h2><?
                             if($city!="")
                             {
@@ -111,7 +111,7 @@
                         <?	
                         if ($gigStatus == 1) // Gig is booked
                         {
-							print("<h2>Artist:</h2>");
+							print("<h2><? echo lang('str_gigs_call3');?>:</h2>");
                             print("<a href='javascript:;' onClick=showProfile('$artist_booked_id'); class='whiteHoverRef'>$artist_booked_name</a>");
                         }
 						elseif($gigStatus == 2)
@@ -121,13 +121,13 @@
                         elseif($gigSession == 1)
                         { 
                             $statuss=$found["status"];
-                            if($gigStatus == 3){print("<a href='javascript:;' id='addnew' style='background: #0a0;'>Accepted</a>");}
-                            elseif($gigStatus == 4){print("<a href='javascript:;' id='addnew' style='background: #a00'>Rejected</a>");}
-                            elseif($gigStatus == 5){print("<a href='javascript:;' id='addnew' style='background: #282828;'>Pending</a>");}
+                            if($gigStatus == 3){print("<a href='javascript:;' id='addnew' style='background: #0a0;'><? echo lang('str_gigs_status1');?></a>");}
+                            elseif($gigStatus == 4){print("<a href='javascript:;' id='addnew' style='background: #a00'><? echo lang('str_gigs_status2');?></a>");}
+                            elseif($gigStatus == 5){print("<a href='javascript:;' id='addnew' style='background: #282828;'><? echo lang('str_gigs_status3');?></a>");}
                         
 					        elseif($gigStatus == 6)
 						    {
-							    print("<a href='javascript:;' class='dibStatusRef' style='background:#666;'>Closed</a>");
+							    print("<a href='javascript:;' class='dibStatusRef' style='background:#666;'><? echo lang('str_gigs_status4');?></a>");
 						    }
                             elseif($gigStatus == 7)
                             {                       
@@ -139,7 +139,7 @@
                         
                         elseif($gigStatus == 8)
                         {
-                            print("<a href='javascript:;' class='dibStatusRef' style='background:#666;'>Closed</a>");
+                            print("<a href='javascript:;' class='dibStatusRef' style='background:#666;'><? echo lang('str_gigs_status4');?></a>");
                         }
                     
                         /*
@@ -158,23 +158,23 @@
                     <div class="boxy" style = "height:auto; margin:20px 0px;">
                         <table width="100%" style="text-align:left;">
                             <tr>
-                                <td style="width:10%; background: #ffcc00;"><h2>Date<h2></td>
+                                <td style="width:10%; background: #ffcc00;"><h2><? echo lang('str_gigs_call4');?><h2></td>
                                 <td style="color: #000; background: #fff; padding:5px;"><?  print ("$formattedDate"); ?><td>
                             </tr>
                             <tr style="color: #000; width:10%" >
-                                <td style="width:10%; background: #ffcc00;"><h2>Time<h2></td>
+                                <td style="width:10%; background: #ffcc00;"><h2><? echo lang('str_gigs_call5');?><h2></td>
                                 <td style="color: #000; background: #fff; padding:5px;"><?  print ("$vtime"); ?></td>
                             </tr>
 							<tr style="color: #000; width:10%" >
-                                <td style="width:10%; background: #ffcc00;"><h2>Duration<h2></td>
+                                <td style="width:10%; background: #ffcc00;"><h2><? echo lang('str_gigs_call6');?><h2></td>
                                 <td style="color: #000; background: #fff; padding:5px;"><?  print ("$duration"); ?> hours</td>
                             </tr>
                             <tr style="color: #000; width:10%" >
-                                <td style="width:10%; background: #ffcc00;"><h2>Genre<h2></td>
+                                <td style="width:10%; background: #ffcc00;"><h2><? echo lang('str_gigs_call7');?><h2></td>
                                 <td style="color: #000; background: #fff; padding:5px;"><?  print ("$cat"); ?></td>
                             </tr>
                             <tr style="color: #000; width:10%" >
-                                <td style="width:10%; background: #ffcc00;"><h2>Budget<h2></td>
+                                <td style="width:10%; background: #ffcc00;"><h2><? echo lang('str_gigs_call8');?><h2></td>
                                 <td style="color: #000; background: #fff; padding:5px;">
                                     <?  
                                         if($budget_min == -1)
@@ -187,11 +187,11 @@
                                 </td>
                             </tr>
                             <tr style="color: #000; width:10%" >
-                                <td style="width:10%; background: #ffcc00;"><h2>Venue</h2></td>
+                                <td style="width:10%; background: #ffcc00;"><h2><? echo lang('str_gigs_call9');?></h2></td>
                                 <td style="color: #000; background: #fff; padding:5px;"><?  print ("$add, $city, $state, $country, $pincode"); ?></td>
                             </tr>
                             <tr style="color: #000; width:10%" >
-                                <td style="width:10%; background: #ffcc00;"><h2>Description</h2></td>
+                                <td style="width:10%; background: #ffcc00;"><h2><? echo lang('str_gigs_call10');?></h2></td>
                                 <td style="color: #000; background: #fff; padding:5px;">
                                     <?
                                         /*convert to URL*/

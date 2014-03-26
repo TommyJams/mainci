@@ -254,9 +254,9 @@
 
 // Profile View
     $lang['str_profile_title'] = "Suba su Imagen de Perfil";
-    $lang['str_valid_image'] = "Válido de archivo de imagen";
-    $lang['str_max_size'] = "Tamaño máximo";
-    $lang['str_or'] = "Oregón";
+    $lang['str_profile_image'] = "Válido de archivo de imagen";
+    $lang['str_profile_max_size'] = "Tamaño máximo";
+    $lang['str_profile_or'] = "Oregón";
     $lang['str_profile_call1'] = "Sube imágenes";
     $lang['str_profile_call2'] = "Usar Facebook Imagen";
     $lang['str_profile_call3'] = "Estilo";
@@ -268,10 +268,23 @@
     $lang['str_profile_call9'] = "ARTISTA";
     $lang['str_profile_call10'] = "UBICACIÓN";
 
-
-
-
-
-
-
+// Gigs View
+    $lang['str_gigs_title'] = "Subir logo concierto";
+    $lang['str_valid_image'] = "Válido de archivo de imagen";
+    $lang['str_gigs_image'] = "Válido de archivo de imagen";
+    $lang['str_gigs_max_size'] = "Tamaño máximo";
+    $lang['str_gigs_call1'] = "Subir";
+    $lang['str_gigs_call2'] = "Conducido por";
+    $lang['str_gigs_call3'] = "Artista";
+    $lang['str_gigs_status1'] = "Aceptado";
+    $lang['str_gigs_status2'] = "Rechazado";
+    $lang['str_gigs_status3'] = "Pendiente";
+    $lang['str_gigs_status4'] = "Cerrada";
+    $lang['str_gigs_call4'] = "Fecha";
+    $lang['str_gigs_call5'] = "Tiempo";
+    $lang['str_gigs_call6'] = "Duración";
+    $lang['str_gigs_call7'] = "Género";
+    $lang['str_gigs_call8'] = "Presupuesto";
+    $lang['str_gigs_call9'] = "Lugar";
+    $lang['str_gigs_call10'] = "Descripción";
 ?>

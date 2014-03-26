@@ -256,9 +256,9 @@
 
 // Profile View
     $lang['str_profile_title'] = "Upload your Profile Picture";
-    $lang['str_valid_image'] = "Valid Image File";
-    $lang['str_max_size'] = "Max Size";
-    $lang['str_or'] = "Or";
+    $lang['str_profile_image'] = "Valid Image File";
+    $lang['str_profile_max_size'] = "Max Size";
+    $lang['str_profile_or'] = "Or";
     $lang['str_profile_call1'] = "Upload Picture";
     $lang['str_profile_call2'] = "Use Facebook Picture";
     $lang['str_profile_call3'] = "Style";
@@ -269,6 +269,25 @@
     $lang['str_profile_call8'] = "GIG NAME";
     $lang['str_profile_call9'] = "ARTIST";
     $lang['str_profile_call10'] = "LOCATION";
+
+// Gigs View
+    $lang['str_gigs_title'] = "Upload gig logo";
+    $lang['str_gigs_image'] = "Valid Image File";
+    $lang['str_gigs_max_size'] = "Tamaño máximo";
+    $lang['str_gigs_call1'] = "Upload";
+    $lang['str_gigs_call2'] = "Hosted by";
+    $lang['str_gigs_call3'] = "Artist";
+    $lang['str_gigs_status1'] = "Accepted";
+    $lang['str_gigs_status2'] = "Rejected";
+    $lang['str_gigs_status3'] = "Pending";
+    $lang['str_gigs_status4'] = "Closed";
+    $lang['str_gigs_call4'] = "Date";
+    $lang['str_gigs_call5'] = "Time";
+    $lang['str_gigs_call6'] = "Duration";
+    $lang['str_gigs_call7'] = "Genre";
+    $lang['str_gigs_call8'] = "Budget";
+    $lang['str_gigs_call9'] = "Venue";
+    $lang['str_gigs_call10'] = "Description";
 
 
 
