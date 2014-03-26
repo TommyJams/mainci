@@ -8,16 +8,16 @@
 <section id="left" style="width:100%">
     <div class="gcontent">
         <div class="head" style="background:#000;">
-            <h1>DIBS Status</h1>
+            <h1><? echo lang('str_dibs_status_title');?></h1>
         </div>
         <div class="boxy" id="boxy" style="overflow-y:auto;">
             <table width='100%' style='padding: 10px 10px; text-align:center;'>
                 <tr bgcolor='#ffcc00' height='30px'>
-                    <td width="25%"><h1>Name</h1></td>
-                    <td width="25%"><h1>City</h1></td>
-                    <td width="10%"><h1>Date</h1></td>
-                    <td width="10%"><h1>Time</h1></td>
-                    <td width="30%"><h1>Status</h1></td>
+                    <td width="25%"><h1><? echo lang('str_dibs_status_call1');?></h1></td>
+                    <td width="25%"><h1><? echo lang('str_dibs_status_call2');?></h1></td>
+                    <td width="10%"><h1><? echo lang('str_dibs_status_call3');?></h1></td>
+                    <td width="10%"><h1><? echo lang('str_dibs_status_call4');?></h1></td>
+                    <td width="30%"><h1><? echo lang('str_dibs_status_call5');?></h1></td>
                 </tr>
             </table>
                 <span class="gigs" style="padding:10px;" >
@@ -48,17 +48,17 @@
 
                                 if($statuss==1)
                                 {
-                                    print("<a href='#' class='greenRef' style='color:#FFF;'>Accepted</a></td></tr><tr><td colspan=4></td><td><center>");    
+                                    print("<a href='#' class='greenRef' style='color:#FFF;'></a></td></tr><tr><td colspan=4></td><td><center>".lang('str_dibs_status_call6'));    
                                     print("<a href='javascript:;' onClick=showProfile('$promoter'); class='greenRef'>$promoter_name</a><br>Contact: $contact</center>");
 
                                 }
                                 elseif($statuss==2)
                                 {
-                                    print("<a href='#' class='redRef' style='color:#FFF;'>Rejected</a>");
+                                    print("<a href='#' class='redRef' style='color:#FFF;'></a>".lang('str_dibs_status_call7'));
                                 }
                                 elseif($statuss==4)
                                 {
-                                    print("<a href='#' class='yellowRef' style='color:#FFF;'>Pending</a>");
+                                    print("<a href='#' class='yellowRef' style='color:#FFF;'></a>".lang('str_dibs_status_call8'));
                                 }
                                 print("</td>
                             </tr>

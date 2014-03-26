@@ -291,7 +291,6 @@
     $lang['str_gigs_call11'] = "Description";
 
 // Artist Gigs View
-
     $lang['str_artist_gigs_city'] = "Any City";
     $lang['str_artist_gigs_date'] = "Any Date";
     $lang['str_artist_gigs_genre'] = "Any Genre";
@@ -307,5 +306,15 @@
     $lang['str_artist_gigs_call9'] = "Pending";
     $lang['str_artist_gigs_call10'] = "Closed";
 
+// Dibs Status View
+    $lang['str_dibs_status_title'] = "DIBS STATUS";
+    $lang['str_dibs_status_call1'] = "Name";
+    $lang['str_dibs_status_call2'] = "City";
+    $lang['str_dibs_status_call3'] = "Date";
+    $lang['str_dibs_status_call4'] = "Time";
+    $lang['str_dibs_status_call5'] = "Status";
+    $lang['str_dibs_status_call6'] = "Accepted";
+    $lang['str_dibs_status_call7'] = "Rejected";
+    $lang['str_dibs_status_call8'] = "Pending";
 
 ?>
