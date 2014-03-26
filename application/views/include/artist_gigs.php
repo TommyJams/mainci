@@ -12,7 +12,7 @@
         <input type="text" name="search" id="search" value="<?print($searchGigs);?>"   style="height:45%; width:80%; top:0; border:0px; margin-bottom: 5px;">
         <input type="submit" value="Search"  style="width: 15%; height:45%; border: 0px; margin-left:1%; margin-bottom: 5px;"> 
         <select name="city" id="city" style = "height: 40%; width: 19%">
-        <option value='all'>Any City</option>
+        <option value='all'><? echo lang('str_artist_gigs_city');?></option>
         <? 
             foreach($cityList as $city)
 			{
@@ -24,7 +24,7 @@
 		?>
         </select>
         <select name="date" id="date" style = "height: 40%; width: 19%">
-        <option value='all'>Any Date</option>
+        <option value='all'><? echo lang('str_artist_gigs_date');?></option>
         <? 
             foreach($dateList as $date)
 			{
@@ -37,7 +37,7 @@
 		?>
         </select>
         <select name="cat" id="cat" style = "height: 40%; width: 19%">
-        <option value='all'>Any Genre</option>
+        <option value='all'><? echo lang('str_artist_gigs_genre');?></option>
         <? 
             foreach($catList as $cat)
 			{
@@ -52,7 +52,7 @@
 		?>
         </select>
         <select name="budget_min" id="budget_min" style = "height: 40%; width: 20%">
-        <option value='all'>Any Budget</option>
+        <option value='all'><? echo lang('str_artist_gigs_budget');?></option>
         <? 
             foreach($budgetList as $min)
 			{	
@@ -77,12 +77,12 @@
                 <div class='gigsTableItemContainer' style="height: 100%;">
 					<table style="max-height:8%; width:100%; padding:10px 10px 0px 10px; text-align:center;">
                         <tr bgcolor="#ffcc00" height="30px">
-                            <td width="25%"><h1>Name</h1></td>
-                            <td width="20%"><h1>Host</h1></td>
-							<td width="20%"><h1>City</h1></td>
-                            <td width="10%"><h1>Date</h1></td>
-                            <td width="10%"><h1>Time</h1></td>
-                            <td width="15%"><h1>Status</h1></td>
+                            <td width="25%"><h1><? echo lang('str_artist_gigs_call1');?></h1></td>
+                            <td width="20%"><h1><? echo lang('str_artist_gigs_call2');?></h1></td>
+							<td width="20%"><h1><? echo lang('str_artist_gigs_call3');?></h1></td>
+                            <td width="10%"><h1><? echo lang('str_artist_gigs_call4');?></h1></td>
+                            <td width="10%"><h1><? echo lang('str_artist_gigs_call5');?></h1></td>
+                            <td width="15%"><h1><? echo lang('str_artist_gigs_call6');?></h1></td>
                         </tr>
 					</table>
 					<div style="height:78%; width:100%; overflow-y:auto;">
@@ -111,13 +111,13 @@
                                     <td width=15%>
                                         <?
                                         if($gigStatus==1)
-                                            print("<a class='dibStatusRef' href='#'style='color:#666;'>Booked</a>");
+                                            print("<a class='dibStatusRef' href='#'style='color:#666;'></a>".lang('str_artist_gigs_call7'));
                                         elseif($gigStatus==2)
-                                            print("<a href='#' class='dibStatusRef redRef' style='color:#FFF;'>Rejected</a>");
+                                            print("<a href='#' class='dibStatusRef redRef' style='color:#FFF;'></a>".lang('str_artist_gigs_call8'));
                                         elseif($gigStatus==4)
-                                            print("<a href='#' class='dibStatusRef' style='color:#666;'>Pending</a>");
+                                            print("<a href='#' class='dibStatusRef' style='color:#666;'></a>".lang('str_artist_gigs_call9'));
                                         elseif($gigStatus==-1)
-        									print("<a class='dibStatusRef' href='#'style='color:#666;'>Closed</a>");
+        									print("<a class='dibStatusRef' href='#'style='color:#666;'></a>".lang('str_artist_gigs_call10'));
         								else
                                             /*<form name="dibForm" action="dib_action.php"  method="post">
                                                 <input type="hidden" name="gig" value="<? print($link);?>">

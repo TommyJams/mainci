@@ -288,4 +288,22 @@
     $lang['str_gigs_call9'] = "Presupuesto";
     $lang['str_gigs_call10'] = "Lugar";
     $lang['str_gigs_call11'] = "Descripción";
+
+// Artist Gigs View
+
+    $lang['str_artist_gigs_city'] = "Cualquier Ciudad";
+    $lang['str_artist_gigs_date'] = "Cualquier Fecha";
+    $lang['str_artist_gigs_genre'] = "Cualquier Género";
+    $lang['str_artist_gigs_budget'] = "Cualquier Presupuesto";
+    $lang['str_artist_gigs_call1'] = "Nombre";
+    $lang['str_artist_gigs_call2'] = "Aloja";
+    $lang['str_artist_gigs_call3'] = "Ciudad";
+    $lang['str_artist_gigs_call4'] = "Fecha";
+    $lang['str_artist_gigs_call5'] = "Tiempo";
+    $lang['str_artist_gigs_call6'] = "Estado";
+    $lang['str_artist_gigs_call7'] = "Reservados";
+    $lang['str_artist_gigs_call8'] = "Rechazado";
+    $lang['str_artist_gigs_call9'] = "Pendiente";
+    $lang['str_artist_gigs_call10'] = "Cerrado";
+
 ?>
