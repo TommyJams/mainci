@@ -290,35 +290,6 @@
     $lang['str_gigs_call10'] = "Venue";
     $lang['str_gigs_call11'] = "Description";
 
-// Edit Profile
-    $lang['str_edit_profile_call1'] = "Professional";
-    $lang['str_edit_profile_call2'] = "Social";
-    $lang['str_edit_profile_call3'] = "Contact";
-    $lang['str_edit_profile_call4'] = "About";
-    $lang['str_edit_profile_call5'] = "Your Role:";
-    $lang['str_edit_profile_call6'] = "Designation:";
-    $lang['str_edit_profile_call7'] = "e.g. Guitars, Vocals";
-    $lang['str_edit_profile_call8'] = "e.g. Manager";
-    $lang['str_edit_profile_call9'] = "Band Name: ";
-    $lang['str_edit_profile_call10'] = "Organization: ";
-    $lang['str_edit_profile_call11'] = "Genre: ";
-    $lang['str_edit_profile_call12'] = "Style: ";
-    $lang['str_edit_profile_call13'] = "e.g. Acoustic, Progressive Rock";
-    $lang['str_edit_profile_call14'] = "e.g. Cafe, Lounge or Rock, Electronic"; 
-    $lang['str_edit_profile_call15'] = "Note:";
-    $lang['str_edit_profile_call16'] = "Fields marked with";
-    $lang['str_edit_profile_call17'] = "are required";
-    $lang['str_edit_profile_call18'] = "Profile link";
-    $lang['str_edit_profile_call19'] = "Mobile Number:";
-    $lang['str_edit_profile_call20'] = "digits";
-    $lang['str_edit_profile_call21'] = "Address:";
-    $lang['str_edit_profile_call22'] = "Number, Street, Locality";
-    $lang['str_edit_profile_call23'] = "City:";
-    $lang['str_edit_profile_call24'] = "State:";
-    $lang['str_edit_profile_call25'] = "Country:";
-    $lang['str_edit_profile_call26'] = "Save Changes";
-    $lang['str_edit_profile_call27'] = "About:";
-    $lang['str_edit_profile_call28'] = "About yourself";
 
 
 ?>
