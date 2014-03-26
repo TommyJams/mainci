@@ -254,5 +254,22 @@
     $lang['str_advertise_call11'] = "Your requirement";
     $lang['str_advertise_call12'] = "Send";
 
+// Profile View
+    $lang['str_profile_title'] = "Upload your Profile Picture";
+    $lang['str_valid_image'] = "Valid Image File";
+    $lang['str_max_size'] = "Max Size";
+    $lang['str_or'] = "Or";
+    $lang['str_profile_call1'] = "Upload Picture";
+    $lang['str_profile_call2'] = "Use Facebook Picture";
+    $lang['str_profile_call3'] = "Style";
+    $lang['str_profile_call4'] = "Genre";
+    $lang['str_profile_call5'] = "TommyJams Rating (rated out of 5 by Hosts, Fans, Editor)";
+    $lang['str_profile_call6'] = "ABOUT ME";
+    $lang['str_profile_call7'] = "GIGS PORTFOLIO";
+    $lang['str_profile_call8'] = "GIG NAME";
+    $lang['str_profile_call9'] = "ARTIST";
+    $lang['str_profile_call10'] = "LOCATION";
+
+
 
 ?>

@@ -251,4 +251,27 @@
     $lang['str_advertise_call10'] = "Su email";
     $lang['str_advertise_call11'] = "Su requerimiento";
     $lang['str_advertise_call12'] = "Enviar";
+
+// Profile View
+    $lang['str_profile_title'] = "Suba su Imagen de Perfil";
+    $lang['str_valid_image'] = "Válido de archivo de imagen";
+    $lang['str_max_size'] = "Tamaño máximo";
+    $lang['str_or'] = "Oregón";
+    $lang['str_profile_call1'] = "Sube imágenes";
+    $lang['str_profile_call2'] = "Usar Facebook Imagen";
+    $lang['str_profile_call3'] = "Estilo";
+    $lang['str_profile_call4'] = "Género";
+    $lang['str_profile_call5'] = "TommyJams Valoración (nominal de 5 por ejércitos, Fans, Redactor)";
+    $lang['str_profile_call6'] = "SOBRE MI";
+    $lang['str_profile_call7'] = "CONCIERTOS CARTERA";
+    $lang['str_profile_call8'] = "NOMBRE GIG";
+    $lang['str_profile_call9'] = "ARTISTA";
+    $lang['str_profile_call10'] = "UBICACIÓN";
+
+
+
+
+
+
+
 ?>

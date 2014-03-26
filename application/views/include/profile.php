@@ -17,7 +17,7 @@
 		<a id="loginBoxClose" href="javascript:;" onClick="popup('profil')">
 		</a>
         <center>
-            <h2>Upload your Profile Picture</h2>
+            <h2><? echo lang('str_profile_title');?></h2>
         </center>
         <form action="" method="post" id="profilePicForm" enctype="multipart/form-data">
             <table id="uploadTable" style="margin-top: 30px; width: 100%;">
@@ -30,20 +30,20 @@
                     <tr>
                         <td align="center" style="width: 100%;">
                             <span class="hint" style="line-height:10px;">
-                            Valid Image File (.jpg, .png, .bmp)
+                            <? echo lang('str_valid_image');?> (.jpg, .png, .bmp)
                             <br>
-                            Max Size: 150KB
+                            <? echo lang('str_max_size');?>: 150KB
                             </span>
                         </td>
                     </tr>
                     <tr>
                         <td align="center" style="width: 100%;">
-                            <input name="submit" id="upload" type="submit" value="Upload Picture"/>
+                            <input name="submit" id="upload" type="submit" value="<? echo lang('str_profile_call1');?>"/>
                         </td>
                     </tr>
 					<tr>
 						<td align="center" style="width: 100%; padding: 20px;">
-                            OR
+                            <? echo lang('str_or');?>
 						</td>
 					</tr>
                 </tbody>
@@ -55,7 +55,7 @@
 					<tr>
 						<td align="center" style="width: 100%;">
 							<img src="<? echo'https://graph.facebook.com/'.$fb_id.'/picture'; ?>" style="vertical-align:bottom">
-							<input name="submit" id="upload" type="submit" value="Use Facebook Picture"/>
+							<input name="submit" id="upload" type="submit" value="<? echo lang('str_profile_call2');?>"/>
                         </td>
                     </tr>
                 </tbody>
@@ -118,8 +118,8 @@
 					<div class="userGenre">
 						<h2 style="padding-top:0px;">
 						<?
-							if($type=="Promoter"){print("Style: ");}
-							elseif($type=="Artist"){print("Genre: ");}
+							if($type=="Promoter"){print("<? echo lang('str_profile_call3');?>: ");}
+							elseif($type=="Artist"){print("<? echo lang('str_profile_call4');?>: ");}
 							print($genre);
 						?>
 						</h2>
@@ -167,7 +167,7 @@
 				<div class="medals" style="width:35%; height: auto; float:right; position:relative; top:50%; margin-top:-25px;">
                     <center>
                         <?                                                         
-                        print("<a alt='TommyJams Rating (rated out of 5 by Hosts, Fans, Editor)' title='TommyJams Rating (rated out of 5 by Hosts, Fans, Editor)'><div style='background:#007888; color: #FFF; height:50px; width:50px; '><h1>$userRating</h1></div></a>");
+                        print("<a alt='TommyJams Rating (rated out of 5 by Hosts, Fans, Editor)' title='<? echo lang('str_profile_call5');?>'><div style='background:#007888; color: #FFF; height:50px; width:50px; '><h1>$userRating</h1></div></a>");
                         /*print("<a alt='User Rating' title='User Rating'><div style='background:#606060; color:#FFF; height:50px; width:50px; margin-top:5px;'><h1>$silver</h1></div></a>");*/
                         ?>
                     </center>
@@ -179,7 +179,7 @@
         <div id = "userDetails">
             <div style="height: 100%; width:48%; float:left;">
                 <div class="head" style="height:10%; margin-bottom:1%;">
-                    <h1>ABOUT ME</h1>
+                    <h1><? echo lang('str_profile_call6');?></h1>
                 </div>
                 <div class="about" style = "height: 88%; background: #000; overflow-y:auto;">
                     <p>
@@ -196,7 +196,7 @@
             <div style="height: 100%; width:48%; float:left; margin-left:4%;">  <!--gigs list-->
                 <div class="gcontent">
                     <div class="head" style="height:10%; margin-bottom:1%;">
-                        <h1>GIGS PORTFOLIO</h1>
+                        <h1><? echo lang('str_profile_call7');?></h1>
                         <? /*if($type=="promoter"){print("Previous GIGs");}else{print("Previous DIBs");}*/ ?>
                     </div>
                     <div class="boxy">
@@ -204,14 +204,14 @@
                             <div id="pgig" style="top:2px;">
 								<table>
 									<tr>
-										<td style="background: #ffcc00; width: 30%;"><h1>GIG NAME</h1></td>
+										<td style="background: #ffcc00; width: 30%;"><h1><? echo lang('str_profile_call8');?></h1></td>
 										<td style="background: #ffcc00; width: 30%;">
                                             <h1>
-                                                <?if($type=="Promoter"){print("ARTIST");}
+                                                <?if($type=="Promoter"){print("<? echo lang('str_profile_call9');?>");}
                                                 else if($type=="Artist"){print("HOST");}?>
                                             </h1>
                                         </td>
-										<td style="background: #ffcc00; width: 40%;"><h1>LOCATION</h1></td>
+										<td style="background: #ffcc00; width: 40%;"><h1><? echo lang('str_profile_call10');?></h1></td>
 									</tr>
 								</table>
                                 <div class="gig" style="">
