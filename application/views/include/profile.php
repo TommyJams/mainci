@@ -207,7 +207,7 @@
 										<td style="background: #ffcc00; width: 30%;"><h1><? echo lang('str_profile_call8');?></h1></td>
 										<td style="background: #ffcc00; width: 30%;">
                                             <h1>
-                                                <?if($type=="Promoter"){print('<? echo lang("str_profile_call9");?>');}
+                                                <?if($type=="Promoter"){ ?> <? echo lang("str_profile_call9");?> <?;}
                                                 else if($type=="Artist"){print("HOST");}?>
                                             </h1>
                                         </td>
