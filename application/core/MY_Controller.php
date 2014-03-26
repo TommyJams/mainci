@@ -739,8 +739,10 @@ class Base extends MY_Controller{
 			$response['error'] = 1;
 			$response['reason'] = 'nologin';
 
+			$viewHTMLCode = trim(preg_replace('/\s\s+/', ' ', $this->load->view('include/feed', $response, true)));
+
 			$this->load->helper('functions');
-			createResponse($response);
+			createHTMLResponse($viewHTMLCode);
 		}	
 
 		if((isset($sessionArray['username'])) || (isset($sessionArray['username_artist'])))	
@@ -771,8 +773,10 @@ class Base extends MY_Controller{
 					$response['reason'] = 'premature';
 					$response['eventDate'] = $edate;
 
+					$viewHTMLCode = trim(preg_replace('/\s\s+/', ' ', $this->load->view('include/feed', $response, true)));
+
 					$this->load->helper('functions');
-					createResponse($response);
+					createHTMLResponse($viewHTMLCode);
 				}
 
 				if(isset($sessionArray['username']))
@@ -783,8 +787,10 @@ class Base extends MY_Controller{
 						$response['reason'] = 'already';
 						$response['eventDate'] = $edate;
 
+						$viewHTMLCode = trim(preg_replace('/\s\s+/', ' ', $this->load->view('include/feed', $response, true)));
+
 						$this->load->helper('functions');
-						createResponse($response);	
+						createHTMLResponse($viewHTMLCode);
 					}
 				}
 				elseif(isset($sessionArray['username_artist']))
@@ -795,9 +801,12 @@ class Base extends MY_Controller{
 						$response['reason'] = 'already';
 						$response['eventDate'] = $edate;
 
+						$viewHTMLCode = trim(preg_replace('/\s\s+/', ' ', $this->load->view('include/feed', $response, true)));
+
 						$this->load->helper('functions');
-						createResponse($response);	
-				}	}
+						createHTMLResponse($viewHTMLCode);
+					}
+				}
 
 				$artist_id=$found["artist_id"];$artist_name=$found["artist_name"];
 				$promoter_id=$found["promoter_id"];$promoter_name=$found["promoter_name"];
@@ -810,8 +819,10 @@ class Base extends MY_Controller{
 				$response['error'] = 1;
 				$response['reason'] = 'gignotfound';
 
+				$viewHTMLCode = trim(preg_replace('/\s\s+/', ' ', $this->load->view('include/feed', $response, true)));
+
 				$this->load->helper('functions');
-				createResponse($response);
+				createHTMLResponse($viewHTMLCode);
 			}
 
 			if(($loggedInID != $promoter_id) || ($loggedInID != $artist_id))	
@@ -821,8 +832,10 @@ class Base extends MY_Controller{
 				$response['gig_name'] = $gig_name;
 				$response['eventDate'] = $edate;
 
+				$viewHTMLCode = trim(preg_replace('/\s\s+/', ' ', $this->load->view('include/feed', $response, true)));
+
 				$this->load->helper('functions');
-				createResponse($response);
+				createHTMLResponse($viewHTMLCode);
 			}					
 		}
 
