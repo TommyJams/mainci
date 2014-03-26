@@ -277,17 +277,18 @@
     $lang['str_gigs_call1'] = "Upload";
     $lang['str_gigs_call2'] = "Hosted by";
     $lang['str_gigs_call3'] = "Artist";
+    $lang['str_gigs_call4'] = "Edit Gig";
     $lang['str_gigs_status1'] = "Accepted";
     $lang['str_gigs_status2'] = "Rejected";
     $lang['str_gigs_status3'] = "Pending";
     $lang['str_gigs_status4'] = "Closed";
-    $lang['str_gigs_call4'] = "Date";
-    $lang['str_gigs_call5'] = "Time";
-    $lang['str_gigs_call6'] = "Duration";
-    $lang['str_gigs_call7'] = "Genre";
-    $lang['str_gigs_call8'] = "Budget";
-    $lang['str_gigs_call9'] = "Venue";
-    $lang['str_gigs_call10'] = "Description";
+    $lang['str_gigs_call5'] = "Date";
+    $lang['str_gigs_call6'] = "Time";
+    $lang['str_gigs_call7'] = "Duration";
+    $lang['str_gigs_call8'] = "Genre";
+    $lang['str_gigs_call9'] = "Budget";
+    $lang['str_gigs_call10'] = "Venue";
+    $lang['str_gigs_call11'] = "Description";
 
 
 
