@@ -291,10 +291,10 @@
 
 // Artist Gigs View
 
-    $lang['str_artist_gigs_city'] = "Cualquier Ciudad";
-    $lang['str_artist_gigs_date'] = "Cualquier Fecha";
-    $lang['str_artist_gigs_genre'] = "Cualquier Género";
-    $lang['str_artist_gigs_budget'] = "Cualquier Presupuesto";
+    $lang['str_artist_gigs_city'] = "Alguna Ciudad";
+    $lang['str_artist_gigs_date'] = "Alguna Fecha";
+    $lang['str_artist_gigs_genre'] = "Alguna Género";
+    $lang['str_artist_gigs_budget'] = "Alguna Presupuesto";
     $lang['str_artist_gigs_call1'] = "Nombre";
     $lang['str_artist_gigs_call2'] = "Aloja";
     $lang['str_artist_gigs_call3'] = "Ciudad";
