@@ -325,8 +325,8 @@
     $lang['str_edit_profile_call6'] = "Designación:";
     $lang['str_edit_profile_call7'] = "por ejemplo Guitarra, Voz";
     $lang['str_edit_profile_call8'] = "por ejemplo gerente";
-    $lang['str_edit_profile_call9'] = "Nombre de Banda: ";
-    $lang['str_edit_profile_call10'] = "Organización: ";
+    $lang['str_edit_profile_call9'] = "Nombre de Banda:* ";
+    $lang['str_edit_profile_call10'] = "Organización:* ";
     $lang['str_edit_profile_call11'] = "Género: ";
     $lang['str_edit_profile_call12'] = "Estilo: ";
     $lang['str_edit_profile_call13'] = "por ejemplo Acústico, Rock Progresivo";
