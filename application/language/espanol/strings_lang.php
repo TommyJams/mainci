@@ -342,7 +342,7 @@
     $lang['str_edit_profile_call23'] = "Ciudad:";
     $lang['str_edit_profile_call24'] = "Estado:";
     $lang['str_edit_profile_call25'] = "País:";
-    $lang['str_edit_profile_call26'] = "Guardar cambios";
-    $lang['str_edit_profile_call27'] = "Acerca de:";
-    $lang['str_edit_profile_call28'] = "Sobre sí mismo";
+    $lang['str_edit_profile_call26'] = "Guardar Cambios";
+    $lang['str_edit_profile_call27'] = "Sobre:";
+    $lang['str_edit_profile_call28'] = "Sobre usted";
 ?>

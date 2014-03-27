@@ -60,7 +60,7 @@
                                 </p>
                                 <center>
                                     <div class="centera" style=" width:500px; position:relative; margin-top:10px; ">
-                                        <input type="submit" value="Save Changes" style = "height: 45px; width: auto padding: 5px 5px;"/>
+                                        <input type="submit" value="<? echo lang('str_edit_profile_call26');?>" style = "height: 45px; width: auto padding: 5px 5px;"/>
                                     </div>
                                     <div class="formExtra" style="margin-left:60px; margin-right:60px;">
                                         <p><strong><? echo lang('str_edit_profile_call15');?> </strong> <? echo lang('str_edit_profile_call16');?> <span class="requiredField">*</span> <? echo lang('str_edit_profile_call17');?>.</p>
@@ -104,7 +104,7 @@
                                 </p>
                                 <center>
                                     <div class="centera" style=" width:500px; position:relative; margin-top:20px;">
-                                        <input type="submit" value="Save Changes" style = "height: 45px; width: auto padding: 5px 5px;"/>
+                                        <input type="submit" value="<? echo lang('str_edit_profile_call26');?>" style = "height: 45px; width: auto padding: 5px 5px;"/>
                                     </div>
                                     <div class="formExtra" style="margin-left:60px; margin-right:60px;">
                                         <p><strong><? echo lang('str_edit_profile_call15');?> </strong> <? echo lang('str_edit_profile_call16');?> <span class="requiredField">*</span> <? echo lang('str_edit_profile_call17');?>.</p>
@@ -171,11 +171,11 @@
                                     <label for="fb"><? echo lang('str_edit_profile_call27');?> <span class="requiredField">*</span></label>
                                     <textarea cols="60" rows="14"  id="about" name="about"  pattern="^[a-zA-Z0-9/ ,-_.:;&?']{25,20000}$"  required><? print ($about); ?></textarea>
                                     <br>
-                                    <em>About yourself</em>
+                                    <em><? echo lang('str_edit_profile_call28');?></em>
                                 </p>
                                 <center>
                                     <div class="centera" style=" width:500px; position:relative; margin-top:20px;">
-                                        <input type="submit" value="<? echo lang('str_edit_profile_call28');?>" style = "height: 45px; width: auto padding: 5px 5px;"/>
+                                        <input type="submit" value="<? echo lang('str_edit_profile_call26');?>" style = "height: 45px; width: auto padding: 5px 5px;"/>
                                     </div>
                                     <div class="formExtra" style="margin-left:60px; margin-right:60px;">
                                         <p><strong><? echo lang('str_edit_profile_call15');?> </strong> <? echo lang('str_edit_profile_call16');?> <span class="requiredField">*</span> <? echo lang('str_edit_profile_call17');?>.</p>
