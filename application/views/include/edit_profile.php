@@ -41,8 +41,8 @@
                                     ?>
                                 </p>
                                 <p>
-                                    <? if($type == 'Artist') { print("<label for='organization'><span class='requiredField'></span></label>".lang('str_edit_profile_call9'));}
-                                       elseif($type == 'Promoter')    { print("<label for='organization'><span class='requiredField'></span></label>".lang('str_edit_profile_call10'));}
+                                    <? if($type == 'Artist') { print("<label for='organization'><span class='requiredField'>*</span></label>".lang('str_edit_profile_call9'));}
+                                       elseif($type == 'Promoter')    { print("<label for='organization'><span class='requiredField'>*</span></label>".lang('str_edit_profile_call10'));}
                                     ?>
                                     <input type="text" id="username" name="organization" pattern="^[a-zA-Z0-9/ ,-_.:;?]{3,50}$" value="<? print ($name); ?>" required />
                                     <br>

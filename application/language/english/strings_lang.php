@@ -326,8 +326,8 @@
     $lang['str_edit_profile_call6'] = "Designation:";
     $lang['str_edit_profile_call7'] = "e.g. Guitars, Vocals";
     $lang['str_edit_profile_call8'] = "e.g. Manager";
-    $lang['str_edit_profile_call9'] = "Band Name:* ";
-    $lang['str_edit_profile_call10'] = "Organization:* ";
+    $lang['str_edit_profile_call9'] = "Band Name: ";
+    $lang['str_edit_profile_call10'] = "Organization: ";
     $lang['str_edit_profile_call11'] = "Genre: ";
     $lang['str_edit_profile_call12'] = "Style: ";
     $lang['str_edit_profile_call13'] = "e.g. Acoustic, Progressive Rock";
