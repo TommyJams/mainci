@@ -30,14 +30,14 @@
                         <form action="" method="POST" class="cleanForm" id="professionalForm" >
                             <fieldset>
                                 <p>
-                                    <? if($type == 'Artist') { print("<label for='designation'></label>".lang('str_edit_profile_call5'));}
-                                       elseif($type == 'Promoter')    { print("<label for='designation'></label>".lang('str_edit_profile_call6'));}
+                                    <? if($type == 'Artist') { print("<label for='designation'>".lang('str_edit_profile_call5')."</label>");}
+                                       elseif($type == 'Promoter')    { print("<label for='designation'>".lang('str_edit_profile_call6')."</label>");}
                                     ?>
                                     
                                     <input type="text" id="full-name" name="designation" value="<? print($designation); ?>"  pattern="^[a-zA-Z0-9/ ,-_.:;?]{3,50}$" autofocus />
                                     <br>
-                                    <? if($type == 'Artist') { print("<em></em>".lang('str_edit_profile_call7'));}
-                                       elseif($type == 'Promoter')    { print("<em></em>".lang('str_edit_profile_call8'));}
+                                    <? if($type == 'Artist') { print("<em>".lang('str_edit_profile_call7')."</em>");}
+                                       elseif($type == 'Promoter')    { print("<em>".lang('str_edit_profile_call8')."</em>");}
                                     ?>
                                 </p>
                                 <p>
@@ -49,13 +49,13 @@
                                     <em></em>
                                 </p>
                                 <p>
-                                    <? if($type == 'Artist') { print("<label for='genre'></label>".lang('str_edit_profile_call11'));}
-                                       elseif($type == 'Promoter')    { print("<label for='genre'></label>".lang('str_edit_profile_call12'));}
+                                    <? if($type == 'Artist') { print("<label for='genre'>".lang('str_edit_profile_call11')."</label>");}
+                                       elseif($type == 'Promoter')    { print("<label for='genre'>".lang('str_edit_profile_call12')."</label>");}
                                     ?>
                                     <input type="text" id="genrename" name="genre" pattern="^[a-zA-Z0-9/ ,-_.:;?]{3,50}$" value="<? print ($genre); ?>"/>
                                     <br>
-                                    <? if($type == 'Artist') { print("<em></em>".lang('str_edit_profile_call13'));}
-                                       elseif($type == 'Promoter')    { print("<em></em>".lang('str_edit_profile_call14'));}
+                                    <? if($type == 'Artist') { print("<em>".lang('str_edit_profile_call13')."</em>");}
+                                       elseif($type == 'Promoter')    { print("<em>".lang('str_edit_profile_call14')."</em>");}
                                     ?>
                                 </p>
                                 <center>
