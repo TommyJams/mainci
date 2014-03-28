@@ -27,33 +27,49 @@ class MY_Controller extends CI_Controller {
 			error_log('Found Cookie: '.$lang);
 		}
 
-		// Find language using geoip
-		//else
-		//{
+		// Try and Detect the right language
+		else
+		{
+			//Use GeoIP
 			$this->load->library('geoip_lib');
 			$this->geoip_lib->InfoIP();
 			$country_code = $this->geoip_lib->result_country_code();
-			error_log('country_code: '.$country_code);
-		//}
 
-		// Still no Lang. Lets try some browser detection then
-		/*else if (!empty( $_SERVER['HTTP_ACCEPT_LANGUAGE'] ))
-		{
-		    // explode languages into array
-		    $accept_langs = explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE']);
+			//Check Country: Chile
+			if($country_code == 'CL')
+			{
+				//Detected Chile, switch to spanish
+				$lang = 'es';
+			}
 
-			error_log('Checking browser languages: '.implode(', ', $accept_langs));
+			//Check Country: India
+			elseif($country_code == 'IN')
+			{
+				//Detected India, switch to english
+				$lang = 'en';
+			}
 
-		    // Check them all, until we find a match
-		    foreach ($accept_langs as $lang)
-		    {
-		        // Check its in the array. If so, break the loop, we have one!
-		        if(in_array($lang, array_keys($this->config->item('supported_languages'))))
-		        {
-		            break;
-		        }
-		    }
-		}*/
+			// Still no Lang. Lets try some browser detection then
+			if (empty($country_code) && !empty( $_SERVER['HTTP_ACCEPT_LANGUAGE'] ))
+			{
+			    // explode languages into array
+			    $accept_langs = explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE']);
+
+				error_log('Checking browser languages: '.implode(', ', $accept_langs));
+
+			    // Check them all, until we find a match
+			    foreach ($accept_langs as $lang)
+			    {
+			        // Check its in the array. If so, break the loop, we have one!
+			        if(in_array($lang, array_keys($this->config->item('supported_languages'))))
+			        {
+			            break;
+			        }
+			    }
+			}
+
+			
+		}
 
 		// If no language has been worked out - or it is not supported - use the default
 		if(empty($lang) or !in_array($lang, array_keys($this->config->item('supported_languages'))))
