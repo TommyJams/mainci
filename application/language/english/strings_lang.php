@@ -15,6 +15,7 @@
     $lang['btn_your_email'] = "Your e-mail address";
     $lang['btn_subscribe'] = "Subscribe";
     $lang['str_title_seen'] = "AS SEEN IN";
+    $lang['str_footer_artist'] = "ARTIST";
     
 //Beta Page View
     $lang['str_login_facebook'] = "Login With Facebook";

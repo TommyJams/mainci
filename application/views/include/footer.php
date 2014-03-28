@@ -20,7 +20,7 @@
         <div class="col-md-3 col-sm-3 col-xs-3 f-artist text-center">
           <ul class="list-unstyled">
             <li>
-              <h4>ARTIST</h4>
+              <h4><? echo lang('str_footer_artist');?></h4>
             </li>
             <li> <a target="_blank" href="/tours">BOOK TOURS</a> </li>
           <li> <a target="_blank" href="/index">BOOK EVENTS</a> </li>
