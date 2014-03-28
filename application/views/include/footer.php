@@ -22,48 +22,48 @@
             <li>
               <h4><? echo lang('str_footer_artist');?></h4>
             </li>
-            <li> <a target="_blank" href="/tours">BOOK TOURS</a> </li>
-          <li> <a target="_blank" href="/index">BOOK EVENTS</a> </li>
+            <li> <a target="_blank" href="/tours"><? echo lang('str_footer_tours');?></a> </li>
+          <li> <a target="_blank" href="/index"><? echo lang('str_footer_events');?></a> </li>
         </ul>
       </div>
       <div class="col-md-3 col-sm-3 col-xs-3 f-venues text-center">
         <ul class="list-unstyled">
           <li>
-            <h4 >VENUES</h4>
+            <h4 ><? echo lang('str_footer_venues');?></h4>
           </li>
-          <li> <a target="_blank" href="/index">BOOK ARTISTS</a> </li>
+          <li> <a target="_blank" href="/index"><? echo lang('str_footer_booka');?></a> </li>
         </ul>
       </div>
       <div class="col-md-3 col-sm-3 col-xs-3 f-fans text-center">
         <ul class="list-unstyled">
           <li>
-            <h4 >FANS</h4>
+            <h4 ><? echo lang('str_footer_fans');?></h4>
           </li>
-          <li> <a target="_blank" href="/roadshows">ROADSHOWS</a> </li>
-          <li> <a target="_blank" href="/radioone">RADIO ONE</a> </li>
-          <li> <a target="_blank" href="http://mewsic.in/" target="_blank">MEWSIC</a> </li>
+          <li> <a target="_blank" href="/roadshows"><? echo lang('str_footer_roadshows');?></a> </li>
+          <li> <a target="_blank" href="/radioone"><? echo lang('str_footer_radioone');?></a> </li>
+          <li> <a target="_blank" href="http://mewsic.in/" target="_blank"><? echo lang('str_footer_mewsic');?></a> </li>
         </ul>
       </div>
       <div class="col-md-3 col-sm-3 col-xs-3 f-help text-center">
         <ul class="list-unstyled">
           <li>
-            <h4 >HELP</h4>
+            <h4 ><? echo lang('str_footer_help');?></h4>
           </li>
-          <li> <a target="_blank" href="/help">CONTACT US</a> </li>
-          <li> <a target="_blank" href="/aboutus">ABOUT US</a> </li>
-          <li> <a target="_blank" href="/press">PRESS</a> </li>
-          <li> <a target="_blank" href="/advertise">ADVERTISE</a> </li>
+          <li> <a target="_blank" href="/help"><? echo lang('str_footer_contact');?></a> </li>
+          <li> <a target="_blank" href="/aboutus"><? echo lang('str_footer_about');?></a> </li>
+          <li> <a target="_blank" href="/press"><? echo lang('str_footer_press');?></a> </li>
+          <li> <a target="_blank" href="/advertise"><? echo lang('str_footer_advertise');?></a> </li>
           </ul>
         </div>
       </div>
       <div class="col-md-3 col-sm-12 col-xs-12 f-ms">
        <a href="https://www.microsoftventures.com/" target="_blank" style="text-decoration:none;color:white">
-          <h4 style="font-size:14px">Accelerated by:</h4>
+          <h4 style="font-size:14px"><? echo lang('str_footer_microsoft');?></h4>
           <img src="/img/msventures.png" style="width:189px;height:20px"/>
         </a>  
       </div>
     </div>
     <div class="col-md-12 col-sm-12 col-xs-12 f-copy">
-      <p>COPYRIGHT 2013 - ALL RIGHTS RESERVED</p>
+      <p><? echo lang('str_copyright_2014');?></p>
     </div>
   </footer>

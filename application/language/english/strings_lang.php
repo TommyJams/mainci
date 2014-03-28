@@ -16,6 +16,21 @@
     $lang['btn_subscribe'] = "Subscribe";
     $lang['str_title_seen'] = "AS SEEN IN";
     $lang['str_footer_artist'] = "ARTIST";
+    $lang['str_footer_tours'] = "BOOK TOURS";
+    $lang['str_footer_events'] = "BOOK EVENTS";
+    $lang['str_footer_venues'] = "VENUES";
+    $lang['str_footer_booka'] = "BOOK ARTISTS";
+    $lang['str_footer_fans'] = "FANS";
+    $lang['str_footer_roadshows'] = "ROADSHOWS";
+    $lang['str_footer_radioone'] = "RADIO ONE";
+    $lang['str_footer_mewsic'] = "MEWSIC";
+    $lang['str_footer_help'] = "HELP";
+    $lang['str_footer_contact'] = "CONTACT US";
+    $lang['str_footer_about'] = "ABOUT US";
+    $lang['str_footer_press'] = "PRESS";
+    $lang['str_footer_advertise'] = "ADVERTISE";
+    $lang['str_footer_microsoft'] = "Accelerated by:";
+    $lang['str_copyright_2014'] = "Copyright 2014 - All Rights Reserved";
     
 //Beta Page View
     $lang['str_login_facebook'] = "Login With Facebook";
@@ -48,7 +63,6 @@
     $lang['btn_txt_blog'] = "Blog";
     $lang['btn_search_profiles'] = "Search Profiles";
     $lang['btn_search_go'] = "Go";
-    $lang['str_copyright_2014'] = "Copyright 2014 - All Rights Reserved";
 
 //Promoter View
     $lang['btn_launch_gig'] = "Launch Gig";

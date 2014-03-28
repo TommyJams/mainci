@@ -24,7 +24,6 @@ class MY_Controller extends CI_Controller {
 		elseif( isset($langCookie) && !empty($langCookie))
 		{
 		    $lang = $langCookie;
-			error_log('Found Cookie: '.$lang);
 		}
 
 		// Try and Detect the right language
@@ -227,7 +226,6 @@ class Base extends MY_Controller{
 		elseif(((isset($sessionArray['username'])) || (isset($sessionArray['username_artist']))) && (isset($_POST["id"]) && $_POST['id'] != 'undefined'))
 		{
 			$link = $_POST['id'];
-			error_log("Link: ".$link);
 			$SQLs = "SELECT * FROM `".DATABASE."`.`members` WHERE link='$link'";
 			$results = mysql_query($SQLs);
 

@@ -16,6 +16,21 @@
     $lang['btn_subscribe'] = "Suscribir";
     $lang['str_title_seen'] = "SEGÚN LO VISTO EN";
     $lang['str_footer_artist'] = "ARTISTA";
+    $lang['str_footer_tours'] = "RESERVAR EXCURSIONES";
+    $lang['str_footer_events'] = "EVENTOS DE LIBROS";
+    $lang['str_footer_venues'] = "LUGARES";
+    $lang['str_footer_booka'] = "RESERVAR ARTISTAS";
+    $lang['str_footer_fans'] = "FANS";
+    $lang['str_footer_roadshows'] = "ROADSHOWS";
+    $lang['str_footer_radioone'] = "RADIO ONE";
+    $lang['str_footer_mewsic'] = "MEWSIC";
+    $lang['str_footer_help'] = "AYUDAR";
+    $lang['str_footer_contact'] = "CONTÁCTENOS";
+    $lang['str_footer_about'] = "QUIÉNES SOMOS";
+    $lang['str_footer_press'] = "PRENSA";
+    $lang['str_footer_advertise'] = "ANUNCIAR";
+    $lang['str_footer_microsoft'] = "ACELERADO POR:";
+    $lang['str_copyright_2014'] = "COPYRIGHT 2014 - TODOS LOS DERECHOS RESERVADOS";
 
 //Beta Page View
     $lang['str_login_facebook'] = "Entrada en Facebook";
@@ -48,7 +63,6 @@
     $lang['btn_txt_blog'] = "Blog";
     $lang['btn_search_profiles'] = "Búsqueda de Perfiles";
     $lang['btn_search_go'] = "Ir";
-    $lang['str_copyright_2014'] = "Copyright 2014 - Todos los derechos reservados";
 
 //Promoter View
     $lang['btn_launch_gig'] = "Lanzamiento";
