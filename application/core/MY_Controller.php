@@ -23,8 +23,8 @@ class MY_Controller extends CI_Controller {
 		// Set it to a cookie so we are only checking one place most of the time.
 		elseif( isset($langCookie) )
 		{
-			error_log('Found Cookie: '.$lang);
 		    $lang = $langCookie;
+			error_log('Found Cookie: '.$lang);
 		}
 
 		// Find language using geoip
