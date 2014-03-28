@@ -259,6 +259,22 @@
               <div class="event-ticker">
                 <ul>
                   <li>
+                  <a href="http://tommyjams.com/blog/events/event/samcara-phoenix-bangalore/" target="_blank" class="" style="width: 100%">
+                    <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
+                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""></div>
+                      <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
+                        <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
+                          <h5>samCara @ Phoenix Marketcity</h5>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
+                          <h5>28-Mar</h5>
+                        </div>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </a>
+                  </li>
+                  <li>
                   <a href="http://tommyjams.com/blog/events/event/aakash-mittal-quartet-phoenix-bangalore/" target="_blank" class="" style="width: 100%">  
                     <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
                       <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""></div>
@@ -337,22 +353,6 @@
                       <div class="clearfix"></div>
                     </div>
                   </a>  
-                  </li>
-                  <li>
-                  <a href="http://tommyjams.com/blog/events/event/red-mawkin-phoenix-bangalore/" target="_blank" class="" style="width: 100%">
-                    <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
-                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""></div>
-                      <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
-                        <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
-                          <h5>Red Mawkin @ Phoenix Marketcity</h5>
-                        </div>
-                        <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
-                          <h5>16-Mar</h5>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                  </a>
                   </li>
                 </ul>
               </div>
