@@ -26,8 +26,17 @@ class MY_Controller extends CI_Controller {
 		    $lang = $langCookie;
 		}
 
+		// Find language using geoip
+		else
+		{
+		    $this->load->library('geoip_lib');
+		    $this->geoip_lib->InfoIP();
+		    $country_code = $this->geoip_lib->result_country_code();
+		    error_log('country_code: '.$country_code);
+		}
+
 		// Still no Lang. Lets try some browser detection then
-		else if (!empty( $_SERVER['HTTP_ACCEPT_LANGUAGE'] ))
+		/*else if (!empty( $_SERVER['HTTP_ACCEPT_LANGUAGE'] ))
 		{
 		    // explode languages into array
 		    $accept_langs = explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE']);
@@ -43,7 +52,7 @@ class MY_Controller extends CI_Controller {
 		            break;
 		        }
 		    }
-		}
+		}*/
 
 		// If no language has been worked out - or it is not supported - use the default
 		if(empty($lang) or !in_array($lang, array_keys($this->config->item('supported_languages'))))
