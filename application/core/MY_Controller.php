@@ -21,7 +21,7 @@ class MY_Controller extends CI_Controller {
 
 		// Lang was specifically picked by a user.
 		// Set it to a cookie so we are only checking one place most of the time.
-		elseif( isset($langCookie) )
+		elseif( isset($langCookie) && !empty($langCookie))
 		{
 		    $lang = $langCookie;
 			error_log('Found Cookie: '.$lang);
