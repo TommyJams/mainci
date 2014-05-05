@@ -44,6 +44,10 @@
 		
     </style>
 
+    <script type="text/javascript">
+        var langCode = "<?php echo CURRENT_LANGUAGE; ?>";
+    </script>
+
     <script type="text/javascript" src="<?php echo base_url();?>script/jquery.min.js" ></script>
 
     <script type="text/javascript" src="<?php echo base_url();?>script/jquery.supersized.min.js"></script>

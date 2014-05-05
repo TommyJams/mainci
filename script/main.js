@@ -264,7 +264,7 @@
 		};
 
 
-        var langCode = "es";
+        //var langCode = "es";
 
 		// Load the SDK's source Asynchronously
 		(function(d, debug){
