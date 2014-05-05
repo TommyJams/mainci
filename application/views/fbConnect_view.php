@@ -5,6 +5,9 @@
     <title>TommyJams - Facebook Registration</title>
     <link href="<?php echo base_url();?>style/style.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo base_url();?>style/supersized/supersized.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        var langCode = "<?php echo CURRENT_LANGUAGE; ?>";
+    </script>
     <script type="text/javascript" src="<?php echo base_url();?>script/jquery.min.js" ></script>
     <script type="text/javascript" src="<?php echo base_url();?>script/jquery.supersized.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url();?>script/main.js"></script>
