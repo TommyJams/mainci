@@ -49,7 +49,8 @@
                             </tr>
 
 							<?
-							foreach($foundProfiles as $row){
+							if(isset($foundProfiles))
+                            foreach($foundProfiles as $row){
                                 $users=$row[0];
                                 $goto=$row[1];
                                 $name=$row[2];
