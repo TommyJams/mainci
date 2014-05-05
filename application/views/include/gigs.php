@@ -120,7 +120,6 @@
 						}
                         elseif($gigSession == 1)
                         { 
-                            $statuss=$found["status"];
                             if($gigStatus == 3){print("<a href='javascript:;' id='addnew' style='background: #0a0;'></a>".lang('str_gigs_status1'));}
                             elseif($gigStatus == 4){print("<a href='javascript:;' id='addnew' style='background: #a00'></a>".lang('str_gigs_status2'));}
                             elseif($gigStatus == 5){print("<a href='javascript:;' id='addnew' style='background: #282828;'></a>".lang('str_gigs_status3'));}
