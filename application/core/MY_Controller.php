@@ -148,8 +148,8 @@ class Base extends MY_Controller{
 			$id=$a["id"];$idaa=$id;$name=$a["name"];$sessionArray['name']=$name;
 			$email=$a["email"];$street=$a["add"];$city=$a["city"];$state=$a["state"];
 			$country=$a["country"];$pincode=$a["pincode"];$mobile=$a["mobile"];
-			$fb=$a["fb"];$twitter=$a["twitter"];$youtube=$a["youtube"];$myspace=$a["myspace"];
-			$rever=$a["reverbnation"];$gplus=$a["gplus"];$display=$a["display"];
+			$fb=$a["fb"];$twitter=$a["twitter"];$youtube=$a["youtube"];$soundcloud=$a["soundcloud"];
+			$rever=$a["reverbnation"];$otherl=$a["otherl"];$display=$a["display"];
 			$user=$a["user"];$type=$a["type"];$job=$a["job"];$designation=$a["designation"];
 			$artistrate=$a["artistrate"];$adminrate=$a["adminrate"];
 		}
@@ -191,8 +191,8 @@ class Base extends MY_Controller{
 				$id=$a["id"];$idaa=$id;$usernam=$a["username"];$name=$a["name"];$_SESSION['name']=$name;$email=$a["email"];
 				$street=$a["add"];$city=$a["city"];$state=$a["state"];$country=$a["country"];$pincode=$a["pincode"];
 				$mobile=$a["mobile"]; $fb_username=$a["fb_username"];
-				$fb=$a["fb"];$twitter=$a["twitter"];$youtube=$a["youtube"];$myspace=$a["myspace"];$rever=$a["reverbnation"];
-				$gplus=$a["gplus"];$display=$a["display"];$user=$a["user"];$type=$a["type"];$genre=$a["genre"];
+				$fb=$a["fb"];$twitter=$a["twitter"];$youtube=$a["youtube"];$soundcloud=$a["soundcloud"];$rever=$a["reverbnation"];
+				$otherl=$a["otherl"];$display=$a["display"];$user=$a["user"];$type=$a["type"];$genre=$a["genre"];
 				$job=$a["job"];$designation=$a["designation"];
 				$artistrate=$a["artistrate"];$adminrate=$a["adminrate"];$about=$a["about"];
 				$gold=$a["gold"];$silver=$a["silver"];$nsilver=$a["nsilver"];$bronze=$a["bronze"];$link=$a["link"];
@@ -214,7 +214,7 @@ class Base extends MY_Controller{
 				$id=$a["id"];$idaa=$id;$usernam=$a["username"];$name=$a["name"];$_SESSION['name']=$name;$email=$a["email"];
 				$street=$a["add"];$city=$a["city"];$state=$a["state"];$country=$a["country"];$pincode=$a["pincode"];
 				$mobile=$a["mobile"];
-				$fb=$a["fb"];$twitter=$a["twitter"];$youtube=$a["youtube"];$myspace=$a["myspace"];$rever=$a["reverbnation"];$gplus=$a["gplus"];
+				$fb=$a["fb"];$twitter=$a["twitter"];$youtube=$a["youtube"];$soundcloud=$a["soundcloud"];$rever=$a["reverbnation"];$otherl=$a["otherl"];
 				$display=$a["display"];$user=$a["user"];$type=$a["type"];$genre=$a["genre"];
 				$job=$a["job"];$designation=$a["designation"];
 				$artistrate=$a["artistrate"];$adminrate=$a["adminrate"];$about=$a["about"];
@@ -235,7 +235,7 @@ class Base extends MY_Controller{
 				$id=$a["id"];$idaa=$id;$usernam=$a["username"];$name=$a["name"];$_SESSION['name']=$name;$email=$a["email"];
 				$street=$a["add"];$city=$a["city"];$state=$a["state"];$country=$a["country"];$pincode=$a["pincode"];
 				$mobile=$a["mobile"];
-				$fb=$a["fb"];$twitter=$a["twitter"];$youtube=$a["youtube"];$myspace=$a["myspace"];$rever=$a["reverbnation"];$gplus=$a["gplus"];
+				$fb=$a["fb"];$twitter=$a["twitter"];$youtube=$a["youtube"];$soundcloud=$a["soundcloud"];$rever=$a["reverbnation"];$otherl=$a["otherl"];
 				$display=$a["display"];$user=$a["user"];$type=$a["type"];$genre=$a["genre"];
 				$job=$a["job"];$designation=$a["designation"];
 				$artistrate=$a["artistrate"];$adminrate=$a["adminrate"];$about=$a["about"];
@@ -346,8 +346,8 @@ class Base extends MY_Controller{
 				$id=$a["id"];$idaa=$id;$usernam=$a["username"];$name=$a["name"];$_SESSION['name']=$name;$email=$a["email"];
 				$street=$a["add"];$city=$a["city"];$state=$a["state"];$country=$a["country"];$pincode=$a["pincode"];
 				$mobile=$a["mobile"];
-				$fb=$a["fb"];$twitter=$a["twitter"];$youtube=$a["youtube"];$myspace=$a["myspace"];$rever=$a["reverbnation"];
-				$gplus=$a["gplus"];$display=$a["display"];$user=$a["user"];$type=$a["type"];$genre=$a["genre"];
+				$fb=$a["fb"];$twitter=$a["twitter"];$youtube=$a["youtube"];$soundcloud=$a["soundcloud"];$rever=$a["reverbnation"];
+				$otherl=$a["otherl"];$display=$a["display"];$user=$a["user"];$type=$a["type"];$genre=$a["genre"];
 				$job=$a["job"];$designation=$a["designation"];
 				$artistrate=$a["artistrate"];$adminrate=$a["adminrate"];$about=$a["about"];
 				$gold=$a["gold"];$silver=$a["silver"];$nsilver=$a["nsilver"];$bronze=$a["bronze"];$link=$a["link"];
@@ -367,7 +367,7 @@ class Base extends MY_Controller{
 				$id=$a["id"];$idaa=$id;$usernam=$a["username"];$name=$a["name"];$_SESSION['name']=$name;$email=$a["email"];
 				$street=$a["add"];$city=$a["city"];$state=$a["state"];$country=$a["country"];$pincode=$a["pincode"];
 				$mobile=$a["mobile"];
-				$fb=$a["fb"];$twitter=$a["twitter"];$youtube=$a["youtube"];$myspace=$a["myspace"];$rever=$a["reverbnation"];$gplus=$a["gplus"];
+				$fb=$a["fb"];$twitter=$a["twitter"];$youtube=$a["youtube"];$soundcloud=$a["soundcloud"];$rever=$a["reverbnation"];$otherl=$a["otherl"];
 				$display=$a["display"];$user=$a["user"];$type=$a["type"];$genre=$a["genre"];
 				$job=$a["job"];$designation=$a["designation"];
 				$artistrate=$a["artistrate"];$adminrate=$a["adminrate"];$about=$a["about"];
@@ -520,11 +520,12 @@ class Base extends MY_Controller{
 		{
 			$fb=$_POST["fb"];	if($fb && !startsWith($fb,'http'))	{		$fb='http://'.$fb;	}
 			$twitter=$_POST["twitter"];	if($twitter && !startsWith($twitter,'http'))	{		$twitter='http://'.$twitter;	}
-			$myspace=$_POST["myspace"];	if($myspace && !startsWith($myspace,'http'))	{		$myspace='http://'.$myspace;	}
+			$soundcloud=$_POST["soundcloud"];	if($soundcloud && !startsWith($soundcloud,'http'))	{		$soundcloud='http://'.$soundcloud;	}
 			$rever=$_POST["rever"];	if($rever && !startsWith($rever,'http'))	{		$rever='http://'.$rever;	}
 			$youtube=$_POST["youtube"];	if($youtube && !startsWith($youtube,'http'))	{		$youtube='http://'.$youtube;	}
+			$otherl=$_POST["otherl"];	if($otherl && !startsWith($otherl,'http'))	{		$otherl='http://'.$otherl;	}
 
-			$query = "UPDATE `".DATABASE."`.`members` SET `fb`='$fb', `twitter`='$twitter', `reverbnation`='$rever', `youtube`='$youtube', `myspace`='$myspace' WHERE fb_id='$username'";
+			$query = "UPDATE `".DATABASE."`.`members` SET `fb`='$fb', `twitter`='$twitter', `reverbnation`='$rever', `youtube`='$youtube', `soundcloud`='$soundcloud', `otherl`='$otherl' WHERE fb_id='$username'";
 			$ress = mysql_query($query);
 			if (!$ress)
 			{
@@ -1246,7 +1247,7 @@ class Base extends MY_Controller{
 
 					$state=$a["state"];$type=$a["type"];$fb=$a["fb"];$twitter=$a["twitter"];
 
-					$youtube=$a["youtube"];$rever=$a["reverbnation"];$gplus=$a["gplus"];$myspace=$a["myspace"];$link=$a["link"];
+					$youtube=$a["youtube"];$rever=$a["reverbnation"];$otherl=$a["otherl"];$soundcloud=$a["soundcloud"];$link=$a["link"];
 
 					$user=$a["user"];
 
@@ -1268,7 +1269,7 @@ class Base extends MY_Controller{
 
 					else{$goto=NULL;}
 
-					$profileRow = array($users, $goto, $name, $usernam, $type, $city, $fb, $twitter, $rever, $youtube, $myspace, $gplus);
+					$profileRow = array($users, $goto, $name, $usernam, $type, $city, $fb, $twitter, $rever, $youtube, $soundcloud, $otherl);
 
 					$response['foundProfiles'][] = $profileRow;
 

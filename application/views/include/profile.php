@@ -151,15 +151,15 @@
 							}
 						?>
 						<? 
-							if($myspace!="")
+							if($soundcloud!="")
 							{
-								print("<a href='$myspace' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/myspace.png' /></a>"); 
+								print("<a href='$soundcloud' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/soundcloud.png' /></a>"); 
 							}
 						?>
 						<? 
-							if($gplus!="")
+							if($otherl!="")
 							{ 
-								print("<a href='$gplus' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/gplus.png' /></a>"); 
+								print("<a href='$otherl' rel='me' target='_blank' style='float:left; width:auto; height:auto;'><img src='img/otherl.png' /></a>"); 
 							}
 						?>
 					</div>

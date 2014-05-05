@@ -60,8 +60,8 @@
                                 $twitter=$row[7];
                                 $rever=$row[8];
                                 $youtube=$row[9];
-                                $myspace=$row[10];
-                                $gplus=$row[11];
+                                $soundcloud=$row[10];
+                                $otherl=$row[11];
                             ?>
 
 								<tr height='20px' bgcolor='#000'>
@@ -88,9 +88,9 @@
 
 										if($youtube!=""){ print("<a href='$youtube' rel='me' target='_blank'><img src='img/youtube.png' /></a>"); }						
 
-										if($myspace!=""){ print("<a href='$myspace' rel='me' target='_blank'><img src='img/myspace.png' /></a>"); }					
+										if($soundcloud!=""){ print("<a href='$soundcloud' rel='me' target='_blank'><img src='img/soundcloud.png' /></a>"); }					
 
-										if($gplus!=""){ print("<a href='$gplus' rel='me' target='_blank'><img src='img/gplus.png' /></a>"); }
+										if($otherl!=""){ print("<a href='$otherl' rel='me' target='_blank'><img src='img/otherl.png' /></a>"); }
 
                             		?>
 

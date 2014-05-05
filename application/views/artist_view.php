@@ -149,8 +149,8 @@
                     twitter:        document.getElementById('twitter').value,
                     reverbnation:   document.getElementById('reverbnation').value,
                     youtube:        document.getElementById('youtube').value,
-                    myspace:        document.getElementById('myspace').value,
-                    gplus:          document.getElementById('gplus').value
+                    soundcloud:        document.getElementById('soundcloud').value,
+                    otherl:          document.getElementById('otherl').value
                 };
 
             editProfile("socialForm",obj);
@@ -210,7 +210,7 @@
     	if(type == "professionalForm")
 			$.post('artist/editProfile',{'type': type, 'designation': obj.designation, 'organization': obj.organization, 'genre': obj.genre},editProfileCallback,'json');
 		else if(type == "socialForm")
-			$.post('artist/editProfile',{'type': type, 'fb': obj.fb, 'twitter': obj.twitter, 'rever': obj.reverbnation, 'youtube': obj.youtube, 'myspace': obj.myspace, 'gplus': obj.gplus},editProfileCallback,'json');
+			$.post('artist/editProfile',{'type': type, 'fb': obj.fb, 'twitter': obj.twitter, 'rever': obj.reverbnation, 'youtube': obj.youtube, 'soundcloud': obj.soundcloud, 'otherl': obj.otherl},editProfileCallback,'json');
 		else if(type == "contactForm")
 			$.post('artist/editProfile',{'type': type, 'phone': obj.phone, 'email': obj.email, 'add': obj.add, 'city': obj.city, 'state': obj.state, 'country': obj.country, 'pincode': obj.pincode},editProfileCallback,'json');
 		else if(type == "aboutForm")

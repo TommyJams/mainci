@@ -78,14 +78,9 @@
                                     <br>                                <em><? echo lang('str_edit_profile_call18');?> on Facebook.</em>
                                 </p>
                                 <p>
-                                    <label for="social">Twitter: </label>
-                                    <input type="text" id="twitter" name="twitter" value="<? print ($twitter); ?>" pattern="^[a-zA-Z0-9/ ,-_.:;&?]{20,150}$" />
-                                    <br>                                <em><? echo lang('str_edit_profile_call18');?> on Twitter.</em>
-                                </p>
-                                <p>
-                                    <label for="social">Reverbnation:</label>
-                                    <input type="text" id="reverbnation" name="rever" value="<? print ($reverbnation); ?>" pattern="^[a-zA-Z0-9/ ,-_.:;&?]{20,150}$" />
-                                    <br>                                <em><? echo lang('str_edit_profile_call18');?> on Reverbnation.</em>
+                                    <label for="social">SoundCloud:</label>
+                                    <input type="text" id="soundcloud" name="soundcloud" value="<? print ($soundcloud); ?>" pattern="^[a-zA-Z0-9/ ,-_.:;&?]{20,150}$" />
+                                    <br>                                <em><? echo lang('str_edit_profile_call18');?> on SoundCloud.</em>
                                 </p>
                                 <p>
                                     <label for="social">Youtube:</label>
@@ -93,14 +88,19 @@
                                     <br>                                <em><? echo lang('str_edit_profile_call18');?> on youtube.</em>
                                 </p>
                                 <p>
-                                    <label for="social">MySpace:</label>
-                                    <input type="text" id="myspace" name="myspace" value="<? print ($myspace); ?>" pattern="^[a-zA-Z0-9/ ,-_.:;&?]{20,150}$" />
-                                    <br>                                <em><? echo lang('str_edit_profile_call18');?> on MySpace.</em>
+                                    <label for="social">Reverbnation:</label>
+                                    <input type="text" id="reverbnation" name="rever" value="<? print ($reverbnation); ?>" pattern="^[a-zA-Z0-9/ ,-_.:;&?]{20,150}$" />
+                                    <br>                                <em><? echo lang('str_edit_profile_call18');?> on Reverbnation.</em>
                                 </p>
                                 <p>
-                                    <label for="social">Google plus:</label>
-                                    <input type="text" id="gplus" name="gplus" value="<? print ($gplus); ?>" pattern="^[a-zA-Z0-9/ ,-_.:;&?]{20,150}$" />
-                                    <br>                                <em><? echo lang('str_edit_profile_call18');?> on Google+.</em>
+                                    <label for="social">Twitter: </label>
+                                    <input type="text" id="twitter" name="twitter" value="<? print ($twitter); ?>" pattern="^[a-zA-Z0-9/ ,-_.:;&?]{20,150}$" />
+                                    <br>                                <em><? echo lang('str_edit_profile_call18');?> on Twitter.</em>
+                                </p>
+                                <p>
+                                    <label for="social">Others:</label>
+                                    <input type="text" id="otherl" name="otherl" value="<? print ($otherl); ?>" pattern="^[a-zA-Z0-9/ ,-_.:;&?]{20,150}$" />
+                                    <br>                                <em><? echo lang('str_edit_profile_call18');?> on Others.</em>
                                 </p>
                                 <center>
                                     <div class="centera" style=" width:500px; position:relative; margin-top:20px;">
