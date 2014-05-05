@@ -79,7 +79,7 @@
                         <h1 style="display:inline-block;"><? print ($name); ?></h1>
                     </div>
                     <h2 style='padding-top:0px;'>
-                        User: <?print ($username);?>
+                        <?print ($username);?>
 						<br>
                         <?print ($designation);?>
                         <?
