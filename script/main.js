@@ -264,7 +264,7 @@
 		};
 
 
-        var langCode = "<?php echo CURRENT_LANGUAGE; ?>";
+        var langCode = "es";
 
 		// Load the SDK's source Asynchronously
 		(function(d, debug){
