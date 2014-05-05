@@ -88,7 +88,7 @@
 					<div style="height:78%; width:100%; overflow-y:auto;">
                         <table width="100%" style="padding: 10px 10px; text-align: center;">
                             <?
-                            if($foundGigs)
+                            if(defined($foundGigs))
 							foreach($foundGigs as $row){
                                 $gig=$row[0];
                                 $link=$row[1];
