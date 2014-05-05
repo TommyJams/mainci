@@ -2,7 +2,9 @@
 	$(document).ready(function(){
 
 		/*$("#featured > ul").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 5000, true);*/
-        
+
+        var langCode = "<?php echo CURRENT_LANGUAGE; ?>";
+
         var options=
         {
             supersized		:
