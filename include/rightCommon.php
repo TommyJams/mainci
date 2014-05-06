@@ -120,7 +120,7 @@
 						</td>
 					</tr>
 				</table>*/ ?>
-			<div class='fb-login-button' size='large' onlogin=facebookLoginCallback(); registration-url='<? print(base_url()); ?>fbconnect/registerMethod/noregister' data-auto-logout-link='true'></div>
+			<div class='fb-login-button' size='large' onlogin=facebookLoginCallback(); onlogout=facebookLogoutCallback(); registration-url='<? print(base_url()); ?>fbconnect/registerMethod/noregister' data-auto-logout-link='true'></div>
 			<?	
 			}
 			?>
