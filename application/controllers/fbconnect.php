@@ -471,22 +471,11 @@ class Fbconnect extends Base{
               redirect(base_url().'index');
               exit;
             }           
-          }            	
+          }
+ 
+
+            	
   	}
-
-  public function sessionlogout(){
-
-    $sessionArray = $this->session->all_userdata();
-    
-    if (!isset($sessionArray['session_id'])) {
-      session_start();
-    }
-
-    $this->session->sess_destroy();
-    redirect(base_url().'index');  // using '/index' doesn't work.
-    exit;
-  }
-
 } 	
 ?>
 

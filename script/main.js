@@ -258,13 +258,13 @@
 			  oauth		 : true, // enable OAuth 2.0
 			  xfbml      : true  // parse XFBML tags on this page?
 			});
+
+			// Additional initialization code such as adding Event Listeners goes here
+
 		};
 
 
-        // Additional initialization code such as adding Event Listeners goes here
-        FB.logout(function(response) {
-            window.location = "/fbconnect/sessionlogout";
-        });
+        //var langCode = "es";
 
 		// Load the SDK's source Asynchronously
 		(function(d, debug){

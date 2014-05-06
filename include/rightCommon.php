@@ -69,7 +69,7 @@
 			<div class="fb-login-button" data-show-faces="true" data-width="200" data-max-rows="1"></div>
 			-->
 			<?
-			/*$sessionArray = $this->session->all_userdata();
+			$sessionArray = $this->session->all_userdata();
 			if(isset($sessionArray['username']))
 			{
 				print( "<a class='loginWidgetRef' href='promoter/sessionlogout'>
@@ -82,7 +82,7 @@
 							<img src='images/icons/fb_logout.jpg'/>
 						</a>");
 			}
-			else*/{
+			else{
 				/*old facebook login system
 				<table>
 					<tr>
