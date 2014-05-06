@@ -260,9 +260,9 @@
 			});
 
             // Additional initialization code such as adding Event Listeners goes here
-            FB.logout(function(response) {
+            /*FB.logout(function(response) {
                 window.location = "/fbconnect/sessionlogout";
-            });
+            });*/
 		};
 
 		// Load the SDK's source Asynchronously
@@ -474,3 +474,8 @@
 	{
 		window.location = "/fbconnect/registerMethod/preregistered";
 	}
+
+    function facebookLogoutCallback()
+    {
+        window.location = "/fbconnect/sessionlogout";
+    }
