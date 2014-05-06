@@ -472,10 +472,14 @@
 
 	function facebookLoginCallback()
 	{
-		window.location = "/fbconnect/registerMethod/preregistered";
+        FB.getLoginStatus(function(response) {
+            if (!response.session) {
+                window.location = "/fbconnect/registerMethod/preregistered";
+                return;
+            }
+            else {
+                window.location = "/fbconnect/sessionlogout";
+                return;
+            }
+        });
 	}
-
-    function facebookLogoutCallback()
-    {
-        window.location = "/fbconnect/sessionlogout";
-    }
