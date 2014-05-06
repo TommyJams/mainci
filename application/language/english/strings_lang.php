@@ -362,4 +362,12 @@
     $lang['str_edit_profile_call27'] = "About:";
     $lang['str_edit_profile_call28'] = "About yourself";
 
+// Profile Search
+    $lang['str_search_profile'] = "FIND PROFILES";
+    $lang['str_search_profile_image'] = "Image";
+    $lang['str_search_profile_name'] = "Name";
+    $lang['str_search_profile_user'] = "User";
+    $lang['str_search_profile_type'] = "Type";
+    $lang['str_search_profile_city'] = "City";
+    $lang['str_search_profile_social'] = "Social";
 ?>

@@ -38,7 +38,7 @@
 			<form action='' method='post' id='searchProfilesForm'>
 				<input type='text1' name='profile' value='<? echo lang('btn_search_profiles');?>' id='searchTextBox' onfocus='blank(this)' onblur='unblank(this)'  />
 				<input type='submit' value='<? echo lang('btn_search_go');?>'>
-			</>
+			<form/>
 		</div>
 
 		<div id="loginBox" class="parent">

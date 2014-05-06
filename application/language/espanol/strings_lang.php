@@ -360,4 +360,13 @@
     $lang['str_edit_profile_call26'] = "Guardar Cambios";
     $lang['str_edit_profile_call27'] = "Acerca de:";
     $lang['str_edit_profile_call28'] = "Sobre usted";
+
+// Profile Search
+    $lang['str_search_profile'] = "ENCONTRAR PERFIL";
+    $lang['str_search_profile_image'] = "Imagen";
+    $lang['str_search_profile_name'] = "Nombre";
+    $lang['str_search_profile_user'] = "Usuario";
+    $lang['str_search_profile_type'] = "Tipo";
+    $lang['str_search_profile_city'] = "Ciudad";
+    $lang['str_search_profile_social'] = "Sociales";
 ?>

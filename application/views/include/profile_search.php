@@ -16,7 +16,7 @@
 
             <input type="text" id="search" name="profile" value="<? print($searchProfiles); ?>"   style="height:100%; width:65%; border:0px;">
 
-            <input type="submit" value="Find Profile"  style="width: 30%; height:100%; border: 0px; margin-left:1%;"> 
+            <input type="submit" value="<? echo lang('str_search_profile');?>"  style="width: 30%; height:100%; border: 0px; margin-left:1%;"> 
 
         </form>
 
@@ -34,17 +34,17 @@
 
                             <tr bgcolor="#ffcc00" height="30px">
 
-                                <td width="10%"><h1>Image</h1></td>
+                                <td width="10%"><h1><? echo lang('str_search_profile_image');?></h1></td>
 
-                                <td width="20%"><h1>Name</h1></td>
+                                <td width="20%"><h1><? echo lang('str_search_profile_name');?></h1></td>
 
-								<td width="20%"><h1>User</h1></td>
+								<td width="20%"><h1><? echo lang('str_search_profile_user');?></h1></td>
 
-                                <td width="10%"><h1>Type</h1></td>
+                                <td width="10%"><h1><? echo lang('str_search_profile_type');?></h1></td>
 
-                                <td width="15%"><h1>City</h1></td>
+                                <td width="15%"><h1><? echo lang('str_search_profile_city');?></h1></td>
 
-                                <td width="25%"><h1>Social</h1></td>
+                                <td width="25%"><h1><? echo lang('str_search_profile_social');?></h1></td>
 
                             </tr>
 
