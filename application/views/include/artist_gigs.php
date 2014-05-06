@@ -112,13 +112,13 @@
                                     <td width=15%>
                                         <?
                                         if($gigStatus==1)
-                                            print("<a class='dibStatusRef' href='#'style='color:#666;'></a>".lang('str_artist_gigs_call7'));
+                                            print("<a class='dibStatusRef' href='#'style='color:#666;'>".lang('str_artist_gigs_call7')."</a>");
                                         elseif($gigStatus==2)
-                                            print("<a href='#' class='dibStatusRef redRef' style='color:#FFF;'></a>".lang('str_artist_gigs_call8'));
+                                            print("<a href='#' class='dibStatusRef redRef' style='color:#FFF;'>".lang('str_artist_gigs_call8')."</a>");
                                         elseif($gigStatus==4)
-                                            print("<a href='#' class='dibStatusRef' style='color:#666;'></a>".lang('str_artist_gigs_call9'));
+                                            print("<a href='#' class='dibStatusRef' style='color:#666;'>".lang('str_artist_gigs_call9')."</a>");
                                         elseif($gigStatus==-1)
-        									print("<a class='dibStatusRef' href='#'style='color:#666;'></a>".lang('str_artist_gigs_call10'));
+        									print("<a class='dibStatusRef' href='#'style='color:#666;'>".lang('str_artist_gigs_call10')."</a>");
         								else
                                             /*<form name="dibForm" action="dib_action.php"  method="post">
                                                 <input type="hidden" name="gig" value="<? print($link);?>">
