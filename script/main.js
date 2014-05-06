@@ -260,6 +260,9 @@
 			});
 
             // Additional initialization code such as adding Event Listeners goes here
+            /*FB.logout(function(response) {
+                window.location = "/fbconnect/sessionlogout";
+            });*/
 		};
 
 		// Load the SDK's source Asynchronously
@@ -469,10 +472,14 @@
 
 	function facebookLoginCallback()
 	{
-        window.location = "/fbconnect/registerMethod/preregistered";
+        FB.getLoginStatus(function(response) {
+            if (!response.session) {
+                window.location = "/fbconnect/registerMethod/preregistered";
+                return;
+            }
+            else {
+                window.location = "/fbconnect/sessionlogout";
+                return;
+            }
+        });
 	}
-
-    function facebookLogoutCallback()
-    {
-        window.location = "/fbconnect/sessionlogout";
-    }
