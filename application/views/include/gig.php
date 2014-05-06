@@ -125,8 +125,8 @@
 										<option value='30' <? if(isset($a) && $minSaved=='30') print("selected='selected'"); ?> >30</option>
                                     </select>                            
                                     <select id="select" style="width:60px; margin-left: 5px; float:left;" name="am">
-                                        <option value='PM' <? if(isset($a) && $amSaved=='PM') print("selected='selected'"); ?> ><? echo lang('str_time_am'); ?></option>
-										<option value='AM' <? if(isset($a) && $amSaved=='AM') print("selected='selected'"); ?> ><? echo lang('str_time_pm'); ?></option>
+                                        <option value='PM' <? if(isset($a) && $amSaved=='PM') print("selected='selected'"); ?> ><? echo lang('str_time_pm'); ?></option>
+										<option value='AM' <? if(isset($a) && $amSaved=='AM') print("selected='selected'"); ?> ><? echo lang('str_time_am'); ?></option>
                                     </select>
                                     <em><? echo lang('str_desc_time'); ?></em>
                                 </p>
