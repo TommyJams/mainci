@@ -284,6 +284,8 @@
     $lang['str_profile_call8'] = "GIG NAME";
     $lang['str_profile_call9'] = "ARTIST";
     $lang['str_profile_call10'] = "LOCATION";
+    $lang['str_profile_call11'] = "HOST";
+    $lang['str_profile_call12'] = "PROMOTER";
 
 // Gigs View
     $lang['str_gigs_title'] = "Upload gig logo";

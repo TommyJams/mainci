@@ -1,15 +1,15 @@
 <?
 
 //Landing Page View
-    $lang['str_book_events'] = "Quieres agenda eventos inmediatamente?";
-    $lang['str_book_tours'] = "Quieres hacer una campaña para tours entre ciudades?";
+    $lang['str_book_events'] = "Quieres agendar eventos inmediatamente?";
+    $lang['str_book_tours'] = "Quieres hacer tours entre ciudades?";
     $lang['btn_book_events'] = "RESERVAR FECHAS";
     $lang['btn_book_tours'] = "RESERVAR GIRAS";
     $lang['str_title_roadshows'] = "TOMMYJAMS ROADSHOWS";
     $lang['str_desc_roadshows'] = "Las campañas de RoadShows&#39 son iniciados por los artistas para los tours en los que quieren aventurarse. Cada vez que usted compra un boleto, lleva a un artista un paso más cerca de su viaje de ensueño a través de varias ciudades del país. Como si fuera poco, además obtendrás acceso exclusivo a todos los espectáculos que forman parte de esa gira, e incluso obtendrás regalos extra de la banda en el día del evento para una experiencia realmente especial para usted.";
     $lang['str_book_roadshows'] = "Reserva un boleto ahora!";
     $lang['btn_all_campaigns'] = "TODAS LAS CAMPAÑAS";
-    $lang['btn_start_campaign'] = "EMPIECE UNA CAMPAÑA";
+    $lang['btn_start_campaign'] = "EMPEZAR UNA CAMPAÑA";
     $lang['str_title_events'] = "CONCIERTOS";
     $lang['str_title_network'] = "CONÉCTESE CON NOSOTROS";
     $lang['btn_your_email'] = "Tu dirección de e-mail";
@@ -282,6 +282,8 @@
     $lang['str_profile_call8'] = "NOMBRE DE EVENTO";
     $lang['str_profile_call9'] = "ARTISTA";
     $lang['str_profile_call10'] = "UBICACIÓN";
+    $lang['str_profile_call11'] = "ORGANIZADOR";
+    $lang['str_profile_call12'] = "PROMOTOR";
 
 // Gigs View
     $lang['str_gigs_title'] = "Subir logo de concierto";
@@ -295,7 +297,7 @@
     $lang['str_gigs_status1'] = "Aceptado";
     $lang['str_gigs_status2'] = "Rechazado";
     $lang['str_gigs_status3'] = "Pendiente";
-    $lang['str_gigs_status4'] = "Cerradpo";
+    $lang['str_gigs_status4'] = "Cerrado";
     $lang['str_gigs_call5'] = "Fecha";
     $lang['str_gigs_call6'] = "Tiempo";
     $lang['str_gigs_call7'] = "Duración";
@@ -351,7 +353,7 @@
     $lang['str_edit_profile_call17'] = "son obligatorios";
     $lang['str_edit_profile_call18'] = "Enlace a Perfil";
     $lang['str_edit_profile_call19'] = "Número de móvil:";
-    $lang['str_edit_profile_call20'] = "dígitos";
+    $lang['str_edit_profile_call20'] = "Dígitos";
     $lang['str_edit_profile_call21'] = "Dirección:";
     $lang['str_edit_profile_call22'] = "Número, Calle, Localidad";
     $lang['str_edit_profile_call23'] = "Ciudad:";

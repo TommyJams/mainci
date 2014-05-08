@@ -113,7 +113,12 @@
                 </div>
 				<div class="socialInfo">
 					<div class="userType">
-						<h1><?print($type);?></h1>
+						<h1>
+                        <?
+                            if($type=="Promoter"){ echo lang("str_profile_call12"); }
+                            else if($type=="Artist"){ echo lang("str_profile_call9"); }
+                        ?>
+                        </h1>
 					</div>
 					<div class="userGenre">
 						<h2 style="padding-top:0px;">
@@ -163,7 +168,7 @@
 				<div class="medals" style="width:35%; height: auto; float:right; position:relative; top:50%; margin-top:-25px;">
                     <center>
                         <?                                                         
-                        print("<a alt='TommyJams Rating (rated out of 5 by Hosts, Fans, Editor)' title='TommyJams Rating (rated out of 5 by Hosts, Fans, Editor)'><div style='background:#007888; color: #FFF; height:50px; width:50px; '><h1>$userRating</h1></div></a>");
+                        print("<a alt='".lang('str_profile_call5')."' title='".lang('str_profile_call5')."><div style='background:#007888; color: #FFF; height:50px; width:50px; '><h1>$userRating</h1></div></a>");
                         /*print("<a alt='User Rating' title='User Rating'><div style='background:#606060; color:#FFF; height:50px; width:50px; margin-top:5px;'><h1>$silver</h1></div></a>");*/
                         ?>
                     </center>
@@ -203,8 +208,8 @@
 										<td style="background: #ffcc00; width: 30%;"><h1><? echo lang('str_profile_call8');?></h1></td>
 										<td style="background: #ffcc00; width: 30%;">
                                             <h1>
-                                                <?if($type=="Promoter"){ ?> <? echo lang("str_profile_call9");?> <?;}
-                                                else if($type=="Artist"){print("HOST");}?>
+                                                <?if($type=="Promoter"){ echo lang("str_profile_call9"); }
+                                                else if($type=="Artist"){ echo lang("str_profile_call11"); }?>
                                             </h1>
                                         </td>
 										<td style="background: #ffcc00; width: 40%;"><h1><? echo lang('str_profile_call10');?></h1></td>
