@@ -26,6 +26,7 @@
     $venuesDetail = $tourDetail->venues; 
   } 
   
+  if($venuesDetail)
   foreach($venuesDetail as $venue)
   { 
     $venue_name = $venue->venue_name;
@@ -72,6 +73,8 @@
   <div class="container d-tj-container"> <a title="Revolutionizing Live Entertainment" href="http://www.tommyjams.com/" class="d-tj-logo"><img src="img/tj.jpg" height="64" alt=""/></a>
     
     <? $tours = (json_decode($tours));
+    
+    if($tours)
     foreach($tours as $tour){ ?>
     <?
       $tour_id = $tour->tour_id;
