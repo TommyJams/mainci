@@ -168,7 +168,7 @@
 				<div class="medals" style="width:35%; height: auto; float:right; position:relative; top:50%; margin-top:-25px;">
                     <center>
                         <?                                                         
-                        print("<a alt='".lang('str_profile_call5')."' title='".lang('str_profile_call5')."><div style='background:#007888; color: #FFF; height:50px; width:50px; '><h1>$userRating</h1></div></a>");
+                        print("<a alt='".lang('str_profile_call5')."' title='".lang('str_profile_call5')."'><div style='background:#007888; color: #FFF; height:50px; width:50px; '><h1>$userRating</h1></div></a>");
                         /*print("<a alt='User Rating' title='User Rating'><div style='background:#606060; color:#FFF; height:50px; width:50px; margin-top:5px;'><h1>$silver</h1></div></a>");*/
                         ?>
                     </center>
