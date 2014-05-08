@@ -52,15 +52,15 @@
           </div>
           <div class="row">
             <div class="col-md-12">
-              <h4>Location: <? print($city); ?></h4>
-              <h4>Contact: <? print($contact); ?></h4>
+              <h4><? print(lang('str_tours_1').": ".$city); ?></h4>
+              <h4><? print(lang('str_tours_2').": ".$contact); ?></h4>
               <a target="_blank" href="<? print($link);?>"><h4>Facebook</h4></a> 
             </div> 
           </div>
 
       </div>
         <div class="modal-footer">
-          <a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal">Close</a> 
+          <a href="javascript:;" onclick="$.fancybox.close();" class="btn blk-btn" data-dismiss="modal"><? echo lang('str_tours_3');?></a> 
         </div>
       </div>
     </div>  
@@ -101,43 +101,43 @@
     
     <!--cirle connect-->
     <div class="d-tj-black-box d-tj-offset-top-40 d-tj-circle" >
-      <h3>How it works?</h3>
+      <h3><? echo lang('str_tours_4');?></h3>
       <div class="visible-lg visible-md d-tj-bg-strip" ></div>
       <div class="row d-tj-offset-top-40" >
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/down/a.png)"></div>
           <h5 style="color: #000000;">
-           <b>Evaluate</b><br>
-          Check out the touring venues, see how much money you need to raise via the campaign, and evaluate whether you are up for the effort
+           <b><? echo lang('str_tours_5');?></b><br>
+          <? echo lang('str_tours_6');?>
           </h5>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/down/b.png)"></div>
           <h5 style="color: #000000;">
-            <b>Launch Campaign</b><br>
-            Click the Apply Now button for the respective tour, create a video to be added as your campaign video, fill in all your details, and launch your campaign
+            <b><? echo lang('str_tours_7');?></b><br>
+            <? echo lang('str_tours_8');?>
           </h5>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/down/c_1.png)"></div>
           <h5 style="color: #000000;">
-          <b>Sell Tickets</b><br>
-          Share the campaign with your fans, find innovative ways to promote the campaign, and sell enough tickets to reach the campaign target.
+          <b><? echo lang('str_tours_9');?></b><br>
+          <? echo lang('str_tours_10');?>
           </h5>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/down/d.png)"></div>
           <h5 style="color: #000000;">
-          <b>Tour</b><br>
-          Sit back and relax, while we take you on the tour of your life.
+          <b><? echo lang('str_tours_11');?></b><br>
+          <? echo lang('str_tours_12');?>
           </h5>
         </div>
       </div>
       <div class="text-center d-tj-offset-top-10 " >
         <?if(isset($login_url) && $login_url){?>
-            <input class="apply-btn" style="" onclick="window.location.href='<?print($login_url);?>'" type="button" value="APPLY Now">
+            <input class="apply-btn" style="" onclick="window.location.href='<?print($login_url);?>'" type="button" value="<? echo lang('str_tours_13');?>">
         <?}else{?>
-            <input class="apply-btn" style="" type="button" value="COMING SOON">
+            <input class="apply-btn" style="" type="button" value="<? echo lang('str_tours_14');?>">
         <?}?>
       </div>
     </div>
@@ -181,7 +181,7 @@
                           <p><? print($funded); ?>% </p>
                         </li>
                         <li >
-                          <p >FUNDED </p>
+                          <p ><? echo lang('str_tours_15');?></p>
                         </li>
                       </ul>
                     </div>
@@ -191,7 +191,7 @@
                           <p><? print($days_to_go); ?> </p>
                         </li>
                         <li>
-                          <p>DAYS TO GO </p>
+                          <p><? echo lang('str_tours_16');?></p>
                         </li>
                       </ul>
                     </div>
@@ -208,30 +208,30 @@
     <!-- /tour--> 
 
     <div class="d-tj-black-box d-tj-offset-top-30 d-tj-why">
-      <h3 style="margin-top: 0px;">WHY CAMPAIGN ?</h3>
+      <h3 style="margin-top: 0px;"><? echo lang('str_tours_17');?></h3>
       <div class="row d-tj-offset-top-40">
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/up/1.png)"></div>
-          <h5 ><b>Money</b><br>
-            Earn what you deserve. Tired of haggling with the venues over your fee? Simply connect with your fans, and keep all the money that you raise!
+          <h5 ><b><? echo lang('str_tours_18');?></b><br>
+            <? echo lang('str_tours_19');?>
           </h5>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/up/2.png)"></div>
-          <h5 ><b>Cross-city tours</b><br>
-            It is your chance to go out to different cities, perform in front of different audiences and make that tour you have always dreamt of a reality.
+          <h5 ><b><? echo lang('str_tours_20');?></b><br>
+            <? echo lang('str_tours_21');?>
           </h5>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/up/3.png)"></div>
-          <h5><b>Audience</b><br>
-            Engage with your audience, share merchandise along with your tickets, connect with them on the day of your performance by using innovative ideas such as singing a song and getting a photograph with the band.
+          <h5><b><? echo lang('str_tours_22');?></b><br>
+            <? echo lang('str_tours_23');?>
           </h5>
         </div>
         <div class="col-md-3 col-sm-6 text-center">
           <div class="d-tj-thumb img-circle" style="background-image:url(img/up/4.png)"></div>
-          <h5 ><b>Promotion</b><br>
-            Be promoted by multiple channels in multiple cities as all the forces come together to make your tour a reality.
+          <h5 ><b><? echo lang('str_tours_24');?></b><br>
+            <? echo lang('str_tours_25');?>
           </h5>
         </div>
       </div>

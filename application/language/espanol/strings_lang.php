@@ -371,4 +371,32 @@
     $lang['str_search_profile_type'] = "Tipo";
     $lang['str_search_profile_city'] = "Ciudad";
     $lang['str_search_profile_social'] = "Sociales";
+
+// Tours
+    $lang['str_tours_1'] = "Location";
+    $lang['str_tours_2'] = "Contact";
+    $lang['str_tours_3'] = "Close";
+    $lang['str_tours_4'] = "How it works?";
+    $lang['str_tours_5'] = "Evaluate";
+    $lang['str_tours_6'] = "Check out the touring venues, see how much money you need to raise via the campaign, and evaluate whether you are up for the effort";
+    $lang['str_tours_7'] = "Launch Campaign";
+    $lang['str_tours_8'] = "Click the Apply Now button for the respective tour, create a video to be added as your campaign video, fill in all your details, and launch your campaign";
+    $lang['str_tours_9'] = "Sell Tickets";
+    $lang['str_tours_10'] = "Share the campaign with your fans, find innovative ways to promote the campaign, and sell enough tickets to reach the campaign target";
+    $lang['str_tours_11'] = "Tour";
+    $lang['str_tours_12'] = "Sit back and relax, while we take you on the tour of your life";
+    $lang['str_tours_13'] = "APPLY NOW";
+    $lang['str_tours_14'] = "COMING SOON";
+    $lang['str_tours_15'] = "FUNDED";
+    $lang['str_tours_16'] = "DAYS TO GO";
+    $lang['str_tours_17'] = "WHY CAMPAIGN ?";
+    $lang['str_tours_18'] = "Money";
+    $lang['str_tours_19'] = "Earn what you deserve. Tired of haggling with the venues over your fee? Simply connect with your fans, and keep all the money that you raise";
+    $lang['str_tours_20'] = "Cross-city tours";
+    $lang['str_tours_21'] = "It is your chance to go out to different cities, perform in front of different audiences and make that tour you have always dreamt of a reality";
+    $lang['str_tours_22'] = "Audience";
+    $lang['str_tours_23'] = "Engage with your audience, share merchandise along with your tickets, connect with them on the day of your performance by using innovative ideas such as singing a song and getting a photograph with the band";
+    $lang['str_tours_24'] = "Promotion";
+    $lang['str_tours_25'] = "Be promoted by multiple channels in multiple cities as all the forces come together to make your tour a reality";
+
 ?>
