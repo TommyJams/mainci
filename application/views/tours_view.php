@@ -19,6 +19,8 @@
 
 <!--venue modal-->
 <? $tourDetail = (json_decode($tours));
+  
+  if($tourDetail)
   foreach($tourDetail as $tourDetail) 
   { 
     $venuesDetail = $tourDetail->venues; 
