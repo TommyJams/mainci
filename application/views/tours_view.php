@@ -26,7 +26,7 @@
     $venuesDetail = $tourDetail->venues; 
   } 
   
-  if($venuesDetail)
+  if(isset($venuesDetail))
   foreach($venuesDetail as $venue)
   { 
     $venue_name = $venue->venue_name;
