@@ -19,11 +19,14 @@
 
 <!--venue modal-->
 <? $tourDetail = (json_decode($tours));
+  
+  if(isset($tourDetail))
   foreach($tourDetail as $tourDetail) 
   { 
     $venuesDetail = $tourDetail->venues; 
   } 
   
+  if(isset($venuesDetail))
   foreach($venuesDetail as $venue)
   { 
     $venue_name = $venue->venue_name;
@@ -70,6 +73,8 @@
   <div class="container d-tj-container"> <a title="Revolutionizing Live Entertainment" href="http://www.tommyjams.com/" class="d-tj-logo"><img src="img/tj.jpg" height="64" alt=""/></a>
     
     <? $tours = (json_decode($tours));
+
+    if(isset($tours))
     foreach($tours as $tour){ ?>
     <?
       $tour_id = $tour->tour_id;
@@ -129,7 +134,9 @@
         </div>
       </div>
       <div class="text-center d-tj-offset-top-10 " >
-        <input class="apply-btn" style="" onclick="window.location.href='<?print($login_url);?>'" type="button" value="APPLY Now">
+        <?if(isset($tours)){?>
+          <input class="apply-btn" style="" onclick="window.location.href='<?print($login_url);?>'" type="button" value="APPLY Now">
+        ?>}?>
       </div>
     </div>
     <!-- /circle-connect-->
