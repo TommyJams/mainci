@@ -134,11 +134,9 @@
         </div>
       </div>
       <div class="text-center d-tj-offset-top-10 " >
-        <?
-          if(isset($tours)){
-            print("<input class='apply-btn' style='' onclick='window.location.href='<?print($login_url);?>'' type='button' value='APPLY NOW'>");
-          }
-        }?>
+        <?if(isset($tours)){?>
+          <input class="apply-btn" style="" onclick="window.location.href='<?print($login_url);?>'" type="button" value="APPLY Now">
+        ?>}?>
       </div>
     </div>
     <!-- /circle-connect-->
