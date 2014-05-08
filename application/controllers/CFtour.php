@@ -1,6 +1,6 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class CFtour extends CI_Controller{
+class CFtour extends MY_Controller{
 
     function __construct()
     {
@@ -9,7 +9,6 @@ class CFtour extends CI_Controller{
 
           // Load model
           $this->load->model('Model');
-          $this->load->library('email');
     }
 
 	public function tourPage(){
