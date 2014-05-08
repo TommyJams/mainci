@@ -21,7 +21,7 @@ class Model extends CI_Model{
 
 	public function tourDetails(){
 
-		$query = $this->db->query("SELECT * FROM toursCF;");
+		$query = $this->db->query("SELECT * FROM toursCF WHERE applyBy >= CURDATE();");
 		if ($query->num_rows() > 0)
 		{
             $qresult = $query->result();
