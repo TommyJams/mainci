@@ -373,30 +373,30 @@
     $lang['str_search_profile_social'] = "Sociales";
 
 // Tours
-    $lang['str_tours_1'] = "Location";
-    $lang['str_tours_2'] = "Contact";
-    $lang['str_tours_3'] = "Close";
-    $lang['str_tours_4'] = "How it works?";
-    $lang['str_tours_5'] = "Evaluate";
-    $lang['str_tours_6'] = "Check out the touring venues, see how much money you need to raise via the campaign, and evaluate whether you are up for the effort";
-    $lang['str_tours_7'] = "Launch Campaign";
-    $lang['str_tours_8'] = "Click the Apply Now button for the respective tour, create a video to be added as your campaign video, fill in all your details, and launch your campaign";
-    $lang['str_tours_9'] = "Sell Tickets";
-    $lang['str_tours_10'] = "Share the campaign with your fans, find innovative ways to promote the campaign, and sell enough tickets to reach the campaign target";
-    $lang['str_tours_11'] = "Tour";
-    $lang['str_tours_12'] = "Sit back and relax, while we take you on the tour of your life";
-    $lang['str_tours_13'] = "APPLY NOW";
-    $lang['str_tours_14'] = "COMING SOON";
-    $lang['str_tours_15'] = "FUNDED";
-    $lang['str_tours_16'] = "DAYS TO GO";
-    $lang['str_tours_17'] = "WHY CAMPAIGN ?";
-    $lang['str_tours_18'] = "Money";
-    $lang['str_tours_19'] = "Earn what you deserve. Tired of haggling with the venues over your fee? Simply connect with your fans, and keep all the money that you raise";
-    $lang['str_tours_20'] = "Cross-city tours";
-    $lang['str_tours_21'] = "It is your chance to go out to different cities, perform in front of different audiences and make that tour you have always dreamt of a reality";
-    $lang['str_tours_22'] = "Audience";
-    $lang['str_tours_23'] = "Engage with your audience, share merchandise along with your tickets, connect with them on the day of your performance by using innovative ideas such as singing a song and getting a photograph with the band";
-    $lang['str_tours_24'] = "Promotion";
-    $lang['str_tours_25'] = "Be promoted by multiple channels in multiple cities as all the forces come together to make your tour a reality";
+    $lang['str_tours_1'] = "Ubicación";
+    $lang['str_tours_2'] = "Contacto";
+    $lang['str_tours_3'] = "Cerrar";
+    $lang['str_tours_4'] = "¿Cómo funciona?";
+    $lang['str_tours_5'] = "Evaluar";
+    $lang['str_tours_6'] = "Revisa las ubicaciones, ve cuánto dinero necesitas para tu gira, y evalúa si tomarás el desafío.";
+    $lang['str_tours_7'] = "Lanza la Campaña";
+    $lang['str_tours_8'] = "Haz click en el botón Aplicar de la gira, crea una campaña promocional en video, llena los detalles y lánzate a la aventura.";
+    $lang['str_tours_9'] = "Vende Entradas";
+    $lang['str_tours_10'] = "Comparte la campaña con tus fans, encuentra maneras innovadoras de promoverla y vende suficientes entradas para llegar al objetivo.";
+    $lang['str_tours_11'] = "Viaja";
+    $lang['str_tours_12'] = "Siéntate y relájate mientras nosotros te llevamos por la gira de tu vida.";
+    $lang['str_tours_13'] = "POSTULA AHORA";
+    $lang['str_tours_14'] = "PRÓXIMAMENTE";
+    $lang['str_tours_15'] = "FINANCIADO";
+    $lang['str_tours_16'] = "DÍAS RESTANTES";
+    $lang['str_tours_17'] = "¿Por qué hacer una campaña?";
+    $lang['str_tours_18'] = "Dinero";
+    $lang['str_tours_19'] = "Gana lo que mereces. ¿Cansado de discutir con los organizadores de eventos por tu paga? Simplemente conéctate con tus fans y quédate con todo lo que puedas juntar.";
+    $lang['str_tours_20'] = "Giras entre ciudades";
+    $lang['str_tours_21'] = "Esta es tu oportunidad de viajar entre ciudades, presentarte ante distintas audiencias y hacer realidad cada tour con el que soñaste.";
+    $lang['str_tours_22'] = "Audiencia";
+    $lang['str_tours_23'] = "Conéctate con tu audiencia, comparte productos publicitarios de tu banda junto con tus entradas y conecta con ellos de maneras distintas, como por ejemplo, sacándote fotos con ellos después de la presentación.";
+    $lang['str_tours_24'] = "Publicidad";
+    $lang['str_tours_25'] = "Sé promovido por múltiples canales de difusión en múltiples ciudades mientras todos los factores se conjugan para hacer tu gira de ensueño una realidad.";
 
 ?>

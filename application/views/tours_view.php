@@ -3,6 +3,8 @@
 <head>
 <title>TommyJams - Tours</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="Description" CONTENT="TommyJams is a vision, an initiative, a spark, which shall illuminate the budding music talent in India. Born in a Stanford University program, our aim is to develop a transparent, hassle-free and inexpensive community of Artists, Venues and Fans.">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
 <!-- Bootstrap -->
 <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
