@@ -1,6 +1,6 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Fbconnect extends Base{
+class Fbconnect extends MY_Controller{
 
   function parse_signed_request($signed_request, $secret) {
         list($encoded_sig, $payload) = explode('.', $signed_request, 2); 
