@@ -22,9 +22,9 @@
 						link	: '/blog/'
                     },
                     {
-                        image	: '/images/background/Solder2_resize.jpg',
-                        title   : 'Solder',
-                        details : '\'Feel Good\' Rock',
+                        image	: '/images/background/aerotek.jpg',
+                        title   : 'Aerotek',
+                        details : 'Electronic',
 						link	: '/blog/'
                     },
 					{
