@@ -1,5 +1,6 @@
 <iframe src="https://www.facebook.com/plugins/registration?
 		client_id=<?php echo $appId;?>&
+        locale=<?php echo $localeId;?>&
 		redirect_uri=<? print(base_url()); ?>fbconnect/registerMethod/fbregistered&
 		fb_only=true&fb_register=true&fields=<?php echo $fb_fields;?>"
 	scrolling="auto"

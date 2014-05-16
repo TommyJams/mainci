@@ -93,6 +93,7 @@ class Fbconnect extends MY_Controller{
   			
   			$data1['fb_fields']="[{'name':'name'},{'name':'email'},{'name':'location'},{'name':'birthday'},{'name':'usertype','description':'User Type','type':'select','options':{'artist':'Artist','venue':'Venue','promoter':'Promoter'},'default':'artist'},{'name':'org','description':'Band/Organisation Name','type':'text'},{'name':'phone','description':'Phone Number','type':'text'},]";
   			$data1['appId']= FACEBOOK_APP_ID;
+        $data1['localeId']= ( CURRENT_LANGUAGE == 'es' ) ? "es_LA" : "en_US";
         $data2['iframe']=$this->load->view('registration1_view', $data1, TRUE);
 
         $registrationParam = $this->uri->segment(3);
