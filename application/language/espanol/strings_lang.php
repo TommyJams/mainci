@@ -34,6 +34,12 @@
 
 //Beta Page View
     $lang['str_login_facebook'] = "Ingrese con Facebook";
+    $lang['str_facebook_type'] = "Tipo De Usuario";
+    $lang['str_facebook_artist'] = "Artista";
+    $lang['str_facebook_venue'] = "Lugar de Conciertos";
+    $lang['str_facebook_promoter'] = "Organizador";
+    $lang['str_facebook_name'] = "Banda/Compañía";
+    $lang['str_facebook_phone'] = "Número de Teléfono";
 
 //MainTiles
     $lang['str_artist_title'] = "Artistas";

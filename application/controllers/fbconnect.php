@@ -91,7 +91,7 @@ class Fbconnect extends MY_Controller{
   			$loginUrl = $facebook->getLoginUrl($params);
 		}
   			
-  			$data1['fb_fields']="[{'name':'name'},{'name':'email'},{'name':'location'},{'name':'birthday'},{'name':'usertype','description':'User Type','type':'select','options':{'artist':'Artist','venue':'Venue','promoter':'Promoter'},'default':'artist'},{'name':'org','description':'Band/Organisation Name','type':'text'},{'name':'phone','description':'Phone Number','type':'text'},]";
+  			$data1['fb_fields']="[{'name':'name'},{'name':'email'},{'name':'location'},{'name':'birthday'},{'name':'usertype','description':'".lang('str_facebook_type')."','type':'select','options':{'artist':'".lang('str_facebook_artist')."','venue':'".lang('str_facebook_venue')."','promoter':'".lang('str_facebook_promoter')."'},'default':'artist'},{'name':'org','description':'".lang('str_facebook_name')."','type':'text'},{'name':'phone','description':'".lang('str_facebook_phone')."','type':'text'},]";
   			$data1['appId']= FACEBOOK_APP_ID;
         $data1['localeId']= ( CURRENT_LANGUAGE == 'es' ) ? "es_LA" : "en_US";
         $data2['iframe']=$this->load->view('registration1_view', $data1, TRUE);
