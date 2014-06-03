@@ -86,13 +86,10 @@
             <ul id="foo5">            
                 <li>
                 <div class=" col-md-12" style="padding: 5px;">
-                  <h4 class="d-tj-slide-head" ><? print($artist_name); ?></h4>
+                  <h4 class="d-tj-slide-head" >artist_name</h4>
                   <div class="d-tj-slide-body " style="">
-                    <div class="d-tj-slide-img" onclick="window.open('<?print(base_url().'campaign/'.$campaign_id);?>', '_blank');" style="background-image:url(<? print(base_url().'images/artist/campaign/'.$image); ?>)">  
+                    <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(); ?>)">  
                       <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
-                    </div>
-                    <div class="d-tj-progress">
-                      <div class="d-tj-progress-g" style="width:<? print($funded); ?>%;"> </div>
                     </div>
                     <div>
                       <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
