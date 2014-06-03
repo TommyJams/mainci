@@ -19,23 +19,23 @@
       <div class="d-tj-box d-tj-offset-top-40" >
         <div class="row d-tj-tour">
           <div class="col-sm-12 col-xs-12 col-md-7"> 
-            <iframe title="YouTube video player" class="d-tj-video" style="min-height: 300px; width: 100%;" 
-            src="http://www.youtube.com/embed/kcOo3ge5URE" frameborder="0" allowfullscreen></iframe>
+            <!--<iframe title="YouTube video player" class="d-tj-video" style="min-height: 300px; width: 100%;" 
+            src="http://www.youtube.com/embed/kcOo3ge5URE" frameborder="0" allowfullscreen></iframe>-->
+            <img align="left" src="/images/solstice/solstice-sun.png" style="">
           </div>  
           <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
-            <h2><? echo lang('str_title_roadshows');?></h2>
+            <h2>Solstice Bangalore: 21st June</h2>
             <div class="who-campaigns">
               <img align="left" src="/img/roadshows_logo.png" style="margin-right:5px;width:120px">
               <h5>
-                <? echo lang('str_desc_roadshows');?>
-                <b>
-                  <? echo lang('str_book_roadshows');?>
-                </b>
+                Solstice Bangalore, a TommyJams production, is part of a worldwide celebration of music and a day-long music festival happening at various venues across Bangalore on the summer solstice, June 21, also the World Music Day.
+                <br>
+                On this day, the city will witness multiple performances from your favorite artists at venues across town, from public places, to cafes, to pubs, to your favorite music venues. On the same day, 800 cities will be celebrating music together with thousands of music performances. The entire celebration is free to attend & open for anyone to perform - all styles, skill levels and ages. The goal of the Solstice festival is to connect the entire world for a singular celebration of music.
               </h5>
             </div>
               <div class="text-center" >
-                <input style="margin-top:10px" class="apply-btn" onclick="window.open('/roadshows', '_blank');" type="button" value="<? echo lang('btn_all_campaigns'); ?>">
-                <input style="margin-top:10px" class="apply-btn" onclick="window.open('/tours', '_blank');" type="button" value="<? echo lang('btn_start_campaign');?>">
+                <input style="margin-top:10px" class="apply-btn" onclick="" type="button" value="COMING SOON">
+                <!--<input style="margin-top:10px" class="apply-btn" onclick="window.open('/tours', '_blank');" type="button" value="">-->
             </div> 
           </div>
         </div>
@@ -48,6 +48,72 @@
           <div class="list_carousel responsive" style="position:relative">
             <ul id="foo5">            
                 <li>
+                <div class=" col-md-12" style="padding: 5px;">
+                  <h4 class="d-tj-slide-head" >artist_name</h4>
+                  <div class="d-tj-slide-body " style="">
+                    <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(); ?>)">  
+                      <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
+                    </div>
+                    <div>
+                      <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
+                        <ul class="list-unstyled  " >
+                          <li>
+                            <p>funded</p>
+                          </li>
+                          <li >
+                            <p >str_tours_15</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </li>
+               <li>
+                <div class=" col-md-12" style="padding: 5px;">
+                  <h4 class="d-tj-slide-head" >artist_name</h4>
+                  <div class="d-tj-slide-body " style="">
+                    <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(); ?>)">  
+                      <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
+                    </div>
+                    <div>
+                      <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
+                        <ul class="list-unstyled  " >
+                          <li>
+                            <p>funded</p>
+                          </li>
+                          <li >
+                            <p >str_tours_15</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </li>
+               <li>
+                <div class=" col-md-12" style="padding: 5px;">
+                  <h4 class="d-tj-slide-head" >artist_name</h4>
+                  <div class="d-tj-slide-body " style="">
+                    <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(); ?>)">  
+                      <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
+                    </div>
+                    <div>
+                      <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
+                        <ul class="list-unstyled  " >
+                          <li>
+                            <p>funded</p>
+                          </li>
+                          <li >
+                            <p >str_tours_15</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </li>
+               <li>
                 <div class=" col-md-12" style="padding: 5px;">
                   <h4 class="d-tj-slide-head" >artist_name</h4>
                   <div class="d-tj-slide-body " style="">
@@ -83,7 +149,7 @@
             <div class="col-md-12 d-tj-book-events-bg" >
               <div class="d-tj-book-events-top" > 
                 <h4 style="font-size:22px" class="text-center">
-                  <? echo lang('str_book_events');?>
+                  Looking to participate as a venue?
                 </h4>
                 <h4 class="text-center">
                   <img src="/img/book_events.png" alt="" >
@@ -91,7 +157,7 @@
               </div>
               <div class="text-center d-tj-offset-top-20">
                 <!--<input class="watchdemo" data-toggle="modal" href="#watchdemoModal" target="_blank" type="button" value="WATCH DEMO">-->
-                <input onclick="window.open('/index', '_blank');" type="button" value="<? echo lang('btn_book_events');?>">
+                <input onclick="window.open('/index', '_blank');" type="button" value="OPEN SLOT">
               </div>
             </div>
           </div>
@@ -99,14 +165,14 @@
             <div class="col-md-12 d-tj-c-tour-bg" >
               <div class="d-tj-c-tour-top"  > 
                 <h4 style="font-size:22px" class="text-center">
-                  <? echo lang('str_book_tours');?>
+                  Looking to participate as an artist?
                 </h4>
                 <h4 class="text-center">
                   <img src="/img/grab_tours.png" alt="" >
                 </h4>
               </div>
               <div class="text-center d-tj-offset-top-20">
-                <input onclick="window.open('/tours', '_blank');" type="button" value="<? echo lang('btn_book_tours');?>" >
+                <input onclick="window.open('/index', '_blank');" type="button" value="APPLY" >
               </div>
             </div>
           </div>
@@ -125,7 +191,9 @@
   <img src="/images/background/BotanicalGarden.jpg" id="supersized">
   <script src="/script/jquery.js"></script> 
   <script src="/script/bootstrap.min.js"></script>
-  <script type="text/javascript" src="/script/jquery.fancybox.js"></script> 
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+  <script type="text/javascript" language="javascript" src="/script/jquery.carouFredSel.packed.js"></script>
+  <script type="text/javascript" src="/script/jquery.fancybox.js"></script>
 
 </body>
 </html>
