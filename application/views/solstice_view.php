@@ -202,7 +202,6 @@
   </script>
   <script src="/script/jquery.js"></script> 
   <script src="/script/bootstrap.min.js"></script>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
   <script type="text/javascript" language="javascript" src="/script/jquery.carouFredSel.packed.js"></script>
   <script type="text/javascript" src="/script/jquery.fancybox.js"></script>
 
