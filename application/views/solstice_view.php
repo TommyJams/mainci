@@ -21,7 +21,7 @@
           <div class="col-sm-12 col-xs-12 col-md-7"> 
             <!--<iframe title="YouTube video player" class="d-tj-video" style="min-height: 300px; width: 100%;" 
             src="http://www.youtube.com/embed/kcOo3ge5URE" frameborder="0" allowfullscreen></iframe>-->
-            <img align="left" src="/images/solstice/solstice-sun.png" style="">
+            <img align="left" src="/images/solstice/solstice-sun.png" style="min-height: 380px;">
           </div>  
           <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
             <h2>Solstice Bangalore: 21st June</h2>
@@ -58,10 +58,10 @@
                       <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
                         <ul class="list-unstyled  " >
                           <li>
-                            <p>funded</p>
+                            <p>venue 0</p>
                           </li>
                           <li >
-                            <p >str_tours_15</p>
+                            <p >time 0</p>
                           </li>
                         </ul>
                       </div>
@@ -80,10 +80,10 @@
                       <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
                         <ul class="list-unstyled  " >
                           <li>
-                            <p>funded</p>
+                            <p>venue 1</p>
                           </li>
                           <li >
-                            <p >str_tours_15</p>
+                            <p >time 1</p>
                           </li>
                         </ul>
                       </div>
@@ -102,10 +102,10 @@
                       <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
                         <ul class="list-unstyled  " >
                           <li>
-                            <p>funded</p>
+                            <p>venue 2</p>
                           </li>
                           <li >
-                            <p >str_tours_15</p>
+                            <p >time 2</p>
                           </li>
                         </ul>
                       </div>
@@ -124,10 +124,10 @@
                       <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
                         <ul class="list-unstyled  " >
                           <li>
-                            <p>funded</p>
+                            <p>venue 3</p>
                           </li>
                           <li >
-                            <p >str_tours_15</p>
+                            <p >time 3</p>
                           </li>
                         </ul>
                       </div>
