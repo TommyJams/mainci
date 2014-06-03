@@ -14,7 +14,69 @@
 <body>
   <div class="d-tj-bg-overlay">
     <div class="container d-tj-container"> <a title="Revolutionizing Live Entertainment" href="http://www.tommyjams.com/" class="d-tj-logo"><img src="/img/tj.jpg" height="64" alt=""/></a> 
-      <!--top 2 col-->
+      
+      <!--About Solstice-->
+      <div class="d-tj-box d-tj-offset-top-40" >
+        <div class="row d-tj-tour">
+          <div class="col-sm-12 col-xs-12 col-md-7"> 
+            <iframe title="YouTube video player" class="d-tj-video" style="min-height: 300px; width: 100%;" 
+            src="http://www.youtube.com/embed/kcOo3ge5URE" frameborder="0" allowfullscreen></iframe>
+          </div>  
+          <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
+            <h2><? echo lang('str_title_roadshows');?></h2>
+            <div class="who-campaigns">
+              <img align="left" src="/img/roadshows_logo.png" style="margin-right:5px;width:120px">
+              <h5>
+                <? echo lang('str_desc_roadshows');?>
+                <b>
+                  <? echo lang('str_book_roadshows');?>
+                </b>
+              </h5>
+            </div>
+              <div class="text-center" >
+                <input style="margin-top:10px" class="apply-btn" onclick="window.open('/roadshows', '_blank');" type="button" value="<? echo lang('btn_all_campaigns'); ?>">
+                <input style="margin-top:10px" class="apply-btn" onclick="window.open('/tours', '_blank');" type="button" value="<? echo lang('btn_start_campaign');?>">
+            </div> 
+          </div>
+        </div>
+      </div>
+      <!--/About Solstice-->
+
+      <!-- Events-->
+      <div class="d-tj-3-col d-tj-offset-top-30" >
+        <div class="d-tj-slide">
+          <div class="list_carousel responsive" style="position:relative">
+            <ul id="foo5">            
+                <li>
+                <div class=" col-md-12" style="padding: 5px;">
+                  <h4 class="d-tj-slide-head" >artist_name</h4>
+                  <div class="d-tj-slide-body " style="">
+                    <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(); ?>)">  
+                      <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
+                    </div>
+                    <div>
+                      <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
+                        <ul class="list-unstyled  " >
+                          <li>
+                            <p>funded</p>
+                          </li>
+                          <li >
+                            <p >str_tours_15</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </li>
+            </ul>
+            <div class="clearfix"></div>
+            <a id="prev5" class="prev" href="#" ></a> <a id="next5" class="next" href="#"  ></a> </div>
+        </div>
+      </div>
+      <!-- /Events--> 
+
+      <!--Action-->
       <div class=" d-tj-offset-top-40  d-tj-2-col-y-bg">  
         <div class="row">
           <div class="col-md-6 d-tj-book-events" >
@@ -50,68 +112,7 @@
           </div>
         </div>   
       </div>
-      <!--/top 2 col--> 
-
-      <!--Demo tile -->
-      <div class="d-tj-box d-tj-offset-top-40" >
-        <div class="row d-tj-tour">
-          <div class="col-sm-12 col-xs-12 col-md-7"> 
-            <iframe title="YouTube video player" class="d-tj-video" style="min-height: 300px; width: 100%;" 
-            src="http://www.youtube.com/embed/kcOo3ge5URE" frameborder="0" allowfullscreen></iframe>
-          </div>  
-          <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
-            <h2><? echo lang('str_title_roadshows');?></h2>
-            <div class="who-campaigns">
-              <img align="left" src="/img/roadshows_logo.png" style="margin-right:5px;width:120px">
-              <h5>
-                <? echo lang('str_desc_roadshows');?>
-                <b>
-                  <? echo lang('str_book_roadshows');?>
-                </b>
-              </h5>
-            </div>
-              <div class="text-center" >
-                <input style="margin-top:10px" class="apply-btn" onclick="window.open('/roadshows', '_blank');" type="button" value="<? echo lang('btn_all_campaigns'); ?>">
-                <input style="margin-top:10px" class="apply-btn" onclick="window.open('/tours', '_blank');" type="button" value="<? echo lang('btn_start_campaign');?>">
-            </div> 
-          </div>
-        </div>
-      </div>
-      <!--/Demo tile -->
-
-      <!-- tour-->
-      <div class="d-tj-3-col d-tj-offset-top-30" >
-        <div class="d-tj-slide">
-          <div class="list_carousel responsive" style="position:relative">
-            <ul id="foo5">            
-                <li>
-                <div class=" col-md-12" style="padding: 5px;">
-                  <h4 class="d-tj-slide-head" >artist_name</h4>
-                  <div class="d-tj-slide-body " style="">
-                    <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(); ?>)">  
-                      <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
-                    </div>
-                    <div>
-                      <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
-                        <ul class="list-unstyled  " >
-                          <li>
-                            <p>funded</p>
-                          </li>
-                          <li >
-                            <p >str_tours_15</p>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-               </li>
-            </ul>
-            <div class="clearfix"></div>
-            <a id="prev5" class="prev" href="#" ></a> <a id="next5" class="next" href="#"  ></a> </div>
-        </div>
-      </div>
-      <!-- /tour--> 
+      <!--/Action--> 
 
     </div>
     <!-- Footer  -->
