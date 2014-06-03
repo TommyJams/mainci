@@ -21,7 +21,7 @@
           <div class="col-sm-12 col-xs-12 col-md-7"> 
             <!--<iframe title="YouTube video player" class="d-tj-video" style="min-height: 300px; width: 100%;" 
             src="http://www.youtube.com/embed/kcOo3ge5URE" frameborder="0" allowfullscreen></iframe>-->
-            <img align="left" src="/images/solstice/solstice-sun.png" style="min-height: 380px;">
+            <img align="left" src="/images/solstice/solstice-sun.png" style="min-height: 350px;">
           </div>  
           <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
             <h2>Solstice Bangalore: 21st June</h2>
@@ -30,7 +30,7 @@
               <h5>
                 Solstice Bangalore, a TommyJams production, is part of a worldwide celebration of music and a day-long music festival happening at various venues across Bangalore on the summer solstice, June 21, also the World Music Day.
                 <br>
-                On this day, the city will witness multiple performances from your favorite artists at venues across town, from public places, to cafes, to pubs, to your favorite music venues. On the same day, 800 cities will be celebrating music together with thousands of music performances. The entire celebration is free to attend & open for anyone to perform - all styles, skill levels and ages. The goal of the Solstice festival is to connect the entire world for a singular celebration of music.
+                On this day, the city will witness multiple performances from your favorite artists at venues across town, from public places, to cafes, to pubs, to your favorite music venues. The entire celebration is free to attend and open for anyone.
               </h5>
             </div>
               <div class="text-center" >
