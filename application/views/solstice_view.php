@@ -187,8 +187,19 @@
     ?>
     <!-- /Footer  -->  
   </div>
-
   <img src="/images/background/BotanicalGarden.jpg" id="supersized">
+  
+  <script>
+    $(document).ready(function(){
+      
+      $('#foo5').carouFredSel({
+        width: '100%',
+        prev: '#prev5',
+        next: '#next5',
+        scroll: 1
+      });
+    });
+  </script>
   <script src="/script/jquery.js"></script> 
   <script src="/script/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
