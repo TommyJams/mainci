@@ -19,7 +19,7 @@
         <div class="row">
           <div class="col-md-6 d-tj-book-events" >
             <div class="col-md-12 d-tj-book-events-bg" >
-              <div class="d-tj-book-events-top"  > 
+              <div class="d-tj-book-events-top" > 
                 <h4 style="font-size:22px" class="text-center">
                   <? echo lang('str_book_events');?>
                 </h4>
@@ -86,11 +86,10 @@
     <!-- /Footer  -->  
   </div>
 
+  <img src="/images/background/BotanicalGarden.jpg" id="supersized">
   <script src="/script/jquery.js"></script> 
   <script src="/script/bootstrap.min.js"></script>
   <script type="text/javascript" src="/script/jquery.fancybox.js"></script> 
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-  <script type="text/javascript" src="/script/jquery.supersized.min.js"></script>
-  <script src="/script/tj.js"></script>
+
 </body>
 </html>
