@@ -30,11 +30,11 @@
               <h5>
                 Solstice Bangalore, a TommyJams production, is part of a worldwide celebration of music and a day-long music festival happening at various venues across Bangalore on the summer solstice, June 21, also the World Music Day.
                 <br>
-                On this day, the city will witness multiple performances from your favorite artists at venues across town, from public places, to cafes, to pubs, to your favorite music venues. The entire celebration is free to attend and open for anyone.
+                On this day, the city will witness multiple performances from your favorite artists at public places, cafes, and pubs. The entire celebration is free to attend and open for anyone.
               </h5>
             </div>
               <div class="text-center" >
-                <input style="margin-top:10px" class="apply-btn" onclick="" type="button" value="COMING SOON">
+                <input style="margin-top:10px" class="apply-btn" onclick="" type="button" value="COMING SOON!">
                 <!--<input style="margin-top:10px" class="apply-btn" onclick="window.open('/tours', '_blank');" type="button" value="">-->
             </div> 
           </div>
