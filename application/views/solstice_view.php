@@ -227,7 +227,7 @@
                 <div class=" col-md-12" style="padding: 5px;">
                   <h4 class="d-tj-slide-head" >Musical Journey & Ishan</h4>
                   <div class="d-tj-slide-body " style="">
-                    <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(); ?>)">  
+                    <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(http://tommyjams.com/images/artist/solstice/artists/monjyoti.jpg); ?>)">  
                       <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
                     </div>
                     <div>
