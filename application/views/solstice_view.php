@@ -49,7 +49,7 @@
             <ul id="foo5">            
                 <li>
                 <div class=" col-md-12" style="padding: 5px;">
-                  <h4 class="d-tj-slide-head" >artist_name</h4>
+                  <h4 class="d-tj-slide-head" >Parvaaz & Mahesh And The Mix</h4>
                   <div class="d-tj-slide-body " style="">
                     <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(); ?>)">  
                       <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
@@ -58,10 +58,10 @@
                       <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
                         <ul class="list-unstyled  " >
                           <li>
-                            <p>venue 0</p>
+                            <p>BFlat</p>
                           </li>
                           <li >
-                            <p >time 0</p>
+                            <p >9:00pm</p>
                           </li>
                         </ul>
                       </div>
@@ -71,7 +71,7 @@
                </li>
                <li>
                 <div class=" col-md-12" style="padding: 5px;">
-                  <h4 class="d-tj-slide-head" >artist_name</h4>
+                  <h4 class="d-tj-slide-head" >Hard Enough</h4>
                   <div class="d-tj-slide-body " style="">
                     <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(); ?>)">  
                       <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
@@ -80,10 +80,10 @@
                       <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
                         <ul class="list-unstyled  " >
                           <li>
-                            <p>venue 1</p>
+                            <p>Take5</p>
                           </li>
                           <li >
-                            <p >time 1</p>
+                            <p >8:30pm</p>
                           </li>
                         </ul>
                       </div>
@@ -93,7 +93,7 @@
                </li>
                <li>
                 <div class=" col-md-12" style="padding: 5px;">
-                  <h4 class="d-tj-slide-head" >artist_name</h4>
+                  <h4 class="d-tj-slide-head" >Perfect Strangers</h4>
                   <div class="d-tj-slide-body " style="">
                     <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(); ?>)">  
                       <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
@@ -102,10 +102,10 @@
                       <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
                         <ul class="list-unstyled  " >
                           <li>
-                            <p>venue 2</p>
+                            <p>Roadhouse</p>
                           </li>
                           <li >
-                            <p >time 2</p>
+                            <p >8:00pm</p>
                           </li>
                         </ul>
                       </div>
@@ -115,7 +115,7 @@
                </li>
                <li>
                 <div class=" col-md-12" style="padding: 5px;">
-                  <h4 class="d-tj-slide-head" >artist_name</h4>
+                  <h4 class="d-tj-slide-head" >Work In Progress & Hearts At Work</h4>
                   <div class="d-tj-slide-body " style="">
                     <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(); ?>)">  
                       <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
@@ -124,10 +124,10 @@
                       <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
                         <ul class="list-unstyled  " >
                           <li>
-                            <p>venue 3</p>
+                            <p>Rewind</p>
                           </li>
                           <li >
-                            <p >time 3</p>
+                            <p >9:00pm</p>
                           </li>
                         </ul>
                       </div>
@@ -137,7 +137,7 @@
                </li>
                <li>
                 <div class=" col-md-12" style="padding: 5px;">
-                  <h4 class="d-tj-slide-head" >artist_name</h4>
+                  <h4 class="d-tj-slide-head" >Aman Mahajan & Matt Littlewood</h4>
                   <div class="d-tj-slide-body " style="">
                     <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(); ?>)">  
                       <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
@@ -146,10 +146,98 @@
                       <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
                         <ul class="list-unstyled  " >
                           <li>
-                            <p>venue 4</p>
+                            <p>Om Made Cafe</p>
                           </li>
                           <li >
-                            <p >time 4</p>
+                            <p >4:00pm</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </li>
+               <li>
+                <div class=" col-md-12" style="padding: 5px;">
+                  <h4 class="d-tj-slide-head" >Shubham Roy</h4>
+                  <div class="d-tj-slide-body " style="">
+                    <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(); ?>)">  
+                      <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
+                    </div>
+                    <div>
+                      <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
+                        <ul class="list-unstyled  " >
+                          <li>
+                            <p>898 Steaks & Grill</p>
+                          </li>
+                          <li >
+                            <p >8:00pm</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </li>
+               <li>
+                <div class=" col-md-12" style="padding: 5px;">
+                  <h4 class="d-tj-slide-head" >Broken Membrane</h4>
+                  <div class="d-tj-slide-body " style="">
+                    <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(); ?>)">  
+                      <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
+                    </div>
+                    <div>
+                      <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
+                        <ul class="list-unstyled  " >
+                          <li>
+                            <p>Urban Solace</p>
+                          </li>
+                          <li >
+                            <p >8:00pm</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </li>
+               <li>
+                <div class=" col-md-12" style="padding: 5px;">
+                  <h4 class="d-tj-slide-head" >Siddhant Shukla</h4>
+                  <div class="d-tj-slide-body " style="">
+                    <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(); ?>)">  
+                      <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
+                    </div>
+                    <div>
+                      <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
+                        <ul class="list-unstyled  " >
+                          <li>
+                            <p>Green Theory</p>
+                          </li>
+                          <li >
+                            <p >8:00pm</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </li>
+               <li>
+                <div class=" col-md-12" style="padding: 5px;">
+                  <h4 class="d-tj-slide-head" >Musical Journey & Ishan</h4>
+                  <div class="d-tj-slide-body " style="">
+                    <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(); ?>)">  
+                      <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
+                    </div>
+                    <div>
+                      <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
+                        <ul class="list-unstyled  " >
+                          <li>
+                            <p>Cafe Buzzinga</p>
+                          </li>
+                          <li >
+                            <p >10:30am</p>
                           </li>
                         </ul>
                       </div>
