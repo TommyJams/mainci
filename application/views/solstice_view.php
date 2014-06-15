@@ -26,7 +26,7 @@
           <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
             <h2>Solstice Bangalore: 21st June</h2>
             <div class="who-campaigns">
-              <img align="left" src="/img/roadshows_logo.png" style="margin-right:5px;width:120px">
+              <!--<img align="left" src="/img/roadshows_logo.png" style="margin-right:5px;width:120px">-->
               <h5>
                 Solstice Bangalore, a TommyJams production, is part of a worldwide celebration of music and a day-long music festival happening at various venues across Bangalore on the summer solstice, June 21, also the World Music Day.
                 <br>
