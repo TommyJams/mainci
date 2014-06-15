@@ -137,6 +137,28 @@
                </li>
                <li>
                 <div class=" col-md-12" style="padding: 5px;">
+                  <h4 class="d-tj-slide-head" >When Wood Sings</h4>
+                  <div class="d-tj-slide-body " style="">
+                    <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(http://tommyjams.com/images/solstice/artists/nikhil.jpg); ?>)">  
+                      <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
+                    </div>
+                    <div>
+                      <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
+                        <ul class="list-unstyled  " >
+                          <li>
+                            <p>Phoenix MarketCity</p>
+                          </li>
+                          <li >
+                            <p >6:00pm</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </li>
+               <li>
+                <div class=" col-md-12" style="padding: 5px;">
                   <h4 class="d-tj-slide-head" >Aman Mahajan & Matt Littlewood</h4>
                   <div class="d-tj-slide-body " style="">
                     <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(http://tommyjams.com/images/solstice/artists/aman.jpg); ?>)">  
