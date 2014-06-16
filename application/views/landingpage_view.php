@@ -235,14 +235,14 @@
               </h5>
             </div>
               <div class="text-center" >
-                <input style="margin-top:10px" class="apply-btn" onclick="" type="button" value="ATTEND NOW">
+                <input style="margin-top:10px" class="apply-btn" onclick="http://tommyjams.com/solstice" type="button" value="ATTEND NOW">
                 <!--<input style="margin-top:10px" class="apply-btn" onclick="window.open('/tours', '_blank');" type="button" value="">-->
             </div> 
           </div>
           <div class="col-sm-12 col-xs-12 col-md-7"> 
             <!--<iframe title="YouTube video player" class="d-tj-video" style="min-height: 300px; width: 100%;" 
             src="http://www.youtube.com/embed/kcOo3ge5URE" frameborder="0" allowfullscreen></iframe>-->
-            <a href="http://onesolstice.com/solstice-bangalore" target="_blank"><img align="left" src="/images/solstice/solstice-sun.png" style="min-height: 350px;"></a>
+            <a href="http://onesolstice.com/solstice-bangalore" target="_blank"><img align="right" src="/images/solstice/solstice-sun.png" style="min-height: 350px;"></a>
           </div>  
         </div>
       </div>
