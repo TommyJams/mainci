@@ -28,13 +28,13 @@
             <div class="who-campaigns">
               <!--<img align="left" src="/img/roadshows_logo.png" style="margin-right:5px;width:120px">-->
               <h5>
-                Solstice Bangalore, a TommyJams production, is part of a worldwide celebration of music and a day-long music festival happening at various venues across Bangalore on the summer solstice, June 21, also the World Music Day.
+                Solstice Bangalore, a TommyJams production, is part of a worldwide celebration of music and a day-long music festival happening at various venues across Bangalore on the summer solstice, June 21, also the World Music Day. 
                 <br>
-                On this day, the city will witness multiple performances from your favorite artists at public places, cafes, and pubs. The entire celebration is free to attend and open for anyone.
+                On this day, the city will witness multiple performances across the city at the venues listed below. Come be a part of this worldwide celebration!
               </h5>
             </div>
               <div class="text-center" >
-                <input style="margin-top:10px" class="apply-btn" onclick="" type="button" value="COMING SOON!">
+                <input style="margin-top:10px" class="apply-btn" onclick="" type="button" value="RSVP!">
                 <!--<input style="margin-top:10px" class="apply-btn" onclick="window.open('/tours', '_blank');" type="button" value="">-->
             </div> 
           </div>
@@ -58,32 +58,13 @@
                       <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
                         <ul class="list-unstyled  " >
                           <li>
-                            <p>BFlat</p>
+                            <p>BFlat</p> 
                           </li>
                           <li >
                             <p >9:00pm</p>
                           </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-               </li>
-               <li>
-                <div class=" col-md-12" style="padding: 5px;">
-                  <h4 class="d-tj-slide-head" >Hard Enough</h4>
-                  <div class="d-tj-slide-body " style="">
-                    <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(http://tommyjams.com/images/solstice/artists/hard_enough.jpg); ?>)">  
-                      <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
-                    </div>
-                    <div>
-                      <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
-                        <ul class="list-unstyled  " >
-                          <li>
-                            <p>Take5</p>
-                          </li>
                           <li >
-                            <p >8:30pm</p>
+                            <p style="color:red">&#8377 300</p>
                           </li>
                         </ul>
                       </div>
@@ -107,6 +88,9 @@
                           <li >
                             <p >8:00pm</p>
                           </li>
+                          <li >
+                            <p style="color:green">FREE</p>
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -128,6 +112,9 @@
                           </li>
                           <li >
                             <p >9:00pm</p>
+                          </li>
+                          <li >
+                            <p style="color:green">FREE</p>
                           </li>
                         </ul>
                       </div>
@@ -151,6 +138,9 @@
                           <li >
                             <p >6:00pm</p>
                           </li>
+                          <li >
+                            <p style="color:green">FREE</p>
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -172,6 +162,9 @@
                           </li>
                           <li >
                             <p >4:00pm</p>
+                          </li>
+                          <li >
+                            <p style="color:green">FREE</p>
                           </li>
                         </ul>
                       </div>
@@ -195,6 +188,9 @@
                           <li >
                             <p >8:00pm</p>
                           </li>
+                          <li >
+                            <p style="color:green">FREE</p>
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -217,6 +213,9 @@
                           <li >
                             <p >8:00pm</p>
                           </li>
+                          <li >
+                            <p style="color:green">FREE</p>
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -238,6 +237,9 @@
                           </li>
                           <li >
                             <p >8:00pm</p>
+                          </li>
+                          <li >
+                            <p style="color:green">FREE</p>
                           </li>
                         </ul>
                       </div>
