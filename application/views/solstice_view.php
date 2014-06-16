@@ -51,7 +51,7 @@
                 <div class=" col-md-12" style="padding: 5px;">
                   <h4 class="d-tj-slide-head" >Parvaaz & Mahesh And The Mix</h4>
                   <div class="d-tj-slide-body " style="">
-                    <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(http://tommyjams.com/images/solstice/artists/parvaaz.jpg); ?>)">  
+                    <div class="d-tj-slide-img" onclick="window.open('https://www.facebook.com/parvaazmusic');" style="background-image:url(http://tommyjams.com/images/solstice/artists/parvaaz.jpg); ?>)">  
                       <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
                     </div>
                     <div>
@@ -76,7 +76,7 @@
                 <div class=" col-md-12" style="padding: 5px;">
                   <h4 class="d-tj-slide-head" >Perfect Strangers</h4>
                   <div class="d-tj-slide-body " style="">
-                    <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(http://tommyjams.com/images/solstice/artists/perfect_strangers.jpg); ?>)">  
+                    <div class="d-tj-slide-img" onclick="window.open('https://www.facebook.com/PerfectStrangersBangalore');" style="background-image:url(http://tommyjams.com/images/solstice/artists/perfect_strangers.jpg); ?>)">  
                       <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
                     </div>
                     <div>
@@ -101,7 +101,7 @@
                 <div class=" col-md-12" style="padding: 5px;">
                   <h4 class="d-tj-slide-head" >Work In Progress & Hearts At Work</h4>
                   <div class="d-tj-slide-body " style="">
-                    <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(http://tommyjams.com/images/solstice/artists/wip.jpg); ?>)">  
+                    <div class="d-tj-slide-img" onclick="window.open('https://www.facebook.com/wipindia');" style="background-image:url(http://tommyjams.com/images/solstice/artists/wip.jpg); ?>)">  
                       <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
                     </div>
                     <div>
@@ -126,7 +126,7 @@
                 <div class=" col-md-12" style="padding: 5px;">
                   <h4 class="d-tj-slide-head" >When Wood Sings</h4>
                   <div class="d-tj-slide-body " style="">
-                    <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(http://tommyjams.com/images/solstice/artists/nikhil.jpg); ?>)">  
+                    <div class="d-tj-slide-img" onclick="window.open('https://www.facebook.com/nikhilsitar');" style="background-image:url(http://tommyjams.com/images/solstice/artists/nikhil.jpg); ?>)">  
                       <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
                     </div>
                     <div>
@@ -151,7 +151,7 @@
                 <div class=" col-md-12" style="padding: 5px;">
                   <h4 class="d-tj-slide-head" >Aman Mahajan & Matt Littlewood</h4>
                   <div class="d-tj-slide-body " style="">
-                    <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(http://tommyjams.com/images/solstice/artists/aman.jpg); ?>)">  
+                    <div class="d-tj-slide-img" onclick="window.open('https://www.facebook.com/refuge.online');" style="background-image:url(http://tommyjams.com/images/solstice/artists/aman.jpg); ?>)">  
                       <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
                     </div>
                     <div>
@@ -176,7 +176,7 @@
                 <div class=" col-md-12" style="padding: 5px;">
                   <h4 class="d-tj-slide-head" >Shubham Roy</h4>
                   <div class="d-tj-slide-body " style="">
-                    <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(http://tommyjams.com/images/solstice/artists/shubham.jpg); ?>)">  
+                    <div class="d-tj-slide-img" onclick="window.open('https://www.facebook.com/ShubhamRoyFriends');" style="background-image:url(http://tommyjams.com/images/solstice/artists/shubham.jpg); ?>)">  
                       <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
                     </div>
                     <div>
@@ -201,7 +201,7 @@
                 <div class=" col-md-12" style="padding: 5px;">
                   <h4 class="d-tj-slide-head" >Broken Membrane</h4>
                   <div class="d-tj-slide-body " style="">
-                    <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(http://tommyjams.com/images/solstice/artists/broken_membrane.jpg); ?>)">  
+                    <div class="d-tj-slide-img" onclick="window.open('https://www.facebook.com/BrokenMembrane.theband');" style="background-image:url(http://tommyjams.com/images/solstice/artists/broken_membrane.jpg); ?>)">  
                       <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
                     </div>
                     <div>
@@ -226,7 +226,7 @@
                 <div class=" col-md-12" style="padding: 5px;">
                   <h4 class="d-tj-slide-head" >Siddhant Shukla</h4>
                   <div class="d-tj-slide-body " style="">
-                    <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(http://tommyjams.com/images/solstice/artists/siddhant.jpg); ?>)">  
+                    <div class="d-tj-slide-img" onclick="window.open('https://www.facebook.com/Siddhantmusic');" style="background-image:url(http://tommyjams.com/images/solstice/artists/siddhant.jpg); ?>)">  
                       <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
                     </div>
                     <div>
@@ -251,7 +251,7 @@
                 <div class=" col-md-12" style="padding: 5px;">
                   <h4 class="d-tj-slide-head" >Musical Journey & Ishan</h4>
                   <div class="d-tj-slide-body " style="">
-                    <div class="d-tj-slide-img" onclick="window.open('');" style="background-image:url(http://tommyjams.com/images/solstice/artists/monjyoti.jpg); ?>)">  
+                    <div class="d-tj-slide-img" onclick="window.open('https://www.facebook.com/music.journey');" style="background-image:url(http://tommyjams.com/images/solstice/artists/monjyoti.jpg); ?>)">  
                       <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
                     </div>
                     <div>
