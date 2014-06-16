@@ -219,7 +219,34 @@
     <!--/top 2 col--> 
 
     <!-- tour-->
-    <!-- /tour-->  
+    <!-- /tour--> 
+
+    <!--About Solstice-->
+      <div class="d-tj-box d-tj-offset-top-40" >
+        <div class="row d-tj-tour">
+          <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
+            <h2 style="margin-top:0px;">Solstice Bangalore: 21st June</h2>
+            <div class="who-campaigns">
+              <!--<img align="left" src="/img/roadshows_logo.png" style="margin-right:5px;width:120px">-->
+              <h5>
+                Solstice Bangalore, a TommyJams production, is part of a worldwide celebration of music and a day-long music festival happening at various venues across Bangalore on the summer solstice, June 21, also the World Music Day. 
+                <br>
+                On this day, the city will witness multiple performances across the city at the venues listed below. Come be a part of this worldwide celebration!
+              </h5>
+            </div>
+              <div class="text-center" >
+                <input style="margin-top:10px" class="apply-btn" onclick="" type="button" value="ATTEND NOW">
+                <!--<input style="margin-top:10px" class="apply-btn" onclick="window.open('/tours', '_blank');" type="button" value="">-->
+            </div> 
+          </div>
+          <div class="col-sm-12 col-xs-12 col-md-7"> 
+            <!--<iframe title="YouTube video player" class="d-tj-video" style="min-height: 300px; width: 100%;" 
+            src="http://www.youtube.com/embed/kcOo3ge5URE" frameborder="0" allowfullscreen></iframe>-->
+            <a href="http://onesolstice.com/solstice-bangalore" target="_blank"><img align="left" src="/images/solstice/solstice-sun.png" style="min-height: 350px;"></a>
+          </div>  
+        </div>
+      </div>
+      <!--/About Solstice--> 
 
     <!--Demo tile -->
     <div class="d-tj-box d-tj-offset-top-40" >
