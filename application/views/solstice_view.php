@@ -24,7 +24,7 @@
             <img align="left" src="/images/solstice/solstice-sun.png" style="min-height: 350px;">
           </div>  
           <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
-            <h2>Solstice Bangalore: 21st June</h2>
+            <h2 style="margin-top:0px;">Solstice Bangalore: 21st June</h2>
             <div class="who-campaigns">
               <!--<img align="left" src="/img/roadshows_logo.png" style="margin-right:5px;width:120px">-->
               <h5>
@@ -262,6 +262,9 @@
                           </li>
                           <li >
                             <p >10:30am</p>
+                          </li>
+                          <li >
+                            <p style="color:green">FREE</p>
                           </li>
                         </ul>
                       </div>
