@@ -21,7 +21,7 @@
           <div class="col-sm-12 col-xs-12 col-md-7"> 
             <!--<iframe title="YouTube video player" class="d-tj-video" style="min-height: 300px; width: 100%;" 
             src="http://www.youtube.com/embed/kcOo3ge5URE" frameborder="0" allowfullscreen></iframe>-->
-            <img align="left" src="/images/solstice/solstice-sun.png" style="min-height: 350px;">
+            <a href="http://onesolstice.com/solstice-bangalore" target="_blank"><img align="left" src="/images/solstice/solstice-sun.png" style="min-height: 350px;">
           </div>  
           <div class="col-sm-12 col-md-5 d-tj-black-box-container" >
             <h2 style="margin-top:0px;">Solstice Bangalore: 21st June</h2>
@@ -99,7 +99,7 @@
                </li>
                <li>
                 <div class=" col-md-12" style="padding: 5px;">
-                  <h4 class="d-tj-slide-head" >Work In Progress & Hearts At Work</h4>
+                  <h4 class="d-tj-slide-head" >WIP & Hearts At Work</h4>
                   <div class="d-tj-slide-body " style="">
                     <div class="d-tj-slide-img" onclick="window.open('https://www.facebook.com/wipindia');" style="background-image:url(http://tommyjams.com/images/solstice/artists/wip.jpg); ?>)">  
                       <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
@@ -149,7 +149,7 @@
                </li>
                <li>
                 <div class=" col-md-12" style="padding: 5px;">
-                  <h4 class="d-tj-slide-head" >Aman Mahajan & Matt Littlewood</h4>
+                  <h4 class="d-tj-slide-head" >Aman & Matt Littlewood</h4>
                   <div class="d-tj-slide-body " style="">
                     <div class="d-tj-slide-img" onclick="window.open('https://www.facebook.com/refuge.online');" style="background-image:url(http://tommyjams.com/images/solstice/artists/aman.jpg); ?>)">  
                       <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
