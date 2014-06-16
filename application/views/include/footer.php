@@ -39,6 +39,7 @@
           <li>
             <h4 ><? echo lang('str_footer_fans');?></h4>
           </li>
+          <li> <a target="_blank" href="/solstice"><? echo lang('str_footer_solstice');?></a> </li>
           <li> <a target="_blank" href="/roadshows"><? echo lang('str_footer_roadshows');?></a> </li>
           <li> <a target="_blank" href="/radioone"><? echo lang('str_footer_radioone');?></a> </li>
           <li> <a target="_blank" href="http://mewsic.in/" target="_blank"><? echo lang('str_footer_mewsic');?></a> </li>

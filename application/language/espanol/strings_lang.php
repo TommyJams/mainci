@@ -21,7 +21,8 @@
     $lang['str_footer_venues'] = "LUGARES";
     $lang['str_footer_booka'] = "RESERVAR ARTISTAS";
     $lang['str_footer_fans'] = "FANS";
-    $lang['str_footer_roadshows'] = "GIRAS";
+    $lang['str_footer_solstice'] = "SOLSTICE";
+    $lang['str_footer_roadshows'] = "ROADSHOWS";
     $lang['str_footer_radioone'] = "RADIO ONE";
     $lang['str_footer_mewsic'] = "MEWSIC";
     $lang['str_footer_help'] = "AYUDA";

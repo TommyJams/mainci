@@ -21,6 +21,7 @@
     $lang['str_footer_venues'] = "VENUES";
     $lang['str_footer_booka'] = "BOOK ARTISTS";
     $lang['str_footer_fans'] = "FANS";
+    $lang['str_footer_solstice'] = "SOLSTICE";
     $lang['str_footer_roadshows'] = "ROADSHOWS";
     $lang['str_footer_radioone'] = "RADIO ONE";
     $lang['str_footer_mewsic'] = "MEWSIC";
