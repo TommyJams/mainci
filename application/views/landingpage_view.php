@@ -235,7 +235,7 @@
               </h5>
             </div>
               <div class="text-center" >
-                <input style="margin-top:10px" class="apply-btn" onclick="http://tommyjams.com/solstice" type="button" value="ATTEND NOW">
+                <input style="margin-top:10px" class="apply-btn" onclick="location.href='http://tommyjams.com/solstice'" type="button" value="ATTEND NOW">
                 <!--<input style="margin-top:10px" class="apply-btn" onclick="window.open('/tours', '_blank');" type="button" value="">-->
             </div> 
           </div>
