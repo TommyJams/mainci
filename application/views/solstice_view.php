@@ -34,7 +34,7 @@
               </h5>
             </div>
               <div class="text-center" >
-                <input style="margin-top:10px" class="apply-btn" onclick="" type="button" value="RSVP!">
+                <input style="margin-top:10px" class="apply-btn" onclick="window.open('https://www.facebook.com/events/299222443580283', '_blank');" type="button" value="RSVP!">
                 <!--<input style="margin-top:10px" class="apply-btn" onclick="window.open('/tours', '_blank');" type="button" value="">-->
             </div> 
           </div>
