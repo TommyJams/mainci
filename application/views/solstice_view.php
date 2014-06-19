@@ -74,6 +74,31 @@
                </li>
                <li>
                 <div class=" col-md-12" style="padding: 5px;">
+                  <h4 class="d-tj-slide-head" >DJ Rohit Barkar</h4>
+                  <div class="d-tj-slide-body " style="">
+                    <div class="d-tj-slide-img" onclick="window.open('https://www.facebook.com/pages/Rohit-Barker/118075038287405');" style="background-image:url(http://tommyjams.com/images/solstice/artists/barkar.jpg); ?>)">  
+                      <div class="d-tj-slide-overlay-img"> <img src="/image/radioone/icon/image_overlay_grey.png" alt=""/> </div>
+                    </div>
+                    <div>
+                      <div class="col-md-6 d-tj-slide-btm col-sm-6 col-xs-6">
+                        <ul class="list-unstyled  " >
+                          <li>
+                            <p>F Bar & Kitchen</p> 
+                          </li>
+                          <li >
+                            <p >8:00pm</p>
+                          </li>
+                          <li >
+                            <p style="color:green">FREE till 9:30pm</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+               </li>
+               <li>
+                <div class=" col-md-12" style="padding: 5px;">
                   <h4 class="d-tj-slide-head" >Perfect Strangers</h4>
                   <div class="d-tj-slide-body " style="">
                     <div class="d-tj-slide-img" onclick="window.open('https://www.facebook.com/PerfectStrangersBangalore');" style="background-image:url(http://tommyjams.com/images/solstice/artists/perfect_strangers.jpg); ?>)">  
