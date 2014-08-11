@@ -11,7 +11,24 @@ function initMonthWidget() {
 	
 	$("#monthWidgetContainer ul li").click(function() {
 		listIndex = $(this).index() + 1;
-		loadTiles('2013',listIndex,undefined);
+		loadTiles('2014',listIndex,undefined);
+	});
+}
+
+function initYearWidget() {
+	$("#yearWidgetContainer").hide();
+
+	$("#yearWidgetBox").mouseover(function(){
+		$("#yearWidgetContainer").fadeIn("500");
+	});
+	
+	$("#yearWidgetContainer").mouseleave(function() {
+		$("#yearWidgetContainer").fadeOut("500");
+	});
+	
+	$("#yearWidgetContainer ul li").click(function() {
+		listIndex = $(this).index() + 2013;
+		loadTiles(listIndex,'1',undefined);
 	});
 }
 

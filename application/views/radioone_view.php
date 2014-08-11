@@ -49,6 +49,7 @@
     function loadTilesCallback(a) 
     {
       initMonthWidget();
+      initYearWidget();
       initCaptions();
       initFancyBox();
       $("#loading-indicator").hide();
