@@ -11,7 +11,8 @@ function initMonthWidget() {
 	
 	$("#monthWidgetContainer ul li").click(function() {
 		listIndex = $(this).index() + 1;
-		loadTiles('2014',listIndex,undefined);
+		year = $("#yearWidgetBox h1").text();
+		loadTiles(year,listIndex,undefined);
 	});
 }
 
