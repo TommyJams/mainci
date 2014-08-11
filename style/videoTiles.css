@@ -13,7 +13,7 @@
 #monthWidgetContainer { 
 	width: 15%;
 	top: 0px;
-	padding-top: 45px;
+	padding-top: 42px;
 	left: 0px;
 	position: absolute;
 	cursor: pointer;
@@ -35,6 +35,47 @@
 		#monthWidgetContainer ul li:hover {
 			background-color: #059FFF;
 		}
+
+#yearWidgetBox {
+	height: 32px;
+	width: 15%;
+	background-color: #000;
+	margin-top: 10px;
+	padding-top: 42px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	text-align: center;
+	cursor: pointer;
+}
+
+#yearWidgetContainer { 
+	width: 15%;
+	top: 0px;
+	padding-top: 84px;
+	left: 0px;
+	position: absolute;
+	cursor: pointer;
+	display: none;
+}
+
+	#yearWidgetContainer ul {
+		list-style-type: none;
+		text-align: center;
+	}
+
+		#yearWidgetContainer ul li {
+			background-color: #000;
+			display: block;
+			height: 32px;
+			margin-top: 9px;
+		}
+
+		#yearWidgetContainer ul li:hover {
+			background-color: #059FFF;
+		}
+
+
 
 #imageBoxContainer {
 	height: 100%;

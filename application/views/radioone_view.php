@@ -30,6 +30,10 @@
   
   <link href="/style/videoTiles.css" rel="stylesheet" type="text/css"/>
 
+  <script type="text/javascript">
+    var langCode = "<?php echo CURRENT_LANGUAGE; ?>";
+  </script>
+
   <script type="text/javascript" src="/script/jquery.min.js" ></script>
 
   <script type="text/javascript" src="/script/jquery.supersized.min.js"></script>

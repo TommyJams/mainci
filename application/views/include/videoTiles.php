@@ -38,6 +38,18 @@
 	</ul>
 </div>
 
+<!-- Year -->
+<div id="yearWidgetBox">
+	<?print("<h1>$thisYear</h1>");?>
+</div>
+
+<div id="yearWidgetContainer">
+	<ul>
+		<li><h1>2013</h1></li>
+		<li><h1>2014</h1></li>
+	</ul>
+</div>
+
 <!-- Video list -->
 <div id="imageBoxContainer">
 
