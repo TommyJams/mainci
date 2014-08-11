@@ -45,7 +45,7 @@
 	height: 32px;
 	width: 15%;
 	background-color: #000;
-	margin-top: 52px;
+	margin-top: 47px;
 	top: 0px;
 	left: 0px;
 	position: absolute;
@@ -57,7 +57,7 @@
 #yearWidgetContainer { 
 	width: 15%;
 	top: 0px;
-	padding-top: 84px;
+	padding-top: 79px;
 	left: 0px;
 	position: absolute;
 	cursor: pointer;
