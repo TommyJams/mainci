@@ -8,6 +8,7 @@
 	position: absolute;
 	text-align: center;
 	cursor: pointer;
+	z-index: 100;
 }
 
 #monthWidgetContainer { 
@@ -18,11 +19,13 @@
 	position: absolute;
 	cursor: pointer;
 	display: none;
+	z-index: 100;
 }
 
 	#monthWidgetContainer ul {
 		list-style-type: none;
 		text-align: center;
+		z-index: 100;
 	}
 
 		#monthWidgetContainer ul li {
@@ -30,23 +33,25 @@
 			display: block;
 			height: 32px;
 			margin-top: 5px;
+			z-index: 100;
 		}
 
 		#monthWidgetContainer ul li:hover {
 			background-color: #059FFF;
+			z-index: 100;
 		}
 
 #yearWidgetBox {
 	height: 32px;
 	width: 15%;
 	background-color: #000;
-	margin-top: 10px;
-	padding-top: 42px;
+	margin-top: 52px;
 	top: 0px;
 	left: 0px;
 	position: absolute;
 	text-align: center;
 	cursor: pointer;
+	z-index: 99;
 }
 
 #yearWidgetContainer { 
@@ -57,11 +62,13 @@
 	position: absolute;
 	cursor: pointer;
 	display: none;
+	z-index: 99;
 }
 
 	#yearWidgetContainer ul {
 		list-style-type: none;
 		text-align: center;
+		z-index: 99;
 	}
 
 		#yearWidgetContainer ul li {
@@ -69,13 +76,13 @@
 			display: block;
 			height: 32px;
 			margin-top: 5px;
+			z-index: 99;
 		}
 
 		#yearWidgetContainer ul li:hover {
 			background-color: #059FFF;
+			z-index: 99;
 		}
-
-
 
 #imageBoxContainer {
 	height: 100%;
