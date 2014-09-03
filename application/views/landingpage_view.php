@@ -288,13 +288,13 @@
                   <li>
                   <a href="http://tommyjams.com/" target="_blank" class="" style="width: 100%">  
                     <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
-                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/898.jpg" alt=""></div>
+                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/urbansolace.jpg" alt=""></div>
                       <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
                         <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
-                          <h5>Shubham Roy @ 898 Steaks & Grill</h5>
+                          <h5>Megha and Dushyanth @ Urban Solace</h5>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
-                          <h5>8-Jun</h5>
+                          <h5>5-Sep</h5>
                         </div>
                       </div>
                       <div class="clearfix"></div>
@@ -304,61 +304,13 @@
                   <li>
                   <a href="http://tommyjams.com/" target="_blank" class="" style="width: 100%">
                     <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
-                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/898.jpg" alt=""></div>
-                      <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
-                        <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
-                          <h5>Siddhant Shukla @ 898 Steaks & Grill</h5>
-                        </div>
-                        <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
-                          <h5>7-Jun</h5>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                  </a>
-                  </li>
-                  <li>
-                  <a href="http://tommyjams.com/blog/events/event/vinayak-singh-898-steaks-grill/" target="_blank" class="" style="width: 100%">  
-                    <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
-                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/898.jpg" alt=""></div>
-                      <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
-                        <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
-                          <h5>Vinayak Singh @ 898 Steaks & Grill</h5>
-                        </div>
-                        <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
-                          <h5>5-Jun</h5>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                  </a>  
-                  </li>
-                  <li>
-                  <a href="http://tommyjams.com/blog/events/event/hoodoo-gas-phoenix-bangalore/" target="_blank" class="" style="width: 100%">  
-                    <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
                       <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""></div>
                       <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
                         <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
-                          <h5>Hoodoo Gas @ Phoenix Marketcity</h5>
+                          <h5>The Whitefield Jazz Quartet @ Phoenix Marketcity</h5>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
-                          <h5>1-Jun</h5>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                  </a>  
-                  </li>
-                  <li>
-                  <a href="http://tommyjams.com/blog/events/event/30ton-capacity-phoenix-chennai/" target="_blank" class="" style="width: 100%">
-                    <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
-                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""></div>
-                      <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
-                        <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
-                          <h5>30ton Capacity @ Phoenix Marketcity Chennai</h5>
-                        </div>
-                        <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
-                          <h5>1-Jun</h5>
+                          <h5>7-Sep</h5>
                         </div>
                       </div>
                       <div class="clearfix"></div>
@@ -368,13 +320,13 @@
                   <li>
                   <a href="http://tommyjams.com/" target="_blank" class="" style="width: 100%">  
                     <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
-                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/898.jpg" alt=""></div>
+                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""></div>
                       <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
                         <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
-                          <h5>Mind Map @ 898 Steaks & Grill</h5>
+                          <h5>1980s @ Phoenix Marketcity</h5>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
-                          <h5>1-Jun</h5>
+                          <h5>19-Sep</h5>
                         </div>
                       </div>
                       <div class="clearfix"></div>
@@ -384,18 +336,34 @@
                   <li>
                   <a href="http://tommyjams.com/" target="_blank" class="" style="width: 100%">  
                     <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
-                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/cafebuzzinga.jpg" alt=""></div>
+                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""></div>
                       <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
                         <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
-                          <h5>Ishan @ Cafe Buzzinga</h5>
+                          <h5>Hybrid @ Phoenix Marketcity</h5>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
-                          <h5>1-Jun</h5>
+                          <h5>20-Sep</h5>
                         </div>
                       </div>
                       <div class="clearfix"></div>
                     </div>
                   </a>  
+                  </li>
+                  <li>
+                  <a href="http://tommyjams.com/" target="_blank" class="" style="width: 100%">
+                    <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
+                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""></div>
+                      <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
+                        <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
+                          <h5>Indo Gypsies @ Phoenix Marketcity</h5>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
+                          <h5>27-Sep</h5>
+                        </div>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </a>
                   </li>
                 </ul>
               </div>
