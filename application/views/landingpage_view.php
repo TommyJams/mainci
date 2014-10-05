@@ -286,31 +286,15 @@
               <div class="event-ticker">
                 <ul>
                   <li>
-                  <a href="http://tommyjams.com/" target="_blank" class="" style="width: 100%">  
-                    <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
-                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/urbansolace.jpg" alt=""></div>
-                      <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
-                        <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
-                          <h5>Megha and Dushyanth @ Urban Solace</h5>
-                        </div>
-                        <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
-                          <h5>5-Sep</h5>
-                        </div>
-                      </div>
-                      <div class="clearfix"></div>
-                    </div>
-                  </a>  
-                  </li>
-                  <li>
                   <a href="http://tommyjams.com/" target="_blank" class="" style="width: 100%">
                     <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
                       <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""></div>
                       <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
                         <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
-                          <h5>The Whitefield Jazz Quartet @ Phoenix Marketcity</h5>
+                          <h5>Vertigo @ Phoenix Marketcity, Chennai</h5>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
-                          <h5>7-Sep</h5>
+                          <h5>12-Oct</h5>
                         </div>
                       </div>
                       <div class="clearfix"></div>
@@ -323,10 +307,26 @@
                       <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""></div>
                       <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
                         <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
-                          <h5>1980s @ Phoenix Marketcity</h5>
+                          <h5>Indian Blue @ Phoenix Marketcity</h5>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
-                          <h5>19-Sep</h5>
+                          <h5>10-Oct</h5>
+                        </div>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </a>  
+                  </li>
+                  <li>
+                  <a href="http://tommyjams.com/" target="_blank" class="" style="width: 100%">  
+                    <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
+                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""></div>
+                      <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
+                        <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
+                          <h5>Indo Gypsies @ Phoenix Marketcity</h5>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
+                          <h5>27-Sep</h5>
                         </div>
                       </div>
                       <div class="clearfix"></div>
@@ -355,10 +355,10 @@
                       <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""></div>
                       <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
                         <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
-                          <h5>Indo Gypsies @ Phoenix Marketcity</h5>
+                          <h5>1980s @ Phoenix Marketcity</h5>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
-                          <h5>27-Sep</h5>
+                          <h5>19-Sep</h5>
                         </div>
                       </div>
                       <div class="clearfix"></div>
