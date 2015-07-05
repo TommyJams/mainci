@@ -310,7 +310,7 @@
                           <h5>Indian Blue @ Phoenix Marketcity</h5>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
-                          <h5>12-June</h5>
+                          <h5>12-Jun</h5>
                         </div>
                       </div>
                       <div class="clearfix"></div>
