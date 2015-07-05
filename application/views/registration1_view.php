@@ -14,4 +14,4 @@
 
 -->
 
-Our registration and login is temporarily closed. We are working on resolving this immediately and should be back online within 24 hours, but in case of any urgent messages, please feel free to write to contact@tommyjams.com. Sorry for the inconvenience.
+Our registration is temporarily closed. We are working on resolving this immediately and should be back online within 24 hours, but in case of any urgent messages, please feel free to write to contact@tommyjams.com. Sorry for the inconvenience.
