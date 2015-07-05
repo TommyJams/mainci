@@ -291,10 +291,10 @@
                       <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""></div>
                       <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
                         <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
-                          <h5>Vertigo @ Phoenix Marketcity, Chennai</h5>
+                          <h5>White Mug @ Phoenix Marketcity</h5>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
-                          <h5>12-Oct</h5>
+                          <h5>19-Jul</h5>
                         </div>
                       </div>
                       <div class="clearfix"></div>
@@ -310,7 +310,7 @@
                           <h5>Indian Blue @ Phoenix Marketcity</h5>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
-                          <h5>10-Oct</h5>
+                          <h5>12-June</h5>
                         </div>
                       </div>
                       <div class="clearfix"></div>
@@ -323,10 +323,10 @@
                       <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""></div>
                       <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
                         <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
-                          <h5>Indo Gypsies @ Phoenix Marketcity</h5>
+                          <h5>Quarter Fret @ Phoenix Marketcity</h5>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
-                          <h5>27-Sep</h5>
+                          <h5>15-May</h5>
                         </div>
                       </div>
                       <div class="clearfix"></div>
@@ -339,10 +339,10 @@
                       <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""></div>
                       <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
                         <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
-                          <h5>Hybrid @ Phoenix Marketcity</h5>
+                          <h5>Brim River Bridge @ Phoenix Marketcity</h5>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
-                          <h5>20-Sep</h5>
+                          <h5>24-May</h5>
                         </div>
                       </div>
                       <div class="clearfix"></div>
@@ -355,10 +355,10 @@
                       <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""></div>
                       <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
                         <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
-                          <h5>1980s @ Phoenix Marketcity</h5>
+                          <h5>Project Albatross @ Phoenix Chennai</h5>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
-                          <h5>19-Sep</h5>
+                          <h5>8-Mar</h5>
                         </div>
                       </div>
                       <div class="clearfix"></div>
