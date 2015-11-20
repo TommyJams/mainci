@@ -66,6 +66,6 @@
       </div>
     </div>
     <div class="col-md-12 col-sm-12 col-xs-12 f-copy">
-      <p><? echo lang('str_copyright_2014');?></p>
+      <p><? echo lang('str_copyright_2015');?></p>
     </div>
   </footer>

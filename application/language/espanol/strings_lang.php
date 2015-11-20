@@ -32,6 +32,8 @@
     $lang['str_footer_advertise'] = "PUBLICITAR";
     $lang['str_footer_microsoft'] = "POTENCIADO POR:";
     $lang['str_copyright_2014'] = "COPYRIGHT 2014 - TODOS LOS DERECHOS RESERVADOS";
+    $lang['str_copyright_2015'] = "COPYRIGHT 2015 - TODOS LOS DERECHOS RESERVADOS";
+    $lang['str_copyright_2016'] = "COPYRIGHT 2016 - TODOS LOS DERECHOS RESERVADOS";
 
 //Beta Page View
     $lang['str_login_facebook'] = "Ingrese con Facebook";

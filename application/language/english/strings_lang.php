@@ -32,6 +32,8 @@
     $lang['str_footer_advertise'] = "ADVERTISE";
     $lang['str_footer_microsoft'] = "Accelerated by:";
     $lang['str_copyright_2014'] = "Copyright 2014 - All Rights Reserved";
+    $lang['str_copyright_2015'] = "Copyright 2015 - All Rights Reserved";
+    $lang['str_copyright_2016'] = "Copyright 2016 - All Rights Reserved";
     
 //Beta Page View
     $lang['str_login_facebook'] = "Login With Facebook";
