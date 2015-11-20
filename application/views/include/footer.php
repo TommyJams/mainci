@@ -57,7 +57,7 @@
           </ul>
         </div>
       </div>
-      <div class="col-md-3 col-sm-12 col-xs-12 f-ms">
+      <div class="col-md-3 col-sm-12 col-xs-12 f-links">
         <ul class="list-unstyled">
           <li> <h4 style="font-size:14px"><? echo lang('str_footer_microsoft');?></h4> </li>
           <li>
@@ -67,7 +67,7 @@
           </li>
           <li>
             <a href="http://www.startupchile.org/" target="_blank" style="text-decoration:none;color:white">
-              <img src="/img/startupchile.png" style="width:189px"/>
+              <img src="/img/startupchile.png" style="width:200px;margin-top:10px"/>
             </a>
           </li>
         </ul>
