@@ -291,10 +291,10 @@
                       <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""></div>
                       <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
                         <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
-                          <h5>White Mug @ Phoenix Marketcity</h5>
+                          <h5>RVD @ Phoenix Marketcity</h5>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
-                          <h5>19-Jul</h5>
+                          <h5>28-Oct</h5>
                         </div>
                       </div>
                       <div class="clearfix"></div>
@@ -307,10 +307,10 @@
                       <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""></div>
                       <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
                         <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
-                          <h5>Indian Blue @ Phoenix Marketcity</h5>
+                          <h5>Nishad Collective @ Phoenix Marketcity</h5>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
-                          <h5>12-Jun</h5>
+                          <h5>7-Oct</h5>
                         </div>
                       </div>
                       <div class="clearfix"></div>
@@ -320,13 +320,13 @@
                   <li>
                   <a href="http://tommyjams.com/" target="_blank" class="" style="width: 100%">  
                     <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
-                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""></div>
+                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/nasscom.jpg" alt=""></div>
                       <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
                         <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
-                          <h5>Quarter Fret @ Phoenix Marketcity</h5>
+                          <h5>Brim River Bridge @ NASSCOM</h5>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
-                          <h5>15-May</h5>
+                          <h5>15-Oct</h5>
                         </div>
                       </div>
                       <div class="clearfix"></div>
@@ -336,13 +336,13 @@
                   <li>
                   <a href="http://tommyjams.com/" target="_blank" class="" style="width: 100%">  
                     <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
-                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""></div>
+                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/nasscom.jpg" alt=""></div>
                       <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
                         <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
-                          <h5>Brim River Bridge @ Phoenix Marketcity</h5>
+                          <h5>White Fire @ NASSCOM</h5>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
-                          <h5>24-May</h5>
+                          <h5>14-Oct</h5>
                         </div>
                       </div>
                       <div class="clearfix"></div>
@@ -352,13 +352,13 @@
                   <li>
                   <a href="http://tommyjams.com/" target="_blank" class="" style="width: 100%">
                     <div class="col-md-12 col-sm-12 col-xs-12 d-tj-offset-top-10 ">
-                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/phoenixmall.jpg" alt=""></div>
+                      <div class="col-md-2 col-xs-3 col-sm-2 d-tj-p0"> <img src="/image/eventTiles/campusdiaries.png" alt=""></div>
                       <div class="col-md-10 col-xs-9 col-sm-10 d-tj-p0">
                         <div class="col-md-9 col-sm-9 col-xs-12 d-tj-p0" >
-                          <h5>Project Albatross @ Phoenix Chennai</h5>
+                          <h5>Rohit Vasudevan @ Campus Diaries</h5>
                         </div>
                         <div class="col-md-3 col-sm-3 col-xs-12 event-date" >
-                          <h5>8-Mar</h5>
+                          <h5>10-Oct</h5>
                         </div>
                       </div>
                       <div class="clearfix"></div>
