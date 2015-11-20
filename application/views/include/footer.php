@@ -58,8 +58,8 @@
         </div>
       </div>
       <div class="col-md-3 col-sm-12 col-xs-12 f-ms">
-      <h4 style="font-size:14px"><? echo lang('str_footer_microsoft');?></h4>
        <a href="https://www.microsoftventures.com/" target="_blank" style="text-decoration:none;color:white">
+          <h4 style="font-size:14px"><? echo lang('str_footer_microsoft');?></h4>
           <img src="/img/msventures.png" style="width:189px;height:20px"/>
        </a>
        <a href="http://www.startupchile.org/" target="_blank" style="text-decoration:none;color:white">
